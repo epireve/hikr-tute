@@ -1,11 +1,25 @@
 <Page ux:Class="HomePage">
    <Router ux:Dependency="router" />
    <JavaScript File="HomePage.js" />
-   <ScrollView Opacity="1">
-      <StackPanel>
-         <Each Items="{hikes}">
-            <Button Text="{name}" Clicked="{goToHike}" />
-         </Each>
-      </StackPanel>
-   </ScrollView>
-</Page>
+
+   <DockPanel>
+      <Text Color="White" FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Recent Hikes</Text>
+      <ScrollView>
+         <StackPanel>
+            <Each Items="{hikes}">
+               <Separator />
+               <Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToHike}" Opacity="0.635" Padding="0, 0, 0, 0" Margin="0, 0, 0, 0">
+                  <Text Color="White" Value="{name}" Margin="20" />
+
+                  <WhilePressed>
+                     <Scale Factor=".95" Duration=".08" Easing="QuadraticOut"/>
+                  </WhilePressed>
+               </Panel>
+            </Each>
+
+            <Separator />
+         </StackPanel>
+      </ScrollView>
+   </DockPanel>
+
+   </Page>

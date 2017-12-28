@@ -16,7 +16,7 @@ public partial class MainView: Fuse.App
         }
         public override object New()
         {
-            var __self = new global::HomePage();
+            var __self = new global::HomePage(__parent.router);
             __self.Name = __selector0;
             return __self;
         }
@@ -37,7 +37,7 @@ public partial class MainView: Fuse.App
         }
         public override object New()
         {
-            var __self = new global::EditHikePage();
+            var __self = new global::EditHikePage(__parent.router);
             __self.Name = __selector0;
             return __self;
         }
@@ -183,6 +183,7 @@ public partial class MainView: Fuse.App
         var temp18 = new global::Fuse.Controls.Navigator();
         var home = new Template(this, this);
         var editHike = new Template1(this, this);
+        this.Background = float4(0.007843138f, 0.1372549f, 0.1568628f, 1f);
         router.Name = __selector0;
         temp17.Children.Add(temp18);
         temp18.DefaultPath = "home";
