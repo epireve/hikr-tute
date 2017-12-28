@@ -1,5 +1,5 @@
 function goToHomePage() {
-   router.push("home");
+   router.goto("home");
 }
 
 module.exports ={

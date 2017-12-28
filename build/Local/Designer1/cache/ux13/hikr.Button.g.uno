@@ -60,6 +60,7 @@ namespace hikr
             var temp10 = new global::Fuse.Animations.Scale();
             this.Margin = float4(10f, 10f, 10f, 10f);
             this.Padding = float4(10f, 10f, 10f, 10f);
+            this.FontSize = 16f;
             temp5.CornerRadius = float4(4f, 4f, 4f, 4f);
             temp5.Color = float4(0.07058824f, 0.372549f, 0.3882353f, 1f);
             temp5.Layer = Fuse.Layer.Background;

@@ -16,7 +16,7 @@ public partial class MainView: Fuse.App
         }
         public override object New()
         {
-            var __self = new global::SplashPage();
+            var __self = new global::SplashPage(__parent.router);
             __self.Name = __selector0;
             return __self;
         }
