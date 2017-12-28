@@ -1,3 +1,13 @@
+sealed class hikr_accessor_hikr_Button_Text: global::Uno.UX.PropertyAccessor
+{
+    public static global::Uno.UX.PropertyAccessor Singleton = new hikr_accessor_hikr_Button_Text();
+    public override global::Uno.UX.Selector Name { get { return _name; } }
+    static global::Uno.UX.Selector _name = "Text";
+    public override global::Uno.Type PropertyType { get { return typeof(string); } }
+    public override object GetAsObject(global::Uno.UX.PropertyObject obj) { return ((hikr.Button)obj).Text; }
+    public override void SetAsObject(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((hikr.Button)obj).SetText((string)v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
+}
 sealed class hikr_FuseControlsTextControl_Value_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Fuse.Controls.TextControl _obj;

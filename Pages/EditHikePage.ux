@@ -1,29 +1,45 @@
-<Page ux:Class="EditHikePage">
+<hikr.Page ux:Class="EditHikePage">
    <Router ux:Dependency="router"/>
    <JavaScript File="EditHikePage.js"/>
 
-   <ScrollView>
-      <StackPanel>
+   <DockPanel>
+      <Grid ColumnCount="2" Dock="Bottom">
+         <hikr.Button Text="Save" Clicked="{save}"/>
+         <hikr.Button Text="Cancel" Clicked="{cancel}"/>
+      </Grid>
 
-         <Text Value="{name}"/>
+      <ScrollView>
+         <StackPanel ItemSpacing="10" Padding="10">
 
-         <Text>Name:</Text>
-         <TextBox Value="{name}"/>
+            <hikr.Text ux:Class="TitleText" Opacity=".6" Margin="0,0,0,5"/>
 
-         <Text>Location:</Text>
-         <TextBox Value="{location}"/>
+            <StackPanel>
+               <TitleText>Name:</TitleText>
+               <hikr.TextBox Value="{name}"/>
+            </StackPanel>
 
-         <Text>Distance (km):</Text>
-         <TextBox Value="{distance}" InputHint="Decimal"/>
+            <StackPanel>
+               <TitleText>Location:</TitleText>
+               <hikr.TextBox  Value="{location}"/>
+            </StackPanel>
 
-         <Text>Rating (1-5):</Text>
-         <TextBox Value="{rating}" InputHint="Integer"/>
+            <StackPanel>
+               <TitleText>Distance (km):</TitleText>
+               <hikr.TextBox  Value="{distance}" InputHint="Decimal"/>
+            </StackPanel>
 
-         <Text>Comments:</Text>
-         <TextBox Value="{comments}" TextWrapping="Wrap"/>
+            <StackPanel>
+               <TitleText>Rating (1-5):</TitleText>
+               <hikr.TextBox  Value="{rating}" InputHint="Integer"/>
+            </StackPanel>
 
-         <Button Text="Save" Clicked="{save}"/>
-         <Button Text="Cancel" Clicked="{cancel}"/>
-      </StackPanel>
-   </ScrollView>
-</Page>
+            <StackPanel>
+               <TitleText>Comments:</TitleText>
+               <hikr.TextView Value="{comments}" TextWrapping="Wrap"/>
+            </StackPanel>
+
+            <!-- <Button Text="Cancel" Clicked="{cancel}"/> -->
+         </StackPanel>
+      </ScrollView>
+   </DockPanel>
+</hikr.Page>

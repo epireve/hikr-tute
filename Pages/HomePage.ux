@@ -1,13 +1,14 @@
-<Page ux:Class="HomePage">
+<hikr.Page ux:Class="HomePage">
+
    <Router ux:Dependency="router" />
    <JavaScript File="HomePage.js" />
 
    <DockPanel>
-      <Text Color="White" FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Recent Hikes</Text>
+      <hikr.Text FontSize="30" TextAlignment="Center" Dock="Top" Margin="0,50">Recent Hikes</hikr.Text>
       <ScrollView>
          <StackPanel>
             <Each Items="{hikes}">
-               <Separator />
+               <Rectangle Height="1" Fill="#fff4" />
                <Panel HitTestMode="LocalBoundsAndChildren" Clicked="{goToHike}" Opacity="0.635" Padding="0, 0, 0, 0" Margin="0, 0, 0, 0">
                   <Text Color="White" Value="{name}" Margin="20" />
 
@@ -17,9 +18,10 @@
                </Panel>
             </Each>
 
-            <Separator />
+            <!-- <Separator /> -->
+            <Rectangle Height="1" Fill="#fff4" />
          </StackPanel>
       </ScrollView>
    </DockPanel>
 
-   </Page>
+</hikr.Page>
