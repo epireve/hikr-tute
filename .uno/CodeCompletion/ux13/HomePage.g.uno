@@ -1,6 +1,7 @@
 [Uno.Compiler.UxGenerated]
 public partial class HomePage: Fuse.Controls.Page
 {
+    readonly Fuse.Navigation.Router router;
     [Uno.Compiler.UxGenerated]
     public partial class Template: Uno.UX.Template
     {
@@ -12,7 +13,7 @@ public partial class HomePage: Fuse.Controls.Page
             __parentInstance = parentInstance;
         }
         global::Uno.UX.Property<string> __self_Text_inst;
-        internal global::Fuse.Reactive.EventBinding temp_eb0;
+        internal global::Fuse.Reactive.EventBinding temp_eb1;
         static Template()
         {
         }
@@ -21,12 +22,12 @@ public partial class HomePage: Fuse.Controls.Page
             var __self = new global::Fuse.Controls.Button();
             __self_Text_inst = new hikr_FuseControlsButtonBase_Text_Property(__self, __selector0);
             var temp = new global::Fuse.Reactive.Data("name");
-            var temp1 = new global::Fuse.Reactive.Data("chooseHike");
+            var temp1 = new global::Fuse.Reactive.Data("goToHike");
             var temp2 = new global::Fuse.Reactive.DataBinding(__self_Text_inst, temp, Fuse.Reactive.BindingMode.Default);
-            temp_eb0 = new global::Fuse.Reactive.EventBinding(temp1);
-            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb0.OnEvent);
+            temp_eb1 = new global::Fuse.Reactive.EventBinding(temp1);
+            global::Fuse.Gestures.Clicked.AddHandler(__self, temp_eb1.OnEvent);
             __self.Bindings.Add(temp2);
-            __self.Bindings.Add(temp_eb0);
+            __self.Bindings.Add(temp_eb1);
             return __self;
         }
         static global::Uno.UX.Selector __selector0 = "Text";
@@ -34,13 +35,16 @@ public partial class HomePage: Fuse.Controls.Page
     global::Uno.UX.Property<object> temp_Items_inst;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
+        "router"
     };
     static HomePage()
     {
     }
     [global::Uno.UX.UXConstructor]
-    public HomePage()
+    public HomePage(
+		[global::Uno.UX.UXParameter("router")] Fuse.Navigation.Router router)
     {
+        this.router = router;
         InitializeUX();
     }
     void InitializeUX()
@@ -54,14 +58,16 @@ public partial class HomePage: Fuse.Controls.Page
         var temp4 = new global::Fuse.Controls.StackPanel();
         var temp5 = new Template(this, this);
         var temp6 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp1, Fuse.Reactive.BindingMode.Default);
-        temp2.LineNumber = 2;
+        temp2.LineNumber = 3;
         temp2.FileName = "Pages/HomePage.ux";
         temp2.File = new global::Uno.UX.BundleFileSource(import("../../../Pages/HomePage.js"));
+        temp3.Opacity = 1f;
         temp3.Children.Add(temp4);
         temp4.Children.Add(temp);
         temp.Templates.Add(temp5);
         temp.Bindings.Add(temp6);
         __g_nametable.This = this;
+        __g_nametable.Objects.Add(router);
         this.Children.Add(temp2);
         this.Children.Add(temp3);
     }

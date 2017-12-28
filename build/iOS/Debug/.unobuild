@@ -1,0 +1,4 @@
+$: 448310368
+BuildCommand: build.sh
+RunCommand: run.sh
+Product: build/Release-iphoneos/hikr.app/hikr

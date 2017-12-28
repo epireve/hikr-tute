@@ -1,10 +1,10 @@
- <Page ux:Class="HomePage">
-   <Router ux:Dependency="router"/>
-   <JavaScript File="HomePage.js"/>
-   <ScrollView>
+<Page ux:Class="HomePage">
+   <Router ux:Dependency="router" />
+   <JavaScript File="HomePage.js" />
+   <ScrollView Opacity="1">
       <StackPanel>
          <Each Items="{hikes}">
-            <Button Text="{name}" Clicked="{goToHike}"/>
+            <Button Text="{name}" Clicked="{goToHike}" />
          </Each>
       </StackPanel>
    </ScrollView>
