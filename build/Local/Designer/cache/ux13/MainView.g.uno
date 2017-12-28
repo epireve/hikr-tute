@@ -6,12 +6,33 @@ public partial class MainView: Fuse.App
     {
         [Uno.WeakReference] internal readonly MainView __parent;
         [Uno.WeakReference] internal readonly MainView __parentInstance;
-        public Template(MainView parent, MainView parentInstance): base("home", false)
+        public Template(MainView parent, MainView parentInstance): base("splash", false)
         {
             __parent = parent;
             __parentInstance = parentInstance;
         }
         static Template()
+        {
+        }
+        public override object New()
+        {
+            var __self = new global::SplashPage(__parent.router);
+            __self.Name = __selector0;
+            return __self;
+        }
+        static global::Uno.UX.Selector __selector0 = "splash";
+    }
+    [Uno.Compiler.UxGenerated]
+    public partial class Template1: Uno.UX.Template
+    {
+        [Uno.WeakReference] internal readonly MainView __parent;
+        [Uno.WeakReference] internal readonly MainView __parentInstance;
+        public Template1(MainView parent, MainView parentInstance): base("home", false)
+        {
+            __parent = parent;
+            __parentInstance = parentInstance;
+        }
+        static Template1()
         {
         }
         public override object New()
@@ -23,16 +44,16 @@ public partial class MainView: Fuse.App
         static global::Uno.UX.Selector __selector0 = "home";
     }
     [Uno.Compiler.UxGenerated]
-    public partial class Template1: Uno.UX.Template
+    public partial class Template2: Uno.UX.Template
     {
         [Uno.WeakReference] internal readonly MainView __parent;
         [Uno.WeakReference] internal readonly MainView __parentInstance;
-        public Template1(MainView parent, MainView parentInstance): base("editHike", false)
+        public Template2(MainView parent, MainView parentInstance): base("editHike", false)
         {
             __parent = parent;
             __parentInstance = parentInstance;
         }
-        static Template1()
+        static Template2()
         {
         }
         public override object New()
@@ -181,12 +202,14 @@ public partial class MainView: Fuse.App
         router = new global::Fuse.Navigation.Router();
         var temp17 = new global::Fuse.Controls.ClientPanel();
         var temp18 = new global::Fuse.Controls.Navigator();
-        var home = new Template(this, this);
-        var editHike = new Template1(this, this);
+        var splash = new Template(this, this);
+        var home = new Template1(this, this);
+        var editHike = new Template2(this, this);
         this.Background = float4(0.007843138f, 0.1372549f, 0.1568628f, 1f);
         router.Name = __selector0;
         temp17.Children.Add(temp18);
-        temp18.DefaultPath = "home";
+        temp18.DefaultPath = "splash";
+        temp18.Templates.Add(splash);
         temp18.Templates.Add(home);
         temp18.Templates.Add(editHike);
         this.Children.Add(router);

@@ -1,5 +1,5 @@
 [Uno.Compiler.UxGenerated]
-public partial class HomePage: Fuse.Controls.Page
+public partial class HomePage: hikr.Page
 {
     readonly Fuse.Navigation.Router router;
     [Uno.Compiler.UxGenerated]
@@ -100,7 +100,7 @@ public partial class HomePage: Fuse.Controls.Page
         var temp9 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp1, Fuse.Reactive.BindingMode.Default);
         var temp10 = new global::Fuse.Controls.Rectangle();
         var temp11 = new global::Fuse.Drawing.StaticSolidColor(float4(1f, 1f, 1f, 0.2666667f));
-        temp2.LineNumber = 3;
+        temp2.LineNumber = 4;
         temp2.FileName = "Pages/HomePage.ux";
         temp2.File = new global::Uno.UX.BundleFileSource(import("../../../../../Pages/HomePage.js"));
         temp3.Children.Add(temp4);
