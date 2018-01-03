@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Binding;}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -28,11 +28,11 @@ void Binding__Unroot_fn(Binding* __this);
 
 struct Binding : uObject
 {
-    uStrong< ::g::Fuse::Node*> _Parent;
+    uStrong< ::g::Fuse::Node*  _Parent;
 
     void ctor_();
-    void OnRooted() { (((Binding_type*)__type)->fp_OnRooted)(this); }
-    void OnUnrooted() { (((Binding_type*)__type)->fp_OnUnrooted)(this); }
+    void OnRooted() { (((Binding_type*)__type)- fp_OnRooted)(this); }
+    void OnUnrooted() { (((Binding_type*)__type)- fp_OnUnrooted)(this); }
     ::g::Fuse::Node* Parent();
     void Parent(::g::Fuse::Node* value);
     void Root(::g::Fuse::Node* parent);

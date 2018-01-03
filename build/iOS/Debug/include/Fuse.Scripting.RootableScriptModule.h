@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.ScriptModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.ScriptModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct ClassInstance;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
@@ -31,10 +31,10 @@ void RootableScriptModule__New2_fn(::g::Fuse::Scripting::ThreadWorker* worker, :
 
 struct RootableScriptModule : ::g::Fuse::Scripting::ScriptModule
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    uStrong< ::g::Uno::UX::NameTable*> _names;
-    uStrong< ::g::Fuse::Scripting::ClassInstance*> _classInstance;
-    uStrong< ::g::Uno::Collections::Dictionary*> Dependencies;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    uStrong< ::g::Uno::UX::NameTable*  _names;
+    uStrong< ::g::Fuse::Scripting::ClassInstance*  _classInstance;
+    uStrong< ::g::Uno::Collections::Dictionary*  Dependencies;
 
     void ctor_2(::g::Fuse::Scripting::ThreadWorker* worker, ::g::Uno::UX::NameTable* names);
     void EnsureClassInstanceRooted();

@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.IGraphicsView.h>
-#include <Fuse.Controls.Native.iOS.View.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Fuse.Controls.Native.IViewHost.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.IGraphicsView.h 
+#include <Fuse.Controls.Native.iOS.View.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Fuse.Controls.Native.IViewHost.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct GraphicsView;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -45,9 +45,9 @@ void GraphicsView__New3_fn(::g::Fuse::Visual* visual, GraphicsView** __retval);
 
 struct GraphicsView : ::g::Fuse::Controls::Native::iOS::View
 {
-    uStrong< ::g::Fuse::Visual*> _visual;
-    uStrong< ::g::ObjC::Object*> _glkViewHandle;
-    uStrong< ::g::ObjC::Object*> _hitSurface;
+    uStrong< ::g::Fuse::Visual*  _visual;
+    uStrong< ::g::ObjC::Object*  _glkViewHandle;
+    uStrong< ::g::ObjC::Object*  _hitSurface;
 
     void ctor_4(::g::Fuse::Visual* visual);
     static bool BeginDraw(::g::ObjC::Object* handle, int x, int y);

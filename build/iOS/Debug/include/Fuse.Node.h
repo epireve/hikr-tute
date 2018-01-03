@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.PropertyObject.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.PropertyObject.h 
+#include <Uno.UX.Selector.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Properties;}}
@@ -115,30 +115,30 @@ void Node__VisitSubtree_fn(Node* __this, uDelegate* action);
 
 struct Node : ::g::Uno::UX::PropertyObject
 {
-    uStrong<uObject*> _bindings;
-    static uSStrong<uObject*> _emptyBindings_;
-    static uSStrong<uObject*>& _emptyBindings() { return Node_typeof()->Init(), _emptyBindings_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _dataListeners_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _dataListeners() { return Node_typeof()->Init(), _dataListeners_; }
+    uStrong<uObject*  _bindings;
+    static uSStrong<uObject*  _emptyBindings_;
+    static uSStrong<uObject* & _emptyBindings() { return Node_typeof()- Init(), _emptyBindings_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _dataListeners_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _dataListeners() { return Node_typeof()- Init(), _dataListeners_; }
     ::g::Uno::UX::Selector _name;
     int _rootStage;
     static int _rootCaptureIndex_;
-    static int& _rootCaptureIndex() { return Node_typeof()->Init(), _rootCaptureIndex_; }
+    static int& _rootCaptureIndex() { return Node_typeof()- Init(), _rootCaptureIndex_; }
     static bool _hasRootCapture_;
-    static bool& _hasRootCapture() { return Node_typeof()->Init(), _hasRootCapture_; }
-    static uSStrong<uDelegate*> _laterReleaseRooting_;
-    static uSStrong<uDelegate*>& _laterReleaseRooting() { return Node_typeof()->Init(), _laterReleaseRooting_; }
+    static bool& _hasRootCapture() { return Node_typeof()- Init(), _hasRootCapture_; }
+    static uSStrong<uDelegate*  _laterReleaseRooting_;
+    static uSStrong<uDelegate* & _laterReleaseRooting() { return Node_typeof()- Init(), _laterReleaseRooting_; }
     int _preservedRootFrame;
-    uStrong< ::g::Fuse::Scripting::Context*> _scriptContext;
-    uStrong<uObject*> _scriptObject;
-    uStrong< ::g::Fuse::Properties*> _properties;
-    uStrong< ::g::Fuse::Visual*> _parent;
-    uWeak<Node*> OverrideContextParent;
-    uStrong<Node*> _nextSibling;
+    uStrong< ::g::Fuse::Scripting::Context*  _scriptContext;
+    uStrong<uObject*  _scriptObject;
+    uStrong< ::g::Fuse::Properties*  _properties;
+    uStrong< ::g::Fuse::Visual*  _parent;
+    uWeak<Node*  OverrideContextParent;
+    uStrong<Node*  _nextSibling;
     int _parentID;
     void* _previousSibling;
-    uStrong<uDelegate*> RootingCompleted1;
-    uStrong<uDelegate*> Unrooted1;
+    uStrong<uDelegate*  RootingCompleted1;
+    uStrong<uDelegate*  Unrooted1;
 
     void ctor_1();
     void Add(::g::Fuse::Binding* item);
@@ -154,7 +154,7 @@ struct Node : ::g::Uno::UX::PropertyObject
     uObject* FindByType(uType* __type);
     Node* FindNodeByName(::g::Uno::UX::Selector name, uDelegate* acceptor);
     uObject* GetFirstData();
-    Node* GetLastNodeInGroup() { Node* __retval; return (((Node_type*)__type)->fp_GetLastNodeInGroup)(this, &__retval), __retval; }
+    Node* GetLastNodeInGroup() { Node* __retval; return (((Node_type*)__type)- fp_GetLastNodeInGroup)(this, &__retval), __retval; }
     uObject* GetNearestAncestorOfType(uType* __type);
     bool HasInSubtree(Node* c);
     void Insert(int index, ::g::Fuse::Binding* item);
@@ -169,8 +169,8 @@ struct Node : ::g::Uno::UX::PropertyObject
     Node* NextSibling(uType* __type);
     int NodeDepth();
     void OnDataChanged(uString* key, uObject* newValue);
-    void OnRooted() { (((Node_type*)__type)->fp_OnRooted)(this); }
-    void OnUnrooted() { (((Node_type*)__type)->fp_OnUnrooted)(this); }
+    void OnRooted() { (((Node_type*)__type)- fp_OnRooted)(this); }
+    void OnUnrooted() { (((Node_type*)__type)- fp_OnUnrooted)(this); }
     ::g::Fuse::Visual* Parent();
     Node* PreviousSibling(uType* __type);
     ::g::Fuse::Properties* Properties();
@@ -182,14 +182,14 @@ struct Node : ::g::Uno::UX::PropertyObject
     void remove_RootingCompleted(uDelegate* value);
     void RootInternal(::g::Fuse::Visual* parent);
     void RootInternalImpl(::g::Fuse::Visual* parent);
-    void SoftDispose() { (((Node_type*)__type)->fp_SoftDispose)(this); }
-    bool TryGetResource(uString* key, uDelegate* acceptor, uObject** resource) { bool __retval; return (((Node_type*)__type)->fp_TryGetResource)(this, key, acceptor, resource, &__retval), __retval; }
+    void SoftDispose() { (((Node_type*)__type)- fp_SoftDispose)(this); }
+    bool TryGetResource(uString* key, uDelegate* acceptor, uObject** resource) { bool __retval; return (((Node_type*)__type)- fp_TryGetResource)(this, key, acceptor, resource, &__retval), __retval; }
     void Unroot(::g::Fuse::Binding* b);
     void UnrootBindings();
     void add_Unrooted(uDelegate* value);
     void remove_Unrooted(uDelegate* value);
     void UnrootInternal();
-    void VisitSubtree(uDelegate* action) { (((Node_type*)__type)->fp_VisitSubtree)(this, action); }
+    void VisitSubtree(uDelegate* action) { (((Node_type*)__type)- fp_VisitSubtree)(this, action); }
     static uObject* _createWatcher(::g::Fuse::Scripting::Context* c, Node* n, uArray* args);
     static void _destroyWatcher(::g::Fuse::Scripting::Context* c, Node* n, uArray* args);
     static bool CaptureRooting();

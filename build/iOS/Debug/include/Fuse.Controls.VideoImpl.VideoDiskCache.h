@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct VideoDiskCache;}}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -22,9 +22,9 @@ void VideoDiskCache__OnTerminating_fn(int* newState);
 struct VideoDiskCache : uObject
 {
     static int _fileCount_;
-    static int& _fileCount() { return VideoDiskCache_typeof()->Init(), _fileCount_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _files_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _files() { return VideoDiskCache_typeof()->Init(), _files_; }
+    static int& _fileCount() { return VideoDiskCache_typeof()- Init(), _fileCount_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _files_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _files() { return VideoDiskCache_typeof()- Init(), _files_; }
 
     static uString* GetFileExtension(uString* fileName);
     static uString* GetFilePath(::g::Uno::UX::FileSource* fileSource);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ObservableProperty__PushCapture;}}}
 
@@ -19,8 +19,8 @@ void ObservableProperty__PushCapture__Run_fn(ObservableProperty__PushCapture* __
 
 struct ObservableProperty__PushCapture : uObject
 {
-    uStrong<uDelegate*> _push;
-    uStrong<uObject*> _arg;
+    uStrong<uDelegate*  _push;
+    uStrong<uObject*  _arg;
 
     void ctor_(uDelegate* push, uObject* arg);
     void Run(::g::Fuse::Scripting::Context* context);

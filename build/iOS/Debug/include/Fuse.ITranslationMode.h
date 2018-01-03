@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ITransformMode.h>
-#include <Uno.Object.h>
+#include <Fuse.ITransformMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Translation;}}
 namespace g{namespace Uno{struct Float3;}}
 
@@ -22,12 +22,12 @@ struct ITranslationMode
 
 }} // ::g::Fuse
 
-#include <Uno.Float3.h>
+#include <Uno.Float3.h 
 
 namespace g{
 namespace Fuse{
 
-inline ::g::Uno::Float3 ITranslationMode::GetAbsVector(const uInterface& __this, ::g::Fuse::Translation* t) { ::g::Uno::Float3 __retval; return __this.VTable<ITranslationMode>()->fp_GetAbsVector(__this, t, &__retval), __retval; }
+inline ::g::Uno::Float3 ITranslationMode::GetAbsVector(const uInterface& __this, ::g::Fuse::Translation* t) { ::g::Uno::Float3 __retval; return __this.VTable<ITranslationMode ()- fp_GetAbsVector(__this, t, &__retval), __retval; }
 // }
 
 }} // ::g::Fuse

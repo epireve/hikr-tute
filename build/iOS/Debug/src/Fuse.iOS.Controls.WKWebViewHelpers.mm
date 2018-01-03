@@ -1,15 +1,15 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.4.2/iOS/WebView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.iOS.Controls.WKWebViewHelpers.h>
-#include <iOS/NoZoomDelegate.h>
-#include <ObjC.Object.h>
-#include <Uno.Action-1.h>
-#include <Uno.Bool.h>
-#include <Uno.Double.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
-#include <WebKit/WebKit.h>
+#include <Fuse.iOS.Controls.WKWebViewHelpers.h 
+#include <iOS/NoZoomDelegate.h 
+#include <ObjC.Object.h 
+#include <Uno.Action-1.h 
+#include <Uno.Bool.h 
+#include <Uno.Double.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
+#include <WebKit/WebKit.h 
 
 namespace g{
 namespace Fuse{
@@ -24,13 +24,13 @@ static void WKWebViewHelpers_build(uType* type)
 
 uClassType* WKWebViewHelpers_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.iOS.Controls.WKWebViewHelpers", options);
-    type->fp_build_ = WKWebViewHelpers_build;
+    type- fp_build_ = WKWebViewHelpers_build;
     return type;
 }
 
@@ -46,7 +46,7 @@ void WKWebViewHelpers__EvalOnWebView_fn(::g::ObjC::Object* webview, uString* js)
     WKWebViewHelpers::EvalOnWebView(webview, js);
 }
 
-// public static void EvalOnWebViewWithHandler(ObjC.Object webview, string js, Uno.Action<string> handler) :19
+// public static void EvalOnWebViewWithHandler(ObjC.Object webview, string js, Uno.Action<string  handler) :19
 void WKWebViewHelpers__EvalOnWebViewWithHandler_fn(::g::ObjC::Object* webview, uString* js, uDelegate* handler)
 {
     WKWebViewHelpers::EvalOnWebViewWithHandler(webview, js, handler);
@@ -135,7 +135,7 @@ void WKWebViewHelpers__StopLoading_fn(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (bool zoomEnabled, bool scrollEnabled) -> ::id
+        return ::g::ObjC::Object::Create([] (bool zoomEnabled, bool scrollEnabled) -  ::id
         {
             WKWebView* wv = [[WKWebView alloc] init];
             wv.scrollView.delegate = zoomEnabled ? NULL : [[NoZoomDelegate alloc] init];
@@ -153,7 +153,7 @@ void WKWebViewHelpers::EvalOnWebView(::g::ObjC::Object* webview, uString* js)
 {
     @autoreleasepool
     {
-        [] (::id webview, ::NSString* js) -> void
+        [] (::id webview, ::NSString* js) -  void
         {
             WKWebView* wv = webview;
             [wv evaluateJavaScript:js completionHandler:nil];
@@ -163,24 +163,24 @@ void WKWebViewHelpers::EvalOnWebView(::g::ObjC::Object* webview, uString* js)
     
 }
 
-// public static void EvalOnWebViewWithHandler(ObjC.Object webview, string js, Uno.Action<string> handler) [static] :19
+// public static void EvalOnWebViewWithHandler(ObjC.Object webview, string js, Uno.Action<string  handler) [static] :19
 void WKWebViewHelpers::EvalOnWebViewWithHandler(::g::ObjC::Object* webview, uString* js, uDelegate* handler)
 {
     @autoreleasepool
     {
-        [] (::id webview, ::NSString* js, ::uObjC::Function<void, ::NSString*> handler) -> void
+        [] (::id webview, ::NSString* js, ::uObjC::Function<void, ::NSString*  handler) -  void
         {
             WKWebView* wv = webview;
             [wv evaluateJavaScript:js completionHandler:^(id result, NSError* error) {
             	handler(result);
             }];
-        } (::g::ObjC::Object::GetHandle(webview), ::uObjC::NativeString(js), [] (id<UnoObject> __delegateRef) -> ::uObjC::Function<void, ::NSString*>
+        } (::g::ObjC::Object::GetHandle(webview), ::uObjC::NativeString(js), [] (id<UnoObject  __delegateRef) -  ::uObjC::Function<void, ::NSString* 
         {
-            return __delegateRef == nil ? (::uObjC::Function<void, ::NSString*>)nil : (^ void (::NSString* arg)
+            return __delegateRef == nil ? (::uObjC::Function<void, ::NSString* )nil : (^ void (::NSString* arg)
             {
                 ::uForeignPool __foreignPool;
                 uDelegate* __unoDelegate = (uDelegate*)__delegateRef.unoObject;
-                __unoDelegate->InvokeVoid(::uObjC::UnoString(arg));
+                __unoDelegate- InvokeVoid(::uObjC::UnoString(arg));
                 
             });
         } ([::StrongUnoObject strongUnoObjectWithUnoObject: handler]));
@@ -206,7 +206,7 @@ bool WKWebViewHelpers::GetCanGoBack(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> bool
+        return [] (::id handle) -  bool
         {
             WKWebView* wv = handle;
             return wv.canGoBack;
@@ -221,7 +221,7 @@ bool WKWebViewHelpers::GetCanGoForward(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> bool
+        return [] (::id handle) -  bool
         {
             WKWebView* wv = handle;
             return wv.canGoForward;
@@ -236,7 +236,7 @@ double WKWebViewHelpers::GetEstimatedProgress(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> double
+        return [] (::id handle) -  double
         {
             WKWebView* wv = handle;
             return wv.estimatedProgress;
@@ -251,7 +251,7 @@ bool WKWebViewHelpers::GetIsLoading(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> bool
+        return [] (::id handle) -  bool
         {
             WKWebView* wv = handle;
             return wv.loading;
@@ -266,7 +266,7 @@ uString* WKWebViewHelpers::GetURL(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] (::id handle) -> ::NSString*
+        return ::uObjC::UnoString([] (::id handle) -  ::NSString*
         {
             WKWebView* wv = handle;
             return wv.URL.absoluteString;
@@ -281,7 +281,7 @@ void WKWebViewHelpers::GoBack(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             WKWebView* wv = handle;
             [wv goBack];
@@ -296,7 +296,7 @@ void WKWebViewHelpers::GoForward(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             WKWebView* wv = handle;
             [wv goForward];
@@ -311,7 +311,7 @@ void WKWebViewHelpers::LoadHTML(::g::ObjC::Object* webview, uString* html, uStri
 {
     @autoreleasepool
     {
-        [] (::id webview, ::NSString* html, ::NSString* baseURL) -> void
+        [] (::id webview, ::NSString* html, ::NSString* baseURL) -  void
         {
             WKWebView* wv = webview;
             [wv loadHTMLString:html baseURL:[NSURL URLWithString:baseURL]];
@@ -326,7 +326,7 @@ void WKWebViewHelpers::LoadURL(::g::ObjC::Object* handle, uString* url)
 {
     @autoreleasepool
     {
-        [] (::id handle, ::NSString* url) -> void
+        [] (::id handle, ::NSString* url) -  void
         {
             WKWebView* wv = handle;
             id nsurl = [NSURL URLWithString:url];
@@ -343,7 +343,7 @@ void WKWebViewHelpers::Reload(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             WKWebView* wv = handle;
             [wv reload];
@@ -358,7 +358,7 @@ void WKWebViewHelpers::SetNavigationDelegate(::g::ObjC::Object* webViewHandle, :
 {
     @autoreleasepool
     {
-        [] (::id webViewHandle, ::id delegateHandle) -> void
+        [] (::id webViewHandle, ::id delegateHandle) -  void
         {
             [webViewHandle setNavigationDelegate:delegateHandle];
         } (::g::ObjC::Object::GetHandle(webViewHandle), ::g::ObjC::Object::GetHandle(delegateHandle));
@@ -372,7 +372,7 @@ void WKWebViewHelpers::StopLoading(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             WKWebView* wv = handle;
             [wv stopLoading];

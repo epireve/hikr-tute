@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__TemplateMatch;}}}
 namespace g{namespace Uno{namespace UX{struct Template;}}}
 
@@ -18,7 +18,7 @@ void Instantiator__TemplateMatch__Matches_fn(Instantiator__TemplateMatch* __this
 struct Instantiator__TemplateMatch
 {
     bool All;
-    uStrong< ::g::Uno::UX::Template*> Template;
+    uStrong< ::g::Uno::UX::Template*  Template;
 
     bool Matches(Instantiator__TemplateMatch b);
 };

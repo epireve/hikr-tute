@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTaskModule__ConstructorClosure;}}}
 
@@ -19,7 +19,7 @@ void BusyTaskModule__ConstructorClosure__New1_fn(::g::Fuse::Scripting::Context* 
 
 struct BusyTaskModule__ConstructorClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _c;
+    uStrong< ::g::Fuse::Scripting::Context*  _c;
     static bool _warning_;
     static bool& _warning() { return _warning_; }
 

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Double.h>
-#include <Uno.UX.Property-1.h>
+#include <Uno.Double.h 
+#include <Uno.UX.Property-1.h 
 namespace g{namespace Fuse{namespace Controls{struct Router_PrepareProgress_Property;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -24,7 +24,7 @@ void Router_PrepareProgress_Property__get_SupportsOriginSetter_fn(Router_Prepare
 
 struct Router_PrepareProgress_Property : ::g::Uno::UX::Property1
 {
-    uStrong< ::g::Fuse::Navigation::Router*> _obj;
+    uStrong< ::g::Fuse::Navigation::Router*  _obj;
 
     void ctor_3(::g::Fuse::Navigation::Router* obj);
     static Router_PrepareProgress_Property* New1(::g::Fuse::Navigation::Router* obj);

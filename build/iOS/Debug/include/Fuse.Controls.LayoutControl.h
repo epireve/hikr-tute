@@ -2,23 +2,23 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Control.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Control.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct LayoutControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct LayoutControlSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
@@ -53,8 +53,8 @@ void LayoutControl__SurfaceUnrooted_fn(LayoutControl* __this);
 
 struct LayoutControl : ::g::Fuse::Controls::Control
 {
-    uStrong< ::g::Fuse::Controls::LayoutControlSurface*> _surface;
-    uStrong< ::g::Fuse::Layouts::Layout*> _layout;
+    uStrong< ::g::Fuse::Controls::LayoutControlSurface*  _surface;
+    uStrong< ::g::Fuse::Layouts::Layout*  _layout;
 
     void ctor_5();
     void ISurfaceDrawableDraw(::g::Fuse::Drawing::Surface* surface);

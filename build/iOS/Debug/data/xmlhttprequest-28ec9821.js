@@ -86,7 +86,7 @@
 				if(state == HttpRequestState.Opened) return fuseXMLHttpRequest.OPENED;
 				if(state == HttpRequestState.HeadersReceived) return fuseXMLHttpRequest.HEADERS_RECEIVED;
 				if(state == HttpRequestState.Loading) return fuseXMLHttpRequest.LOADING;
-				if(state >= HttpRequestState.Done) return fuseXMLHttpRequest.DONE;
+				if(state  = HttpRequestState.Done) return fuseXMLHttpRequest.DONE;
 				return fuseXMLHttpRequest.UNSENT;
 			}
 		};
@@ -136,7 +136,7 @@
 
 				var cl = parseInt(self.getResponseHeader('Content-Length'));
 				contentLength = (cl === NaN) ? 0 : cl;
-				progressEvent = new ProgressEvent(0, contentLength, contentLength > 0);
+				progressEvent = new ProgressEvent(0, contentLength, contentLength   0);
 				dispatch.call(self, 'loadstart', progressEvent);
 			} else if (state === HttpRequestState.Loading || state === HttpRequestState.Done) {
 				dispatch.call(self, 'readystatechange');

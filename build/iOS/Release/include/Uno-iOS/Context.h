@@ -1,7 +1,7 @@
 #pragma once
 #ifdef __OBJC__
-#include <UIKit/UIKit.h>
-#include <OpenGLES/EAGL.h>
+#include <UIKit/UIKit.h 
+#include <OpenGLES/EAGL.h 
 
 @interface uContext : NSObject
 

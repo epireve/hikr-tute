@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Graphics.Visual.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Graphics.Visual.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{namespace Graphics{struct ControlVisual;}}}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 
@@ -22,7 +22,7 @@ namespace Fuse{
 namespace Controls{
 namespace Graphics{
 
-// public abstract class ControlVisual<T> :4
+// public abstract class ControlVisual<T  :4
 // {
 struct ControlVisual_type : ::g::Fuse::Visual_type
 {
@@ -40,14 +40,14 @@ void ControlVisual__OnUnrooted_fn(ControlVisual* __this);
 
 struct ControlVisual : ::g::Fuse::Controls::Graphics::Visual
 {
-    uTField _control() { return __type->Field(this, 67); }
+    uTField _control() { return __type- Field(this, 67); }
 
     void ctor_4();
-    void Attach() { (((ControlVisual_type*)__type)->fp_Attach)(this); }
-    template<class T>
+    void Attach() { (((ControlVisual_type*)__type)- fp_Attach)(this); }
+    template<class T 
     T Control() { T __retval; return ControlVisual__get_Control_fn(this, &__retval), __retval; }
-    void Detach() { (((ControlVisual_type*)__type)->fp_Detach)(this); }
-    template<class T>
+    void Detach() { (((ControlVisual_type*)__type)- fp_Detach)(this); }
+    template<class T 
     T FindControl() { T __retval; return ControlVisual__FindControl_fn(this, &__retval), __retval; }
 };
 // }

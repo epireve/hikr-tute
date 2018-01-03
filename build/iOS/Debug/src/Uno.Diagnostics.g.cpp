@@ -1,20 +1,20 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <time.h>
-#include <uBase/Time.h>
-#include <Uno.Bool.h>
-#include <Uno.Delegate.h>
-#include <Uno.Diagnostics.AssertionHandler.h>
-#include <Uno.Diagnostics.Clock.h>
-#include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.DebugMessageType.h>
-#include <Uno.Diagnostics.LogHandler.h>
-#include <Uno.Double.h>
-#include <Uno.Int.h>
-#include <Uno.Long.h>
-#include <Uno.Object.h>
-#include <Uno.String.h>
+#include <time.h 
+#include <uBase/Time.h 
+#include <Uno.Bool.h 
+#include <Uno.Delegate.h 
+#include <Uno.Diagnostics.AssertionHandler.h 
+#include <Uno.Diagnostics.Clock.h 
+#include <Uno.Diagnostics.Debug.h 
+#include <Uno.Diagnostics.DebugMessageType.h 
+#include <Uno.Diagnostics.LogHandler.h 
+#include <Uno.Double.h 
+#include <Uno.Int.h 
+#include <Uno.Long.h 
+#include <Uno.Object.h 
+#include <Uno.String.h 
 static uString* STRINGS[5];
 
 namespace g{
@@ -27,16 +27,16 @@ namespace Diagnostics{
 // public delegate void AssertionHandler(bool value, string expression, string filename, int line, object[] operands) :20
 uDelegateType* AssertionHandler_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Diagnostics.AssertionHandler", 5, 0);
-    type->SetSignature(uVoid_typeof(),
+    type- SetSignature(uVoid_typeof(),
         ::g::Uno::Bool_typeof(),
         ::g::Uno::String_typeof(),
         ::g::Uno::String_typeof(),
         ::g::Uno::Int_typeof(),
-        uObject_typeof()->Array());
+        uObject_typeof()- Array());
     return type;
 }
 
@@ -51,13 +51,13 @@ static void Clock_build(uType* type)
 
 uClassType* Clock_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Diagnostics.Clock", options);
-    type->fp_build_ = Clock_build;
+    type- fp_build_ = Clock_build;
     return type;
 }
 
@@ -141,7 +141,7 @@ static void Debug_build(uType* type)
     ::STRINGS[2] = uString::Const("' in ");
     ::STRINGS[3] = uString::Const("(");
     ::STRINGS[4] = uString::Const(")");
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Diagnostics::AssertionHandler_typeof(), (uintptr_t)&Debug::_assertionHandler_, uFieldFlagsStatic,
         ::g::Uno::Diagnostics::LogHandler_typeof(), (uintptr_t)&Debug::_logHandler_, uFieldFlagsStatic,
         ::g::Uno::String_typeof(), (uintptr_t)&Debug::_indentStr_, uFieldFlagsStatic);
@@ -149,15 +149,15 @@ static void Debug_build(uType* type)
 
 uClassType* Debug_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 3;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Diagnostics.Debug", options);
-    type->fp_build_ = Debug_build;
-    type->fp_cctor_ = Debug__cctor__fn;
+    type- fp_build_ = Debug_build;
+    type- fp_cctor_ = Debug__cctor__fn;
     return type;
 }
 
@@ -191,25 +191,25 @@ void Debug__Log5_fn(uString* message, int* type, uString* filename, int* line)
     Debug::Log5(message, *type, filename, *line);
 }
 
-uSStrong<uDelegate*> Debug::_assertionHandler_;
-uSStrong<uDelegate*> Debug::_logHandler_;
-uSStrong<uString*> Debug::_indentStr_;
+uSStrong<uDelegate*  Debug::_assertionHandler_;
+uSStrong<uDelegate*  Debug::_logHandler_;
+uSStrong<uString*  Debug::_indentStr_;
 
 // public static void Assert(bool value, string expression, string filename, int line, object[] operands) [static] :38
 void Debug::Assert(bool value, uString* expression, uString* filename, int line, uArray* operands)
 {
     if (::g::Uno::Delegate::op_Inequality(Debug::_assertionHandler_, NULL))
-        uPtr(Debug::_assertionHandler_)->Invoke(5, uCRef(value), expression, filename, uCRef<int>(line), operands);
+        uPtr(Debug::_assertionHandler_)- Invoke(5, uCRef(value), expression, filename, uCRef<int (line), operands);
 
     if (!value)
-        Debug::EmitLog(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[1/*"Assertion F...*/], expression), ::STRINGS[2/*"' in "*/]), filename), ::STRINGS[3/*"("*/]), uBox<int>(::g::Uno::Int_typeof(), line)), ::STRINGS[4/*")"*/]), 3);
+        Debug::EmitLog(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[1/*"Assertion F...*/], expression), ::STRINGS[2/*"' in "*/]), filename), ::STRINGS[3/*"("*/]), uBox<int (::g::Uno::Int_typeof(), line)), ::STRINGS[4/*")"*/]), 3);
 }
 
 // private static void EmitLog(string message, Uno.Diagnostics.DebugMessageType type) [static] :100
 void Debug::EmitLog(uString* message, int type)
 {
     if (::g::Uno::Delegate::op_Inequality(Debug::_logHandler_, NULL))
-        uPtr(Debug::_logHandler_)->Invoke(2, (uString*)::g::Uno::String::op_Addition2(Debug::_indentStr_, message), uCRef<int>(type));
+        uPtr(Debug::_logHandler_)- Invoke(2, (uString*)::g::Uno::String::op_Addition2(Debug::_indentStr_, message), uCRef<int (type));
 
     const char* cstr = uAllocCStr(message);
     uLog(type, "%s", cstr);
@@ -241,11 +241,11 @@ void Debug::Log5(uString* message, int type, uString* filename, int line)
 // public enum DebugMessageType :7
 uEnumType* DebugMessageType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Uno.Diagnostics.DebugMessageType", ::g::Uno::Int_typeof(), 6);
-    type->SetLiterals(
+    type- SetLiterals(
         "Debug", 0LL,
         "Information", 1LL,
         "Warning", 2LL,
@@ -261,11 +261,11 @@ uEnumType* DebugMessageType_typeof()
 // public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :23
 uDelegateType* LogHandler_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Diagnostics.LogHandler", 2, 0);
-    type->SetSignature(uVoid_typeof(),
+    type- SetSignature(uVoid_typeof(),
         ::g::Uno::String_typeof(),
         ::g::Uno::Diagnostics::DebugMessageType_typeof());
     return type;

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Internal{namespace Drawing{struct SolidRectangle;}}}}
@@ -26,15 +26,15 @@ void SolidRectangle__New1_fn(SolidRectangle** __retval);
 
 struct SolidRectangle : uObject
 {
-    static uSStrong<SolidRectangle*> Impl_;
-    static uSStrong<SolidRectangle*>& Impl() { return Impl_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_77a0ae88_7_2_1;
+    static uSStrong<SolidRectangle*  Impl_;
+    static uSStrong<SolidRectangle* & Impl() { return Impl_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawElement_VertexData_77a0ae88_7_2_1;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_2;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_3;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_4;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_c5598fc3_7_2_1;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_66ccbe7e_7_2_1;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_b4859fb9_7_2_1;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawElement_VertexData_c5598fc3_7_2_1;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawElement_VertexData_66ccbe7e_7_2_1;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawElement_VertexData_b4859fb9_7_2_1;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_77a0ae88;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_c5598fc3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_66ccbe7e;

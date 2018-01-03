@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct NativeFocus;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -23,8 +23,8 @@ void NativeFocus__RemoveListener_fn(::g::ObjC::Object* handle);
 
 struct NativeFocus : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _listeners_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _listeners() { return _listeners_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _listeners_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _listeners() { return _listeners_; }
 
     static void AddListener(::g::ObjC::Object* handle, uObject* listener);
     static void RaiseFocusGained(::g::ObjC::Object* handle);

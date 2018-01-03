@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
+#include <Uno.UX.Selector.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct RaiseUserEvent;}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct UserEventArg;}}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -26,9 +26,9 @@ void RaiseUserEvent__Perform_fn(RaiseUserEvent* __this, ::g::Fuse::Node* target)
 struct RaiseUserEvent : ::g::Fuse::Triggers::Actions::TriggerAction
 {
     ::g::Uno::UX::Selector _eventName;
-    uStrong< ::g::Fuse::Node*> _eventTarget;
-    uStrong< ::g::Fuse::UserEvent*> _event;
-    uStrong<uObject*> _args;
+    uStrong< ::g::Fuse::Node*  _eventTarget;
+    uStrong< ::g::Fuse::UserEvent*  _event;
+    uStrong<uObject*  _args;
 
     ::g::Uno::Collections::Dictionary* ConvertArgs();
     ::g::Uno::UX::Selector EventName();

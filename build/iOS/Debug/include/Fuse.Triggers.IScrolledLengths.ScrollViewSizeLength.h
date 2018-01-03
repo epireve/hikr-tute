@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.IScrolledLength.h>
-#include <Uno.Object.h>
+#include <Fuse.Triggers.IScrolledLength.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Fuse{namespace Triggers{struct IScrolledLengths__ScrollViewSizeLength;}}}
 namespace g{namespace Uno{struct Float2;}}

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Computer-1.h>
-#include <Uno.UX.Size.h>
+#include <Fuse.Computer-1.h 
+#include <Uno.UX.Size.h 
 namespace g{namespace Fuse{struct SizeComputer;}}
 
 namespace g{

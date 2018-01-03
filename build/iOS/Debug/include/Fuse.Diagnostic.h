@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Diagnostic;}}
 namespace g{namespace Uno{struct Exception;}}
 
@@ -20,12 +20,12 @@ void Diagnostic__get_UnoType_fn(Diagnostic* __this, int* __retval);
 struct Diagnostic : uObject
 {
     int Type;
-    uStrong<uString*> Message;
-    uStrong<uObject*> SourceObject;
-    uStrong<uString*> FilePath;
+    uStrong<uString*  Message;
+    uStrong<uObject*  SourceObject;
+    uStrong<uString*  FilePath;
     int LineNumber;
-    uStrong<uString*> MemberName;
-    uStrong< ::g::Uno::Exception*> Exception;
+    uStrong<uString*  MemberName;
+    uStrong< ::g::Uno::Exception*  Exception;
     bool IsTemporalWarning;
 
     void ctor_(int type, uString* message, uObject* sourceObject, uString* filePath, int lineNumber, uString* memberName, ::g::Uno::Exception* exception);

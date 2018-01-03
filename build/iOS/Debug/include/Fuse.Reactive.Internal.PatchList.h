@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace Internal{struct PatchItem;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace Internal{struct PatchList;}}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -20,8 +20,8 @@ void PatchList__PatchRemoveAll_fn(uType* __type, uObject* from, uObject* to, ::g
 
 struct PatchList : uObject
 {
-    template<class T>
-    static ::g::Uno::Collections::List* Patch(uType* __type, uObject* from, uObject* to, int algo, T emptyKey) { ::g::Uno::Collections::List* __retval; return PatchList__Patch_fn(__type, from, to, &algo, uConstrain(__type->U(0), emptyKey), &__retval), __retval; }
+    template<class T 
+    static ::g::Uno::Collections::List* Patch(uType* __type, uObject* from, uObject* to, int algo, T emptyKey) { ::g::Uno::Collections::List* __retval; return PatchList__Patch_fn(__type, from, to, &algo, uConstrain(__type- U(0), emptyKey), &__retval), __retval; }
     static ::g::Uno::Collections::List* PatchRemoveAll(uType* __type, uObject* from, uObject* to);
 };
 // }

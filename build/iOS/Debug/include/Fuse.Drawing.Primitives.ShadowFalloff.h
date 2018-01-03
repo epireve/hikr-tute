@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.Primitives.Falloff.h>
+#include <Fuse.Drawing.Primitives.Falloff.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct ShadowFalloff;}}}}
 
 namespace g{

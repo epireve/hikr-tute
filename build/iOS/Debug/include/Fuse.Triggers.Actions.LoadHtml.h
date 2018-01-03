@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.ISourceReceiver.h>
-#include <Fuse.Triggers.Actions.WebViewNavAction.h>
+#include <Fuse.Controls.ISourceReceiver.h 
+#include <Fuse.Triggers.Actions.WebViewNavAction.h 
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct LoadHtml;}}}}
 
@@ -28,8 +28,8 @@ void LoadHtml__set_Source_fn(LoadHtml* __this, uString* value);
 
 struct LoadHtml : ::g::Fuse::Triggers::Actions::WebViewNavAction
 {
-    uStrong<uString*> _BaseUrl;
-    uStrong<uString*> _Source;
+    uStrong<uString*  _BaseUrl;
+    uStrong<uString*  _Source;
 
     uString* BaseUrl();
     void BaseUrl(uString* value);

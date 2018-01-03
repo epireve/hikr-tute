@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSource.h 
 namespace g{namespace Fuse{namespace Resources{struct HttpImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
 namespace g{namespace Fuse{namespace Resources{struct ProxyImageSource;}}}
@@ -33,7 +33,7 @@ void HttpImageSource__set_Url_fn(HttpImageSource* __this, uString* value);
 
 struct HttpImageSource : ::g::Fuse::Resources::ImageSource
 {
-    uStrong< ::g::Fuse::Resources::ProxyImageSource*> _proxy;
+    uStrong< ::g::Fuse::Resources::ProxyImageSource*  _proxy;
 
     void DefaultPolicy(::g::Fuse::Resources::MemoryPolicy* value);
     float Density();

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IHide_typeof();
 struct IHide
 {
     void(*fp_Hide)(uObject*);
-    static void Hide(const uInterface& __this) { __this.VTable<IHide>()->fp_Hide(__this); }
+    static void Hide(const uInterface& __this) { __this.VTable<IHide ()- fp_Hide(__this); }
 };
 // }
 

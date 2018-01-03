@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Drawing{struct DrawObjectWatcher__Item;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
 
@@ -22,7 +22,7 @@ struct DrawObjectWatcher__Item : uObject
     bool Used;
     bool Listening;
     bool Dirty;
-    uStrong< ::g::Uno::UX::PropertyObject*> DrawObject;
+    uStrong< ::g::Uno::UX::PropertyObject*  DrawObject;
 
     void ctor_();
     static DrawObjectWatcher__Item* New1();

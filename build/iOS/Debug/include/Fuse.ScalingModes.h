@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct ScalingModes;}}
 
 namespace g{
@@ -14,8 +14,8 @@ uClassType* ScalingModes_typeof();
 
 struct ScalingModes : uObject
 {
-    static uSStrong<uObject*> Identity_;
-    static uSStrong<uObject*>& Identity() { return Identity_; }
+    static uSStrong<uObject*  Identity_;
+    static uSStrong<uObject* & Identity() { return Identity_; }
 };
 // }
 

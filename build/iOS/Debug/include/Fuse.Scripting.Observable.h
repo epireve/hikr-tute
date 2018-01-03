@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Fuse.Reactive.IObservable.h>
-#include <Fuse.Reactive.IObservableArray.h>
-#include <Fuse.Scripting.IRaw.h>
-#include <Fuse.Scripting.ListMirror.h>
+#include <Fuse.IArray.h 
+#include <Fuse.Reactive.IObservable.h 
+#include <Fuse.Reactive.IObservableArray.h 
+#include <Fuse.Scripting.IRaw.h 
+#include <Fuse.Scripting.ListMirror.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -47,12 +47,12 @@ void Observable__UnsubscribeValues_fn(Observable* __this);
 
 struct Observable : ::g::Fuse::Scripting::ListMirror
 {
-    uStrong< ::g::Uno::Collections::List*> _values;
-    uStrong< ::g::Uno::Collections::List*> _observers;
+    uStrong< ::g::Uno::Collections::List*  _values;
+    uStrong< ::g::Uno::Collections::List*  _observers;
     bool _usingObservers;
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    uStrong< ::g::Fuse::Scripting::Object*> _observable;
-    uStrong< ::g::Fuse::Scripting::Function*> _observeChange;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    uStrong< ::g::Fuse::Scripting::Object*  _observable;
+    uStrong< ::g::Fuse::Scripting::Function*  _observeChange;
     bool _isUnsubscribed;
 
     void ctor_3(::g::Fuse::Scripting::ThreadWorker* worker, ::g::Fuse::Scripting::Object* obj, bool suppressCallback);

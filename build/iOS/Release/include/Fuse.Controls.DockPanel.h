@@ -32,6 +32,7 @@ namespace Controls{
 // {
 ::g::Fuse::Controls::Panel_type* DockPanel_typeof();
 void DockPanel__ctor_7_fn(DockPanel* __this);
+void DockPanel__New4_fn(DockPanel** __retval);
 void DockPanel__SetDock_fn(::g::Fuse::Elements::Element* elm, int* dock);
 
 struct DockPanel : ::g::Fuse::Controls::Panel
@@ -39,6 +40,7 @@ struct DockPanel : ::g::Fuse::Controls::Panel
     uStrong< ::g::Fuse::Layouts::DockLayout*> _dockLayout;
 
     void ctor_7();
+    static DockPanel* New4();
     static void SetDock(::g::Fuse::Elements::Element* elm, int dock);
 };
 // }

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Resources{struct ResourceRegistry;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -20,8 +20,8 @@ void ResourceRegistry__RemoveResourceChangedHandler_fn(uString* key, uDelegate* 
 
 struct ResourceRegistry : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _handlers_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _handlers() { return _handlers_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _handlers_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _handlers() { return _handlers_; }
 
     static void AddResourceChangedHandler(uString* key, uDelegate* handler);
     static void NotifyResourceChanged(uString* key);

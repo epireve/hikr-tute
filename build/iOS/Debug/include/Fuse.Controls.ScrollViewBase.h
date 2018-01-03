@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.ContentControl.h>
-#include <Fuse.Controls.Native.IScrollViewHost.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.ContentControl.h 
+#include <Fuse.Controls.Native.IScrollViewHost.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{struct Scroller;}}}
@@ -107,39 +107,39 @@ struct ScrollViewBase : ::g::Fuse::Controls::ContentControl
 {
     int _layoutMode;
     bool _hasPrevArrange;
-    uStrong< ::g::Fuse::Elements::Element*> _placeAnchor;
+    uStrong< ::g::Fuse::Elements::Element*  _placeAnchor;
     ::g::Uno::Float2 _oldMinScroll;
     ::g::Uno::Float2 _oldMaxScroll;
     ::g::Uno::Float2 _placePosition;
     ::g::Uno::Float2 _oldScrollPosition;
     ::g::Uno::Float2 _oldActualSize;
     static ::g::Uno::UX::Selector SizingChanged_;
-    static ::g::Uno::UX::Selector& SizingChanged() { return ScrollViewBase_typeof()->Init(), SizingChanged_; }
+    static ::g::Uno::UX::Selector& SizingChanged() { return ScrollViewBase_typeof()- Init(), SizingChanged_; }
     int _contentAlignment;
     ::g::Uno::Float2 _contentMarginSize;
     static ::g::Uno::UX::Selector UserScrollName_;
-    static ::g::Uno::UX::Selector& UserScrollName() { return ScrollViewBase_typeof()->Init(), UserScrollName_; }
+    static ::g::Uno::UX::Selector& UserScrollName() { return ScrollViewBase_typeof()- Init(), UserScrollName_; }
     bool _userScroll;
     static ::g::Uno::UX::Selector GesturePriorityName_;
-    static ::g::Uno::UX::Selector& GesturePriorityName() { return ScrollViewBase_typeof()->Init(), GesturePriorityName_; }
+    static ::g::Uno::UX::Selector& GesturePriorityName() { return ScrollViewBase_typeof()- Init(), GesturePriorityName_; }
     int _gesturePriority;
     bool _snapMinTransform;
     bool _snapMaxTransform;
-    uStrong< ::g::Fuse::Visual*> _currentContent;
-    uStrong< ::g::Fuse::Gestures::Scroller*> _scroller;
-    uStrong< ::g::Fuse::Motion::MotionConfig*> _motion;
+    uStrong< ::g::Fuse::Visual*  _currentContent;
+    uStrong< ::g::Fuse::Gestures::Scroller*  _scroller;
+    uStrong< ::g::Fuse::Motion::MotionConfig*  _motion;
     static ::g::Uno::UX::Selector _keepFocusInViewName_;
-    static ::g::Uno::UX::Selector& _keepFocusInViewName() { return ScrollViewBase_typeof()->Init(), _keepFocusInViewName_; }
+    static ::g::Uno::UX::Selector& _keepFocusInViewName() { return ScrollViewBase_typeof()- Init(), _keepFocusInViewName_; }
     bool _keepFocusInView;
     static ::g::Uno::UX::Selector _allowedScrollDirectionsName_;
-    static ::g::Uno::UX::Selector& _allowedScrollDirectionsName() { return ScrollViewBase_typeof()->Init(), _allowedScrollDirectionsName_; }
+    static ::g::Uno::UX::Selector& _allowedScrollDirectionsName() { return ScrollViewBase_typeof()- Init(), _allowedScrollDirectionsName_; }
     int _allowedScrollDirections;
     ::g::Uno::Float2 _scrollPosition;
-    uStrong< ::g::Fuse::Translation*> _scrollTranslation;
+    uStrong< ::g::Fuse::Translation*  _scrollTranslation;
     ::g::Uno::Float2 _previousRelative;
     static ::g::Uno::UX::Selector ScrollPositionName_;
-    static ::g::Uno::UX::Selector& ScrollPositionName() { return ScrollViewBase_typeof()->Init(), ScrollPositionName_; }
-    uStrong<uDelegate*> ScrollPositionChanged1;
+    static ::g::Uno::UX::Selector& ScrollPositionName() { return ScrollViewBase_typeof()- Init(), ScrollPositionName_; }
+    uStrong<uDelegate*  ScrollPositionChanged1;
 
     void ctor_6();
     int AllowedScrollDirections();

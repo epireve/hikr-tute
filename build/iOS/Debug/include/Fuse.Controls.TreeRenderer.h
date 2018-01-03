@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.ITreeRenderer.h>
-#include <Uno.Object.h>
+#include <Fuse.Elements.ITreeRenderer.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{namespace Controls{struct TreeRenderer;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
@@ -46,9 +46,9 @@ void TreeRenderer__New1_fn(uDelegate* setRoot, uDelegate* clearRoot, TreeRendere
 
 struct TreeRenderer : uObject
 {
-    uStrong<uDelegate*> _setRoot;
-    uStrong<uDelegate*> _clearRoot;
-    uStrong< ::g::Uno::Collections::Dictionary*> _elements;
+    uStrong<uDelegate*  _setRoot;
+    uStrong<uDelegate*  _clearRoot;
+    uStrong< ::g::Uno::Collections::Dictionary*  _elements;
 
     void ctor_(uDelegate* setRoot, uDelegate* clearRoot);
     uObject* InstantiateTemplate(::g::Fuse::Elements::Element* e);

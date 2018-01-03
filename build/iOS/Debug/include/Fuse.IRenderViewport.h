@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ICommonViewport.h>
-#include <Uno.Object.h>
+#include <Fuse.ICommonViewport.h 
+#include <Uno.Object.h 
 namespace g{namespace Uno{struct Float4x4;}}
 
 namespace g{
@@ -21,12 +21,12 @@ struct IRenderViewport
 
 }} // ::g::Fuse
 
-#include <Uno.Float4x4.h>
+#include <Uno.Float4x4.h 
 
 namespace g{
 namespace Fuse{
 
-inline ::g::Uno::Float4x4 IRenderViewport::ViewProjectionTransform(const uInterface& __this) { ::g::Uno::Float4x4 __retval; return __this.VTable<IRenderViewport>()->fp_get_ViewProjectionTransform(__this, &__retval), __retval; }
+inline ::g::Uno::Float4x4 IRenderViewport::ViewProjectionTransform(const uInterface& __this) { ::g::Uno::Float4x4 __retval; return __this.VTable<IRenderViewport ()- fp_get_ViewProjectionTransform(__this, &__retval), __retval; }
 // }
 
 }} // ::g::Fuse

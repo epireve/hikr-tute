@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Fuse{namespace Triggers{struct ScrollRegion;}}}
 namespace g{namespace Uno{struct Float2;}}
@@ -21,7 +21,7 @@ struct ScrollRegion : uObject
 {
     int To;
     float Within;
-    uStrong<uObject*> RelativeTo;
+    uStrong<uObject*  RelativeTo;
 
     ::g::Uno::Float2 CalcWithin(::g::Fuse::Controls::ScrollViewBase* scrollable);
     bool IsInZone(::g::Fuse::Controls::ScrollViewBase* scrollable);

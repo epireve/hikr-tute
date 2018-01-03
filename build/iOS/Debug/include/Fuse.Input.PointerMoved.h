@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.PointerMovedArgs.h>
-#include <Fuse.Input.PointerMovedHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Input.PointerMovedArgs.h 
+#include <Fuse.Input.PointerMovedHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Input{struct PointerMoved;}}}
 
 namespace g{

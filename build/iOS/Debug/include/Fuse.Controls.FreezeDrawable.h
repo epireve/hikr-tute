@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Controls{struct FreezeDrawable;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -27,9 +27,9 @@ void FreezeDrawable__New1_fn(FreezeDrawable** __retval);
 
 struct FreezeDrawable : uObject
 {
-    static uSStrong<FreezeDrawable*> Singleton_;
-    static uSStrong<FreezeDrawable*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_VertexData_646c65c3_7_2_1;
+    static uSStrong<FreezeDrawable*  Singleton_;
+    static uSStrong<FreezeDrawable* & Singleton() { return Singleton_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_VertexData_646c65c3_7_2_1;
     ::g::Uno::Float4x4 Draw_LocalTransform_646c65c3_4_9_2;
     ::g::Uno::Float4x4 Draw_LocalTransform_646c65c3_4_9_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_646c65c3;

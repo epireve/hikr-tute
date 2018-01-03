@@ -280,7 +280,7 @@ self = this;
 
   function normalizeMethod(method) {
     var upcased = method.toUpperCase()
-    return (methods.indexOf(upcased) > -1) ? upcased : method
+    return (methods.indexOf(upcased)   -1) ? upcased : method
   }
 
   function Request(input, options) {
@@ -357,7 +357,7 @@ self = this;
 
     this.type = 'default'
     this.status = options.status
-    this.ok = this.status >= 200 && this.status < 300
+    this.ok = this.status  = 200 && this.status < 300
     this.statusText = options.statusText
     this.headers = options.headers instanceof Headers ? options.headers : new Headers(options.headers)
     this.url = options.url || ''

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Operation;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
@@ -27,14 +27,14 @@ void Observable__Operation__Unsubscribe_fn(Observable__Operation* __this);
 
 struct Observable__Operation : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Observable*> _observable;
+    uStrong< ::g::Fuse::Scripting::Observable*  _observable;
     bool _isPerformed;
 
     void ctor_(::g::Fuse::Scripting::Observable* observable);
     ::g::Fuse::Scripting::Observable* Observable();
-    void OnPerform(uObject* sub) { (((Observable__Operation_type*)__type)->fp_OnPerform)(this, sub); }
+    void OnPerform(uObject* sub) { (((Observable__Operation_type*)__type)- fp_OnPerform)(this, sub); }
     void Perform();
-    void Unsubscribe() { (((Observable__Operation_type*)__type)->fp_Unsubscribe)(this); }
+    void Unsubscribe() { (((Observable__Operation_type*)__type)- fp_Unsubscribe)(this); }
     static void Unsubscribe(Observable__Operation* __this) { Observable__Operation__Unsubscribe_fn(__this); }
 };
 // }

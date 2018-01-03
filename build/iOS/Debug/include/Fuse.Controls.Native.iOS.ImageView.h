@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.IImageView.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.Float4.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.IImageView.h 
+#include <Fuse.Controls.Native.iOS.LeafView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.Float4.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct ImageView;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ImageHandle;}}}}
 namespace g{namespace Fuse{namespace Resources{struct FileImageSource;}}}
@@ -62,11 +62,11 @@ void ImageView__UpdateImageTransform_fn(ImageView* __this, float* density, ::g::
 
 struct ImageView : ::g::Fuse::Controls::Native::iOS::LeafView
 {
-    uStrong< ::g::Fuse::Resources::ImageSource*> _imageSource;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _imageSource;
     ::g::Uno::Float4 _tintColor;
-    uStrong< ::g::ObjC::Object*> _uiImageView;
-    uStrong< ::g::ObjC::Object*> _uiImageHandle;
-    uStrong<uObject*> _imageHandle;
+    uStrong< ::g::ObjC::Object*  _uiImageView;
+    uStrong< ::g::ObjC::Object*  _uiImageHandle;
+    uStrong<uObject*  _imageHandle;
 
     void ctor_5();
     ::g::Uno::Float2 GetImageSize();

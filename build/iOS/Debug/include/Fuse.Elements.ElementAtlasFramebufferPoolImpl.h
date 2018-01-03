@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ISoftDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Resources.ISoftDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPoolEntry;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPoolImpl;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedList;}}}
@@ -34,7 +34,7 @@ void ElementAtlasFramebufferPoolImpl__UpdateUsage_fn(ElementAtlasFramebufferPool
 
 struct ElementAtlasFramebufferPoolImpl : uObject
 {
-    uStrong< ::g::Uno::Collections::LinkedList*> _framebufferPool;
+    uStrong< ::g::Uno::Collections::LinkedList*  _framebufferPool;
 
     void ctor_();
     ::g::Uno::Collections::LinkedListNode* AddEntry();

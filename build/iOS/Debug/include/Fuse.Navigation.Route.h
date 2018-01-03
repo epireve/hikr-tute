@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct Route;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPage;}}}
 
@@ -19,10 +19,10 @@ void Route__New1_fn(uString* path, uString* parameter, Route* subRoute, Route** 
 
 struct Route : uObject
 {
-    uStrong<uString*> Path;
-    uStrong<uString*> Parameter;
-    uStrong<Route*> SubRoute;
-    uStrong< ::g::Fuse::Navigation::RouterPage*> RouterPage;
+    uStrong<uString*  Path;
+    uStrong<uString*  Parameter;
+    uStrong<Route*  SubRoute;
+    uStrong< ::g::Fuse::Navigation::RouterPage*  RouterPage;
 
     void ctor_(uString* path, uString* parameter, Route* subRoute);
     int Length();

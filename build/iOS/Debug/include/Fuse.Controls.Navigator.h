@@ -2,30 +2,30 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.NavigationControl.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.Internal.MiniList-1.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.IRouterOutlet.h>
-#include <Fuse.Node.h>
-#include <Fuse.Node.ISubtreeDataProvider.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.NavigationControl.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.Internal.MiniList-1.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Navigation.IRouterOutlet.h 
+#include <Fuse.Node.h 
+#include <Fuse.Node.ISubtreeDataProvider.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct NavigationControl__ControlPageData;}}}
 namespace g{namespace Fuse{namespace Controls{struct Navigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct Navigator__DeferSwitch;}}}
@@ -119,30 +119,30 @@ void Navigator__UpdateNavigationState_fn(Navigator* __this);
 struct Navigator : ::g::Fuse::Controls::NavigationControl
 {
     int _swipeBack;
-    uStrong< ::g::Fuse::Controls::NavigatorSwipe*> _navigatorSwipeBack;
-    uStrong< ::g::Fuse::Navigation::Router*> _router;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _propSwipeBack_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _propSwipeBack() { return _propSwipeBack_; }
+    uStrong< ::g::Fuse::Controls::NavigatorSwipe*  _navigatorSwipeBack;
+    uStrong< ::g::Fuse::Navigation::Router*  _router;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _propSwipeBack_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _propSwipeBack() { return _propSwipeBack_; }
     int _gotoState;
     ::g::Fuse::Internal::MiniList _activeTransitions;
-    uStrong< ::g::Uno::Collections::Dictionary*> _pathCache;
+    uStrong< ::g::Uno::Collections::Dictionary*  _pathCache;
     bool _prepareBack;
-    uStrong<Navigator__NavPage*> _current;
-    uStrong<Navigator__NavPage*> _prepared;
-    uStrong< ::g::Fuse::Node*> _listenBusy;
+    uStrong<Navigator__NavPage*  _current;
+    uStrong<Navigator__NavPage*  _prepared;
+    uStrong< ::g::Fuse::Node*  _listenBusy;
     double _listenStart;
     bool _listenTimeout;
     int _deferPageSwitch;
     float _deferPageSwitchTimeout;
-    uStrong<Navigator__DeferSwitch*> _deferred;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _propReuse_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _propReuse() { return _propReuse_; }
+    uStrong<Navigator__DeferSwitch*  _deferred;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _propReuse_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _propReuse() { return _propReuse_; }
     int _reuse;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _propRemove_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _propRemove() { return _propRemove_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _propRemove_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _propRemove() { return _propRemove_; }
     int _remove;
-    uStrong<uString*> _DefaultPath;
-    uStrong<uDelegate*> Switched1;
+    uStrong<uString*  _DefaultPath;
+    uStrong<uDelegate*  Switched1;
 
     void ctor_8();
     void AddToCache(Navigator__NavPage* page, ::g::Fuse::Visual* target);

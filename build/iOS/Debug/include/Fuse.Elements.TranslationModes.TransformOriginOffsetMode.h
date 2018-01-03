@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.TranslationModes.OffsetMode.h>
-#include <Fuse.ITransformMode.h>
-#include <Fuse.ITranslationMode.h>
+#include <Fuse.Elements.TranslationModes.OffsetMode.h 
+#include <Fuse.ITransformMode.h 
+#include <Fuse.ITranslationMode.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct TranslationModes__TransformOriginOffsetMode;}}}
 namespace g{namespace Uno{struct Float3;}}

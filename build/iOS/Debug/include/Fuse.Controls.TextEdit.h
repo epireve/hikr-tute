@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.TextControl.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.IValue-1.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.String.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.TextControl.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Triggers.IValue-1.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.String.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct TextEdit;}}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
@@ -108,7 +108,7 @@ struct TextEdit : ::g::Fuse::Controls::TextControl
     static ::g::Uno::UX::Selector& PlaceholderTextPropertyName() { return PlaceholderTextPropertyName_; }
     static ::g::Uno::UX::Selector PlaceholderColorPropertyName_;
     static ::g::Uno::UX::Selector& PlaceholderColorPropertyName() { return PlaceholderColorPropertyName_; }
-    uStrong<uDelegate*> ActionTriggered1;
+    uStrong<uDelegate*  ActionTriggered1;
 
     void ctor_7(bool multiline);
     int ActionStyle();
@@ -128,16 +128,16 @@ struct TextEdit : ::g::Fuse::Controls::TextControl
     bool IsReadOnly();
     void IsReadOnly(bool value);
     bool OnAction(int type);
-    void OnActionStyleChanged() { (((TextEdit_type*)__type)->fp_OnActionStyleChanged)(this); }
-    void OnAutoCapitalizationHintChanged() { (((TextEdit_type*)__type)->fp_OnAutoCapitalizationHintChanged)(this); }
-    void OnAutoCorrectHintChanged() { (((TextEdit_type*)__type)->fp_OnAutoCorrectHintChanged)(this); }
-    void OnCaretColorChanged() { (((TextEdit_type*)__type)->fp_OnCaretColorChanged)(this); }
-    void OnInputHintChanged() { (((TextEdit_type*)__type)->fp_OnInputHintChanged)(this); }
-    void OnIsPasswordChanged() { (((TextEdit_type*)__type)->fp_OnIsPasswordChanged)(this); }
-    void OnIsReadOnlyChanged() { (((TextEdit_type*)__type)->fp_OnIsReadOnlyChanged)(this); }
-    void OnPlaceholderColorChanged() { (((TextEdit_type*)__type)->fp_OnPlaceholderColorChanged)(this); }
-    void OnPlaceholderTextChanged() { (((TextEdit_type*)__type)->fp_OnPlaceholderTextChanged)(this); }
-    void OnSelectionColorChanged() { (((TextEdit_type*)__type)->fp_OnSelectionColorChanged)(this); }
+    void OnActionStyleChanged() { (((TextEdit_type*)__type)- fp_OnActionStyleChanged)(this); }
+    void OnAutoCapitalizationHintChanged() { (((TextEdit_type*)__type)- fp_OnAutoCapitalizationHintChanged)(this); }
+    void OnAutoCorrectHintChanged() { (((TextEdit_type*)__type)- fp_OnAutoCorrectHintChanged)(this); }
+    void OnCaretColorChanged() { (((TextEdit_type*)__type)- fp_OnCaretColorChanged)(this); }
+    void OnInputHintChanged() { (((TextEdit_type*)__type)- fp_OnInputHintChanged)(this); }
+    void OnIsPasswordChanged() { (((TextEdit_type*)__type)- fp_OnIsPasswordChanged)(this); }
+    void OnIsReadOnlyChanged() { (((TextEdit_type*)__type)- fp_OnIsReadOnlyChanged)(this); }
+    void OnPlaceholderColorChanged() { (((TextEdit_type*)__type)- fp_OnPlaceholderColorChanged)(this); }
+    void OnPlaceholderTextChanged() { (((TextEdit_type*)__type)- fp_OnPlaceholderTextChanged)(this); }
+    void OnSelectionColorChanged() { (((TextEdit_type*)__type)- fp_OnSelectionColorChanged)(this); }
     ::g::Uno::Float4 PlaceholderColor();
     void PlaceholderColor(::g::Uno::Float4 value);
     uString* PlaceholderText();

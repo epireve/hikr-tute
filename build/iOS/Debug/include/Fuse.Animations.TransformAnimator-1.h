@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimator.h>
+#include <Fuse.Animations.TrackAnimator.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct TransformAnimator;}}}
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public abstract class TransformAnimator<TransformType> :25
+// public abstract class TransformAnimator<TransformType  :25
 // {
 struct TransformAnimator_type : ::g::Fuse::Animations::Animator_type
 {
@@ -38,8 +38,8 @@ void TransformAnimator__set_Y_fn(TransformAnimator* __this, float* value);
 struct TransformAnimator : ::g::Fuse::Animations::TrackAnimator
 {
     int _Priority;
-    uStrong< ::g::Fuse::Visual*> _RelativeNode;
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong< ::g::Fuse::Visual*  _RelativeNode;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     void ctor_3();
     int Priority();
@@ -57,13 +57,13 @@ struct TransformAnimator : ::g::Fuse::Animations::TrackAnimator
 
 }}} // ::g::Fuse::Animations
 
-#include <Uno.Float4.h>
+#include <Uno.Float4.h 
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-inline void TransformAnimator::Update(::g::Fuse::Visual* elm, ::g::Fuse::Transform* transform, ::g::Uno::Float4 value) { (((TransformAnimator_type*)__type)->fp_Update)(this, elm, transform, &value); }
+inline void TransformAnimator::Update(::g::Fuse::Visual* elm, ::g::Fuse::Transform* transform, ::g::Uno::Float4 value) { (((TransformAnimator_type*)__type)- fp_Update)(this, elm, transform, &value); }
 // }
 
 }}} // ::g::Fuse::Animations

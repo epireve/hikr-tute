@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Selection{struct Selection__ListWrapper;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 
@@ -26,7 +26,7 @@ void Selection__ListWrapper__New1_fn(::g::Uno::Collections::List* list, Selectio
 
 struct Selection__ListWrapper : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _list;
+    uStrong< ::g::Uno::Collections::List*  _list;
 
     void ctor_(::g::Uno::Collections::List* list);
     uObject* Item(int index);

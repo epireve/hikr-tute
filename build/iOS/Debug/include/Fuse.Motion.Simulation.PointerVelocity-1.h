@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct PointerVelocity;}}}}
 
@@ -11,7 +11,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// public sealed class PointerVelocity<T> :17
+// public sealed class PointerVelocity<T  :17
 // {
 uType* PointerVelocity_typeof();
 void PointerVelocity__ctor__fn(PointerVelocity* __this);
@@ -26,12 +26,12 @@ void PointerVelocity__Reset1_fn(PointerVelocity* __this, void* location0, void* 
 
 struct PointerVelocity : uObject
 {
-    uStrong< ::g::Fuse::Internal::Blender*> _blender;
+    uStrong< ::g::Fuse::Internal::Blender*  _blender;
     double _speedThreshold;
     float _period;
-    uTField _velocity() { return __type->Field(this, 3); }
-    uTField _currentLocation() { return __type->Field(this, 4); }
-    uTField _startLocation() { return __type->Field(this, 5); }
+    uTField _velocity() { return __type- Field(this, 3); }
+    uTField _currentLocation() { return __type- Field(this, 4); }
+    uTField _startLocation() { return __type- Field(this, 5); }
     float _accelThreshold;
     float _accelLimit;
     float _accelFactor;
@@ -42,20 +42,20 @@ struct PointerVelocity : uObject
     double _prevTime;
 
     void ctor_();
-    template<class T>
-    void AddSample(T location, double elapsed, int flags) { PointerVelocity__AddSample_fn(this, uConstrain(__type->T(0), location), &elapsed, &flags); }
-    template<class T>
-    void AddSampleTime(T location, double timestamp, int flags) { PointerVelocity__AddSampleTime_fn(this, uConstrain(__type->T(0), location), &timestamp, &flags); }
-    template<class T>
-    void ApplySample(T sample, double elapsed) { PointerVelocity__ApplySample_fn(this, uConstrain(__type->T(0), sample), &elapsed); }
-    template<class T>
+    template<class T 
+    void AddSample(T location, double elapsed, int flags) { PointerVelocity__AddSample_fn(this, uConstrain(__type- T(0), location), &elapsed, &flags); }
+    template<class T 
+    void AddSampleTime(T location, double timestamp, int flags) { PointerVelocity__AddSampleTime_fn(this, uConstrain(__type- T(0), location), &timestamp, &flags); }
+    template<class T 
+    void ApplySample(T sample, double elapsed) { PointerVelocity__ApplySample_fn(this, uConstrain(__type- T(0), sample), &elapsed); }
+    template<class T 
     T CurrentVelocity() { T __retval; return PointerVelocity__get_CurrentVelocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void CurrentVelocity(T value) { PointerVelocity__set_CurrentVelocity_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T location0) { PointerVelocity__Reset_fn(this, uConstrain(__type->T(0), location0)); }
-    template<class T>
-    void Reset1(T location0, T velocity0, double currentTime) { PointerVelocity__Reset1_fn(this, uConstrain(__type->T(0), location0), uConstrain(__type->T(0), velocity0), &currentTime); }
+    template<class T 
+    void CurrentVelocity(T value) { PointerVelocity__set_CurrentVelocity_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T location0) { PointerVelocity__Reset_fn(this, uConstrain(__type- T(0), location0)); }
+    template<class T 
+    void Reset1(T location0, T velocity0, double currentTime) { PointerVelocity__Reset1_fn(this, uConstrain(__type- T(0), location0), uConstrain(__type- T(0), velocity0), &currentTime); }
     static PointerVelocity* New1(uType* __type);
 };
 // }

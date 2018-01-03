@@ -1,9 +1,9 @@
-#include <Uno-iOS/Context.h>
-#include <Uno-iOS/Uno-iOS.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Platform.CoreApp.h>
-#include <Uno.Platform.iOS.Application.h>
-#include <Uno.Platform.EventSources.InterAppInvoke.h>
+#include <Uno-iOS/Context.h 
+#include <Uno-iOS/Uno-iOS.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Platform.CoreApp.h 
+#include <Uno.Platform.iOS.Application.h 
+#include <Uno.Platform.EventSources.InterAppInvoke.h 
 
 
 @interface uContext()
@@ -62,15 +62,15 @@ static uContext* instance = nil;
 + (instancetype)initSharedContextWithWindow:(UIWindow*(^)())windowGetter
 {
     uContext* context = [uContext initSharedContext];
-    context->_windowGetter = windowGetter;
+    context- _windowGetter = windowGetter;
     return context;
 }
 
 - (UIWindow*)window
 {
-    if (self->_windowGetter != nil)
+    if (self- _windowGetter != nil)
     {
-        return self->_windowGetter();
+        return self- _windowGetter();
     }
     else
     {
@@ -119,57 +119,57 @@ static uContext* instance = nil;
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::Start(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::Start(); }();
     ::g::Uno::Platform::iOS::Application::LaunchOptions(::g::ObjC::Object::Create(launchOptions));
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::EventSources::InterAppInvoke::OnReceivedURI(::uObjC::UnoString([url absoluteString])); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::EventSources::InterAppInvoke::OnReceivedURI(::uObjC::UnoString([url absoluteString])); }();
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary*)options
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::EventSources::InterAppInvoke::OnReceivedURI(::uObjC::UnoString([url absoluteString])); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::EventSources::InterAppInvoke::OnReceivedURI(::uObjC::UnoString([url absoluteString])); }();
     return YES;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterForeground(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterForeground(); }();
     
 }
 
 - (void)applicationWillEnterForeground:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterForeground(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterForeground(); }();
 }
 
 - (void)applicationDidBecomeActive:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterInteractive(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterInteractive(); }();
 }
 
 - (void)applicationWillResignActive:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::ExitInteractive(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::ExitInteractive(); }();
 }
 
 - (void)applicationDidEnterBackground:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterBackground(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::EnterBackground(); }();
 }
 
 - (void)applicationWillTerminate:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::Terminate(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::Terminate(); }();
 }
 
 - (void)applicationDidReceiveMemoryWarning:(NSNotification*)notification
 {
-    [&]() -> void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::OnReceivedLowMemoryWarning(); }();
+    [&]() -  void { ::uForeignPool __foreignPool; ::g::Uno::Platform::CoreApp::OnReceivedLowMemoryWarning(); }();
 }
 
 @end

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Animator.h>
+#include <Fuse.Animations.Animator.h 
 namespace g{namespace Fuse{namespace Animations{struct OpenAnimator;}}}
 
 namespace g{

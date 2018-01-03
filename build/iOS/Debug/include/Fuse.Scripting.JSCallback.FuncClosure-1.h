@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct JSCallback__FuncClosure;}}}
 
 namespace g{
 namespace Fuse{
 namespace Scripting{
 
-// private sealed class JSCallback.FuncClosure<TResult> :96
+// private sealed class JSCallback.FuncClosure<TResult  :96
 // {
 uType* JSCallback__FuncClosure_typeof();
 void JSCallback__FuncClosure__ctor__fn(JSCallback__FuncClosure* __this, uDelegate* method);
@@ -18,7 +18,7 @@ void JSCallback__FuncClosure__Run_fn(JSCallback__FuncClosure* __this, uArray* ar
 
 struct JSCallback__FuncClosure : uObject
 {
-    uStrong<uDelegate*> _method;
+    uStrong<uDelegate*  _method;
 
     void ctor_(uDelegate* method);
     uObject* Run(uArray* args);

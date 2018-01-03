@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.INameListener.h>
-#include <Fuse.Reactive.ExpressionBinding.h>
-#include <Fuse.Reactive.IContext.h>
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.INameListener.h 
+#include <Fuse.Reactive.ExpressionBinding.h 
+#include <Fuse.Reactive.IContext.h 
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Reactive{struct DataBinding;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTask;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -67,11 +67,11 @@ void DataBinding__get_Write_fn(DataBinding* __this, bool* __retval);
 struct DataBinding : ::g::Fuse::Reactive::ExpressionBinding
 {
     int _mode;
-    uStrong< ::g::Fuse::Triggers::BusyTask*> _busyTask;
-    uStrong<uObject*> _subscription;
-    uStrong<uObject*> _currentValue;
-    uStrong<uString*> _registryName;
-    uStrong< ::g::Uno::UX::Property*> _Target;
+    uStrong< ::g::Fuse::Triggers::BusyTask*  _busyTask;
+    uStrong<uObject*  _subscription;
+    uStrong<uObject*  _currentValue;
+    uStrong<uString*  _registryName;
+    uStrong< ::g::Uno::UX::Property*  _Target;
 
     void ctor_2(::g::Uno::UX::Property* target, uObject* key, int mode);
     bool Acceptor(uObject* obj);

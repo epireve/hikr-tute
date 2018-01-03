@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct EdgeSwiper;}}}}
 namespace g{namespace Fuse{namespace Gestures{struct SwipeGestureHelper;}}}
@@ -50,15 +50,15 @@ void EdgeSwiper__Unrooted_fn(EdgeSwiper* __this);
 
 struct EdgeSwiper : uObject
 {
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*> _leftRightSwipe_;
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*>& _leftRightSwipe() { return _leftRightSwipe_; }
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*> _upDownSwipe_;
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*>& _upDownSwipe() { return _upDownSwipe_; }
-    uStrong<uObject*> _pointBody1D;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*  _leftRightSwipe_;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper* & _leftRightSwipe() { return _leftRightSwipe_; }
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*  _upDownSwipe_;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper* & _upDownSwipe() { return _upDownSwipe_; }
+    uStrong<uObject*  _pointBody1D;
     float _edgeThreshold;
     double _progress;
     int _edge;
-    uStrong< ::g::Fuse::Elements::Element*> _target;
+    uStrong< ::g::Fuse::Elements::Element*  _target;
     ::g::Uno::Float2 _previousCoord;
     ::g::Uno::Float2 _currentCoord;
     ::g::Uno::Float2 _startCoord;
@@ -67,10 +67,10 @@ struct EdgeSwiper : uObject
     float _velocityThreshold;
     int _down;
     bool _isHardCapture;
-    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*> _velocity;
-    uStrong< ::g::Fuse::Elements::Element*> _element;
+    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*  _velocity;
+    uStrong< ::g::Fuse::Elements::Element*  _element;
     bool _hasUpdated;
-    uStrong<uDelegate*> ProgressChanged1;
+    uStrong<uDelegate*  ProgressChanged1;
 
     void ctor_();
     void CalcProgress();

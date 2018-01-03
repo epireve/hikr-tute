@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct WebViewNavAction;}}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -24,7 +24,7 @@ void WebViewNavAction__Perform_fn(WebViewNavAction* __this, ::g::Fuse::Node* tar
 
 struct WebViewNavAction : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    void Execute(::g::Fuse::Controls::WebView* webview) { (((WebViewNavAction_type*)__type)->fp_Execute)(this, webview); }
+    void Execute(::g::Fuse::Controls::WebView* webview) { (((WebViewNavAction_type*)__type)- fp_Execute)(this, webview); }
 };
 // }
 

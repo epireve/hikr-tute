@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct Navigator__DeferSwitch;}}}
 namespace g{namespace Fuse{namespace Controls{struct Navigator__NavPage;}}}
 
@@ -18,7 +18,7 @@ void Navigator__DeferSwitch__New1_fn(Navigator__DeferSwitch** __retval);
 
 struct Navigator__DeferSwitch : uObject
 {
-    uStrong< ::g::Fuse::Controls::Navigator__NavPage*> Page;
+    uStrong< ::g::Fuse::Controls::Navigator__NavPage*  Page;
     int GotoMode;
     int Operation;
 

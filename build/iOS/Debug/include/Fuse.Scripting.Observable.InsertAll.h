@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Observable.Operation.h>
+#include <Fuse.Scripting.Observable.Operation.h 
 namespace g{namespace Fuse{namespace Scripting{struct ArrayMirror;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__InsertAll;}}}
@@ -23,7 +23,7 @@ void Observable__InsertAll__Unsubscribe_fn(Observable__InsertAll* __this);
 struct Observable__InsertAll : ::g::Fuse::Scripting::Observable__Operation
 {
     int _index;
-    uStrong< ::g::Fuse::Scripting::ArrayMirror*> _items;
+    uStrong< ::g::Fuse::Scripting::ArrayMirror*  _items;
 
     void ctor_1(::g::Fuse::Scripting::Observable* obs, int index, ::g::Fuse::Scripting::ArrayMirror* items);
     static Observable__InsertAll* New1(::g::Fuse::Scripting::Observable* obs, int index, ::g::Fuse::Scripting::ArrayMirror* items);

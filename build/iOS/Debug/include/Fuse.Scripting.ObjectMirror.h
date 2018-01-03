@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IObject.h>
-#include <Fuse.Scripting.IRaw.h>
-#include <Fuse.Scripting.ValueMirror.h>
+#include <Fuse.IObject.h 
+#include <Fuse.Scripting.IRaw.h 
+#include <Fuse.Scripting.ValueMirror.h 
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ObjectMirror;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -31,7 +31,7 @@ void ObjectMirror__Unsubscribe_fn(ObjectMirror* __this);
 
 struct ObjectMirror : ::g::Fuse::Scripting::ValueMirror
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> _props;
+    uStrong< ::g::Uno::Collections::Dictionary*  _props;
 
     void ctor_2(uObject* mirror, ::g::Fuse::Scripting::Object* obj);
     bool ContainsKey(uString* key);

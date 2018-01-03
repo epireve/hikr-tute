@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Layouts{struct Layout;}}}
 namespace g{namespace Fuse{namespace Layouts{struct Layouts;}}}
 
@@ -16,8 +16,8 @@ uClassType* Layouts_typeof();
 
 struct Layouts : uObject
 {
-    static uSStrong< ::g::Fuse::Layouts::Layout*> Default_;
-    static uSStrong< ::g::Fuse::Layouts::Layout*>& Default() { return Default_; }
+    static uSStrong< ::g::Fuse::Layouts::Layout*  Default_;
+    static uSStrong< ::g::Fuse::Layouts::Layout* & Default() { return Default_; }
 };
 // }
 

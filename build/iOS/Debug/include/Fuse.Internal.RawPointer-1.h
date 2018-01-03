@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal struct RawPointer<T> :13
+// internal struct RawPointer<T  :13
 // {
 uStructType* RawPointer_typeof();
 void RawPointer__op_Explicit1_fn(uType* __type, void** weak, uObject** __retval);

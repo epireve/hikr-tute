@@ -1,13 +1,13 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.4.2/Resources/Exif/Exif.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <CoreFoundation/CoreFoundation.h>
-#include <Fuse.Resources.Exif.ExifIOSImpl.h>
-#include <ImageIO/ImageIO.h>
-#include <Uno.Byte.h>
-#include <Uno.Int.h>
-#include <uObjC.Foreign.h>
-#include <Fuse.Resources.Exif.ExifData.h>
+#include <CoreFoundation/CoreFoundation.h 
+#include <Fuse.Resources.Exif.ExifIOSImpl.h 
+#include <ImageIO/ImageIO.h 
+#include <Uno.Byte.h 
+#include <Uno.Int.h 
+#include <uObjC.Foreign.h 
+#include <Fuse.Resources.Exif.ExifData.h 
 
 namespace g{
 namespace Fuse{
@@ -22,13 +22,13 @@ static void ExifIOSImpl_build(uType* type)
 
 uClassType* ExifIOSImpl_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Resources.Exif.ExifIOSImpl", options);
-    type->fp_build_ = ExifIOSImpl_build;
+    type- fp_build_ = ExifIOSImpl_build;
     return type;
 }
 
@@ -56,9 +56,9 @@ int ExifIOSImpl::GetOrientation(uArray* bytes)
 {
     @autoreleasepool
     {
-        return [] (id<UnoArray> bytes) -> int
+        return [] (id<UnoArray  bytes) -  int
         {
-            CFDataRef data = CFDataCreateWithBytesNoCopy(NULL, (const UInt8 *)bytes.unoArray->Ptr(), bytes.unoArray->Length(), kCFAllocatorNull);
+            CFDataRef data = CFDataCreateWithBytesNoCopy(NULL, (const UInt8 *)bytes.unoArray- Ptr(), bytes.unoArray- Length(), kCFAllocatorNull);
             CGImageSourceRef imageSource = CGImageSourceCreateWithData(data, NULL);
             
             NSArray *metadataArray = nil;
@@ -87,7 +87,7 @@ int ExifIOSImpl::GetOrientation(uArray* bytes)
             }
             
             return rotation;
-        } ([::StrongUnoArray strongUnoArrayWithUnoArray: bytes getAt: ^ id (::uArray* arr, int i) { return ::uObjC::Box<uint8_t>(arr->Item<uint8_t>(i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr->Item<uint8_t>(i) = ::uObjC::Unbox<uint8_t>(obj); }]);
+        } ([::StrongUnoArray strongUnoArrayWithUnoArray: bytes getAt: ^ id (::uArray* arr, int i) { return ::uObjC::Box<uint8_t (arr- Item<uint8_t (i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr- Item<uint8_t (i) = ::uObjC::Unbox<uint8_t (obj); }]);
         
     }
     

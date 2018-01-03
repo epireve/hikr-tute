@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct FontFaceDescriptor;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
 
@@ -21,9 +21,9 @@ void FontFaceDescriptor__New2_fn(::g::Uno::UX::FileSource* fileSource, uObject* 
 
 struct FontFaceDescriptor : uObject
 {
-    uStrong< ::g::Uno::UX::FileSource*> FileSource;
+    uStrong< ::g::Uno::UX::FileSource*  FileSource;
     int Index;
-    uStrong<uObject*> Styles;
+    uStrong<uObject*  Styles;
 
     void ctor_1(::g::Uno::UX::FileSource* fileSource, uObject* styles);
     bool Match(uString* styleString);

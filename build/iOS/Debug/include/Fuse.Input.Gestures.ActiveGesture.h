@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
 namespace g{namespace Fuse{namespace Input{struct Gestures__ActiveGesture;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
@@ -19,9 +19,9 @@ void Gestures__ActiveGesture__New1_fn(Gestures__ActiveGesture** __retval);
 
 struct Gestures__ActiveGesture : uObject
 {
-    uStrong< ::g::Fuse::Input::Gesture*> Gesture;
+    uStrong< ::g::Fuse::Input::Gesture*  Gesture;
     bool ChangeRequest;
-    uStrong< ::g::Fuse::Input::PointerEventArgs*> Args;
+    uStrong< ::g::Fuse::Input::PointerEventArgs*  Args;
     int CaptureType;
     float Significance;
     int PriorityAdjustment;

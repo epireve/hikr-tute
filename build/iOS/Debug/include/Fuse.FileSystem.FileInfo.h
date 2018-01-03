@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.FileSystem.FileSystemInfo.h>
+#include <Fuse.FileSystem.FileSystemInfo.h 
 namespace g{namespace Fuse{namespace FileSystem{struct FileInfo;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileStatus;}}}
 

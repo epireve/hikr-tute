@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -15,7 +15,7 @@ uInterfaceType* IEventHandler_typeof();
 struct IEventHandler
 {
     void(*fp_Dispatch)(uObject*, uObject*);
-    static void Dispatch(const uInterface& __this, uObject* e) { __this.VTable<IEventHandler>()->fp_Dispatch(__this, e); }
+    static void Dispatch(const uInterface& __this, uObject* e) { __this.VTable<IEventHandler ()- fp_Dispatch(__this, e); }
 };
 // }
 

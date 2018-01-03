@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeEventEmitterModule__EmitClosure;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -20,7 +20,7 @@ void NativeEventEmitterModule__EmitClosure__New1_fn(uArray* args, NativeEventEmi
 
 struct NativeEventEmitterModule__EmitClosure : uObject
 {
-    uStrong<uArray*> _args;
+    uStrong<uArray*  _args;
 
     void ctor_(uArray* args);
     void Emit(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::Object* o);

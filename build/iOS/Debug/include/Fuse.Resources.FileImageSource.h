@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSource.h 
 namespace g{namespace Fuse{namespace Resources{struct FileImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
 namespace g{namespace Fuse{namespace Resources{struct ProxyImageSource;}}}
@@ -38,7 +38,7 @@ void FileImageSource__get_State_fn(FileImageSource* __this, int* __retval);
 
 struct FileImageSource : ::g::Fuse::Resources::ImageSource
 {
-    uStrong< ::g::Fuse::Resources::ProxyImageSource*> _proxy;
+    uStrong< ::g::Fuse::Resources::ProxyImageSource*  _proxy;
 
     void ctor_2();
     void ctor_3(::g::Uno::UX::FileSource* file);

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Fuse.Scripting.IRaw.h>
-#include <Fuse.Scripting.ValueMirror.h>
+#include <Fuse.IArray.h 
+#include <Fuse.Scripting.IRaw.h 
+#include <Fuse.Scripting.ValueMirror.h 
 namespace g{namespace Fuse{namespace Scripting{struct ListMirror;}}}
 
 namespace g{
@@ -26,8 +26,8 @@ void ListMirror__ctor_2_fn(ListMirror* __this, uObject* raw);
 struct ListMirror : ::g::Fuse::Scripting::ValueMirror
 {
     void ctor_2(uObject* raw);
-    uObject* Item(int index) { uObject* __retval; return (((ListMirror_type*)__type)->fp_get_Item)(this, &index, &__retval), __retval; }
-    int Length() { int __retval; return (((ListMirror_type*)__type)->fp_get_Length)(this, &__retval), __retval; }
+    uObject* Item(int index) { uObject* __retval; return (((ListMirror_type*)__type)- fp_get_Item)(this, &index, &__retval), __retval; }
+    int Length() { int __retval; return (((ListMirror_type*)__type)- fp_get_Length)(this, &__retval), __retval; }
 };
 // }
 

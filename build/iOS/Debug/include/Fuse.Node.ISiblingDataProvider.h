@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -14,7 +14,7 @@ uInterfaceType* Node__ISiblingDataProvider_typeof();
 struct Node__ISiblingDataProvider
 {
     void(*fp_get_Data)(uObject*, uObject**);
-    static uObject* Data(const uInterface& __this) { uObject* __retval; return __this.VTable<Node__ISiblingDataProvider>()->fp_get_Data(__this, &__retval), __retval; }
+    static uObject* Data(const uInterface& __this) { uObject* __retval; return __this.VTable<Node__ISiblingDataProvider ()- fp_get_Data(__this, &__retval), __retval; }
 };
 // }
 

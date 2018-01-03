@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.ScalarBlender-1.h>
-#include <Uno.Double.h>
+#include <Fuse.Internal.ScalarBlender-1.h 
+#include <Uno.Double.h 
 namespace g{namespace Fuse{namespace Internal{struct DoubleBlender;}}}
 
 namespace g{

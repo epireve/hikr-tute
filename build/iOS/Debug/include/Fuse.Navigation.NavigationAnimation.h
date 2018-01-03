@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Trigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Trigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigationAnimation;}}}
 namespace g{namespace Fuse{namespace Navigation{struct NavigationArgs;}}}
 namespace g{namespace Fuse{namespace Navigation{struct NavigationPageProxy;}}}
@@ -44,20 +44,20 @@ void NavigationAnimation__set_Scale_fn(NavigationAnimation* __this, float* value
 
 struct NavigationAnimation : ::g::Fuse::Triggers::Trigger
 {
-    uStrong< ::g::Fuse::Navigation::NavigationPageProxy*> _proxy;
+    uStrong< ::g::Fuse::Navigation::NavigationPageProxy*  _proxy;
     float _scale;
     bool _delay;
     int _delayVariant;
     double _delayProgress;
 
     void ctor_5();
-    void ForceUpdate() { (((NavigationAnimation_type*)__type)->fp_ForceUpdate)(this); }
+    void ForceUpdate() { (((NavigationAnimation_type*)__type)- fp_ForceUpdate)(this); }
     void GoProgress(double p, int variant, ::g::Fuse::Navigation::NavigationArgs* state);
     void GoProgressPlay();
     uObject* NavContext();
     void NavReady(uObject* s);
     void NavUnready(uObject* s);
-    void OnNavigationStateChanged(uObject* sender, ::g::Fuse::Navigation::NavigationArgs* state) { (((NavigationAnimation_type*)__type)->fp_OnNavigationStateChanged)(this, sender, state); }
+    void OnNavigationStateChanged(uObject* sender, ::g::Fuse::Navigation::NavigationArgs* state) { (((NavigationAnimation_type*)__type)- fp_OnNavigationStateChanged)(this, sender, state); }
     ::g::Fuse::Visual* PageContext();
     float Scale();
     void Scale(float value);

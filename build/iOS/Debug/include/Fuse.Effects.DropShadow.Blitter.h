@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Effects{struct DropShadow__Blitter;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -30,9 +30,9 @@ void DropShadow__Blitter__New1_fn(DropShadow__Blitter** __retval);
 
 struct DropShadow__Blitter : uObject
 {
-    static uSStrong<DropShadow__Blitter*> _instance_;
-    static uSStrong<DropShadow__Blitter*>& _instance() { return _instance_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Blit_VertexData_969193be_7_2_1;
+    static uSStrong<DropShadow__Blitter*  _instance_;
+    static uSStrong<DropShadow__Blitter* & _instance() { return _instance_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Blit_VertexData_969193be_7_2_1;
     ::g::Uno::Float4x4 Blit_LocalTransform_969193be_4_9_2;
     ::g::Uno::Float4x4 Blit_LocalTransform_969193be_4_9_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_969193be;

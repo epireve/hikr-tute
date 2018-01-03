@@ -27,7 +27,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class Text :15
+// public class Text :15
 // {
 ::g::Fuse::Controls::TextControl_type* Text_typeof();
 void Text__ctor_7_fn(Text* __this);

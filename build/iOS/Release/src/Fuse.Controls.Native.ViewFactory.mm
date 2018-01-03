@@ -1,13 +1,13 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.4.2/ViewHandle.iOS.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.ViewFactory.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
-#include <Fuse.Controls.Native.ViewHandle.Invalidation.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.Controls.Native.ViewFactory.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h 
+#include <Fuse.Controls.Native.ViewHandle.Invalidation.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -22,13 +22,13 @@ static void ViewFactory_build(uType* type)
 
 uClassType* ViewFactory_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Controls.Native.ViewFactory", options);
-    type->fp_build_ = ViewFactory_build;
+    type- fp_build_ = ViewFactory_build;
     return type;
 }
 
@@ -55,7 +55,7 @@ void ViewFactory__InstantiateViewGroupImpl_fn(::g::ObjC::Object** __retval)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             UIControl* control = [[UIControl alloc] init];
             [control setOpaque:false];

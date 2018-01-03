@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.IElementBatchDrawable.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Graphics.VertexAttributeInfo.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Fuse.Elements.IElementBatchDrawable.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Graphics.VertexAttributeInfo.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatch;}}}
@@ -58,18 +58,18 @@ void ElementBatch__TryGetCachingRect_fn(::g::Fuse::Elements::Element* elm, ::g::
 
 struct ElementBatch : uObject
 {
-    uStrong< ::g::Fuse::Elements::ElementBatcher*> _elementBatcher;
-    uStrong< ::g::Fuse::Elements::ElementAtlas*> _elementAtlas;
+    uStrong< ::g::Fuse::Elements::ElementBatcher*  _elementBatcher;
+    uStrong< ::g::Fuse::Elements::ElementAtlas*  _elementAtlas;
     bool _indexBufferValid;
     bool _vertexPositionBufferValid;
     bool _vertexTexCoordBufferValid;
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> _indexBuffer;
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  _indexBuffer;
     ::g::Uno::Graphics::VertexAttributeInfo _positionInfo;
     ::g::Uno::Graphics::VertexAttributeInfo _texCoordInfo;
     int _prevElementCount;
-    uStrong< ::g::Fuse::VisualBounds*> _renderBounds;
-    uStrong< ::g::Uno::Collections::List*> _elements;
-    uStrong< ::g::Uno::Buffer*> _tempBuffer;
+    uStrong< ::g::Fuse::VisualBounds*  _renderBounds;
+    uStrong< ::g::Uno::Collections::List*  _elements;
+    uStrong< ::g::Uno::Buffer*  _tempBuffer;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_f8c70145;
 
     void ctor_(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas);

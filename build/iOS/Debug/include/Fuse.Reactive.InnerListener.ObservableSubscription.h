@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.ValueObserver.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.ValueObserver.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct InnerListener;}}}
 namespace g{namespace Fuse{namespace Reactive{struct InnerListener__ObservableSubscription;}}}
 
@@ -22,8 +22,8 @@ void InnerListener__ObservableSubscription__PushData_fn(InnerListener__Observabl
 
 struct InnerListener__ObservableSubscription : ::g::Fuse::Reactive::ValueObserver
 {
-    uStrong< ::g::Fuse::Reactive::InnerListener*> _listener;
-    uStrong<uObject*> _source;
+    uStrong< ::g::Fuse::Reactive::InnerListener*  _listener;
+    uStrong<uObject*  _source;
 
     void ctor_1(uObject* source, uObject* obs, ::g::Fuse::Reactive::InnerListener* listener);
     static InnerListener__ObservableSubscription* New1(uObject* source, uObject* obs, ::g::Fuse::Reactive::InnerListener* listener);

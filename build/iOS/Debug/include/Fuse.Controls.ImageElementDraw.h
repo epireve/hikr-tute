@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Controls{struct ImageElementDraw;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -29,9 +29,9 @@ void ImageElementDraw__New1_fn(ImageElementDraw** __retval);
 
 struct ImageElementDraw : uObject
 {
-    static uSStrong<ImageElementDraw*> Impl_;
-    static uSStrong<ImageElementDraw*>& Impl() { return Impl_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_VertexData_4022489a_7_2_1;
+    static uSStrong<ImageElementDraw*  Impl_;
+    static uSStrong<ImageElementDraw* & Impl() { return Impl_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_VertexData_4022489a_7_2_1;
     ::g::Uno::Float4x4 Draw_LocalTransform_4022489a_4_9_2;
     ::g::Uno::Float4x4 Draw_LocalTransform_4022489a_4_9_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_4022489a;

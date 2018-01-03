@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{struct GradientStop;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LinearGradient;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LinearGradientDrawable;}}}
@@ -29,10 +29,10 @@ void LinearGradientDrawable__New1_fn(LinearGradientDrawable** __retval);
 
 struct LinearGradientDrawable : uObject
 {
-    static uSStrong<LinearGradientDrawable*> Singleton_;
-    static uSStrong<LinearGradientDrawable*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> FillBuffer_TexCoord_ae3a1d65_1_1_1;
-    uStrong<uArray*> FillBuffer_Vertices_ae3a1d65_1_0_9;
+    static uSStrong<LinearGradientDrawable*  Singleton_;
+    static uSStrong<LinearGradientDrawable* & Singleton() { return Singleton_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  FillBuffer_TexCoord_ae3a1d65_1_1_1;
+    uStrong<uArray*  FillBuffer_Vertices_ae3a1d65_1_0_9;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_ae3a1d65;
 
     void ctor_();

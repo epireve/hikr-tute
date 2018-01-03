@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.ContinuousTrackProvider.h>
-#include <Fuse.Animations.TrackProvider.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.ContinuousTrackProvider.h 
+#include <Fuse.Animations.TrackProvider.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct EasingTrack;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimator;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimatorState;}}}
@@ -32,8 +32,8 @@ void EasingTrack__New1_fn(EasingTrack** __retval);
 
 struct EasingTrack : uObject
 {
-    static uSStrong<EasingTrack*> Singleton_;
-    static uSStrong<EasingTrack*>& Singleton() { return Singleton_; }
+    static uSStrong<EasingTrack*  Singleton_;
+    static uSStrong<EasingTrack* & Singleton() { return Singleton_; }
 
     void ctor_();
     static EasingTrack* New1();

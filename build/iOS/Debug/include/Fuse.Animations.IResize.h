@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Uno{struct Float2;}}
 
 namespace g{
@@ -21,13 +21,13 @@ struct IResize
 
 }}} // ::g::Fuse::Animations
 
-#include <Uno.Float2.h>
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-inline void IResize::SetSize(const uInterface& __this, ::g::Uno::Float2 size) { __this.VTable<IResize>()->fp_SetSize(__this, &size); }
+inline void IResize::SetSize(const uInterface& __this, ::g::Uno::Float2 size) { __this.VTable<IResize ()- fp_SetSize(__this, &size); }
 // }
 
 }}} // ::g::Fuse::Animations

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct PagesMap;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPage;}}}
 namespace g{namespace Fuse{namespace Reactive{struct ObserverMap;}}}
@@ -30,10 +30,10 @@ void RouterPage__ToString_fn(RouterPage* __this, uString** __retval);
 
 struct RouterPage : uObject
 {
-    uStrong<uString*> Parameter;
-    uStrong<uObject*> Context;
-    uStrong< ::g::Fuse::Navigation::PagesMap*> _childRouterPages;
-    uStrong<uString*> _Path;
+    uStrong<uString*  Parameter;
+    uStrong<uObject*  Context;
+    uStrong< ::g::Fuse::Navigation::PagesMap*  _childRouterPages;
+    uStrong<uString*  _Path;
 
     void ctor_(uString* path, uString* parameter, uObject* context);
     ::g::Fuse::Reactive::ObserverMap* ChildRouterPages();

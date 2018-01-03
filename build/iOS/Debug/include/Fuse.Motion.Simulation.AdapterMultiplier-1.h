@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ScalarBlender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct AdapterMultiplier;}}}}
 
@@ -14,7 +14,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class AdapterMultiplier<T> :92
+// internal sealed class AdapterMultiplier<T  :92
 // {
 struct AdapterMultiplier_type : uType
 {
@@ -41,32 +41,32 @@ void AdapterMultiplier__set_Velocity_fn(AdapterMultiplier* __this, void* value);
 
 struct AdapterMultiplier : uObject
 {
-    uStrong< ::g::Fuse::Internal::ScalarBlender*> _blender;
-    uStrong<uObject*> _impl;
+    uStrong< ::g::Fuse::Internal::ScalarBlender*  _blender;
+    uStrong<uObject*  _impl;
     double _multiplier;
 
     void ctor_(uObject* impl, double multiplier);
-    template<class T>
+    template<class T 
     T Destination() { T __retval; return AdapterMultiplier__get_Destination_fn(this, &__retval), __retval; }
-    template<class T>
-    void Destination(T value) { AdapterMultiplier__set_Destination_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    T In(T val) { T __retval; return AdapterMultiplier__In_fn(this, uConstrain(__type->T(0), val), &__retval), __retval; }
+    template<class T 
+    void Destination(T value) { AdapterMultiplier__set_Destination_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    T In(T val) { T __retval; return AdapterMultiplier__In_fn(this, uConstrain(__type- T(0), val), &__retval), __retval; }
     bool IsStatic();
-    template<class T>
-    T Out(T val) { T __retval; return AdapterMultiplier__Out_fn(this, uConstrain(__type->T(0), val), &__retval), __retval; }
-    template<class T>
+    template<class T 
+    T Out(T val) { T __retval; return AdapterMultiplier__Out_fn(this, uConstrain(__type- T(0), val), &__retval), __retval; }
+    template<class T 
     T Position() { T __retval; return AdapterMultiplier__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { AdapterMultiplier__set_Position_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T value) { AdapterMultiplier__Reset_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Position(T value) { AdapterMultiplier__set_Position_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T value) { AdapterMultiplier__Reset_fn(this, uConstrain(__type- T(0), value)); }
     void Start();
     void Update(double elapsed);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return AdapterMultiplier__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { AdapterMultiplier__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { AdapterMultiplier__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     static AdapterMultiplier* New1(uType* __type, uObject* impl, double multiplier);
 };
 // }

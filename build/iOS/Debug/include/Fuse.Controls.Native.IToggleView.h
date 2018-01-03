@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IToggleView_typeof();
 struct IToggleView
 {
     void(*fp_set_Value)(uObject*, bool*);
-    static void Value(const uInterface& __this, bool value) { __this.VTable<IToggleView>()->fp_set_Value(__this, &value); }
+    static void Value(const uInterface& __this, bool value) { __this.VTable<IToggleView ()- fp_set_Value(__this, &value); }
 };
 // }
 

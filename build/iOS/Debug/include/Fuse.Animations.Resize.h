@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimator.h>
+#include <Fuse.Animations.TrackAnimator.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Resize;}}}
@@ -25,9 +25,9 @@ void Resize__set_Target_fn(Resize* __this, ::g::Fuse::Visual* value);
 
 struct Resize : ::g::Fuse::Animations::TrackAnimator
 {
-    uStrong<uObject*> _resizeMode;
-    uStrong< ::g::Fuse::Visual*> _RelativeNode;
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong<uObject*  _resizeMode;
+    uStrong< ::g::Fuse::Visual*  _RelativeNode;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     ::g::Fuse::Visual* RelativeNode();
     void RelativeNode(::g::Fuse::Visual* value);

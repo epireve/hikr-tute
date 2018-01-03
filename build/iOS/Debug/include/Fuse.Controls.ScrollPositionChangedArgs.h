@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.ValueChangedArgs-1.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.ValueChangedArgs-1.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollPositionChangedArgs;}}}
 
 namespace g{
@@ -35,7 +35,7 @@ struct ScrollPositionChangedArgs : ::g::Uno::UX::ValueChangedArgs
 {
     ::g::Uno::Float2 _ArrangeOffset;
     bool _IsAdjustment;
-    uStrong<uObject*> _Origin;
+    uStrong<uObject*  _Origin;
     ::g::Uno::Float2 _RelativeScrollPosition;
 
     void ctor_2(::g::Uno::Float2 scrollPos, ::g::Uno::Float2 arrangeOffset, bool isAdjustment, uObject* origin, ::g::Uno::Float2 relativeScrollPos);

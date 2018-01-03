@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -15,7 +15,7 @@ uInterfaceType* IExpression_typeof();
 struct IExpression
 {
     void(*fp_Subscribe)(uObject*, uObject*, uObject*, uObject**);
-    static uObject* Subscribe(const uInterface& __this, uObject* context, uObject* listener) { uObject* __retval; return __this.VTable<IExpression>()->fp_Subscribe(__this, context, listener, &__retval), __retval; }
+    static uObject* Subscribe(const uInterface& __this, uObject* context, uObject* listener) { uObject* __retval; return __this.VTable<IExpression ()- fp_Subscribe(__this, context, listener, &__retval), __retval; }
 };
 // }
 

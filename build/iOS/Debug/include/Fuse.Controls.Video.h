@@ -2,28 +2,28 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Panel.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.IMediaPlayback.h>
-#include <Fuse.Triggers.IPlayback.h>
-#include <Fuse.Triggers.IProgress.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float4.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Panel.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Triggers.IMediaPlayback.h 
+#include <Fuse.Triggers.IPlayback.h 
+#include <Fuse.Triggers.IProgress.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float4.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct Video;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -44,6 +44,7 @@ struct Video_type : ::g::Fuse::Controls::Panel_type
 };
 
 Video_type* Video_typeof();
+void Video__ctor_7_fn(Video* __this);
 void Video__get_AutoPlay_fn(Video* __this, bool* __retval);
 void Video__set_AutoPlay_fn(Video* __this, bool* value);
 void Video__get_ContentAlignment_fn(Video* __this, int* __retval);
@@ -54,6 +55,7 @@ void Video__set_File_fn(Video* __this, ::g::Uno::UX::FileSource* value);
 void Video__getDuration_fn(::g::Fuse::Scripting::Context* c, Video* v, uArray* args, uObject** __retval);
 void Video__get_IsLooping_fn(Video* __this, bool* __retval);
 void Video__set_IsLooping_fn(Video* __this, bool* value);
+void Video__New4_fn(Video** __retval);
 void Video__OnDurationChanged_fn(Video* __this);
 void Video__OnParamChanged_fn(Video* __this);
 void Video__OnProgressChanged_fn(Video* __this, uObject* sender, ::g::Uno::EventArgs* args);
@@ -99,10 +101,10 @@ void Video__set_Volume_fn(Video* __this, float* value);
 
 struct Video : ::g::Fuse::Controls::Panel
 {
-    uStrong<uObject*> _durationMutex;
+    uStrong<uObject*  _durationMutex;
     double _outDuration;
-    uStrong< ::g::Uno::UX::FileSource*> _file;
-    uStrong<uString*> _url;
+    uStrong< ::g::Uno::UX::FileSource*  _file;
+    uStrong<uString*  _url;
     ::g::Uno::Float4 _scale9Margin;
     bool _hasScale9Margin;
     bool _isLooping;
@@ -112,18 +114,19 @@ struct Video : ::g::Fuse::Controls::Panel
     int _stretchSizing;
     int _contentAlignment;
     float _volume;
-    uStrong<uObject*> _playback;
+    uStrong<uObject*  _playback;
     static ::g::Uno::UX::Selector _positionName_;
-    static ::g::Uno::UX::Selector& _positionName() { return Video_typeof()->Init(), _positionName_; }
+    static ::g::Uno::UX::Selector& _positionName() { return Video_typeof()- Init(), _positionName_; }
     static ::g::Uno::UX::Selector _durationName_;
-    static ::g::Uno::UX::Selector& _durationName() { return Video_typeof()->Init(), _durationName_; }
+    static ::g::Uno::UX::Selector& _durationName() { return Video_typeof()- Init(), _durationName_; }
     static ::g::Uno::UX::Selector _progressName_;
-    static ::g::Uno::UX::Selector& _progressName() { return Video_typeof()->Init(), _progressName_; }
-    uStrong<uDelegate*> ParamChanged1;
-    uStrong<uDelegate*> ProgressChanged1;
-    uStrong<uDelegate*> RenderParamChanged1;
-    uStrong<uDelegate*> SourceChanged1;
+    static ::g::Uno::UX::Selector& _progressName() { return Video_typeof()- Init(), _progressName_; }
+    uStrong<uDelegate*  ParamChanged1;
+    uStrong<uDelegate*  ProgressChanged1;
+    uStrong<uDelegate*  RenderParamChanged1;
+    uStrong<uDelegate*  SourceChanged1;
 
+    void ctor_7();
     bool AutoPlay();
     void AutoPlay(bool value);
     int ContentAlignment();
@@ -171,6 +174,7 @@ struct Video : ::g::Fuse::Controls::Panel
     float Volume();
     void Volume(float value);
     static uObject* getDuration(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
+    static Video* New4();
     static void pause(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
     static void resume(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
     static void stop(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);

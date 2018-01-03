@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Trigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Trigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Triggers{struct State;}}}
 namespace g{namespace Fuse{namespace Triggers{struct StateGroup;}}}
@@ -36,7 +36,7 @@ void State__RootStateGroup_fn(State* __this, ::g::Fuse::Triggers::StateGroup* st
 struct State : ::g::Fuse::Triggers::Trigger
 {
     bool _on;
-    uStrong< ::g::Fuse::Triggers::StateGroup*> _stateGroup;
+    uStrong< ::g::Fuse::Triggers::StateGroup*  _stateGroup;
 
     void Goto();
     bool On();

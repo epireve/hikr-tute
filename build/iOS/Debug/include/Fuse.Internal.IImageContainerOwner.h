@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -17,9 +17,9 @@ struct IImageContainerOwner
     void(*fp_OnParamChanged)(uObject*);
     void(*fp_OnSizingChanged)(uObject*);
     void(*fp_OnSourceChanged)(uObject*);
-    static void OnParamChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner>()->fp_OnParamChanged(__this); }
-    static void OnSizingChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner>()->fp_OnSizingChanged(__this); }
-    static void OnSourceChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner>()->fp_OnSourceChanged(__this); }
+    static void OnParamChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner ()- fp_OnParamChanged(__this); }
+    static void OnSizingChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner ()- fp_OnSizingChanged(__this); }
+    static void OnSourceChanged(const uInterface& __this) { __this.VTable<IImageContainerOwner ()- fp_OnSourceChanged(__this); }
 };
 // }
 

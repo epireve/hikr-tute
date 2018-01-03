@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Gestures{struct SetSwipeActive;}}}
 namespace g{namespace Fuse{namespace Gestures{struct SwipeGesture;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -25,7 +25,7 @@ void SetSwipeActive__set_Value_fn(SetSwipeActive* __this, bool* value);
 struct SetSwipeActive : ::g::Fuse::Triggers::Actions::TriggerAction
 {
     bool _Bypass;
-    uStrong< ::g::Fuse::Gestures::SwipeGesture*> _Target;
+    uStrong< ::g::Fuse::Gestures::SwipeGesture*  _Target;
     bool _Value;
 
     bool Bypass();

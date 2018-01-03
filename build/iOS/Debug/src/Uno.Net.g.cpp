@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <errno.h>
-#include <Uno.Net.NetworkHelpers.h>
-#include <Uno.String.h>
+#include <errno.h 
+#include <Uno.Net.NetworkHelpers.h 
+#include <Uno.String.h 
 
 namespace g{
 namespace Uno{
@@ -20,14 +20,14 @@ static void NetworkHelpers_build(uType* type)
 
 uType* NetworkHelpers_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.ObjectSize = sizeof(NetworkHelpers);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Net.NetworkHelpers", options);
-    type->fp_build_ = NetworkHelpers_build;
+    type- fp_build_ = NetworkHelpers_build;
     return type;
 }
 

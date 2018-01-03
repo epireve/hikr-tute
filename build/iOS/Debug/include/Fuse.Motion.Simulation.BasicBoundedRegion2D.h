@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.BoundedRegion2D.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.BoundedRegion2D.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct BasicBoundedRegion2D;}}}}
 
 namespace g{
@@ -68,10 +68,10 @@ struct BasicBoundedRegion2D : uObject
     ::g::Uno::Float2 _maxPosition;
     ::g::Uno::Float2 _minPosition;
     ::g::Uno::Float2 _overflowExtent;
-    uStrong<uObject*> _destination;
+    uStrong<uObject*  _destination;
     ::g::Uno::Float2 _velocity;
-    uStrong<uObject*> _friction;
-    uStrong<uObject*> _snap;
+    uStrong<uObject*  _friction;
+    uStrong<uObject*  _snap;
     int _overflow;
     ::g::Uno::Float2 _Position;
 

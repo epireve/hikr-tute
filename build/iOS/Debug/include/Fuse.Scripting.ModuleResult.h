@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Module;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
@@ -32,14 +32,14 @@ void ModuleResult__ToString_fn(ModuleResult* __this, uString** __retval);
 
 struct ModuleResult : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> Context;
-    uStrong<uString*> Id;
-    uStrong< ::g::Fuse::Scripting::Module*> Module;
-    uStrong< ::g::Fuse::Scripting::Object*> Object;
+    uStrong< ::g::Fuse::Scripting::Context*  Context;
+    uStrong<uString*  Id;
+    uStrong< ::g::Fuse::Scripting::Module*  Module;
+    uStrong< ::g::Fuse::Scripting::Object*  Object;
     bool _globalKeyListening;
     bool _fileListening;
-    uStrong< ::g::Uno::Collections::List*> _invalidateCallbacks;
-    uStrong< ::g::Fuse::Scripting::ScriptException*> _Error;
+    uStrong< ::g::Uno::Collections::List*  _invalidateCallbacks;
+    uStrong< ::g::Fuse::Scripting::ScriptException*  _Error;
 
     void ctor_(::g::Fuse::Scripting::Context* context, uString* id, ::g::Fuse::Scripting::Module* mod, ::g::Fuse::Scripting::Object* obj);
     void AddDependency(uDelegate* invalidateCallback);

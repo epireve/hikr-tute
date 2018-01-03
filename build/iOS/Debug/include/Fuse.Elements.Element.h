@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Elements.Element.GMSCacheItem.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.IPropertyListener.h>
-#include <Uno.UX.Size.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Elements.Element.GMSCacheItem.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.IPropertyListener.h 
+#include <Uno.UX.Size.h 
 namespace g{namespace Fuse{namespace Effects{struct Effect;}}}
 namespace g{namespace Fuse{namespace Elements{struct BoxSizing;}}}
 namespace g{namespace Fuse{namespace Elements{struct Cache;}}}
@@ -223,27 +223,27 @@ void Element__set_Y_fn(Element* __this, ::g::Uno::UX::Size* value);
 
 struct Element : ::g::Fuse::Visual
 {
-    uStrong< ::g::Fuse::Elements::ElementBatcher*> _elementBatcher;
+    uStrong< ::g::Fuse::Elements::ElementBatcher*  _elementBatcher;
     bool _elementBatchValid;
-    uStrong< ::g::Fuse::VisualBounds*> _renderBoundsWithEffects;
-    uStrong< ::g::Fuse::VisualBounds*> _renderBoundsWithoutEffects;
-    uStrong< ::g::Uno::Collections::List*> _effects;
+    uStrong< ::g::Fuse::VisualBounds*  _renderBoundsWithEffects;
+    uStrong< ::g::Fuse::VisualBounds*  _renderBoundsWithoutEffects;
+    uStrong< ::g::Uno::Collections::List*  _effects;
     int _compositionEffects;
-    uStrong< ::g::Fuse::Elements::Cache*> _cache;
+    uStrong< ::g::Fuse::Elements::Cache*  _cache;
     bool _warnOpacityFlat;
     bool _warnNoCacheDraw;
     bool _dispatchedZOrderChanged;
     bool _transformChanged;
     static ::g::Uno::UX::Selector _hitTestModeName_;
-    static ::g::Uno::UX::Selector& _hitTestModeName() { return Element_typeof()->Init(), _hitTestModeName_; }
+    static ::g::Uno::UX::Selector& _hitTestModeName() { return Element_typeof()- Init(), _hitTestModeName_; }
     ::g::Uno::UX::Size _width;
     ::g::Uno::UX::Size _height;
     int _alignment;
     int _visibility;
     static ::g::Uno::UX::Selector _visibilityName_;
-    static ::g::Uno::UX::Selector& _visibilityName() { return Element_typeof()->Init(), _visibilityName_; }
+    static ::g::Uno::UX::Selector& _visibilityName() { return Element_typeof()- Init(), _visibilityName_; }
     static ::g::Uno::UX::Selector _clipToBoundsName_;
-    static ::g::Uno::UX::Selector& _clipToBoundsName() { return Element_typeof()->Init(), _clipToBoundsName_; }
+    static ::g::Uno::UX::Selector& _clipToBoundsName() { return Element_typeof()- Init(), _clipToBoundsName_; }
     ::g::Uno::Float2 _actualPosition;
     ::g::Uno::Float2 _actualPositionCache;
     bool _haveActualPositionCache;
@@ -251,25 +251,25 @@ struct Element : ::g::Fuse::Visual
     ::g::Uno::Float2 _intendedSize;
     int _gmsCount;
     int _gmsAt;
-    uStrong<uArray*> _gmsCache;
-    uStrong< ::g::Fuse::Elements::BoxSizing*> _boxSizing;
+    uStrong<uArray*  _gmsCache;
+    uStrong< ::g::Fuse::Elements::BoxSizing*  _boxSizing;
     ::g::Uno::Float2 _actualAnchor;
     static bool _invalidValuesWarn_;
-    static bool& _invalidValuesWarn() { return Element_typeof()->Init(), _invalidValuesWarn_; }
-    uWeak< ::g::Fuse::Node*> _placedBefore;
+    static bool& _invalidValuesWarn() { return Element_typeof()- Init(), _invalidValuesWarn_; }
+    uWeak< ::g::Fuse::Node*  _placedBefore;
     ::g::Uno::Float2 _ppPrevSize;
     ::g::Uno::Float2 _ppPrevPosition;
     bool ignoreTempArrange;
     bool _pendingDispatchPlacement;
     static ::g::Uno::UX::Selector _opacityName_;
-    static ::g::Uno::UX::Selector& _opacityName() { return Element_typeof()->Init(), _opacityName_; }
-    static uSStrong<uObject*> DefaultTransformOrigin_;
-    static uSStrong<uObject*>& DefaultTransformOrigin() { return Element_typeof()->Init(), DefaultTransformOrigin_; }
+    static ::g::Uno::UX::Selector& _opacityName() { return Element_typeof()- Init(), _opacityName_; }
+    static uSStrong<uObject*  DefaultTransformOrigin_;
+    static uSStrong<uObject* & DefaultTransformOrigin() { return Element_typeof()- Init(), DefaultTransformOrigin_; }
     static ::g::Uno::UX::Selector ExplicitTransformOriginName_;
-    static ::g::Uno::UX::Selector& ExplicitTransformOriginName() { return Element_typeof()->Init(), ExplicitTransformOriginName_; }
-    uStrong< ::g::Fuse::Elements::ElementBatchEntry*> _ElementBatchEntry;
-    uStrong<uDelegate*> Placed1;
-    uStrong<uDelegate*> Preplacement1;
+    static ::g::Uno::UX::Selector& ExplicitTransformOriginName() { return Element_typeof()- Init(), ExplicitTransformOriginName_; }
+    uStrong< ::g::Fuse::Elements::ElementBatchEntry*  _ElementBatchEntry;
+    uStrong<uDelegate*  Placed1;
+    uStrong<uDelegate*  Preplacement1;
 
     void ctor_3();
     ::g::Uno::Float2 ActualAnchor();
@@ -290,7 +290,7 @@ struct Element : ::g::Fuse::Visual
     ::g::Fuse::Elements::Cache* Cache();
     int CachingMode();
     void CachingMode(int value);
-    ::g::Fuse::VisualBounds* CalcRenderBounds() { ::g::Fuse::VisualBounds* __retval; return (((Element_type*)__type)->fp_CalcRenderBounds)(this, &__retval), __retval; }
+    ::g::Fuse::VisualBounds* CalcRenderBounds() { ::g::Fuse::VisualBounds* __retval; return (((Element_type*)__type)- fp_CalcRenderBounds)(this, &__retval), __retval; }
     ::g::Fuse::VisualBounds* CalcRenderBoundsWithEffects();
     ::g::Uno::Graphics::Framebuffer* CaptureRegion(::g::Fuse::DrawContext* dc, ::g::Uno::Rect region, ::g::Uno::Float2 padding);
     void CleanupBatching();
@@ -301,11 +301,11 @@ struct Element : ::g::Fuse::Visual
     void DispatchPlacement();
     void DrawNonUnderlayChildren(::g::Fuse::DrawContext* dc);
     void DrawUnderlayChildren(::g::Fuse::DrawContext* dc);
-    void DrawWithChildren(::g::Fuse::DrawContext* dc) { (((Element_type*)__type)->fp_DrawWithChildren)(this, dc); }
+    void DrawWithChildren(::g::Fuse::DrawContext* dc) { (((Element_type*)__type)- fp_DrawWithChildren)(this, dc); }
     uObject* Effects();
     ::g::Fuse::Elements::ElementBatchEntry* ElementBatchEntry();
     void ElementBatchEntry(::g::Fuse::Elements::ElementBatchEntry* value);
-    bool FastTrackDrawWithOpacity(::g::Fuse::DrawContext* dc) { bool __retval; return (((Element_type*)__type)->fp_FastTrackDrawWithOpacity)(this, dc, &__retval), __retval; }
+    bool FastTrackDrawWithOpacity(::g::Fuse::DrawContext* dc) { bool __retval; return (((Element_type*)__type)- fp_FastTrackDrawWithOpacity)(this, dc, &__retval), __retval; }
     ::g::Uno::Float2 GetArrangePaddingSize(::g::Fuse::LayoutParams lp);
     ::g::Uno::Float2 GetContentSize(::g::Fuse::LayoutParams lp);
     ::g::Uno::Recti GetViewportInvertPixelRect(::g::Fuse::DrawContext* dc, ::g::Uno::Rect localRegion);
@@ -316,7 +316,7 @@ struct Element : ::g::Fuse::Visual
     bool HasEffects();
     ::g::Uno::UX::Size Height();
     void Height(::g::Uno::UX::Size value);
-    ::g::Fuse::VisualBounds* HitTestLocalVisualBounds() { ::g::Fuse::VisualBounds* __retval; return (((Element_type*)__type)->fp_get_HitTestLocalVisualBounds)(this, &__retval), __retval; }
+    ::g::Fuse::VisualBounds* HitTestLocalVisualBounds() { ::g::Fuse::VisualBounds* __retval; return (((Element_type*)__type)- fp_get_HitTestLocalVisualBounds)(this, &__retval), __retval; }
     int HitTestMode();
     void HitTestMode(int value);
     ::g::Uno::Float2 IntendedPosition();
@@ -350,13 +350,13 @@ struct Element : ::g::Fuse::Visual
     void NotifyTreeRendererZOrderChanged();
     ::g::Uno::UX::Size2 Offset();
     void Offset(::g::Uno::UX::Size2 value);
-    void OnDraw(::g::Fuse::DrawContext* dc) { (((Element_type*)__type)->fp_OnDraw)(this, dc); }
+    void OnDraw(::g::Fuse::DrawContext* dc) { (((Element_type*)__type)- fp_OnDraw)(this, dc); }
     void OnEffectAdded(::g::Fuse::Effects::Effect* e);
     void OnEffectRemoved(::g::Fuse::Effects::Effect* e);
     void OnEffectRenderBoundsChanged(::g::Fuse::Effects::Effect* e);
     void OnEffectRenderingChanged(::g::Fuse::Effects::Effect* e);
     void OnHitTestChildren(::g::Fuse::HitTestContext* htc);
-    void OnHitTestLocalVisual(::g::Fuse::HitTestContext* htc) { (((Element_type*)__type)->fp_OnHitTestLocalVisual)(this, htc); }
+    void OnHitTestLocalVisual(::g::Fuse::HitTestContext* htc) { (((Element_type*)__type)- fp_OnHitTestLocalVisual)(this, htc); }
     void OnInvalidateRenderBoundsWithEffects();
     void OnOpacityChanged(uObject* origin);
     void OnPreplacement();
@@ -382,7 +382,7 @@ struct Element : ::g::Fuse::Visual
     bool ShouldBatch();
     uObject* TransformOrigin();
     void TransformOrigin(uObject* value);
-    uObject* TreeRenderer() { uObject* __retval; return (((Element_type*)__type)->fp_get_TreeRenderer)(this, &__retval), __retval; }
+    uObject* TreeRenderer() { uObject* __retval; return (((Element_type*)__type)- fp_get_TreeRenderer)(this, &__retval), __retval; }
     int Visibility();
     void Visibility(int value);
     ::g::Uno::UX::Size Width();
@@ -404,19 +404,19 @@ struct Element : ::g::Fuse::Visual
 
 }}} // ::g::Fuse::Elements
 
-#include <Fuse.LayoutParams.h>
-#include <Uno.Float3.h>
-#include <Uno.Float4.h>
-#include <Uno.Rect.h>
-#include <Uno.Recti.h>
-#include <Uno.UX.Size2.h>
+#include <Fuse.LayoutParams.h 
+#include <Uno.Float3.h 
+#include <Uno.Float4.h 
+#include <Uno.Rect.h 
+#include <Uno.Recti.h 
+#include <Uno.UX.Size2.h 
 
 namespace g{
 namespace Fuse{
 namespace Elements{
 
-inline void Element::ArrangePaddingBox(::g::Fuse::LayoutParams lp) { (((Element_type*)__type)->fp_ArrangePaddingBox)(this, &lp); }
-inline ::g::Uno::Float2 Element::GetContentSize(::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Element_type*)__type)->fp_GetContentSize)(this, &lp, &__retval), __retval; }
+inline void Element::ArrangePaddingBox(::g::Fuse::LayoutParams lp) { (((Element_type*)__type)- fp_ArrangePaddingBox)(this, &lp); }
+inline ::g::Uno::Float2 Element::GetContentSize(::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Element_type*)__type)- fp_GetContentSize)(this, &lp, &__retval), __retval; }
 inline void Element::ArrangePaddingBox(Element* __this, ::g::Fuse::LayoutParams lp) { Element__ArrangePaddingBox_fn(__this, &lp); }
 inline ::g::Uno::Float2 Element::GetContentSize(Element* __this, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return Element__GetContentSize_fn(__this, &lp, &__retval), __retval; }
 // }

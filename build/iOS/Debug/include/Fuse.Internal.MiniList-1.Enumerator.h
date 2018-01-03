@@ -2,19 +2,19 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.MiniList-1.h>
-#include <Fuse.Internal.ObjectList-1.Enumerator.h>
-#include <Uno.Collections.IEnumerator.h>
-#include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Internal.MiniList-1.h 
+#include <Fuse.Internal.ObjectList-1.Enumerator.h 
+#include <Uno.Collections.IEnumerator.h 
+#include <Uno.Collections.IEnumerator-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct MiniList__Enumerator;}}}
 
 namespace g{
 namespace Fuse{
 namespace Internal{
 
-// public struct MiniList<T>.Enumerator :189
+// public struct MiniList<T .Enumerator :189
 // {
 struct MiniList__Enumerator_type : uStructType
 {
@@ -36,7 +36,7 @@ struct MiniList__Enumerator
     ::g::Fuse::Internal::ObjectList__Enumerator _iter;
     ::g::Fuse::Internal::MiniList _source;
     bool _first;
-    uStrong<uObject*> _value;
+    uStrong<uObject*  _value;
     int _mode;
 
     void ctor_(uType* __type, ::g::Fuse::Internal::MiniList source, bool versionLock);

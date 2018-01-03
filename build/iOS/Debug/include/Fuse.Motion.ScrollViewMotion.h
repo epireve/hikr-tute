@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.MotionConfig.h>
+#include <Fuse.Motion.MotionConfig.h 
 namespace g{namespace Fuse{namespace Motion{struct ScrollViewMotion;}}}
 
 namespace g{

@@ -1,26 +1,26 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Backends/CPlusPlus/Uno/Support.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno/Support.h>
-#include <uBase/Buffer.h>
-#include <uBase/Thread.h>
-#include <uBase/Path.h>
-#include <uBase/Unicode.h>
-#include <uImage/Bitmap.h>
-#include <uImage/Jpeg.h>
-#include <uImage/Png.h>
-#include <uImage/Texture.h>
-#include <XliPlatform/GL.h>
-#include <XliPlatform/MessageBox.h>
-#include <Uno.Byte.h>
-#include <Uno.Buffer.h>
+#include <Uno/Support.h 
+#include <uBase/Buffer.h 
+#include <uBase/Thread.h 
+#include <uBase/Path.h 
+#include <uBase/Unicode.h 
+#include <uImage/Bitmap.h 
+#include <uImage/Jpeg.h 
+#include <uImage/Png.h 
+#include <uImage/Texture.h 
+#include <XliPlatform/GL.h 
+#include <XliPlatform/MessageBox.h 
+#include <Uno.Byte.h 
+#include <Uno.Buffer.h 
 
 #if ANDROID
-#include <android/log.h>
+#include <android/log.h 
 #elif IOS
 void uLogApple(const char* prefix, const char* format, va_list args);
 #else
-#include <cstdio>
+#include <cstdio 
 #endif
 
 static uBase::Mutex* _Critical;
@@ -49,7 +49,7 @@ void uLogv(int level, const char* format, va_list args)
 
     if (level < 0)
         level = 0;
-    else if (level > uLogLevelFatal)
+    else if (level   uLogLevelFatal)
         level = uLogLevelFatal;
 
 #if ANDROID
@@ -73,7 +73,7 @@ void uLogv(int level, const char* format, va_list args)
     // Defined in ObjC file to call NSLog()
     uLogApple(strings[level], format, args);
 #else
-    FILE* fp = level >= uLogLevelWarning
+    FILE* fp = level  = uLogLevelWarning
             ? stderr
             : stdout;
     uBase::LockMutex(_Critical);
@@ -127,7 +127,7 @@ void uExitCritical()
 
 uBase::String uStringToXliString(uString* ustr)
 {
-    return ustr ? uBase::Unicode::Utf16To8(ustr->Ptr(), ustr->Length()) : "";
+    return ustr ? uBase::Unicode::Utf16To8(ustr- Ptr(), ustr- Length()) : "";
 }
 
 uString* uStringFromXliString(const uBase::String& str)
@@ -163,14 +163,14 @@ uBase::Vector2 uFloat2ToXliVector2(const ::g::Uno::Float2& vec)
         return NULL;
     }
 
-    uArray* arr = uArray::New(::g::Uno::Byte_typeof()->Array(), data->GetSizeInBytes(), data->GetPtr());
-    return ::g::Uno::Buffer::New3(arr, 0, arr->Length(), true);
+    uArray* arr = uArray::New(::g::Uno::Byte_typeof()- Array(), data- GetSizeInBytes(), data- GetPtr());
+    return ::g::Uno::Buffer::New3(arr, 0, arr- Length(), true);
 }
 
 uImage::Texture* uLoadXliTexture(const uBase::String& filename, uBase::Stream* stream)
 {
     uBase::String fnUpper = filename.ToUpper();
-    uBase::Auto<uImage::ImageReader> ir;
+    uBase::Auto<uImage::ImageReader  ir;
 
     if (fnUpper.EndsWith(".PNG"))
         ir = uImage::Png::CreateReader(stream);
@@ -179,7 +179,7 @@ uImage::Texture* uLoadXliTexture(const uBase::String& filename, uBase::Stream* s
     else
         throw uBase::Exception("Unsupported texture extension '" + uBase::Path::GetExtension(filename) + "'");
 
-    uBase::Auto<uImage::Bitmap> bmp = ir->ReadBitmap();
+    uBase::Auto<uImage::Bitmap  bmp = ir- ReadBitmap();
     return uImage::Texture::Create(bmp);
 }
 
@@ -219,12 +219,12 @@ unsigned int uCreateGLTexture(uImage::Texture* texData, bool generateMips, uGLTe
     GLuint texHandle;
     glGenTextures(1, &texHandle);
 
-    int width = texData->Faces[0].MipLevels[0]->GetWidth();
-    int height = texData->Faces[0].MipLevels[0]->GetHeight();
-    int mipCount = texData->Faces[0].MipLevels.Length();
+    int width = texData- Faces[0].MipLevels[0]- GetWidth();
+    int height = texData- Faces[0].MipLevels[0]- GetHeight();
+    int mipCount = texData- Faces[0].MipLevels.Length();
 
     GLenum texTarget =
-        texData->Type == uImage::TextureTypeCube ?
+        texData- Type == uImage::TextureTypeCube ?
             GL_TEXTURE_CUBE_MAP :
             GL_TEXTURE_2D;
 
@@ -232,23 +232,23 @@ unsigned int uCreateGLTexture(uImage::Texture* texData, bool generateMips, uGLTe
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     glPixelStorei(GL_PACK_ALIGNMENT, 1);
 
-    for (int i = 0; i < texData->Faces.Length(); i++)
+    for (int i = 0; i < texData- Faces.Length(); i++)
     {
         GLenum texFace =
             texTarget == GL_TEXTURE_CUBE_MAP ?
                 GL_TEXTURE_CUBE_MAP_POSITIVE_X + i :
                 GL_TEXTURE_2D;
 
-        for (int j = 0; j < texData->Faces[i].MipLevels.Length(); j++)
+        for (int j = 0; j < texData- Faces[i].MipLevels.Length(); j++)
         {
-            uImage::Image* mip = texData->Faces[i].MipLevels[j];
-            uBase::Auto<uImage::Bitmap> bmp = mip->ToBitmap();
+            uImage::Image* mip = texData- Faces[i].MipLevels[j];
+            uBase::Auto<uImage::Bitmap  bmp = mip- ToBitmap();
 
             GLenum glFormat, glType;
-            if (!TryGetGLFormat(bmp->GetFormat(), glFormat, glType))
-                throw uBase::Exception("Unsupported texture format: " + uImage::FormatInfo::ToString(bmp->GetFormat()));
+            if (!TryGetGLFormat(bmp- GetFormat(), glFormat, glType))
+                throw uBase::Exception("Unsupported texture format: " + uImage::FormatInfo::ToString(bmp- GetFormat()));
 
-            glTexImage2D(texFace, j, glFormat, bmp->GetWidth(), bmp->GetHeight(), 0, glFormat, glType, bmp->GetPtr());
+            glTexImage2D(texFace, j, glFormat, bmp- GetWidth(), bmp- GetHeight(), 0, glFormat, glType, bmp- GetPtr());
         }
     }
 
@@ -261,7 +261,7 @@ unsigned int uCreateGLTexture(uImage::Texture* texData, bool generateMips, uGLTe
         {
             int w = width, h = height;
 
-            while (w > 1 || h > 1)
+            while (w   1 || h   1)
             {
                 w /= 2;
                 h /= 2;
@@ -272,11 +272,11 @@ unsigned int uCreateGLTexture(uImage::Texture* texData, bool generateMips, uGLTe
 
     if (outInfo)
     {
-        outInfo->GLTarget = texTarget;
-        outInfo->Width = width;
-        outInfo->Height = height;
-        outInfo->Depth = 1;
-        outInfo->MipCount = mipCount;
+        outInfo- GLTarget = texTarget;
+        outInfo- Width = width;
+        outInfo- Height = height;
+        outInfo- Depth = 1;
+        outInfo- MipCount = mipCount;
     }
 
     return texHandle;

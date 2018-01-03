@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct TernaryOperator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct TernaryOperator__Subscription;}}}
 
@@ -25,17 +25,17 @@ void TernaryOperator__Subscription__OnNewOperands_fn(TernaryOperator__Subscripti
 
 struct TernaryOperator__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::TernaryOperator*> _to;
-    uStrong<uObject*> _first;
-    uStrong<uObject*> _second;
-    uStrong<uObject*> _third;
+    uStrong< ::g::Fuse::Reactive::TernaryOperator*  _to;
+    uStrong<uObject*  _first;
+    uStrong<uObject*  _second;
+    uStrong<uObject*  _third;
     bool _hasFirst;
     bool _hasSecond;
     bool _hasThird;
-    uStrong<uObject*> _firstSub;
-    uStrong<uObject*> _secondSub;
-    uStrong<uObject*> _thirdSub;
-    uStrong<uObject*> _listener;
+    uStrong<uObject*  _firstSub;
+    uStrong<uObject*  _secondSub;
+    uStrong<uObject*  _thirdSub;
+    uStrong<uObject*  _listener;
 
     void ctor_1(::g::Fuse::Reactive::TernaryOperator* to, uObject* listener);
     void Init(uObject* context);

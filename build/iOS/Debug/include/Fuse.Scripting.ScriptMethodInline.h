@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.ScriptMethod.h>
+#include <Fuse.Scripting.ScriptMethod.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMethodInline;}}}
 
@@ -19,7 +19,7 @@ void ScriptMethodInline__New1_fn(uString* name, int* thread, uString* code, Scri
 
 struct ScriptMethodInline : ::g::Fuse::Scripting::ScriptMethod
 {
-    uStrong<uString*> Code;
+    uStrong<uString*  Code;
 
     void ctor_2(uString* name, int thread, uString* code);
     static ScriptMethodInline* New1(uString* name, int thread, uString* code);

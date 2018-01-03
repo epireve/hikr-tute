@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPageRoute;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterRequest;}}}
@@ -37,11 +37,11 @@ void RouterRequest__ValidateParameter_fn(uObject* arg, int* depth, bool* __retva
 struct RouterRequest : uObject
 {
     int How;
-    uStrong< ::g::Fuse::Navigation::RouterPageRoute*> Route;
-    uWeak< ::g::Fuse::Node*> Relative;
+    uStrong< ::g::Fuse::Navigation::RouterPageRoute*  Route;
+    uWeak< ::g::Fuse::Node*  Relative;
     int Transition;
-    uStrong<uString*> Style;
-    uStrong<uString*> Bookmark;
+    uStrong<uString*  Style;
+    uStrong<uString*  Bookmark;
     int _flags;
 
     void ctor_(int flags);
@@ -49,7 +49,7 @@ struct RouterRequest : uObject
     bool AddHow(int how);
     bool AddPath(uObject* value);
     bool MakeRequest(::g::Fuse::Navigation::Router* router);
-    ::g::Fuse::Node* ParseNode(uObject* value) { ::g::Fuse::Node* __retval; return (((RouterRequest_type*)__type)->fp_ParseNode)(this, value, &__retval), __retval; }
+    ::g::Fuse::Node* ParseNode(uObject* value) { ::g::Fuse::Node* __retval; return (((RouterRequest_type*)__type)- fp_ParseNode)(this, value, &__retval), __retval; }
     void Reset();
     static RouterRequest* New1(int flags);
     static ::g::Fuse::Navigation::RouterPageRoute* ParseFlatRoute(uObject* path);

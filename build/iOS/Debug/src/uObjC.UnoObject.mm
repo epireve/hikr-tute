@@ -1,6 +1,6 @@
-#include <Uno/Uno.h>
-#include <uObjC.Foreign.h>
-#include <uObjC.UnoObject.h>
+#include <Uno/Uno.h 
+#include <uObjC.Foreign.h 
+#include <uObjC.UnoObject.h 
 
 
 @implementation StrongUnoObject
@@ -41,7 +41,7 @@
 	StrongUnoObject *newRef = [[[self class] allocWithZone:zone] init];
 
 	uRetain(_unoObject);
-	newRef->_unoObject = _unoObject;
+	newRef- _unoObject = _unoObject;
 	return newRef;
 }
 
@@ -106,10 +106,10 @@
 {
 	WeakUnoObject *newRef = [[[self class] allocWithZone:zone] init];
 
-	newRef->_weakObject = NULL;
+	newRef- _weakObject = NULL;
 
 	uObject *object = uLoadWeak(_weakObject);
-	uStoreWeak(&newRef->_weakObject, object);
+	uStoreWeak(&newRef- _weakObject, object);
 
 	return newRef;
 }
@@ -163,7 +163,7 @@
 - (instancetype)copyWithZone:(NSZone *)zone
 {
 	UnsafeUnoObject *newRef = [[[self class] allocWithZone:zone] init];
-	newRef->_unoObject = _unoObject;
+	newRef- _unoObject = _unoObject;
 	return newRef;
 }
 @end

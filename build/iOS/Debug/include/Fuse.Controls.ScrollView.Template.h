@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollView;}}}
 namespace g{namespace Fuse{namespace Controls{struct ScrollView__Template;}}}
 
@@ -19,8 +19,8 @@ void ScrollView__Template__New2_fn(::g::Fuse::Controls::ScrollView* parent, ::g:
 
 struct ScrollView__Template : ::g::Uno::UX::Template
 {
-    uWeak< ::g::Fuse::Controls::ScrollView*> __parent1;
-    uWeak< ::g::Fuse::Controls::ScrollView*> __parentInstance1;
+    uWeak< ::g::Fuse::Controls::ScrollView*  __parent1;
+    uWeak< ::g::Fuse::Controls::ScrollView*  __parentInstance1;
 
     void ctor_1(::g::Fuse::Controls::ScrollView* parent, ::g::Fuse::Controls::ScrollView* parentInstance);
     static ScrollView__Template* New2(::g::Fuse::Controls::ScrollView* parent, ::g::Fuse::Controls::ScrollView* parentInstance);

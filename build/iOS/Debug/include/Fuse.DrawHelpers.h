@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct DrawHelpers;}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
@@ -26,10 +26,10 @@ void DrawHelpers__get_Singelton_fn(DrawHelpers** __retval);
 
 struct DrawHelpers : uObject
 {
-    static uSStrong<DrawHelpers*> _instance_;
-    static uSStrong<DrawHelpers*>& _instance() { return _instance_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawLocalRect_Coord_1e24cb92_1_2_1;
-    uStrong<uArray*> DrawLocalRect_Vertices_1e24cb92_1_1_4;
+    static uSStrong<DrawHelpers*  _instance_;
+    static uSStrong<DrawHelpers* & _instance() { return _instance_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawLocalRect_Coord_1e24cb92_1_2_1;
+    uStrong<uArray*  DrawLocalRect_Vertices_1e24cb92_1_1_4;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_1e24cb92;
 
     void ctor_();

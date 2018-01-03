@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct CacheFramebuffer;}}
 namespace g{namespace Fuse{struct FramebufferPool;}}
 namespace g{namespace Fuse{struct FramebufferPoolImpl;}}
@@ -25,8 +25,8 @@ void FramebufferPool__UnRegister_fn(::g::Fuse::CacheFramebuffer* cfb);
 
 struct FramebufferPool : uObject
 {
-    static uSStrong< ::g::Fuse::FramebufferPoolImpl*> framebufferPool_;
-    static uSStrong< ::g::Fuse::FramebufferPoolImpl*>& framebufferPool() { return framebufferPool_; }
+    static uSStrong< ::g::Fuse::FramebufferPoolImpl*  framebufferPool_;
+    static uSStrong< ::g::Fuse::FramebufferPoolImpl* & framebufferPool() { return framebufferPool_; }
 
     static void EnsurePool();
     static ::g::Uno::Graphics::Framebuffer* Lock(int width, int height, int format, bool depth);

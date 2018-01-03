@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.DestinationMotionConfig.h>
+#include <Fuse.Motion.DestinationMotionConfig.h 
 namespace g{namespace Fuse{namespace Animations{struct AttractorConfig;}}}
 
 namespace g{

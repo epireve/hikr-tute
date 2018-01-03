@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Uno.Object.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Uno.Object.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ObservableProperty;}}}
@@ -45,11 +45,11 @@ void ObservableProperty__UnoUXIPropertyListenerOnPropertyChanged_fn(ObservablePr
 
 struct ObservableProperty : uObject
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    uStrong< ::g::Uno::UX::Property*> _property;
-    uStrong< ::g::Fuse::Scripting::Object*> _obj;
-    uStrong< ::g::Fuse::Scripting::Observable*> _observable;
-    uStrong<uObject*> _subscription;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    uStrong< ::g::Uno::UX::Property*  _property;
+    uStrong< ::g::Fuse::Scripting::Object*  _obj;
+    uStrong< ::g::Fuse::Scripting::Observable*  _observable;
+    uStrong<uObject*  _subscription;
 
     void ctor_(::g::Fuse::Scripting::ThreadWorker* w, ::g::Fuse::Scripting::Object* obj, ::g::Uno::UX::Property* p);
     ::g::Fuse::Scripting::Observable* GetObservable();

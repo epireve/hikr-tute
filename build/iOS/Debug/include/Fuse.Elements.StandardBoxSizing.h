@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.BoxSizing.h>
+#include <Fuse.Elements.BoxSizing.h 
 namespace g{namespace Fuse{namespace Elements{struct BoxPlacement;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct StandardBoxSizing;}}}
@@ -26,8 +26,8 @@ void StandardBoxSizing__SnapUp_fn(StandardBoxSizing* __this, ::g::Fuse::Elements
 
 struct StandardBoxSizing : ::g::Fuse::Elements::BoxSizing
 {
-    static uSStrong<StandardBoxSizing*> Singleton_;
-    static uSStrong<StandardBoxSizing*>& Singleton() { return Singleton_; }
+    static uSStrong<StandardBoxSizing*  Singleton_;
+    static uSStrong<StandardBoxSizing* & Singleton() { return Singleton_; }
     bool ImplicitMax;
     float pixelEpsilon;
 

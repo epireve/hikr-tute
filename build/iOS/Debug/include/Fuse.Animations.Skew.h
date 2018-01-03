@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TransformAnimator-1.h>
-#include <Fuse.Shear.h>
+#include <Fuse.Animations.TransformAnimator-1.h 
+#include <Fuse.Shear.h 
 namespace g{namespace Fuse{namespace Animations{struct Skew;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float4;}}

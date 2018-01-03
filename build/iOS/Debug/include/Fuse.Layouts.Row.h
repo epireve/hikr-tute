@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Layouts.DefinitionBase.h>
+#include <Fuse.Layouts.DefinitionBase.h 
 namespace g{namespace Fuse{namespace Layouts{struct Row;}}}
 
 namespace g{

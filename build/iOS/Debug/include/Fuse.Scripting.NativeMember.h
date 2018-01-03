@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeMember;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -30,15 +30,15 @@ void NativeMember__set_Name_fn(NativeMember* __this, uString* value);
 
 struct NativeMember : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _Context;
-    uStrong< ::g::Fuse::Scripting::Object*> _ModuleObject;
-    uStrong<uString*> _Name;
+    uStrong< ::g::Fuse::Scripting::Context*  _Context;
+    uStrong< ::g::Fuse::Scripting::Object*  _ModuleObject;
+    uStrong<uString*  _Name;
 
     void ctor_(uString* name);
     ::g::Fuse::Scripting::Context* Context();
     void Context(::g::Fuse::Scripting::Context* value);
     void Create(::g::Fuse::Scripting::Object* obj, ::g::Fuse::Scripting::Context* context);
-    uObject* CreateObject() { uObject* __retval; return (((NativeMember_type*)__type)->fp_CreateObject)(this, &__retval), __retval; }
+    uObject* CreateObject() { uObject* __retval; return (((NativeMember_type*)__type)- fp_CreateObject)(this, &__retval), __retval; }
     ::g::Fuse::Scripting::Object* ModuleObject();
     void ModuleObject(::g::Fuse::Scripting::Object* value);
     uString* Name();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.CoreGraphicsSurface.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Drawing.CoreGraphicsSurface.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}
 namespace g{namespace Fuse{namespace Drawing{struct NativeSurface;}}}
 namespace g{namespace Fuse{struct DrawContext;}}

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct PageIndicatorDotTemplate;}}}
 
 namespace g{

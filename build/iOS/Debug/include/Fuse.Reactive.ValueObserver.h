@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct ValueObserver;}}}
 
 namespace g{
@@ -37,12 +37,12 @@ void ValueObserver__Unsubscribe_fn(ValueObserver* __this);
 
 struct ValueObserver : uObject
 {
-    uStrong<uObject*> _obsSub;
-    uStrong<uObject*> _obs;
+    uStrong<uObject*  _obsSub;
+    uStrong<uObject*  _obs;
 
     void ctor_();
-    void Dispose() { (((ValueObserver_type*)__type)->fp_Dispose)(this); }
-    void PushData(uObject* newValue) { (((ValueObserver_type*)__type)->fp_PushData)(this, newValue); }
+    void Dispose() { (((ValueObserver_type*)__type)- fp_Dispose)(this); }
+    void PushData(uObject* newValue) { (((ValueObserver_type*)__type)- fp_PushData)(this, newValue); }
     void Subscribe(uObject* obs);
     void Unsubscribe();
     static void Dispose(ValueObserver* __this) { ValueObserver__Dispose_fn(__this); }

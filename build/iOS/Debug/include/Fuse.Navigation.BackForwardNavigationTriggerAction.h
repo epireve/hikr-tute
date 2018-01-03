@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct BackForwardNavigationTriggerAction;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -24,11 +24,11 @@ void BackForwardNavigationTriggerAction__Perform_fn(BackForwardNavigationTrigger
 
 struct BackForwardNavigationTriggerAction : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong<uObject*> _NavigationContext;
+    uStrong<uObject*  _NavigationContext;
 
     uObject* NavigationContext();
     void NavigationContext(uObject* value);
-    void Perform1(uObject* ctx, ::g::Fuse::Node* node) { (((BackForwardNavigationTriggerAction_type*)__type)->fp_Perform1)(this, ctx, node); }
+    void Perform1(uObject* ctx, ::g::Fuse::Node* node) { (((BackForwardNavigationTriggerAction_type*)__type)- fp_Perform1)(this, ctx, node); }
 };
 // }
 

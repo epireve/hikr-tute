@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.IViewHandleRenderer.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Int2.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.Native.IViewHandleRenderer.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Int2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct NativeViewRenderer;}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -38,7 +38,7 @@ void NativeViewRenderer__Upload_fn(::g::ObjC::Object* viewHandle, int* textureNa
 
 struct NativeViewRenderer : uObject
 {
-    uStrong<uObject*> _pixelBuffer;
+    uStrong<uObject*  _pixelBuffer;
     uint32_t _textureHandle;
     bool _valid;
     ::g::Uno::Int2 _prevSize;

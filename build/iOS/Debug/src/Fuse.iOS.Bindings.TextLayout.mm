@@ -1,26 +1,26 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.4.2/TextRenderer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.iOS.FontCache.h>
-#include <Fuse.Controls.TextAlignment.h>
-#include <Fuse.Controls.TextControl.h>
-#include <Fuse.Controls.TextTruncation.h>
-#include <Fuse.Controls.TextWrapping.h>
-#include <Fuse.Font.h>
-#include <Fuse.ICommonViewport.h>
-#include <Fuse.Internal.FontFaceDescriptor.h>
-#include <Fuse.iOS.Bindings.TextLayout.h>
-#include <Fuse.IViewport.h>
-#include <Fuse.Visual.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <Uno.Math.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Float4.h>
+#include <Fuse.Controls.Native.iOS.FontCache.h 
+#include <Fuse.Controls.TextAlignment.h 
+#include <Fuse.Controls.TextControl.h 
+#include <Fuse.Controls.TextTruncation.h 
+#include <Fuse.Controls.TextWrapping.h 
+#include <Fuse.Font.h 
+#include <Fuse.ICommonViewport.h 
+#include <Fuse.Internal.FontFaceDescriptor.h 
+#include <Fuse.iOS.Bindings.TextLayout.h 
+#include <Fuse.IViewport.h 
+#include <Fuse.Visual.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <Uno.Math.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Float4.h 
 static uType* TYPES[1];
 
 namespace g{
@@ -33,9 +33,9 @@ namespace Bindings{
 static void TextLayout_build(uType* type)
 {
     ::TYPES[0] = ::g::Fuse::ICommonViewport_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Controls::Native::iOS::FontCache_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::ObjC::Object_typeof(), offsetof(TextLayout, _font), 0,
         ::g::Uno::Bool_typeof(), offsetof(TextLayout, _layoutValid), 0,
         ::g::Uno::Bool_typeof(), offsetof(TextLayout, _layoutMin), 0,
@@ -50,7 +50,7 @@ static void TextLayout_build(uType* type)
 
 uType* TextLayout_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -59,15 +59,15 @@ uType* TextLayout_typeof()
     options.ObjectSize = sizeof(TextLayout);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.iOS.Bindings.TextLayout", options);
-    type->fp_build_ = TextLayout_build;
-    type->fp_ctor_ = (void*)TextLayout__New1_fn;
+    type- fp_build_ = TextLayout_build;
+    type- fp_ctor_ = (void*)TextLayout__New1_fn;
     return type;
 }
 
 // public TextLayout() :31
 void TextLayout__ctor__fn(TextLayout* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public static void AddNSTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :159
@@ -103,7 +103,7 @@ void TextLayout__CreateRect_fn(::g::Uno::Float2* pos, ::g::Uno::Float2* size, ::
 // public void Invalidate() :25
 void TextLayout__Invalidate_fn(TextLayout* __this)
 {
-    __this->Invalidate();
+    __this- Invalidate();
 }
 
 // public TextLayout New() :31
@@ -133,7 +133,7 @@ void TextLayout__ToUIColor_fn(::g::Uno::Float4* color, ::g::ObjC::Object** __ret
 // public bool UpdateLayout(Fuse.Controls.TextControl control, float2 size, [bool useMin]) :40
 void TextLayout__UpdateLayout_fn(TextLayout* __this, ::g::Fuse::Controls::TextControl* control, ::g::Uno::Float2* size, bool* useMin, bool* __retval)
 {
-    *__retval = __this->UpdateLayout(control, *size, *useMin);
+    *__retval = __this- UpdateLayout(control, *size, *useMin);
 }
 
 // public static Uno.Rect UsedRectForTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :170
@@ -147,13 +147,13 @@ void TextLayout::ctor_()
 {
     @autoreleasepool
     {
-        [] (id<UnoObject> _this) -> void
+        [] (id<UnoObject  _this) -  void
         {
             NSLayoutManager* lm = [[NSLayoutManager alloc] init];
-            uCast<TextLayout*>((_this).unoObject, TextLayout_typeof())->LayoutManager = ::g::ObjC::Object::Create(lm);
+            uCast<TextLayout* ((_this).unoObject, TextLayout_typeof())- LayoutManager = ::g::ObjC::Object::Create(lm);
             
             NSMutableParagraphStyle* ps = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-            uCast<TextLayout*>((_this).unoObject, TextLayout_typeof())->_style = ::g::ObjC::Object::Create(ps);
+            uCast<TextLayout* ((_this).unoObject, TextLayout_typeof())- _style = ::g::ObjC::Object::Create(ps);
         } ([::StrongUnoObject strongUnoObjectWithUnoObject: this]);
         
     }
@@ -170,24 +170,24 @@ void TextLayout::Invalidate()
 bool TextLayout::UpdateLayout(::g::Fuse::Controls::TextControl* control, ::g::Uno::Float2 size, bool useMin)
 {
     ::g::Fuse::Internal::FontFaceDescriptor* ret2;
-    size = ::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply1(size, ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(control)->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/]))));
+    size = ::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply1(size, ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(control)- Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/]))));
     bool valid = (_layoutValid && ::g::Uno::Float2__op_Equality(_layoutSize, size)) && (_layoutMin == useMin);
 
     if (valid)
         return false;
 
-    _font = ::g::Fuse::Controls::Native::iOS::FontCache::Get((::g::Uno::Collections::List__get_Item_fn(uPtr(uPtr(control->Font())->Descriptors), uCRef<int>(0), &ret2), ret2), control->FontSize() * ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(control->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
-    _textColor = TextLayout::ToUIColor(control->TextColor());
+    _font = ::g::Fuse::Controls::Native::iOS::FontCache::Get((::g::Uno::Collections::List__get_Item_fn(uPtr(uPtr(control- Font())- Descriptors), uCRef<int (0), &ret2), ret2), control- FontSize() * ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(control- Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
+    _textColor = TextLayout::ToUIColor(control- TextColor());
     TextLayout::ClearTextContainers(LayoutManager);
     float width = size.X;
 
-    if ((control->TextTruncation() == 1) && (control->TextWrapping() == 0))
+    if ((control- TextTruncation() == 1) && (control- TextWrapping() == 0))
         width = 0.0f;
 
     TextContainer = TextLayout::CreateNSTextContainer(width, size.Y);
     TextLayout::AddNSTextContainer(LayoutManager, TextContainer);
-    TextLayout::SetNSParagraphStyleProperties(_style, control->TextAlignment(), control->TextWrapping(), control->LineSpacing() * ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(control->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
-    _textStorage = TextLayout::CreateNSTextStorage(control->Value(), _font, _textColor, _style);
+    TextLayout::SetNSParagraphStyleProperties(_style, control- TextAlignment(), control- TextWrapping(), control- LineSpacing() * ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(control- Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
+    _textStorage = TextLayout::CreateNSTextStorage(control- Value(), _font, _textColor, _style);
     TextLayout::SetNSTextStorage(LayoutManager, _textStorage);
     _layoutSize = size;
     _layoutValid = true;
@@ -201,7 +201,7 @@ void TextLayout::AddNSTextContainer(::g::ObjC::Object* layoutManager, ::g::ObjC:
 {
     @autoreleasepool
     {
-        [] (::id layoutManager, ::id textContainer) -> void
+        [] (::id layoutManager, ::id textContainer) -  void
         {
             [(NSLayoutManager*)layoutManager addTextContainer:(NSTextContainer*)textContainer];
         } (::g::ObjC::Object::GetHandle(layoutManager), ::g::ObjC::Object::GetHandle(textContainer));
@@ -215,10 +215,10 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
 {
     @autoreleasepool
     {
-        [] (::id layoutManager) -> void
+        [] (::id layoutManager) -  void
         {
             NSLayoutManager* lm = (NSLayoutManager*)layoutManager;
-            while (lm.textContainers.count > 0)
+            while (lm.textContainers.count   0)
             	[lm removeTextContainerAtIndex:0];
         } (::g::ObjC::Object::GetHandle(layoutManager));
         
@@ -231,7 +231,7 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (float width, float height) -> ::id
+        return ::g::ObjC::Object::Create([] (float width, float height) -  ::id
         {
             NSTextContainer* result = [[NSTextContainer alloc] initWithSize:CGSizeMake(width, height)];
             result.lineFragmentPadding = 0;
@@ -247,7 +247,7 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::NSString* value, ::id font, ::id color, ::id style) -> ::id
+        return ::g::ObjC::Object::Create([] (::NSString* value, ::id font, ::id color, ::id style) -  ::id
         {
             return [[NSTextStorage alloc] initWithString:value
             	attributes: @{
@@ -271,7 +271,7 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
 TextLayout* TextLayout::New1()
 {
     TextLayout* obj1 = (TextLayout*)uNew(TextLayout_typeof());
-    obj1->ctor_();
+    obj1- ctor_();
     return obj1;
 }
 
@@ -280,7 +280,7 @@ void TextLayout::SetNSParagraphStyleProperties(::g::ObjC::Object* style, int ali
 {
     @autoreleasepool
     {
-        [] (::id style, int alignment, int wrapping, float lineSpacing) -> void
+        [] (::id style, int alignment, int wrapping, float lineSpacing) -  void
         {
             NSMutableParagraphStyle* s = (NSMutableParagraphStyle*)style;
             switch (alignment)
@@ -317,7 +317,7 @@ void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::O
 {
     @autoreleasepool
     {
-        [] (::id layoutManager, ::id textStorage) -> void
+        [] (::id layoutManager, ::id textStorage) -  void
         {
             [(NSLayoutManager*)layoutManager setTextStorage:textStorage];
         } (::g::ObjC::Object::GetHandle(layoutManager), ::g::ObjC::Object::GetHandle(textStorage));
@@ -331,7 +331,7 @@ void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::O
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::g::Uno::Float4 color) -> ::id
+        return ::g::ObjC::Object::Create([] (::g::Uno::Float4 color) -  ::id
         {
             return [UIColor colorWithRed:(CGFloat)color.X
             	green:(CGFloat)color.Y
@@ -348,13 +348,13 @@ void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::O
 {
     @autoreleasepool
     {
-        return [] (::id layoutManager, ::id textContainer) -> ::g::Uno::Rect
+        return [] (::id layoutManager, ::id textContainer) -  ::g::Uno::Rect
         {
             CGRect rect = [(NSLayoutManager*)layoutManager
             	usedRectForTextContainer:(NSTextContainer*)textContainer];
-            ::g::Uno::Float2 pos = [&]() -> ::g::Uno::Float2 { ::uForeignPool __foreignPool; return ::g::Uno::Float2__New2((float)rect.origin.x, (float)-rect.origin.y); }(); // Apple's coordinate systems and/or APIs are crazy.
-            ::g::Uno::Float2 size = [&]() -> ::g::Uno::Float2 { ::uForeignPool __foreignPool; return ::g::Uno::Float2__New2((float)rect.size.width, (float)rect.size.height); }();
-            return [&]() -> ::g::Uno::Rect { ::uForeignPool __foreignPool; return TextLayout::CreateRect(pos, size); }();
+            ::g::Uno::Float2 pos = [&]() -  ::g::Uno::Float2 { ::uForeignPool __foreignPool; return ::g::Uno::Float2__New2((float)rect.origin.x, (float)-rect.origin.y); }(); // Apple's coordinate systems and/or APIs are crazy.
+            ::g::Uno::Float2 size = [&]() -  ::g::Uno::Float2 { ::uForeignPool __foreignPool; return ::g::Uno::Float2__New2((float)rect.size.width, (float)rect.size.height); }();
+            return [&]() -  ::g::Uno::Rect { ::uForeignPool __foreignPool; return TextLayout::CreateRect(pos, size); }();
         } (::g::ObjC::Object::GetHandle(layoutManager), ::g::ObjC::Object::GetHandle(textContainer));
         
     }

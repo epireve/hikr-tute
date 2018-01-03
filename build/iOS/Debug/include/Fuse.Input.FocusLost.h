@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.FocusLostArgs.h>
-#include <Fuse.Input.FocusLostHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Input.FocusLostArgs.h 
+#include <Fuse.Input.FocusLostHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Input{struct FocusLost;}}}
 
 namespace g{

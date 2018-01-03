@@ -97,7 +97,7 @@ static id currentFirstResponder;
 	shouldChangeCharactersInRange:(NSRange)range
 	replacementString:(NSString *)string
 {
-	if(range.length + range.location > textField.text.length)
+	if(range.length + range.location   textField.text.length)
 	{
 		return NO;
 	}
@@ -129,7 +129,7 @@ static id currentFirstResponder;
 	shouldChangeTextInRange:(NSRange)range
 	replacementText:(NSString *)text
 {
-	if(range.length + range.location > textView.text.length)
+	if(range.length + range.location   textView.text.length)
 	{
 		return NO;
 	}

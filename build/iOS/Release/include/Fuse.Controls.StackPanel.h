@@ -31,6 +31,8 @@ namespace Controls{
 // {
 ::g::Fuse::Controls::Panel_type* StackPanel_typeof();
 void StackPanel__ctor_7_fn(StackPanel* __this);
+void StackPanel__get_ItemSpacing_fn(StackPanel* __this, float* __retval);
+void StackPanel__set_ItemSpacing_fn(StackPanel* __this, float* value);
 void StackPanel__New4_fn(StackPanel** __retval);
 
 struct StackPanel : ::g::Fuse::Controls::Panel
@@ -38,6 +40,8 @@ struct StackPanel : ::g::Fuse::Controls::Panel
     uStrong< ::g::Fuse::Layouts::StackLayout*> _stackLayout;
 
     void ctor_7();
+    float ItemSpacing();
+    void ItemSpacing(float value);
     static StackPanel* New4();
 };
 // }

@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <cstdarg>
-#include <cstdlib>
-#include <exception>
-#include <Uno/Memory.h>
+#include <cstdarg 
+#include <cstdlib 
+#include <exception 
+#include <Uno/Memory.h 
 //#if #(REFLECTION:Defined)
-//#include <Uno/Reflection.h>
+//#include <Uno/Reflection.h 
 //#endif
 namespace g{namespace Uno{struct Exception;}}
 namespace uBase{struct Mutex;}
@@ -216,22 +216,22 @@ inline uType* uObject::GetType() const {
 }
 inline int uObject::GetHashCode() {
     int result;
-    return (*__type->fp_GetHashCode)(this, &result), result;
+    return (*__type- fp_GetHashCode)(this, &result), result;
 }
 inline bool uObject::Equals(uObject* object) {
     bool result;
-    return (*__type->fp_Equals)(this, object, &result), result;
+    return (*__type- fp_Equals)(this, object, &result), result;
 }
 inline uString* uObject::ToString() {
     uString* result;
-    return (*__type->fp_ToString)(this, &result), result;
+    return (*__type- fp_ToString)(this, &result), result;
 }
 
-#define U_IS_VOID(type) ((type)->Type == uTypeTypeVoid)
-#define U_IS_BY_REF(type) ((type)->Type >= uTypeTypeByRef)
-#define U_IS_OBJECT(type) ((type)->Type >= uTypeTypeClass)
-#define U_IS_VALUE(type) ((type)->Type < uTypeTypeByRef)
-#define U_IS_ABSTRACT(type) ((type)->Flags & uTypeFlagsAbstract)
+#define U_IS_VOID(type) ((type)- Type == uTypeTypeVoid)
+#define U_IS_BY_REF(type) ((type)- Type  = uTypeTypeByRef)
+#define U_IS_OBJECT(type) ((type)- Type  = uTypeTypeClass)
+#define U_IS_VALUE(type) ((type)- Type < uTypeTypeByRef)
+#define U_IS_ABSTRACT(type) ((type)- Flags & uTypeFlagsAbstract)
 
 uType* uObject_typeof();
 uType* uVoid_typeof();
@@ -285,39 +285,39 @@ uObject* uNew(uType* type);
 uObject* uNew(uType* type, size_t size);
 
 inline bool uIs(const uObject* object, const uType* type) {
-    return object && object->__type->Is(type);
+    return object && object- __type- Is(type);
 }
-template<class T>
+template<class T 
 T uAs(uObject* object, const uType* type) {
-    U_ASSERT(sizeof(T) == type->ValueSize);
-    return object && object->__type->Is(type) ? (T)object : NULL;
+    U_ASSERT(sizeof(T) == type- ValueSize);
+    return object && object- __type- Is(type) ? (T)object : NULL;
 }
-template<class T>
+template<class T 
 T uCast(uObject* object, const uType* type) {
-    U_ASSERT(sizeof(T) == type->ValueSize);
-    if (object && !object->__type->Is(type))
-        U_THROW_ICE2(object->__type, type);
+    U_ASSERT(sizeof(T) == type- ValueSize);
+    if (object && !object- __type- Is(type))
+        U_THROW_ICE2(object- __type, type);
     return (T)object;
 }
-template<class T>
+template<class T 
 T uPtr(const T& ptr) {
     if (!ptr) U_THROW_NRE();
     return ptr;
 }
-template<class T>
-T uPtr(const uSStrong<T>& ref) {
+template<class T 
+T uPtr(const uSStrong<T & ref) {
     return uPtr(ref._object);
 }
-template<class T>
-T uPtr(const uStrong<T>& ref) {
+template<class T 
+T uPtr(const uStrong<T & ref) {
     return uPtr(ref._object);
 }
-template<class T>
-T uPtr(const uSWeak<T>& ref) {
+template<class T 
+T uPtr(const uSWeak<T & ref) {
     return uPtr((T)uLoadWeak(ref._object));
 }
-template<class T>
-T uPtr(const uWeak<T>& ref) {
+template<class T 
+T uPtr(const uWeak<T & ref) {
     return uPtr((T)uLoadWeak(ref._object));
 }
 /** @} */
@@ -339,14 +339,14 @@ struct uInterface
     uInterface(uObject* object, uType* interfaceType) {
         U_ASSERT(interfaceType);
         _object = object;
-        _vtable = interfaceType->InterfacePtr(object);
+        _vtable = interfaceType- InterfacePtr(object);
     }
-    template<class T>
+    template<class T 
     const T* VTable() const {
         U_ASSERT(_object && _vtable);
         return (const T*)_vtable;
     }
-    uObject* operator ->() const {
+    uObject* operator - () const {
         return _object;
     }
     operator uObject*() const {
@@ -375,8 +375,8 @@ struct uDelegate : uObject
     void* _this;
     const void* _func;
     uType* _generic;
-    uStrong<uObject*> _object;
-    uStrong<uDelegate*> _prev;
+    uStrong<uObject*  _object;
+    uStrong<uDelegate*  _prev;
 
     void InvokeVoid();
     void InvokeVoid(void* arg);
@@ -417,25 +417,25 @@ void uCopy(uType* type, const void* src, void* dst, uint8_t flags = 0);
 uObject* uBoxPtr(uType* type, const void* src, void* stack = NULL, bool ref = false);
 void uUnboxPtr(uType* type, uObject* object, void* dst);
 
-template<class T>
+template<class T 
 uObject* uBox(uType* type, const T& value, void* stack = NULL) {
-    U_ASSERT(type && type->ValueSize == sizeof(T));
+    U_ASSERT(type && type- ValueSize == sizeof(T));
     return uBoxPtr(type, &value, stack, true);
 }
-template<class T>
+template<class T 
 T uDefault() {
     T t;
     return memset(&t, 0, sizeof(T)), t;
 }
-template<class T>
+template<class T 
 T uUnbox(uType* type, uObject* object) {
     T t;
-    U_ASSERT(type && type->ValueSize == sizeof(T));
+    U_ASSERT(type && type- ValueSize == sizeof(T));
     return uUnboxPtr(type, object, &t), t;
 }
-template<class T>
+template<class T 
 T uUnbox(uObject* object) {
-    U_ASSERT(object && object->__type->ValueSize == sizeof(T));
+    U_ASSERT(object && object- __type- ValueSize == sizeof(T));
     return *(const T*)((const uint8_t*)object + sizeof(uObject));
 }
 /** @} */
@@ -487,44 +487,44 @@ struct uArray : uObject
     uTField TItem(int index);
     uTField TUnsafe(int index);
 
-    template<class T>
+    template<class T 
     T& Item(int index) {
-        U_ASSERT(sizeof(T) == ((uArrayType*)__type)->ElementType->ValueSize);
-        if (index < 0 || index >= _length)
+        U_ASSERT(sizeof(T) == ((uArrayType*)__type)- ElementType- ValueSize);
+        if (index < 0 || index  = _length)
             U_THROW_IOORE();
         return ((T*)_ptr)[index];
     }
-    template<class T>
-    uStrong<T>& Strong(int index) {
-        U_ASSERT(sizeof(T) == ((uArrayType*)__type)->ElementType->ValueSize);
-        if (index < 0 || index >= _length)
+    template<class T 
+    uStrong<T & Strong(int index) {
+        U_ASSERT(sizeof(T) == ((uArrayType*)__type)- ElementType- ValueSize);
+        if (index < 0 || index  = _length)
             U_THROW_IOORE();
-        return ((uStrong<T>*)_ptr)[index];
+        return ((uStrong<T *)_ptr)[index];
     }
-    template<class T>
+    template<class T 
     T& Unsafe(int index) {
-        U_ASSERT(sizeof(T) == ((uArrayType*)__type)->ElementType->ValueSize &&
-                 index >= 0 && index < _length);
+        U_ASSERT(sizeof(T) == ((uArrayType*)__type)- ElementType- ValueSize &&
+                 index  = 0 && index < _length);
         return ((T*)_ptr)[index];
     }
-    template<class T>
-    uStrong<T>& UnsafeStrong(int index) {
-        U_ASSERT(sizeof(T) == ((uArrayType*)__type)->ElementType->ValueSize &&
-                 index >= 0 && index < _length);
-        return ((uStrong<T>*)_ptr)[index];
+    template<class T 
+    uStrong<T & UnsafeStrong(int index) {
+        U_ASSERT(sizeof(T) == ((uArrayType*)__type)- ElementType- ValueSize &&
+                 index  = 0 && index < _length);
+        return ((uStrong<T *)_ptr)[index];
     }
 
     static uArray* New(uType* type, int length, const void* optionalData = NULL);
     static uArray* InitT(uType* type, int length, ...);
 
-    template<class T>
+    template<class T 
     static uArray* Init(uType* type, int length, ...) {
         va_list ap;
         va_start(ap, length);
         uArray* array = New(type, length);
         for (int i = 0; i < length; i++) {
             T item = va_arg(ap, T);
-            array->MarshalPtr(i, &item, sizeof(T));
+            array- MarshalPtr(i, &item, sizeof(T));
         }
         va_end(ap);
         return array;
@@ -545,7 +545,7 @@ struct uString : uObject
     const uChar* Ptr() const { return _ptr; }
 
     const uChar& Item(int index) const {
-        if (index < 0 || index >= _length)
+        if (index < 0 || index  = _length)
             U_THROW_IOORE();
         return _ptr[index];
     }
@@ -615,14 +615,14 @@ struct uTRef
     uTRef(void* address)
         : _address(address) {
     }
-    template<class T>
+    template<class T 
     T& Value(uType* type) {
         U_ASSERT(_address);
         return *(T*)_address;
     }
     uTRef& Default(uType* type) {
         U_ASSERT(_address && type);
-        memset(_address, 0, type->ValueSize);
+        memset(_address, 0, type- ValueSize);
         return *this;
     }
     uTBase Load(uType* type) {
@@ -672,19 +672,19 @@ struct uTField : uTBase
     uTField& Default() {
         if (U_IS_OBJECT(_type))
             uAutoRelease(*(uObject**)_address);
-        else if (_type->Flags & uTypeFlagsRetainStruct)
+        else if (_type- Flags & uTypeFlagsRetainStruct)
             uAutoReleaseStruct(_type, _address);
-        memset(_address, 0, _type->ValueSize);
+        memset(_address, 0, _type- ValueSize);
         return *this;
     }
-    template<class T>
-    uStrong<T>& Strong() {
-        U_ASSERT(sizeof(T) == _type->ValueSize);
-        return *(uStrong<T>*)_address;
+    template<class T 
+    uStrong<T & Strong() {
+        U_ASSERT(sizeof(T) == _type- ValueSize);
+        return *(uStrong<T *)_address;
     }
-    template<class T>
+    template<class T 
     T& Value() {
-        U_ASSERT(sizeof(T) == _type->ValueSize);
+        U_ASSERT(sizeof(T) == _type- ValueSize);
         return *(T*)_address;
     }
     uTField& operator =(const uTField& value) {
@@ -700,7 +700,7 @@ struct uTField : uTBase
         return *this;
     }
     uTField operator [](size_t index) {
-        return _type->Field(_address, index);
+        return _type- Field(_address, index);
     }
     uTStrongRef operator &() {
         return uTStrongRef(_type, _address);
@@ -714,19 +714,19 @@ struct uT : uTBase
 {
     uT(uType* type, void* stack)
         : uTBase(type, stack) {
-        memset(stack, 0, type->ValueSize);
+        memset(stack, 0, type- ValueSize);
     }
     uT(const uT& copy)
         : uTBase(copy) {
-        if (_type->Flags & uTypeFlagsRetainStruct)
+        if (_type- Flags & uTypeFlagsRetainStruct)
             uRetainStruct(_type, _address);
     }
     ~uT() {
-        if (_type->Flags & uTypeFlagsRetainStruct)
+        if (_type- Flags & uTypeFlagsRetainStruct)
             uAutoReleaseStruct(_type, _address);
     }
     uT& Default() {
-        memset(_address, 0, _type->ValueSize);
+        memset(_address, 0, _type- ValueSize);
         return *this;
     }
     uT& operator =(const uT& value) {
@@ -742,7 +742,7 @@ struct uT : uTBase
         return *this;
     }
     uTField operator [](size_t index) {
-        return _type->Field(_address, index);
+        return _type- Field(_address, index);
     }
     uTRef& operator &() {
         return (uTRef&)_address;
@@ -771,18 +771,18 @@ private:
     uTPtr();
 };
 
-template<class T>
+template<class T 
 bool uIs(const uType* type, const T& value, const uType* test) {
     U_ASSERT(type);
     return U_IS_OBJECT(type)
         ? uIs(*(const uObject**)&value, test)
-        : type->Is(test);
+        : type- Is(test);
 }
-template<class T>
+template<class T 
 uTPtr uConstrain(const uType* type, const T& value) {
-    U_ASSERT(type && type->ValueSize == sizeof(T));
+    U_ASSERT(type && type- ValueSize == sizeof(T));
     return U_IS_VALUE(type)
-        ? const_cast<T*>(&value)
+        ? const_cast<T* (&value)
         : *(void**)&value;
 }
 inline uTPtr uUnboxAny(const uType* type, uObject* object) {
@@ -792,13 +792,13 @@ inline uTPtr uUnboxAny(const uType* type, uObject* object) {
         : (void*)object;
 }
 inline uTField uArray::TItem(int index) {
-    if (index < 0 || index >= _length) U_THROW_IOORE();
-    uType* type = ((uArrayType*)__type)->ElementType;
-    return uTField(type, (uint8_t*)_ptr + type->ValueSize * index);
+    if (index < 0 || index  = _length) U_THROW_IOORE();
+    uType* type = ((uArrayType*)__type)- ElementType;
+    return uTField(type, (uint8_t*)_ptr + type- ValueSize * index);
 }
 inline uTField uArray::TUnsafe(int index) {
-    uType* type = ((uArrayType*)__type)->ElementType;
-    return uTField(type, (uint8_t*)_ptr + type->ValueSize * index);
+    uType* type = ((uArrayType*)__type)- ElementType;
+    return uTField(type, (uint8_t*)_ptr + type- ValueSize * index);
 }
 inline uTField uType::Field(size_t index) {
     U_ASSERT(index < FieldCount);
@@ -823,8 +823,8 @@ inline uType* uType::T(size_t index) {
 inline uType* uType::U(size_t index) {
     uGenericType* generic = (uGenericType*)this;
     U_ASSERT(Type == uTypeTypeGeneric &&
-             generic->GenericIndex + index < GenericCount);
-    return U_ASSERT_PTR(Generics[generic->GenericIndex + index]);
+             generic- GenericIndex + index < GenericCount);
+    return U_ASSERT_PTR(Generics[generic- GenericIndex + index]);
 }
 /** @} */
 
@@ -837,8 +837,8 @@ struct uByRefType : uType
     uType* ValueType;
 };
 
-template<class T>
+template<class T 
 T* uCRef(const T& value) {
-    return const_cast<T*>(&value);
+    return const_cast<T* (&value);
 }
 /** @} */

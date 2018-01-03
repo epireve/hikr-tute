@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Marshal__SingleArray;}}
 
 namespace g{
@@ -24,7 +24,7 @@ void Marshal__SingleArray__New1_fn(uObject* obj, Marshal__SingleArray** __retval
 
 struct Marshal__SingleArray : uObject
 {
-    uStrong<uObject*> _obj;
+    uStrong<uObject*  _obj;
 
     void ctor_(uObject* obj);
     uObject* Item(int index);

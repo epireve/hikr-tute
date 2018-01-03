@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.BoxSizing.h>
+#include <Fuse.Elements.BoxSizing.h 
 namespace g{namespace Fuse{namespace Elements{struct BoxPlacement;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct FillAspectBoxSizing;}}}
@@ -26,8 +26,8 @@ void FillAspectBoxSizing__Pick_fn(FillAspectBoxSizing* __this, ::g::Uno::Float2*
 
 struct FillAspectBoxSizing : ::g::Fuse::Elements::BoxSizing
 {
-    static uSStrong<FillAspectBoxSizing*> Singleton_;
-    static uSStrong<FillAspectBoxSizing*>& Singleton() { return Singleton_; }
+    static uSStrong<FillAspectBoxSizing*  Singleton_;
+    static uSStrong<FillAspectBoxSizing* & Singleton() { return Singleton_; }
 
     void ctor_1();
     ::g::Uno::Float2 Fit(::g::Uno::Float2 sz, ::g::Uno::Float2 max, float aspect);

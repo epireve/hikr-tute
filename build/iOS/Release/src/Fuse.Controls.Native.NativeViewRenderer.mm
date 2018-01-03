@@ -1,27 +1,27 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/NativeRenderer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <CoreGraphics/CoreGraphics.h>
-#include <Fuse.Controls.Native.Blitter.h>
-#include <Fuse.Controls.Native.NativeViewRenderer.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <GLKit/GLKit.h>
-#include <ObjC.Object.h>
-#include <OpenGL.GL.h>
-#include <OpenGL.GLTextureHandle.h>
-#include <OpenGL.GLTextureTarget.h>
-#include <OpenGLES/EAGL.h>
-#include <QuartzCore/QuartzCore.h>
-#include <UIKit/UIKit.h>
-#include <Uno.Bool.h>
-#include <Uno.Float.h>
-#include <Uno.Graphics.Format.h>
-#include <Uno.Graphics.Texture2D.h>
-#include <Uno.Int.h>
-#include <Uno.IntPtr.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Float2.h>
-#include <Uno.Float4x4.h>
+#include <CoreGraphics/CoreGraphics.h 
+#include <Fuse.Controls.Native.Blitter.h 
+#include <Fuse.Controls.Native.NativeViewRenderer.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <GLKit/GLKit.h 
+#include <ObjC.Object.h 
+#include <OpenGL.GL.h 
+#include <OpenGL.GLTextureHandle.h 
+#include <OpenGL.GLTextureTarget.h 
+#include <OpenGLES/EAGL.h 
+#include <QuartzCore/QuartzCore.h 
+#include <UIKit/UIKit.h 
+#include <Uno.Bool.h 
+#include <Uno.Float.h 
+#include <Uno.Graphics.Format.h 
+#include <Uno.Graphics.Texture2D.h 
+#include <Uno.Int.h 
+#include <Uno.IntPtr.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Float2.h 
+#include <Uno.Float4x4.h 
 
 namespace g{
 namespace Fuse{
@@ -32,12 +32,12 @@ namespace Native{
 // {
 static void NativeViewRenderer_build(uType* type)
 {
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Controls::Native::Blitter_typeof());
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(NativeViewRenderer_type, interface0),
         ::g::Fuse::Controls::Native::IViewHandleRenderer_typeof(), offsetof(NativeViewRenderer_type, interface1));
-    type->SetFields(0,
+    type- SetFields(0,
         uObject_typeof(), offsetof(NativeViewRenderer, _pixelBuffer), 0,
         ::g::OpenGL::GLTextureHandle_typeof(), offsetof(NativeViewRenderer, _textureHandle), 0,
         ::g::Uno::Bool_typeof(), offsetof(NativeViewRenderer, _valid), 0,
@@ -46,7 +46,7 @@ static void NativeViewRenderer_build(uType* type)
 
 NativeViewRenderer_type* NativeViewRenderer_typeof()
 {
-    static uSStrong<NativeViewRenderer_type*> type;
+    static uSStrong<NativeViewRenderer_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -56,18 +56,18 @@ NativeViewRenderer_type* NativeViewRenderer_typeof()
     options.ObjectSize = sizeof(NativeViewRenderer);
     options.TypeSize = sizeof(NativeViewRenderer_type);
     type = (NativeViewRenderer_type*)uClassType::New("Fuse.Controls.Native.NativeViewRenderer", options);
-    type->fp_build_ = NativeViewRenderer_build;
-    type->fp_ctor_ = (void*)NativeViewRenderer__New1_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))NativeViewRenderer__Dispose_fn;
-    type->interface1.fp_Draw = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*, ::g::Uno::Float4x4*, ::g::Uno::Float2*, ::g::Uno::Float2*, float*))NativeViewRenderer__Draw_fn;
-    type->interface1.fp_Invalidate = (void(*)(uObject*))NativeViewRenderer__Invalidate_fn;
+    type- fp_build_ = NativeViewRenderer_build;
+    type- fp_ctor_ = (void*)NativeViewRenderer__New1_fn;
+    type- interface0.fp_Dispose = (void(*)(uObject*))NativeViewRenderer__Dispose_fn;
+    type- interface1.fp_Draw = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*, ::g::Uno::Float4x4*, ::g::Uno::Float2*, ::g::Uno::Float2*, float*))NativeViewRenderer__Draw_fn;
+    type- interface1.fp_Invalidate = (void(*)(uObject*))NativeViewRenderer__Invalidate_fn;
     return type;
 }
 
 // public generated NativeViewRenderer() :17
 void NativeViewRenderer__ctor__fn(NativeViewRenderer* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // private static extern Uno.IntPtr AllocPixelBuffer(int width, int height) :213
@@ -79,13 +79,13 @@ void NativeViewRenderer__AllocPixelBuffer_fn(int* width, int* height, void** __r
 // public void Dispose() :83
 void NativeViewRenderer__Dispose_fn(NativeViewRenderer* __this)
 {
-    __this->Dispose();
+    __this- Dispose();
 }
 
 // public void Draw(Fuse.Controls.Native.ViewHandle viewHandle, float4x4 localToClipTransform, float2 position, float2 size, float density) :25
 void NativeViewRenderer__Draw_fn(NativeViewRenderer* __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle, ::g::Uno::Float4x4* localToClipTransform, ::g::Uno::Float2* position, ::g::Uno::Float2* size, float* density)
 {
-    __this->Draw(viewHandle, *localToClipTransform, *position, *size, *density);
+    __this- Draw(viewHandle, *localToClipTransform, *position, *size, *density);
 }
 
 // private static extern void FreePixelBuffer(Uno.IntPtr buffer) :220
@@ -97,7 +97,7 @@ void NativeViewRenderer__FreePixelBuffer_fn(void** buffer)
 // public void Invalidate() :78
 void NativeViewRenderer__Invalidate_fn(NativeViewRenderer* __this)
 {
-    __this->Invalidate();
+    __this- Invalidate();
 }
 
 // public generated NativeViewRenderer New() :17
@@ -109,7 +109,7 @@ void NativeViewRenderer__New1_fn(NativeViewRenderer** __retval)
 // private void ReleaseResources() :88
 void NativeViewRenderer__ReleaseResources_fn(NativeViewRenderer* __this)
 {
-    __this->ReleaseResources();
+    __this- ReleaseResources();
 }
 
 // private static extern void Upload(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) :113
@@ -149,12 +149,12 @@ void NativeViewRenderer::Draw(::g::Fuse::Controls::Native::ViewHandle* viewHandl
     if (!_valid)
     {
         ::g::OpenGL::GL::BindTexture(3553, _textureHandle);
-        NativeViewRenderer::Upload(uPtr(viewHandle)->NativeHandle, ::g::OpenGL::GLTextureHandle::op_Explicit2(_textureHandle), uUnbox<void*>(::g::Uno::IntPtr_typeof(), _pixelBuffer), pixelSize.X, pixelSize.Y, density, reuse);
+        NativeViewRenderer::Upload(uPtr(viewHandle)- NativeHandle, ::g::OpenGL::GLTextureHandle::op_Explicit2(_textureHandle), uUnbox<void* (::g::Uno::IntPtr_typeof(), _pixelBuffer), pixelSize.X, pixelSize.Y, density, reuse);
         ::g::OpenGL::GL::BindTexture(3553, ::g::OpenGL::GLTextureHandle::Zero_);
         _valid = true;
     }
 
-    uPtr(::g::Fuse::Controls::Native::Blitter::Singleton_)->Blit(::g::Uno::Graphics::Texture2D::New2(_textureHandle, pixelSize, 1, 3), position, size, localToClipTransform);
+    uPtr(::g::Fuse::Controls::Native::Blitter::Singleton_)- Blit(::g::Uno::Graphics::Texture2D::New2(_textureHandle, pixelSize, 1, 3), position, size, localToClipTransform);
 }
 
 // public void Invalidate() [instance] :78
@@ -174,7 +174,7 @@ void NativeViewRenderer::ReleaseResources()
 
     if (_pixelBuffer != NULL)
     {
-        NativeViewRenderer::FreePixelBuffer(uUnbox<void*>(::g::Uno::IntPtr_typeof(), _pixelBuffer));
+        NativeViewRenderer::FreePixelBuffer(uUnbox<void* (::g::Uno::IntPtr_typeof(), _pixelBuffer));
         _pixelBuffer = NULL;
     }
 }
@@ -196,7 +196,7 @@ void NativeViewRenderer::FreePixelBuffer(void* buffer)
 NativeViewRenderer* NativeViewRenderer::New1()
 {
     NativeViewRenderer* obj1 = (NativeViewRenderer*)uNew(NativeViewRenderer_typeof());
-    obj1->ctor_();
+    obj1- ctor_();
     return obj1;
 }
 
@@ -205,7 +205,7 @@ void NativeViewRenderer::Upload(::g::ObjC::Object* viewHandle, int textureName, 
 {
     @autoreleasepool
     {
-        [] (::id viewHandle, int textureName, void* pixelBufferHandle, int width, int height, float density, bool reuse) -> void
+        [] (::id viewHandle, int textureName, void* pixelBufferHandle, int width, int height, float density, bool reuse) -  void
         {
             ::UIView* view = (::UIView*)viewHandle;
             GLubyte* pixelBuffer = (GLubyte*)pixelBufferHandle;

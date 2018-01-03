@@ -19,10 +19,14 @@ namespace Internal{
 // internal sealed class ImageContainer :18
 // {
 uType* ImageContainer_typeof();
+void ImageContainer__ctor__fn(ImageContainer* __this, uObject* owner);
 void ImageContainer__CheckPinning_fn(ImageContainer* __this);
 void ImageContainer__CreateMultiDensitySource_fn(ImageContainer* __this);
 void ImageContainer__get_Density_fn(ImageContainer* __this, float* __retval);
 void ImageContainer__set_Density_fn(ImageContainer* __this, float* value);
+void ImageContainer__get_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource** __retval);
+void ImageContainer__set_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* value);
+void ImageContainer__get_Files_fn(ImageContainer* __this, uObject** __retval);
 void ImageContainer__GetTexture_fn(ImageContainer* __this, ::g::Uno::Graphics::Texture2D** __retval);
 void ImageContainer__get_IsRooted_fn(ImageContainer* __this, bool* __retval);
 void ImageContainer__set_IsRooted_fn(ImageContainer* __this, bool* value);
@@ -30,6 +34,7 @@ void ImageContainer__get_IsVisible_fn(ImageContainer* __this, bool* __retval);
 void ImageContainer__set_IsVisible_fn(ImageContainer* __this, bool* value);
 void ImageContainer__get_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy** __retval);
 void ImageContainer__set_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy* value);
+void ImageContainer__New1_fn(uObject* owner, ImageContainer** __retval);
 void ImageContainer__OnFilesChanged_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* ignoreFile);
 void ImageContainer__OnParamChanged_fn(ImageContainer* __this);
 void ImageContainer__OnRooted_fn(ImageContainer* __this);
@@ -70,10 +75,14 @@ struct ImageContainer : uObject
     uStrong<uDelegate*> SourceChanged1;
     uStrong<uDelegate*> SourceError1;
 
+    void ctor_(uObject* owner);
     void CheckPinning();
     void CreateMultiDensitySource();
     float Density();
     void Density(float value);
+    ::g::Uno::UX::FileSource* File();
+    void File(::g::Uno::UX::FileSource* value);
+    uObject* Files();
     ::g::Uno::Graphics::Texture2D* GetTexture();
     bool IsRooted();
     void IsRooted(bool value);
@@ -103,6 +112,7 @@ struct ImageContainer : uObject
     int StretchMode();
     void StretchMode(int value);
     void UpdateSourceListen(bool forceOff);
+    static ImageContainer* New1(uObject* owner);
 };
 // }
 

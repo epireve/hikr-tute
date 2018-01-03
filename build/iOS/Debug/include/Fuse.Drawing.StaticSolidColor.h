@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.ISolidColor.h>
-#include <Fuse.Drawing.StaticBrush.h>
-#include <Uno.Float4.h>
+#include <Fuse.Drawing.ISolidColor.h 
+#include <Fuse.Drawing.StaticBrush.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{namespace Drawing{struct StaticSolidColor;}}}
 
 namespace g{

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct MobileTextEdit;}}}
 namespace g{namespace Fuse{namespace Controls{struct MobileTextEdit__AndroidTemplate;}}}
 
@@ -19,7 +19,7 @@ void MobileTextEdit__AndroidTemplate__New2_fn(::g::Fuse::Controls::MobileTextEdi
 
 struct MobileTextEdit__AndroidTemplate : ::g::Uno::UX::Template
 {
-    uWeak< ::g::Fuse::Controls::MobileTextEdit*> _parent;
+    uWeak< ::g::Fuse::Controls::MobileTextEdit*  _parent;
 
     void ctor_1(::g::Fuse::Controls::MobileTextEdit* parent);
     static MobileTextEdit__AndroidTemplate* New2(::g::Fuse::Controls::MobileTextEdit* parent);

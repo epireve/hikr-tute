@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Resources{struct FileImageSourceCache;}}}
 namespace g{namespace Fuse{namespace Resources{struct FileImageSourceImpl;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -20,8 +20,8 @@ void FileImageSourceCache__GetFileSource_fn(::g::Uno::UX::FileSource* file, ::g:
 
 struct FileImageSourceCache : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _cache_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _cache() { return _cache_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _cache_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _cache() { return _cache_; }
 
     static ::g::Fuse::Resources::FileImageSourceImpl* GetFileSource(::g::Uno::UX::FileSource* file);
 };

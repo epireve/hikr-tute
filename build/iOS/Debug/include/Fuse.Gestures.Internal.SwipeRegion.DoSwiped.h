@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion;}}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion__DoSwiped;}}}}
 
@@ -21,7 +21,7 @@ void SwipeRegion__DoSwiped__Perform_fn(SwipeRegion__DoSwiped* __this);
 struct SwipeRegion__DoSwiped : uObject
 {
     bool Active;
-    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> Region;
+    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*  Region;
     bool Cancelled;
 
     void ctor_();

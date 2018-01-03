@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.DiscreteTrackProvider.h>
-#include <Fuse.Animations.TrackProvider.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.DiscreteTrackProvider.h 
+#include <Fuse.Animations.TrackProvider.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct DiscreteSingleTrack;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimator;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimatorState;}}}
@@ -31,8 +31,8 @@ void DiscreteSingleTrack__New1_fn(DiscreteSingleTrack** __retval);
 
 struct DiscreteSingleTrack : uObject
 {
-    static uSStrong<DiscreteSingleTrack*> Singleton_;
-    static uSStrong<DiscreteSingleTrack*>& Singleton() { return Singleton_; }
+    static uSStrong<DiscreteSingleTrack*  Singleton_;
+    static uSStrong<DiscreteSingleTrack* & Singleton() { return Singleton_; }
 
     void ctor_();
     static DiscreteSingleTrack* New1();

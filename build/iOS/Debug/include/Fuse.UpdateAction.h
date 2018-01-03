@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct UpdateAction;}}
 
 namespace g{
@@ -17,8 +17,8 @@ void UpdateAction__New1_fn(UpdateAction** __retval);
 
 struct UpdateAction : uObject
 {
-    uStrong<uDelegate*> action;
-    uStrong<uObject*> update;
+    uStrong<uDelegate*  action;
+    uStrong<uObject*  update;
 
     void ctor_();
     void Invoke();

@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class hikr_FuseReactiveEach_Items_Property :19
+// internal sealed class hikr_FuseReactiveEach_Items_Property :47
 // {
 static void hikr_FuseReactiveEach_Items_Property_build(uType* type)
 {
@@ -38,44 +38,44 @@ static void hikr_FuseReactiveEach_Items_Property_build(uType* type)
     return type;
 }
 
-// public hikr_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) :22
+// public hikr_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) :50
 void hikr_FuseReactiveEach_Items_Property__ctor_3_fn(hikr_FuseReactiveEach_Items_Property* __this, ::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed object Get(Uno.UX.PropertyObject obj) :24
+// public override sealed object Get(Uno.UX.PropertyObject obj) :52
 void hikr_FuseReactiveEach_Items_Property__Get1_fn(hikr_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     return *__retval = uPtr(uCast< ::g::Fuse::Reactive::Each*>(obj, ::TYPES[0/*Fuse.Reactive.Each*/]))->Items(), void();
 }
 
-// public hikr_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) :22
+// public hikr_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) :50
 void hikr_FuseReactiveEach_Items_Property__New1_fn(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector* name, hikr_FuseReactiveEach_Items_Property** __retval)
 {
     *__retval = hikr_FuseReactiveEach_Items_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :23
+// public override sealed Uno.UX.PropertyObject get_Object() :51
 void hikr_FuseReactiveEach_Items_Property__get_Object_fn(hikr_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :25
+// public override sealed void Set(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :53
 void hikr_FuseReactiveEach_Items_Property__Set1_fn(hikr_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
     uPtr(uCast< ::g::Fuse::Reactive::Each*>(obj, ::TYPES[0/*Fuse.Reactive.Each*/]))->Items(v);
 }
 
-// public hikr_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) [instance] :22
+// public hikr_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) [instance] :50
 void hikr_FuseReactiveEach_Items_Property::ctor_3(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public hikr_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) [static] :22
+// public hikr_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) [static] :50
 hikr_FuseReactiveEach_Items_Property* hikr_FuseReactiveEach_Items_Property::New1(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector name)
 {
     hikr_FuseReactiveEach_Items_Property* obj1 = (hikr_FuseReactiveEach_Items_Property*)uNew(hikr_FuseReactiveEach_Items_Property_typeof());

@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Trigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Trigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Platform{struct SystemUIWillResizeEventArgs;}}}
 namespace g{namespace Fuse{namespace Triggers{struct WhileKeyboardVisible;}}}
 namespace g{namespace Uno{struct Rect;}}
@@ -35,8 +35,8 @@ struct WhileKeyboardVisible : ::g::Fuse::Triggers::Trigger
     float _threshold;
     static float _deltaY_;
     static float& _deltaY() { return _deltaY_; }
-    static uSStrong<uObject*> Keyboard_;
-    static uSStrong<uObject*>& Keyboard() { return Keyboard_; }
+    static uSStrong<uObject*  Keyboard_;
+    static uSStrong<uObject* & Keyboard() { return Keyboard_; }
 
     float GetHeight(::g::Uno::Rect r);
     void OnBottomBarResize(uObject* sender, ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args);

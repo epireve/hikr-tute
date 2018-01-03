@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Scripting{struct JSCallback__NumberConverter;}}}
 
 namespace g{
@@ -29,10 +29,10 @@ struct JSCallback__NumberConverter : uObject
     static uObject* Convert3(int64_t value, uType* targetType);
     static uObject* Convert4(int16_t value, uType* targetType);
     static uObject* Convert5(uType* targetType, uObject* value);
-    template<class TValue>
+    template<class TValue 
     static TValue Convert6(uType* __type, uObject* value) { TValue __retval; return JSCallback__NumberConverter__Convert6_fn(__type, value, &__retval), __retval; }
-    template<class TValue>
-    static bool TryConvert(uType* __type, uObject* value, TValue* convertedValue) { bool __retval; return JSCallback__NumberConverter__TryConvert_fn(__type, value, uConstrain(__type->U(0), convertedValue), &__retval), __retval; }
+    template<class TValue 
+    static bool TryConvert(uType* __type, uObject* value, TValue* convertedValue) { bool __retval; return JSCallback__NumberConverter__TryConvert_fn(__type, value, uConstrain(__type- U(0), convertedValue), &__retval), __retval; }
 };
 // }
 

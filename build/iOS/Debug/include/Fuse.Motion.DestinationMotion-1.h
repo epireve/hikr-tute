@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.DestinationMotionConfig.h>
+#include <Fuse.Motion.DestinationMotionConfig.h 
 namespace g{namespace Fuse{namespace Motion{struct DestinationMotion;}}}
 
 namespace g{
 namespace Fuse{
 namespace Motion{
 
-// public sealed class DestinationMotion<T> :186
+// public sealed class DestinationMotion<T  :186
 // {
 uType* DestinationMotion_typeof();
 void DestinationMotion__ctor_1_fn(DestinationMotion* __this);

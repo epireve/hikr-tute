@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Int2.h>
-#include <Uno.Int4.h>
-#include <Uno.Object.h>
+#include <Uno.Int2.h 
+#include <Uno.Int4.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct RenderTargetEntry;}}
 namespace g{namespace Uno{namespace Graphics{struct RenderTarget;}}}
 
@@ -20,7 +20,7 @@ void RenderTargetEntry__New1_fn(::g::Uno::Graphics::RenderTarget* rt, ::g::Uno::
 struct RenderTargetEntry : uObject
 {
     uint32_t GLFramebuffer;
-    uStrong< ::g::Uno::Graphics::RenderTarget*> RenderTarget;
+    uStrong< ::g::Uno::Graphics::RenderTarget*  RenderTarget;
     ::g::Uno::Int2 GLViewportPixelSize;
     ::g::Uno::Int4 GLScissor;
 

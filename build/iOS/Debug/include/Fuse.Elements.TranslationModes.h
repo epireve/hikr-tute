@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Elements{struct TranslationModes;}}}
 
 namespace g{
@@ -15,14 +15,14 @@ uClassType* TranslationModes_typeof();
 
 struct TranslationModes : uObject
 {
-    static uSStrong<uObject*> TransformOriginOffset_;
-    static uSStrong<uObject*>& TransformOriginOffset() { return TransformOriginOffset_; }
-    static uSStrong<uObject*> PositionOffset_;
-    static uSStrong<uObject*>& PositionOffset() { return PositionOffset_; }
-    static uSStrong<uObject*> SizeFactor_;
-    static uSStrong<uObject*>& SizeFactor() { return SizeFactor_; }
-    static uSStrong<uObject*> Size_;
-    static uSStrong<uObject*>& Size() { return Size_; }
+    static uSStrong<uObject*  TransformOriginOffset_;
+    static uSStrong<uObject* & TransformOriginOffset() { return TransformOriginOffset_; }
+    static uSStrong<uObject*  PositionOffset_;
+    static uSStrong<uObject* & PositionOffset() { return PositionOffset_; }
+    static uSStrong<uObject*  SizeFactor_;
+    static uSStrong<uObject* & SizeFactor() { return SizeFactor_; }
+    static uSStrong<uObject*  Size_;
+    static uSStrong<uObject* & Size() { return Size_; }
 };
 // }
 

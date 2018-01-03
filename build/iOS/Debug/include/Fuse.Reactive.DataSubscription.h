@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.DataFinder.h>
-#include <Fuse.Node.IDataEnumerator.h>
-#include <Fuse.Node.IDataListener.h>
-#include <Fuse.Reactive.IPropertyObserver.h>
-#include <Fuse.Reactive.IWriteable.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Node.DataFinder.h 
+#include <Fuse.Node.IDataEnumerator.h 
+#include <Fuse.Node.IDataListener.h 
+#include <Fuse.Reactive.IPropertyObserver.h 
+#include <Fuse.Reactive.IWriteable.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct DataSubscription;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -39,13 +39,13 @@ void DataSubscription__ResolveInner_fn(DataSubscription* __this, uObject* data);
 
 struct DataSubscription : ::g::Fuse::Node__DataFinder
 {
-    uStrong<uObject*> _source;
-    uStrong< ::g::Fuse::Node*> _origin;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _diag;
+    uStrong<uObject*  _source;
+    uStrong< ::g::Fuse::Node*  _origin;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _diag;
     bool _isResolved;
-    uStrong<uObject*> _currentData;
-    uStrong<uObject*> _sub;
+    uStrong<uObject*  _currentData;
+    uStrong<uObject*  _sub;
 
     void ctor_1(uObject* source, ::g::Fuse::Node* origin, uString* key, uObject* listener);
     void ClearDiagnostic();

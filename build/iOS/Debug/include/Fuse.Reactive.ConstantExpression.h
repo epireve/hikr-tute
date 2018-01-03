@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct ConstantExpression;}}}
 
 namespace g{
@@ -24,7 +24,7 @@ void ConstantExpression__Subscribe_fn(ConstantExpression* __this, uObject* conte
 struct ConstantExpression : ::g::Fuse::Reactive::Expression
 {
     void ctor_1();
-    uObject* GetValue(uObject* context) { uObject* __retval; return (((ConstantExpression_type*)__type)->fp_GetValue)(this, context, &__retval), __retval; }
+    uObject* GetValue(uObject* context) { uObject* __retval; return (((ConstantExpression_type*)__type)- fp_GetValue)(this, context, &__retval), __retval; }
 };
 // }
 

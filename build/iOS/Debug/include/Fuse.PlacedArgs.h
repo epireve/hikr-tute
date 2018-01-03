@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
-#include <Uno.Float2.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
+#include <Uno.Float2.h 
 namespace g{namespace Fuse{struct PlacedArgs;}}
 
 namespace g{

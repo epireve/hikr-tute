@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.Input.IGesture.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.Input.IGesture.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollPositionChangedArgs;}}}
 namespace g{namespace Fuse{namespace Controls{struct ScrollView;}}}
 namespace g{namespace Fuse{namespace Gestures{struct Scroller;}}}
@@ -72,12 +72,12 @@ void Scroller__UpdateScrollMax_fn(Scroller* __this);
 
 struct Scroller : ::g::Fuse::Behavior
 {
-    uStrong<uObject*> _region;
-    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*> _velocity;
+    uStrong<uObject*  _region;
+    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*  _velocity;
     bool _delayStart;
-    uStrong< ::g::Fuse::Controls::ScrollView*> _scrollable;
+    uStrong< ::g::Fuse::Controls::ScrollView*  _scrollable;
     bool _pointerListening;
-    uStrong< ::g::Fuse::Input::Gesture*> _gesture;
+    uStrong< ::g::Fuse::Input::Gesture*  _gesture;
     bool _hasUpdated;
     bool _updateFirstFrame;
     int _down;
@@ -89,11 +89,11 @@ struct Scroller : ::g::Fuse::Behavior
     ::g::Uno::Float2 _softCaptureCurrent;
     float _significance;
     bool _pressed;
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*> _horizontalGesture_;
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*>& _horizontalGesture() { return _horizontalGesture_; }
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*> _verticalGesture_;
-    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*>& _verticalGesture() { return _verticalGesture_; }
-    uStrong< ::g::Fuse::Visual*> _pendingBringIntoView;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*  _horizontalGesture_;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper* & _horizontalGesture() { return _horizontalGesture_; }
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*  _verticalGesture_;
+    static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper* & _verticalGesture() { return _verticalGesture_; }
+    uStrong< ::g::Fuse::Visual*  _pendingBringIntoView;
 
     void ctor_4(bool ignore);
     void CheckLimits();

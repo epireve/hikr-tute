@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct SelectionQuery;}}}
 namespace g{namespace Fuse{struct HitTestResult;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -22,7 +22,7 @@ void SelectionQuery__Select1_fn(SelectionQuery* __this, ::g::Fuse::Visual* root,
 
 struct SelectionQuery : uObject
 {
-    uStrong< ::g::Fuse::HitTestResult*> _result;
+    uStrong< ::g::Fuse::HitTestResult*  _result;
     int count;
 
     void ctor_();

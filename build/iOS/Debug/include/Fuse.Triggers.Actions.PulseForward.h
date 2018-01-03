@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct PulseForward;}}}}
 namespace g{namespace Fuse{namespace Triggers{struct Timeline;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -21,7 +21,7 @@ void PulseForward__set_Target_fn(PulseForward* __this, ::g::Fuse::Triggers::Time
 
 struct PulseForward : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Triggers::Timeline*> _Target;
+    uStrong< ::g::Fuse::Triggers::Timeline*  _Target;
 
     ::g::Fuse::Triggers::Timeline* Target();
     void Target(::g::Fuse::Triggers::Timeline* value);

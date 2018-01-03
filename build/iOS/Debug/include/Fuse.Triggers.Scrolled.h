@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.PulseTrigger-1.h>
-#include <Fuse.Triggers.ScrolledArgs.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.PulseTrigger-1.h 
+#include <Fuse.Triggers.ScrolledArgs.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Scrolled;}}}
@@ -34,8 +34,8 @@ void Scrolled__OnUnrooted_fn(Scrolled* __this);
 struct Scrolled : ::g::Fuse::Triggers::PulseTrigger
 {
     bool _inZone;
-    uStrong< ::g::Fuse::Controls::ScrollViewBase*> _scrollable;
-    uStrong< ::g::Fuse::Triggers::ScrollRegion*> _region;
+    uStrong< ::g::Fuse::Controls::ScrollViewBase*  _scrollable;
+    uStrong< ::g::Fuse::Triggers::ScrollRegion*  _region;
 
     void Check();
     void OnScrollPositionChanged(uObject* s, uObject* args);

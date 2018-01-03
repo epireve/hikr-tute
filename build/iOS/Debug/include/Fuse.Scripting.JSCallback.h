@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Scripting{struct JSCallback;}}}
 
 namespace g{
@@ -26,8 +26,8 @@ struct JSCallback : uObject
     static uDelegate* FromAction2(uType* __type, uDelegate* action);
     static uDelegate* FromFunc(uType* __type, uDelegate* func);
     static uDelegate* FromFunc1(uType* __type, uDelegate* func);
-    template<class T>
-    static bool GetArg(uType* __type, uArray* args, T* arg, int index) { bool __retval; return JSCallback__GetArg_fn(__type, args, uConstrain(__type->U(0), arg), &index, &__retval), __retval; }
+    template<class T 
+    static bool GetArg(uType* __type, uArray* args, T* arg, int index) { bool __retval; return JSCallback__GetArg_fn(__type, args, uConstrain(__type- U(0), arg), &index, &__retval), __retval; }
 };
 // }
 

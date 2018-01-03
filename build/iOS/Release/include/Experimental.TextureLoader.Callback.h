@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Experimental{namespace TextureLoader{struct Callback;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 
@@ -19,7 +19,7 @@ void Callback__New1_fn(uDelegate* action, Callback** __retval);
 
 struct Callback : uObject
 {
-    uStrong<uDelegate*> _action;
+    uStrong<uDelegate*  _action;
 
     void ctor_(uDelegate* action);
     void Execute(::g::Uno::Graphics::Texture2D* arg);

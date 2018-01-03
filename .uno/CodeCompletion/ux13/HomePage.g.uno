@@ -12,7 +12,7 @@ public partial class HomePage: Fuse.Controls.Page
             __parent = parent;
             __parentInstance = parentInstance;
         }
-        global::Uno.UX.Property<string> __self_Text_inst;
+        global::Uno.UX.Property<string  __self_Text_inst;
         internal global::Fuse.Reactive.EventBinding temp_eb2;
         static Template()
         {
@@ -32,7 +32,7 @@ public partial class HomePage: Fuse.Controls.Page
         }
         static global::Uno.UX.Selector __selector0 = "Text";
     }
-    global::Uno.UX.Property<object> temp_Items_inst;
+    global::Uno.UX.Property<object  temp_Items_inst;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
         "router"

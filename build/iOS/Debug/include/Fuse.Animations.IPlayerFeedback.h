@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IPlayerFeedback_typeof();
 struct IPlayerFeedback
 {
     void(*fp_OnProgressUpdated)(uObject*, uObject*, int*);
-    static void OnProgressUpdated(const uInterface& __this, uObject* s, int flags) { __this.VTable<IPlayerFeedback>()->fp_OnProgressUpdated(__this, s, &flags); }
+    static void OnProgressUpdated(const uInterface& __this, uObject* s, int flags) { __this.VTable<IPlayerFeedback ()- fp_OnProgressUpdated(__this, s, &flags); }
 };
 // }
 

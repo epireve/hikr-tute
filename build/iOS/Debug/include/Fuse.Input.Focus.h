@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Input{struct Focus;}}}
 namespace g{namespace Fuse{namespace Input{struct FocusGained;}}}
 namespace g{namespace Fuse{namespace Input{struct FocusGainedArgs;}}}
@@ -43,18 +43,18 @@ void Focus__SetIsFocusable_fn(::g::Fuse::Visual* n, bool* focusable);
 
 struct Focus : uObject
 {
-    static uSStrong< ::g::Fuse::Input::FocusGained*> _gained_;
-    static uSStrong< ::g::Fuse::Input::FocusGained*>& _gained() { return _gained_; }
-    static uSStrong< ::g::Fuse::Input::FocusLost*> _lost_;
-    static uSStrong< ::g::Fuse::Input::FocusLost*>& _lost() { return _lost_; }
-    static uSStrong< ::g::Fuse::Input::IsFocusableChangedEvent*> _isFoucsableChanged_;
-    static uSStrong< ::g::Fuse::Input::IsFocusableChangedEvent*>& _isFoucsableChanged() { return _isFoucsableChanged_; }
-    static uSStrong< ::g::Fuse::Visual*> _focusedObject_;
-    static uSStrong< ::g::Fuse::Visual*>& _focusedObject() { return _focusedObject_; }
-    static uSStrong< ::g::Fuse::Visual*> _lastFocusedVisual_;
-    static uSStrong< ::g::Fuse::Visual*>& _lastFocusedVisual() { return _lastFocusedVisual_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _focusDelegatorHandle_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _focusDelegatorHandle() { return _focusDelegatorHandle_; }
+    static uSStrong< ::g::Fuse::Input::FocusGained*  _gained_;
+    static uSStrong< ::g::Fuse::Input::FocusGained* & _gained() { return _gained_; }
+    static uSStrong< ::g::Fuse::Input::FocusLost*  _lost_;
+    static uSStrong< ::g::Fuse::Input::FocusLost* & _lost() { return _lost_; }
+    static uSStrong< ::g::Fuse::Input::IsFocusableChangedEvent*  _isFoucsableChanged_;
+    static uSStrong< ::g::Fuse::Input::IsFocusableChangedEvent* & _isFoucsableChanged() { return _isFoucsableChanged_; }
+    static uSStrong< ::g::Fuse::Visual*  _focusedObject_;
+    static uSStrong< ::g::Fuse::Visual* & _focusedObject() { return _focusedObject_; }
+    static uSStrong< ::g::Fuse::Visual*  _lastFocusedVisual_;
+    static uSStrong< ::g::Fuse::Visual* & _lastFocusedVisual() { return _lastFocusedVisual_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _focusDelegatorHandle_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _focusDelegatorHandle() { return _focusDelegatorHandle_; }
 
     static bool CanSetFocus(::g::Fuse::Node* node);
     static void ChangeFocusedVisual(::g::Fuse::Visual* node, uString* memberName);

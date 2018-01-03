@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigationTriggerAction;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -24,11 +24,11 @@ void NavigationTriggerAction__Perform_fn(NavigationTriggerAction* __this, ::g::F
 
 struct NavigationTriggerAction : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong<uObject*> _NavigationContext;
+    uStrong<uObject*  _NavigationContext;
 
     uObject* NavigationContext();
     void NavigationContext(uObject* value);
-    void Perform1(uObject* ctx, ::g::Fuse::Node* n) { (((NavigationTriggerAction_type*)__type)->fp_Perform1)(this, ctx, n); }
+    void Perform1(uObject* ctx, ::g::Fuse::Node* n) { (((NavigationTriggerAction_type*)__type)- fp_Perform1)(this, ctx, n); }
 };
 // }
 

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Platform{struct Lifecycle;}}}
 
 namespace g{
@@ -34,18 +34,18 @@ void Lifecycle__remove_Terminating_fn(uDelegate* value);
 
 struct Lifecycle : uObject
 {
-    static uSStrong<uDelegate*> EnteringBackground1_;
-    static uSStrong<uDelegate*>& EnteringBackground1() { return Lifecycle_typeof()->Init(), EnteringBackground1_; }
-    static uSStrong<uDelegate*> EnteringForeground1_;
-    static uSStrong<uDelegate*>& EnteringForeground1() { return Lifecycle_typeof()->Init(), EnteringForeground1_; }
-    static uSStrong<uDelegate*> EnteringInteractive1_;
-    static uSStrong<uDelegate*>& EnteringInteractive1() { return Lifecycle_typeof()->Init(), EnteringInteractive1_; }
-    static uSStrong<uDelegate*> ExitedInteractive1_;
-    static uSStrong<uDelegate*>& ExitedInteractive1() { return Lifecycle_typeof()->Init(), ExitedInteractive1_; }
-    static uSStrong<uDelegate*> Started1_;
-    static uSStrong<uDelegate*>& Started1() { return Lifecycle_typeof()->Init(), Started1_; }
-    static uSStrong<uDelegate*> Terminating1_;
-    static uSStrong<uDelegate*>& Terminating1() { return Lifecycle_typeof()->Init(), Terminating1_; }
+    static uSStrong<uDelegate*  EnteringBackground1_;
+    static uSStrong<uDelegate* & EnteringBackground1() { return Lifecycle_typeof()- Init(), EnteringBackground1_; }
+    static uSStrong<uDelegate*  EnteringForeground1_;
+    static uSStrong<uDelegate* & EnteringForeground1() { return Lifecycle_typeof()- Init(), EnteringForeground1_; }
+    static uSStrong<uDelegate*  EnteringInteractive1_;
+    static uSStrong<uDelegate* & EnteringInteractive1() { return Lifecycle_typeof()- Init(), EnteringInteractive1_; }
+    static uSStrong<uDelegate*  ExitedInteractive1_;
+    static uSStrong<uDelegate* & ExitedInteractive1() { return Lifecycle_typeof()- Init(), ExitedInteractive1_; }
+    static uSStrong<uDelegate*  Started1_;
+    static uSStrong<uDelegate* & Started1() { return Lifecycle_typeof()- Init(), Started1_; }
+    static uSStrong<uDelegate*  Terminating1_;
+    static uSStrong<uDelegate* & Terminating1() { return Lifecycle_typeof()- Init(), Terminating1_; }
 
     static void OnEnteringBackground(int newState);
     static void OnEnteringForeground(int newState);

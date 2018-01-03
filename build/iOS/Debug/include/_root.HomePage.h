@@ -1,10 +1,9 @@
-// This file was generated based on /dev.local/hikr/.uno/ux13/HomePage.g.uno.
+// This file was generated based on '.uno/ux13/HomePage.g.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Page.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
@@ -16,6 +15,7 @@
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
 #include <Fuse.Visual.h>
+#include <hikr.Page.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -31,11 +31,11 @@ namespace g{
 // public partial sealed class HomePage :2
 // {
 ::g::Fuse::Controls::Panel_type* HomePage_typeof();
-void HomePage__ctor_8_fn(HomePage* __this, ::g::Fuse::Navigation::Router* router1);
-void HomePage__InitializeUX_fn(HomePage* __this);
-void HomePage__New5_fn(::g::Fuse::Navigation::Router* router1, HomePage** __retval);
+void HomePage__ctor_9_fn(HomePage* __this, ::g::Fuse::Navigation::Router* router1);
+void HomePage__InitializeUX1_fn(HomePage* __this);
+void HomePage__New6_fn(::g::Fuse::Navigation::Router* router1, HomePage** __retval);
 
-struct HomePage : ::g::Fuse::Controls::Page
+struct HomePage : ::g::hikr::Page
 {
     uStrong< ::g::Fuse::Navigation::Router*> router;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
@@ -45,9 +45,9 @@ struct HomePage : ::g::Fuse::Controls::Page
     static ::g::Uno::UX::Selector __selector0_;
     static ::g::Uno::UX::Selector& __selector0() { return HomePage_typeof()->Init(), __selector0_; }
 
-    void ctor_8(::g::Fuse::Navigation::Router* router1);
-    void InitializeUX();
-    static HomePage* New5(::g::Fuse::Navigation::Router* router1);
+    void ctor_9(::g::Fuse::Navigation::Router* router1);
+    void InitializeUX1();
+    static HomePage* New6(::g::Fuse::Navigation::Router* router1);
 };
 // }
 

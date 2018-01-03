@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct Route;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router__GetRouteCallback;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
@@ -23,9 +23,9 @@ void Router__GetRouteCallback__ToArray_fn(Router__GetRouteCallback* __this, ::g:
 
 struct Router__GetRouteCallback : uObject
 {
-    uStrong< ::g::Fuse::Navigation::Route*> _route;
-    uStrong< ::g::Fuse::Scripting::Function*> _callback;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
+    uStrong< ::g::Fuse::Navigation::Route*  _route;
+    uStrong< ::g::Fuse::Scripting::Function*  _callback;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
 
     void ctor_(::g::Fuse::Navigation::Route* route, ::g::Fuse::Scripting::Function* callback, ::g::Fuse::Scripting::Context* context);
     void Run(::g::Fuse::Scripting::Context* context);

@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Selection{struct Selectable;}}}
 namespace g{namespace Fuse{namespace Selection{struct Selection;}}}
@@ -78,12 +78,12 @@ struct Selection : ::g::Fuse::Behavior
     int _minCount;
     bool _hasMaxCount;
     int _maxCount;
-    uStrong< ::g::Uno::Collections::List*> _values;
+    uStrong< ::g::Uno::Collections::List*  _values;
     static ::g::Uno::UX::Selector ValueName_;
-    static ::g::Uno::UX::Selector& ValueName() { return Selection_typeof()->Init(), ValueName_; }
-    uStrong<uObject*> _observableValues;
-    uStrong<uObject*> _subscription;
-    uStrong<uDelegate*> SelectionChanged1;
+    static ::g::Uno::UX::Selector& ValueName() { return Selection_typeof()- Init(), ValueName_; }
+    uStrong<uObject*  _observableValues;
+    uStrong<uObject*  _subscription;
+    uStrong<uDelegate*  SelectionChanged1;
 
     void Add1(::g::Fuse::Selection::Selectable* b);
     void Add2(uString* value);

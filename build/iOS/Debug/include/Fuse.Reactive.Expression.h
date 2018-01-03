@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IExpression.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IExpression.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct Expression;}}}
 
 namespace g{
@@ -24,7 +24,7 @@ void Expression__ctor__fn(Expression* __this);
 struct Expression : uObject
 {
     void ctor_();
-    uObject* Subscribe(uObject* context, uObject* listener) { uObject* __retval; return (((Expression_type*)__type)->fp_Subscribe)(this, context, listener, &__retval), __retval; }
+    uObject* Subscribe(uObject* context, uObject* listener) { uObject* __retval; return (((Expression_type*)__type)- fp_Subscribe)(this, context, listener, &__retval), __retval; }
 };
 // }
 

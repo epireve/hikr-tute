@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IWriteable.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Reactive.IWriteable.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Reactive{struct Property;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Property__Subscription;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor;}}}
@@ -35,10 +35,10 @@ void Property__Subscription__UnoUXIPropertyListenerOnPropertyChanged_fn(Property
 
 struct Property__Subscription : uObject
 {
-    uStrong< ::g::Fuse::Reactive::Property*> _prop;
-    uStrong< ::g::Uno::UX::PropertyObject*> _object;
-    uStrong< ::g::Uno::UX::PropertyAccessor*> _accessor;
-    uStrong<uObject*> _listener;
+    uStrong< ::g::Fuse::Reactive::Property*  _prop;
+    uStrong< ::g::Uno::UX::PropertyObject*  _object;
+    uStrong< ::g::Uno::UX::PropertyAccessor*  _accessor;
+    uStrong<uObject*  _listener;
 
     void ctor_(::g::Fuse::Reactive::Property* prop, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::PropertyAccessor* accessor, uObject* listener);
     void Dispose();

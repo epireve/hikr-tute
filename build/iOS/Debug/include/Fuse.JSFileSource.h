@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.FileSource.h>
+#include <Uno.UX.FileSource.h 
 namespace g{namespace Fuse{struct JSFileSource;}}
 namespace g{namespace Uno{namespace IO{struct Stream;}}}
 
@@ -18,7 +18,7 @@ void JSFileSource__OpenRead_fn(JSFileSource* __this, ::g::Uno::IO::Stream** __re
 
 struct JSFileSource : ::g::Uno::UX::FileSource
 {
-    uStrong<uString*> _path;
+    uStrong<uString*  _path;
 
     void ctor_1(uString* path);
     static JSFileSource* New1(uString* path);

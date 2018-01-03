@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float.h>
-#include <Uno.UX.Property-1.h>
+#include <Uno.Float.h 
+#include <Uno.UX.Property-1.h 
 namespace g{namespace Fuse{namespace Controls{struct Element_Opacity_Property;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -24,7 +24,7 @@ void Element_Opacity_Property__get_SupportsOriginSetter_fn(Element_Opacity_Prope
 
 struct Element_Opacity_Property : ::g::Uno::UX::Property1
 {
-    uStrong< ::g::Fuse::Elements::Element*> _obj;
+    uStrong< ::g::Fuse::Elements::Element*  _obj;
 
     void ctor_3(::g::Fuse::Elements::Element* obj);
     static Element_Opacity_Property* New1(::g::Fuse::Elements::Element* obj);

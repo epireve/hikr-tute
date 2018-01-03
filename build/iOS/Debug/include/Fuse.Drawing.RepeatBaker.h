@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{struct RepeatBaker;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Uno{namespace Graphics{struct Framebuffer;}}}
@@ -25,10 +25,10 @@ void RepeatBaker__New1_fn(RepeatBaker** __retval);
 
 struct RepeatBaker : uObject
 {
-    static uSStrong<RepeatBaker*> Singleton_;
-    static uSStrong<RepeatBaker*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> FillBuffer_VertexPosition_2972f423_1_1_1;
-    uStrong<uArray*> FillBuffer_Vertices_2972f423_1_0_6;
+    static uSStrong<RepeatBaker*  Singleton_;
+    static uSStrong<RepeatBaker* & Singleton() { return Singleton_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  FillBuffer_VertexPosition_2972f423_1_1_1;
+    uStrong<uArray*  FillBuffer_Vertices_2972f423_1_0_6;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_2972f423;
 
     void ctor_();

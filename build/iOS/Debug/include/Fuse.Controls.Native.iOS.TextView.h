@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.ITextView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.iOS.LeafView.h 
+#include <Fuse.Controls.Native.ITextView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct NSAttributedStringBuilder;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct TextView;}}}}}
 namespace g{namespace Fuse{struct Font;}}
@@ -44,9 +44,9 @@ void TextView__UpdateText_fn(TextView* __this);
 
 struct TextView : ::g::Fuse::Controls::Native::iOS::LeafView
 {
-    uStrong< ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder*> _builder;
+    uStrong< ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder*  _builder;
     float _fontSize;
-    uStrong< ::g::Fuse::Font*> _font;
+    uStrong< ::g::Fuse::Font*  _font;
 
     void ctor_5();
     void ctor_6(::g::ObjC::Object* handle);

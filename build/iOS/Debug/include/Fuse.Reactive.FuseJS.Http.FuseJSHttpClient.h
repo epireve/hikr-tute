@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http__FuseJSHttpClient;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -24,9 +24,9 @@ void Http__FuseJSHttpClient__set_Obj_fn(Http__FuseJSHttpClient* __this, ::g::Fus
 
 struct Http__FuseJSHttpClient : uObject
 {
-    uStrong< ::g::Uno::Net::Http::HttpMessageHandler*> _client;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
-    uStrong< ::g::Fuse::Scripting::Object*> _Obj;
+    uStrong< ::g::Uno::Net::Http::HttpMessageHandler*  _client;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
+    uStrong< ::g::Fuse::Scripting::Object*  _Obj;
 
     void ctor_(::g::Fuse::Scripting::Context* context);
     uObject* CreateRequest(uArray* args);

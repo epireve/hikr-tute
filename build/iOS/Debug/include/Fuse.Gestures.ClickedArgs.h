@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.CustomPointerEventArgs.h>
-#include <Fuse.Scripting.IScriptEvent.h>
+#include <Fuse.Input.CustomPointerEventArgs.h 
+#include <Fuse.Scripting.IScriptEvent.h 
 namespace g{namespace Fuse{namespace Gestures{struct ClickedArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 namespace g{namespace Fuse{struct Visual;}}

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Navigation{struct PageExpression;}}}
 
 namespace g{
@@ -19,7 +19,7 @@ void PageExpression__Subscribe_fn(PageExpression* __this, uObject* dc, uObject* 
 
 struct PageExpression : ::g::Fuse::Reactive::Expression
 {
-    uStrong<uString*> _Key;
+    uStrong<uString*  _Key;
 
     uString* Key();
     void Key(uString* value);

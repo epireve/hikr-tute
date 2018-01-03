@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TransitionState;}}}}
 namespace g{namespace Fuse{namespace Triggers{struct StateGroup;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -23,7 +23,7 @@ void TransitionState__set_Type_fn(TransitionState* __this, int* value);
 
 struct TransitionState : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Triggers::StateGroup*> _Target;
+    uStrong< ::g::Fuse::Triggers::StateGroup*  _Target;
     int _Type;
 
     ::g::Fuse::Triggers::StateGroup* Target();

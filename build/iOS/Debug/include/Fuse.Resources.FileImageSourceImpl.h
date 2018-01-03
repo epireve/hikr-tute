@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.IMemoryResource.h>
-#include <Fuse.Resources.LoadingImageSource.h>
+#include <Fuse.Resources.IMemoryResource.h 
+#include <Fuse.Resources.LoadingImageSource.h 
 namespace g{namespace Fuse{namespace Resources{struct FileImageSourceImpl;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -28,7 +28,7 @@ void FileImageSourceImpl__SyncLoad_fn(FileImageSourceImpl* __this);
 
 struct FileImageSourceImpl : ::g::Fuse::Resources::LoadingImageSource
 {
-    uStrong< ::g::Uno::UX::FileSource*> _file;
+    uStrong< ::g::Uno::UX::FileSource*  _file;
     int _orientation;
 
     void ctor_3(::g::Uno::UX::FileSource* file);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Resources{struct HttpImageSourceImpl__BackgroundLoad;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{struct Exception;}}
@@ -23,12 +23,12 @@ void HttpImageSourceImpl__BackgroundLoad__UIFailCallback_fn(HttpImageSourceImpl_
 
 struct HttpImageSourceImpl__BackgroundLoad : uObject
 {
-    uStrong<uArray*> _data;
-    uStrong<uString*> _contentType;
-    uStrong<uDelegate*> _done;
-    uStrong<uDelegate*> _fail;
-    uStrong< ::g::Uno::Exception*> _exception;
-    uStrong< ::g::Uno::Graphics::Texture2D*> _tex;
+    uStrong<uArray*  _data;
+    uStrong<uString*  _contentType;
+    uStrong<uDelegate*  _done;
+    uStrong<uDelegate*  _fail;
+    uStrong< ::g::Uno::Exception*  _exception;
+    uStrong< ::g::Uno::Graphics::Texture2D*  _tex;
 
     void ctor_(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail);
     void GWDoneCallback(::g::Uno::Graphics::Texture2D* tex);

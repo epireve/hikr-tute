@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemInfo;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemOperations;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct Nothing;}}}
@@ -55,7 +55,7 @@ void FileSystemOperations__WriteTextToFileSync_fn(FileSystemOperations* __this, 
 
 struct FileSystemOperations : uObject
 {
-    uStrong<uObject*> _dispatcher;
+    uStrong<uObject*  _dispatcher;
 
     void ctor_();
     void ctor_1(uObject* dispatcher);
@@ -87,10 +87,10 @@ struct FileSystemOperations : uObject
     ::g::Uno::Threading::Future1* ReadTextFromFile(uString* path);
     uString* ReadTextFromFileSync(uString* path);
     ::g::Uno::Threading::Future1* RunTask(uType* __type, uDelegate* del);
-    template<class T1>
-    ::g::Uno::Threading::Future1* RunTask1(uType* __type, uDelegate* del, T1 arg1) { ::g::Uno::Threading::Future1* __retval; return FileSystemOperations__RunTask1_fn(this, __type, del, uConstrain(__type->U(0), arg1), &__retval), __retval; }
-    template<class T1, class T2>
-    ::g::Uno::Threading::Future1* RunTask2(uType* __type, uDelegate* del, T1 arg1, T2 arg2) { ::g::Uno::Threading::Future1* __retval; return FileSystemOperations__RunTask2_fn(this, __type, del, uConstrain(__type->U(0), arg1), uConstrain(__type->U(1), arg2), &__retval), __retval; }
+    template<class T1 
+    ::g::Uno::Threading::Future1* RunTask1(uType* __type, uDelegate* del, T1 arg1) { ::g::Uno::Threading::Future1* __retval; return FileSystemOperations__RunTask1_fn(this, __type, del, uConstrain(__type- U(0), arg1), &__retval), __retval; }
+    template<class T1, class T2 
+    ::g::Uno::Threading::Future1* RunTask2(uType* __type, uDelegate* del, T1 arg1, T2 arg2) { ::g::Uno::Threading::Future1* __retval; return FileSystemOperations__RunTask2_fn(this, __type, del, uConstrain(__type- U(0), arg1), uConstrain(__type- U(1), arg2), &__retval), __retval; }
     ::g::Uno::Threading::Future1* WriteBufferToFile(uString* path, uArray* data);
     ::g::Fuse::FileSystem::Nothing* WriteBufferToFileSync(uString* path, uArray* data);
     ::g::Uno::Threading::Future1* WriteTextToFile(uString* path, uString* text);

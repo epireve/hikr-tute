@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Triggers{struct LayoutTransition;}}}
 namespace g{namespace Fuse{namespace Triggers{struct LayoutTransitioned;}}}
 namespace g{namespace Fuse{namespace Triggers{struct LayoutTransitionedArgs;}}}
@@ -30,26 +30,26 @@ void LayoutTransition__get_Transitioned_fn(::g::Fuse::VisualEvent** __retval);
 
 struct LayoutTransition : uObject
 {
-    static uSStrong< ::g::Fuse::Triggers::LayoutTransitioned*> _transitioned_;
-    static uSStrong< ::g::Fuse::Triggers::LayoutTransitioned*>& _transitioned() { return _transitioned_; }
-    static uSStrong<uObject*> PositionLayoutChange_;
-    static uSStrong<uObject*>& PositionLayoutChange() { return PositionLayoutChange_; }
-    static uSStrong<uObject*> WorldPositionChange_;
-    static uSStrong<uObject*>& WorldPositionChange() { return WorldPositionChange_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _worldPositionChange_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _worldPositionChange() { return _worldPositionChange_; }
-    static uSStrong<uObject*> PositionChange_;
-    static uSStrong<uObject*>& PositionChange() { return PositionChange_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _positionChange_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _positionChange() { return _positionChange_; }
-    static uSStrong<uObject*> SizeLayoutChange_;
-    static uSStrong<uObject*>& SizeLayoutChange() { return SizeLayoutChange_; }
-    static uSStrong<uObject*> ResizeSizeChange_;
-    static uSStrong<uObject*>& ResizeSizeChange() { return ResizeSizeChange_; }
-    static uSStrong<uObject*> ScalingSizeChange_;
-    static uSStrong<uObject*>& ScalingSizeChange() { return ScalingSizeChange_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _sizeChange_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _sizeChange() { return _sizeChange_; }
+    static uSStrong< ::g::Fuse::Triggers::LayoutTransitioned*  _transitioned_;
+    static uSStrong< ::g::Fuse::Triggers::LayoutTransitioned* & _transitioned() { return _transitioned_; }
+    static uSStrong<uObject*  PositionLayoutChange_;
+    static uSStrong<uObject* & PositionLayoutChange() { return PositionLayoutChange_; }
+    static uSStrong<uObject*  WorldPositionChange_;
+    static uSStrong<uObject* & WorldPositionChange() { return WorldPositionChange_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _worldPositionChange_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _worldPositionChange() { return _worldPositionChange_; }
+    static uSStrong<uObject*  PositionChange_;
+    static uSStrong<uObject* & PositionChange() { return PositionChange_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _positionChange_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _positionChange() { return _positionChange_; }
+    static uSStrong<uObject*  SizeLayoutChange_;
+    static uSStrong<uObject* & SizeLayoutChange() { return SizeLayoutChange_; }
+    static uSStrong<uObject*  ResizeSizeChange_;
+    static uSStrong<uObject* & ResizeSizeChange() { return ResizeSizeChange_; }
+    static uSStrong<uObject*  ScalingSizeChange_;
+    static uSStrong<uObject* & ScalingSizeChange() { return ScalingSizeChange_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _sizeChange_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _sizeChange() { return _sizeChange_; }
 
     static bool GetPositionChange(::g::Fuse::Node* n, ::g::Uno::Float2* oldPos, ::g::Uno::Float2* newPos);
     static bool GetSizeChange(::g::Fuse::Node* n, ::g::Uno::Float2* oldSize, ::g::Uno::Float2* newSize);

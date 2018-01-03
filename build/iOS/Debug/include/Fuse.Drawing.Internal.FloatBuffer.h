@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.Internal.TypedBuffer.h>
+#include <Fuse.Drawing.Internal.TypedBuffer.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct FloatBuffer;}}}}
 
 namespace g{

@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Computer.h>
+#include <Fuse.Computer.h 
 namespace g{namespace Fuse{struct Computer1;}}
 
 namespace g{
 namespace Fuse{
 
-// internal abstract class Computer<T> :29
+// internal abstract class Computer<T  :29
 // {
 uType* Computer1_typeof();
 void Computer1__ctor_1_fn(Computer1* __this);

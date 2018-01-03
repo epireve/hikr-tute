@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct TextControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct TextControl__Template;}}}
 
@@ -19,8 +19,8 @@ void TextControl__Template__New2_fn(::g::Fuse::Controls::TextControl* parent, ::
 
 struct TextControl__Template : ::g::Uno::UX::Template
 {
-    uWeak< ::g::Fuse::Controls::TextControl*> __parent1;
-    uWeak< ::g::Fuse::Controls::TextControl*> __parentInstance1;
+    uWeak< ::g::Fuse::Controls::TextControl*  __parent1;
+    uWeak< ::g::Fuse::Controls::TextControl*  __parentInstance1;
 
     void ctor_1(::g::Fuse::Controls::TextControl* parent, ::g::Fuse::Controls::TextControl* parentInstance);
     static TextControl__Template* New2(::g::Fuse::Controls::TextControl* parent, ::g::Fuse::Controls::TextControl* parentInstance);

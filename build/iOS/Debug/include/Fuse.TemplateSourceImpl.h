@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct TemplateSourceImpl;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace UX{struct Template;}}}
@@ -20,7 +20,7 @@ void TemplateSourceImpl__get_Templates_fn(TemplateSourceImpl* __this, ::g::Uno::
 
 struct TemplateSourceImpl
 {
-    uStrong< ::g::Uno::Collections::List*> _templates;
+    uStrong< ::g::Uno::Collections::List*  _templates;
 
     int Count();
     ::g::Uno::UX::Template* FindTemplate(uString* key);

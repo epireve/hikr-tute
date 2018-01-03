@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTask;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -32,14 +32,14 @@ void BusyTask__SetNodeActivity_fn(BusyTask* __this, ::g::Fuse::Node* n, int* act
 
 struct BusyTask : uObject
 {
-    uStrong< ::g::Fuse::Node*> _node;
-    static uSStrong< ::g::Uno::Collections::List*> _tasks_;
-    static uSStrong< ::g::Uno::Collections::List*>& _tasks() { return BusyTask_typeof()->Init(), _tasks_; }
+    uStrong< ::g::Fuse::Node*  _node;
+    static uSStrong< ::g::Uno::Collections::List*  _tasks_;
+    static uSStrong< ::g::Uno::Collections::List* & _tasks() { return BusyTask_typeof()- Init(), _tasks_; }
     int _type;
     int _activity;
-    uStrong<uString*> _message;
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _listeners_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _listeners() { return BusyTask_typeof()->Init(), _listeners_; }
+    uStrong<uString*  _message;
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _listeners_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _listeners() { return BusyTask_typeof()- Init(), _listeners_; }
 
     void ctor_(::g::Fuse::Node* n, int type, int act, uString* message);
     void Done();

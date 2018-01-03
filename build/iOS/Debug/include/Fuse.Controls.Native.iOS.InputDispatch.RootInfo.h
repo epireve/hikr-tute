@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct InputDispatch__RootInfo;}}}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace ObjC{struct Object;}}
@@ -21,8 +21,8 @@ void InputDispatch__RootInfo__New1_fn(::g::Fuse::Visual* rootVisual, ::g::ObjC::
 
 struct InputDispatch__RootInfo
 {
-    uStrong< ::g::Fuse::Visual*> RootVisual;
-    uStrong< ::g::ObjC::Object*> RootView;
+    uStrong< ::g::Fuse::Visual*  RootVisual;
+    uStrong< ::g::ObjC::Object*  RootView;
 
     void ctor_(::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView);
 };

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.SurfacePath.h>
+#include <Fuse.Drawing.SurfacePath.h 
 namespace g{namespace Fuse{namespace Drawing{struct CoreGraphicsSurfacePath;}}}
 
 namespace g{

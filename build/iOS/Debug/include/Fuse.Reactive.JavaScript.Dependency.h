@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript;}}}
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript__Dependency;}}}
 
@@ -29,12 +29,12 @@ void JavaScript__Dependency__Unsubscribe_fn(JavaScript__Dependency* __this);
 
 struct JavaScript__Dependency : uObject
 {
-    uStrong< ::g::Fuse::Reactive::JavaScript*> _script;
-    uStrong<uObject*> _expSubscription;
+    uStrong< ::g::Fuse::Reactive::JavaScript*  _script;
+    uStrong<uObject*  _expSubscription;
     bool HasValue;
-    uStrong<uObject*> Value;
-    uStrong<uObject*> _Expression;
-    uStrong<uString*> _Name;
+    uStrong<uObject*  Value;
+    uStrong<uObject*  _Expression;
+    uStrong<uString*  _Name;
 
     uObject* Expression();
     void Expression(uObject* value);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct Animator;}}}
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct Player;}}}
@@ -43,14 +43,14 @@ void TriggerAnimation__set_TimeMultiplier_fn(TriggerAnimation* __this, double* v
 
 struct TriggerAnimation : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _animators;
-    uStrong<TriggerAnimation*> _backward;
+    uStrong< ::g::Uno::Collections::List*  _animators;
+    uStrong<TriggerAnimation*  _backward;
     double _timeMultiplier;
     bool _hasStretchDuration;
     double _stretchDuration;
     double _crossFadeDuration;
     int _playMode;
-    uStrong<uDelegate*> TimeChanged1;
+    uStrong<uDelegate*  TimeChanged1;
 
     void ctor_();
     uObject* Animators();

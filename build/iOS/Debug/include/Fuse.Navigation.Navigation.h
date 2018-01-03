@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct Navigation;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct PropertyHandle;}}
@@ -26,8 +26,8 @@ void Navigation__TryFindPage1_fn(::g::Fuse::Node* node, uObject** nav, ::g::Fuse
 
 struct Navigation : uObject
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _contextHandle_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _contextHandle() { return _contextHandle_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _contextHandle_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _contextHandle() { return _contextHandle_; }
 
     static uObject* GetLocalNavigation(::g::Fuse::Visual* node);
     static uObject* GetNavigationNavigation(::g::Fuse::Visual* n);

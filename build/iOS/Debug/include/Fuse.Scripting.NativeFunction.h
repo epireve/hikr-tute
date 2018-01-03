@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.NativeMember.h>
+#include <Fuse.Scripting.NativeMember.h 
 namespace g{namespace Fuse{namespace Scripting{struct NativeFunction;}}}
 
 namespace g{
@@ -19,7 +19,7 @@ void NativeFunction__New1_fn(uString* name, uDelegate* callback, NativeFunction*
 
 struct NativeFunction : ::g::Fuse::Scripting::NativeMember
 {
-    uStrong<uDelegate*> _nativeCallback;
+    uStrong<uDelegate*  _nativeCallback;
 
     void ctor_1(uString* name, uDelegate* callback);
     uDelegate* CreateCallback();

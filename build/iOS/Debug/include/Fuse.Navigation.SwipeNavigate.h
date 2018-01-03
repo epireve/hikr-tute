@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.Input.IGesture.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.Input.IGesture.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
 namespace g{namespace Fuse{namespace Input{struct GesturePriorityConfig;}}}
@@ -66,11 +66,11 @@ void SwipeNavigate__set_VelocityThreshold_fn(SwipeNavigate* __this, float* value
 
 struct SwipeNavigate : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*> _velocity;
-    uStrong<uObject*> _currentNavigation;
-    uStrong< ::g::Fuse::Input::Gesture*> _gesture;
+    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*  _velocity;
+    uStrong<uObject*  _currentNavigation;
+    uStrong< ::g::Fuse::Input::Gesture*  _gesture;
     int _forwardDirection;
-    uStrong< ::g::Fuse::Elements::Element*> _lengthNode;
+    uStrong< ::g::Fuse::Elements::Element*  _lengthNode;
     bool _hasMaxPages;
     float _maxPages;
     ::g::Uno::Float2 _startCoord;

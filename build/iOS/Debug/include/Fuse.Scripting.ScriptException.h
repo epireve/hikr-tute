@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Exception.h>
+#include <Uno.Exception.h 
 namespace g{namespace Fuse{namespace Scripting{struct ScriptException;}}}
 
 namespace g{
@@ -30,12 +30,12 @@ void ScriptException__set_SourceLine_fn(ScriptException* __this, uString* value)
 
 struct ScriptException : ::g::Uno::Exception
 {
-    uStrong<uString*> _ErrorMessage;
-    uStrong<uString*> _FileName;
-    uStrong<uString*> _JSStackTrace;
+    uStrong<uString*  _ErrorMessage;
+    uStrong<uString*  _FileName;
+    uStrong<uString*  _JSStackTrace;
     int _LineNumber;
-    uStrong<uString*> _Name;
-    uStrong<uString*> _SourceLine;
+    uStrong<uString*  _Name;
+    uStrong<uString*  _SourceLine;
 
     void ctor_3(uString* name, uString* errorMessage, uString* fileName, int lineNumber, uString* sourceLine, uString* stackTrace);
     uString* ErrorMessage();

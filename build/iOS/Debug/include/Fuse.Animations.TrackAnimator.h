@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Animator.h>
-#include <Uno.Float4.h>
+#include <Fuse.Animations.Animator.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{namespace Animations{struct Easing;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimator;}}}
 
@@ -35,11 +35,11 @@ void TrackAnimator__set_Weight_fn(TrackAnimator* __this, double* value);
 
 struct TrackAnimator : ::g::Fuse::Animations::Animator
 {
-    uStrong<uObject*> _discreteProvider;
+    uStrong<uObject*  _discreteProvider;
     bool _isDiscrete;
-    uStrong<uObject*> _continuousProvider;
-    uStrong< ::g::Fuse::Animations::Easing*> _easing;
-    uStrong< ::g::Fuse::Animations::Easing*> _easingBack;
+    uStrong<uObject*  _continuousProvider;
+    uStrong< ::g::Fuse::Animations::Easing*  _easing;
+    uStrong< ::g::Fuse::Animations::Easing*  _easingBack;
     bool _hasEasingBack;
     double _durationBack;
     bool _hasDurationBack;
@@ -47,7 +47,7 @@ struct TrackAnimator : ::g::Fuse::Animations::Animator
     bool _hasDelayBack;
     double _weight;
     ::g::Uno::Float4 _vectorValue;
-    uStrong<uObject*> _objectValue;
+    uStrong<uObject*  _objectValue;
     double _Duration;
 
     void ctor_2();

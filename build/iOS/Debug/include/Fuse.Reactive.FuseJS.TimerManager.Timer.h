@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerManager__Timer;}}}}
 
 namespace g{
@@ -25,12 +25,12 @@ struct TimerManager__Timer : uObject
     static int _id_;
     static int& _id() { return _id_; }
     double _timeout;
-    uStrong<uDelegate*> _callback;
+    uStrong<uDelegate*  _callback;
     bool _repeat;
     bool _isRunning;
     double _startTime;
     int ID;
-    uStrong<uDelegate*> OnStop;
+    uStrong<uDelegate*  OnStop;
 
     void ctor_(double ms, uDelegate* callback, bool repeat);
     void Start();

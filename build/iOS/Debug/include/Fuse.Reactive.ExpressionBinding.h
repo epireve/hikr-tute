@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.Reactive.IContext.h>
-#include <Fuse.Reactive.IListener.h>
+#include <Fuse.Binding.h 
+#include <Fuse.Reactive.IContext.h 
+#include <Fuse.Reactive.IListener.h 
 namespace g{namespace Fuse{namespace Reactive{struct ExpressionBinding;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -37,15 +37,15 @@ void ExpressionBinding__WriteBack_fn(ExpressionBinding* __this, uObject* value);
 
 struct ExpressionBinding : ::g::Fuse::Binding
 {
-    uStrong<uObject*> _expressionSub;
-    uStrong<uObject*> _Key;
+    uStrong<uObject*  _expressionSub;
+    uStrong<uObject*  _Key;
 
     void ctor_1(uObject* key);
     bool CanWriteBack();
     uObject* Key();
     void Key(uObject* value);
-    void NewValue(uObject* obj) { (((ExpressionBinding_type*)__type)->fp_NewValue)(this, obj); }
-    uObject* SubscribeResource(uObject* source, uString* key, uObject* listener) { uObject* __retval; return (((ExpressionBinding_type*)__type)->fp_SubscribeResource)(this, source, key, listener, &__retval), __retval; }
+    void NewValue(uObject* obj) { (((ExpressionBinding_type*)__type)- fp_NewValue)(this, obj); }
+    uObject* SubscribeResource(uObject* source, uString* key, uObject* listener) { uObject* __retval; return (((ExpressionBinding_type*)__type)- fp_SubscribeResource)(this, source, key, listener, &__retval), __retval; }
     void WriteBack(uObject* value);
     static uObject* SubscribeResource(ExpressionBinding* __this, uObject* source, uString* key, uObject* listener) { uObject* __retval; return ExpressionBinding__SubscribeResource_fn(__this, source, key, listener, &__retval), __retval; }
 };

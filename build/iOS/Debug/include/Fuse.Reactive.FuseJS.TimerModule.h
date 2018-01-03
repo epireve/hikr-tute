@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerManager;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
@@ -27,9 +27,9 @@ void TimerModule__UpdateModule_fn(TimerModule* __this);
 
 struct TimerModule : ::g::Fuse::Scripting::NativeModule
 {
-    uStrong< ::g::Fuse::Reactive::FuseJS::TimerManager*> _tm;
-    static uSStrong<TimerModule*> _instance_;
-    static uSStrong<TimerModule*>& _instance() { return _instance_; }
+    uStrong< ::g::Fuse::Reactive::FuseJS::TimerManager*  _tm;
+    static uSStrong<TimerModule*  _instance_;
+    static uSStrong<TimerModule* & _instance() { return _instance_; }
 
     void ctor_2();
     uObject* Create(::g::Fuse::Scripting::Context* context, uArray* args);

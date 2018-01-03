@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Uno{struct Float4;}}
 
 namespace g{
@@ -21,13 +21,13 @@ struct ISolidColor
 
 }}} // ::g::Fuse::Drawing
 
-#include <Uno.Float4.h>
+#include <Uno.Float4.h 
 
 namespace g{
 namespace Fuse{
 namespace Drawing{
 
-inline ::g::Uno::Float4 ISolidColor::Color(const uInterface& __this) { ::g::Uno::Float4 __retval; return __this.VTable<ISolidColor>()->fp_get_Color(__this, &__retval), __retval; }
+inline ::g::Uno::Float4 ISolidColor::Color(const uInterface& __this) { ::g::Uno::Float4 __retval; return __this.VTable<ISolidColor ()- fp_get_Color(__this, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Drawing

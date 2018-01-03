@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -15,7 +15,7 @@ uInterfaceType* IMirror_typeof();
 struct IMirror
 {
     void(*fp_Reflect)(uObject*, uObject*, uObject**);
-    static uObject* Reflect(const uInterface& __this, uObject* obj) { uObject* __retval; return __this.VTable<IMirror>()->fp_Reflect(__this, obj, &__retval), __retval; }
+    static uObject* Reflect(const uInterface& __this, uObject* obj) { uObject* __retval; return __this.VTable<IMirror ()- fp_Reflect(__this, obj, &__retval), __retval; }
 };
 // }
 

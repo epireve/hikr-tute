@@ -1,36 +1,36 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Platform/1.4.2/iOS/SystemUI.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <AppDelegateSoftKeyboard.h>
-#include <CoreGraphics/CoreGraphics.h>
-#include <Fuse.Platform.ApplicationState.h>
-#include <Fuse.Platform.Lifecycle.h>
-#include <Fuse.Platform.StatusBarAnimation.h>
-#include <Fuse.Platform.StatusBarStyle.h>
-#include <Fuse.Platform.SystemUI.h>
-#include <Fuse.Platform.SystemUIID.h>
-#include <Fuse.Platform.SystemUIResizeReason.h>
-#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Delegate.h>
-#include <Uno.Double.h>
-#include <Uno.EventArgs.h>
-#include <Uno.EventHandler.h>
-#include <Uno.EventHandler-1.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <Uno.Object.h>
-#include <Uno.Platform.Display.h>
-#include <Uno.Platform.Displays.h>
-#include <Uno.Platform.iOS.Application.h>
-#include <Uno.Platform.iOS.Support.h>
-#include <Uno.Platform.iOS.uCGRect.h>
-#include <Uno.Platform.iOS.uCGSize.h>
-#include <Uno.Platform.iOSDisplay.h>
-#include <Uno-iOS/AppDelegate.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Rect.h>
+#include <AppDelegateSoftKeyboard.h 
+#include <CoreGraphics/CoreGraphics.h 
+#include <Fuse.Platform.ApplicationState.h 
+#include <Fuse.Platform.Lifecycle.h 
+#include <Fuse.Platform.StatusBarAnimation.h 
+#include <Fuse.Platform.StatusBarStyle.h 
+#include <Fuse.Platform.SystemUI.h 
+#include <Fuse.Platform.SystemUIID.h 
+#include <Fuse.Platform.SystemUIResizeReason.h 
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Delegate.h 
+#include <Uno.Double.h 
+#include <Uno.EventArgs.h 
+#include <Uno.EventHandler.h 
+#include <Uno.EventHandler-1.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <Uno.Object.h 
+#include <Uno.Platform.Display.h 
+#include <Uno.Platform.Displays.h 
+#include <Uno.Platform.iOS.Application.h 
+#include <Uno.Platform.iOS.Support.h 
+#include <Uno.Platform.iOS.uCGRect.h 
+#include <Uno.Platform.iOS.uCGSize.h 
+#include <Uno.Platform.iOSDisplay.h 
+#include <Uno-iOS/AppDelegate.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Rect.h 
 static uType* TYPES[3];
 
 namespace g{
@@ -49,23 +49,23 @@ static void SystemUI_build(uType* type)
 {
     ::TYPES[0] = ::g::Uno::Platform::iOSDisplay_typeof();
     ::TYPES[1] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[2] = ::g::Uno::EventHandler1_typeof()->MakeType(::g::Fuse::Platform::SystemUIWillResizeEventArgs_typeof(), NULL);
-    type->SetDependencies(
+    ::TYPES[2] = ::g::Uno::EventHandler1_typeof()- MakeType(::g::Fuse::Platform::SystemUIWillResizeEventArgs_typeof(), NULL);
+    type- SetDependencies(
         ::g::Uno::EventArgs_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Bool_typeof(), (uintptr_t)&SystemUI::_isTopFrameVisible_, uFieldFlagsStatic,
         ::g::Fuse::Platform::StatusBarStyle_typeof(), (uintptr_t)&SystemUI::_style_, uFieldFlagsStatic,
         ::g::Uno::Rect_typeof(), (uintptr_t)&SystemUI::_BottomFrame_, uFieldFlagsStatic,
         ::g::Uno::Rect_typeof(), (uintptr_t)&SystemUI::_Frame_, uFieldFlagsStatic,
         ::g::Fuse::Platform::StatusBarAnimation_typeof(), (uintptr_t)&SystemUI::_uStatusBarAnimation_, uFieldFlagsStatic,
-        ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/], (uintptr_t)&SystemUI::BottomFrameWillResize1_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */], (uintptr_t)&SystemUI::BottomFrameWillResize1_, uFieldFlagsStatic,
         ::TYPES[1/*Uno.EventHandler*/], (uintptr_t)&SystemUI::FrameChanged1_, uFieldFlagsStatic,
-        ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/], (uintptr_t)&SystemUI::TopFrameWillResize1_, uFieldFlagsStatic);
+        ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */], (uintptr_t)&SystemUI::TopFrameWillResize1_, uFieldFlagsStatic);
 }
 
 uClassType* SystemUI_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -73,8 +73,8 @@ uClassType* SystemUI_typeof()
     options.DependencyCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Platform.SystemUI", options);
-    type->fp_build_ = SystemUI_build;
-    type->fp_cctor_ = SystemUI__cctor__fn;
+    type- fp_build_ = SystemUI_build;
+    type- fp_cctor_ = SystemUI__cctor__fn;
     return type;
 }
 
@@ -96,13 +96,13 @@ void SystemUI__set_BottomFrame_fn(::g::Uno::Rect* value)
     SystemUI::BottomFrame(*value);
 }
 
-// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :32
+// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) :32
 void SystemUI__add_BottomFrameWillResize_fn(uDelegate* value)
 {
     SystemUI::add_BottomFrameWillResize(value);
 }
 
-// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :32
+// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) :32
 void SystemUI__remove_BottomFrameWillResize_fn(uDelegate* value)
 {
     SystemUI::remove_BottomFrameWillResize(value);
@@ -198,13 +198,13 @@ void SystemUI__get_TopFrame_fn(::g::Uno::Rect* __retval)
     *__retval = SystemUI::TopFrame();
 }
 
-// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :31
+// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) :31
 void SystemUI__add_TopFrameWillResize_fn(uDelegate* value)
 {
     SystemUI::add_TopFrameWillResize(value);
 }
 
-// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) :31
+// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) :31
 void SystemUI__remove_TopFrameWillResize_fn(uDelegate* value)
 {
     SystemUI::remove_TopFrameWillResize(value);
@@ -245,9 +245,9 @@ int SystemUI::_style_;
 ::g::Uno::Rect SystemUI::_BottomFrame_;
 ::g::Uno::Rect SystemUI::_Frame_;
 int SystemUI::_uStatusBarAnimation_;
-uSStrong<uDelegate*> SystemUI::BottomFrameWillResize1_;
-uSStrong<uDelegate*> SystemUI::FrameChanged1_;
-uSStrong<uDelegate*> SystemUI::TopFrameWillResize1_;
+uSStrong<uDelegate*  SystemUI::BottomFrameWillResize1_;
+uSStrong<uDelegate*  SystemUI::FrameChanged1_;
+uSStrong<uDelegate*  SystemUI::TopFrameWillResize1_;
 
 // private static void _statusBarWillChangeFrame(Uno.Platform.iOS.uCGRect _endFrame, double animationDuration) [static] :187
 void SystemUI::_statusBarWillChangeFrame(CGRect _endFrame, double animationDuration)
@@ -255,7 +255,7 @@ void SystemUI::_statusBarWillChangeFrame(CGRect _endFrame, double animationDurat
     if (::g::Fuse::Platform::Lifecycle::State() == 0)
         return;
 
-    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())->Density();
+    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())- Density();
     ::g::Uno::Rect startFrame = ::g::Uno::Platform::iOS::Support::CGRectToUnoRect(::g::Uno::Platform::iOS::Support::Pre_iOS8_HandleDeviceOrientation_Rect([UIApplication sharedApplication].statusBarFrame, NULL), density);
     ::g::Uno::Rect endFrame = ::g::Uno::Platform::iOS::Support::CGRectToUnoRect(::g::Uno::Platform::iOS::Support::Pre_iOS8_HandleDeviceOrientation_Rect(_endFrame, NULL), density);
     int reason;
@@ -293,14 +293,14 @@ void SystemUI::EnableKeyboardResizeNotifications()
 // private static Uno.Rect GetStatusBarFrame() [static] :178
 ::g::Uno::Rect SystemUI::GetStatusBarFrame()
 {
-    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())->Density();
+    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())- Density();
     return ::g::Uno::Platform::iOS::Support::CGRectToUnoRect(::g::Uno::Platform::iOS::Support::Pre_iOS8_HandleDeviceOrientation_Rect([UIApplication sharedApplication].statusBarFrame, NULL), density);
 }
 
 // public static void OnCreate() [static] :55
 void SystemUI::OnCreate()
 {
-    uPtr(uCast< ::g::Uno::Platform::iOSDisplay*>(::g::Uno::Platform::Displays::MainDisplay(), ::TYPES[0/*Uno.Platform.iOSDisplay*/]))->add_FrameChanged(uDelegate::New(::TYPES[1/*Uno.EventHandler*/], (void*)SystemUI__OnFrameChanged_fn));
+    uPtr(uCast< ::g::Uno::Platform::iOSDisplay* (::g::Uno::Platform::Displays::MainDisplay(), ::TYPES[0/*Uno.Platform.iOSDisplay*/]))- add_FrameChanged(uDelegate::New(::TYPES[1/*Uno.EventHandler*/], (void*)SystemUI__OnFrameChanged_fn));
     SystemUI::OnFrameChanged(NULL, NULL);
     SystemUI::EnableKeyboardResizeNotifications();
 }
@@ -308,31 +308,31 @@ void SystemUI::OnCreate()
 // private static void OnFrameChanged(object s, object a) [static] :43
 void SystemUI::OnFrameChanged(uObject* s, uObject* a)
 {
-    ::g::Uno::Platform::iOSDisplay* iDisplay = uCast< ::g::Uno::Platform::iOSDisplay*>(::g::Uno::Platform::Displays::MainDisplay(), ::TYPES[0/*Uno.Platform.iOSDisplay*/]);
-    SystemUI::Frame(uPtr(iDisplay)->Frame());
+    ::g::Uno::Platform::iOSDisplay* iDisplay = uCast< ::g::Uno::Platform::iOSDisplay* (::g::Uno::Platform::Displays::MainDisplay(), ::TYPES[0/*Uno.Platform.iOSDisplay*/]);
+    SystemUI::Frame(uPtr(iDisplay)- Frame());
     uDelegate* handler = SystemUI::FrameChanged1_;
 
     if (::g::Uno::Delegate::op_Inequality(handler, NULL))
-        uPtr(handler)->Invoke(2, NULL, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty_);
+        uPtr(handler)- Invoke(2, NULL, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty_);
 }
 
 // private static void OnWillResize(Fuse.Platform.SystemUIWillResizeEventArgs args) [static] :164
 void SystemUI::OnWillResize(::g::Fuse::Platform::SystemUIWillResizeEventArgs* args)
 {
-    if (uPtr(args)->ID() == 0)
+    if (uPtr(args)- ID() == 0)
     {
         uDelegate* handler = SystemUI::TopFrameWillResize1_;
 
         if (::g::Uno::Delegate::op_Inequality(handler, NULL))
-            uPtr(handler)->Invoke(2, NULL, args);
+            uPtr(handler)- Invoke(2, NULL, args);
     }
     else
     {
-        SystemUI::BottomFrame(uPtr(args)->EndFrame());
+        SystemUI::BottomFrame(uPtr(args)- EndFrame());
         uDelegate* handler1 = SystemUI::BottomFrameWillResize1_;
 
         if (::g::Uno::Delegate::op_Inequality(handler1, NULL))
-            uPtr(handler1)->Invoke(2, NULL, args);
+            uPtr(handler1)- Invoke(2, NULL, args);
     }
 }
 
@@ -353,7 +353,7 @@ CGSize SystemUI::Pre_iOS8_HandleDeviceOrientation_Size(CGSize cgsize, ::g::ObjC:
 // private static void uKeyboardWillChangeFrame(Uno.Platform.iOS.uCGRect frameBegin, Uno.Platform.iOS.uCGRect frameEnd, double animationDuration, int animationCurve, Fuse.Platform.SystemUIResizeReason reason) [static] :217
 void SystemUI::uKeyboardWillChangeFrame1(CGRect frameBegin, CGRect frameEnd, double animationDuration, int animationCurve, int reason)
 {
-    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())->Density();
+    float density = uPtr(::g::Uno::Platform::Displays::MainDisplay())- Density();
     ::g::Uno::Rect startFrame = ::g::Uno::Platform::iOS::Support::CGRectToUnoRect(::g::Uno::Platform::iOS::Support::Pre_iOS8_HandleDeviceOrientation_Rect(frameBegin, NULL), density);
     ::g::Uno::Rect endFrame = ::g::Uno::Platform::iOS::Support::CGRectToUnoRect(::g::Uno::Platform::iOS::Support::Pre_iOS8_HandleDeviceOrientation_Rect(frameEnd, NULL), density);
     ::g::Fuse::Platform::SystemUIWillResizeEventArgs* args = ::g::Fuse::Platform::SystemUIWillResizeEventArgs::New2(1, reason, endFrame, startFrame, animationDuration, 1);
@@ -468,40 +468,40 @@ void SystemUI::uStatusBarStyle1(int value)
     }
 }
 
-// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :32
+// public static generated void add_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) [static] :32
 void SystemUI::add_BottomFrameWillResize(uDelegate* value)
 {
-    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::BottomFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate* (::g::Uno::Delegate::Combine(SystemUI::BottomFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */]);
 }
 
-// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :32
+// public static generated void remove_BottomFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) [static] :32
 void SystemUI::remove_BottomFrameWillResize(uDelegate* value)
 {
-    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::BottomFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::BottomFrameWillResize1_ = uCast<uDelegate* (::g::Uno::Delegate::Remove(SystemUI::BottomFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */]);
 }
 
 // public static generated void add_FrameChanged(Uno.EventHandler value) [static] :42
 void SystemUI::add_FrameChanged(uDelegate* value)
 {
-    SystemUI::FrameChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::FrameChanged1_, value), ::TYPES[1/*Uno.EventHandler*/]);
+    SystemUI::FrameChanged1_ = uCast<uDelegate* (::g::Uno::Delegate::Combine(SystemUI::FrameChanged1_, value), ::TYPES[1/*Uno.EventHandler*/]);
 }
 
 // public static generated void remove_FrameChanged(Uno.EventHandler value) [static] :42
 void SystemUI::remove_FrameChanged(uDelegate* value)
 {
-    SystemUI::FrameChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::FrameChanged1_, value), ::TYPES[1/*Uno.EventHandler*/]);
+    SystemUI::FrameChanged1_ = uCast<uDelegate* (::g::Uno::Delegate::Remove(SystemUI::FrameChanged1_, value), ::TYPES[1/*Uno.EventHandler*/]);
 }
 
-// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :31
+// public static generated void add_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) [static] :31
 void SystemUI::add_TopFrameWillResize(uDelegate* value)
 {
-    SystemUI::TopFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SystemUI::TopFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::TopFrameWillResize1_ = uCast<uDelegate* (::g::Uno::Delegate::Combine(SystemUI::TopFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */]);
 }
 
-// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs> value) [static] :31
+// public static generated void remove_TopFrameWillResize(Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs  value) [static] :31
 void SystemUI::remove_TopFrameWillResize(uDelegate* value)
 {
-    SystemUI::TopFrameWillResize1_ = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SystemUI::TopFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs>*/]);
+    SystemUI::TopFrameWillResize1_ = uCast<uDelegate* (::g::Uno::Delegate::Remove(SystemUI::TopFrameWillResize1_, value), ::TYPES[2/*Uno.EventHandler<Fuse.Platform.SystemUIWillResizeEventArgs */]);
 }
 // }
 

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IShow_typeof();
 struct IShow
 {
     void(*fp_Show)(uObject*);
-    static void Show(const uInterface& __this) { __this.VTable<IShow>()->fp_Show(__this); }
+    static void Show(const uInterface& __this) { __this.VTable<IShow ()- fp_Show(__this); }
 };
 // }
 

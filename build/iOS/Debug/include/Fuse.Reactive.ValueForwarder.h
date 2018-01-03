@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.ValueObserver.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.ValueObserver.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct ValueForwarder;}}}
 
 namespace g{
@@ -20,7 +20,7 @@ void ValueForwarder__PushData_fn(ValueForwarder* __this, uObject* newValue);
 
 struct ValueForwarder : ::g::Fuse::Reactive::ValueObserver
 {
-    uStrong<uObject*> _listener;
+    uStrong<uObject*  _listener;
 
     void ctor_1(uObject* obs, uObject* listener);
     static ValueForwarder* New1(uObject* obs, uObject* listener);

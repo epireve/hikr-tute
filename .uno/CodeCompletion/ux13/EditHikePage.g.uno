@@ -2,12 +2,12 @@
 public partial class EditHikePage: Fuse.Controls.Page
 {
     readonly Fuse.Navigation.Router router;
-    global::Uno.UX.Property<string> temp_Value_inst;
-    global::Uno.UX.Property<string> temp1_Value_inst;
-    global::Uno.UX.Property<string> temp2_Value_inst;
-    global::Uno.UX.Property<string> temp3_Value_inst;
-    global::Uno.UX.Property<string> temp4_Value_inst;
-    global::Uno.UX.Property<string> temp5_Value_inst;
+    global::Uno.UX.Property<string  temp_Value_inst;
+    global::Uno.UX.Property<string  temp1_Value_inst;
+    global::Uno.UX.Property<string  temp2_Value_inst;
+    global::Uno.UX.Property<string  temp3_Value_inst;
+    global::Uno.UX.Property<string  temp4_Value_inst;
+    global::Uno.UX.Property<string  temp5_Value_inst;
     internal global::Fuse.Reactive.EventBinding temp_eb0;
     internal global::Fuse.Reactive.EventBinding temp_eb1;
     global::Uno.UX.NameTable __g_nametable;

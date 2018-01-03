@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IRaw.h>
-#include <Fuse.Scripting.SubscriptionSubject.h>
+#include <Fuse.Scripting.IRaw.h 
+#include <Fuse.Scripting.SubscriptionSubject.h 
 namespace g{namespace Fuse{namespace Scripting{struct ValueMirror;}}}
 
 namespace g{
@@ -25,11 +25,11 @@ void ValueMirror__Unsubscribe1_fn(uObject* obj);
 
 struct ValueMirror : ::g::Fuse::Scripting::SubscriptionSubject
 {
-    uStrong<uObject*> _raw;
+    uStrong<uObject*  _raw;
 
     void ctor_1(uObject* raw);
     uObject* ReflectedRaw();
-    void Unsubscribe() { (((ValueMirror_type*)__type)->fp_Unsubscribe)(this); }
+    void Unsubscribe() { (((ValueMirror_type*)__type)- fp_Unsubscribe)(this); }
     static void Unsubscribe1(uObject* obj);
 };
 // }

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct Callback;}}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -22,8 +22,8 @@ void Callback__Perform_fn(Callback* __this, ::g::Fuse::Node* target);
 
 struct Callback : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong<uDelegate*> _Action;
-    uStrong<uDelegate*> Handler1;
+    uStrong<uDelegate*  _Action;
+    uStrong<uDelegate*  Handler1;
 
     uDelegate* Action();
     void Action(uDelegate* value);

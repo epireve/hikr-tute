@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IProperties.h>
-#include <Uno.Application.h>
-#include <Uno.Float4.h>
+#include <Fuse.IProperties.h 
+#include <Uno.Application.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{struct AppBase;}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Node;}}
@@ -53,19 +53,19 @@ void AppBase__remove_UnhandledException_fn(AppBase* __this, uDelegate* value);
 
 struct AppBase : ::g::Uno::Application
 {
-    uStrong< ::g::Fuse::Properties*> _properties;
-    uStrong< ::g::Uno::Collections::List*> _selection;
+    uStrong< ::g::Fuse::Properties*  _properties;
+    uStrong< ::g::Uno::Collections::List*  _selection;
     bool _isInvalidateSelectionScheduled;
-    static uSStrong< ::g::Fuse::RootViewport*> _testRootViewport_;
-    static uSStrong< ::g::Fuse::RootViewport*>& _testRootViewport() { return _testRootViewport_; }
+    static uSStrong< ::g::Fuse::RootViewport*  _testRootViewport_;
+    static uSStrong< ::g::Fuse::RootViewport* & _testRootViewport() { return _testRootViewport_; }
     ::g::Uno::Float4 _Background;
-    uStrong< ::g::Fuse::RootViewport*> _RootViewport;
-    uStrong<uDelegate*> UnhandledException1;
+    uStrong< ::g::Fuse::RootViewport*  _RootViewport;
+    uStrong<uDelegate*  UnhandledException1;
 
     void ctor_2();
     ::g::Uno::Float4 Background();
     void Background(::g::Uno::Float4 value);
-    uObject* Children() { uObject* __retval; return (((AppBase_type*)__type)->fp_get_Children)(this, &__retval), __retval; }
+    uObject* Children() { uObject* __retval; return (((AppBase_type*)__type)- fp_get_Children)(this, &__retval), __retval; }
     void DoInvalidateSelection();
     void DrawSelection(::g::Fuse::DrawContext* dc);
     void FindSelection(::g::Fuse::Node* n);
@@ -75,7 +75,7 @@ struct AppBase : ::g::Uno::Application
     void OnLowMemory();
     void OnSelectionChanged(uObject* sender, ::g::Uno::EventArgs* args);
     void OnUnhandledException(::g::Uno::Exception* e, bool propagate);
-    void OnUpdate() { (((AppBase_type*)__type)->fp_OnUpdate)(this); }
+    void OnUpdate() { (((AppBase_type*)__type)- fp_OnUpdate)(this); }
     float PixelsPerPoint();
     ::g::Fuse::Properties* Properties();
     ::g::Fuse::RootViewport* RootViewport();

@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Selection{struct Selectable;}}}
 namespace g{namespace Fuse{namespace Selection{struct Selection;}}}
@@ -35,10 +35,10 @@ void Selectable__set_Value_fn(Selectable* __this, uString* value);
 
 struct Selectable : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Fuse::Selection::Selection*> _selection;
+    uStrong< ::g::Fuse::Selection::Selection*  _selection;
     static ::g::Uno::UX::Selector ValueName_;
-    static ::g::Uno::UX::Selector& ValueName() { return Selectable_typeof()->Init(), ValueName_; }
-    uStrong<uString*> _value;
+    static ::g::Uno::UX::Selector& ValueName() { return Selectable_typeof()- Init(), ValueName_; }
+    uStrong<uString*  _value;
 
     void Add1();
     void Remove1();

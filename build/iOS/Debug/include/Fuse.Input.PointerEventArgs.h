@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Fuse.VisualEventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Fuse.VisualEventArgs.h 
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventData;}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -29,7 +29,7 @@ void PointerEventArgs__get_WindowPoint_fn(PointerEventArgs* __this, ::g::Uno::Fl
 
 struct PointerEventArgs : ::g::Fuse::VisualEventArgs
 {
-    uStrong< ::g::Fuse::Input::PointerEventData*> _data;
+    uStrong< ::g::Fuse::Input::PointerEventData*  _data;
 
     void ctor_2(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual);
     ::g::Fuse::Input::PointerEventData* Data();

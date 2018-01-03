@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Function.h>
-#include <JavaScriptCore/JavaScript.h>
-#include <JavaScriptCore/JSObjectRef.h>
+#include <Fuse.Scripting.Function.h 
+#include <JavaScriptCore/JavaScript.h 
+#include <JavaScriptCore/JSObjectRef.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context;}}}}
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Function;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -26,7 +26,7 @@ void Function__New1_fn(::g::Fuse::Scripting::JavaScriptCore::Context* context, :
 
 struct Function : ::g::Fuse::Scripting::Function
 {
-    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*  _context;
     ::JSObjectRef _value;
 
     void ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef function);

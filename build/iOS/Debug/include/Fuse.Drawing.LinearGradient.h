@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.DynamicBrush.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Drawing.DynamicBrush.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Drawing{struct GradientStop;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LinearGradient;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -49,30 +49,30 @@ void LinearGradient__ValidateStopsSorted_fn(uObject* stops);
 struct LinearGradient : ::g::Fuse::Drawing::DynamicBrush
 {
     static ::g::Uno::UX::Selector _stopsName_;
-    static ::g::Uno::UX::Selector& _stopsName() { return LinearGradient_typeof()->Init(), _stopsName_; }
+    static ::g::Uno::UX::Selector& _stopsName() { return LinearGradient_typeof()- Init(), _stopsName_; }
     static ::g::Uno::UX::Selector _stopOffsetName_;
-    static ::g::Uno::UX::Selector& _stopOffsetName() { return LinearGradient_typeof()->Init(), _stopOffsetName_; }
+    static ::g::Uno::UX::Selector& _stopOffsetName() { return LinearGradient_typeof()- Init(), _stopOffsetName_; }
     static ::g::Uno::UX::Selector _stopColorName_;
-    static ::g::Uno::UX::Selector& _stopColorName() { return LinearGradient_typeof()->Init(), _stopColorName_; }
+    static ::g::Uno::UX::Selector& _stopColorName() { return LinearGradient_typeof()- Init(), _stopColorName_; }
     static ::g::Uno::UX::Selector _interpolationName_;
-    static ::g::Uno::UX::Selector& _interpolationName() { return LinearGradient_typeof()->Init(), _interpolationName_; }
-    uStrong< ::g::Uno::Collections::RootableList*> _stops;
-    static uSStrong<uArray*> _emptySortedStops_;
-    static uSStrong<uArray*>& _emptySortedStops() { return LinearGradient_typeof()->Init(), _emptySortedStops_; }
+    static ::g::Uno::UX::Selector& _interpolationName() { return LinearGradient_typeof()- Init(), _interpolationName_; }
+    uStrong< ::g::Uno::Collections::RootableList*  _stops;
+    static uSStrong<uArray*  _emptySortedStops_;
+    static uSStrong<uArray* & _emptySortedStops() { return LinearGradient_typeof()- Init(), _emptySortedStops_; }
     static ::g::Uno::UX::Selector _startPointName_;
-    static ::g::Uno::UX::Selector& _startPointName() { return LinearGradient_typeof()->Init(), _startPointName_; }
+    static ::g::Uno::UX::Selector& _startPointName() { return LinearGradient_typeof()- Init(), _startPointName_; }
     ::g::Uno::Float2 _startPoint;
     static ::g::Uno::UX::Selector _endPointName_;
-    static ::g::Uno::UX::Selector& _endPointName() { return LinearGradient_typeof()->Init(), _endPointName_; }
+    static ::g::Uno::UX::Selector& _endPointName() { return LinearGradient_typeof()- Init(), _endPointName_; }
     ::g::Uno::Float2 _endPoint;
     static ::g::Uno::UX::Selector _angleName_;
-    static ::g::Uno::UX::Selector& _angleName() { return LinearGradient_typeof()->Init(), _angleName_; }
+    static ::g::Uno::UX::Selector& _angleName() { return LinearGradient_typeof()- Init(), _angleName_; }
     float _angle;
     bool _hasAngle;
     int _interpolation;
     static int _gradientSize_;
-    static int& _gradientSize() { return LinearGradient_typeof()->Init(), _gradientSize_; }
-    uStrong< ::g::Uno::Graphics::Framebuffer*> _gradientBuffer;
+    static int& _gradientSize() { return LinearGradient_typeof()- Init(), _gradientSize_; }
+    uStrong< ::g::Uno::Graphics::Framebuffer*  _gradientBuffer;
     ::g::Uno::Float2 _gradientStart;
     bool _invalid;
 

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TransformAnimator-1.h>
-#include <Fuse.Translation.h>
+#include <Fuse.Animations.TransformAnimator-1.h 
+#include <Fuse.Translation.h 
 namespace g{namespace Fuse{namespace Animations{struct Move;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float4;}}
@@ -23,7 +23,7 @@ void Move__Update_fn(Move* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Translatio
 
 struct Move : ::g::Fuse::Animations::TransformAnimator
 {
-    uStrong<uObject*> _relativeTo;
+    uStrong<uObject*  _relativeTo;
 
     void ctor_4();
     uObject* RelativeTo();

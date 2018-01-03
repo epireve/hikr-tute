@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace FileSystem{struct FileStatus;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemInfo;}}}
 namespace g{namespace Uno{namespace Time{struct ZonedDateTime;}}}
@@ -31,16 +31,16 @@ void FileSystemInfo__get_Status_fn(FileSystemInfo* __this, ::g::Fuse::FileSystem
 
 struct FileSystemInfo : uObject
 {
-    uStrong<uString*> _fullPath;
-    uStrong<uString*> _originalPath;
-    uStrong< ::g::Fuse::FileSystem::FileStatus*> _status;
+    uStrong<uString*  _fullPath;
+    uStrong<uString*  _originalPath;
+    uStrong< ::g::Fuse::FileSystem::FileStatus*  _status;
 
     void ctor_(uString* originalPath);
     bool Exists();
     uString* FullName();
     ::g::Uno::Time::ZonedDateTime* LastAccessTimeUtc();
     ::g::Uno::Time::ZonedDateTime* LastWriteTimeUtc();
-    ::g::Fuse::FileSystem::FileStatus* LoadStatus() { ::g::Fuse::FileSystem::FileStatus* __retval; return (((FileSystemInfo_type*)__type)->fp_LoadStatus)(this, &__retval), __retval; }
+    ::g::Fuse::FileSystem::FileStatus* LoadStatus() { ::g::Fuse::FileSystem::FileStatus* __retval; return (((FileSystemInfo_type*)__type)- fp_LoadStatus)(this, &__retval), __retval; }
     void Refresh();
     ::g::Fuse::FileSystem::FileStatus* Status();
     static ::g::Uno::Time::ZonedDateTime* ConvertTime(uObject* time);

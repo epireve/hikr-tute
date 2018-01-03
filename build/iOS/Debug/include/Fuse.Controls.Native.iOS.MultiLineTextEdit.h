@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.iOS.INativeFocusListener.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.ITextEdit.h>
-#include <Fuse.Controls.Native.ITextView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.Float2.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.iOS.INativeFocusListener.h 
+#include <Fuse.Controls.Native.iOS.LeafView.h 
+#include <Fuse.Controls.Native.ITextEdit.h 
+#include <Fuse.Controls.Native.ITextView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.Float2.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct MultiLineTextEdit;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct NSAttributedStringBuilder;}}}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
@@ -89,11 +89,11 @@ void MultiLineTextEdit__UpdatePointer_fn(MultiLineTextEdit* __this, ::g::Fuse::I
 
 struct MultiLineTextEdit : ::g::Fuse::Controls::Native::iOS::LeafView
 {
-    uStrong<uObject*> _host;
-    uStrong< ::g::ObjC::Object*> _delegate;
-    uStrong< ::g::Fuse::Internal::FontFaceDescriptor*> _descriptor;
-    uStrong< ::g::Fuse::Visual*> _visual;
-    uStrong< ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder*> _builder;
+    uStrong<uObject*  _host;
+    uStrong< ::g::ObjC::Object*  _delegate;
+    uStrong< ::g::Fuse::Internal::FontFaceDescriptor*  _descriptor;
+    uStrong< ::g::Fuse::Visual*  _visual;
+    uStrong< ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder*  _builder;
     int _inputFrame;
     ::g::Uno::Float2 _pointerPosition;
     float _fontSize;

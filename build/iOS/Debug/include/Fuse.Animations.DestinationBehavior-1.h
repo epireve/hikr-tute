@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct DestinationBehavior;}}}
 namespace g{namespace Fuse{namespace Motion{struct DestinationMotionConfig;}}}
 
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class DestinationBehavior<T> :13
+// internal sealed class DestinationBehavior<T  :13
 // {
 uType* DestinationBehavior_typeof();
 void DestinationBehavior__ctor__fn(DestinationBehavior* __this);
@@ -22,15 +22,15 @@ void DestinationBehavior__Unroot_fn(DestinationBehavior* __this);
 
 struct DestinationBehavior : uObject
 {
-    uStrong< ::g::Fuse::Motion::DestinationMotionConfig*> Motion;
-    uStrong<uDelegate*> _handler;
-    uStrong<uObject*> _simulation;
+    uStrong< ::g::Fuse::Motion::DestinationMotionConfig*  Motion;
+    uStrong<uDelegate*  _handler;
+    uStrong<uObject*  _simulation;
     bool _listenUpdate;
 
     void ctor_();
     void OnUpdate();
-    template<class T>
-    void SetValue(T value, uDelegate* handler) { DestinationBehavior__SetValue_fn(this, uConstrain(__type->T(0), value), handler); }
+    template<class T 
+    void SetValue(T value, uDelegate* handler) { DestinationBehavior__SetValue_fn(this, uConstrain(__type- T(0), value), handler); }
     void StopListenUpdate();
     void Unroot();
     static DestinationBehavior* New1(uType* __type);

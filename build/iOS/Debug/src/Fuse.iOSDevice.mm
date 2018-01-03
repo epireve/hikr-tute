@@ -1,15 +1,15 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.4.2/iOSDevice.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.iOSDevice.h>
-#include <Fuse.iOSDevice.ScreenOrientation.h>
-#include <Fuse.OSVersion.h>
-#include <UIKit/UIKit.h>
-#include <Uno.Bool.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Float2.h>
+#include <Fuse.iOSDevice.h 
+#include <Fuse.iOSDevice.ScreenOrientation.h 
+#include <Fuse.OSVersion.h 
+#include <UIKit/UIKit.h 
+#include <Uno.Bool.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
@@ -18,20 +18,20 @@ namespace Fuse{
 // {
 static void iOSDevice_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::OSVersion_typeof(), (uintptr_t)&iOSDevice::_osVersion_, uFieldFlagsStatic);
 }
 
 uClassType* iOSDevice_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.iOSDevice", options);
-    type->fp_build_ = iOSDevice_build;
+    type- fp_build_ = iOSDevice_build;
     return type;
 }
 
@@ -65,12 +65,12 @@ void iOSDevice__get_Orientation_fn(int* __retval)
     *__retval = iOSDevice::Orientation();
 }
 
-uSStrong< ::g::Fuse::OSVersion*> iOSDevice::_osVersion_;
+uSStrong< ::g::Fuse::OSVersion*  iOSDevice::_osVersion_;
 
 // public static float2 CompensateForOrientation(float2 size) [static] :60
 ::g::Uno::Float2 iOSDevice::CompensateForOrientation(::g::Uno::Float2 size)
 {
-    return ((uPtr(iOSDevice::OperatingSystemVersion())->Major < 8) && (iOSDevice::Orientation() == 1)) ? ::g::Uno::Float2__New2(size.Y, size.X) : size;
+    return ((uPtr(iOSDevice::OperatingSystemVersion())- Major < 8) && (iOSDevice::Orientation() == 1)) ? ::g::Uno::Float2__New2(size.Y, size.X) : size;
 }
 
 // private static void GetiOSVersion(int& major, int& minor, int& patch) [static] :48

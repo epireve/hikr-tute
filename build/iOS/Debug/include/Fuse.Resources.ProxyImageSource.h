@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceErrorArgs;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
@@ -40,10 +40,10 @@ void ProxyImageSource__UpdatePolicy_fn(ProxyImageSource* __this);
 
 struct ProxyImageSource : uObject
 {
-    uStrong< ::g::Fuse::Resources::ImageSource*> _outer;
-    uStrong< ::g::Fuse::Resources::ImageSource*> _impl;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _outer;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _impl;
     bool _isDefaultPolicy;
-    uStrong< ::g::Fuse::Resources::MemoryPolicy*> _policy;
+    uStrong< ::g::Fuse::Resources::MemoryPolicy*  _policy;
     float _density;
     bool _hasDensity;
 

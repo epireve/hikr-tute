@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.LineSegment.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Drawing.LineSegment.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Drawing{struct LineSegments;}}}
 
 namespace g{
@@ -30,7 +30,7 @@ void LineSegments__set_Segments_fn(LineSegments* __this, uObject* value);
 struct LineSegments : uObject
 {
     ::g::Uno::Float2 _curPos;
-    uStrong<uObject*> _Segments;
+    uStrong<uObject*  _Segments;
 
     void ctor_();
     void Add(::g::Fuse::Drawing::LineSegment seg);

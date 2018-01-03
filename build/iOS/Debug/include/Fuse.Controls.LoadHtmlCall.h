@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.BufferedWebViewCall.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.BufferedWebViewCall.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct LoadHtmlCall;}}}
 
 namespace g{
@@ -24,8 +24,8 @@ void LoadHtmlCall__New1_fn(uString* html1, uString* baseUrl1, LoadHtmlCall** __r
 
 struct LoadHtmlCall : uObject
 {
-    uStrong<uString*> html;
-    uStrong<uString*> baseUrl;
+    uStrong<uString*  html;
+    uStrong<uString*  baseUrl;
 
     void ctor_(uString* html1, uString* baseUrl1);
     void Apply(uObject* wv);

@@ -23,7 +23,7 @@ function checkForError() {
 
 ##if #(Cocoapods:Defined)
 #    pod install
-#    xcodebuild -workspace "#(Project.Name).xcworkspace" -scheme "#(Project.Name)" -derivedDataPath build "$#" | tee >(checkForError)
+#    xcodebuild -workspace "#(Project.Name).xcworkspace" -scheme "#(Project.Name)" -derivedDataPath build "$#" | tee  (checkForError)
 ##else
-    xcodebuild -project "hikr.xcodeproj" "$@" | tee >(checkForError)
+    xcodebuild -project "hikr.xcodeproj" "$@" | tee  (checkForError)
 ##endif

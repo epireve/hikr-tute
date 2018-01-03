@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMember;}}}
 
 namespace g{
@@ -16,7 +16,7 @@ void ScriptMember__ctor__fn(ScriptMember* __this, uString* name);
 
 struct ScriptMember : uObject
 {
-    uStrong<uString*> Name;
+    uStrong<uString*  Name;
 
     void ctor_(uString* name);
 };

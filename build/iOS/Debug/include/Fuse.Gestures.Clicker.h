@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.IGesture.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Input.IGesture.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Gestures{struct Clicker;}}}
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
 namespace g{namespace Fuse{namespace Input{struct GesturePriorityConfig;}}}
@@ -60,10 +60,10 @@ struct Clicker : uObject
     float _longPressTimeout;
     int _priority;
     int _attachCount;
-    uStrong< ::g::Fuse::Visual*> _visual;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _clickerProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _clickerProperty() { return _clickerProperty_; }
-    uStrong< ::g::Fuse::Input::Gesture*> _gesture;
+    uStrong< ::g::Fuse::Visual*  _visual;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _clickerProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _clickerProperty() { return _clickerProperty_; }
+    uStrong< ::g::Fuse::Input::Gesture*  _gesture;
     ::g::Uno::Float2 _startCoord;
     ::g::Uno::Float2 _pressedPosition;
     double _startTime;
@@ -73,11 +73,11 @@ struct Clicker : uObject
     bool _maybeTap;
     bool _hasUpdate;
     bool _hovering;
-    uStrong< ::g::Fuse::Input::PointerEventArgs*> _lastArgs;
-    uStrong<uDelegate*> ClickedEvent1;
-    uStrong<uDelegate*> LongPressedEvent1;
-    uStrong<uDelegate*> PressingEvent1;
-    uStrong<uDelegate*> TappedEvent1;
+    uStrong< ::g::Fuse::Input::PointerEventArgs*  _lastArgs;
+    uStrong<uDelegate*  ClickedEvent1;
+    uStrong<uDelegate*  LongPressedEvent1;
+    uStrong<uDelegate*  PressingEvent1;
+    uStrong<uDelegate*  TappedEvent1;
 
     void ctor_(::g::Fuse::Visual* visual);
     void add_ClickedEvent(uDelegate* value);

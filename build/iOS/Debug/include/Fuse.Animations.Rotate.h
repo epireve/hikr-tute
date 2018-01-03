@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TransformAnimator-1.h>
-#include <Fuse.Rotation.h>
+#include <Fuse.Animations.TransformAnimator-1.h 
+#include <Fuse.Rotation.h 
 namespace g{namespace Fuse{namespace Animations{struct Rotate;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float4;}}

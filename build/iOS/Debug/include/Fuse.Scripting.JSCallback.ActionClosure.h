@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct JSCallback__ActionClosure;}}}
 
 namespace g{
@@ -18,7 +18,7 @@ void JSCallback__ActionClosure__Run_fn(JSCallback__ActionClosure* __this, uArray
 
 struct JSCallback__ActionClosure : uObject
 {
-    uStrong<uDelegate*> _action;
+    uStrong<uDelegate*  _action;
 
     void ctor_(uDelegate* action);
     uObject* Run(uArray* args);

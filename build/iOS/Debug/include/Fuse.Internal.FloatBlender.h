@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.ScalarBlender-1.h>
-#include <Uno.Float.h>
+#include <Fuse.Internal.ScalarBlender-1.h 
+#include <Uno.Float.h 
 namespace g{namespace Fuse{namespace Internal{struct FloatBlender;}}}
 
 namespace g{

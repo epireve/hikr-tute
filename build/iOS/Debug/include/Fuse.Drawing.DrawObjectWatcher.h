@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.MiniList-1.h>
-#include <Uno.Object.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Internal.MiniList-1.h 
+#include <Uno.Object.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct DrawObjectWatcher;}}}
 namespace g{namespace Fuse{namespace Drawing{struct DrawObjectWatcher__Item;}}}
@@ -39,7 +39,7 @@ struct DrawObjectWatcher : uObject
 {
     ::g::Fuse::Internal::MiniList _items;
     bool _rooted;
-    uStrong<uObject*> _feedback;
+    uStrong<uObject*  _feedback;
     static ::g::Uno::UX::Selector ShadingName_;
     static ::g::Uno::UX::Selector& ShadingName() { return ShadingName_; }
 

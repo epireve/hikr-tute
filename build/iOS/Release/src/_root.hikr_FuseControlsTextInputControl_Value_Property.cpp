@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class hikr_FuseControlsTextInputControl_Value_Property :10
+// internal sealed class hikr_FuseControlsTextInputControl_Value_Property :38
 // {
 static void hikr_FuseControlsTextInputControl_Value_Property_build(uType* type)
 {
@@ -40,50 +40,50 @@ static void hikr_FuseControlsTextInputControl_Value_Property_build(uType* type)
     return type;
 }
 
-// public hikr_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :13
+// public hikr_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :41
 void hikr_FuseControlsTextInputControl_Value_Property__ctor_3_fn(hikr_FuseControlsTextInputControl_Value_Property* __this, ::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :15
+// public override sealed string Get(Uno.UX.PropertyObject obj) :43
 void hikr_FuseControlsTextInputControl_Value_Property__Get1_fn(hikr_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::TextInputControl*>(obj, ::TYPES[0/*Fuse.Controls.TextInputControl*/]))->Value(), void();
 }
 
-// public hikr_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :13
+// public hikr_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :41
 void hikr_FuseControlsTextInputControl_Value_Property__New1_fn(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector* name, hikr_FuseControlsTextInputControl_Value_Property** __retval)
 {
     *__retval = hikr_FuseControlsTextInputControl_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :14
+// public override sealed Uno.UX.PropertyObject get_Object() :42
 void hikr_FuseControlsTextInputControl_Value_Property__get_Object_fn(hikr_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :16
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :44
 void hikr_FuseControlsTextInputControl_Value_Property__Set1_fn(hikr_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uPtr(uCast< ::g::Fuse::Controls::TextInputControl*>(obj, ::TYPES[0/*Fuse.Controls.TextInputControl*/]))->SetValue(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :17
+// public override sealed bool get_SupportsOriginSetter() :45
 void hikr_FuseControlsTextInputControl_Value_Property__get_SupportsOriginSetter_fn(hikr_FuseControlsTextInputControl_Value_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public hikr_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [instance] :13
+// public hikr_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [instance] :41
 void hikr_FuseControlsTextInputControl_Value_Property::ctor_3(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public hikr_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [static] :13
+// public hikr_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [static] :41
 hikr_FuseControlsTextInputControl_Value_Property* hikr_FuseControlsTextInputControl_Value_Property::New1(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector name)
 {
     hikr_FuseControlsTextInputControl_Value_Property* obj1 = (hikr_FuseControlsTextInputControl_Value_Property*)uNew(hikr_FuseControlsTextInputControl_Value_Property_typeof());

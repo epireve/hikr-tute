@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct DiagnosticSubject;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptException;}}}
 
@@ -20,7 +20,7 @@ void DiagnosticSubject__SetDiagnostic_fn(DiagnosticSubject* __this, ::g::Fuse::S
 
 struct DiagnosticSubject : uObject
 {
-    uStrong<uObject*> _diagnostic;
+    uStrong<uObject*  _diagnostic;
 
     void ctor_();
     void ClearDiagnostic();

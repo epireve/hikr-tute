@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct KeyboardView;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 
@@ -29,7 +29,7 @@ void KeyboardView__SetIsFocusable_fn(::g::ObjC::Object* handle, bool* value);
 
 struct KeyboardView : uObject
 {
-    uStrong< ::g::ObjC::Object*> _handle;
+    uStrong< ::g::ObjC::Object*  _handle;
 
     void ctor_();
     ::g::ObjC::Object* Handle();

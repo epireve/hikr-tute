@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Preview{struct SelectionManager;}}}
 namespace g{namespace Uno{struct EventArgs;}}
 
@@ -21,10 +21,10 @@ void SelectionManager__remove_SelectionChanged_fn(uDelegate* value);
 
 struct SelectionManager : uObject
 {
-    static uSStrong<uObject*> _Selection_;
-    static uSStrong<uObject*>& _Selection() { return _Selection_; }
-    static uSStrong<uDelegate*> SelectionChanged1_;
-    static uSStrong<uDelegate*>& SelectionChanged1() { return SelectionChanged1_; }
+    static uSStrong<uObject*  _Selection_;
+    static uSStrong<uObject* & _Selection() { return _Selection_; }
+    static uSStrong<uDelegate*  SelectionChanged1_;
+    static uSStrong<uDelegate* & SelectionChanged1() { return SelectionChanged1_; }
 
     static bool IsSelected(uObject* obj);
     static uObject* Selection();

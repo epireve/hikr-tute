@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResizeMode.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IResizeMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct TranslationModes__RelativeResizeChangeMode;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float2;}}

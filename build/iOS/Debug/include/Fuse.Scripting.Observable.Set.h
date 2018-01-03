@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Observable.Operation.h>
+#include <Fuse.Scripting.Observable.Operation.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Set;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
@@ -21,7 +21,7 @@ void Observable__Set__Unsubscribe_fn(Observable__Set* __this);
 
 struct Observable__Set : ::g::Fuse::Scripting::Observable__Operation
 {
-    uStrong<uObject*> _value;
+    uStrong<uObject*  _value;
     int _origin;
 
     void ctor_1(::g::Fuse::Scripting::Observable* obs, uObject* value, int origin);

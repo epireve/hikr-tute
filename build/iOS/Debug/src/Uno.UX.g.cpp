@@ -1,55 +1,55 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Action-1.h>
-#include <Uno.ArgumentException.h>
-#include <Uno.Bool.h>
-#include <Uno.Byte.h>
-#include <Uno.Collections.Dictionary-2.Enumerator.h>
-#include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.KeyValuePair-2.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Delegate.h>
-#include <Uno.EventArgs.h>
-#include <Uno.EventHandler-1.h>
-#include <Uno.Float.h>
-#include <Uno.Float2.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Int.h>
-#include <Uno.InvalidOperationException.h>
-#include <Uno.IO.BinaryReader.h>
-#include <Uno.IO.BundleFile.h>
-#include <Uno.IO.MemoryStream.h>
-#include <Uno.IO.Stream.h>
-#include <Uno.IO.StreamReader.h>
-#include <Uno.Long.h>
-#include <Uno.NotSupportedException.h>
-#include <Uno.Object.h>
-#include <Uno.Predicate-1.h>
-#include <Uno.String.h>
-#include <Uno.Threading.Monitor.h>
-#include <Uno.Type.h>
-#include <Uno.UX.BundleFileSource.h>
-#include <Uno.UX.Expression-1.h>
-#include <Uno.UX.FileSource.h>
-#include <Uno.UX.IPropertyListener.h>
-#include <Uno.UX.NameTable.h>
-#include <Uno.UX.Property.h>
-#include <Uno.UX.Property-1.h>
-#include <Uno.UX.PropertyAccessor.h>
-#include <Uno.UX.PropertyObject.h>
-#include <Uno.UX.Resource.h>
-#include <Uno.UX.Selector.h>
-#include <Uno.UX.SelectorRegistry.h>
-#include <Uno.UX.Size.h>
-#include <Uno.UX.Size2.h>
-#include <Uno.UX.StreamExtensions.h>
-#include <Uno.UX.Template.h>
-#include <Uno.UX.Unit.h>
-#include <Uno.UX.ValueChangedArgs-1.h>
-#include <Uno.UX.ValueChangedHandler-1.h>
+#include <Uno.Action-1.h 
+#include <Uno.ArgumentException.h 
+#include <Uno.Bool.h 
+#include <Uno.Byte.h 
+#include <Uno.Collections.Dictionary-2.Enumerator.h 
+#include <Uno.Collections.Dictionary-2.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Collections.KeyValuePair-2.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Delegate.h 
+#include <Uno.EventArgs.h 
+#include <Uno.EventHandler-1.h 
+#include <Uno.Float.h 
+#include <Uno.Float2.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Int.h 
+#include <Uno.InvalidOperationException.h 
+#include <Uno.IO.BinaryReader.h 
+#include <Uno.IO.BundleFile.h 
+#include <Uno.IO.MemoryStream.h 
+#include <Uno.IO.Stream.h 
+#include <Uno.IO.StreamReader.h 
+#include <Uno.Long.h 
+#include <Uno.NotSupportedException.h 
+#include <Uno.Object.h 
+#include <Uno.Predicate-1.h 
+#include <Uno.String.h 
+#include <Uno.Threading.Monitor.h 
+#include <Uno.Type.h 
+#include <Uno.UX.BundleFileSource.h 
+#include <Uno.UX.Expression-1.h 
+#include <Uno.UX.FileSource.h 
+#include <Uno.UX.IPropertyListener.h 
+#include <Uno.UX.NameTable.h 
+#include <Uno.UX.Property.h 
+#include <Uno.UX.Property-1.h 
+#include <Uno.UX.PropertyAccessor.h 
+#include <Uno.UX.PropertyObject.h 
+#include <Uno.UX.Resource.h 
+#include <Uno.UX.Selector.h 
+#include <Uno.UX.SelectorRegistry.h 
+#include <Uno.UX.Size.h 
+#include <Uno.UX.Size2.h 
+#include <Uno.UX.StreamExtensions.h 
+#include <Uno.UX.Template.h 
+#include <Uno.UX.Unit.h 
+#include <Uno.UX.ValueChangedArgs-1.h 
+#include <Uno.UX.ValueChangedHandler-1.h 
 static uString* STRINGS[14];
 static uType* TYPES[21];
 
@@ -64,14 +64,14 @@ namespace UX{
 // {
 static void BundleFileSource_build(uType* type)
 {
-    ::TYPES[0] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::IO::BundleFile_typeof(), NULL);
-    type->SetFields(2,
+    ::TYPES[0] = ::g::Uno::Action1_typeof()- MakeType(::g::Uno::IO::BundleFile_typeof(), NULL);
+    type- SetFields(2,
         ::g::Uno::IO::BundleFile_typeof(), offsetof(BundleFileSource, BundleFile), 0);
 }
 
 ::g::Uno::UX::FileSource_type* BundleFileSource_typeof()
 {
-    static uSStrong< ::g::Uno::UX::FileSource_type*> type;
+    static uSStrong< ::g::Uno::UX::FileSource_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -80,36 +80,36 @@ static void BundleFileSource_build(uType* type)
     options.ObjectSize = sizeof(BundleFileSource);
     options.TypeSize = sizeof(::g::Uno::UX::FileSource_type);
     type = (::g::Uno::UX::FileSource_type*)uClassType::New("Uno.UX.BundleFileSource", options);
-    type->fp_build_ = BundleFileSource_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))BundleFileSource__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))BundleFileSource__GetHashCode_fn;
-    type->fp_OpenRead = (void(*)(::g::Uno::UX::FileSource*, ::g::Uno::IO::Stream**))BundleFileSource__OpenRead_fn;
-    type->fp_ReadAllBytes = (void(*)(::g::Uno::UX::FileSource*, uArray**))BundleFileSource__ReadAllBytes_fn;
-    type->fp_ReadAllText = (void(*)(::g::Uno::UX::FileSource*, uString**))BundleFileSource__ReadAllText_fn;
+    type- fp_build_ = BundleFileSource_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))BundleFileSource__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))BundleFileSource__GetHashCode_fn;
+    type- fp_OpenRead = (void(*)(::g::Uno::UX::FileSource*, ::g::Uno::IO::Stream**))BundleFileSource__OpenRead_fn;
+    type- fp_ReadAllBytes = (void(*)(::g::Uno::UX::FileSource*, uArray**))BundleFileSource__ReadAllBytes_fn;
+    type- fp_ReadAllText = (void(*)(::g::Uno::UX::FileSource*, uString**))BundleFileSource__ReadAllText_fn;
     return type;
 }
 
 // public BundleFileSource(Uno.IO.BundleFile bundleFile) :9
 void BundleFileSource__ctor_1_fn(BundleFileSource* __this, ::g::Uno::IO::BundleFile* bundleFile)
 {
-    __this->ctor_1(bundleFile);
+    __this- ctor_1(bundleFile);
 }
 
 // public override sealed bool Equals(object o) :35
 void BundleFileSource__Equals_fn(BundleFileSource* __this, uObject* o, bool* __retval)
 {
-    BundleFileSource* bfs = uAs<BundleFileSource*>(o, __this->__type);
+    BundleFileSource* bfs = uAs<BundleFileSource* (o, __this- __type);
 
     if (bfs == NULL)
         return *__retval = false, void();
 
-    return *__retval = ::g::Uno::Object::Equals(uPtr(uPtr(bfs)->BundleFile), __this->BundleFile), void();
+    return *__retval = ::g::Uno::Object::Equals(uPtr(uPtr(bfs)- BundleFile), __this- BundleFile), void();
 }
 
 // public override sealed int GetHashCode() :44
 void BundleFileSource__GetHashCode_fn(BundleFileSource* __this, int* __retval)
 {
-    return *__retval = ::g::Uno::Object::GetHashCode(uPtr(__this->BundleFile)), void();
+    return *__retval = ::g::Uno::Object::GetHashCode(uPtr(__this- BundleFile)), void();
 }
 
 // public BundleFileSource New(Uno.IO.BundleFile bundleFile) :9
@@ -121,33 +121,33 @@ void BundleFileSource__New1_fn(::g::Uno::IO::BundleFile* bundleFile, BundleFileS
 // private void OnChanged(Uno.IO.BundleFile bf) :15
 void BundleFileSource__OnChanged_fn(BundleFileSource* __this, ::g::Uno::IO::BundleFile* bf)
 {
-    __this->OnChanged(bf);
+    __this- OnChanged(bf);
 }
 
 // public override sealed Uno.IO.Stream OpenRead() :20
 void BundleFileSource__OpenRead_fn(BundleFileSource* __this, ::g::Uno::IO::Stream** __retval)
 {
-    return *__retval = uPtr(__this->BundleFile)->OpenRead(), void();
+    return *__retval = uPtr(__this- BundleFile)- OpenRead(), void();
 }
 
 // public override sealed byte[] ReadAllBytes() :25
 void BundleFileSource__ReadAllBytes_fn(BundleFileSource* __this, uArray** __retval)
 {
-    return *__retval = uPtr(__this->BundleFile)->ReadAllBytes(), void();
+    return *__retval = uPtr(__this- BundleFile)- ReadAllBytes(), void();
 }
 
 // public override sealed string ReadAllText() :30
 void BundleFileSource__ReadAllText_fn(BundleFileSource* __this, uString** __retval)
 {
-    return *__retval = uPtr(__this->BundleFile)->ReadAllText(), void();
+    return *__retval = uPtr(__this- BundleFile)- ReadAllText(), void();
 }
 
 // public BundleFileSource(Uno.IO.BundleFile bundleFile) [instance] :9
 void BundleFileSource::ctor_1(::g::Uno::IO::BundleFile* bundleFile)
 {
-    ctor_(uPtr(bundleFile)->SourcePath());
+    ctor_(uPtr(bundleFile)- SourcePath());
     BundleFile = bundleFile;
-    uPtr(BundleFile)->add_Changed(uDelegate::New(::TYPES[0/*Uno.Action<Uno.IO.BundleFile>*/], (void*)BundleFileSource__OnChanged_fn, this));
+    uPtr(BundleFile)- add_Changed(uDelegate::New(::TYPES[0/*Uno.Action<Uno.IO.BundleFile */], (void*)BundleFileSource__OnChanged_fn, this));
 }
 
 // private void OnChanged(Uno.IO.BundleFile bf) [instance] :15
@@ -160,7 +160,7 @@ void BundleFileSource::OnChanged(::g::Uno::IO::BundleFile* bf)
 BundleFileSource* BundleFileSource::New1(::g::Uno::IO::BundleFile* bundleFile)
 {
     BundleFileSource* obj1 = (BundleFileSource*)uNew(BundleFileSource_typeof());
-    obj1->ctor_1(bundleFile);
+    obj1- ctor_1(bundleFile);
     return obj1;
 }
 // }
@@ -168,14 +168,14 @@ BundleFileSource* BundleFileSource::New1(::g::Uno::IO::BundleFile* bundleFile)
 // /usr/local/share/uno/Packages/Fuse.Triggers/1.4.2/Actions/Set.uno
 // -----------------------------------------------------------------
 
-// public delegate T Expression<T>() :6
+// public delegate T Expression<T () :6
 uDelegateType* Expression_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.UX.Expression`1", 0, 1);
-    type->SetSignature(type->T(0));
+    type- SetSignature(type- T(0));
     return type;
 }
 
@@ -188,17 +188,17 @@ static void FileSource_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("File name can't be null");
     ::STRINGS[1] = uString::Const("name");
-    ::TYPES[1] = ::g::Uno::EventHandler1_typeof()->MakeType(::g::Uno::EventArgs_typeof(), NULL);
-    type->SetDependencies(
+    ::TYPES[1] = ::g::Uno::EventHandler1_typeof()- MakeType(::g::Uno::EventArgs_typeof(), NULL);
+    type- SetDependencies(
         ::g::Uno::EventArgs_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::String_typeof(), offsetof(FileSource, Name), 0,
-        ::TYPES[1/*Uno.EventHandler<Uno.EventArgs>*/], offsetof(FileSource, DataChanged1), 0);
+        ::TYPES[1/*Uno.EventHandler<Uno.EventArgs */], offsetof(FileSource, DataChanged1), 0);
 }
 
 FileSource_type* FileSource_typeof()
 {
-    static uSStrong<FileSource_type*> type;
+    static uSStrong<FileSource_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -207,34 +207,34 @@ FileSource_type* FileSource_typeof()
     options.ObjectSize = sizeof(FileSource);
     options.TypeSize = sizeof(FileSource_type);
     type = (FileSource_type*)uClassType::New("Uno.UX.FileSource", options);
-    type->fp_build_ = FileSource_build;
-    type->fp_ReadAllBytes = FileSource__ReadAllBytes_fn;
-    type->fp_ReadAllText = FileSource__ReadAllText_fn;
+    type- fp_build_ = FileSource_build;
+    type- fp_ReadAllBytes = FileSource__ReadAllBytes_fn;
+    type- fp_ReadAllText = FileSource__ReadAllText_fn;
     return type;
 }
 
 // protected FileSource(string name) :19
 void FileSource__ctor__fn(FileSource* __this, uString* name)
 {
-    __this->ctor_(name);
+    __this- ctor_(name);
 }
 
-// public generated void add_DataChanged(Uno.EventHandler<Uno.EventArgs> value) :10
+// public generated void add_DataChanged(Uno.EventHandler<Uno.EventArgs  value) :10
 void FileSource__add_DataChanged_fn(FileSource* __this, uDelegate* value)
 {
-    __this->add_DataChanged(value);
+    __this- add_DataChanged(value);
 }
 
-// public generated void remove_DataChanged(Uno.EventHandler<Uno.EventArgs> value) :10
+// public generated void remove_DataChanged(Uno.EventHandler<Uno.EventArgs  value) :10
 void FileSource__remove_DataChanged_fn(FileSource* __this, uDelegate* value)
 {
-    __this->remove_DataChanged(value);
+    __this- remove_DataChanged(value);
 }
 
 // public void OnDataChanged() :12
 void FileSource__OnDataChanged_fn(FileSource* __this)
 {
-    __this->OnDataChanged();
+    __this- OnDataChanged();
 }
 
 // public static implicit operator Uno.UX.FileSource(Uno.IO.BundleFile bundleFile) :27
@@ -246,13 +246,13 @@ void FileSource__op_Implicit_fn(::g::Uno::IO::BundleFile* bundleFile, FileSource
 // public virtual byte[] ReadAllBytes() :34
 void FileSource__ReadAllBytes_fn(FileSource* __this, uArray** __retval)
 {
-    return *__retval = ::g::Uno::UX::StreamExtensions::ReadAllBytes(::g::Uno::IO::BinaryReader::New1(__this->OpenRead())), void();
+    return *__retval = ::g::Uno::UX::StreamExtensions::ReadAllBytes(::g::Uno::IO::BinaryReader::New1(__this- OpenRead())), void();
 }
 
 // public virtual string ReadAllText() :39
 void FileSource__ReadAllText_fn(FileSource* __this, uString** __retval)
 {
-    return *__retval = ::g::Uno::IO::StreamReader::New1(__this->OpenRead())->ReadToEnd(), void();
+    return *__retval = ::g::Uno::IO::StreamReader::New1(__this- OpenRead())- ReadToEnd(), void();
 }
 
 // protected FileSource(string name) [instance] :19
@@ -264,16 +264,16 @@ void FileSource::ctor_(uString* name)
     Name = name;
 }
 
-// public generated void add_DataChanged(Uno.EventHandler<Uno.EventArgs> value) [instance] :10
+// public generated void add_DataChanged(Uno.EventHandler<Uno.EventArgs  value) [instance] :10
 void FileSource::add_DataChanged(uDelegate* value)
 {
-    DataChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(DataChanged1, value), ::TYPES[1/*Uno.EventHandler<Uno.EventArgs>*/]);
+    DataChanged1 = uCast<uDelegate* (::g::Uno::Delegate::Combine(DataChanged1, value), ::TYPES[1/*Uno.EventHandler<Uno.EventArgs */]);
 }
 
-// public generated void remove_DataChanged(Uno.EventHandler<Uno.EventArgs> value) [instance] :10
+// public generated void remove_DataChanged(Uno.EventHandler<Uno.EventArgs  value) [instance] :10
 void FileSource::remove_DataChanged(uDelegate* value)
 {
-    DataChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(DataChanged1, value), ::TYPES[1/*Uno.EventHandler<Uno.EventArgs>*/]);
+    DataChanged1 = uCast<uDelegate* (::g::Uno::Delegate::Remove(DataChanged1, value), ::TYPES[1/*Uno.EventHandler<Uno.EventArgs */]);
 }
 
 // public void OnDataChanged() [instance] :12
@@ -282,7 +282,7 @@ void FileSource::OnDataChanged()
     uDelegate* dataChanged = DataChanged1;
 
     if (::g::Uno::Delegate::op_Inequality(dataChanged, NULL))
-        uPtr(dataChanged)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty_);
+        uPtr(dataChanged)- Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty_);
 }
 
 // public static implicit operator Uno.UX.FileSource(Uno.IO.BundleFile bundleFile) [static] :27
@@ -299,7 +299,7 @@ FileSource* FileSource::op_Implicit(::g::Uno::IO::BundleFile* bundleFile)
 // {
 uInterfaceType* IPropertyListener_typeof()
 {
-    static uSStrong<uInterfaceType*> type;
+    static uSStrong<uInterfaceType*  type;
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Uno.UX.IPropertyListener", 0, 0);
@@ -320,13 +320,13 @@ static void NameTable__cctor__fn(uType* __type)
 
 static void NameTable_build(uType* type)
 {
-    ::TYPES[2] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(uObject_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::UX::Property_typeof(), NULL);
-    type->SetFields(0,
+    ::TYPES[2] = ::g::Uno::String_typeof()- Array();
+    ::TYPES[3] = ::g::Uno::Collections::List_typeof()- MakeType(uObject_typeof(), NULL);
+    ::TYPES[4] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::UX::Property_typeof(), NULL);
+    type- SetFields(0,
         ::TYPES[2/*string[]*/], offsetof(NameTable, Entries), 0,
-        ::TYPES[3/*Uno.Collections.List<object>*/], offsetof(NameTable, _objects), 0,
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::Property_typeof(), NULL), offsetof(NameTable, _properties), 0,
+        ::TYPES[3/*Uno.Collections.List<object */], offsetof(NameTable, _objects), 0,
+        ::g::Uno::Collections::IList_typeof()- MakeType(::g::Uno::UX::Property_typeof(), NULL), offsetof(NameTable, _properties), 0,
         uObject_typeof(), offsetof(NameTable, _this), 0,
         type, offsetof(NameTable, ParentTable), 0,
         type, (uintptr_t)&NameTable::Empty_, uFieldFlagsStatic);
@@ -334,7 +334,7 @@ static void NameTable_build(uType* type)
 
 uType* NameTable_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -342,15 +342,15 @@ uType* NameTable_typeof()
     options.ObjectSize = sizeof(NameTable);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.UX.NameTable", options);
-    type->fp_build_ = NameTable_build;
-    type->fp_cctor_ = NameTable__cctor__fn;
+    type- fp_build_ = NameTable_build;
+    type- fp_cctor_ = NameTable__cctor__fn;
     return type;
 }
 
 // public NameTable(Uno.UX.NameTable parentTable, string[] entries) :43
 void NameTable__ctor__fn(NameTable* __this, NameTable* parentTable, uArray* entries)
 {
-    __this->ctor_(parentTable, entries);
+    __this- ctor_(parentTable, entries);
 }
 
 // public NameTable New(Uno.UX.NameTable parentTable, string[] entries) :43
@@ -359,62 +359,62 @@ void NameTable__New1_fn(NameTable* parentTable, uArray* entries, NameTable** __r
     *__retval = NameTable::New1(parentTable, entries);
 }
 
-// public Uno.Collections.IList<object> get_Objects() :12
+// public Uno.Collections.IList<object  get_Objects() :12
 void NameTable__get_Objects_fn(NameTable* __this, uObject** __retval)
 {
-    *__retval = __this->Objects();
+    *__retval = __this- Objects();
 }
 
-// public Uno.Collections.IList<Uno.UX.Property> get_Properties() :17
+// public Uno.Collections.IList<Uno.UX.Property  get_Properties() :17
 void NameTable__get_Properties_fn(NameTable* __this, uObject** __retval)
 {
-    *__retval = __this->Properties();
+    *__retval = __this- Properties();
 }
 
-// public void set_Properties(Uno.Collections.IList<Uno.UX.Property> value) :18
+// public void set_Properties(Uno.Collections.IList<Uno.UX.Property  value) :18
 void NameTable__set_Properties_fn(NameTable* __this, uObject* value)
 {
-    __this->Properties(value);
+    __this- Properties(value);
 }
 
 // public object get_This() :37
 void NameTable__get_This_fn(NameTable* __this, uObject** __retval)
 {
-    *__retval = __this->This();
+    *__retval = __this- This();
 }
 
 // public void set_This(object value) :38
 void NameTable__set_This_fn(NameTable* __this, uObject* value)
 {
-    __this->This(value);
+    __this- This(value);
 }
 
-uSStrong<NameTable*> NameTable::Empty_;
+uSStrong<NameTable*  NameTable::Empty_;
 
 // public NameTable(Uno.UX.NameTable parentTable, string[] entries) [instance] :43
 void NameTable::ctor_(NameTable* parentTable, uArray* entries)
 {
-    _objects = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<object>*/]));
-    _properties = (uObject*)((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<Uno.UX.Property>*/]));
+    _objects = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<object */]));
+    _properties = (uObject*)((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<Uno.UX.Property */]));
     ParentTable = parentTable;
     Entries = entries;
 }
 
-// public Uno.Collections.IList<object> get_Objects() [instance] :12
+// public Uno.Collections.IList<object  get_Objects() [instance] :12
 uObject* NameTable::Objects()
 {
     return (uObject*)_objects;
 }
 
-// public Uno.Collections.IList<Uno.UX.Property> get_Properties() [instance] :17
+// public Uno.Collections.IList<Uno.UX.Property  get_Properties() [instance] :17
 uObject* NameTable::Properties()
 {
     uObject* ind1;
     ind1 = _properties;
-    return (ind1 != NULL) ? ind1 : (uObject*)uPtr(ParentTable)->Properties();
+    return (ind1 != NULL) ? ind1 : (uObject*)uPtr(ParentTable)- Properties();
 }
 
-// public void set_Properties(Uno.Collections.IList<Uno.UX.Property> value) [instance] :18
+// public void set_Properties(Uno.Collections.IList<Uno.UX.Property  value) [instance] :18
 void NameTable::Properties(uObject* value)
 {
     _properties = value;
@@ -425,7 +425,7 @@ uObject* NameTable::This()
 {
     uObject* ind2;
     ind2 = _this;
-    return (ind2 != NULL) ? ind2 : (ParentTable != NULL) ? (uObject*)uPtr(ParentTable)->This() : NULL;
+    return (ind2 != NULL) ? ind2 : (ParentTable != NULL) ? (uObject*)uPtr(ParentTable)- This() : NULL;
 }
 
 // public void set_This(object value) [instance] :38
@@ -438,7 +438,7 @@ void NameTable::This(uObject* value)
 NameTable* NameTable::New1(NameTable* parentTable, uArray* entries)
 {
     NameTable* obj3 = (NameTable*)uNew(NameTable_typeof());
-    obj3->ctor_(parentTable, entries);
+    obj3- ctor_(parentTable, entries);
     return obj3;
 }
 // }
@@ -450,15 +450,15 @@ NameTable* NameTable::New1(NameTable* parentTable, uArray* entries)
 // {
 static void Property_build(uType* type)
 {
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::UX::Selector_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::UX::Selector_typeof(), offsetof(Property, _name), 0);
 }
 
 Property_type* Property_typeof()
 {
-    static uSStrong<Property_type*> type;
+    static uSStrong<Property_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -468,64 +468,64 @@ Property_type* Property_typeof()
     options.ObjectSize = sizeof(Property);
     options.TypeSize = sizeof(Property_type);
     type = (Property_type*)uClassType::New("Uno.UX.Property", options);
-    type->fp_build_ = Property_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))Property__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Property__GetHashCode_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))Property__get_Name_fn;
+    type- fp_build_ = Property_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))Property__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Property__GetHashCode_fn;
+    type- fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))Property__get_Name_fn;
     return type;
 }
 
 // protected Property(Uno.UX.Selector name) :32
 void Property__ctor_1_fn(Property* __this, ::g::Uno::UX::Selector* name)
 {
-    __this->ctor_1(*name);
+    __this- ctor_1(*name);
 }
 
 // public void AddListener(Uno.UX.IPropertyListener listener) :37
 void Property__AddListener_fn(Property* __this, uObject* listener)
 {
-    __this->AddListener(listener);
+    __this- AddListener(listener);
 }
 
 // public override sealed bool Equals(object obj) :50
 void Property__Equals_fn(Property* __this, uObject* obj, bool* __retval)
 {
-    Property* p = uAs<Property*>(obj, Property_typeof());
+    Property* p = uAs<Property* (obj, Property_typeof());
 
     if (p == NULL)
         return *__retval = false, void();
 
-    return *__retval = (uPtr(p)->Object() == __this->Object()) && ::g::Uno::UX::Selector__op_Equality(uPtr(p)->Name(), __this->_name), void();
+    return *__retval = (uPtr(p)- Object() == __this- Object()) && ::g::Uno::UX::Selector__op_Equality(uPtr(p)- Name(), __this- _name), void();
 }
 
 // public object GetAsObject() :62
 void Property__GetAsObject1_fn(Property* __this, uObject** __retval)
 {
-    *__retval = __this->GetAsObject1();
+    *__retval = __this- GetAsObject1();
 }
 
 // public override sealed int GetHashCode() :57
 void Property__GetHashCode_fn(Property* __this, int* __retval)
 {
-    return *__retval = ::g::Uno::Object::GetHashCode(uPtr(__this->Object())) ^ __this->Name().Handle(), void();
+    return *__retval = ::g::Uno::Object::GetHashCode(uPtr(__this- Object())) ^ __this- Name().Handle(), void();
 }
 
 // public override sealed Uno.UX.Selector get_Name() :30
 void Property__get_Name_fn(Property* __this, ::g::Uno::UX::Selector* __retval)
 {
-    return *__retval = __this->_name, void();
+    return *__retval = __this- _name, void();
 }
 
 // public void RemoveListener(Uno.UX.IPropertyListener listener) :42
 void Property__RemoveListener_fn(Property* __this, uObject* listener)
 {
-    __this->RemoveListener(listener);
+    __this- RemoveListener(listener);
 }
 
 // public void SetAsObject(object value, Uno.UX.IPropertyListener origin) :63
 void Property__SetAsObject1_fn(Property* __this, uObject* value, uObject* origin)
 {
-    __this->SetAsObject1(value, origin);
+    __this- SetAsObject1(value, origin);
 }
 
 // protected Property(Uno.UX.Selector name) [instance] :32
@@ -538,7 +538,7 @@ void Property::ctor_1(::g::Uno::UX::Selector name)
 // public void AddListener(Uno.UX.IPropertyListener listener) [instance] :37
 void Property::AddListener(uObject* listener)
 {
-    uPtr(Object())->AddPropertyListener(listener);
+    uPtr(Object())- AddPropertyListener(listener);
 }
 
 // public object GetAsObject() [instance] :62
@@ -553,7 +553,7 @@ void Property::RemoveListener(uObject* listener)
     ::g::Uno::UX::PropertyObject* obj = Object();
 
     if (obj != NULL)
-        uPtr(obj)->RemovePropertyListener(listener);
+        uPtr(obj)- RemovePropertyListener(listener);
 }
 
 // public void SetAsObject(object value, Uno.UX.IPropertyListener origin) [instance] :63
@@ -566,17 +566,17 @@ void Property::SetAsObject1(uObject* value, uObject* origin)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/UX/Property.uno
 // ----------------------------------------------------------------------
 
-// public abstract class Property<T> :66
+// public abstract class Property<T  :66
 // {
 static void Property1_build(uType* type)
 {
     ::TYPES[5] = ::g::Uno::Type_typeof();
-    type->SetFields(1);
+    type- SetFields(1);
 }
 
 Property1_type* Property1_typeof()
 {
-    static uSStrong<Property1_type*> type;
+    static uSStrong<Property1_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -586,26 +586,26 @@ Property1_type* Property1_typeof()
     options.ObjectSize = sizeof(Property1);
     options.TypeSize = sizeof(Property1_type);
     type = (Property1_type*)uClassType::New("Uno.UX.Property`1", options);
-    type->fp_build_ = Property1_build;
-    type->fp_Get1 = Property1__Get1_fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))Property1__GetAsObject_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))Property1__get_PropertyType_fn;
-    type->fp_Set1 = Property1__Set1_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))Property1__SetAsObject_fn;
+    type- fp_build_ = Property1_build;
+    type- fp_Get1 = Property1__Get1_fn;
+    type- fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))Property1__GetAsObject_fn;
+    type- fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))Property1__get_PropertyType_fn;
+    type- fp_Set1 = Property1__Set1_fn;
+    type- fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))Property1__SetAsObject_fn;
     return type;
 }
 
 // protected Property(Uno.UX.Selector name) :68
 void Property1__ctor_2_fn(Property1* __this, ::g::Uno::UX::Selector* name)
 {
-    __this->ctor_2(*name);
+    __this- ctor_2(*name);
 }
 
 // public T Get() :75
 void Property1__Get_fn(Property1* __this, uTRef __retval)
 {
-    uT ret1(__this->__type->GetBase(Property1_typeof())->T(0), U_ALLOCA(__this->__type->GetBase(Property1_typeof())->T(0)->ValueSize));
-    return __retval.Store((__this->Get1_ex(__this->Object(), &ret1), ret1)), void();
+    uT ret1(__this- __type- GetBase(Property1_typeof())- T(0), U_ALLOCA(__this- __type- GetBase(Property1_typeof())- T(0)- ValueSize));
+    return __retval.Store((__this- Get1_ex(__this- Object(), &ret1), ret1)), void();
 }
 
 // public virtual T Get(Uno.UX.PropertyObject obj) :72
@@ -617,20 +617,20 @@ void Property1__Get1_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uT
 // public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :78
 void Property1__GetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
-    uT ret2(__this->__type->GetBase(Property1_typeof())->T(0), U_ALLOCA(__this->__type->GetBase(Property1_typeof())->T(0)->ValueSize));
-    return *__retval = uBoxPtr(__this->__type->GetBase(Property1_typeof())->T(0), (__this->Get1_ex(obj, &ret2), ret2)), void();
+    uT ret2(__this- __type- GetBase(Property1_typeof())- T(0), U_ALLOCA(__this- __type- GetBase(Property1_typeof())- T(0)- ValueSize));
+    return *__retval = uBoxPtr(__this- __type- GetBase(Property1_typeof())- T(0), (__this- Get1_ex(obj, &ret2), ret2)), void();
 }
 
 // public override sealed Uno.Type get_PropertyType() :70
 void Property1__get_PropertyType_fn(Property1* __this, uType** __retval)
 {
-    return *__retval = __this->__type->GetBase(Property1_typeof())->T(0), void();
+    return *__retval = __this- __type- GetBase(Property1_typeof())- T(0), void();
 }
 
 // public void Set(T value, Uno.UX.IPropertyListener origin) :76
 void Property1__Set_fn(Property1* __this, void* value, uObject* origin)
 {
-    __this->Set1_ex(__this->Object(), value, origin);
+    __this- Set1_ex(__this- Object(), value, origin);
 }
 
 // public virtual void Set(Uno.UX.PropertyObject obj, T value, Uno.UX.IPropertyListener origin) :73
@@ -642,10 +642,10 @@ void Property1__Set1_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, vo
 // public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :83
 void Property1__SetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uObject* value, uObject* origin)
 {
-    if ((value == NULL) && ::g::Uno::Type::IsValueType(uPtr(__this->__type->GetBase(Property1_typeof())->T(0))))
-        __this->Set1_ex(obj, uT(__this->__type->GetBase(Property1_typeof())->T(0), U_ALLOCA(__this->__type->GetBase(Property1_typeof())->T(0)->ValueSize)), origin);
+    if ((value == NULL) && ::g::Uno::Type::IsValueType(uPtr(__this- __type- GetBase(Property1_typeof())- T(0))))
+        __this- Set1_ex(obj, uT(__this- __type- GetBase(Property1_typeof())- T(0), U_ALLOCA(__this- __type- GetBase(Property1_typeof())- T(0)- ValueSize)), origin);
     else
-        __this->Set1_ex(obj, uUnboxAny(__this->__type->GetBase(Property1_typeof())->T(0), value), origin);
+        __this- Set1_ex(obj, uUnboxAny(__this- __type- GetBase(Property1_typeof())- T(0), value), origin);
 }
 
 // protected Property(Uno.UX.Selector name) [instance] :68
@@ -665,13 +665,13 @@ static void PropertyAccessor_build(uType* type)
     ::STRINGS[2] = uString::Const("Property '");
     ::STRINGS[3] = uString::Const("' cannot be read.");
     ::STRINGS[4] = uString::Const("' cannot be written to.");
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::UX::Selector_typeof());
 }
 
 PropertyAccessor_type* PropertyAccessor_typeof()
 {
-    static uSStrong<PropertyAccessor_type*> type;
+    static uSStrong<PropertyAccessor_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -679,29 +679,29 @@ PropertyAccessor_type* PropertyAccessor_typeof()
     options.ObjectSize = sizeof(PropertyAccessor);
     options.TypeSize = sizeof(PropertyAccessor_type);
     type = (PropertyAccessor_type*)uClassType::New("Uno.UX.PropertyAccessor", options);
-    type->fp_build_ = PropertyAccessor_build;
-    type->fp_GetAsObject = PropertyAccessor__GetAsObject_fn;
-    type->fp_SetAsObject = PropertyAccessor__SetAsObject_fn;
-    type->fp_get_SupportsOriginSetter = PropertyAccessor__get_SupportsOriginSetter_fn;
+    type- fp_build_ = PropertyAccessor_build;
+    type- fp_GetAsObject = PropertyAccessor__GetAsObject_fn;
+    type- fp_SetAsObject = PropertyAccessor__SetAsObject_fn;
+    type- fp_get_SupportsOriginSetter = PropertyAccessor__get_SupportsOriginSetter_fn;
     return type;
 }
 
 // protected generated PropertyAccessor() :15
 void PropertyAccessor__ctor__fn(PropertyAccessor* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public virtual object GetAsObject(Uno.UX.PropertyObject obj) :21
 void PropertyAccessor__GetAsObject_fn(PropertyAccessor* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
-    U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this->Name())), ::STRINGS[3/*"' cannot be...*/])));
+    U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this- Name())), ::STRINGS[3/*"' cannot be...*/])));
 }
 
 // public virtual void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :20
 void PropertyAccessor__SetAsObject_fn(PropertyAccessor* __this, ::g::Uno::UX::PropertyObject* obj, uObject* value, uObject* origin)
 {
-    U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this->Name())), ::STRINGS[4/*"' cannot be...*/])));
+    U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this- Name())), ::STRINGS[4/*"' cannot be...*/])));
 }
 
 // public virtual bool get_SupportsOriginSetter() :19
@@ -723,15 +723,15 @@ void PropertyAccessor::ctor_()
 // {
 static void PropertyObject_build(uType* type)
 {
-    ::TYPES[6] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::UX::IPropertyListener_typeof(), NULL);
+    ::TYPES[6] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::UX::IPropertyListener_typeof(), NULL);
     ::TYPES[7] = ::g::Uno::UX::IPropertyListener_typeof();
-    type->SetFields(0,
-        ::TYPES[6/*Uno.Collections.List<Uno.UX.IPropertyListener>*/], offsetof(PropertyObject, _propListeners), 0);
+    type- SetFields(0,
+        ::TYPES[6/*Uno.Collections.List<Uno.UX.IPropertyListener */], offsetof(PropertyObject, _propListeners), 0);
 }
 
 uType* PropertyObject_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -739,38 +739,38 @@ uType* PropertyObject_typeof()
     options.ObjectSize = sizeof(PropertyObject);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.UX.PropertyObject", options);
-    type->fp_build_ = PropertyObject_build;
+    type- fp_build_ = PropertyObject_build;
     return type;
 }
 
 // public generated PropertyObject() :11
 void PropertyObject__ctor__fn(PropertyObject* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public void AddPropertyListener(Uno.UX.IPropertyListener listener) :16
 void PropertyObject__AddPropertyListener_fn(PropertyObject* __this, uObject* listener)
 {
-    __this->AddPropertyListener(listener);
+    __this- AddPropertyListener(listener);
 }
 
 // protected void OnPropertyChanged(Uno.UX.Selector property) :44
 void PropertyObject__OnPropertyChanged_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property)
 {
-    __this->OnPropertyChanged(*property);
+    __this- OnPropertyChanged(*property);
 }
 
 // protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) :31
 void PropertyObject__OnPropertyChanged1_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property, uObject* origin)
 {
-    __this->OnPropertyChanged1(*property, origin);
+    __this- OnPropertyChanged1(*property, origin);
 }
 
 // public void RemovePropertyListener(Uno.UX.IPropertyListener listener) :25
 void PropertyObject__RemovePropertyListener_fn(PropertyObject* __this, uObject* listener)
 {
-    __this->RemovePropertyListener(listener);
+    __this- RemovePropertyListener(listener);
 }
 
 // public generated PropertyObject() [instance] :11
@@ -782,7 +782,7 @@ void PropertyObject::ctor_()
 void PropertyObject::AddPropertyListener(uObject* listener)
 {
     if (_propListeners == NULL)
-        _propListeners = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[6/*Uno.Collections.List<Uno.UX.IPropertyListener>*/]));
+        _propListeners = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[6/*Uno.Collections.List<Uno.UX.IPropertyListener */]));
 
     ::g::Uno::Collections::List__Add_fn(uPtr(_propListeners), listener);
 }
@@ -790,7 +790,7 @@ void PropertyObject::AddPropertyListener(uObject* listener)
 // protected void OnPropertyChanged(Uno.UX.Selector property) [instance] :44
 void PropertyObject::OnPropertyChanged(::g::Uno::UX::Selector property)
 {
-    OnPropertyChanged1(property, uAs<uObject*>(this, ::TYPES[7/*Uno.UX.IPropertyListener*/]));
+    OnPropertyChanged1(property, uAs<uObject* (this, ::TYPES[7/*Uno.UX.IPropertyListener*/]));
 }
 
 // protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) [instance] :31
@@ -801,9 +801,9 @@ void PropertyObject::OnPropertyChanged1(::g::Uno::UX::Selector property, uObject
 
     if (_propListeners != NULL)
 
-        for (int i = 0; i < uPtr(_propListeners)->Count(); i++)
+        for (int i = 0; i < uPtr(_propListeners)- Count(); i++)
         {
-            uObject* listener = (::g::Uno::Collections::List__get_Item_fn(uPtr(_propListeners), uCRef<int>(i), &ret3), ret3);
+            uObject* listener = (::g::Uno::Collections::List__get_Item_fn(uPtr(_propListeners), uCRef<int (i), &ret3), ret3);
 
             if (listener != origin)
                 ::g::Uno::UX::IPropertyListener::OnPropertyChanged(uInterface(uPtr(listener), ::TYPES[7/*Uno.UX.IPropertyListener*/]), this, property_);
@@ -816,7 +816,7 @@ void PropertyObject::RemovePropertyListener(uObject* listener)
     bool ret4;
     ::g::Uno::Collections::List__Remove_fn(uPtr(_propListeners), listener, &ret4);
 
-    if (uPtr(_propListeners)->Count() == 0)
+    if (uPtr(_propListeners)- Count() == 0)
         _propListeners = NULL;
 }
 // }
@@ -829,30 +829,30 @@ void PropertyObject::RemovePropertyListener(uObject* listener)
 // static generated Resource() :68
 static void Resource__cctor__fn(uType* __type)
 {
-    Resource::_globals_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[8/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>*/]));
-    Resource::_listeners_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[9/*Uno.Collections.List<Uno.Action<string>>*/]));
+    Resource::_globals_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[8/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  */]));
+    Resource::_listeners_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[9/*Uno.Collections.List<Uno.Action<string  */]));
 }
 
 static void Resource_build(uType* type)
 {
-    ::TYPES[8] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(uObject_typeof(), NULL), NULL);
-    ::TYPES[9] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), NULL);
-    ::TYPES[10] = ::g::Uno::Collections::Dictionary__Enumerator_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(uObject_typeof(), NULL), NULL);
-    ::TYPES[11] = ::g::Uno::Collections::KeyValuePair_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(uObject_typeof(), NULL), NULL);
+    ::TYPES[8] = ::g::Uno::Collections::Dictionary_typeof()- MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()- MakeType(uObject_typeof(), NULL), NULL);
+    ::TYPES[9] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::Action1_typeof()- MakeType(::g::Uno::String_typeof(), NULL), NULL);
+    ::TYPES[10] = ::g::Uno::Collections::Dictionary__Enumerator_typeof()- MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()- MakeType(uObject_typeof(), NULL), NULL);
+    ::TYPES[11] = ::g::Uno::Collections::KeyValuePair_typeof()- MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()- MakeType(uObject_typeof(), NULL), NULL);
     ::TYPES[12] = ::g::Uno::Collections::List_typeof();
-    ::TYPES[3] = ::TYPES[12/*Uno.Collections.List`1*/]->MakeType(uObject_typeof(), NULL);
-    type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[12/*Uno.Collections.List`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
-    type->SetFields(0,
+    ::TYPES[3] = ::TYPES[12/*Uno.Collections.List`1*/]- MakeType(uObject_typeof(), NULL);
+    type- MethodTypes[0]- SetPrecalc(
+        ::TYPES[12/*Uno.Collections.List`1*/]- MakeType(type- MethodTypes[0]- U(0), NULL));
+    type- SetFields(0,
         ::g::Uno::String_typeof(), offsetof(Resource, _Key), 0,
         uObject_typeof(), offsetof(Resource, _Value), 0,
-        ::TYPES[8/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>*/], (uintptr_t)&Resource::_globals_, uFieldFlagsStatic,
-        ::TYPES[9/*Uno.Collections.List<Uno.Action<string>>*/], (uintptr_t)&Resource::_listeners_, uFieldFlagsStatic);
+        ::TYPES[8/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  */], (uintptr_t)&Resource::_globals_, uFieldFlagsStatic,
+        ::TYPES[9/*Uno.Collections.List<Uno.Action<string  */], (uintptr_t)&Resource::_listeners_, uFieldFlagsStatic);
 }
 
 uType* Resource_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -861,13 +861,13 @@ uType* Resource_typeof()
     options.ObjectSize = sizeof(Resource);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.UX.Resource", options);
-    type->MethodTypes[0] = type->NewMethodType(1, 1,0);
-    type->fp_build_ = Resource_build;
-    type->fp_cctor_ = Resource__cctor__fn;
+    type- MethodTypes[0] = type- NewMethodType(1, 1,0);
+    type- fp_build_ = Resource_build;
+    type- fp_cctor_ = Resource__cctor__fn;
     return type;
 }
 
-// public static void AddGlobalKeyListener(Uno.Action<string> listener) :88
+// public static void AddGlobalKeyListener(Uno.Action<string  listener) :88
 void Resource__AddGlobalKeyListener_fn(uDelegate* listener)
 {
     Resource::AddGlobalKeyListener(listener);
@@ -879,7 +879,7 @@ void Resource__GetGlobalKey_fn(uObject* obj, uString** __retval)
     *__retval = Resource::GetGlobalKey(obj);
 }
 
-// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() :150
+// public static Uno.Collections.IEnumerable<T  GetGlobalsOfType<T () :150
 void Resource__GetGlobalsOfType_fn(uType* __type, uObject** __retval)
 {
     *__retval = Resource::GetGlobalsOfType(__type);
@@ -888,16 +888,16 @@ void Resource__GetGlobalsOfType_fn(uType* __type, uObject** __retval)
 // public generated string get_Key() :70
 void Resource__get_Key_fn(Resource* __this, uString** __retval)
 {
-    *__retval = __this->Key();
+    *__retval = __this- Key();
 }
 
 // private generated void set_Key(string value) :70
 void Resource__set_Key_fn(Resource* __this, uString* value)
 {
-    __this->Key(value);
+    __this- Key(value);
 }
 
-// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) :98
+// public static void RemoveGlobalKeyListener(Uno.Action<string  listener) :98
 void Resource__RemoveGlobalKeyListener_fn(uDelegate* listener)
 {
     Resource::RemoveGlobalKeyListener(listener);
@@ -909,7 +909,7 @@ void Resource__SetGlobalKey_fn(uObject* obj, uString* key)
     Resource::SetGlobalKey(obj, key);
 }
 
-// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) :171
+// public static bool TryFindGlobal(string key, Uno.Predicate<object  acceptor, object& res) :171
 void Resource__TryFindGlobal_fn(uString* key, uDelegate* acceptor, uObject** res, bool* __retval)
 {
     *__retval = Resource::TryFindGlobal(key, acceptor, res);
@@ -918,17 +918,17 @@ void Resource__TryFindGlobal_fn(uString* key, uDelegate* acceptor, uObject** res
 // public generated object get_Value() :71
 void Resource__get_Value_fn(Resource* __this, uObject** __retval)
 {
-    *__retval = __this->Value();
+    *__retval = __this- Value();
 }
 
 // private generated void set_Value(object value) :71
 void Resource__set_Value_fn(Resource* __this, uObject* value)
 {
-    __this->Value(value);
+    __this- Value(value);
 }
 
-uSStrong< ::g::Uno::Collections::Dictionary*> Resource::_globals_;
-uSStrong< ::g::Uno::Collections::List*> Resource::_listeners_;
+uSStrong< ::g::Uno::Collections::Dictionary*  Resource::_globals_;
+uSStrong< ::g::Uno::Collections::List*  Resource::_listeners_;
 
 // public generated string get_Key() [instance] :70
 uString* Resource::Key()
@@ -954,7 +954,7 @@ void Resource::Value(uObject* value)
     _Value = value;
 }
 
-// public static void AddGlobalKeyListener(Uno.Action<string> listener) [static] :88
+// public static void AddGlobalKeyListener(Uno.Action<string  listener) [static] :88
 void Resource::AddGlobalKeyListener(uDelegate* listener)
 {
     ::g::Uno::Threading::Monitor::Enter(Resource::_listeners_);
@@ -981,40 +981,40 @@ void Resource::AddGlobalKeyListener(uDelegate* listener)
 // public static string GetGlobalKey(object obj) [static] :138
 uString* Resource::GetGlobalKey(uObject* obj)
 {
-    ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > ret6;
+    ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    ret6;
     bool ret7;
     ::g::Uno::Threading::Monitor::Enter(Resource::_globals_);
 
     try
     {
         {
-            ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > enum4 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Resource::_globals_), &ret6), ret6);
+            ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    enum4 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Resource::_globals_), &ret6), ret6);
 
             try
             {
                 {
-                    while (enum4.MoveNext(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]))
+                    while (enum4.MoveNext(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]))
                     {
-                        ::g::Uno::Collections::KeyValuePair<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > list = enum4.Current(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                        ::g::Uno::Collections::KeyValuePair<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    list = enum4.Current(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
 
-                        if ((::g::Uno::Collections::List__Contains_fn(uPtr(list.Value(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object>>*/])), obj, &ret7), ret7))
+                        if ((::g::Uno::Collections::List__Contains_fn(uPtr(list.Value(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object  */])), obj, &ret7), ret7))
                         {
-                            uString* __uno_retval = list.Key(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object>>*/]);
+                            uString* __uno_retval = list.Key(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object  */]);
                             ::g::Uno::Threading::Monitor::Exit(Resource::_globals_);
-                            enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                            enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
                             return __uno_retval;
                         }
                     }
                 }
                 {
-                    enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                    enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
                 }
             }
 
             catch (const uThrowable& __t)
             {
                 {
-                    enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                    enum4.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
                 }
                                 throw __t;
             }
@@ -1035,13 +1035,13 @@ uString* Resource::GetGlobalKey(uObject* obj)
     return NULL;
 }
 
-// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() [static] :150
+// public static Uno.Collections.IEnumerable<T  GetGlobalsOfType<T () [static] :150
 uObject* Resource::GetGlobalsOfType(uType* __type)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
+        __type- Precalced(0/*Uno.Collections.List<T */),
     };
-    ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > ret8;
+    ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    ret8;
     uObject* ret9;
     ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(__types[0]);
     ::g::Uno::Threading::Monitor::Enter(Resource::_globals_);
@@ -1049,34 +1049,34 @@ uObject* Resource::GetGlobalsOfType(uType* __type)
     try
     {
         {
-            ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > enum1 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Resource::_globals_), &ret8), ret8);
+            ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    enum1 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Resource::_globals_), &ret8), ret8);
 
             try
             {
                 {
-                    while (enum1.MoveNext(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]))
+                    while (enum1.MoveNext(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]))
                     {
-                        ::g::Uno::Collections::KeyValuePair<uStrong<uString*>, uStrong< ::g::Uno::Collections::List*> > entry = enum1.Current(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
-                        ::g::Uno::Collections::List* list = entry.Value(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object>>*/]);
+                        ::g::Uno::Collections::KeyValuePair<uStrong<uString* , uStrong< ::g::Uno::Collections::List*    entry = enum1.Current(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
+                        ::g::Uno::Collections::List* list = entry.Value(::TYPES[11/*Uno.Collections.KeyValuePair<string, Uno.Collections.List<object  */]);
 
-                        for (int i = uPtr(list)->Count(); (i--) > 0; )
+                        for (int i = uPtr(list)- Count(); (i--)   0; )
                         {
-                            uObject* v = (::g::Uno::Collections::List__get_Item_fn(uPtr(list), uCRef<int>(i), &ret9), ret9);
+                            uObject* v = (::g::Uno::Collections::List__get_Item_fn(uPtr(list), uCRef<int (i), &ret9), ret9);
 
-                            if (uIs(v, __type->U(0)))
-                                ::g::Uno::Collections::List__Add_fn(uPtr(result), uUnboxAny(__type->U(0), v));
+                            if (uIs(v, __type- U(0)))
+                                ::g::Uno::Collections::List__Add_fn(uPtr(result), uUnboxAny(__type- U(0), v));
                         }
                     }
                 }
                 {
-                    enum1.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                    enum1.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
                 }
             }
 
             catch (const uThrowable& __t)
             {
                 {
-                    enum1.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>.Enumerator*/]);
+                    enum1.Dispose(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object  .Enumerator*/]);
                 }
                                 throw __t;
             }
@@ -1097,7 +1097,7 @@ uObject* Resource::GetGlobalsOfType(uType* __type)
     return (uObject*)result;
 }
 
-// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) [static] :98
+// public static void RemoveGlobalKeyListener(Uno.Action<string  listener) [static] :98
 void Resource::RemoveGlobalKeyListener(uDelegate* listener)
 {
     bool ret10;
@@ -1136,7 +1136,7 @@ void Resource::SetGlobalKey(uObject* obj, uString* key)
 
             if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(Resource::_globals_), key, (void**)(&objs), &ret11), ret11))
             {
-                objs = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<object>*/]);
+                objs = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<object */]);
                 ::g::Uno::Collections::Dictionary__Add_fn(uPtr(Resource::_globals_), key, objs);
             }
 
@@ -1162,7 +1162,7 @@ void Resource::SetGlobalKey(uObject* obj, uString* key)
     try
     {
         {
-            listeners = (uArray*)uPtr(Resource::_listeners_)->ToArray();
+            listeners = (uArray*)uPtr(Resource::_listeners_)- ToArray();
         }
         {
             ::g::Uno::Threading::Monitor::Exit(Resource::_listeners_);
@@ -1177,14 +1177,14 @@ void Resource::SetGlobalKey(uObject* obj, uString* key)
                 throw __t;
     }
 
-    for (int index2 = 0, length3 = uPtr(listeners)->Length(); index2 < length3; ++index2)
+    for (int index2 = 0, length3 = uPtr(listeners)- Length(); index2 < length3; ++index2)
     {
-        uDelegate* listener = uPtr(listeners)->Strong<uDelegate*>(index2);
-        uPtr(listener)->InvokeVoid(key);
+        uDelegate* listener = uPtr(listeners)- Strong<uDelegate* (index2);
+        uPtr(listener)- InvokeVoid(key);
     }
 }
 
-// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) [static] :171
+// public static bool TryFindGlobal(string key, Uno.Predicate<object  acceptor, object& res) [static] :171
 bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
 {
     bool ret13;
@@ -1198,11 +1198,11 @@ bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
         {
             if ((::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(Resource::_globals_), key, (void**)(&list), &ret13), ret13))
 
-                for (int i = uPtr(list)->Count(); (i--) > 0; )
+                for (int i = uPtr(list)- Count(); (i--)   0; )
                 {
-                    uObject* v = (::g::Uno::Collections::List__get_Item_fn(uPtr(list), uCRef<int>(i), &ret14), ret14);
+                    uObject* v = (::g::Uno::Collections::List__get_Item_fn(uPtr(list), uCRef<int (i), &ret14), ret14);
 
-                    if (::g::Uno::Delegate::op_Equality(acceptor, NULL) || (uPtr(acceptor)->Invoke(&ret15, 1, v), ret15))
+                    if (::g::Uno::Delegate::op_Equality(acceptor, NULL) || (uPtr(acceptor)- Invoke(&ret15, 1, v), ret15))
                     {
                         *res = v;
                         bool __uno_retval = true;
@@ -1237,15 +1237,15 @@ bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
 static void Selector_build(uType* type)
 {
     ::TYPES[13] = ::g::Uno::String_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::UX::SelectorRegistry_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Int_typeof(), offsetof(Selector, _handle), 0);
 }
 
 uStructType* Selector_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1255,17 +1255,17 @@ uStructType* Selector_typeof()
     options.ValueSize = sizeof(Selector);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.UX.Selector", options);
-    type->fp_build_ = Selector_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Selector__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Selector__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Selector__ToString_fn;
+    type- fp_build_ = Selector_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Selector__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Selector__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Selector__ToString_fn;
     return type;
 }
 
 // public Selector(string value) :46
 void Selector__ctor__fn(Selector* __this, uString* value)
 {
-    __this->ctor_(value);
+    __this- ctor_(value);
 }
 
 // public override sealed bool Equals(object obj) :61
@@ -1273,14 +1273,14 @@ void Selector__Equals_fn(Selector* __this, uType* __type, uObject* obj, bool* __
 {
     if (uIs(obj, __type))
     {
-        Selector sel = uUnbox<Selector>(__type, obj);
-        return *__retval = sel._handle == __this->_handle, void();
+        Selector sel = uUnbox<Selector (__type, obj);
+        return *__retval = sel._handle == __this- _handle, void();
     }
 
-    uString* s = uAs<uString*>(obj, ::TYPES[13/*string*/]);
+    uString* s = uAs<uString* (obj, ::TYPES[13/*string*/]);
 
     if (::g::Uno::String::op_Inequality(s, NULL))
-        return *__retval = __this->Equals(__type, uBox(__type, Selector__New1(s))), void();
+        return *__retval = __this- Equals(__type, uBox(__type, Selector__New1(s))), void();
 
     return *__retval = false, void();
 }
@@ -1288,19 +1288,19 @@ void Selector__Equals_fn(Selector* __this, uType* __type, uObject* obj, bool* __
 // public override sealed int GetHashCode() :56
 void Selector__GetHashCode_fn(Selector* __this, uType* __type, int* __retval)
 {
-    return *__retval = __this->_handle, void();
+    return *__retval = __this- _handle, void();
 }
 
 // internal int get_Handle() :43
 void Selector__get_Handle_fn(Selector* __this, int* __retval)
 {
-    *__retval = __this->Handle();
+    *__retval = __this- Handle();
 }
 
 // public bool get_IsNull() :53
 void Selector__get_IsNull_fn(Selector* __this, bool* __retval)
 {
-    *__retval = __this->IsNull();
+    *__retval = __this- IsNull();
 }
 
 // public Selector New(string value) :46
@@ -1336,10 +1336,10 @@ void Selector__op_Inequality_fn(Selector* a, Selector* b, bool* __retval)
 // public override sealed string ToString() :98
 void Selector__ToString_fn(Selector* __this, uType* __type, uString** __retval)
 {
-    if (__this->_handle == 0)
+    if (__this- _handle == 0)
         return *__retval = NULL, void();
 
-    return *__retval = ::g::Uno::UX::SelectorRegistry::GetValue(__this->_handle), void();
+    return *__retval = ::g::Uno::UX::SelectorRegistry::GetValue(__this- _handle), void();
 }
 
 // public Selector(string value) [instance] :46
@@ -1402,33 +1402,33 @@ bool Selector__op_Inequality(Selector a, Selector b)
 static void SelectorRegistry__cctor__fn(uType* __type)
 {
     SelectorRegistry::_mutex_ = ::g::Uno::Object::New();
-    SelectorRegistry::_stringToHandle_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[14/*Uno.Collections.Dictionary<string, int>*/]));
-    SelectorRegistry::_handleToString_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[15/*Uno.Collections.Dictionary<int, string>*/]));
+    SelectorRegistry::_stringToHandle_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[14/*Uno.Collections.Dictionary<string, int */]));
+    SelectorRegistry::_handleToString_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[15/*Uno.Collections.Dictionary<int, string */]));
     SelectorRegistry::_counter_ = 1;
 }
 
 static void SelectorRegistry_build(uType* type)
 {
-    ::TYPES[14] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), NULL);
-    ::TYPES[15] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
-    type->SetFields(0,
+    ::TYPES[14] = ::g::Uno::Collections::Dictionary_typeof()- MakeType(::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), NULL);
+    ::TYPES[15] = ::g::Uno::Collections::Dictionary_typeof()- MakeType(::g::Uno::Int_typeof(), ::g::Uno::String_typeof(), NULL);
+    type- SetFields(0,
         uObject_typeof(), (uintptr_t)&SelectorRegistry::_mutex_, uFieldFlagsStatic,
-        ::TYPES[14/*Uno.Collections.Dictionary<string, int>*/], (uintptr_t)&SelectorRegistry::_stringToHandle_, uFieldFlagsStatic,
-        ::TYPES[15/*Uno.Collections.Dictionary<int, string>*/], (uintptr_t)&SelectorRegistry::_handleToString_, uFieldFlagsStatic,
+        ::TYPES[14/*Uno.Collections.Dictionary<string, int */], (uintptr_t)&SelectorRegistry::_stringToHandle_, uFieldFlagsStatic,
+        ::TYPES[15/*Uno.Collections.Dictionary<int, string */], (uintptr_t)&SelectorRegistry::_handleToString_, uFieldFlagsStatic,
         ::g::Uno::Int_typeof(), (uintptr_t)&SelectorRegistry::_counter_, uFieldFlagsStatic);
 }
 
 uClassType* SelectorRegistry_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 4;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.UX.SelectorRegistry", options);
-    type->fp_build_ = SelectorRegistry_build;
-    type->fp_cctor_ = SelectorRegistry__cctor__fn;
+    type- fp_build_ = SelectorRegistry_build;
+    type- fp_cctor_ = SelectorRegistry__cctor__fn;
     return type;
 }
 
@@ -1444,9 +1444,9 @@ void SelectorRegistry__GetValue_fn(int* handle, uString** __retval)
     *__retval = SelectorRegistry::GetValue(*handle);
 }
 
-uSStrong<uObject*> SelectorRegistry::_mutex_;
-uSStrong< ::g::Uno::Collections::Dictionary*> SelectorRegistry::_stringToHandle_;
-uSStrong< ::g::Uno::Collections::Dictionary*> SelectorRegistry::_handleToString_;
+uSStrong<uObject*  SelectorRegistry::_mutex_;
+uSStrong< ::g::Uno::Collections::Dictionary*  SelectorRegistry::_stringToHandle_;
+uSStrong< ::g::Uno::Collections::Dictionary*  SelectorRegistry::_handleToString_;
 int SelectorRegistry::_counter_;
 
 // internal static int GetHandle(string value) [static] :14
@@ -1463,8 +1463,8 @@ int SelectorRegistry::GetHandle(uString* value)
             if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(SelectorRegistry::_stringToHandle_), value, &handle, &ret1), ret1))
             {
                 handle = SelectorRegistry::_counter_++;
-                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(SelectorRegistry::_stringToHandle_), value, uCRef<int>(handle));
-                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(SelectorRegistry::_handleToString_), uCRef<int>(handle), value);
+                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(SelectorRegistry::_stringToHandle_), value, uCRef<int (handle));
+                ::g::Uno::Collections::Dictionary__Add_fn(uPtr(SelectorRegistry::_handleToString_), uCRef<int (handle), value);
             }
 
             int __uno_retval = handle;
@@ -1494,7 +1494,7 @@ uString* SelectorRegistry::GetValue(int handle)
     try
     {
         {
-            uString* __uno_retval = (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(SelectorRegistry::_handleToString_), uCRef<int>(handle), &ret2), ret2);
+            uString* __uno_retval = (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(SelectorRegistry::_handleToString_), uCRef<int (handle), &ret2), ret2);
             ::g::Uno::Threading::Monitor::Exit(SelectorRegistry::_mutex_);
             return __uno_retval;
         }
@@ -1529,14 +1529,14 @@ static void Size_build(uType* type)
     ::STRINGS[11] = uString::Const(")");
     ::TYPES[16] = ::g::Uno::Float_typeof();
     ::TYPES[17] = ::g::Uno::Int_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[16/*float*/], offsetof(Size, Value), 0,
         ::g::Uno::UX::Unit_typeof(), offsetof(Size, Unit), 0);
 }
 
 uStructType* Size_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1545,17 +1545,17 @@ uStructType* Size_typeof()
     options.ValueSize = sizeof(Size);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.UX.Size", options);
-    type->fp_build_ = Size_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Size__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Size__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Size__ToString_fn;
+    type- fp_build_ = Size_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Size__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Size__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Size__ToString_fn;
     return type;
 }
 
 // public Size(float value, Uno.UX.Unit unit) :34
 void Size__ctor__fn(Size* __this, float* value, int* unit)
 {
-    __this->ctor_(*value, *unit);
+    __this- ctor_(*value, *unit);
 }
 
 // public static Uno.UX.Size get_Auto() :109
@@ -1573,7 +1573,7 @@ void Size__Combine_fn(int* a, int* b, int* __retval)
 // public Uno.UX.Unit DetermineUnit() :63
 void Size__DetermineUnit_fn(Size* __this, int* __retval)
 {
-    *__retval = __this->DetermineUnit();
+    *__retval = __this- DetermineUnit();
 }
 
 // public override sealed bool Equals(object obj) :141
@@ -1581,24 +1581,24 @@ void Size__Equals_fn(Size* __this, uType* __type, uObject* obj, bool* __retval)
 {
     if (uIs(obj, __type))
     {
-        Size s = uUnbox<Size>(__type, obj);
+        Size s = uUnbox<Size (__type, obj);
 
-        if (s.Unit != __this->Unit)
+        if (s.Unit != __this- Unit)
             return *__retval = false, void();
 
-        if (s.Value != __this->Value)
+        if (s.Value != __this- Value)
             return *__retval = false, void();
 
         return *__retval = true, void();
     }
     else if (uIs(obj, ::TYPES[16/*float*/]))
     {
-        if ((__this->Unit != 2) && (__this->Unit != 1))
+        if ((__this- Unit != 2) && (__this- Unit != 1))
             return *__retval = false, void();
 
-        float f = uUnbox<float>(::TYPES[16/*float*/], obj);
+        float f = uUnbox<float (::TYPES[16/*float*/], obj);
 
-        if (f != __this->Value)
+        if (f != __this- Value)
             return *__retval = false, void();
 
         return *__retval = true, void();
@@ -1611,13 +1611,13 @@ void Size__Equals_fn(Size* __this, uType* __type, uObject* obj, bool* __retval)
 void Size__GetHashCode_fn(Size* __this, uType* __type, int* __retval)
 {
     float ind7;
-    return *__retval = ::g::Uno::Float::GetHashCode((ind7 = __this->Value, ind7), ::TYPES[16/*float*/]), void();
+    return *__retval = ::g::Uno::Float::GetHashCode((ind7 = __this- Value, ind7), ::TYPES[16/*float*/]), void();
 }
 
 // public bool get_IsAuto() :111
 void Size__get_IsAuto_fn(Size* __this, bool* __retval)
 {
-    *__retval = __this->IsAuto();
+    *__retval = __this- IsAuto();
 }
 
 // public Size New(float value, Uno.UX.Unit unit) :34
@@ -1678,20 +1678,20 @@ void Size__ToString_fn(Size* __this, uType* __type, uString** __retval)
     float ind5;
     int ind6;
 
-    switch (__this->Unit)
+    switch (__this- Unit)
     {
         case 1:
-            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind1 = __this->Value, ind1), ::TYPES[16/*float*/]), ::STRINGS[5/*" (unspecifi...*/]), void();
+            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind1 = __this- Value, ind1), ::TYPES[16/*float*/]), ::STRINGS[5/*" (unspecifi...*/]), void();
         case 2:
-            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind2 = __this->Value, ind2), ::TYPES[16/*float*/]), ::STRINGS[6/*"pt"*/]), void();
+            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind2 = __this- Value, ind2), ::TYPES[16/*float*/]), ::STRINGS[6/*"pt"*/]), void();
         case 3:
-            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind3 = __this->Value, ind3), ::TYPES[16/*float*/]), ::STRINGS[7/*"px"*/]), void();
+            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind3 = __this- Value, ind3), ::TYPES[16/*float*/]), ::STRINGS[7/*"px"*/]), void();
         case 4:
-            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind4 = __this->Value, ind4), ::TYPES[16/*float*/]), ::STRINGS[8/*"%"*/]), void();
+            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind4 = __this- Value, ind4), ::TYPES[16/*float*/]), ::STRINGS[8/*"%"*/]), void();
         case 0:
             return *__retval = ::STRINGS[9/*"(auto)"*/], void();
         default:
-            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind5 = __this->Value, ind5), ::TYPES[16/*float*/]), ::STRINGS[10/*" ("*/]), ::g::Uno::Int::ToString((ind6 = __this->Unit, ind6), ::TYPES[17/*int*/])), ::STRINGS[11/*")"*/]), void();
+            return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString((ind5 = __this- Value, ind5), ::TYPES[16/*float*/]), ::STRINGS[10/*" ("*/]), ::g::Uno::Int::ToString((ind6 = __this- Unit, ind6), ::TYPES[17/*int*/])), ::STRINGS[11/*")"*/]), void();
     }
 }
 
@@ -1798,14 +1798,14 @@ static void Size2_build(uType* type)
 {
     ::STRINGS[12] = uString::Const(", ");
     ::TYPES[18] = ::g::Uno::UX::Size_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[18/*Uno.UX.Size*/], offsetof(Size2, X), 0,
         ::TYPES[18/*Uno.UX.Size*/], offsetof(Size2, Y), 0);
 }
 
 uStructType* Size2_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1814,17 +1814,17 @@ uStructType* Size2_typeof()
     options.ValueSize = sizeof(Size2);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.UX.Size2", options);
-    type->fp_build_ = Size2_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Size2__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Size2__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Size2__ToString_fn;
+    type- fp_build_ = Size2_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Size2__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Size2__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Size2__ToString_fn;
     return type;
 }
 
 // public Size2(Uno.UX.Size x, Uno.UX.Size y) :183
 void Size2__ctor__fn(Size2* __this, ::g::Uno::UX::Size* x, ::g::Uno::UX::Size* y)
 {
-    __this->ctor_(*x, *y);
+    __this- ctor_(*x, *y);
 }
 
 // public static Uno.UX.Size2 get_Auto() :248
@@ -1838,12 +1838,12 @@ void Size2__Equals_fn(Size2* __this, uType* __type, uObject* obj, bool* __retval
 {
     if (uIs(obj, __type))
     {
-        Size2 s = uUnbox<Size2>(__type, obj);
+        Size2 s = uUnbox<Size2 (__type, obj);
 
-        if (::g::Uno::UX::Size__op_Inequality(s.X, __this->X))
+        if (::g::Uno::UX::Size__op_Inequality(s.X, __this- X))
             return *__retval = false, void();
 
-        if (::g::Uno::UX::Size__op_Inequality(s.Y, __this->Y))
+        if (::g::Uno::UX::Size__op_Inequality(s.Y, __this- Y))
             return *__retval = false, void();
 
         return *__retval = true, void();
@@ -1857,7 +1857,7 @@ void Size2__GetHashCode_fn(Size2* __this, uType* __type, int* __retval)
 {
     ::g::Uno::UX::Size ind3;
     ::g::Uno::UX::Size ind4;
-    return *__retval = (ind3 = __this->X, (&ind3))->GetHashCode(::TYPES[18/*Uno.UX.Size*/]) ^ (ind4 = __this->Y, (&ind4))->GetHashCode(::TYPES[18/*Uno.UX.Size*/]), void();
+    return *__retval = (ind3 = __this- X, (&ind3))- GetHashCode(::TYPES[18/*Uno.UX.Size*/]) ^ (ind4 = __this- Y, (&ind4))- GetHashCode(::TYPES[18/*Uno.UX.Size*/]), void();
 }
 
 // public Size2 New(Uno.UX.Size x, Uno.UX.Size y) :183
@@ -1907,7 +1907,7 @@ void Size2__ToString_fn(Size2* __this, uType* __type, uString** __retval)
 {
     ::g::Uno::UX::Size ind1;
     ::g::Uno::UX::Size ind2;
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2((ind1 = __this->X, (&ind1))->ToString(::TYPES[18/*Uno.UX.Size*/]), ::STRINGS[12/*", "*/]), (ind2 = __this->Y, (&ind2))->ToString(::TYPES[18/*Uno.UX.Size*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2((ind1 = __this- X, (&ind1))- ToString(::TYPES[18/*Uno.UX.Size*/]), ::STRINGS[12/*", "*/]), (ind2 = __this- Y, (&ind2))- ToString(::TYPES[18/*Uno.UX.Size*/])), void();
 }
 
 // public Size2(Uno.UX.Size x, Uno.UX.Size y) [instance] :183
@@ -1979,18 +1979,18 @@ static void StreamExtensions_build(uType* type)
 {
     ::STRINGS[13] = uString::Const("Bug in Uno compiler, this case should never ever happen.");
     ::TYPES[19] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[20] = ::g::Uno::Byte_typeof()->Array();
+    ::TYPES[20] = ::g::Uno::Byte_typeof()- Array();
 }
 
 uClassType* StreamExtensions_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.UX.StreamExtensions", options);
-    type->fp_build_ = StreamExtensions_build;
+    type- fp_build_ = StreamExtensions_build;
     return type;
 }
 
@@ -2019,10 +2019,10 @@ uArray* StreamExtensions::ReadAllBytes(::g::Uno::IO::BinaryReader* reader)
 
             do
             {
-                buffer = uPtr(reader)->ReadBytes(4096);
-                uPtr(ms)->Write(buffer, 0, uPtr(buffer)->Length());
+                buffer = uPtr(reader)- ReadBytes(4096);
+                uPtr(ms)- Write(buffer, 0, uPtr(buffer)- Length());
             }
-            while (uPtr(buffer)->Length() == 4096);
+            while (uPtr(buffer)- Length() == 4096);
 
             uArray* __uno_retval = StreamExtensions::ToArray(ms);
             ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)ms), ::TYPES[19/*Uno.IDisposable*/]));
@@ -2047,11 +2047,11 @@ uArray* StreamExtensions::ReadAllBytes(::g::Uno::IO::BinaryReader* reader)
 // public static byte[] ToArray(Uno.IO.MemoryStream memoryStream) [static] :65
 uArray* StreamExtensions::ToArray(::g::Uno::IO::MemoryStream* memoryStream)
 {
-    uArray* buffer = uPtr(memoryStream)->GetBuffer();
-    uArray* bytes = uArray::New(::TYPES[20/*byte[]*/], (int)memoryStream->Length());
+    uArray* buffer = uPtr(memoryStream)- GetBuffer();
+    uArray* bytes = uArray::New(::TYPES[20/*byte[]*/], (int)memoryStream- Length());
 
-    for (int i = 0; (int64_t)i < memoryStream->Length(); ++i)
-        uPtr(bytes)->Item<uint8_t>(i) = uPtr(buffer)->Item<uint8_t>(i);
+    for (int i = 0; (int64_t)i < memoryStream- Length(); ++i)
+        uPtr(bytes)- Item<uint8_t (i) = uPtr(buffer)- Item<uint8_t (i);
 
     return bytes;
 }
@@ -2064,14 +2064,14 @@ uArray* StreamExtensions::ToArray(::g::Uno::IO::MemoryStream* memoryStream)
 // {
 static void Template_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::String_typeof(), offsetof(Template, _key), 0,
         ::g::Uno::Bool_typeof(), offsetof(Template, _isDefault), 0);
 }
 
 Template_type* Template_typeof()
 {
-    static uSStrong<Template_type*> type;
+    static uSStrong<Template_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2079,26 +2079,26 @@ Template_type* Template_typeof()
     options.ObjectSize = sizeof(Template);
     options.TypeSize = sizeof(Template_type);
     type = (Template_type*)uClassType::New("Uno.UX.Template", options);
-    type->fp_build_ = Template_build;
+    type- fp_build_ = Template_build;
     return type;
 }
 
 // protected Template(string key, bool isDefault) :22
 void Template__ctor__fn(Template* __this, uString* key, bool* isDefault)
 {
-    __this->ctor_(key, *isDefault);
+    __this- ctor_(key, *isDefault);
 }
 
 // public bool get_IsDefault() :20
 void Template__get_IsDefault_fn(Template* __this, bool* __retval)
 {
-    *__retval = __this->IsDefault();
+    *__retval = __this- IsDefault();
 }
 
 // public string get_Key() :16
 void Template__get_Key_fn(Template* __this, uString** __retval)
 {
-    *__retval = __this->Key();
+    *__retval = __this- Key();
 }
 
 // protected Template(string key, bool isDefault) [instance] :22
@@ -2127,11 +2127,11 @@ uString* Template::Key()
 // public enum Unit :6
 uEnumType* Unit_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Uno.UX.Unit", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "Auto", 0LL,
         "Unspecified", 1LL,
         "Points", 2LL,
@@ -2143,17 +2143,17 @@ uEnumType* Unit_typeof()
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/UX/Property.uno
 // ----------------------------------------------------------------------
 
-// public class ValueChangedArgs<T> :3
+// public class ValueChangedArgs<T  :3
 // {
 static void ValueChangedArgs_build(uType* type)
 {
-    type->SetFields(0,
-        type->T(0), (uintptr_t)0, uFieldFlagsConstrained);
+    type- SetFields(0,
+        type- T(0), (uintptr_t)0, uFieldFlagsConstrained);
 }
 
 uType* ValueChangedArgs_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2163,14 +2163,14 @@ uType* ValueChangedArgs_typeof()
     options.ObjectSize = sizeof(ValueChangedArgs);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.UX.ValueChangedArgs`1", options);
-    type->fp_build_ = ValueChangedArgs_build;
+    type- fp_build_ = ValueChangedArgs_build;
     return type;
 }
 
 // public ValueChangedArgs(T value) :7
 void ValueChangedArgs__ctor_1_fn(ValueChangedArgs* __this, void* value)
 {
-    __this->ctor_();
+    __this- ctor_();
     ValueChangedArgs__set_Value_fn(__this, value);
 }
 
@@ -2185,29 +2185,29 @@ void ValueChangedArgs__New2_fn(uType* __type, void* value, ValueChangedArgs** __
 // public generated T get_Value() :5
 void ValueChangedArgs__get_Value_fn(ValueChangedArgs* __this, uTRef __retval)
 {
-    return __retval.Store(__this->_Value()), void();
+    return __retval.Store(__this- _Value()), void();
 }
 
 // private generated void set_Value(T value) :5
 void ValueChangedArgs__set_Value_fn(ValueChangedArgs* __this, void* value)
 {
-    __this->_Value() = value;
+    __this- _Value() = value;
 }
 // }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/UX/Property.uno
 // ----------------------------------------------------------------------
 
-// public delegate void ValueChangedHandler<T>(object sender, Uno.UX.ValueChangedArgs<T> args) :13
+// public delegate void ValueChangedHandler<T (object sender, Uno.UX.ValueChangedArgs<T  args) :13
 uDelegateType* ValueChangedHandler_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.UX.ValueChangedHandler`1", 2, 1);
-    type->SetSignature(uVoid_typeof(),
+    type- SetSignature(uVoid_typeof(),
         uObject_typeof(),
-        ::g::Uno::UX::ValueChangedArgs_typeof()->MakeType(type->T(0), NULL));
+        ::g::Uno::UX::ValueChangedArgs_typeof()- MakeType(type- T(0), NULL));
     return type;
 }
 

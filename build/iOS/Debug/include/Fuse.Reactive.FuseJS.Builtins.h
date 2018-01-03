@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Builtins;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
@@ -23,12 +23,12 @@ void Builtins__UpdateModules_fn(Builtins* __this, ::g::Fuse::Scripting::Context*
 
 struct Builtins : uObject
 {
-    static uSStrong< ::g::Fuse::Reactive::FuseJS::TimerModule*> _timer_;
-    static uSStrong< ::g::Fuse::Reactive::FuseJS::TimerModule*>& _timer() { return _timer_; }
-    uStrong< ::g::Fuse::Scripting::Function*> Observable;
-    uStrong< ::g::Fuse::Scripting::Function*> EventEmitter;
-    uStrong< ::g::Fuse::Scripting::Function*> Date;
-    uStrong< ::g::Fuse::Scripting::Function*> DateCtor;
+    static uSStrong< ::g::Fuse::Reactive::FuseJS::TimerModule*  _timer_;
+    static uSStrong< ::g::Fuse::Reactive::FuseJS::TimerModule* & _timer() { return _timer_; }
+    uStrong< ::g::Fuse::Scripting::Function*  Observable;
+    uStrong< ::g::Fuse::Scripting::Function*  EventEmitter;
+    uStrong< ::g::Fuse::Scripting::Function*  Date;
+    uStrong< ::g::Fuse::Scripting::Function*  DateCtor;
 
     void ctor_(::g::Fuse::Scripting::Context* context);
     void UpdateModules(::g::Fuse::Scripting::Context* context);

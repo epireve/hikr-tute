@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator__Subscription;}}}
 
@@ -25,9 +25,9 @@ void UnaryOperator__Subscription__OnNewOperand_fn(UnaryOperator__Subscription* _
 
 struct UnaryOperator__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::UnaryOperator*> _uo;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _operandSub;
+    uStrong< ::g::Fuse::Reactive::UnaryOperator*  _uo;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _operandSub;
 
     void ctor_1(::g::Fuse::Reactive::UnaryOperator* uo, uObject* listener);
     void Init(uObject* context);

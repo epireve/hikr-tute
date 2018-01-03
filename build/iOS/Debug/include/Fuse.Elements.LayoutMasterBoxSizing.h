@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.BoxSizing.h>
+#include <Fuse.Elements.BoxSizing.h 
 namespace g{namespace Fuse{namespace Elements{struct BoxPlacement;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct LayoutMasterBoxSizing;}}}
@@ -30,10 +30,10 @@ void LayoutMasterBoxSizing__RequestLayout_fn(LayoutMasterBoxSizing* __this, ::g:
 
 struct LayoutMasterBoxSizing : ::g::Fuse::Elements::BoxSizing
 {
-    static uSStrong<LayoutMasterBoxSizing*> Singleton_;
-    static uSStrong<LayoutMasterBoxSizing*>& Singleton() { return Singleton_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _layoutMasterDataProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _layoutMasterDataProperty() { return _layoutMasterDataProperty_; }
+    static uSStrong<LayoutMasterBoxSizing*  Singleton_;
+    static uSStrong<LayoutMasterBoxSizing* & Singleton() { return Singleton_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _layoutMasterDataProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _layoutMasterDataProperty() { return _layoutMasterDataProperty_; }
 
     void ctor_1();
     static ::g::Fuse::Elements::Element* GetLayoutMaster(::g::Fuse::Elements::Element* elm);

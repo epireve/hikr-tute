@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct FontCache;}}}}}
 namespace g{namespace Fuse{namespace Internal{struct FontFaceDescriptor;}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -25,8 +25,8 @@ void FontCache__UIFontWithDescriptorAndSize_fn(::g::ObjC::Object* descriptor, fl
 
 struct FontCache : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _cache_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _cache() { return _cache_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _cache_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _cache() { return _cache_; }
 
     static uString* BundleFilePath(uString* resource);
     static ::g::ObjC::Object* Get(::g::Fuse::Internal::FontFaceDescriptor* descriptor, float size);

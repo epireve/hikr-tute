@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct FindRouter;}}}
 namespace g{namespace Fuse{namespace Navigation{struct FindRouter__Subscription;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -26,8 +26,8 @@ void FindRouter__Subscription__New1_fn(::g::Fuse::Navigation::FindRouter* expr, 
 
 struct FindRouter__Subscription : uObject
 {
-    uStrong< ::g::Fuse::Navigation::FindRouter*> _expr;
-    uStrong<uObject*> _listener;
+    uStrong< ::g::Fuse::Navigation::FindRouter*  _expr;
+    uStrong<uObject*  _listener;
 
     void ctor_(::g::Fuse::Navigation::FindRouter* expr, ::g::Fuse::Node* origin, uObject* listener);
     void Dispose();

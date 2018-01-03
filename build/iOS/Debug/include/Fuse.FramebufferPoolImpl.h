@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ISoftDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Resources.ISoftDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct CacheFramebuffer;}}
 namespace g{namespace Fuse{struct FramebufferPoolImpl;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -36,10 +36,10 @@ void FramebufferPoolImpl__Update_fn(FramebufferPoolImpl* __this);
 struct FramebufferPoolImpl : uObject
 {
     int frame;
-    uStrong< ::g::Uno::Collections::List*> framebufferPool;
-    uStrong< ::g::Uno::Collections::Dictionary*> lastFrameUsed;
-    uStrong< ::g::Uno::Collections::HashSet*> lockedFramebuffers;
-    uStrong< ::g::Uno::Collections::List*> cacheFramebuffers;
+    uStrong< ::g::Uno::Collections::List*  framebufferPool;
+    uStrong< ::g::Uno::Collections::Dictionary*  lastFrameUsed;
+    uStrong< ::g::Uno::Collections::HashSet*  lockedFramebuffers;
+    uStrong< ::g::Uno::Collections::List*  cacheFramebuffers;
     int framebuffersProvidedSinceLastCollect;
     int pixelsProvidedSinceLastCollect;
 

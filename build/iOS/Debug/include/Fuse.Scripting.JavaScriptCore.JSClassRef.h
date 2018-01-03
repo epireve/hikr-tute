@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <JavaScriptCore/JSObjectRef.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <JavaScriptCore/JSObjectRef.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{

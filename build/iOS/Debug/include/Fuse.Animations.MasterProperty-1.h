@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixerMaster.h>
-#include <Fuse.Animations.MasterBase-1.h>
-#include <Fuse.Animations.MasterPropertyGet.h>
-#include <Uno.Object.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IMixerMaster.h 
+#include <Fuse.Animations.MasterBase-1.h 
+#include <Fuse.Animations.MasterPropertyGet.h 
+#include <Uno.Object.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Animations{struct MasterProperty;}}}
 namespace g{namespace Fuse{namespace Animations{struct MixerBase;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal abstract class MasterProperty<T> :211
+// internal abstract class MasterProperty<T  :211
 // {
 struct MasterProperty_type : ::g::Fuse::Animations::MasterBase_type
 {
@@ -37,20 +37,20 @@ void MasterProperty__UnoUXIPropertyListenerOnPropertyChanged_fn(MasterProperty* 
 
 struct MasterProperty : ::g::Fuse::Animations::MasterBase
 {
-    uStrong< ::g::Uno::UX::Property1*> Property;
-    uTField _restValue() { return __type->Field(this, 5); }
+    uStrong< ::g::Uno::UX::Property1*  Property;
+    uTField _restValue() { return __type- Field(this, 5); }
     bool _isListening;
     bool _warningGiven;
     bool _hasSetValue;
-    uTField _lastSetValue() { return __type->Field(this, 9); }
+    uTField _lastSetValue() { return __type- Field(this, 9); }
 
     void ctor_1(::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase);
     uObject* GetPropertyObject();
     void GiveOriginSetterWarning();
-    template<class T>
+    template<class T 
     T RestValue() { T __retval; return MasterProperty__get_RestValue_fn(this, &__retval), __retval; }
-    template<class T>
-    void Set(T value) { MasterProperty__Set_fn(this, uConstrain(__type->GetBase(MasterProperty_typeof())->T(0), value)); }
+    template<class T 
+    void Set(T value) { MasterProperty__Set_fn(this, uConstrain(__type- GetBase(MasterProperty_typeof())- T(0), value)); }
 };
 // }
 

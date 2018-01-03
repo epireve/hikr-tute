@@ -1,10 +1,10 @@
 #ifndef POSIX_THREAD_H
 #define POSIX_THREAD_H
 
-#include <pthread.h>
+#include <pthread.h 
 
 //#if !#{Uno.Threading.Thread:IsStripped}
-#include <Uno.Threading.Thread.h>
+#include <Uno.Threading.Thread.h 
 //#endif // !#{Uno.Threading.Thread:IsStripped}
 
 //#if !#{Uno.Threading.Thread.Start():IsStripped}

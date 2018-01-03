@@ -1,11 +1,11 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Platform/iOS/Application.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Platform.iOS.Application.h>
-#include <Uno-iOS/AppDelegate.h>
-#include <uObjC.Foreign.h>
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Platform.iOS.Application.h 
+#include <Uno-iOS/AppDelegate.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Uno{
@@ -16,20 +16,20 @@ namespace iOS{
 // {
 static void Application_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::ObjC::Object_typeof(), (uintptr_t)&Application::_LaunchOptions_, uFieldFlagsStatic);
 }
 
 uClassType* Application_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Platform.iOS.Application", options);
-    type->fp_build_ = Application_build;
+    type- fp_build_ = Application_build;
     return type;
 }
 
@@ -69,14 +69,14 @@ void Application__SetRootView_fn(::g::ObjC::Object* view)
     Application::SetRootView(view);
 }
 
-uSStrong< ::g::ObjC::Object*> Application::_LaunchOptions_;
+uSStrong< ::g::ObjC::Object*  Application::_LaunchOptions_;
 
 // public static ObjC.Object GetRootView() [static] :53
 ::g::ObjC::Object* Application::GetRootView()
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             return (UIView*)((uAppDelegate*)[UIApplication sharedApplication].delegate).view;
         } ());
@@ -100,7 +100,7 @@ bool Application::IsRootView(::g::ObjC::Object* view)
 {
     @autoreleasepool
     {
-        return [] (::id view) -> bool
+        return [] (::id view) -  bool
         {
             return view == ((uAppDelegate*)[UIApplication sharedApplication].delegate).view;
         } (::g::ObjC::Object::GetHandle(view));
@@ -114,7 +114,7 @@ void Application::SetRootView(::g::ObjC::Object* view)
 {
     @autoreleasepool
     {
-        [] (::id view) -> void
+        [] (::id view) -  void
         {
             ((uAppDelegate*)[UIApplication sharedApplication].delegate).view = (UIView*)view;
         } (::g::ObjC::Object::GetHandle(view));

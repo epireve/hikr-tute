@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.WhileTrigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.WhileTrigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
 namespace g{namespace Fuse{namespace Gestures{struct Clicker;}}}
 namespace g{namespace Fuse{namespace Gestures{struct WhilePressed;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
@@ -40,7 +40,7 @@ void WhilePressed__set_PointerType_fn(WhilePressed* __this, int* value);
 struct WhilePressed : ::g::Fuse::Triggers::WhileTrigger
 {
     ::g::Uno::Float2 _pressedPosition;
-    uStrong< ::g::Fuse::Gestures::Clicker*> Clicker;
+    uStrong< ::g::Fuse::Gestures::Clicker*  Clicker;
     int _pointerType;
     bool _inside;
     bool _Capture;

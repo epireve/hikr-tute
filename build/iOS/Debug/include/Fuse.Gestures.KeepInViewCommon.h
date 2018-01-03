@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{struct KeepInViewCommon;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -32,9 +32,9 @@ void KeepInViewCommon__Update_fn(KeepInViewCommon* __this, uObject* s, uObject* 
 
 struct KeepInViewCommon : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Fuse::Elements::Element*> _target;
+    uStrong< ::g::Fuse::Elements::Element*  _target;
     bool _attached;
-    uStrong< ::g::Fuse::Elements::Element*> _rootElement;
+    uStrong< ::g::Fuse::Elements::Element*  _rootElement;
 
     void ctor_3();
     void AttachElement();

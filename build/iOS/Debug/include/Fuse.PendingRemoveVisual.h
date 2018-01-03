@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IUpdateListener.h>
-#include <Uno.Object.h>
+#include <Fuse.IUpdateListener.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct PendingRemoveVisual;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -33,11 +33,11 @@ void PendingRemoveVisual__RemoveSubscriber_fn(PendingRemoveVisual* __this);
 
 struct PendingRemoveVisual : uObject
 {
-    uStrong<uDelegate*> _then;
+    uStrong<uDelegate*  _then;
     int subscribers;
     bool _done;
-    uStrong< ::g::Fuse::Visual*> _Child;
-    uStrong< ::g::Fuse::Visual*> _Parent;
+    uStrong< ::g::Fuse::Visual*  _Child;
+    uStrong< ::g::Fuse::Visual*  _Parent;
 
     void ctor_(::g::Fuse::Visual* child, ::g::Fuse::Visual* parent, uDelegate* then);
     void AddSubscriber();

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.LayoutTransitionedArgs.h>
-#include <Fuse.Triggers.LayoutTransitionedHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Triggers.LayoutTransitionedArgs.h 
+#include <Fuse.Triggers.LayoutTransitionedHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Triggers{struct LayoutTransitioned;}}}
 
 namespace g{

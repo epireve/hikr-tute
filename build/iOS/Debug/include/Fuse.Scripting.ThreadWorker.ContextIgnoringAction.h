@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ThreadWorker__ContextIgnoringAction;}}}
 
@@ -19,7 +19,7 @@ void ThreadWorker__ContextIgnoringAction__Run_fn(ThreadWorker__ContextIgnoringAc
 
 struct ThreadWorker__ContextIgnoringAction : uObject
 {
-    uStrong<uDelegate*> _action;
+    uStrong<uDelegate*  _action;
 
     void ctor_(uDelegate* action);
     void Run(::g::Fuse::Scripting::Context* context);

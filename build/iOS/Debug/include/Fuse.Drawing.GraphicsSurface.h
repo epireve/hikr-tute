@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.CoreGraphicsSurface.h>
-#include <Uno.Float2.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Drawing.CoreGraphicsSurface.h 
+#include <Uno.Float2.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Drawing{struct GraphicsSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -29,8 +29,8 @@ void GraphicsSurface__VerifyBegun_fn(GraphicsSurface* __this);
 
 struct GraphicsSurface : ::g::Fuse::Drawing::CoreGraphicsSurface
 {
-    uStrong< ::g::Fuse::DrawContext*> _drawContext;
-    uStrong< ::g::Uno::Graphics::Framebuffer*> _buffer;
+    uStrong< ::g::Fuse::DrawContext*  _drawContext;
+    uStrong< ::g::Uno::Graphics::Framebuffer*  _buffer;
     ::g::Uno::Float2 _size;
 
     void ctor_2();

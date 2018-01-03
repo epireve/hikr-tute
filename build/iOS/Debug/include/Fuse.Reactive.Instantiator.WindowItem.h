@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Instantiator.TemplateMatch.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.Instantiator.TemplateMatch.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__ObservableLink;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__WindowItem;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -23,11 +23,11 @@ void Instantiator__WindowItem__Unlink_fn(Instantiator__WindowItem* __this);
 
 struct Instantiator__WindowItem : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> Nodes;
+    uStrong< ::g::Uno::Collections::List*  Nodes;
     ::g::Fuse::Reactive::Instantiator__TemplateMatch Template;
-    uStrong<uObject*> Data;
-    uStrong< ::g::Fuse::Reactive::Instantiator__ObservableLink*> DataLink;
-    uStrong<uObject*> Id;
+    uStrong<uObject*  Data;
+    uStrong< ::g::Fuse::Reactive::Instantiator__ObservableLink*  DataLink;
+    uStrong<uObject*  Id;
 
     void ctor_();
     uObject* CurrentData();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct SingleViewHost;}}}
 namespace g{namespace Fuse{namespace Controls{struct SingleViewHost__Disable;}}}
 
@@ -26,7 +26,7 @@ void SingleViewHost__Disable__UnoIDisposableDispose_fn(SingleViewHost__Disable* 
 
 struct SingleViewHost__Disable : uObject
 {
-    uStrong< ::g::Fuse::Controls::SingleViewHost*> _host;
+    uStrong< ::g::Fuse::Controls::SingleViewHost*  _host;
     bool _canceled;
 
     void ctor_(::g::Fuse::Controls::SingleViewHost* host);

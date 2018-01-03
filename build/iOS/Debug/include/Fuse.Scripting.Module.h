@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Module;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
@@ -35,16 +35,16 @@ void Module__MarkEvaluated_fn(Module* __this);
 
 struct Module : uObject
 {
-    uStrong<uDelegate*> _evaluated;
+    uStrong<uDelegate*  _evaluated;
     bool _isEvaluated;
 
     void ctor_();
-    uObject* CreateExportsObject(::g::Fuse::Scripting::Context* c) { uObject* __retval; return (((Module_type*)__type)->fp_CreateExportsObject)(this, c, &__retval), __retval; }
+    uObject* CreateExportsObject(::g::Fuse::Scripting::Context* c) { uObject* __retval; return (((Module_type*)__type)- fp_CreateExportsObject)(this, c, &__retval), __retval; }
     void Dispose();
-    void Evaluate(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result) { (((Module_type*)__type)->fp_Evaluate)(this, c, result); }
+    void Evaluate(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result) { (((Module_type*)__type)- fp_Evaluate)(this, c, result); }
     ::g::Fuse::Scripting::ModuleResult* Evaluate1(::g::Fuse::Scripting::Context* c, uString* id);
     uObject* EvaluateExports(::g::Fuse::Scripting::Context* c, uString* id);
-    ::g::Uno::UX::FileSource* GetFile() { ::g::Uno::UX::FileSource* __retval; return (((Module_type*)__type)->fp_GetFile)(this, &__retval), __retval; }
+    ::g::Uno::UX::FileSource* GetFile() { ::g::Uno::UX::FileSource* __retval; return (((Module_type*)__type)- fp_GetFile)(this, &__retval), __retval; }
     bool IsEvaluated();
     void MarkEvaluated();
     static uObject* CreateExportsObject(Module* __this, ::g::Fuse::Scripting::Context* c) { uObject* __retval; return Module__CreateExportsObject_fn(__this, c, &__retval), __retval; }

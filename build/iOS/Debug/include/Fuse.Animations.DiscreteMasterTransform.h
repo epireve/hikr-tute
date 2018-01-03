@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixerMaster.h>
-#include <Fuse.Animations.MasterTransform.h>
+#include <Fuse.Animations.IMixerMaster.h 
+#include <Fuse.Animations.MasterTransform.h 
 namespace g{namespace Fuse{namespace Animations{struct DiscreteMasterTransform;}}}
 namespace g{namespace Fuse{namespace Animations{struct MixerBase;}}}
 namespace g{namespace Fuse{struct Visual;}}

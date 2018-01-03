@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct LoadingClosure;}}}}
 namespace g{namespace Uno{namespace Threading{struct Future1;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -30,10 +30,10 @@ void LoadingClosure__UnoIDisposableDispose_fn(LoadingClosure* __this);
 
 struct LoadingClosure : uObject
 {
-    uStrong< ::g::Uno::Threading::Future1*> _loaderFuture;
-    uStrong< ::g::Uno::Threading::Future1*> _thenFuture;
-    uStrong<uDelegate*> _loaded;
-    uStrong<uDelegate*> _error;
+    uStrong< ::g::Uno::Threading::Future1*  _loaderFuture;
+    uStrong< ::g::Uno::Threading::Future1*  _thenFuture;
+    uStrong<uDelegate*  _loaded;
+    uStrong<uDelegate*  _error;
     bool _isDisposed;
 
     void ctor_(::g::Uno::Threading::Future1* loadedFuture, uDelegate* loaded, uDelegate* error);

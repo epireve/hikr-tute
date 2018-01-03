@@ -1,30 +1,30 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/ImageView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.ImageHandle.h>
-#include <Fuse.Controls.Native.ImageLoader.h>
-#include <Fuse.Controls.Native.iOS.ImageView.h>
-#include <Fuse.Controls.Native.iOS.View.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Fuse.Resources.FileImageSource.h>
-#include <Fuse.Resources.HttpImageSource.h>
-#include <Fuse.Resources.ImageSource.h>
-#include <Fuse.Resources.MultiDensityImageSource.h>
-#include <ObjC.Object.h>
-#include <Uno.Action.h>
-#include <Uno.Action-1.h>
-#include <Uno.Bool.h>
-#include <Uno.Exception.h>
-#include <Uno.Float.h>
-#include <Uno.Float3.h>
-#include <Uno.Matrix.h>
-#include <Uno.Object.h>
-#include <Uno.String.h>
-#include <Uno.Threading.Future-1.h>
-#include <Uno.UX.FileSource.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Float2.h>
-#include <Uno.Float4x4.h>
+#include <Fuse.Controls.Native.ImageHandle.h 
+#include <Fuse.Controls.Native.ImageLoader.h 
+#include <Fuse.Controls.Native.iOS.ImageView.h 
+#include <Fuse.Controls.Native.iOS.View.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Fuse.Resources.FileImageSource.h 
+#include <Fuse.Resources.HttpImageSource.h 
+#include <Fuse.Resources.ImageSource.h 
+#include <Fuse.Resources.MultiDensityImageSource.h 
+#include <ObjC.Object.h 
+#include <Uno.Action.h 
+#include <Uno.Action-1.h 
+#include <Uno.Bool.h 
+#include <Uno.Exception.h 
+#include <Uno.Float.h 
+#include <Uno.Float3.h 
+#include <Uno.Matrix.h 
+#include <Uno.Object.h 
+#include <Uno.String.h 
+#include <Uno.Threading.Future-1.h 
+#include <Uno.UX.FileSource.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Float2.h 
+#include <Uno.Float4x4.h 
 static uString* STRINGS[1];
 static uType* TYPES[8];
 
@@ -41,19 +41,19 @@ static void ImageView_build(uType* type)
     ::STRINGS[0] = uString::Const(" not supported in native context");
     ::TYPES[0] = ::g::Fuse::Resources::MultiDensityImageSource_typeof();
     ::TYPES[1] = ::g::Uno::Action_typeof();
-    ::TYPES[2] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Controls::Native::ImageHandle_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[2] = ::g::Uno::Action1_typeof()- MakeType(::g::Fuse::Controls::Native::ImageHandle_typeof(), NULL);
+    ::TYPES[3] = ::g::Uno::Action1_typeof()- MakeType(::g::Uno::Exception_typeof(), NULL);
     ::TYPES[4] = ::g::Fuse::Resources::FileImageSource_typeof();
     ::TYPES[5] = ::g::Fuse::Resources::HttpImageSource_typeof();
     ::TYPES[6] = ::g::Uno::IDisposable_typeof();
     ::TYPES[7] = ::g::ObjC::Object_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Controls::Native::ImageLoader_typeof());
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::TYPES[6/*Uno.IDisposable*/], offsetof(ImageView_type, interface0),
         ::g::Fuse::Controls::Native::IView_typeof(), offsetof(ImageView_type, interface1),
         ::g::Fuse::Controls::Native::IImageView_typeof(), offsetof(ImageView_type, interface2));
-    type->SetFields(10,
+    type- SetFields(10,
         ::g::Fuse::Resources::ImageSource_typeof(), offsetof(ImageView, _imageSource), 0,
         ::g::Uno::Float4_typeof(), offsetof(ImageView, _tintColor), 0,
         ::TYPES[7/*ObjC.Object*/], offsetof(ImageView, _uiImageView), 0,
@@ -63,7 +63,7 @@ static void ImageView_build(uType* type)
 
 ImageView_type* ImageView_typeof()
 {
-    static uSStrong<ImageView_type*> type;
+    static uSStrong<ImageView_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -74,20 +74,20 @@ ImageView_type* ImageView_typeof()
     options.ObjectSize = sizeof(ImageView);
     options.TypeSize = sizeof(ImageView_type);
     type = (ImageView_type*)uClassType::New("Fuse.Controls.Native.iOS.ImageView", options);
-    type->fp_build_ = ImageView_build;
-    type->fp_ctor_ = (void*)ImageView__New3_fn;
-    type->fp_Dispose = (void(*)(::g::Fuse::Controls::Native::ViewHandle*))ImageView__Dispose_fn;
-    type->interface2.fp_UpdateImageTransform = (void(*)(uObject*, float*, ::g::Uno::Float2*, ::g::Uno::Float2*, ::g::Uno::Float2*))ImageView__UpdateImageTransform_fn;
-    type->interface2.fp_set_ImageSource = (void(*)(uObject*, ::g::Fuse::Resources::ImageSource*))ImageView__set_ImageSource_fn;
-    type->interface2.fp_set_TintColor = (void(*)(uObject*, ::g::Uno::Float4*))ImageView__set_TintColor_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))ImageView__Dispose_fn;
+    type- fp_build_ = ImageView_build;
+    type- fp_ctor_ = (void*)ImageView__New3_fn;
+    type- fp_Dispose = (void(*)(::g::Fuse::Controls::Native::ViewHandle*))ImageView__Dispose_fn;
+    type- interface2.fp_UpdateImageTransform = (void(*)(uObject*, float*, ::g::Uno::Float2*, ::g::Uno::Float2*, ::g::Uno::Float2*))ImageView__UpdateImageTransform_fn;
+    type- interface2.fp_set_ImageSource = (void(*)(uObject*, ::g::Fuse::Resources::ImageSource*))ImageView__set_ImageSource_fn;
+    type- interface2.fp_set_TintColor = (void(*)(uObject*, ::g::Uno::Float4*))ImageView__set_TintColor_fn;
+    type- interface0.fp_Dispose = (void(*)(uObject*))ImageView__Dispose_fn;
     return type;
 }
 
 // public ImageView() :77
 void ImageView__ctor_5_fn(ImageView* __this)
 {
-    __this->ctor_5();
+    __this- ctor_5();
 }
 
 // private static void ClearImage(ObjC.Object imageViewHandle) :253
@@ -111,10 +111,10 @@ void ImageView__CreateImageView_fn(::g::ObjC::Object* container, ::g::ObjC::Obje
 // public override sealed void Dispose() :90
 void ImageView__Dispose_fn(ImageView* __this)
 {
-    __this->ImageHandle(NULL);
+    __this- ImageHandle(NULL);
 
-    if ((__this->ImageSource() != NULL) && uIs((::g::Fuse::Resources::ImageSource*)__this->ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))
-        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource*>(__this->ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))->remove_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, __this));
+    if ((__this- ImageSource() != NULL) && uIs((::g::Fuse::Resources::ImageSource*)__this- ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))
+        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource* (__this- ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))- remove_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, __this));
 
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
@@ -128,7 +128,7 @@ void ImageView__GetImageHeight_fn(::g::ObjC::Object* handle, float* __retval)
 // private float2 GetImageSize() :199
 void ImageView__GetImageSize_fn(ImageView* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->GetImageSize();
+    *__retval = __this- GetImageSize();
 }
 
 // private static float GetImageWidth(ObjC.Object handle) :207
@@ -140,19 +140,19 @@ void ImageView__GetImageWidth_fn(::g::ObjC::Object* handle, float* __retval)
 // private void set_ImageHandle(Fuse.Controls.Native.ImageHandle value) :104
 void ImageView__set_ImageHandle_fn(ImageView* __this, ::g::Fuse::Controls::Native::ImageHandle* value)
 {
-    __this->ImageHandle(value);
+    __this- ImageHandle(value);
 }
 
 // private Fuse.Resources.ImageSource get_ImageSource() :43
 void ImageView__get_ImageSource_fn(ImageView* __this, ::g::Fuse::Resources::ImageSource** __retval)
 {
-    *__retval = __this->ImageSource();
+    *__retval = __this- ImageSource();
 }
 
 // public void set_ImageSource(Fuse.Resources.ImageSource value) :20
 void ImageView__set_ImageSource_fn(ImageView* __this, ::g::Fuse::Resources::ImageSource* value)
 {
-    __this->ImageSource(value);
+    __this- ImageSource(value);
 }
 
 // public ImageView New() :77
@@ -164,19 +164,19 @@ void ImageView__New3_fn(ImageView** __retval)
 // private void OnImageLoaded(Fuse.Controls.Native.ImageHandle handle) :133
 void ImageView__OnImageLoaded_fn(ImageView* __this, ::g::Fuse::Controls::Native::ImageHandle* handle)
 {
-    __this->OnImageLoaded(handle);
+    __this- OnImageLoaded(handle);
 }
 
 // private void OnImageLoadFailed(Uno.Exception e) :152
 void ImageView__OnImageLoadFailed_fn(ImageView* __this, ::g::Uno::Exception* e)
 {
-    __this->OnImageLoadFailed(e);
+    __this- OnImageLoadFailed(e);
 }
 
 // private void OnMultiDensityImageSourceActiveChanged() :49
 void ImageView__OnMultiDensityImageSourceActiveChanged_fn(ImageView* __this)
 {
-    __this->OnMultiDensityImageSourceActiveChanged();
+    __this- OnMultiDensityImageSourceActiveChanged();
 }
 
 // private static void SetAnchorPoint(ObjC.Object handle) :84
@@ -212,7 +212,7 @@ void ImageView__SetTransform3_fn(::g::ObjC::Object* handle, ::g::Uno::Float4x4* 
 // public void set_TintColor(float4 value) :60
 void ImageView__set_TintColor_fn(ImageView* __this, ::g::Uno::Float4* value)
 {
-    __this->TintColor(*value);
+    __this- TintColor(*value);
 }
 
 // private static ObjC.Object TintImage(ObjC.Object handle, float r, float g, float b, float a) :233
@@ -224,31 +224,31 @@ void ImageView__TintImage_fn(::g::ObjC::Object* handle, float* r, float* g, floa
 // private void UpdateImage() :67
 void ImageView__UpdateImage_fn(ImageView* __this)
 {
-    __this->UpdateImage();
+    __this- UpdateImage();
 }
 
 // private void UpdateImage(Fuse.Resources.FileImageSource fileImageSource) :123
 void ImageView__UpdateImage1_fn(ImageView* __this, ::g::Fuse::Resources::FileImageSource* fileImageSource)
 {
-    __this->UpdateImage1(fileImageSource);
+    __this- UpdateImage1(fileImageSource);
 }
 
 // private void UpdateImage(Fuse.Resources.HttpImageSource http) :128
 void ImageView__UpdateImage2_fn(ImageView* __this, ::g::Fuse::Resources::HttpImageSource* http)
 {
-    __this->UpdateImage2(http);
+    __this- UpdateImage2(http);
 }
 
 // private void UpdateImage(Fuse.Resources.MultiDensityImageSource multi) :138
 void ImageView__UpdateImage3_fn(ImageView* __this, ::g::Fuse::Resources::MultiDensityImageSource* multi)
 {
-    __this->UpdateImage3(multi);
+    __this- UpdateImage3(multi);
 }
 
 // public void UpdateImageTransform(float density, float2 origin, float2 scale, float2 drawSize) :157
 void ImageView__UpdateImageTransform_fn(ImageView* __this, float* density, ::g::Uno::Float2* origin, ::g::Uno::Float2* scale, ::g::Uno::Float2* drawSize)
 {
-    __this->UpdateImageTransform(*density, *origin, *scale, *drawSize);
+    __this- UpdateImageTransform(*density, *origin, *scale, *drawSize);
 }
 
 // public ImageView() [instance] :77
@@ -280,7 +280,7 @@ void ImageView::ImageHandle(::g::Fuse::Controls::Native::ImageHandle* value)
 
     if (_imageHandle != NULL)
     {
-        _uiImageHandle = uCast< ::g::ObjC::Object*>(uPtr(value)->Handle(), ::TYPES[7/*ObjC.Object*/]);
+        _uiImageHandle = uCast< ::g::ObjC::Object* (uPtr(value)- Handle(), ::TYPES[7/*ObjC.Object*/]);
         UpdateImage();
     }
 }
@@ -295,7 +295,7 @@ void ImageView::ImageHandle(::g::Fuse::Controls::Native::ImageHandle* value)
 void ImageView::ImageSource(::g::Fuse::Resources::ImageSource* value)
 {
     if (uIs((::g::Fuse::Resources::ImageSource*)ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))
-        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource*>(ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))->remove_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, this));
+        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource* (ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))- remove_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, this));
 
     _imageSource = value;
 
@@ -303,13 +303,13 @@ void ImageView::ImageSource(::g::Fuse::Resources::ImageSource* value)
         return;
 
     if (uIs(value, ::TYPES[4/*Fuse.Resources.FileImageSource*/]))
-        UpdateImage1(uCast< ::g::Fuse::Resources::FileImageSource*>(value, ::TYPES[4/*Fuse.Resources.FileImageSource*/]));
+        UpdateImage1(uCast< ::g::Fuse::Resources::FileImageSource* (value, ::TYPES[4/*Fuse.Resources.FileImageSource*/]));
     else if (uIs(value, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]))
-        UpdateImage2(uCast< ::g::Fuse::Resources::HttpImageSource*>(value, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]));
+        UpdateImage2(uCast< ::g::Fuse::Resources::HttpImageSource* (value, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]));
     else if (uIs(value, ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))
     {
-        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource*>(ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))->add_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, this));
-        UpdateImage3(uCast< ::g::Fuse::Resources::MultiDensityImageSource*>(value, ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]));
+        uPtr(uCast< ::g::Fuse::Resources::MultiDensityImageSource* (ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))- add_ActiveChanged(uDelegate::New(::TYPES[1/*Uno.Action*/], (void*)ImageView__OnMultiDensityImageSourceActiveChanged_fn, this));
+        UpdateImage3(uCast< ::g::Fuse::Resources::MultiDensityImageSource* (value, ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]));
     }
     else
         U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition(value, ::STRINGS[0/*" not suppor...*/])));
@@ -331,7 +331,7 @@ void ImageView::OnImageLoadFailed(::g::Uno::Exception* e)
 void ImageView::OnMultiDensityImageSourceActiveChanged()
 {
     if (uIs((::g::Fuse::Resources::ImageSource*)ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]))
-        UpdateImage3(uCast< ::g::Fuse::Resources::MultiDensityImageSource*>(ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]));
+        UpdateImage3(uCast< ::g::Fuse::Resources::MultiDensityImageSource* (ImageSource(), ::TYPES[0/*Fuse.Resources.MultiDensityImageSource*/]));
 }
 
 // public void set_TintColor(float4 value) [instance] :60
@@ -352,26 +352,26 @@ void ImageView::UpdateImage()
 // private void UpdateImage(Fuse.Resources.FileImageSource fileImageSource) [instance] :123
 void ImageView::UpdateImage1(::g::Fuse::Resources::FileImageSource* fileImageSource)
 {
-    ImageHandle(::g::Fuse::Controls::Native::ImageLoader::Load3(uPtr(fileImageSource)->File()));
+    ImageHandle(::g::Fuse::Controls::Native::ImageLoader::Load3(uPtr(fileImageSource)- File()));
 }
 
 // private void UpdateImage(Fuse.Resources.HttpImageSource http) [instance] :128
 void ImageView::UpdateImage2(::g::Fuse::Resources::HttpImageSource* http)
 {
-    uPtr(::g::Fuse::Controls::Native::ImageLoader::Load(http))->Then1(uDelegate::New(::TYPES[2/*Uno.Action<Fuse.Controls.Native.ImageHandle>*/], (void*)ImageView__OnImageLoaded_fn, this), uDelegate::New(::TYPES[3/*Uno.Action<Uno.Exception>*/], (void*)ImageView__OnImageLoadFailed_fn, this));
+    uPtr(::g::Fuse::Controls::Native::ImageLoader::Load(http))- Then1(uDelegate::New(::TYPES[2/*Uno.Action<Fuse.Controls.Native.ImageHandle */], (void*)ImageView__OnImageLoaded_fn, this), uDelegate::New(::TYPES[3/*Uno.Action<Uno.Exception */], (void*)ImageView__OnImageLoadFailed_fn, this));
 }
 
 // private void UpdateImage(Fuse.Resources.MultiDensityImageSource multi) [instance] :138
 void ImageView::UpdateImage3(::g::Fuse::Resources::MultiDensityImageSource* multi)
 {
-    ::g::Fuse::Resources::ImageSource* active = uPtr(multi)->Active();
+    ::g::Fuse::Resources::ImageSource* active = uPtr(multi)- Active();
 
     if (active != NULL)
     {
         if (uIs(active, ::TYPES[4/*Fuse.Resources.FileImageSource*/]))
-            UpdateImage1(uCast< ::g::Fuse::Resources::FileImageSource*>(active, ::TYPES[4/*Fuse.Resources.FileImageSource*/]));
+            UpdateImage1(uCast< ::g::Fuse::Resources::FileImageSource* (active, ::TYPES[4/*Fuse.Resources.FileImageSource*/]));
         else if (uIs(active, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]))
-            UpdateImage2(uCast< ::g::Fuse::Resources::HttpImageSource*>(active, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]));
+            UpdateImage2(uCast< ::g::Fuse::Resources::HttpImageSource* (active, ::TYPES[5/*Fuse.Resources.HttpImageSource*/]));
         else
             U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition(active, ::STRINGS[0/*" not suppor...*/])));
     }
@@ -392,7 +392,7 @@ void ImageView::ClearImage(::g::ObjC::Object* imageViewHandle)
 {
     @autoreleasepool
     {
-        [] (::id imageViewHandle) -> void
+        [] (::id imageViewHandle) -  void
         {
             UIImageView* imageView = (UIImageView*)imageViewHandle;
             [imageView setImage:nil];
@@ -407,7 +407,7 @@ void ImageView::ClearImage(::g::ObjC::Object* imageViewHandle)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             UIControl* uicontrol = [[UIControl alloc] init];
             [uicontrol setMultipleTouchEnabled:true];
@@ -426,7 +426,7 @@ void ImageView::ClearImage(::g::ObjC::Object* imageViewHandle)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::id container) -> ::id
+        return ::g::ObjC::Object::Create([] (::id container) -  ::id
         {
             UIImageView* imageView = [[UIImageView alloc] init];
             [container addSubview:imageView];
@@ -442,7 +442,7 @@ float ImageView::GetImageHeight(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> float
+        return [] (::id handle) -  float
         {
             UIImageView* imageView = (UIImageView*)handle;
             return (imageView.image)
@@ -459,7 +459,7 @@ float ImageView::GetImageWidth(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> float
+        return [] (::id handle) -  float
         {
             UIImageView* imageView = (UIImageView*)handle;
             return (imageView.image)
@@ -475,7 +475,7 @@ float ImageView::GetImageWidth(::g::ObjC::Object* handle)
 ImageView* ImageView::New3()
 {
     ImageView* obj1 = (ImageView*)uNew(ImageView_typeof());
-    obj1->ctor_5();
+    obj1- ctor_5();
     return obj1;
 }
 
@@ -484,7 +484,7 @@ void ImageView::SetAnchorPoint(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             ::UIView* view = (::UIView*)handle;
             [[view layer] setAnchorPoint: { 0.0f, 0.0f }];
@@ -499,7 +499,7 @@ void ImageView::SetBounds(::g::ObjC::Object* handle, float x, float y, float w, 
 {
     @autoreleasepool
     {
-        [] (::id handle, float x, float y, float w, float h) -> void
+        [] (::id handle, float x, float y, float w, float h) -  void
         {
             ::UIView* view = (::UIView*)handle;
             [view setBounds: { { x, y }, { w, h } }];
@@ -514,7 +514,7 @@ void ImageView::SetImage(::g::ObjC::Object* imageViewHandle, ::g::ObjC::Object* 
 {
     @autoreleasepool
     {
-        [] (::id imageViewHandle, ::id uiImageHandle) -> void
+        [] (::id imageViewHandle, ::id uiImageHandle) -  void
         {
             UIImageView* imageView = (UIImageView*)imageViewHandle;
             UIImage* image = (UIImage*)uiImageHandle;
@@ -530,7 +530,7 @@ void ImageView::SetTransform2(::g::ObjC::Object* handle, float m11, float m12, f
 {
     @autoreleasepool
     {
-        [] (::id handle, float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) -> void
+        [] (::id handle, float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) -  void
         {
             CATransform3D transform = {
             	m11, m12, m13, m14,
@@ -557,7 +557,7 @@ void ImageView::SetTransform3(::g::ObjC::Object* handle, ::g::Uno::Float4x4 t)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::id handle, float r, float g, float b, float a) -> ::id
+        return ::g::ObjC::Object::Create([] (::id handle, float r, float g, float b, float a) -  ::id
         {
             UIImage* image = (UIImage*)handle;
             UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);

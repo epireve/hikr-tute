@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct TranslationModes__OffsetMode__Subscriptions;}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -19,9 +19,9 @@ void TranslationModes__OffsetMode__Subscriptions__New1_fn(TranslationModes__Offs
 
 struct TranslationModes__OffsetMode__Subscriptions : uObject
 {
-    uStrong< ::g::Fuse::Visual*> Relative;
-    uStrong< ::g::Fuse::Visual*> TargetParent;
-    uStrong< ::g::Fuse::Elements::Element*> Target;
+    uStrong< ::g::Fuse::Visual*  Relative;
+    uStrong< ::g::Fuse::Visual*  TargetParent;
+    uStrong< ::g::Fuse::Elements::Element*  Target;
 
     void ctor_();
     static TranslationModes__OffsetMode__Subscriptions* New1();

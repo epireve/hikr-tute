@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Elements{struct TransformOrigins;}}}
 
 namespace g{
@@ -15,16 +15,16 @@ uClassType* TransformOrigins_typeof();
 
 struct TransformOrigins : uObject
 {
-    static uSStrong<uObject*> TopLeft_;
-    static uSStrong<uObject*>& TopLeft() { return TopLeft_; }
-    static uSStrong<uObject*> Center_;
-    static uSStrong<uObject*>& Center() { return Center_; }
-    static uSStrong<uObject*> Anchor_;
-    static uSStrong<uObject*>& Anchor() { return Anchor_; }
-    static uSStrong<uObject*> HorizontalBoxCenter_;
-    static uSStrong<uObject*>& HorizontalBoxCenter() { return HorizontalBoxCenter_; }
-    static uSStrong<uObject*> VerticalBoxCenter_;
-    static uSStrong<uObject*>& VerticalBoxCenter() { return VerticalBoxCenter_; }
+    static uSStrong<uObject*  TopLeft_;
+    static uSStrong<uObject* & TopLeft() { return TopLeft_; }
+    static uSStrong<uObject*  Center_;
+    static uSStrong<uObject* & Center() { return Center_; }
+    static uSStrong<uObject*  Anchor_;
+    static uSStrong<uObject* & Anchor() { return Anchor_; }
+    static uSStrong<uObject*  HorizontalBoxCenter_;
+    static uSStrong<uObject* & HorizontalBoxCenter() { return HorizontalBoxCenter_; }
+    static uSStrong<uObject*  VerticalBoxCenter_;
+    static uSStrong<uObject* & VerticalBoxCenter() { return VerticalBoxCenter_; }
 };
 // }
 

@@ -66,7 +66,7 @@ function getNearbyEventNames(target, type) {
 		}).sort(function(x, y) { return x.dist - y.dist; })
 		: [];
 
-	if (sortedNames.length > 0 && sortedNames[0].dist < Number.MAX_VALUE) {
+	if (sortedNames.length   0 && sortedNames[0].dist < Number.MAX_VALUE) {
 		var lowestDist = sortedNames[0].dist;
 		var result = [];
 		for (var i = 0; i < sortedNames.length && sortedNames[i].dist <= lowestDist + 2; ++i) {
@@ -83,11 +83,11 @@ function getEvent(target, type) {
 		var err = 'There is no event of type "' + type + '"';
 		var nearby = getNearbyEventNames(target, type)
 			.map(function(x, i, arr) {
-				return i === arr.length - 1 && arr.length > 1
+				return i === arr.length - 1 && arr.length   1
 					? 'or "' + x + '"'
 					: '"' + x + '"';
 			}).join(', ');
-		if (nearby.length > 0) {
+		if (nearby.length   0) {
 			err += '. Perhaps you meant ' + nearby + '.';
 		}
 		throw new Error(err);
@@ -162,7 +162,7 @@ if (!Array.prototype.findIndex) {
 				throw new TypeError('predicate must be a function');
 			}
 			var list = Object(this);
-			var length = list.length >>> 0;
+			var length = list.length     0;
 			var thisArg = arguments[1];
 			var value;
 
@@ -186,7 +186,7 @@ EventEmitter.prototype.removeListener = function removeListener(type, listener) 
 	var index = list.findIndex(function(x) {
 		return x === listener || x.listener && x.listener === listener;
 	});
-	if (index >= 0) {
+	if (index  = 0) {
 		removeListenerAt(this, type, list, index);
 	}
 	return this;
@@ -205,7 +205,7 @@ EventEmitter.prototype.removeAllListeners = function(type) {
 	// Remove all listeners listening to `type`
 	else {
 		var list = getEvent(this, type).listeners;
-		while (list.length > 0) {
+		while (list.length   0) {
 			removeListenerAt(this, type, list, list.length - 1);
 		}
 	}
@@ -213,7 +213,7 @@ EventEmitter.prototype.removeAllListeners = function(type) {
 
 EventEmitter.prototype.emit = function emit(type) {
 	var list = getEvent(this, type).listeners;
-	if (list.length > 0) {
+	if (list.length   0) {
 		var args = Array.prototype.slice.call(arguments, 1);
 		var self = this;
 		list.slice().forEach(function(f) {

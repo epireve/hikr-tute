@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IParentObserver.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.ISeekableNavigation.h>
-#include <Fuse.Navigation.VisualNavigation.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IParentObserver.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Navigation.ISeekableNavigation.h 
+#include <Fuse.Navigation.VisualNavigation.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Motion{struct MotionConfig;}}}
 namespace g{namespace Fuse{namespace Navigation{struct DynamicLinearNavigation;}}}
 namespace g{namespace Fuse{namespace Navigation{struct EndSeekArgs;}}}
@@ -79,12 +79,12 @@ void DynamicLinearNavigation__UpdateDesired_fn(DynamicLinearNavigation* __this, 
 
 struct DynamicLinearNavigation : ::g::Fuse::Navigation::VisualNavigation
 {
-    uStrong< ::g::Fuse::Motion::MotionConfig*> _motion;
-    uStrong<uObject*> _region;
+    uStrong< ::g::Fuse::Motion::MotionConfig*  _motion;
+    uStrong<uObject*  _region;
     int _desired;
-    uStrong< ::g::Fuse::Visual*> _desiredActive;
+    uStrong< ::g::Fuse::Visual*  _desiredActive;
     int _desiredIndex;
-    uStrong< ::g::Fuse::Visual*> _listenComplete;
+    uStrong< ::g::Fuse::Visual*  _listenComplete;
     bool _hasUpdated;
     float _progress;
     float _prevProgress;
@@ -93,7 +93,7 @@ struct DynamicLinearNavigation : ::g::Fuse::Navigation::VisualNavigation
     static ::g::Uno::UX::Selector DesiredActiveIndexName_;
     static ::g::Uno::UX::Selector& DesiredActiveIndexName() { return DesiredActiveIndexName_; }
     bool _queueClearForwardHistory;
-    uStrong< ::g::Fuse::Visual*> _active;
+    uStrong< ::g::Fuse::Visual*  _active;
     float _seekBase;
 
     void AnimationDone();

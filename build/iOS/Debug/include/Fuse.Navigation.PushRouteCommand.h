@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.RouteModificationCommand.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Navigation.RouteModificationCommand.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Navigation{struct PushRouteCommand;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterRequest;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}

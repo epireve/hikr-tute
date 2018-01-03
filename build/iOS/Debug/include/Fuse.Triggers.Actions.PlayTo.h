@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.PlaybackAction.h>
+#include <Fuse.Triggers.Actions.PlaybackAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct PlayTo;}}}}
 namespace g{namespace Fuse{struct Node;}}
 

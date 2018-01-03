@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct FastProperty1Link;}}
 
 namespace g{
@@ -16,7 +16,7 @@ void FastProperty1Link__ctor__fn(FastProperty1Link* __this, int* p);
 struct FastProperty1Link : uObject
 {
     int Property;
-    uStrong<FastProperty1Link*> Next;
+    uStrong<FastProperty1Link*  Next;
 
     void ctor_(int p);
 };

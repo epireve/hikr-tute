@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.DynamicBrush.h>
-#include <Fuse.Drawing.ISolidColor.h>
-#include <Uno.Float4.h>
+#include <Fuse.Drawing.DynamicBrush.h 
+#include <Fuse.Drawing.ISolidColor.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{namespace Drawing{struct SolidColor;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 

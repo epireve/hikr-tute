@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct Capture;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -27,12 +27,12 @@ void Capture__set_Visual_fn(Capture* __this, ::g::Fuse::Visual* value);
 struct Capture : uObject
 {
     int VisualDepth;
-    uStrong<uDelegate*> LostCallback;
+    uStrong<uDelegate*  LostCallback;
     int Type;
     bool Deleted;
-    uStrong< ::g::Uno::Collections::List*> PointIndex;
-    uStrong<uObject*> _Identity;
-    uStrong< ::g::Fuse::Visual*> _Visual;
+    uStrong< ::g::Uno::Collections::List*  PointIndex;
+    uStrong<uObject*  _Identity;
+    uStrong< ::g::Fuse::Visual*  _Visual;
 
     void ctor_(::g::Fuse::Visual* n, uObject* identity);
     bool AcceptsPoint(int index);

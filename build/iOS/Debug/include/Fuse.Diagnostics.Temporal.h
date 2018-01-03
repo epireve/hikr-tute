@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Diagnostic;}}
 namespace g{namespace Fuse{struct Diagnostics__Temporal;}}
 
@@ -24,7 +24,7 @@ void Diagnostics__Temporal__New1_fn(::g::Fuse::Diagnostic* diag, Diagnostics__Te
 
 struct Diagnostics__Temporal : uObject
 {
-    uStrong< ::g::Fuse::Diagnostic*> _diag;
+    uStrong< ::g::Fuse::Diagnostic*  _diag;
 
     void ctor_(::g::Fuse::Diagnostic* diag);
     void Dispose();

@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Platform.iOS.uCGPoint.h>
-#include <Uno.Platform.iOS.uCGRect.h>
-#include <Uno.Platform.iOS.uCGSize.h>
+#include <Uno.Platform.iOS.uCGPoint.h 
+#include <Uno.Platform.iOS.uCGRect.h 
+#include <Uno.Platform.iOS.uCGSize.h 
 
 namespace g{
 namespace Uno{
@@ -21,7 +21,7 @@ static void uCGPoint1_build(uType* type)
 
 uStructType* uCGPoint1_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -29,7 +29,7 @@ uStructType* uCGPoint1_typeof()
     options.ValueSize = sizeof(CGPoint);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Platform.iOS.uCGPoint", options);
-    type->fp_build_ = uCGPoint1_build;
+    type- fp_build_ = uCGPoint1_build;
     return type;
 }
 // }
@@ -45,7 +45,7 @@ static void uCGRect1_build(uType* type)
 
 uStructType* uCGRect1_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -53,7 +53,7 @@ uStructType* uCGRect1_typeof()
     options.ValueSize = sizeof(CGRect);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Platform.iOS.uCGRect", options);
-    type->fp_build_ = uCGRect1_build;
+    type- fp_build_ = uCGRect1_build;
     return type;
 }
 
@@ -81,7 +81,7 @@ static void uCGSize1_build(uType* type)
 
 uStructType* uCGSize1_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -89,7 +89,7 @@ uStructType* uCGSize1_typeof()
     options.ValueSize = sizeof(CGSize);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Platform.iOS.uCGSize", options);
-    type->fp_build_ = uCGSize1_build;
+    type- fp_build_ = uCGSize1_build;
     return type;
 }
 // }

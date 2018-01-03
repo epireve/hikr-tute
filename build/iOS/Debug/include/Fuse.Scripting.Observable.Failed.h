@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Observable.Operation.h>
+#include <Fuse.Scripting.Observable.Operation.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Failed;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
@@ -20,7 +20,7 @@ void Observable__Failed__OnPerform_fn(Observable__Failed* __this, uObject* sub);
 
 struct Observable__Failed : ::g::Fuse::Scripting::Observable__Operation
 {
-    uStrong<uString*> _message;
+    uStrong<uString*  _message;
 
     void ctor_1(::g::Fuse::Scripting::Observable* obs, uString* message);
     static Observable__Failed* New1(::g::Fuse::Scripting::Observable* obs, uString* message);

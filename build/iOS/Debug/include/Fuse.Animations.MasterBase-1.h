@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixerMaster.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IMixerMaster.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct MasterBase;}}}
 namespace g{namespace Fuse{namespace Animations{struct MasterBase__GFWResult;}}}
 namespace g{namespace Fuse{namespace Animations{struct MixerBase;}}}
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal abstract class MasterBase<T> :95
+// internal abstract class MasterBase<T  :95
 // {
 struct MasterBase_type : uType
 {
@@ -35,18 +35,18 @@ void MasterBase__Unregister_fn(MasterBase* __this, ::g::Fuse::Animations::MixerH
 
 struct MasterBase : uObject
 {
-    uStrong< ::g::Fuse::Animations::MixerBase*> _mixerBase;
+    uStrong< ::g::Fuse::Animations::MixerBase*  _mixerBase;
     bool _inactive;
-    uStrong< ::g::Uno::Collections::List*> Handles;
+    uStrong< ::g::Uno::Collections::List*  Handles;
     bool DirtyValue;
 
     void ctor_(::g::Fuse::Animations::MixerBase* mixerBase);
     void Complete();
     MasterBase__GFWResult GetFullWeight();
     void MarkDirty();
-    void OnActive() { (((MasterBase_type*)__type)->fp_OnActive)(this); }
-    void OnComplete() { (((MasterBase_type*)__type)->fp_OnComplete)(this); }
-    void OnInactive() { (((MasterBase_type*)__type)->fp_OnInactive)(this); }
+    void OnActive() { (((MasterBase_type*)__type)- fp_OnActive)(this); }
+    void OnComplete() { (((MasterBase_type*)__type)- fp_OnComplete)(this); }
+    void OnInactive() { (((MasterBase_type*)__type)- fp_OnInactive)(this); }
     void Register(::g::Fuse::Animations::MixerHandle* handle);
     void Unregister(::g::Fuse::Animations::MixerHandle* handle);
     static void OnActive(MasterBase* __this) { MasterBase__OnActive_fn(__this); }

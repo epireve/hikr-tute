@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct Diagnostic;}}
 namespace g{namespace Fuse{struct Diagnostics;}}
 namespace g{namespace Uno{struct Exception;}}
@@ -34,10 +34,10 @@ void Diagnostics__UserWarning_fn(uString* msg, uObject* obj, uString* filePath, 
 
 struct Diagnostics : uObject
 {
-    static uSStrong<uDelegate*> DiagnosticDismissed1_;
-    static uSStrong<uDelegate*>& DiagnosticDismissed1() { return DiagnosticDismissed1_; }
-    static uSStrong<uDelegate*> DiagnosticReported1_;
-    static uSStrong<uDelegate*>& DiagnosticReported1() { return DiagnosticReported1_; }
+    static uSStrong<uDelegate*  DiagnosticDismissed1_;
+    static uSStrong<uDelegate* & DiagnosticDismissed1() { return DiagnosticDismissed1_; }
+    static uSStrong<uDelegate*  DiagnosticReported1_;
+    static uSStrong<uDelegate* & DiagnosticReported1() { return DiagnosticReported1_; }
 
     static void Deprecated(uString* msg, uObject* obj, uString* filePath, int lineNumber, uString* memberName);
     static void Dismiss(::g::Fuse::Diagnostic* d);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.FileSource.h>
+#include <Uno.UX.FileSource.h 
 namespace g{namespace Fuse{namespace Resources{struct SystemFileSource;}}}
 namespace g{namespace Uno{namespace IO{struct Stream;}}}
 

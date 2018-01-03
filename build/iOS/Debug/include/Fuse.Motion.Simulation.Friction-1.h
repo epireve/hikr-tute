@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct Friction;}}}}
 
@@ -13,7 +13,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class Friction<T> :6
+// internal sealed class Friction<T  :6
 // {
 struct Friction_type : uType
 {
@@ -45,13 +45,13 @@ void Friction__set_Velocity_fn(Friction* __this, void* value);
 
 struct Friction : uObject
 {
-    uStrong< ::g::Fuse::Internal::Blender*> _blender;
+    uStrong< ::g::Fuse::Internal::Blender*  _blender;
     float _speedDropout;
     float _kineticDeceleration;
     float _lowFluidDeceleration;
     float _highFluidDeceleration;
-    uTField _velocity() { return __type->Field(this, 5); }
-    uTField _position() { return __type->Field(this, 6); }
+    uTField _velocity() { return __type- Field(this, 5); }
+    uTField _position() { return __type- Field(this, 6); }
     bool _isStatic;
 
     void ctor_();
@@ -62,17 +62,17 @@ struct Friction : uObject
     void KineticDeceleration(float value);
     float LowFluidDeceleration();
     void LowFluidDeceleration(float value);
-    template<class T>
+    template<class T 
     T Position() { T __retval; return Friction__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { Friction__set_Position_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Position(T value) { Friction__set_Position_fn(this, uConstrain(__type- T(0), value)); }
     float SpeedDropout();
     void SpeedDropout(float value);
     void Update(double elapsed);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return Friction__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { Friction__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { Friction__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     static Friction* CreateNormalized(uType* __type);
     static Friction* CreatePoints(uType* __type);
     static Friction* CreateRadians(uType* __type);

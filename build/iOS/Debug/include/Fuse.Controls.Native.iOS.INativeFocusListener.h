@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -18,8 +18,8 @@ struct INativeFocusListener
 {
     void(*fp_FocusGained)(uObject*);
     void(*fp_FocusLost)(uObject*);
-    static void FocusGained(const uInterface& __this) { __this.VTable<INativeFocusListener>()->fp_FocusGained(__this); }
-    static void FocusLost(const uInterface& __this) { __this.VTable<INativeFocusListener>()->fp_FocusLost(__this); }
+    static void FocusGained(const uInterface& __this) { __this.VTable<INativeFocusListener ()- fp_FocusGained(__this); }
+    static void FocusLost(const uInterface& __this) { __this.VTable<INativeFocusListener ()- fp_FocusLost(__this); }
 };
 // }
 

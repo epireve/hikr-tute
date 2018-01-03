@@ -2,19 +2,19 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.IPlayback.h>
-#include <Fuse.Triggers.IProgress.h>
-#include <Fuse.Triggers.IPulseTrigger.h>
-#include <Fuse.Triggers.Trigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.IPlayback.h 
+#include <Fuse.Triggers.IProgress.h 
+#include <Fuse.Triggers.IPulseTrigger.h 
+#include <Fuse.Triggers.Trigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Timeline;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
@@ -72,10 +72,10 @@ struct Timeline : ::g::Fuse::Triggers::Trigger
     bool _hasTargetProgress;
     double _targetProgress;
     static ::g::Uno::UX::Selector _progressName_;
-    static ::g::Uno::UX::Selector& _progressName() { return Timeline_typeof()->Init(), _progressName_; }
+    static ::g::Uno::UX::Selector& _progressName() { return Timeline_typeof()- Init(), _progressName_; }
     int _lastPlay;
-    uStrong<uObject*> _progressOrigin;
-    uStrong<uDelegate*> ProgressChanged1;
+    uStrong<uObject*  _progressOrigin;
+    uStrong<uDelegate*  ProgressChanged1;
 
     void BypassOff();
     void Pause();

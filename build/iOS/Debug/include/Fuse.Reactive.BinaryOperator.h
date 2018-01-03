@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator;}}}
 
 namespace g{
@@ -25,8 +25,8 @@ void BinaryOperator__Subscribe_fn(BinaryOperator* __this, uObject* context, uObj
 
 struct BinaryOperator : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _Left;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Right;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Left;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Right;
 
     uObject* Compute(uObject* left, uObject* right);
     bool IsLeftOptional();

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerModule__CallbackClosure;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
@@ -21,9 +21,9 @@ void TimerModule__CallbackClosure__New1_fn(::g::Fuse::Scripting::Context* contex
 
 struct TimerModule__CallbackClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Function*> _func;
-    uStrong<uArray*> _args;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::Function*  _func;
+    uStrong<uArray*  _args;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
 
     void ctor_(::g::Fuse::Scripting::Context* context, ::g::Fuse::Scripting::Function* func, uArray* args);
     void Callback();

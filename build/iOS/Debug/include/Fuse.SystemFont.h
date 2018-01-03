@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Font.h>
+#include <Fuse.Font.h 
 namespace g{namespace Fuse{struct SystemFont;}}
 
 namespace g{

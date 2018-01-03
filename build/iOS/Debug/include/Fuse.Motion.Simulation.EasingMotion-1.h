@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct Easing;}}}
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct EasingMotion;}}}}
@@ -15,7 +15,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class EasingMotion<T> :7
+// internal sealed class EasingMotion<T  :7
 // {
 struct EasingMotion_type : uType
 {
@@ -53,30 +53,30 @@ void EasingMotion__set_Velocity_fn(EasingMotion* __this, void* value);
 
 struct EasingMotion : uObject
 {
-    uStrong< ::g::Fuse::Internal::Blender*> _blender;
+    uStrong< ::g::Fuse::Internal::Blender*  _blender;
     bool _isDirty;
     bool _isStatic;
-    uStrong< ::g::Fuse::Animations::Easing*> _easing;
+    uStrong< ::g::Fuse::Animations::Easing*  _easing;
     double _progress;
     double _progressSpeed;
-    uTField _transitionPosition() { return __type->Field(this, 6); }
-    uTField _transitionVelocity() { return __type->Field(this, 7); }
+    uTField _transitionPosition() { return __type- Field(this, 6); }
+    uTField _transitionVelocity() { return __type- Field(this, 7); }
     double _transitionTime;
     double _transitionRemain;
     bool _isLocked;
-    uTField _position() { return __type->Field(this, 11); }
-    uTField _velocity() { return __type->Field(this, 12); }
-    uTField _destination() { return __type->Field(this, 13); }
-    uTField _source() { return __type->Field(this, 14); }
+    uTField _position() { return __type- Field(this, 11); }
+    uTField _velocity() { return __type- Field(this, 12); }
+    uTField _destination() { return __type- Field(this, 13); }
+    uTField _source() { return __type- Field(this, 14); }
     float _duration;
     float _durationExp;
     float _nominalDistance;
 
     void ctor_();
-    template<class T>
+    template<class T 
     T Destination() { T __retval; return EasingMotion__get_Destination_fn(this, &__retval), __retval; }
-    template<class T>
-    void Destination(T value) { EasingMotion__set_Destination_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Destination(T value) { EasingMotion__set_Destination_fn(this, uConstrain(__type- T(0), value)); }
     float Duration();
     void Duration(float value);
     float DurationExp();
@@ -86,19 +86,19 @@ struct EasingMotion : uObject
     bool IsStatic();
     float NominalDistance();
     void NominalDistance(float value);
-    template<class T>
+    template<class T 
     T Position() { T __retval; return EasingMotion__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { EasingMotion__set_Position_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T destination) { EasingMotion__Reset_fn(this, uConstrain(__type->T(0), destination)); }
+    template<class T 
+    void Position(T value) { EasingMotion__set_Position_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T destination) { EasingMotion__Reset_fn(this, uConstrain(__type- T(0), destination)); }
     void Start();
     void Update(double elapsed);
     void UpdateDestination(bool start);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return EasingMotion__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { EasingMotion__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { EasingMotion__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     static EasingMotion* CreateNormalized(uType* __type);
     static EasingMotion* CreatePoints(uType* __type);
     static EasingMotion* CreateRadians(uType* __type);

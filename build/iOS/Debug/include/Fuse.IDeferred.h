@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -14,7 +14,7 @@ uInterfaceType* IDeferred_typeof();
 struct IDeferred
 {
     void(*fp_Perform)(uObject*, bool*);
-    static bool Perform(const uInterface& __this) { bool __retval; return __this.VTable<IDeferred>()->fp_Perform(__this, &__retval), __retval; }
+    static bool Perform(const uInterface& __this) { bool __retval; return __this.VTable<IDeferred ()- fp_Perform(__this, &__retval), __retval; }
 };
 // }
 

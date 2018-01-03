@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixer.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IMixer.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct MasterBase;}}}
 namespace g{namespace Fuse{namespace Animations{struct MasterProperty;}}}
 namespace g{namespace Fuse{namespace Animations{struct MixerBase;}}}
@@ -34,12 +34,12 @@ void MixerBase__Unused_fn(MixerBase* __this, uObject* mb);
 
 struct MixerBase : uObject
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> Masters;
-    uStrong< ::g::Fuse::PropertyHandle*> _propHandle;
+    uStrong< ::g::Uno::Collections::Dictionary*  Masters;
+    uStrong< ::g::Fuse::PropertyHandle*  _propHandle;
 
     void ctor_();
-    ::g::Fuse::Animations::MasterProperty* CreateMaster(uType* __type, ::g::Uno::UX::Property1* property, MixerBase* mixerBase) { ::g::Fuse::Animations::MasterProperty* __retval; return (((MixerBase_type*)this->__type)->fp_CreateMaster)(this, __type, property, mixerBase, &__retval), __retval; }
-    ::g::Fuse::Animations::MasterBase* CreateMasterTransform(::g::Fuse::Visual* element, MixerBase* mixerBase) { ::g::Fuse::Animations::MasterBase* __retval; return (((MixerBase_type*)__type)->fp_CreateMasterTransform)(this, element, mixerBase, &__retval), __retval; }
+    ::g::Fuse::Animations::MasterProperty* CreateMaster(uType* __type, ::g::Uno::UX::Property1* property, MixerBase* mixerBase) { ::g::Fuse::Animations::MasterProperty* __retval; return (((MixerBase_type*)this- __type)- fp_CreateMaster)(this, __type, property, mixerBase, &__retval), __retval; }
+    ::g::Fuse::Animations::MasterBase* CreateMasterTransform(::g::Fuse::Visual* element, MixerBase* mixerBase) { ::g::Fuse::Animations::MasterBase* __retval; return (((MixerBase_type*)__type)- fp_CreateMasterTransform)(this, element, mixerBase, &__retval), __retval; }
     uObject* Register(uType* __type, ::g::Uno::UX::Property1* property, int mode);
     uObject* RegisterTransform(::g::Fuse::Visual* element, int mode, int priority);
     void Unused(uObject* mb);

@@ -1,20 +1,20 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/GraphicsView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Context.h>
-#include <Fuse.Controls.Native.iOS.GraphicsView.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
-#include <Fuse.Visual.h>
-#include <GLKit/GLKit.h>
-#include <iOS/Helpers.h>
-#include <ObjC.Object.h>
-#include <OpenGLES/EAGL.h>
-#include <UIKit/UIKit.h>
-#include <Uno.Bool.h>
-#include <Uno.Int.h>
-#include <uObjC.Foreign.h>
-#include <Uno.Int2.h>
+#include <Context.h 
+#include <Fuse.Controls.Native.iOS.GraphicsView.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h 
+#include <Fuse.Visual.h 
+#include <GLKit/GLKit.h 
+#include <iOS/Helpers.h 
+#include <ObjC.Object.h 
+#include <OpenGLES/EAGL.h 
+#include <UIKit/UIKit.h 
+#include <Uno.Bool.h 
+#include <Uno.Int.h 
+#include <uObjC.Foreign.h 
+#include <Uno.Int2.h 
 
 namespace g{
 namespace Fuse{
@@ -26,12 +26,12 @@ namespace iOS{
 // {
 static void GraphicsView_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(GraphicsView_type, interface0),
         ::g::Fuse::Controls::Native::IView_typeof(), offsetof(GraphicsView_type, interface1),
         ::g::Fuse::Controls::Native::IGraphicsView_typeof(), offsetof(GraphicsView_type, interface2),
         ::g::Fuse::Controls::Native::IViewHost_typeof(), offsetof(GraphicsView_type, interface3));
-    type->SetFields(10,
+    type- SetFields(10,
         ::g::Fuse::Visual_typeof(), offsetof(GraphicsView, _visual), 0,
         ::g::ObjC::Object_typeof(), offsetof(GraphicsView, _glkViewHandle), 0,
         ::g::ObjC::Object_typeof(), offsetof(GraphicsView, _hitSurface), 0);
@@ -39,7 +39,7 @@ static void GraphicsView_build(uType* type)
 
 GraphicsView_type* GraphicsView_typeof()
 {
-    static uSStrong<GraphicsView_type*> type;
+    static uSStrong<GraphicsView_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -49,21 +49,21 @@ GraphicsView_type* GraphicsView_typeof()
     options.ObjectSize = sizeof(GraphicsView);
     options.TypeSize = sizeof(GraphicsView_type);
     type = (GraphicsView_type*)uClassType::New("Fuse.Controls.Native.iOS.GraphicsView", options);
-    type->fp_build_ = GraphicsView_build;
-    type->fp_Dispose = (void(*)(::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__Dispose_fn;
-    type->fp_get_HitTestHandle = (void(*)(::g::Fuse::Controls::Native::ViewHandle*, ::g::ObjC::Object**))GraphicsView__get_HitTestHandle_fn;
-    type->interface3.fp_Insert = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__FuseControlsNativeIViewHostInsert_fn;
-    type->interface3.fp_Remove = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__FuseControlsNativeIViewHostRemove_fn;
-    type->interface2.fp_BeginDraw = (void(*)(uObject*, ::g::Uno::Int2*, bool*))GraphicsView__FuseControlsNativeIGraphicsViewBeginDraw_fn;
-    type->interface2.fp_EndDraw = (void(*)(uObject*))GraphicsView__FuseControlsNativeIGraphicsViewEndDraw_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))GraphicsView__Dispose_fn;
+    type- fp_build_ = GraphicsView_build;
+    type- fp_Dispose = (void(*)(::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__Dispose_fn;
+    type- fp_get_HitTestHandle = (void(*)(::g::Fuse::Controls::Native::ViewHandle*, ::g::ObjC::Object**))GraphicsView__get_HitTestHandle_fn;
+    type- interface3.fp_Insert = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__FuseControlsNativeIViewHostInsert_fn;
+    type- interface3.fp_Remove = (void(*)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*))GraphicsView__FuseControlsNativeIViewHostRemove_fn;
+    type- interface2.fp_BeginDraw = (void(*)(uObject*, ::g::Uno::Int2*, bool*))GraphicsView__FuseControlsNativeIGraphicsViewBeginDraw_fn;
+    type- interface2.fp_EndDraw = (void(*)(uObject*))GraphicsView__FuseControlsNativeIGraphicsViewEndDraw_fn;
+    type- interface0.fp_Dispose = (void(*)(uObject*))GraphicsView__Dispose_fn;
     return type;
 }
 
 // public GraphicsView(Fuse.Visual visual) :37
 void GraphicsView__ctor_4_fn(GraphicsView* __this, ::g::Fuse::Visual* visual)
 {
-    __this->ctor_4(visual);
+    __this- ctor_4(visual);
 }
 
 // private static bool BeginDraw(ObjC.Object handle, int x, int y) :90
@@ -99,10 +99,10 @@ void GraphicsView__DeleteDrawable_fn(::g::ObjC::Object* handle)
 // public override sealed void Dispose() :119
 void GraphicsView__Dispose_fn(GraphicsView* __this)
 {
-    __this->_visual = NULL;
-    GraphicsView::DeleteDrawable(__this->_glkViewHandle);
-    __this->_hitSurface = NULL;
-    __this->_glkViewHandle = NULL;
+    __this- _visual = NULL;
+    GraphicsView::DeleteDrawable(__this- _glkViewHandle);
+    __this- _hitSurface = NULL;
+    __this- _glkViewHandle = NULL;
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
@@ -116,31 +116,31 @@ void GraphicsView__EndDraw_fn(::g::ObjC::Object* handle)
 void GraphicsView__FuseControlsNativeIGraphicsViewBeginDraw_fn(GraphicsView* __this, ::g::Uno::Int2* size, bool* __retval)
 {
     ::g::Uno::Int2 size_ = *size;
-    return *__retval = GraphicsView::BeginDraw(__this->_glkViewHandle, size_.X, size_.Y), void();
+    return *__retval = GraphicsView::BeginDraw(__this- _glkViewHandle, size_.X, size_.Y), void();
 }
 
 // private void Fuse.Controls.Native.IGraphicsView.EndDraw() :87
 void GraphicsView__FuseControlsNativeIGraphicsViewEndDraw_fn(GraphicsView* __this)
 {
-    GraphicsView::EndDraw(__this->_glkViewHandle);
+    GraphicsView::EndDraw(__this- _glkViewHandle);
 }
 
 // private void Fuse.Controls.Native.IViewHost.Insert(Fuse.Controls.Native.ViewHandle child) :21
 void GraphicsView__FuseControlsNativeIViewHostInsert_fn(GraphicsView* __this, ::g::Fuse::Controls::Native::ViewHandle* child)
 {
-    ::g::Fuse::Controls::Native::ViewHandle::New1(__this->_hitSurface, 0)->InsertChild(child);
+    ::g::Fuse::Controls::Native::ViewHandle::New1(__this- _hitSurface, 0)- InsertChild(child);
 }
 
 // private void Fuse.Controls.Native.IViewHost.Remove(Fuse.Controls.Native.ViewHandle child) :26
 void GraphicsView__FuseControlsNativeIViewHostRemove_fn(GraphicsView* __this, ::g::Fuse::Controls::Native::ViewHandle* child)
 {
-    ::g::Fuse::Controls::Native::ViewHandle::New1(__this->_hitSurface, 0)->RemoveChild(child);
+    ::g::Fuse::Controls::Native::ViewHandle::New1(__this- _hitSurface, 0)- RemoveChild(child);
 }
 
 // public override sealed ObjC.Object get_HitTestHandle() :46
 void GraphicsView__get_HitTestHandle_fn(GraphicsView* __this, ::g::ObjC::Object** __retval)
 {
-    return *__retval = __this->_hitSurface, void();
+    return *__retval = __this- _hitSurface, void();
 }
 
 // public GraphicsView New(Fuse.Visual visual) :37
@@ -163,7 +163,7 @@ bool GraphicsView::BeginDraw(::g::ObjC::Object* handle, int x, int y)
 {
     @autoreleasepool
     {
-        return [] (::id handle, int x, int y) -> bool
+        return [] (::id handle, int x, int y) -  bool
         {
             if (x < 1 || y < 1)
             	return false;
@@ -194,7 +194,7 @@ bool GraphicsView::BeginDraw(::g::ObjC::Object* handle, int x, int y)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             UIView* view = [[UIView alloc] init];
             return view;
@@ -209,7 +209,7 @@ bool GraphicsView::BeginDraw(::g::ObjC::Object* handle, int x, int y)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::id container) -> ::id
+        return ::g::ObjC::Object::Create([] (::id container) -  ::id
         {
             UIView* c = (UIView*)container;
             GLKView* view = [[GLKView alloc] init];
@@ -232,7 +232,7 @@ bool GraphicsView::BeginDraw(::g::ObjC::Object* handle, int x, int y)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::id container) -> ::id
+        return ::g::ObjC::Object::Create([] (::id container) -  ::id
         {
             UIView* c = (UIView*)container;
             UIControl* control = [[UIControl alloc] init];
@@ -254,7 +254,7 @@ void GraphicsView::DeleteDrawable(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             GLKView* glkView = (GLKView*)handle;
             [glkView deleteDrawable];
@@ -269,7 +269,7 @@ void GraphicsView::EndDraw(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        [] (::id handle) -> void
+        [] (::id handle) -  void
         {
             GLKView* glkView = (GLKView*)handle;
             [glkView display];
@@ -283,7 +283,7 @@ void GraphicsView::EndDraw(::g::ObjC::Object* handle)
 GraphicsView* GraphicsView::New3(::g::Fuse::Visual* visual)
 {
     GraphicsView* obj1 = (GraphicsView*)uNew(GraphicsView_typeof());
-    obj1->ctor_4(visual);
+    obj1- ctor_4(visual);
     return obj1;
 }
 // }

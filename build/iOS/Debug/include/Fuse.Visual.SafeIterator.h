@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.h>
-#include <Uno.Collections.IEnumerator.h>
-#include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Node.h 
+#include <Uno.Collections.IEnumerator.h 
+#include <Uno.Collections.IEnumerator-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct Visual__SafeIterator;}}
 
@@ -36,11 +36,11 @@ void Visual__SafeIterator__SecureCopy_fn(Visual__SafeIterator* __this);
 
 struct Visual__SafeIterator : uObject
 {
-    uStrong<uArray*> _array;
+    uStrong<uArray*  _array;
     int _pos;
-    uStrong< ::g::Fuse::Node*> _current;
-    uStrong<Visual__SafeIterator*> _nextIterator;
-    uStrong< ::g::Fuse::Visual*> _v;
+    uStrong< ::g::Fuse::Node*  _current;
+    uStrong<Visual__SafeIterator*  _nextIterator;
+    uStrong< ::g::Fuse::Visual*  _v;
     bool _reachedEnd;
 
     void ctor_(::g::Fuse::Visual* v);

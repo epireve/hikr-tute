@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.Android.GraphicsViewBase.h>
+#include <Fuse.Controls.Native.Android.GraphicsViewBase.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{struct TextureView;}}}}}
 
 namespace g{

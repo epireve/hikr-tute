@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{namespace Controls{struct URISchemeEventArgs;}}}
 
 namespace g{
@@ -24,7 +24,7 @@ void URISchemeEventArgs__New2_fn(uString* url, URISchemeEventArgs** __retval);
 
 struct URISchemeEventArgs : ::g::Uno::EventArgs
 {
-    uStrong<uString*> Url;
+    uStrong<uString*  Url;
 
     void ctor_1(uString* url);
     static URISchemeEventArgs* New2(uString* url);

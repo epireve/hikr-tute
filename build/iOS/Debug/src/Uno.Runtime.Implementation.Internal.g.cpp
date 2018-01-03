@@ -1,39 +1,39 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
-#include <Uno.Char.h>
-#include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Double.h>
-#include <Uno.Exception.h>
-#include <Uno.Float.h>
-#include <Uno.Float2.h>
-#include <Uno.Float3.h>
-#include <Uno.FormatException.h>
-#include <Uno.Int.h>
-#include <Uno.Long.h>
-#include <Uno.Math.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
-#include <Uno.Runtime.Implementation.Internal.ArrayEnumerator-1.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
-#include <Uno.Runtime.Implementation.Internal.FormatSpecifier.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringItem.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringLiteral.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringToken.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State.h>
-#include <Uno.Runtime.Implementation.Internal.NumericFormatter.h>
-#include <Uno.SByte.h>
-#include <Uno.Short.h>
-#include <Uno.String.h>
-#include <Uno.Text.StringBuilder.h>
-#include <Uno.UInt.h>
-#include <Uno.ULong.h>
-#include <Uno.UShort.h>
+#include <Uno.Bool.h 
+#include <Uno.Buffer.h 
+#include <Uno.Byte.h 
+#include <Uno.Char.h 
+#include <Uno.Collections.IEnumerator-1.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Double.h 
+#include <Uno.Exception.h 
+#include <Uno.Float.h 
+#include <Uno.Float2.h 
+#include <Uno.Float3.h 
+#include <Uno.FormatException.h 
+#include <Uno.Int.h 
+#include <Uno.Long.h 
+#include <Uno.Math.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h 
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerator-1.h 
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h 
+#include <Uno.Runtime.Implementation.Internal.FormatSpecifier.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringItem.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringLiteral.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringToken.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State.h 
+#include <Uno.Runtime.Implementation.Internal.NumericFormatter.h 
+#include <Uno.SByte.h 
+#include <Uno.Short.h 
+#include <Uno.String.h 
+#include <Uno.Text.StringBuilder.h 
+#include <Uno.UInt.h 
+#include <Uno.ULong.h 
+#include <Uno.UShort.h 
 static uString* STRINGS[12];
 static uType* TYPES[16];
 
@@ -46,22 +46,22 @@ namespace Internal{
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Runtime/Implementation/Internal/ArrayEnumerable.uno
 // ----------------------------------------------------------------------------------------------------------
 
-// public sealed class ArrayEnumerable<T> :47
+// public sealed class ArrayEnumerable<T  :47
 // {
 static void ArrayEnumerable_build(uType* type)
 {
     ::TYPES[0] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerator_typeof();
-    type->SetPrecalc(
-        ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerator_typeof()->MakeType(type->T(0), NULL));
-    type->SetInterfaces(
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->T(0), NULL), offsetof(ArrayEnumerable_type, interface0));
-    type->SetFields(0,
-        type->T(0)->Array(), offsetof(ArrayEnumerable, _source), 0);
+    type- SetPrecalc(
+        ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerator_typeof()- MakeType(type- T(0), NULL));
+    type- SetInterfaces(
+        ::g::Uno::Collections::IEnumerable_typeof()- MakeType(type- T(0), NULL), offsetof(ArrayEnumerable_type, interface0));
+    type- SetFields(0,
+        type- T(0)- Array(), offsetof(ArrayEnumerable, _source), 0);
 }
 
 ArrayEnumerable_type* ArrayEnumerable_typeof()
 {
-    static uSStrong<ArrayEnumerable_type*> type;
+    static uSStrong<ArrayEnumerable_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -72,21 +72,21 @@ ArrayEnumerable_type* ArrayEnumerable_typeof()
     options.ObjectSize = sizeof(ArrayEnumerable);
     options.TypeSize = sizeof(ArrayEnumerable_type);
     type = (ArrayEnumerable_type*)uClassType::New("Uno.Runtime.Implementation.Internal.ArrayEnumerable`1", options);
-    type->fp_build_ = ArrayEnumerable_build;
-    type->interface0.fp_GetEnumerator = (void(*)(uObject*, uObject**))ArrayEnumerable__GetEnumerator_fn;
+    type- fp_build_ = ArrayEnumerable_build;
+    type- interface0.fp_GetEnumerator = (void(*)(uObject*, uObject**))ArrayEnumerable__GetEnumerator_fn;
     return type;
 }
 
 // public ArrayEnumerable(T[] source) :51
 void ArrayEnumerable__ctor__fn(ArrayEnumerable* __this, uArray* source)
 {
-    __this->ctor_(source);
+    __this- ctor_(source);
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() :56
+// public Uno.Collections.IEnumerator<T  GetEnumerator() :56
 void ArrayEnumerable__GetEnumerator_fn(ArrayEnumerable* __this, uObject** __retval)
 {
-    *__retval = __this->GetEnumerator();
+    *__retval = __this- GetEnumerator();
 }
 
 // public ArrayEnumerable New(T[] source) :51
@@ -101,11 +101,11 @@ void ArrayEnumerable::ctor_(uArray* source)
     _source = source;
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :56
+// public Uno.Collections.IEnumerator<T  GetEnumerator() [instance] :56
 uObject* ArrayEnumerable::GetEnumerator()
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Runtime.Implementation.Internal.ArrayEnumerator<T>*/),
+        __type- Precalced(0/*Uno.Runtime.Implementation.Internal.ArrayEnumerator<T */),
     };
     return (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerator*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerator::New1(__types[0], _source));
 }
@@ -114,7 +114,7 @@ uObject* ArrayEnumerable::GetEnumerator()
 ArrayEnumerable* ArrayEnumerable::New1(uType* __type, uArray* source)
 {
     ArrayEnumerable* obj1 = (ArrayEnumerable*)uNew(__type);
-    obj1->ctor_(source);
+    obj1- ctor_(source);
     return obj1;
 }
 // }
@@ -122,23 +122,23 @@ ArrayEnumerable* ArrayEnumerable::New1(uType* __type, uArray* source)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Runtime/Implementation/Internal/ArrayEnumerable.uno
 // ----------------------------------------------------------------------------------------------------------
 
-// public sealed class ArrayEnumerator<T> :5
+// public sealed class ArrayEnumerator<T  :5
 // {
 static void ArrayEnumerator_build(uType* type)
 {
-    type->SetInterfaces(
-        ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(type->T(0), NULL), offsetof(ArrayEnumerator_type, interface0),
+    type- SetInterfaces(
+        ::g::Uno::Collections::IEnumerator1_typeof()- MakeType(type- T(0), NULL), offsetof(ArrayEnumerator_type, interface0),
         ::g::Uno::IDisposable_typeof(), offsetof(ArrayEnumerator_type, interface1),
         ::g::Uno::Collections::IEnumerator_typeof(), offsetof(ArrayEnumerator_type, interface2));
-    type->SetFields(0,
-        type->T(0)->Array(), offsetof(ArrayEnumerator, _source), 0,
+    type- SetFields(0,
+        type- T(0)- Array(), offsetof(ArrayEnumerator, _source), 0,
         ::g::Uno::Int_typeof(), offsetof(ArrayEnumerator, _iterator), 0,
-        type->T(0), (uintptr_t)0, uFieldFlagsConstrained);
+        type- T(0), (uintptr_t)0, uFieldFlagsConstrained);
 }
 
 ArrayEnumerator_type* ArrayEnumerator_typeof()
 {
-    static uSStrong<ArrayEnumerator_type*> type;
+    static uSStrong<ArrayEnumerator_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -148,36 +148,36 @@ ArrayEnumerator_type* ArrayEnumerator_typeof()
     options.ObjectSize = sizeof(ArrayEnumerator);
     options.TypeSize = sizeof(ArrayEnumerator_type);
     type = (ArrayEnumerator_type*)uClassType::New("Uno.Runtime.Implementation.Internal.ArrayEnumerator`1", options);
-    type->fp_build_ = ArrayEnumerator_build;
-    type->interface0.fp_get_Current = (void(*)(uObject*, uTRef))ArrayEnumerator__get_Current_fn;
-    type->interface1.fp_Dispose = (void(*)(uObject*))ArrayEnumerator__Dispose_fn;
-    type->interface2.fp_Reset = (void(*)(uObject*))ArrayEnumerator__Reset_fn;
-    type->interface2.fp_MoveNext = (void(*)(uObject*, bool*))ArrayEnumerator__MoveNext_fn;
+    type- fp_build_ = ArrayEnumerator_build;
+    type- interface0.fp_get_Current = (void(*)(uObject*, uTRef))ArrayEnumerator__get_Current_fn;
+    type- interface1.fp_Dispose = (void(*)(uObject*))ArrayEnumerator__Dispose_fn;
+    type- interface2.fp_Reset = (void(*)(uObject*))ArrayEnumerator__Reset_fn;
+    type- interface2.fp_MoveNext = (void(*)(uObject*, bool*))ArrayEnumerator__MoveNext_fn;
     return type;
 }
 
 // public ArrayEnumerator(T[] source) :11
 void ArrayEnumerator__ctor__fn(ArrayEnumerator* __this, uArray* source)
 {
-    __this->ctor_(source);
+    __this- ctor_(source);
 }
 
 // public T get_Current() :19
 void ArrayEnumerator__get_Current_fn(ArrayEnumerator* __this, uTRef __retval)
 {
-    return __retval.Store(__this->_current()), void();
+    return __retval.Store(__this- _current()), void();
 }
 
 // public void Dispose() :22
 void ArrayEnumerator__Dispose_fn(ArrayEnumerator* __this)
 {
-    __this->Dispose();
+    __this- Dispose();
 }
 
 // public bool MoveNext() :33
 void ArrayEnumerator__MoveNext_fn(ArrayEnumerator* __this, bool* __retval)
 {
-    *__retval = __this->MoveNext();
+    *__retval = __this- MoveNext();
 }
 
 // public ArrayEnumerator New(T[] source) :11
@@ -189,7 +189,7 @@ void ArrayEnumerator__New1_fn(uType* __type, uArray* source, ArrayEnumerator** _
 // public void Reset() :27
 void ArrayEnumerator__Reset_fn(ArrayEnumerator* __this)
 {
-    __this->Reset();
+    __this- Reset();
 }
 
 // public ArrayEnumerator(T[] source) [instance] :11
@@ -209,9 +209,9 @@ bool ArrayEnumerator::MoveNext()
 {
     _iterator++;
 
-    if (_iterator < uPtr(_source)->Length())
+    if (_iterator < uPtr(_source)- Length())
     {
-        _current() = uPtr(_source)->TItem(_iterator);
+        _current() = uPtr(_source)- TItem(_iterator);
         return true;
     }
 
@@ -229,7 +229,7 @@ void ArrayEnumerator::Reset()
 ArrayEnumerator* ArrayEnumerator::New1(uType* __type, uArray* source)
 {
     ArrayEnumerator* obj1 = (ArrayEnumerator*)uNew(__type);
-    obj1->ctor_(source);
+    obj1- ctor_(source);
     return obj1;
 }
 // }
@@ -245,13 +245,13 @@ static void BufferConverters_build(uType* type)
 
 uClassType* BufferConverters_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Runtime.Implementation.Internal.BufferConverters", options);
-    type->fp_build_ = BufferConverters_build;
+    type- fp_build_ = BufferConverters_build;
     return type;
 }
 
@@ -276,10 +276,10 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 // public static Uno.Buffer ToBuffer(float2[] data) [static] :15
 ::g::Uno::Buffer* BufferConverters::ToBuffer3(uArray* data)
 {
-    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)->Length() * 8);
+    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)- Length() * 8);
 
-    for (int i = 0; i < data->Length(); i++)
-        uPtr(result)->Set5(i * 8, uPtr(data)->Item< ::g::Uno::Float2>(i), true);
+    for (int i = 0; i < data- Length(); i++)
+        uPtr(result)- Set5(i * 8, uPtr(data)- Item< ::g::Uno::Float2 (i), true);
 
     return result;
 }
@@ -287,10 +287,10 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 // public static Uno.Buffer ToBuffer(float3[] data) [static] :25
 ::g::Uno::Buffer* BufferConverters::ToBuffer4(uArray* data)
 {
-    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)->Length() * 12);
+    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)- Length() * 12);
 
-    for (int i = 0; i < data->Length(); i++)
-        uPtr(result)->Set6(i * 12, uPtr(data)->Item< ::g::Uno::Float3>(i), true);
+    for (int i = 0; i < data- Length(); i++)
+        uPtr(result)- Set6(i * 12, uPtr(data)- Item< ::g::Uno::Float3 (i), true);
 
     return result;
 }
@@ -298,10 +298,10 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 // public static Uno.Buffer ToBuffer(ushort[] data) [static] :65
 ::g::Uno::Buffer* BufferConverters::ToBuffer9(uArray* data)
 {
-    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)->Length() * 2);
+    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)- Length() * 2);
 
-    for (int i = 0; i < data->Length(); i++)
-        uPtr(result)->Set23(i * 2, uPtr(data)->Item<uint16_t>(i), true);
+    for (int i = 0; i < data- Length(); i++)
+        uPtr(result)- Set23(i * 2, uPtr(data)- Item<uint16_t (i), true);
 
     return result;
 }
@@ -313,11 +313,11 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 // internal enum FormatSpecifier :6
 uEnumType* FormatSpecifier_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Uno.Runtime.Implementation.Internal.FormatSpecifier", ::g::Uno::Int_typeof(), 8);
-    type->SetLiterals(
+    type- SetLiterals(
         "Decimal", 0LL,
         "FixedPoint", 1LL,
         "Hexadecimal", 2LL,
@@ -350,14 +350,14 @@ static void FormatStringItem_build(uType* type)
     ::TYPES[10] = ::g::Uno::ULong_typeof();
     ::TYPES[11] = ::g::Uno::Float_typeof();
     ::TYPES[12] = ::g::Uno::Double_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::Runtime::Implementation::Internal::NumericFormatter_typeof());
-    type->SetFields(1);
+    type- SetFields(1);
 }
 
 ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type* FormatStringItem_typeof()
 {
-    static uSStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*> type;
+    static uSStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -367,17 +367,17 @@ static void FormatStringItem_build(uType* type)
     options.ObjectSize = sizeof(FormatStringItem);
     options.TypeSize = sizeof(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type);
     type = (::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*)uClassType::New("Uno.Runtime.Implementation.Internal.FormatStringItem", options);
-    type->fp_build_ = FormatStringItem_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))FormatStringItem__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))FormatStringItem__GetHashCode_fn;
-    type->fp_ToString1 = (void(*)(::g::Uno::Runtime::Implementation::Internal::FormatStringToken*, uArray*, uString**))FormatStringItem__ToString1_fn;
+    type- fp_build_ = FormatStringItem_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))FormatStringItem__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))FormatStringItem__GetHashCode_fn;
+    type- fp_ToString1 = (void(*)(::g::Uno::Runtime::Implementation::Internal::FormatStringToken*, uArray*, uString**))FormatStringItem__ToString1_fn;
     return type;
 }
 
 // public FormatStringItem(string lexeme) :5
 void FormatStringItem__ctor_1_fn(FormatStringItem* __this, uString* lexeme)
 {
-    __this->ctor_1(lexeme);
+    __this- ctor_1(lexeme);
 }
 
 // public override sealed bool Equals(object obj) :36
@@ -386,24 +386,24 @@ void FormatStringItem__Equals_fn(FormatStringItem* __this, uObject* obj, bool* _
     if (obj == NULL)
         return *__retval = false, void();
 
-    FormatStringItem* token = uAs<FormatStringItem*>(obj, __this->__type);
+    FormatStringItem* token = uAs<FormatStringItem* (obj, __this- __type);
 
     if (token == NULL)
         return *__retval = false, void();
 
-    return *__retval = ::g::Uno::String::op_Equality(__this->Lexeme(), uPtr(token)->Lexeme()), void();
+    return *__retval = ::g::Uno::String::op_Equality(__this- Lexeme(), uPtr(token)- Lexeme()), void();
 }
 
 // public string get_FormatString() :24
 void FormatStringItem__get_FormatString_fn(FormatStringItem* __this, uString** __retval)
 {
-    *__retval = __this->FormatString();
+    *__retval = __this- FormatString();
 }
 
 // public override sealed int GetHashCode() :48
 void FormatStringItem__GetHashCode_fn(FormatStringItem* __this, int* __retval)
 {
-    return *__retval = uPtr(__this->Lexeme())->GetHashCode(), void();
+    return *__retval = uPtr(__this- Lexeme())- GetHashCode(), void();
 }
 
 // public FormatStringItem New(string lexeme) :5
@@ -415,57 +415,57 @@ void FormatStringItem__New1_fn(uString* lexeme, FormatStringItem** __retval)
 // public int get_Number() :11
 void FormatStringItem__get_Number_fn(FormatStringItem* __this, int* __retval)
 {
-    *__retval = __this->Number();
+    *__retval = __this- Number();
 }
 
 // public override sealed string ToString(object[] objs) :53
 void FormatStringItem__ToString1_fn(FormatStringItem* __this, uArray* objs, uString** __retval)
 {
-    if ((__this->Number() < 0) || (__this->Number() > (uPtr(objs)->Length() - 1)))
+    if ((__this- Number() < 0) || (__this- Number()   (uPtr(objs)- Length() - 1)))
         U_THROW(::g::Uno::FormatException::New4(::STRINGS[0/*"Index (zero...*/]));
 
-    uObject* o = uPtr(objs)->Strong<uObject*>(__this->Number());
-    uString* formatString = __this->FormatString();
+    uObject* o = uPtr(objs)- Strong<uObject* (__this- Number());
+    uString* formatString = __this- FormatString();
 
     if (::g::Uno::String::IsNullOrEmpty(formatString))
         return *__retval = ::g::Uno::Object::ToString(uPtr(o)), void();
     else
     {
         if (uIs(o, ::TYPES[1/*bool*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format(formatString, uUnbox<bool>(::TYPES[1/*bool*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format(formatString, uUnbox<bool (::TYPES[1/*bool*/], o)), void();
 
         if (uIs(o, ::TYPES[2/*char*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, (int)uUnbox<uChar>(::TYPES[2/*char*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, (int)uUnbox<uChar (::TYPES[2/*char*/], o)), void();
 
         if (uIs(o, ::TYPES[3/*sbyte*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format5(formatString, uUnbox<int8_t>(::TYPES[3/*sbyte*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format5(formatString, uUnbox<int8_t (::TYPES[3/*sbyte*/], o)), void();
 
         if (uIs(o, ::TYPES[4/*byte*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format6(formatString, (int16_t)uUnbox<uint8_t>(::TYPES[4/*byte*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format6(formatString, (int16_t)uUnbox<uint8_t (::TYPES[4/*byte*/], o)), void();
 
         if (uIs(o, ::TYPES[5/*short*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format6(formatString, uUnbox<int16_t>(::TYPES[5/*short*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format6(formatString, uUnbox<int16_t (::TYPES[5/*short*/], o)), void();
 
         if (uIs(o, ::TYPES[6/*ushort*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, (int)uUnbox<uint16_t>(::TYPES[6/*ushort*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, (int)uUnbox<uint16_t (::TYPES[6/*ushort*/], o)), void();
 
         if (uIs(o, ::TYPES[7/*int*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, uUnbox<int>(::TYPES[7/*int*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format3(formatString, uUnbox<int (::TYPES[7/*int*/], o)), void();
 
         if (uIs(o, ::TYPES[8/*uint*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format4(formatString, (int64_t)uUnbox<uint32_t>(::TYPES[8/*uint*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format4(formatString, (int64_t)uUnbox<uint32_t (::TYPES[8/*uint*/], o)), void();
 
         if (uIs(o, ::TYPES[9/*long*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format4(formatString, uUnbox<int64_t>(::TYPES[9/*long*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format4(formatString, uUnbox<int64_t (::TYPES[9/*long*/], o)), void();
 
         if (uIs(o, ::TYPES[10/*ulong*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format7(formatString, uUnbox<uint64_t>(::TYPES[10/*ulong*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format7(formatString, uUnbox<uint64_t (::TYPES[10/*ulong*/], o)), void();
 
         if (uIs(o, ::TYPES[11/*float*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format2(formatString, uUnbox<float>(::TYPES[11/*float*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format2(formatString, uUnbox<float (::TYPES[11/*float*/], o)), void();
 
         if (uIs(o, ::TYPES[12/*double*/]))
-            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format1(formatString, uUnbox<double>(::TYPES[12/*double*/], o)), void();
+            return *__retval = ::g::Uno::Runtime::Implementation::Internal::NumericFormatter::Format1(formatString, uUnbox<double (::TYPES[12/*double*/], o)), void();
     }
 
     return *__retval = ::g::Uno::Object::ToString(uPtr(o)), void();
@@ -511,7 +511,7 @@ int FormatStringItem::Number()
 FormatStringItem* FormatStringItem::New1(uString* lexeme)
 {
     FormatStringItem* obj1 = (FormatStringItem*)uNew(FormatStringItem_typeof());
-    obj1->ctor_1(lexeme);
+    obj1- ctor_1(lexeme);
     return obj1;
 }
 // }
@@ -523,12 +523,12 @@ FormatStringItem* FormatStringItem::New1(uString* lexeme)
 // {
 static void FormatStringLiteral_build(uType* type)
 {
-    type->SetFields(1);
+    type- SetFields(1);
 }
 
 ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type* FormatStringLiteral_typeof()
 {
-    static uSStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*> type;
+    static uSStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -537,17 +537,17 @@ static void FormatStringLiteral_build(uType* type)
     options.ObjectSize = sizeof(FormatStringLiteral);
     options.TypeSize = sizeof(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type);
     type = (::g::Uno::Runtime::Implementation::Internal::FormatStringToken_type*)uClassType::New("Uno.Runtime.Implementation.Internal.FormatStringLiteral", options);
-    type->fp_build_ = FormatStringLiteral_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))FormatStringLiteral__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))FormatStringLiteral__GetHashCode_fn;
-    type->fp_ToString1 = (void(*)(::g::Uno::Runtime::Implementation::Internal::FormatStringToken*, uArray*, uString**))FormatStringLiteral__ToString1_fn;
+    type- fp_build_ = FormatStringLiteral_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))FormatStringLiteral__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))FormatStringLiteral__GetHashCode_fn;
+    type- fp_ToString1 = (void(*)(::g::Uno::Runtime::Implementation::Internal::FormatStringToken*, uArray*, uString**))FormatStringLiteral__ToString1_fn;
     return type;
 }
 
 // public FormatStringLiteral(string lexeme) :5
 void FormatStringLiteral__ctor_1_fn(FormatStringLiteral* __this, uString* lexeme)
 {
-    __this->ctor_1(lexeme);
+    __this- ctor_1(lexeme);
 }
 
 // public override sealed bool Equals(object obj) :7
@@ -556,18 +556,18 @@ void FormatStringLiteral__Equals_fn(FormatStringLiteral* __this, uObject* obj, b
     if (obj == NULL)
         return *__retval = false, void();
 
-    FormatStringLiteral* token = uAs<FormatStringLiteral*>(obj, __this->__type);
+    FormatStringLiteral* token = uAs<FormatStringLiteral* (obj, __this- __type);
 
     if (token == NULL)
         return *__retval = false, void();
 
-    return *__retval = ::g::Uno::String::op_Equality(__this->Lexeme(), uPtr(token)->Lexeme()), void();
+    return *__retval = ::g::Uno::String::op_Equality(__this- Lexeme(), uPtr(token)- Lexeme()), void();
 }
 
 // public override sealed int GetHashCode() :19
 void FormatStringLiteral__GetHashCode_fn(FormatStringLiteral* __this, int* __retval)
 {
-    return *__retval = uPtr(__this->Lexeme())->GetHashCode(), void();
+    return *__retval = uPtr(__this- Lexeme())- GetHashCode(), void();
 }
 
 // public FormatStringLiteral New(string lexeme) :5
@@ -579,7 +579,7 @@ void FormatStringLiteral__New1_fn(uString* lexeme, FormatStringLiteral** __retva
 // public override sealed string ToString(object[] objs) :24
 void FormatStringLiteral__ToString1_fn(FormatStringLiteral* __this, uArray* objs, uString** __retval)
 {
-    return *__retval = __this->Lexeme(), void();
+    return *__retval = __this- Lexeme(), void();
 }
 
 // public FormatStringLiteral(string lexeme) [instance] :5
@@ -592,7 +592,7 @@ void FormatStringLiteral::ctor_1(uString* lexeme)
 FormatStringLiteral* FormatStringLiteral::New1(uString* lexeme)
 {
     FormatStringLiteral* obj1 = (FormatStringLiteral*)uNew(FormatStringLiteral_typeof());
-    obj1->ctor_1(lexeme);
+    obj1- ctor_1(lexeme);
     return obj1;
 }
 // }
@@ -604,13 +604,13 @@ FormatStringLiteral* FormatStringLiteral::New1(uString* lexeme)
 // {
 static void FormatStringToken_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::String_typeof(), offsetof(FormatStringToken, _Lexeme), 0);
 }
 
 FormatStringToken_type* FormatStringToken_typeof()
 {
-    static uSStrong<FormatStringToken_type*> type;
+    static uSStrong<FormatStringToken_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -618,26 +618,26 @@ FormatStringToken_type* FormatStringToken_typeof()
     options.ObjectSize = sizeof(FormatStringToken);
     options.TypeSize = sizeof(FormatStringToken_type);
     type = (FormatStringToken_type*)uClassType::New("Uno.Runtime.Implementation.Internal.FormatStringToken", options);
-    type->fp_build_ = FormatStringToken_build;
+    type- fp_build_ = FormatStringToken_build;
     return type;
 }
 
 // protected FormatStringToken(string lexeme) :7
 void FormatStringToken__ctor__fn(FormatStringToken* __this, uString* lexeme)
 {
-    __this->ctor_(lexeme);
+    __this- ctor_(lexeme);
 }
 
 // public generated string get_Lexeme() :5
 void FormatStringToken__get_Lexeme_fn(FormatStringToken* __this, uString** __retval)
 {
-    *__retval = __this->Lexeme();
+    *__retval = __this- Lexeme();
 }
 
 // private generated void set_Lexeme(string value) :5
 void FormatStringToken__set_Lexeme_fn(FormatStringToken* __this, uString* value)
 {
-    __this->Lexeme(value);
+    __this- Lexeme(value);
 }
 
 // protected FormatStringToken(string lexeme) [instance] :7
@@ -666,17 +666,17 @@ void FormatStringToken::Lexeme(uString* value)
 // {
 static void FormatStringTokenizer_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Int_typeof(), offsetof(FormatStringTokenizer, _index), 0,
         ::g::Uno::Int_typeof(), offsetof(FormatStringTokenizer, _prevIndex), 0,
-        ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL), offsetof(FormatStringTokenizer, _tokens), 0,
+        ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL), offsetof(FormatStringTokenizer, _tokens), 0,
         FormatStringTokenizer__State_typeof(), offsetof(FormatStringTokenizer, _state), 0,
         ::g::Uno::String_typeof(), offsetof(FormatStringTokenizer, _format), 0);
 }
 
 uType* FormatStringTokenizer_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -684,38 +684,38 @@ uType* FormatStringTokenizer_typeof()
     options.ObjectSize = sizeof(FormatStringTokenizer);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Runtime.Implementation.Internal.FormatStringTokenizer", options);
-    type->fp_build_ = FormatStringTokenizer_build;
+    type- fp_build_ = FormatStringTokenizer_build;
     return type;
 }
 
 // public FormatStringTokenizer(string format) :14
 void FormatStringTokenizer__ctor__fn(FormatStringTokenizer* __this, uString* format)
 {
-    __this->ctor_(format);
+    __this- ctor_(format);
 }
 
 // private void AddFormatItemAndGoTo(Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State state) :76
 void FormatStringTokenizer__AddFormatItemAndGoTo_fn(FormatStringTokenizer* __this, int* state)
 {
-    __this->AddFormatItemAndGoTo(*state);
+    __this- AddFormatItemAndGoTo(*state);
 }
 
 // private void AddLiteralAndGoTo(Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State state) :83
 void FormatStringTokenizer__AddLiteralAndGoTo_fn(FormatStringTokenizer* __this, int* state)
 {
-    __this->AddLiteralAndGoTo(*state);
+    __this- AddLiteralAndGoTo(*state);
 }
 
 // private bool AtEnd() :101
 void FormatStringTokenizer__AtEnd_fn(FormatStringTokenizer* __this, bool* __retval)
 {
-    *__retval = __this->AtEnd();
+    *__retval = __this- AtEnd();
 }
 
 // private void DiscardCharacterAndGoTo(Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State state) :90
 void FormatStringTokenizer__DiscardCharacterAndGoTo_fn(FormatStringTokenizer* __this, int* state)
 {
-    __this->DiscardCharacterAndGoTo(*state);
+    __this- DiscardCharacterAndGoTo(*state);
 }
 
 // public FormatStringTokenizer New(string format) :14
@@ -727,19 +727,19 @@ void FormatStringTokenizer__New1_fn(uString* format, FormatStringTokenizer** __r
 // private void Throw() :96
 void FormatStringTokenizer__Throw_fn(FormatStringTokenizer* __this)
 {
-    __this->Throw();
+    __this- Throw();
 }
 
-// public static Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken> TokenizeFormatString(string format) :19
+// public static Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken  TokenizeFormatString(string format) :19
 void FormatStringTokenizer__TokenizeFormatString_fn(uString* format, ::g::Uno::Collections::List** __retval)
 {
     *__retval = FormatStringTokenizer::TokenizeFormatString(format);
 }
 
-// private Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken> TokenizeFormatStringInternal() :24
+// private Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken  TokenizeFormatStringInternal() :24
 void FormatStringTokenizer__TokenizeFormatStringInternal_fn(FormatStringTokenizer* __this, ::g::Uno::Collections::List** __retval)
 {
-    *__retval = __this->TokenizeFormatStringInternal();
+    *__retval = __this- TokenizeFormatStringInternal();
 }
 
 // public FormatStringTokenizer(string format) [instance] :14
@@ -767,7 +767,7 @@ void FormatStringTokenizer::AddLiteralAndGoTo(int state)
 // private bool AtEnd() [instance] :101
 bool FormatStringTokenizer::AtEnd()
 {
-    return _index == uPtr(_format)->Length();
+    return _index == uPtr(_format)- Length();
 }
 
 // private void DiscardCharacterAndGoTo(Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State state) [instance] :90
@@ -783,15 +783,15 @@ void FormatStringTokenizer::Throw()
     U_THROW(::g::Uno::FormatException::New4(uString::Const("Input string was not in a correct format")));
 }
 
-// private Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken> TokenizeFormatStringInternal() [instance] :24
+// private Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken  TokenizeFormatStringInternal() [instance] :24
 ::g::Uno::Collections::List* FormatStringTokenizer::TokenizeFormatStringInternal()
 {
     _index = 0;
     _prevIndex = 0;
     _state = 0;
-    _tokens = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL)));
+    _tokens = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL)));
 
-    while (_index <= uPtr(_format)->Length())
+    while (_index <= uPtr(_format)- Length())
     {
         switch (_state)
         {
@@ -799,9 +799,9 @@ void FormatStringTokenizer::Throw()
             {
                 if (AtEnd())
                     _state = 4;
-                else if (uPtr(_format)->Item(_index) == '{')
+                else if (uPtr(_format)- Item(_index) == '{')
                     _state = 2;
-                else if (uPtr(_format)->Item(_index) == '}')
+                else if (uPtr(_format)- Item(_index) == '}')
                     Throw();
                 else
                     _state = 1;
@@ -812,9 +812,9 @@ void FormatStringTokenizer::Throw()
             {
                 if (AtEnd())
                     Throw();
-                else if (uPtr(_format)->Item(_index) == '{')
+                else if (uPtr(_format)- Item(_index) == '{')
                     DiscardCharacterAndGoTo(1);
-                else if (uPtr(_format)->Item(_index) == '}')
+                else if (uPtr(_format)- Item(_index) == '}')
                     Throw();
                 else
                     _state = 3;
@@ -825,9 +825,9 @@ void FormatStringTokenizer::Throw()
             {
                 if (AtEnd())
                     Throw();
-                else if (uPtr(_format)->Item(_index) == '}')
+                else if (uPtr(_format)- Item(_index) == '}')
                     AddFormatItemAndGoTo(0);
-                else if (uPtr(_format)->Item(_index) == '{')
+                else if (uPtr(_format)- Item(_index) == '{')
                     Throw();
 
                 break;
@@ -836,9 +836,9 @@ void FormatStringTokenizer::Throw()
             {
                 if (AtEnd())
                     AddLiteralAndGoTo(4);
-                else if (uPtr(_format)->Item(_index) == '{')
+                else if (uPtr(_format)- Item(_index) == '{')
                     AddLiteralAndGoTo(2);
-                else if (uPtr(_format)->Item(_index) == '}')
+                else if (uPtr(_format)- Item(_index) == '}')
                     Throw();
 
                 break;
@@ -855,14 +855,14 @@ void FormatStringTokenizer::Throw()
 FormatStringTokenizer* FormatStringTokenizer::New1(uString* format)
 {
     FormatStringTokenizer* obj1 = (FormatStringTokenizer*)uNew(FormatStringTokenizer_typeof());
-    obj1->ctor_(format);
+    obj1- ctor_(format);
     return obj1;
 }
 
-// public static Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken> TokenizeFormatString(string format) [static] :19
+// public static Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken  TokenizeFormatString(string format) [static] :19
 ::g::Uno::Collections::List* FormatStringTokenizer::TokenizeFormatString(uString* format)
 {
-    return FormatStringTokenizer::New1(format)->TokenizeFormatStringInternal();
+    return FormatStringTokenizer::New1(format)- TokenizeFormatStringInternal();
 }
 // }
 
@@ -891,16 +891,16 @@ static void NumericFormatter_build(uType* type)
     ::STRINGS[9] = uString::Const("E+");
     ::STRINGS[10] = uString::Const("8000000000000000");
     ::STRINGS[11] = uString::Const(",");
-    ::TYPES[13] = ::g::Uno::Char_typeof()->Array();
+    ::TYPES[13] = ::g::Uno::Char_typeof()- Array();
     ::TYPES[1] = ::g::Uno::Bool_typeof();
     ::TYPES[12] = ::g::Uno::Double_typeof();
-    ::TYPES[14] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Char_typeof(), NULL);
+    ::TYPES[14] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::Char_typeof(), NULL);
     ::TYPES[10] = ::g::Uno::ULong_typeof();
     ::TYPES[7] = ::g::Uno::Int_typeof();
     ::TYPES[11] = ::g::Uno::Float_typeof();
     ::TYPES[15] = ::g::Uno::Exception_typeof();
     ::TYPES[2] = ::g::Uno::Char_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[7/*int*/], (uintptr_t)&NumericFormatter::NumberDecimalDigits_, uFieldFlagsStatic,
         ::TYPES[7/*int*/], (uintptr_t)&NumericFormatter::ExponentialDigits_, uFieldFlagsStatic,
         ::g::Uno::String_typeof(), (uintptr_t)&NumericFormatter::_decimalPoint_, uFieldFlagsStatic);
@@ -908,15 +908,15 @@ static void NumericFormatter_build(uType* type)
 
 uClassType* NumericFormatter_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 3;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Runtime.Implementation.Internal.NumericFormatter", options);
-    type->fp_build_ = NumericFormatter_build;
-    type->fp_cctor_ = NumericFormatter__cctor__fn;
+    type- fp_build_ = NumericFormatter_build;
+    type- fp_cctor_ = NumericFormatter__cctor__fn;
     return type;
 }
 
@@ -1144,7 +1144,7 @@ void NumericFormatter__Padding_fn(int* length, uString** __retval)
 
 int NumericFormatter::NumberDecimalDigits_;
 int NumericFormatter::ExponentialDigits_;
-uSStrong<uString*> NumericFormatter::_decimalPoint_;
+uSStrong<uString*  NumericFormatter::_decimalPoint_;
 
 // private static void CalculateExponential(double d, double& significand, int& exponent) [static] :408
 void NumericFormatter::CalculateExponential(double d, double* significand, int* exponent)
@@ -1158,7 +1158,7 @@ void NumericFormatter::CalculateExponential(double d, double* significand, int* 
         *significand = *significand * 10.0;
     }
 
-    while (*significand >= 10.0)
+    while (*significand  = 10.0)
     {
         *exponent = *exponent + 1;
         *significand = *significand / 10.0;
@@ -1177,24 +1177,24 @@ uString* NumericFormatter::DoFormatHex(uString* formatString, uint64_t l, int ma
     if (l == 0ULL)
         return NumericFormatter::Pad(::STRINGS[2/*"0"*/], formatString);
 
-    uArray* hexChars = uArray::Init<int>(::TYPES[13/*char[]*/], 16, '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F');
+    uArray* hexChars = uArray::Init<int (::TYPES[13/*char[]*/], 16, '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F');
     uArray* buffer = uArray::New(::TYPES[13/*char[]*/], maxLength);
     int index = maxLength;
 
     while (l != 0ULL)
     {
-        uPtr(buffer)->Item<uChar>(--index) = uPtr(hexChars)->Item<uChar>((int)(l % 16ULL));
+        uPtr(buffer)- Item<uChar (--index) = uPtr(hexChars)- Item<uChar ((int)(l % 16ULL));
         l = l / 16ULL;
     }
 
     uArray* result = uArray::New(::TYPES[13/*char[]*/], maxLength - index);
 
-    for (int i = 0; i < result->Length(); i++)
-        uPtr(result)->Item<uChar>(i) = uPtr(buffer)->Item<uChar>(i + index);
+    for (int i = 0; i < result- Length(); i++)
+        uPtr(result)- Item<uChar (i) = uPtr(buffer)- Item<uChar (i + index);
 
     uString* returnString = uString::CharArray(result);
 
-    if (uPtr(formatString)->Item(0) == 'x')
+    if (uPtr(formatString)- Item(0) == 'x')
         returnString = ::g::Uno::String::ToLower(uPtr(returnString));
 
     return NumericFormatter::Pad(returnString, formatString);
@@ -1251,7 +1251,7 @@ uString* NumericFormatter::Format4(uString* formatString, int64_t i)
 {
     if (NumericFormatter::GetFormatSpecifier(formatString) == 2)
         return NumericFormatter::FormatHex1(formatString, i);
-    else if (i >= 0LL)
+    else if (i  = 0LL)
         return NumericFormatter::Format7(formatString, (uint64_t)i);
     else
         return ::g::Uno::String::op_Addition2(::STRINGS[4/*"-"*/], NumericFormatter::Format7(formatString, (uint64_t)(i * -1LL)));
@@ -1335,14 +1335,14 @@ uString* NumericFormatter::FormatCustomDoublePart(uString* doubleFormat, double 
     bool hasZero = false;
     uArray* processedFormat = ::g::Uno::String::ToCharArray(uPtr(doubleFormat));
 
-    for (int i = uPtr(processedFormat)->Length() - 1; i >= 0; i--)
+    for (int i = uPtr(processedFormat)- Length() - 1; i  = 0; i--)
     {
-        if (uPtr(processedFormat)->Item<uChar>(i) == '0')
+        if (uPtr(processedFormat)- Item<uChar (i) == '0')
             hasZero = true;
 
-        if ((uPtr(processedFormat)->Item<uChar>(i) == '0') || (uPtr(processedFormat)->Item<uChar>(i) == '#'))
+        if ((uPtr(processedFormat)- Item<uChar (i) == '0') || (uPtr(processedFormat)- Item<uChar (i) == '#'))
         {
-            uPtr(processedFormat)->Item<uChar>(i) = hasZero ? '0' : uPtr(processedFormat)->Item<uChar>(i);
+            uPtr(processedFormat)- Item<uChar (i) = hasZero ? '0' : uPtr(processedFormat)- Item<uChar (i);
             precision++;
         }
     }
@@ -1352,23 +1352,23 @@ uString* NumericFormatter::FormatCustomDoublePart(uString* doubleFormat, double 
     *decimalPoint = (index != 0) || hasZero;
 
     if (index == 0)
-        index = uPtr(raw)->Length();
+        index = uPtr(raw)- Length();
 
-    ::g::Uno::Collections::List* formatted = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(::TYPES[14/*Uno.Collections.List<char>*/], processedFormat->Length());
+    ::g::Uno::Collections::List* formatted = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(::TYPES[14/*Uno.Collections.List<char */], processedFormat- Length());
 
-    for (int i1 = 0; i1 < processedFormat->Length(); i1++)
+    for (int i1 = 0; i1 < processedFormat- Length(); i1++)
 
-        switch (uPtr(processedFormat)->Item<uChar>(i1))
+        switch (uPtr(processedFormat)- Item<uChar (i1))
         {
             case '0':
             {
-                ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar>((index >= uPtr(raw)->Length()) ? '0' : uPtr(raw)->Item(index++)));
+                ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar ((index  = uPtr(raw)- Length()) ? '0' : uPtr(raw)- Item(index++)));
                 break;
             }
             case '#':
             {
-                if (index < uPtr(raw)->Length())
-                    ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar>(uPtr(raw)->Item(index++)));
+                if (index < uPtr(raw)- Length())
+                    ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar (uPtr(raw)- Item(index++)));
 
                 break;
             }
@@ -1376,45 +1376,45 @@ uString* NumericFormatter::FormatCustomDoublePart(uString* doubleFormat, double 
                 break;
             default:
             {
-                ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar>(uPtr(processedFormat)->Item<uChar>(i1)));
+                ::g::Uno::Collections::List__Add_fn(uPtr(formatted), uCRef<uChar (uPtr(processedFormat)- Item<uChar (i1)));
                 break;
             }
         }
 
-    return uString::CharArray((uArray*)formatted->ToArray());
+    return uString::CharArray((uArray*)formatted- ToArray());
 }
 
 // private static string FormatCustomIntegerPart(string integerFormat, ulong value) [static] :371
 uString* NumericFormatter::FormatCustomIntegerPart(uString* integerFormat, uint64_t value)
 {
     uString* raw = ::g::Uno::ULong::ToString(value, ::TYPES[10/*ulong*/]);
-    int rawIndex = (value == 0ULL) ? -1 : uPtr(raw)->Length() - 1;
-    uArray* formatted = uArray::New(::TYPES[13/*char[]*/], uPtr(integerFormat)->Length());
-    int index = integerFormat->Length() - 1;
+    int rawIndex = (value == 0ULL) ? -1 : uPtr(raw)- Length() - 1;
+    uArray* formatted = uArray::New(::TYPES[13/*char[]*/], uPtr(integerFormat)- Length());
+    int index = integerFormat- Length() - 1;
     int lastNumber = 0;
 
-    for (int i = integerFormat->Length() - 1; i >= 0; i--)
+    for (int i = integerFormat- Length() - 1; i  = 0; i--)
 
-        switch (uPtr(integerFormat)->Item(i))
+        switch (uPtr(integerFormat)- Item(i))
         {
             case '0':
             {
                 lastNumber = i;
-                uPtr(formatted)->Item<uChar>(index--) = (rawIndex < 0) ? '0' : uPtr(raw)->Item(rawIndex--);
+                uPtr(formatted)- Item<uChar (index--) = (rawIndex < 0) ? '0' : uPtr(raw)- Item(rawIndex--);
                 break;
             }
             case '#':
             {
                 lastNumber = i;
 
-                if (rawIndex >= 0)
-                    uPtr(formatted)->Item<uChar>(index--) = uPtr(raw)->Item(rawIndex--);
+                if (rawIndex  = 0)
+                    uPtr(formatted)- Item<uChar (index--) = uPtr(raw)- Item(rawIndex--);
 
                 break;
             }
             default:
             {
-                uPtr(formatted)->Item<uChar>(index--) = uPtr(integerFormat)->Item(i);
+                uPtr(formatted)- Item<uChar (index--) = uPtr(integerFormat)- Item(i);
                 break;
             }
         }
@@ -1424,7 +1424,7 @@ uString* NumericFormatter::FormatCustomIntegerPart(uString* integerFormat, uint6
     if (index != -1)
         formattedString = ::g::Uno::String::Substring(uPtr(formattedString), index + 1);
 
-    if (rawIndex >= 0)
+    if (rawIndex  = 0)
         return ::g::Uno::String::Insert(uPtr(formattedString), lastNumber, ::g::Uno::String::Substring1(uPtr(raw), 0, rawIndex + 1));
 
     return formattedString;
@@ -1442,24 +1442,24 @@ uString* NumericFormatter::FormatExponential(uString* formatString, double d)
     double raw;
     int offset;
     NumericFormatter::CalculateExponential(d, &raw, &offset);
-    int desiredDigits = (uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : NumericFormatter::ExponentialDigits_;
+    int desiredDigits = (uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : NumericFormatter::ExponentialDigits_;
     uString* rounded = ::g::Uno::Double::ToString(::g::Uno::Math::Round1(raw, desiredDigits), ::TYPES[12/*double*/]);
 
     if (::g::Uno::String::IndexOf1(uPtr(rounded), NumericFormatter::DecimalPoint(), 0) == -1)
         rounded = ::g::Uno::String::op_Addition2(rounded, NumericFormatter::DecimalPoint());
 
-    uString* padding = NumericFormatter::Padding((desiredDigits + 2) - uPtr(rounded)->Length());
+    uString* padding = NumericFormatter::Padding((desiredDigits + 2) - uPtr(rounded)- Length());
     uString* exponent = ::g::Uno::Int::ToString(::g::Uno::Math::Abs5(offset), ::TYPES[7/*int*/]);
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(rounded, padding), ::STRINGS[6/*"E"*/]), (offset < 0) ? ::STRINGS[4/*"-"*/] : ::STRINGS[7/*"+"*/]), NumericFormatter::Padding(3 - uPtr(exponent)->Length())), exponent);
+    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(rounded, padding), ::STRINGS[6/*"E"*/]), (offset < 0) ? ::STRINGS[4/*"-"*/] : ::STRINGS[7/*"+"*/]), NumericFormatter::Padding(3 - uPtr(exponent)- Length())), exponent);
 }
 
 // private static string FormatFixedPoint(string formatString, double d) [static] :133
 uString* NumericFormatter::FormatFixedPoint(uString* formatString, double d)
 {
-    int desiredDigits = (uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
+    int desiredDigits = (uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
     uString* rounded = ::g::Uno::Double::ToString(::g::Uno::Math::Round1(d, desiredDigits), ::TYPES[12/*double*/]);
-    int decimalPointPos = uPtr(::g::Uno::Int::ToString((int)d, ::TYPES[7/*int*/]))->Length();
-    int actualDigits = ::g::Uno::Math::Max8((uPtr(rounded)->Length() - decimalPointPos) - 1, 0);
+    int decimalPointPos = uPtr(::g::Uno::Int::ToString((int)d, ::TYPES[7/*int*/]))- Length();
+    int actualDigits = ::g::Uno::Math::Max8((uPtr(rounded)- Length() - decimalPointPos) - 1, 0);
 
     if (desiredDigits <= actualDigits)
         return rounded;
@@ -1472,13 +1472,13 @@ uString* NumericFormatter::FormatFixedPoint(uString* formatString, double d)
 // private static string FormatFixedPoint(string formatString, ulong d) [static] :128
 uString* NumericFormatter::FormatFixedPoint1(uString* formatString, uint64_t d)
 {
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::ULong::ToString(d, ::TYPES[10/*ulong*/]), NumericFormatter::DecimalPoint()), NumericFormatter::Padding((uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_));
+    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::ULong::ToString(d, ::TYPES[10/*ulong*/]), NumericFormatter::DecimalPoint()), NumericFormatter::Padding((uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_));
 }
 
 // private static string FormatFloatGeneral(string formatString, float f) [static] :235
 uString* NumericFormatter::FormatFloatGeneral(uString* formatString, float f)
 {
-    if (uPtr(formatString)->Length() == 1)
+    if (uPtr(formatString)- Length() == 1)
         return ::g::Uno::Float::ToString(f, ::TYPES[11/*float*/]);
 
     return NumericFormatter::FormatGeneral(formatString, (double)f);
@@ -1487,13 +1487,13 @@ uString* NumericFormatter::FormatFloatGeneral(uString* formatString, float f)
 // private static string FormatGeneral(string formatString, double d) [static] :242
 uString* NumericFormatter::FormatGeneral(uString* formatString, double d)
 {
-    if (uPtr(formatString)->Length() == 1)
+    if (uPtr(formatString)- Length() == 1)
         return ::g::Uno::Double::ToString(d, ::TYPES[12/*double*/]);
 
     int desiredDigits = NumericFormatter::Digits(formatString);
     uString* str = ::g::Uno::Double::ToString(d, ::TYPES[12/*double*/]);
 
-    if ((desiredDigits >= uPtr(str)->Length()) || (desiredDigits == 0))
+    if ((desiredDigits  = uPtr(str)- Length()) || (desiredDigits == 0))
         return str;
 
     double significand;
@@ -1501,8 +1501,8 @@ uString* NumericFormatter::FormatGeneral(uString* formatString, double d)
     NumericFormatter::CalculateExponential(::g::Uno::Math::Abs(d), &significand, &exponent);
     significand = ::g::Uno::Math::Round1(significand, desiredDigits - 1);
 
-    if (exponent > desiredDigits)
-        return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Double::ToString(significand, ::TYPES[12/*double*/]), ::STRINGS[9/*"E+"*/]), NumericFormatter::Padding(2 - uPtr(::g::Uno::Int::ToString(exponent, ::TYPES[7/*int*/]))->Length())), ::g::Uno::Int::ToString(exponent, ::TYPES[7/*int*/]));
+    if (exponent   desiredDigits)
+        return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Double::ToString(significand, ::TYPES[12/*double*/]), ::STRINGS[9/*"E+"*/]), NumericFormatter::Padding(2 - uPtr(::g::Uno::Int::ToString(exponent, ::TYPES[7/*int*/]))- Length())), ::g::Uno::Int::ToString(exponent, ::TYPES[7/*int*/]));
 
     return ::g::Uno::String::op_Addition2((d < 0.0) ? ::STRINGS[4/*"-"*/] : (uString*)::g::Uno::String::Empty_, ::g::Uno::Double::ToString(significand * (double)::g::Uno::Math::Pow1(10.0f, (float)exponent), ::TYPES[12/*double*/]));
 }
@@ -1510,18 +1510,18 @@ uString* NumericFormatter::FormatGeneral(uString* formatString, double d)
 // private static string FormatGeneral(string formatString, ulong i) [static] :222
 uString* NumericFormatter::FormatGeneral1(uString* formatString, uint64_t i)
 {
-    if (uPtr(formatString)->Length() == 1)
+    if (uPtr(formatString)- Length() == 1)
         return ::g::Uno::ULong::ToString(i, ::TYPES[10/*ulong*/]);
 
     int desiredDigits = NumericFormatter::Digits(formatString);
     uString* str = ::g::Uno::ULong::ToString(i, ::TYPES[10/*ulong*/]);
 
-    if ((desiredDigits >= uPtr(str)->Length()) || (desiredDigits == 0))
+    if ((desiredDigits  = uPtr(str)- Length()) || (desiredDigits == 0))
         return str;
 
-    uString* rounded = ::g::Uno::Double::ToString(::g::Uno::Math::Round1((double)i / (double)::g::Uno::Math::Pow1(10.0f, (float)(uPtr(str)->Length() - 1)), desiredDigits - 1), ::TYPES[12/*double*/]);
-    uString* exponent = ::g::Uno::Int::ToString(str->Length() - 1, ::TYPES[7/*int*/]);
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(rounded, ::STRINGS[9/*"E+"*/]), NumericFormatter::Padding(2 - uPtr(exponent)->Length())), exponent);
+    uString* rounded = ::g::Uno::Double::ToString(::g::Uno::Math::Round1((double)i / (double)::g::Uno::Math::Pow1(10.0f, (float)(uPtr(str)- Length() - 1)), desiredDigits - 1), ::TYPES[12/*double*/]);
+    uString* exponent = ::g::Uno::Int::ToString(str- Length() - 1, ::TYPES[7/*int*/]);
+    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(rounded, ::STRINGS[9/*"E+"*/]), NumericFormatter::Padding(2 - uPtr(exponent)- Length())), exponent);
 }
 
 // private static string FormatHex(string formatString, int i) [static] :162
@@ -1581,7 +1581,7 @@ uString* NumericFormatter::FormatNumber(double d)
 // private static string FormatNumber(string formatString, double d) [static] :269
 uString* NumericFormatter::FormatNumber1(uString* formatString, double d)
 {
-    int desiredDigits = (uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
+    int desiredDigits = (uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
     double rounded = ::g::Uno::Math::Round1(d, desiredDigits);
 
     if (desiredDigits == 0)
@@ -1589,13 +1589,13 @@ uString* NumericFormatter::FormatNumber1(uString* formatString, double d)
 
     uString* str = ::g::Uno::Double::ToString(rounded, ::TYPES[12/*double*/]);
     uString* residue = (::g::Uno::String::IndexOf1(uPtr(str), NumericFormatter::DecimalPoint(), 0) == -1) ? (uString*)::g::Uno::String::Empty_ : (uString*)::g::Uno::String::Substring(uPtr(str), ::g::Uno::String::IndexOf1(uPtr(str), NumericFormatter::DecimalPoint(), 0) + 1);
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(NumericFormatter::FormatNumber(rounded), NumericFormatter::DecimalPoint()), residue), NumericFormatter::Padding(desiredDigits - uPtr(residue)->Length()));
+    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(NumericFormatter::FormatNumber(rounded), NumericFormatter::DecimalPoint()), residue), NumericFormatter::Padding(desiredDigits - uPtr(residue)- Length()));
 }
 
 // private static string FormatNumber(string formatString, ulong i) [static] :261
 uString* NumericFormatter::FormatNumber2(uString* formatString, uint64_t i)
 {
-    int desiredDigits = (uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
+    int desiredDigits = (uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : NumericFormatter::NumberDecimalDigits_;
 
     if (desiredDigits == 0)
         return NumericFormatter::FormatNumber3(i);
@@ -1608,28 +1608,28 @@ uString* NumericFormatter::FormatNumber3(uint64_t i)
 {
     uString* str = ::g::Uno::ULong::ToString(i, ::TYPES[10/*ulong*/]);
 
-    if (uPtr(str)->Length() <= 3)
+    if (uPtr(str)- Length() <= 3)
         return str;
 
-    int start = ((uPtr(str)->Length() % 3) == 0) ? 3 : uPtr(str)->Length() % 3;
+    int start = ((uPtr(str)- Length() % 3) == 0) ? 3 : uPtr(str)- Length() % 3;
     ::g::Uno::Text::StringBuilder* result = ::g::Uno::Text::StringBuilder::New1();
-    result->Append2(::g::Uno::String::Substring1(str, 0, start));
+    result- Append2(::g::Uno::String::Substring1(str, 0, start));
 
-    for (int index = start; index < str->Length(); index = index + 3)
+    for (int index = start; index < str- Length(); index = index + 3)
     {
-        uPtr(result)->Append2(::STRINGS[11/*","*/]);
-        result->Append2(::g::Uno::String::Substring1(uPtr(str), index, 3));
+        uPtr(result)- Append2(::STRINGS[11/*","*/]);
+        result- Append2(::g::Uno::String::Substring1(uPtr(str), index, 3));
     }
 
-    return result->ToString();
+    return result- ToString();
 }
 
 // private static Uno.Runtime.Implementation.Internal.FormatSpecifier GetFormatSpecifier(string formatString) [static] :454
 int NumericFormatter::GetFormatSpecifier(uString* formatString)
 {
-    uChar symbol = ::g::Uno::Char::ToUpper(uPtr(formatString)->Item(0));
+    uChar symbol = ::g::Uno::Char::ToUpper(uPtr(formatString)- Item(0));
 
-    if ((formatString->Length() == 1) && NumericFormatter::IsLetter(symbol))
+    if ((formatString- Length() == 1) && NumericFormatter::IsLetter(symbol))
         return NumericFormatter::GetStandartFormat(symbol);
 
     try
@@ -1637,10 +1637,10 @@ int NumericFormatter::GetFormatSpecifier(uString* formatString)
         {
             int decimals = NumericFormatter::Digits(formatString);
 
-            if (decimals > 99)
+            if (decimals   99)
                 return 7;
 
-            if (uPtr(::g::Uno::String::Trim1(uPtr(formatString), uArray::Init<int>(::TYPES[13/*char[]*/], 1, '0')))->Length() == 0)
+            if (uPtr(::g::Uno::String::Trim1(uPtr(formatString), uArray::Init<int (::TYPES[13/*char[]*/], 1, '0')))- Length() == 0)
                 return 7;
         }
     }
@@ -1681,14 +1681,14 @@ int NumericFormatter::GetStandartFormat(uChar symbol)
 // private static bool IsLetter(char symbol) [static] :429
 bool NumericFormatter::IsLetter(uChar symbol)
 {
-    return (symbol >= 'A') && (symbol <= 'Z');
+    return (symbol  = 'A') && (symbol <= 'Z');
 }
 
 // private static string Pad(string unmodified, string formatString) [static] :434
 uString* NumericFormatter::Pad(uString* unmodified, uString* formatString)
 {
-    int actualLength = uPtr(unmodified)->Length();
-    int desiredLength = (uPtr(formatString)->Length() > 1) ? NumericFormatter::Digits(formatString) : actualLength;
+    int actualLength = uPtr(unmodified)- Length();
+    int desiredLength = (uPtr(formatString)- Length()   1) ? NumericFormatter::Digits(formatString) : actualLength;
 
     if (desiredLength <= actualLength)
         return unmodified;
@@ -1706,7 +1706,7 @@ uString* NumericFormatter::Padding(int length)
     uArray* padding = uArray::New(::TYPES[13/*char[]*/], length);
 
     for (int i = 0; i < length; i++)
-        uPtr(padding)->Item<uChar>(i) = '0';
+        uPtr(padding)- Item<uChar (i) = '0';
 
     return uString::CharArray(padding);
 }
@@ -1715,7 +1715,7 @@ uString* NumericFormatter::Padding(int length)
 uString* NumericFormatter::DecimalPoint()
 {
     if (::g::Uno::String::op_Equality(NumericFormatter::_decimalPoint_, NULL))
-        NumericFormatter::_decimalPoint_ = ::g::Uno::Char::ToString(uPtr(::g::Uno::Double::ToString(1.1, ::TYPES[12/*double*/]))->Item(1), ::TYPES[2/*char*/]);
+        NumericFormatter::_decimalPoint_ = ::g::Uno::Char::ToString(uPtr(::g::Uno::Double::ToString(1.1, ::TYPES[12/*double*/]))- Item(1), ::TYPES[2/*char*/]);
 
     return NumericFormatter::_decimalPoint_;
 }
@@ -1727,11 +1727,11 @@ uString* NumericFormatter::DecimalPoint()
 // private enum FormatStringTokenizer.State :7
 uEnumType* FormatStringTokenizer__State_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Uno.Runtime.Implementation.Internal.FormatStringTokenizer.State", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "Beginning", 0LL,
         "Literal", 1LL,
         "FirstCurly", 2LL,

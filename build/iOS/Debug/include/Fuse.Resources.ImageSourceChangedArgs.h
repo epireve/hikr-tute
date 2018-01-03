@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.EventArgs.h>
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceChangedArgs;}}}
 
@@ -19,7 +19,7 @@ void ImageSourceChangedArgs__Post_fn(ImageSourceChangedArgs* __this);
 
 struct ImageSourceChangedArgs : ::g::Uno::EventArgs
 {
-    uStrong< ::g::Fuse::Resources::ImageSource*> _imageSource;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _imageSource;
 
     void ctor_1(::g::Fuse::Resources::ImageSource* imageSource);
     void Post();

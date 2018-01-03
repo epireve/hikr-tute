@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.ITreeRenderer.h>
-#include <Uno.Object.h>
+#include <Fuse.Elements.ITreeRenderer.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct DefaultTreeRenderer;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
@@ -42,8 +42,8 @@ void DefaultTreeRenderer__ZOrderChanged_fn(DefaultTreeRenderer* __this, ::g::Fus
 
 struct DefaultTreeRenderer : uObject
 {
-    static uSStrong<DefaultTreeRenderer*> Instance_;
-    static uSStrong<DefaultTreeRenderer*>& Instance() { return Instance_; }
+    static uSStrong<DefaultTreeRenderer*  Instance_;
+    static uSStrong<DefaultTreeRenderer* & Instance() { return Instance_; }
 
     void ctor_();
     void BackgroundChanged(::g::Fuse::Elements::Element* e, ::g::Fuse::Drawing::Brush* background);

@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Int.h>
+#include <Uno.Int.h 
 
 namespace g{
 namespace Fuse{
 namespace Internal{
 
-// public enum ObjectList<T>.Equality :61
+// public enum ObjectList<T .Equality :61
 uEnumType* ObjectList__Equality_typeof();
 
 }}} // ::g::Fuse::Internal

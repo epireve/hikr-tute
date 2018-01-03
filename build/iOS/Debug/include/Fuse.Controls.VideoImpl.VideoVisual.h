@@ -2,26 +2,26 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Graphics.ControlVisual-1.h>
-#include <Fuse.Controls.Video.h>
-#include <Fuse.Controls.VideoImpl.IVideoCallbacks.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.IMediaPlayback.h>
-#include <Fuse.Triggers.IPlayback.h>
-#include <Fuse.Triggers.IProgress.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.Float4.h>
-#include <Uno.Int2.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Graphics.ControlVisual-1.h 
+#include <Fuse.Controls.Video.h 
+#include <Fuse.Controls.VideoImpl.IVideoCallbacks.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.IMediaPlayback.h 
+#include <Fuse.Triggers.IPlayback.h 
+#include <Fuse.Triggers.IProgress.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.Float4.h 
+#include <Uno.Int2.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct VideoVisual;}}}}
 namespace g{namespace Fuse{namespace Internal{struct SizingContainer;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTask;}}}
@@ -86,17 +86,17 @@ void VideoVisual__ResetTriggers_fn(VideoVisual* __this);
 struct VideoVisual : ::g::Fuse::Controls::Graphics::ControlVisual
 {
     int _playbackTarget;
-    uStrong< ::g::Fuse::Internal::SizingContainer*> _sizing;
-    uStrong<uObject*> _videoService;
+    uStrong< ::g::Fuse::Internal::SizingContainer*  _sizing;
+    uStrong<uObject*  _videoService;
     ::g::Uno::Int2 _sizeCache;
-    uStrong< ::g::Fuse::Triggers::BusyTask*> _busyTask;
+    uStrong< ::g::Fuse::Triggers::BusyTask*  _busyTask;
     float _volume;
     ::g::Uno::Float2 _origin;
     ::g::Uno::Float2 _scale;
     ::g::Uno::Float2 _drawOrigin;
     ::g::Uno::Float2 _drawSize;
     ::g::Uno::Float4 _uvClip;
-    uStrong<uDelegate*> ProgressChanged1;
+    uStrong<uDelegate*  ProgressChanged1;
 
     void ctor_5();
     bool FlipSize();

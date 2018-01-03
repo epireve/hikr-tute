@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.NavigationTriggerAction.h>
+#include <Fuse.Navigation.NavigationTriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigateToggle;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -20,7 +20,7 @@ void NavigateToggle__set_Target_fn(NavigateToggle* __this, ::g::Fuse::Visual* va
 
 struct NavigateToggle : ::g::Fuse::Navigation::NavigationTriggerAction
 {
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     ::g::Fuse::Visual* Target();
     void Target(::g::Fuse::Visual* value);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Observable.Operation.h>
+#include <Fuse.Scripting.Observable.Operation.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__NewAt;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
@@ -22,7 +22,7 @@ void Observable__NewAt__Unsubscribe_fn(Observable__NewAt* __this);
 struct Observable__NewAt : ::g::Fuse::Scripting::Observable__Operation
 {
     int _index;
-    uStrong<uObject*> _value;
+    uStrong<uObject*  _value;
 
     void ctor_1(::g::Fuse::Scripting::Observable* obs, int index, uObject* newValue);
     static Observable__NewAt* New1(::g::Fuse::Scripting::Observable* obs, int index, uObject* newValue);

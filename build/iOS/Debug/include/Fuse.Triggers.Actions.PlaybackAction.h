@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct PlaybackAction;}}}}
 
 namespace g{
@@ -18,7 +18,7 @@ void PlaybackAction__set_Target_fn(PlaybackAction* __this, uObject* value);
 
 struct PlaybackAction : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong<uObject*> _Target;
+    uStrong<uObject*  _Target;
 
     uObject* Target();
     void Target(uObject* value);

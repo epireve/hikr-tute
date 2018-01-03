@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Fuse.VisualEventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Fuse.VisualEventArgs.h 
 namespace g{namespace Fuse{namespace Controls{struct NavigatorSwitchedArgs;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -19,14 +19,14 @@ void NavigatorSwitchedArgs__New3_fn(::g::Fuse::Visual* v, NavigatorSwitchedArgs*
 
 struct NavigatorSwitchedArgs : ::g::Fuse::VisualEventArgs
 {
-    uStrong<uString*> OldPath;
-    uStrong<uString*> NewPath;
-    uStrong<uString*> OldParameter;
-    uStrong<uString*> NewParameter;
-    uStrong< ::g::Fuse::Visual*> OldVisual;
-    uStrong< ::g::Fuse::Visual*> NewVisual;
+    uStrong<uString*  OldPath;
+    uStrong<uString*  NewPath;
+    uStrong<uString*  OldParameter;
+    uStrong<uString*  NewParameter;
+    uStrong< ::g::Fuse::Visual*  OldVisual;
+    uStrong< ::g::Fuse::Visual*  NewVisual;
     int Operation;
-    uStrong<uString*> OperationStyle;
+    uStrong<uString*  OperationStyle;
     int Mode;
 
     void ctor_2(::g::Fuse::Visual* v);

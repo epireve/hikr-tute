@@ -1,7 +1,7 @@
-#include <Implementation/Posix/posix_mutex.h>
-#include <pthread.h>
-#include <errno.h>
-#include <uBase/Time.h>
+#include <Implementation/Posix/posix_mutex.h 
+#include <pthread.h 
+#include <errno.h 
+#include <uBase/Time.h 
 
 bool uPthreadCreateMutex(pthread_mutex_t* mutex)
 {
@@ -25,7 +25,7 @@ bool uPthreadWaitOneMutex(pthread_mutex_t* mutexHandle, int millisecondsTimeout)
     while (pthread_mutex_trylock(mutexHandle) == EBUSY)
     {
         long long now = uBase::GetTicks();
-        if (now >= timeout)
+        if (now  = timeout)
             return false;
 
         sched_yield();

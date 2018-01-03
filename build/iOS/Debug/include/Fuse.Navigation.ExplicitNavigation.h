@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IParentObserver.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.VisualNavigation.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IParentObserver.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Navigation.VisualNavigation.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Navigation{struct ExplicitNavigation;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -36,7 +36,7 @@ void ExplicitNavigation__UpdateProgress_fn(ExplicitNavigation* __this, int* mode
 
 struct ExplicitNavigation : ::g::Fuse::Navigation::VisualNavigation
 {
-    uStrong< ::g::Fuse::Visual*> _active;
+    uStrong< ::g::Fuse::Visual*  _active;
 
     void ctor_4();
     void SetPageProgress(::g::Fuse::Visual* page, float progress, bool update);

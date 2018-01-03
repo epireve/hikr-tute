@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct UpdateListener;}}
 
 namespace g{
@@ -17,8 +17,8 @@ void UpdateListener__New1_fn(UpdateListener** __retval);
 
 struct UpdateListener : uObject
 {
-    uStrong<uDelegate*> action;
-    uStrong<uObject*> update;
+    uStrong<uDelegate*  action;
+    uStrong<uObject*  update;
     bool removed;
     int deferFrame;
     int sequence;

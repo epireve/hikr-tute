@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPool;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPoolEntry;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPoolImpl;}}}
@@ -33,10 +33,10 @@ struct ElementAtlasFramebufferPool : uObject
     static bool& _isInitialized() { return _isInitialized_; }
     static ::g::Uno::Int2 _elementAtlasSize_;
     static ::g::Uno::Int2& _elementAtlasSize() { return _elementAtlasSize_; }
-    static uSStrong< ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl*> _poolImpl_;
-    static uSStrong< ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl*>& _poolImpl() { return _poolImpl_; }
-    static uSStrong<uDelegate*> AtlasSizeChanged1_;
-    static uSStrong<uDelegate*>& AtlasSizeChanged1() { return AtlasSizeChanged1_; }
+    static uSStrong< ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl*  _poolImpl_;
+    static uSStrong< ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl* & _poolImpl() { return _poolImpl_; }
+    static uSStrong<uDelegate*  AtlasSizeChanged1_;
+    static uSStrong<uDelegate* & AtlasSizeChanged1() { return AtlasSizeChanged1_; }
 
     static void EnsurePool();
     static ::g::Uno::Collections::LinkedListNode* FindFramebuffer();

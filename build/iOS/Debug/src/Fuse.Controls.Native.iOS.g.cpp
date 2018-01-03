@@ -1,18 +1,18 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.iOS.FocusHelpers.h>
-#include <Fuse.Controls.Native.iOS.FocusHelpers.PerformBecomeFirstResponder.h>
-#include <Fuse.Controls.Native.iOS.INativeFocusListener.h>
-#include <Fuse.Controls.Native.iOS.InputDispatch.RootInfo.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.iOS.NativeFocus.h>
-#include <Fuse.Controls.Native.iOS.TouchPhase.h>
-#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
-#include <Fuse.Visual.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Collections.Dictionary-2.h>
+#include <Fuse.Controls.Native.iOS.FocusHelpers.h 
+#include <Fuse.Controls.Native.iOS.FocusHelpers.PerformBecomeFirstResponder.h 
+#include <Fuse.Controls.Native.iOS.INativeFocusListener.h 
+#include <Fuse.Controls.Native.iOS.InputDispatch.RootInfo.h 
+#include <Fuse.Controls.Native.iOS.LeafView.h 
+#include <Fuse.Controls.Native.iOS.NativeFocus.h 
+#include <Fuse.Controls.Native.iOS.TouchPhase.h 
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h 
+#include <Fuse.Visual.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Collections.Dictionary-2.h 
 static uType* TYPES[2];
 
 namespace g{
@@ -28,7 +28,7 @@ namespace iOS{
 // {
 uInterfaceType* INativeFocusListener_typeof()
 {
-    static uSStrong<uInterfaceType*> type;
+    static uSStrong<uInterfaceType*  type;
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Fuse.Controls.Native.iOS.INativeFocusListener", 0, 0);
@@ -43,15 +43,15 @@ uInterfaceType* INativeFocusListener_typeof()
 // {
 static void LeafView_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::View_type, interface0),
         ::g::Fuse::Controls::Native::IView_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::View_type, interface1));
-    type->SetFields(10);
+    type- SetFields(10);
 }
 
 ::g::Fuse::Controls::Native::iOS::View_type* LeafView_typeof()
 {
-    static uSStrong< ::g::Fuse::Controls::Native::iOS::View_type*> type;
+    static uSStrong< ::g::Fuse::Controls::Native::iOS::View_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -61,15 +61,15 @@ static void LeafView_build(uType* type)
     options.ObjectSize = sizeof(LeafView);
     options.TypeSize = sizeof(::g::Fuse::Controls::Native::iOS::View_type);
     type = (::g::Fuse::Controls::Native::iOS::View_type*)uClassType::New("Fuse.Controls.Native.iOS.LeafView", options);
-    type->fp_build_ = LeafView_build;
-    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Controls::Native::ViewHandle__Dispose_fn;
+    type- fp_build_ = LeafView_build;
+    type- interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Controls::Native::ViewHandle__Dispose_fn;
     return type;
 }
 
 // protected LeafView(ObjC.Object handle) :8
 void LeafView__ctor_4_fn(LeafView* __this, ::g::ObjC::Object* handle)
 {
-    __this->ctor_4(handle);
+    __this- ctor_4(handle);
 }
 
 // protected LeafView(ObjC.Object handle) [instance] :8
@@ -87,28 +87,28 @@ void LeafView::ctor_4(::g::ObjC::Object* handle)
 // static generated NativeFocus() :14
 static void NativeFocus__cctor__fn(uType* __type)
 {
-    NativeFocus::_listeners_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/]));
+    NativeFocus::_listeners_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener */]));
 }
 
 static void NativeFocus_build(uType* type)
 {
-    ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof(), NULL);
+    ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof()- MakeType(::g::ObjC::Object_typeof(), ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof(), NULL);
     ::TYPES[1] = ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof();
-    type->SetFields(0,
-        ::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/], (uintptr_t)&NativeFocus::_listeners_, uFieldFlagsStatic);
+    type- SetFields(0,
+        ::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener */], (uintptr_t)&NativeFocus::_listeners_, uFieldFlagsStatic);
 }
 
 uClassType* NativeFocus_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Controls.Native.iOS.NativeFocus", options);
-    type->fp_build_ = NativeFocus_build;
-    type->fp_cctor_ = NativeFocus__cctor__fn;
+    type- fp_build_ = NativeFocus_build;
+    type- fp_cctor_ = NativeFocus__cctor__fn;
     return type;
 }
 
@@ -136,7 +136,7 @@ void NativeFocus__RemoveListener_fn(::g::ObjC::Object* handle)
     NativeFocus::RemoveListener(handle);
 }
 
-uSStrong< ::g::Uno::Collections::Dictionary*> NativeFocus::_listeners_;
+uSStrong< ::g::Uno::Collections::Dictionary*  NativeFocus::_listeners_;
 
 // public static void AddListener(ObjC.Object handle, Fuse.Controls.Native.iOS.INativeFocusListener listener) [static] :20
 void NativeFocus::AddListener(::g::ObjC::Object* handle, uObject* listener)
@@ -179,13 +179,13 @@ void NativeFocus::RemoveListener(::g::ObjC::Object* handle)
 // {
 static void FocusHelpers__PerformBecomeFirstResponder_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::ObjC::Object_typeof(), offsetof(FocusHelpers__PerformBecomeFirstResponder, _target), 0);
 }
 
 uType* FocusHelpers__PerformBecomeFirstResponder_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -193,20 +193,20 @@ uType* FocusHelpers__PerformBecomeFirstResponder_typeof()
     options.ObjectSize = sizeof(FocusHelpers__PerformBecomeFirstResponder);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Controls.Native.iOS.FocusHelpers.PerformBecomeFirstResponder", options);
-    type->fp_build_ = FocusHelpers__PerformBecomeFirstResponder_build;
+    type- fp_build_ = FocusHelpers__PerformBecomeFirstResponder_build;
     return type;
 }
 
 // public PerformBecomeFirstResponder(ObjC.Object target) :129
 void FocusHelpers__PerformBecomeFirstResponder__ctor__fn(FocusHelpers__PerformBecomeFirstResponder* __this, ::g::ObjC::Object* target)
 {
-    __this->ctor_(target);
+    __this- ctor_(target);
 }
 
 // public void BecomeFirstResponder() :134
 void FocusHelpers__PerformBecomeFirstResponder__BecomeFirstResponder_fn(FocusHelpers__PerformBecomeFirstResponder* __this)
 {
-    __this->BecomeFirstResponder();
+    __this- BecomeFirstResponder();
 }
 
 // public PerformBecomeFirstResponder New(ObjC.Object target) :129
@@ -231,7 +231,7 @@ void FocusHelpers__PerformBecomeFirstResponder::BecomeFirstResponder()
 FocusHelpers__PerformBecomeFirstResponder* FocusHelpers__PerformBecomeFirstResponder::New1(::g::ObjC::Object* target)
 {
     FocusHelpers__PerformBecomeFirstResponder* obj1 = (FocusHelpers__PerformBecomeFirstResponder*)uNew(FocusHelpers__PerformBecomeFirstResponder_typeof());
-    obj1->ctor_(target);
+    obj1- ctor_(target);
     return obj1;
 }
 // }
@@ -243,14 +243,14 @@ FocusHelpers__PerformBecomeFirstResponder* FocusHelpers__PerformBecomeFirstRespo
 // {
 static void InputDispatch__RootInfo_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::Visual_typeof(), offsetof(InputDispatch__RootInfo, RootVisual), 0,
         ::g::ObjC::Object_typeof(), offsetof(InputDispatch__RootInfo, RootView), 0);
 }
 
 uStructType* InputDispatch__RootInfo_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -259,14 +259,14 @@ uStructType* InputDispatch__RootInfo_typeof()
     options.ValueSize = sizeof(InputDispatch__RootInfo);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Fuse.Controls.Native.iOS.InputDispatch.RootInfo", options);
-    type->fp_build_ = InputDispatch__RootInfo_build;
+    type- fp_build_ = InputDispatch__RootInfo_build;
     return type;
 }
 
 // public RootInfo(Fuse.Visual rootVisual, ObjC.Object rootView) :89
 void InputDispatch__RootInfo__ctor__fn(InputDispatch__RootInfo* __this, ::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
 {
-    __this->ctor_(rootVisual, rootView);
+    __this- ctor_(rootVisual, rootView);
 }
 
 // public RootInfo New(Fuse.Visual rootVisual, ObjC.Object rootView) :89
@@ -297,11 +297,11 @@ InputDispatch__RootInfo InputDispatch__RootInfo__New1(::g::Fuse::Visual* rootVis
 // internal enum TouchPhase :71
 uEnumType* TouchPhase_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Fuse.Controls.Native.iOS.TouchPhase", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "Began", 0LL,
         "Moved", 1LL,
         "Stationary", 2LL,

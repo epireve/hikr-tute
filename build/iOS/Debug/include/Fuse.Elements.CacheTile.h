@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Recti.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Recti.h 
 namespace g{namespace Fuse{namespace Elements{struct CacheTile;}}}
 namespace g{namespace Fuse{struct CacheFramebuffer;}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
@@ -22,7 +22,7 @@ void CacheTile__get_Texture_fn(CacheTile* __this, ::g::Uno::Graphics::Texture2D*
 struct CacheTile
 {
     ::g::Uno::Float4x4 _compositMatrix;
-    uStrong< ::g::Fuse::CacheFramebuffer*> _framebuffer;
+    uStrong< ::g::Fuse::CacheFramebuffer*  _framebuffer;
     ::g::Uno::Recti _rect;
 
     void EnsureHasFramebuffer();

@@ -1,45 +1,45 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Scripting.Callback.h>
-#include <Fuse.Scripting.Error.h>
-#include <Fuse.Scripting.External.h>
-#include <Fuse.Scripting.Function.h>
-#include <Fuse.Scripting.IThreadWorker.h>
-#include <Fuse.Scripting.JavaScriptCore.Array.h>
-#include <Fuse.Scripting.JavaScriptCore.Context.CallbackWrapper.h>
-#include <Fuse.Scripting.JavaScriptCore.Context.h>
-#include <Fuse.Scripting.JavaScriptCore.Function.h>
-#include <Fuse.Scripting.JavaScriptCore.JSClassRef.h>
-#include <Fuse.Scripting.JavaScriptCore.JSClassRef.RawCallback.h>
-#include <Fuse.Scripting.JavaScriptCore.JSContextRef.h>
-#include <Fuse.Scripting.JavaScriptCore.JSObjectRef.h>
-#include <Fuse.Scripting.JavaScriptCore.JSPropertyNameArray.h>
-#include <Fuse.Scripting.JavaScriptCore.JSStringRef.h>
-#include <Fuse.Scripting.JavaScriptCore.JSType.h>
-#include <Fuse.Scripting.JavaScriptCore.JSTypedArray.h>
-#include <Fuse.Scripting.JavaScriptCore.JSValueRef.h>
-#include <Fuse.Scripting.JavaScriptCore.Object.h>
-#include <Fuse.Scripting.Object.h>
-#include <Fuse.Scripting.ScriptException.h>
-#include <JavaScriptCore/JSBase.h>
-#include <JavaScriptCore/JSValueRef.h>
-#include <JSTypedArrayInclude.h>
-#include <Uno.Action-1.h>
-#include <Uno.ArgumentException.h>
-#include <Uno.ArgumentNullException.h>
-#include <Uno.Bool.h>
-#include <Uno.Byte.h>
-#include <Uno.Diagnostics.Debug.h>
-#include <Uno.Double.h>
-#include <Uno.Exception.h>
-#include <Uno.Float.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Int.h>
-#include <Uno.IntPtr.h>
-#include <Uno.Object.h>
-#include <Uno.String.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.Scripting.Callback.h 
+#include <Fuse.Scripting.Error.h 
+#include <Fuse.Scripting.External.h 
+#include <Fuse.Scripting.Function.h 
+#include <Fuse.Scripting.IThreadWorker.h 
+#include <Fuse.Scripting.JavaScriptCore.Array.h 
+#include <Fuse.Scripting.JavaScriptCore.Context.CallbackWrapper.h 
+#include <Fuse.Scripting.JavaScriptCore.Context.h 
+#include <Fuse.Scripting.JavaScriptCore.Function.h 
+#include <Fuse.Scripting.JavaScriptCore.JSClassRef.h 
+#include <Fuse.Scripting.JavaScriptCore.JSClassRef.RawCallback.h 
+#include <Fuse.Scripting.JavaScriptCore.JSContextRef.h 
+#include <Fuse.Scripting.JavaScriptCore.JSObjectRef.h 
+#include <Fuse.Scripting.JavaScriptCore.JSPropertyNameArray.h 
+#include <Fuse.Scripting.JavaScriptCore.JSStringRef.h 
+#include <Fuse.Scripting.JavaScriptCore.JSType.h 
+#include <Fuse.Scripting.JavaScriptCore.JSTypedArray.h 
+#include <Fuse.Scripting.JavaScriptCore.JSValueRef.h 
+#include <Fuse.Scripting.JavaScriptCore.Object.h 
+#include <Fuse.Scripting.Object.h 
+#include <Fuse.Scripting.ScriptException.h 
+#include <JavaScriptCore/JSBase.h 
+#include <JavaScriptCore/JSValueRef.h 
+#include <JSTypedArrayInclude.h 
+#include <Uno.Action-1.h 
+#include <Uno.ArgumentException.h 
+#include <Uno.ArgumentNullException.h 
+#include <Uno.Bool.h 
+#include <Uno.Byte.h 
+#include <Uno.Diagnostics.Debug.h 
+#include <Uno.Double.h 
+#include <Uno.Exception.h 
+#include <Uno.Float.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Int.h 
+#include <Uno.IntPtr.h 
+#include <Uno.Object.h 
+#include <Uno.String.h 
+#include <Uno.UX.Selector.h 
 static uString* STRINGS[8];
 static uType* TYPES[7];
 
@@ -58,23 +58,23 @@ static void Array__Finalize_fn(Array* __this)
 {
     ::JSObjectRef ind2;
 
-    if (!uPtr(__this->_context)->_disposed)
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this->_value, ind2)), uPtr(__this->_context)->_context);
+    if (!uPtr(__this- _context)- _disposed)
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this- _value, ind2)), uPtr(__this- _context)- _context);
 }
 
 static void Array_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("length");
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Fuse::IArray_typeof(), offsetof(::g::Fuse::Scripting::Array_type, interface0));
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::Scripting::JavaScriptCore::Context_typeof(), offsetof(Array, _context), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), offsetof(Array, _value), 0);
 }
 
 ::g::Fuse::Scripting::Array_type* Array_typeof()
 {
-    static uSStrong< ::g::Fuse::Scripting::Array_type*> type;
+    static uSStrong< ::g::Fuse::Scripting::Array_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -84,37 +84,37 @@ static void Array_build(uType* type)
     options.ObjectSize = sizeof(Array);
     options.TypeSize = sizeof(::g::Fuse::Scripting::Array_type);
     type = (::g::Fuse::Scripting::Array_type*)uClassType::New("Fuse.Scripting.JavaScriptCore.Array", options);
-    type->fp_build_ = Array_build;
-    type->fp_Finalize = (void(*)(uObject*))Array__Finalize_fn;
-    type->fp_Equals2 = (void(*)(::g::Fuse::Scripting::Array*, ::g::Fuse::Scripting::Array*, bool*))Array__Equals2_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Array__GetHashCode_fn;
-    type->fp_get_Item = (void(*)(::g::Fuse::Scripting::Array*, int*, uObject**))Array__get_Item_fn;
-    type->fp_set_Item = (void(*)(::g::Fuse::Scripting::Array*, int*, uObject*))Array__set_Item_fn;
-    type->fp_get_Length = (void(*)(::g::Fuse::Scripting::Array*, int*))Array__get_Length_fn;
-    type->interface0.fp_get_Length = (void(*)(uObject*, int*))Array__get_Length_fn;
-    type->interface0.fp_get_Item = (void(*)(uObject*, int*, uObject**))Array__get_Item_fn;
+    type- fp_build_ = Array_build;
+    type- fp_Finalize = (void(*)(uObject*))Array__Finalize_fn;
+    type- fp_Equals2 = (void(*)(::g::Fuse::Scripting::Array*, ::g::Fuse::Scripting::Array*, bool*))Array__Equals2_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Array__GetHashCode_fn;
+    type- fp_get_Item = (void(*)(::g::Fuse::Scripting::Array*, int*, uObject**))Array__get_Item_fn;
+    type- fp_set_Item = (void(*)(::g::Fuse::Scripting::Array*, int*, uObject*))Array__set_Item_fn;
+    type- fp_get_Length = (void(*)(::g::Fuse::Scripting::Array*, int*))Array__get_Length_fn;
+    type- interface0.fp_get_Length = (void(*)(uObject*, int*))Array__get_Length_fn;
+    type- interface0.fp_get_Item = (void(*)(uObject*, int*, uObject**))Array__get_Item_fn;
     return type;
 }
 
 // internal Array(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef array) :12
 void Array__ctor_1_fn(Array* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef* array)
 {
-    __this->ctor_1(context, *array);
+    __this- ctor_1(context, *array);
 }
 
 // public override sealed bool Equals(Fuse.Scripting.Array a) :56
 void Array__Equals2_fn(Array* __this, ::g::Fuse::Scripting::Array* a, bool* __retval)
 {
     ::JSObjectRef ind6;
-    Array* jsa = uCast<Array*>(a, __this->__type);
-    return *__retval = ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(jsa)->_value)), void();
+    Array* jsa = uCast<Array* (a, __this- __type);
+    return *__retval = ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this- _value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(jsa)- _value)), void();
 }
 
 // public override sealed int GetHashCode() :62
 void Array__GetHashCode_fn(Array* __this, int* __retval)
 {
     ::JSObjectRef ind7;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind7 = __this->_value, ind7), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind7 = __this- _value, ind7), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize))), void();
 }
 
 // public override sealed object get_Item(int index) :27
@@ -122,7 +122,7 @@ void Array__get_Item_fn(Array* __this, int* index, uObject** __retval)
 {
     ::JSObjectRef ind3;
     int index_ = *index;
-    return *__retval = uPtr(__this->_context)->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetPropertyAtIndex1((ind3 = __this->_value, ind3), uPtr(__this->_context)->_context, index_, uPtr(__this->_context)->_onError)), void();
+    return *__retval = uPtr(__this- _context)- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetPropertyAtIndex1((ind3 = __this- _value, ind3), uPtr(__this- _context)- _context, index_, uPtr(__this- _context)- _onError)), void();
 }
 
 // public override sealed void set_Item(int index, object value) :34
@@ -130,14 +130,14 @@ void Array__set_Item_fn(Array* __this, int* index, uObject* value)
 {
     ::JSObjectRef ind4;
     int index_ = *index;
-    ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetPropertyAtIndex1((ind4 = __this->_value, ind4), uPtr(__this->_context)->_context, index_, uPtr(__this->_context)->Unwrap1(value), uPtr(__this->_context)->_onError);
+    ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetPropertyAtIndex1((ind4 = __this- _value, ind4), uPtr(__this- _context)- _context, index_, uPtr(__this- _context)- Unwrap1(value), uPtr(__this- _context)- _onError);
 }
 
 // public override sealed int get_Length() :45
 void Array__get_Length_fn(Array* __this, int* __retval)
 {
     ::JSObjectRef ind5;
-    return *__retval = (int)::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToNumber(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind5 = __this->_value, ind5), uPtr(__this->_context)->_context, ::STRINGS[0/*"length"*/], uPtr(__this->_context)->_onError), uPtr(__this->_context)->_context, uPtr(__this->_context)->_onError), void();
+    return *__retval = (int)::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToNumber(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind5 = __this- _value, ind5), uPtr(__this- _context)- _context, ::STRINGS[0/*"length"*/], uPtr(__this- _context)- _onError), uPtr(__this- _context)- _context, uPtr(__this- _context)- _onError), void();
 }
 
 // internal Array New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef array) :12
@@ -153,14 +153,14 @@ void Array::ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSO
     ctor_();
     _context = context;
     _value = array;
-    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)->_context);
+    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)- _context);
 }
 
 // internal Array New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef array) [static] :12
 Array* Array::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef array)
 {
     Array* obj8 = (Array*)uNew(Array_typeof());
-    obj8->ctor_1(context, array);
+    obj8- ctor_1(context, array);
     return obj8;
 }
 // }
@@ -173,16 +173,16 @@ Array* Array::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSO
 static void Context__CallbackWrapper_build(uType* type)
 {
     ::TYPES[0] = ::g::Fuse::Scripting::Error_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::Scripting::JavaScriptCore::Context_typeof(), offsetof(Context__CallbackWrapper, _context), 0,
         ::g::Fuse::Scripting::Callback_typeof(), offsetof(Context__CallbackWrapper, _callback), 0);
 }
 
 uType* Context__CallbackWrapper_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -191,20 +191,20 @@ uType* Context__CallbackWrapper_typeof()
     options.ObjectSize = sizeof(Context__CallbackWrapper);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Scripting.JavaScriptCore.Context.CallbackWrapper", options);
-    type->fp_build_ = Context__CallbackWrapper_build;
+    type- fp_build_ = Context__CallbackWrapper_build;
     return type;
 }
 
 // public CallbackWrapper(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.Callback callback) :290
 void Context__CallbackWrapper__ctor__fn(Context__CallbackWrapper* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context, uDelegate* callback)
 {
-    __this->ctor_(context, callback);
+    __this- ctor_(context, callback);
 }
 
 // public Fuse.Scripting.JavaScriptCore.JSValueRef Call(Fuse.Scripting.JavaScriptCore.JSValueRef[] args, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :296
 void Context__CallbackWrapper__Call_fn(Context__CallbackWrapper* __this, uArray* args, ::JSValueRef* exception, ::JSValueRef* __retval)
 {
-    *__retval = __this->Call(args, exception);
+    *__retval = __this- Call(args, exception);
 }
 
 // public CallbackWrapper New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.Callback callback) :290
@@ -228,7 +228,7 @@ void Context__CallbackWrapper::ctor_(::g::Fuse::Scripting::JavaScriptCore::Conte
     try
     {
         {
-            return uPtr(_context)->Unwrap1(uPtr(_callback)->Invoke(1, (uArray*)uPtr(_context)->Wrap2(args)));
+            return uPtr(_context)- Unwrap1(uPtr(_callback)- Invoke(1, (uArray*)uPtr(_context)- Wrap2(args)));
         }
     }
 
@@ -237,7 +237,7 @@ void Context__CallbackWrapper::ctor_(::g::Fuse::Scripting::JavaScriptCore::Conte
         if (uIs(__t.Exception, ::TYPES[0/*Fuse.Scripting.Error*/]))
         {
             ::g::Fuse::Scripting::Error* e = (::g::Fuse::Scripting::Error*)__t.Exception;
-            *exception = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(uPtr(_context)->_context, uPtr(e)->Message());
+            *exception = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(uPtr(_context)- _context, uPtr(e)- Message());
         }
         else         throw __t;
     }
@@ -249,7 +249,7 @@ void Context__CallbackWrapper::ctor_(::g::Fuse::Scripting::JavaScriptCore::Conte
 Context__CallbackWrapper* Context__CallbackWrapper::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, uDelegate* callback)
 {
     Context__CallbackWrapper* obj1 = (Context__CallbackWrapper*)uNew(Context__CallbackWrapper_typeof());
-    obj1->ctor_(context, callback);
+    obj1- ctor_(context, callback);
     return obj1;
 }
 // }
@@ -262,22 +262,22 @@ Context__CallbackWrapper* Context__CallbackWrapper::New1(::g::Fuse::Scripting::J
 // ~Context() :68
 static void Context__Finalize_fn(Context* __this)
 {
-    __this->Dispose();
+    __this- Dispose();
 }
 
 static void Context_build(uType* type)
 {
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(),
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(),
         ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(),
         ::g::Uno::UX::Selector_typeof());
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::Context_type, interface0));
-    type->SetFields(6,
+    type- SetFields(6,
         ::g::Uno::Bool_typeof(), offsetof(Context, _disposed), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), offsetof(Context, _context), 0,
-        ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), offsetof(Context, _onError), 0,
+        ::g::Uno::Action1_typeof()- MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), offsetof(Context, _onError), 0,
         ::g::Fuse::Scripting::Object_typeof(), offsetof(Context, _global), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), offsetof(Context, _functionType), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), offsetof(Context, _arrayType), 0,
@@ -289,7 +289,7 @@ static void Context_build(uType* type)
 
 ::g::Fuse::Scripting::Context_type* Context_typeof()
 {
-    static uSStrong< ::g::Fuse::Scripting::Context_type*> type;
+    static uSStrong< ::g::Fuse::Scripting::Context_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -300,19 +300,19 @@ static void Context_build(uType* type)
     options.ObjectSize = sizeof(Context);
     options.TypeSize = sizeof(::g::Fuse::Scripting::Context_type);
     type = (::g::Fuse::Scripting::Context_type*)uClassType::New("Fuse.Scripting.JavaScriptCore.Context", options);
-    type->fp_build_ = Context_build;
-    type->fp_Finalize = (void(*)(uObject*))Context__Finalize_fn;
-    type->fp_Dispose = (void(*)(::g::Fuse::Scripting::Context*))Context__Dispose_fn;
-    type->fp_Evaluate = (void(*)(::g::Fuse::Scripting::Context*, uString*, uString*, uObject**))Context__Evaluate_fn;
-    type->fp_get_GlobalObject = (void(*)(::g::Fuse::Scripting::Context*, ::g::Fuse::Scripting::Object**))Context__get_GlobalObject_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))Context__Dispose_fn;
+    type- fp_build_ = Context_build;
+    type- fp_Finalize = (void(*)(uObject*))Context__Finalize_fn;
+    type- fp_Dispose = (void(*)(::g::Fuse::Scripting::Context*))Context__Dispose_fn;
+    type- fp_Evaluate = (void(*)(::g::Fuse::Scripting::Context*, uString*, uString*, uObject**))Context__Evaluate_fn;
+    type- fp_get_GlobalObject = (void(*)(::g::Fuse::Scripting::Context*, ::g::Fuse::Scripting::Object**))Context__get_GlobalObject_fn;
+    type- interface0.fp_Dispose = (void(*)(uObject*))Context__Dispose_fn;
     return type;
 }
 
 // public Context(Fuse.Scripting.IThreadWorker worker) :22
 void Context__ctor_1_fn(Context* __this, uObject* worker)
 {
-    __this->ctor_1(worker);
+    __this- ctor_1(worker);
 }
 
 // public override sealed void Dispose() :49
@@ -326,17 +326,17 @@ void Context__Dispose_fn(Context* __this)
     ::JSClassRef ind11;
     ::JSContextRef ind12;
 
-    if (!__this->_disposed)
+    if (!__this- _disposed)
     {
-        __this->_disposed = true;
-        __this->_onError = NULL;
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind6 = __this->_functionType, ind6)), __this->_context);
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind7 = __this->_arrayType, ind7)), __this->_context);
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind8 = __this->_arrayBufferType, ind8)), __this->_context);
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind9 = __this->_byteArrayType, ind9)), __this->_context);
-        ::g::Fuse::Scripting::JavaScriptCore::JSClassRef::Dispose((ind10 = __this->_unoFinalizerClass, ind10));
-        ::g::Fuse::Scripting::JavaScriptCore::JSClassRef::Dispose((ind11 = __this->_unoCallbackClass, ind11));
-        ::g::Fuse::Scripting::JavaScriptCore::JSContextRef::Dispose((ind12 = __this->_context, ind12));
+        __this- _disposed = true;
+        __this- _onError = NULL;
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind6 = __this- _functionType, ind6)), __this- _context);
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind7 = __this- _arrayType, ind7)), __this- _context);
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind8 = __this- _arrayBufferType, ind8)), __this- _context);
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind9 = __this- _byteArrayType, ind9)), __this- _context);
+        ::g::Fuse::Scripting::JavaScriptCore::JSClassRef::Dispose((ind10 = __this- _unoFinalizerClass, ind10));
+        ::g::Fuse::Scripting::JavaScriptCore::JSClassRef::Dispose((ind11 = __this- _unoCallbackClass, ind11));
+        ::g::Fuse::Scripting::JavaScriptCore::JSContextRef::Dispose((ind12 = __this- _context, ind12));
     }
 }
 
@@ -351,13 +351,13 @@ void Context__Evaluate_fn(Context* __this, uString* fileName, uString* code, uOb
     if (::g::Uno::String::op_Equality(code, NULL))
         U_THROW(::g::Uno::ArgumentException::New4(uString::Const("Context.Evaluate.code")));
 
-    return *__retval = __this->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSContextRef::EvaluateScript1((ind13 = __this->_context, ind13), code, NULL, fileName, 0, __this->_onError)), void();
+    return *__retval = __this- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSContextRef::EvaluateScript1((ind13 = __this- _context, ind13), code, NULL, fileName, 0, __this- _onError)), void();
 }
 
 // public override sealed Fuse.Scripting.Object get_GlobalObject() :87
 void Context__get_GlobalObject_fn(Context* __this, ::g::Fuse::Scripting::Object** __retval)
 {
-    return *__retval = __this->_global, void();
+    return *__retval = __this- _global, void();
 }
 
 // public Context New(Fuse.Scripting.IThreadWorker worker) :22
@@ -369,13 +369,13 @@ void Context__New1_fn(uObject* worker, Context** __retval)
 // private void OnError(Fuse.Scripting.JavaScriptCore.JSValueRef exception) :105
 void Context__OnError_fn(Context* __this, ::JSValueRef* exception)
 {
-    __this->OnError(*exception);
+    __this- OnError(*exception);
 }
 
 // private void OnSetupError(Fuse.Scripting.JavaScriptCore.JSValueRef exception) :98
 void Context__OnSetupError_fn(Context* __this, ::JSValueRef* exception)
 {
-    __this->OnSetupError(*exception);
+    __this- OnSetupError(*exception);
 }
 
 // private static void OnSetupErrorError(Fuse.Scripting.JavaScriptCore.JSValueRef exception) :93
@@ -387,37 +387,37 @@ void Context__OnSetupErrorError_fn(::JSValueRef* exception)
 // internal Fuse.Scripting.JavaScriptCore.JSValueRef Unwrap(object obj) :173
 void Context__Unwrap1_fn(Context* __this, uObject* obj, ::JSValueRef* __retval)
 {
-    *__retval = __this->Unwrap1(obj);
+    *__retval = __this- Unwrap1(obj);
 }
 
 // internal Fuse.Scripting.JavaScriptCore.JSValueRef[] Unwrap(object[] obj) :199
 void Context__Unwrap2_fn(Context* __this, uArray* obj, uArray** __retval)
 {
-    *__retval = __this->Unwrap2(obj);
+    *__retval = __this- Unwrap2(obj);
 }
 
 // private Fuse.Scripting.JavaScriptCore.JSValueRef UnwrapArrayBuffer(byte[] data) :211
 void Context__UnwrapArrayBuffer_fn(Context* __this, uArray* data, ::JSValueRef* __retval)
 {
-    *__retval = __this->UnwrapArrayBuffer(data);
+    *__retval = __this- UnwrapArrayBuffer(data);
 }
 
 // internal object Wrap(Fuse.Scripting.JavaScriptCore.JSValueRef value) :138
 void Context__Wrap1_fn(Context* __this, ::JSValueRef* value, uObject** __retval)
 {
-    *__retval = __this->Wrap1(*value);
+    *__retval = __this- Wrap1(*value);
 }
 
 // internal object[] Wrap(Fuse.Scripting.JavaScriptCore.JSValueRef[] values) :163
 void Context__Wrap2_fn(Context* __this, uArray* values, uArray** __retval)
 {
-    *__retval = __this->Wrap2(values);
+    *__retval = __this- Wrap2(values);
 }
 
 // private byte[] WrapArrayBuffer(Fuse.Scripting.JavaScriptCore.JSObjectRef value) :242
 void Context__WrapArrayBuffer_fn(Context* __this, ::JSObjectRef* value, uArray** __retval)
 {
-    *__retval = __this->WrapArrayBuffer(*value);
+    *__retval = __this- WrapArrayBuffer(*value);
 }
 
 // public Context(Fuse.Scripting.IThreadWorker worker) [instance] :22
@@ -430,10 +430,10 @@ void Context::ctor_1(uObject* worker)
     ::JSObjectRef ind5;
     ctor_(worker);
     _context = ::g::Fuse::Scripting::JavaScriptCore::JSContextRef::Create();
-    _onError = uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnError_fn, this);
+    _onError = uDelegate::New(::g::Uno::Action1_typeof()- MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnError_fn, this);
     ::JSObjectRef global = ::g::Fuse::Scripting::JavaScriptCore::JSContextRef::GlobalObject((ind1 = _context, ind1));
     _global = ::g::Fuse::Scripting::JavaScriptCore::Object::New1(this, global);
-    uDelegate* onSetupError = uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnSetupError_fn, this);
+    uDelegate* onSetupError = uDelegate::New(::g::Uno::Action1_typeof()- MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnSetupError_fn, this);
     _functionType = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::GetJSObjectRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1(global, _context, uString::Const("Function"), onSetupError), _context);
     ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = _functionType, ind2)), _context);
     _arrayType = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::GetJSObjectRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1(global, _context, uString::Const("Array"), onSetupError), _context);
@@ -463,14 +463,14 @@ void Context::OnError(::JSValueRef exception)
 
     if (uIs(wrapped, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof()))
     {
-        ::g::Fuse::Scripting::JavaScriptCore::Object* o = uCast< ::g::Fuse::Scripting::JavaScriptCore::Object*>(wrapped, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof());
-        name = (ind21 = uAs<uString*>(uPtr(o)->Item(uString::Const("name")), ::g::Uno::String_typeof()), (ind21 != NULL) ? ind21 : name);
-        message = (ind22 = uAs<uString*>(o->Item(uString::Const("message")), ::g::Uno::String_typeof()), (ind22 != NULL) ? ind22 : message);
-        file = (ind23 = (ind24 = uAs<uString*>(o->Item(uString::Const("fileName")), ::g::Uno::String_typeof()), (ind24 != NULL) ? ind24 : uAs<uString*>(o->Item(::STRINGS[2/*"sourceURL"*/]), ::g::Uno::String_typeof())), (ind23 != NULL) ? ind23 : file);
-        uObject* l1 = o->Item(uString::Const("line"));
-        uObject* l2 = o->Item(uString::Const("lineNumber"));
-        lineNumber = uIs(l1, ::g::Uno::Double_typeof()) ? (int)uUnbox<double>(::g::Uno::Double_typeof(), l1) : uIs(l2, ::g::Uno::Double_typeof()) ? (int)uUnbox<double>(::g::Uno::Double_typeof(), l2) : uIs(l1, ::g::Uno::Int_typeof()) ? uUnbox<int>(::g::Uno::Int_typeof(), l1) : uIs(l2, ::g::Uno::Int_typeof()) ? uUnbox<int>(::g::Uno::Int_typeof(), l2) : lineNumber;
-        stack = (ind25 = uAs<uString*>(o->Item(uString::Const("stack")), ::g::Uno::String_typeof()), (ind25 != NULL) ? ind25 : stack);
+        ::g::Fuse::Scripting::JavaScriptCore::Object* o = uCast< ::g::Fuse::Scripting::JavaScriptCore::Object* (wrapped, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof());
+        name = (ind21 = uAs<uString* (uPtr(o)- Item(uString::Const("name")), ::g::Uno::String_typeof()), (ind21 != NULL) ? ind21 : name);
+        message = (ind22 = uAs<uString* (o- Item(uString::Const("message")), ::g::Uno::String_typeof()), (ind22 != NULL) ? ind22 : message);
+        file = (ind23 = (ind24 = uAs<uString* (o- Item(uString::Const("fileName")), ::g::Uno::String_typeof()), (ind24 != NULL) ? ind24 : uAs<uString* (o- Item(::STRINGS[2/*"sourceURL"*/]), ::g::Uno::String_typeof())), (ind23 != NULL) ? ind23 : file);
+        uObject* l1 = o- Item(uString::Const("line"));
+        uObject* l2 = o- Item(uString::Const("lineNumber"));
+        lineNumber = uIs(l1, ::g::Uno::Double_typeof()) ? (int)uUnbox<double (::g::Uno::Double_typeof(), l1) : uIs(l2, ::g::Uno::Double_typeof()) ? (int)uUnbox<double (::g::Uno::Double_typeof(), l2) : uIs(l1, ::g::Uno::Int_typeof()) ? uUnbox<int (::g::Uno::Int_typeof(), l1) : uIs(l2, ::g::Uno::Int_typeof()) ? uUnbox<int (::g::Uno::Int_typeof(), l2) : lineNumber;
+        stack = (ind25 = uAs<uString* (o- Item(uString::Const("stack")), ::g::Uno::String_typeof()), (ind25 != NULL) ? ind25 : stack);
     }
     else
         message = (wrapped != NULL) ? (uString*)::g::Uno::Object::ToString(uPtr(wrapped)) : message;
@@ -481,7 +481,7 @@ void Context::OnError(::JSValueRef exception)
 // private void OnSetupError(Fuse.Scripting.JavaScriptCore.JSValueRef exception) [instance] :98
 void Context::OnSetupError(::JSValueRef exception)
 {
-    uString* str = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToString1(exception, _context, uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnSetupErrorError_fn));
+    uString* str = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToString1(exception, _context, uDelegate::New(::g::Uno::Action1_typeof()- MakeType(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(), NULL), (void*)Context__OnSetupErrorError_fn));
     str = ::g::Uno::String::op_Equality(str, NULL) ? uString::Const("Unknown") : str;
     U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(uString::Const("Fatal exception during Fuse.Scripting.JavaScriptCore startup: "), str)));
 }
@@ -498,41 +498,41 @@ void Context::OnSetupError(::JSValueRef exception)
         return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNull(_context);
 
     if (uIs(obj, ::g::Uno::Int_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uUnbox<int>(::g::Uno::Int_typeof(), obj));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uUnbox<int (::g::Uno::Int_typeof(), obj));
 
     if (uIs(obj, ::g::Uno::Double_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, uUnbox<double>(::g::Uno::Double_typeof(), obj));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, uUnbox<double (::g::Uno::Double_typeof(), obj));
 
     if (uIs(obj, ::g::Uno::Float_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uUnbox<float>(::g::Uno::Float_typeof(), obj));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uUnbox<float (::g::Uno::Float_typeof(), obj));
 
     if (uIs(obj, ::g::Uno::String_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, uCast<uString*>(obj, ::g::Uno::String_typeof()));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, uCast<uString* (obj, ::g::Uno::String_typeof()));
 
     if (uIs(obj, ::g::Uno::UX::Selector_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, ::g::Uno::UX::Selector__op_Implicit1(uUnbox< ::g::Uno::UX::Selector>(::g::Uno::UX::Selector_typeof(), obj)));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, ::g::Uno::UX::Selector__op_Implicit1(uUnbox< ::g::Uno::UX::Selector (::g::Uno::UX::Selector_typeof(), obj)));
 
     if (uIs(obj, ::g::Uno::Bool_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeBoolean(_context, uUnbox<bool>(::g::Uno::Bool_typeof(), obj));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeBoolean(_context, uUnbox<bool (::g::Uno::Bool_typeof(), obj));
 
-    if (uIs(obj, ::g::Uno::Byte_typeof()->Array()))
-        return UnwrapArrayBuffer(uCast<uArray*>(obj, ::g::Uno::Byte_typeof()->Array()));
+    if (uIs(obj, ::g::Uno::Byte_typeof()- Array()))
+        return UnwrapArrayBuffer(uCast<uArray* (obj, ::g::Uno::Byte_typeof()- Array()));
 
     if (uIs(obj, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind14 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Object*>(obj, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof()))->_value, ind14));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind14 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Object* (obj, ::g::Fuse::Scripting::JavaScriptCore::Object_typeof()))- _value, ind14));
 
     if (uIs(obj, ::g::Fuse::Scripting::JavaScriptCore::Array_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind15 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Array*>(obj, ::g::Fuse::Scripting::JavaScriptCore::Array_typeof()))->_value, ind15));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind15 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Array* (obj, ::g::Fuse::Scripting::JavaScriptCore::Array_typeof()))- _value, ind15));
 
     if (uIs(obj, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind16 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Function*>(obj, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]))->_value, ind16));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind16 = uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Function* (obj, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]))- _value, ind16));
 
     if (uIs(obj, ::g::Fuse::Scripting::External_typeof()))
         return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::Make(_context, _unoFinalizerClass, obj));
 
     if (uIs(obj, ::g::Fuse::Scripting::Callback_typeof()))
     {
-        ::JSObjectRef result = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::Make(_context, _unoCallbackClass, uDelegate::New(::g::Fuse::Scripting::JavaScriptCore::JSClassRef__RawCallback_typeof(), (void*)Context__CallbackWrapper__Call_fn, Context__CallbackWrapper::New1(this, uCast<uDelegate*>(obj, ::g::Fuse::Scripting::Callback_typeof()))));
+        ::JSObjectRef result = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::Make(_context, _unoCallbackClass, uDelegate::New(::g::Fuse::Scripting::JavaScriptCore::JSClassRef__RawCallback_typeof(), (void*)Context__CallbackWrapper__Call_fn, Context__CallbackWrapper::New1(this, uCast<uDelegate* (obj, ::g::Fuse::Scripting::Callback_typeof()))));
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetPrototype(result, _context, ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind17 = _functionType, ind17)));
         return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(result);
     }
@@ -543,10 +543,10 @@ void Context::OnSetupError(::JSValueRef exception)
 // internal Fuse.Scripting.JavaScriptCore.JSValueRef[] Unwrap(object[] obj) [instance] :199
 uArray* Context::Unwrap2(uArray* obj)
 {
-    uArray* result = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), uPtr(obj)->Length());
+    uArray* result = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), uPtr(obj)- Length());
 
-    for (int i = 0; i < obj->Length(); ++i)
-        uPtr(result)->Item< ::JSValueRef>(i) = Unwrap1(uPtr(obj)->Strong<uObject*>(i));
+    for (int i = 0; i < obj- Length(); ++i)
+        uPtr(result)- Item< ::JSValueRef (i) = Unwrap1(uPtr(obj)- Strong<uObject* (i));
 
     return result;
 }
@@ -562,12 +562,12 @@ uArray* Context::Unwrap2(uArray* obj)
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetProperty1(arrayBuffer, _context, uString::Const("__unoHandle"), Unwrap1(::g::Fuse::Scripting::External::New1(data)), _onError);
     else
     {
-        int len = uPtr(data)->Length();
-        arrayBuffer = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind18 = _arrayBufferType, ind18), _context, uArray::Init< ::JSValueRef>(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)len)), _onError);
-        ::JSObjectRef byteArray = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind19 = _byteArrayType, ind19), _context, uArray::Init< ::JSValueRef>(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(arrayBuffer)), _onError);
+        int len = uPtr(data)- Length();
+        arrayBuffer = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind18 = _arrayBufferType, ind18), _context, uArray::Init< ::JSValueRef (::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)len)), _onError);
+        ::JSObjectRef byteArray = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind19 = _byteArrayType, ind19), _context, uArray::Init< ::JSValueRef (::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(arrayBuffer)), _onError);
 
         for (int i = 0; i < len; ++i)
-            ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetPropertyAtIndex1(byteArray, _context, i, ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uPtr(data)->Item<uint8_t>(i)), _onError);
+            ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetPropertyAtIndex1(byteArray, _context, i, ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeNumber(_context, (double)uPtr(data)- Item<uint8_t (i)), _onError);
     }
 
     return ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(arrayBuffer);
@@ -617,10 +617,10 @@ uObject* Context::Wrap1(::JSValueRef value)
 // internal object[] Wrap(Fuse.Scripting.JavaScriptCore.JSValueRef[] values) [instance] :163
 uArray* Context::Wrap2(uArray* values)
 {
-    uArray* result = uArray::New(::TYPES[3/*object[]*/], uPtr(values)->Length());
+    uArray* result = uArray::New(::TYPES[3/*object[]*/], uPtr(values)- Length());
 
-    for (int i = 0; i < values->Length(); ++i)
-        uPtr(result)->Strong<uObject*>(i) = Wrap1(uPtr(values)->Item< ::JSValueRef>(i));
+    for (int i = 0; i < values- Length(); ++i)
+        uPtr(result)- Strong<uObject* (i) = Wrap1(uPtr(values)- Item< ::JSValueRef (i));
 
     return result;
 }
@@ -632,11 +632,11 @@ uArray* Context::WrapArrayBuffer(::JSObjectRef value)
 
     if (::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::HasProperty1(value, _context, uString::Const("__unoHandle")))
     {
-        ::g::Fuse::Scripting::External* unoHandle = uAs< ::g::Fuse::Scripting::External*>(Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1(value, _context, uString::Const("__unoHandle"), _onError)), ::g::Fuse::Scripting::External_typeof());
+        ::g::Fuse::Scripting::External* unoHandle = uAs< ::g::Fuse::Scripting::External* (Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1(value, _context, uString::Const("__unoHandle"), _onError)), ::g::Fuse::Scripting::External_typeof());
 
         if (unoHandle != NULL)
         {
-            uArray* result = uAs<uArray*>(uPtr(unoHandle)->Object, ::g::Uno::Byte_typeof()->Array());
+            uArray* result = uAs<uArray* (uPtr(unoHandle)- Object, ::g::Uno::Byte_typeof()- Array());
 
             if (result != NULL)
                 return result;
@@ -648,12 +648,12 @@ uArray* Context::WrapArrayBuffer(::JSObjectRef value)
     if (res != NULL)
         return res;
 
-    ::JSObjectRef byteArray = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind20 = _byteArrayType, ind20), _context, uArray::Init< ::JSValueRef>(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(value)), _onError);
+    ::JSObjectRef byteArray = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind20 = _byteArrayType, ind20), _context, uArray::Init< ::JSValueRef (::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), 1, ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(value)), _onError);
     int len = (int)::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToNumber(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1(value, _context, uString::Const("byteLength"), _onError), _context, _onError);
-    res = uArray::New(::g::Uno::Byte_typeof()->Array(), len);
+    res = uArray::New(::g::Uno::Byte_typeof()- Array(), len);
 
     for (int i = 0; i < len; ++i)
-        uPtr(res)->Item<uint8_t>(i) = (uint8_t)::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToNumber(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetPropertyAtIndex1(byteArray, _context, i, _onError), _context, _onError);
+        uPtr(res)- Item<uint8_t (i) = (uint8_t)::g::Fuse::Scripting::JavaScriptCore::JSValueRef::ToNumber(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetPropertyAtIndex1(byteArray, _context, i, _onError), _context, _onError);
 
     return res;
 }
@@ -662,7 +662,7 @@ uArray* Context::WrapArrayBuffer(::JSObjectRef value)
 Context* Context::New1(uObject* worker)
 {
     Context* obj26 = (Context*)uNew(Context_typeof());
-    obj26->ctor_1(worker);
+    obj26- ctor_1(worker);
     return obj26;
 }
 
@@ -682,21 +682,21 @@ static void Function__Finalize_fn(Function* __this)
 {
     ::JSObjectRef ind2;
 
-    if (!uPtr(__this->_context)->_disposed)
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this->_value, ind2)), uPtr(__this->_context)->_context);
+    if (!uPtr(__this- _context)- _disposed)
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this- _value, ind2)), uPtr(__this- _context)- _context);
 }
 
 static void Function_build(uType* type)
 {
     ::TYPES[1] = ::g::Fuse::Scripting::Object_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::Scripting::JavaScriptCore::Context_typeof(), offsetof(Function, _context), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), offsetof(Function, _value), 0);
 }
 
 ::g::Fuse::Scripting::Function_type* Function_typeof()
 {
-    static uSStrong< ::g::Fuse::Scripting::Function_type*> type;
+    static uSStrong< ::g::Fuse::Scripting::Function_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -705,47 +705,47 @@ static void Function_build(uType* type)
     options.ObjectSize = sizeof(Function);
     options.TypeSize = sizeof(::g::Fuse::Scripting::Function_type);
     type = (::g::Fuse::Scripting::Function_type*)uClassType::New("Fuse.Scripting.JavaScriptCore.Function", options);
-    type->fp_build_ = Function_build;
-    type->fp_Finalize = (void(*)(uObject*))Function__Finalize_fn;
-    type->fp_Call = (void(*)(::g::Fuse::Scripting::Function*, uArray*, uObject**))Function__Call_fn;
-    type->fp_Construct = (void(*)(::g::Fuse::Scripting::Function*, uArray*, ::g::Fuse::Scripting::Object**))Function__Construct_fn;
-    type->fp_Equals2 = (void(*)(::g::Fuse::Scripting::Function*, ::g::Fuse::Scripting::Function*, bool*))Function__Equals2_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Function__GetHashCode_fn;
+    type- fp_build_ = Function_build;
+    type- fp_Finalize = (void(*)(uObject*))Function__Finalize_fn;
+    type- fp_Call = (void(*)(::g::Fuse::Scripting::Function*, uArray*, uObject**))Function__Call_fn;
+    type- fp_Construct = (void(*)(::g::Fuse::Scripting::Function*, uArray*, ::g::Fuse::Scripting::Object**))Function__Construct_fn;
+    type- fp_Equals2 = (void(*)(::g::Fuse::Scripting::Function*, ::g::Fuse::Scripting::Function*, bool*))Function__Equals2_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Function__GetHashCode_fn;
     return type;
 }
 
 // internal Function(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef function) :11
 void Function__ctor_1_fn(Function* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef* function)
 {
-    __this->ctor_1(context, *function);
+    __this- ctor_1(context, *function);
 }
 
 // public override sealed object Call(object[] args) :24
 void Function__Call_fn(Function* __this, uArray* args, uObject** __retval)
 {
     ::JSObjectRef ind3;
-    return *__retval = uPtr(__this->_context)->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsFunction((ind3 = __this->_value, ind3), uPtr(__this->_context)->_context, NULL, uPtr(__this->_context)->Unwrap2(args), uPtr(__this->_context)->_onError)), void();
+    return *__retval = uPtr(__this- _context)- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsFunction((ind3 = __this- _value, ind3), uPtr(__this- _context)- _context, NULL, uPtr(__this- _context)- Unwrap2(args), uPtr(__this- _context)- _onError)), void();
 }
 
 // public override sealed Fuse.Scripting.Object Construct(object[] args) :34
 void Function__Construct_fn(Function* __this, uArray* args, ::g::Fuse::Scripting::Object** __retval)
 {
     ::JSObjectRef ind4;
-    return *__retval = uCast< ::g::Fuse::Scripting::Object*>(uPtr(__this->_context)->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind4 = __this->_value, ind4), uPtr(__this->_context)->_context, uPtr(__this->_context)->Unwrap2(args), uPtr(__this->_context)->_onError))), ::TYPES[1/*Fuse.Scripting.Object*/]), void();
+    return *__retval = uCast< ::g::Fuse::Scripting::Object* (uPtr(__this- _context)- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsConstructor((ind4 = __this- _value, ind4), uPtr(__this- _context)- _context, uPtr(__this- _context)- Unwrap2(args), uPtr(__this- _context)- _onError))), ::TYPES[1/*Fuse.Scripting.Object*/]), void();
 }
 
 // public override sealed bool Equals(Fuse.Scripting.Function f) :43
 void Function__Equals2_fn(Function* __this, ::g::Fuse::Scripting::Function* f, bool* __retval)
 {
     ::JSObjectRef ind5;
-    return *__retval = uIs(f, __this->__type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind5 = __this->_value, ind5), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Function*>(f, __this->__type))->_value)), void();
+    return *__retval = uIs(f, __this- __type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind5 = __this- _value, ind5), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Function* (f, __this- __type))- _value)), void();
 }
 
 // public override sealed int GetHashCode() :48
 void Function__GetHashCode_fn(Function* __this, int* __retval)
 {
     ::JSObjectRef ind6;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this- _value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize))), void();
 }
 
 // internal Function New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef function) :11
@@ -761,14 +761,14 @@ void Function::ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::
     ctor_();
     _context = context;
     _value = function;
-    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)->_context);
+    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)- _context);
 }
 
 // internal Function New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef function) [static] :11
 Function* Function::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef function)
 {
     Function* obj7 = (Function*)uNew(Function_typeof());
-    obj7->ctor_1(context, function);
+    obj7- ctor_1(context, function);
     return obj7;
 }
 // }
@@ -786,13 +786,13 @@ static void JSClassRef__Dispose_ex(uObject* __this)
 
 static void JSClassRef_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(JSClassRef_type, interface0));
 }
 
 JSClassRef_type* JSClassRef_typeof()
 {
-    static uSStrong<JSClassRef_type*> type;
+    static uSStrong<JSClassRef_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -801,8 +801,8 @@ JSClassRef_type* JSClassRef_typeof()
     options.ValueSize = sizeof(::JSClassRef);
     options.TypeSize = sizeof(JSClassRef_type);
     type = (JSClassRef_type*)uStructType::New("Fuse.Scripting.JavaScriptCore.JSClassRef", options);
-    type->fp_build_ = JSClassRef_build;
-    type->interface0.fp_Dispose = JSClassRef__Dispose_ex;
+    type- fp_build_ = JSClassRef_build;
+    type- interface0.fp_Dispose = JSClassRef__Dispose_ex;
     return type;
 }
 
@@ -834,7 +834,7 @@ void JSClassRef::Dispose(::JSClassRef __this)
 ::JSClassRef JSClassRef::CreateUnoCallback()
 {
     ::JSClassDefinition classDef = kJSClassDefinitionEmpty;
-    classDef.finalize = (::JSObjectFinalizeCallback) [] (::JSObjectRef obj) -> void
+    classDef.finalize = (::JSObjectFinalizeCallback) [] (::JSObjectRef obj) -  void
     {
     	uObject* unoObj = (uObject*)JSObjectGetPrivate(obj);
     	::uRelease(unoObj);
@@ -846,16 +846,16 @@ void JSClassRef::Dispose(::JSClassRef __this)
     	::JSObjectRef thisObject,
     	size_t argumentCount,
     	const ::JSValueRef arguments[],
-    	::JSValueRef* exception) -> ::JSValueRef
+    	::JSValueRef* exception) -  ::JSValueRef
     {
     	uDelegate* unoDelegate = (uDelegate*)JSObjectGetPrivate(function);
-    	uArray* unoArguments = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), (int)argumentCount);
+    	uArray* unoArguments = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), (int)argumentCount);
     	for (int i = 0; i < argumentCount; ++i)
     	{
-    		unoArguments->Item< ::JSValueRef>(i) = arguments[i];
+    		unoArguments- Item< ::JSValueRef (i) = arguments[i];
     	}
     
-    	return uUnbox< ::JSValueRef>(unoDelegate->Invoke(2, unoArguments, exception));
+    	return uUnbox< ::JSValueRef (unoDelegate- Invoke(2, unoArguments, exception));
     };
     
     classDef.callAsConstructor = (::JSObjectCallAsConstructorCallback) [] (
@@ -863,16 +863,16 @@ void JSClassRef::Dispose(::JSClassRef __this)
     	::JSObjectRef constructor,
     	size_t argumentCount,
     	const ::JSValueRef arguments[],
-    	::JSValueRef* exception) -> ::JSObjectRef
+    	::JSValueRef* exception) -  ::JSObjectRef
     {
     	uDelegate* unoDelegate = (uDelegate*)JSObjectGetPrivate(constructor);
-    	uArray* unoArguments = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(), (int)argumentCount);
+    	uArray* unoArguments = uArray::New(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(), (int)argumentCount);
     	for (int i = 0; i < argumentCount; ++i)
     	{
-    		unoArguments->Item< ::JSValueRef>(i) = arguments[i];
+    		unoArguments- Item< ::JSValueRef (i) = arguments[i];
     	}
     
-    	::JSValueRef result = uUnbox< ::JSValueRef>(unoDelegate->Invoke(2, unoArguments, exception));
+    	::JSValueRef result = uUnbox< ::JSValueRef (unoDelegate- Invoke(2, unoArguments, exception));
     	if (!::JSValueIsObject(ctx, result))
     	{
     		const char* errorStr
@@ -892,7 +892,7 @@ void JSClassRef::Dispose(::JSClassRef __this)
 {
     ::JSClassDefinition classDef = kJSClassDefinitionEmpty;
     classDef.finalize = (::JSObjectFinalizeCallback)
-    [] (::JSObjectRef obj) -> void
+    [] (::JSObjectRef obj) -  void
     {
     	uObject* unoObj = (uObject*)JSObjectGetPrivate(obj);
     	::uRelease(unoObj);
@@ -917,15 +917,15 @@ static void JSContextRef_build(uType* type)
     ::STRINGS[1] = uString::Const("script");
     ::STRINGS[2] = uString::Const("sourceURL");
     ::TYPES[2] = ::g::Uno::IDisposable_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof());
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::TYPES[2/*Uno.IDisposable*/], offsetof(JSContextRef_type, interface0));
 }
 
 JSContextRef_type* JSContextRef_typeof()
 {
-    static uSStrong<JSContextRef_type*> type;
+    static uSStrong<JSContextRef_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -935,8 +935,8 @@ JSContextRef_type* JSContextRef_typeof()
     options.ValueSize = sizeof(::JSContextRef);
     options.TypeSize = sizeof(JSContextRef_type);
     type = (JSContextRef_type*)uStructType::New("Fuse.Scripting.JavaScriptCore.JSContextRef", options);
-    type->fp_build_ = JSContextRef_build;
-    type->interface0.fp_Dispose = JSContextRef__Dispose_ex;
+    type- fp_build_ = JSContextRef_build;
+    type- interface0.fp_Dispose = JSContextRef__Dispose_ex;
     return type;
 }
 
@@ -958,7 +958,7 @@ void JSContextRef__EvaluateScript_fn(::JSContextRef* __this, ::JSStringRef* scri
     *__retval = JSContextRef::EvaluateScript(*__this, *script, *thisObject, *sourceURL, *startingLineNumber, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :383
+// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :383
 void JSContextRef__EvaluateScript1_fn(::JSContextRef* __this, uString* script, ::JSObjectRef* thisObject, uString* sourceURL, int* startingLineNumber, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSContextRef::EvaluateScript1(*__this, script, *thisObject, sourceURL, *startingLineNumber, onException);
@@ -982,7 +982,7 @@ void JSContextRef::Dispose(::JSContextRef __this)
     return ::JSEvaluateScript(*&__this, script, thisObject, sourceURL, startingLineNumber, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :383
+// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :383
 ::JSValueRef JSContextRef::EvaluateScript1(::JSContextRef __this, uString* script, ::JSObjectRef thisObject, uString* sourceURL, int startingLineNumber, uDelegate* onException)
 {
     if (::g::Uno::String::op_Equality(script, NULL))
@@ -1005,7 +1005,7 @@ void JSContextRef::Dispose(::JSContextRef __this)
                     ::JSValueRef result = JSContextRef::EvaluateScript(__this, scriptRef, thisObject, sourceRef, startingLineNumber, &exception);
 
                     if (::g::Fuse::Scripting::JavaScriptCore::JSValueRef::op_Inequality(exception, NULL))
-                        uPtr(onException)->InvokeVoid(uCRef(exception));
+                        uPtr(onException)- InvokeVoid(uCRef(exception));
 
                     ::JSValueRef __uno_retval = result;
                     ::g::Uno::IDisposable::Dispose(uInterface(uBox(::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/], scriptRef), ::TYPES[2/*Uno.IDisposable*/]));
@@ -1063,13 +1063,13 @@ static void JSObjectRef_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("propertyName");
     ::TYPES[2] = ::g::Uno::IDisposable_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof());
 }
 
 uStructType* JSObjectRef_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1078,17 +1078,17 @@ uStructType* JSObjectRef_typeof()
     options.ValueSize = sizeof(::JSObjectRef);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Fuse.Scripting.JavaScriptCore.JSObjectRef", options);
-    type->fp_build_ = JSObjectRef_build;
+    type- fp_build_ = JSObjectRef_build;
     return type;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :301
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :301
 void JSObjectRef__CallAsConstructor_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uArray* arguments, uDelegate* onException, ::JSObjectRef* __retval)
 {
     *__retval = JSObjectRef::CallAsConstructor(*__this, *ctx, arguments, onException);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :282
+// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :282
 void JSObjectRef__CallAsFunction_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSObjectRef* thisObject, uArray* arguments, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::CallAsFunction(*__this, *ctx, *thisObject, arguments, onException);
@@ -1118,7 +1118,7 @@ void JSObjectRef__GetProperty_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::J
     *__retval = JSObjectRef::GetProperty(*__this, *ctx, *propertyName, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :180
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :180
 void JSObjectRef__GetProperty1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uString* propertyName, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetProperty1(*__this, *ctx, propertyName, onException);
@@ -1130,7 +1130,7 @@ void JSObjectRef__GetPropertyAtIndex_fn(::JSObjectRef* __this, ::JSContextRef* c
     *__retval = JSObjectRef::GetPropertyAtIndex(*__this, *ctx, *index, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :215
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :215
 void JSObjectRef__GetPropertyAtIndex1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int* index, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetPropertyAtIndex1(*__this, *ctx, *index, onException);
@@ -1166,7 +1166,7 @@ void JSObjectRef__SetProperty_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::J
     JSObjectRef::SetProperty(*__this, *ctx, *propertyName, *value, exception);
 }
 
-// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :198
+// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :198
 void JSObjectRef__SetProperty1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uString* propertyName, ::JSValueRef* value, uDelegate* onException)
 {
     JSObjectRef::SetProperty1(*__this, *ctx, propertyName, *value, onException);
@@ -1178,7 +1178,7 @@ void JSObjectRef__SetPropertyAtIndex_fn(::JSObjectRef* __this, ::JSContextRef* c
     JSObjectRef::SetPropertyAtIndex(*__this, *ctx, *index, *value, exception);
 }
 
-// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :229
+// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :229
 void JSObjectRef__SetPropertyAtIndex1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int* index, ::JSValueRef* value, uDelegate* onException)
 {
     JSObjectRef::SetPropertyAtIndex1(*__this, *ctx, *index, *value, onException);
@@ -1190,22 +1190,22 @@ void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::
     JSObjectRef::SetPrototype(*__this, *ctx, *value);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :301
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :301
 ::JSObjectRef JSObjectRef::CallAsConstructor(::JSObjectRef __this, ::JSContextRef ctx, uArray* arguments, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
     ::JSObjectRef result = ::JSObjectCallAsConstructor(
     	ctx,
     	*&__this,
-    	(size_t)arguments->Length(),
-    	(::JSValueRef*)arguments->Ptr(),
+    	(size_t)arguments- Length(),
+    	(::JSValueRef*)arguments- Ptr(),
     	&exception);
     if (exception != NULL)
-    	onException->InvokeVoid(uCRef(exception));
+    	onException- InvokeVoid(uCRef(exception));
     return result;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :282
+// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :282
 ::JSValueRef JSObjectRef::CallAsFunction(::JSObjectRef __this, ::JSContextRef ctx, ::JSObjectRef thisObject, uArray* arguments, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -1213,11 +1213,11 @@ void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::
     	ctx,
     	*&__this,
     	thisObject,
-    	(size_t)arguments->Length(),
-    	(::JSValueRef*)arguments->Ptr(),
+    	(size_t)arguments- Length(),
+    	(::JSValueRef*)arguments- Ptr(),
     	&exception);
     if (exception != NULL)
-    	onException->InvokeVoid(uCRef(exception));
+    	onException- InvokeVoid(uCRef(exception));
     return result;
 }
 
@@ -1245,7 +1245,7 @@ uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
     return ::JSObjectGetProperty(ctx, *&__this, propertyName, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :180
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :180
 ::JSValueRef JSObjectRef::GetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString* propertyName, uDelegate* onException)
 {
     if (::g::Uno::String::op_Equality(propertyName, NULL))
@@ -1260,7 +1260,7 @@ uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
             ::JSValueRef result = JSObjectRef::GetProperty(__this, ctx, strRef, &exception);
 
             if (::g::Fuse::Scripting::JavaScriptCore::JSValueRef::op_Inequality(exception, NULL))
-                uPtr(onException)->InvokeVoid(uCRef(exception));
+                uPtr(onException)- InvokeVoid(uCRef(exception));
 
             ::JSValueRef __uno_retval = result;
             ::g::Uno::IDisposable::Dispose(uInterface(uBox(::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/], strRef), ::TYPES[2/*Uno.IDisposable*/]));
@@ -1286,14 +1286,14 @@ uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
     return ::JSObjectGetPropertyAtIndex(ctx, *&__this, (unsigned)index, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :215
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :215
 ::JSValueRef JSObjectRef::GetPropertyAtIndex1(::JSObjectRef __this, ::JSContextRef ctx, int index, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
     ::JSValueRef result = JSObjectRef::GetPropertyAtIndex(__this, ctx, index, &exception);
 
     if (::g::Fuse::Scripting::JavaScriptCore::JSValueRef::op_Inequality(exception, NULL))
-        uPtr(onException)->InvokeVoid(uCRef(exception));
+        uPtr(onException)- InvokeVoid(uCRef(exception));
 
     return result;
 }
@@ -1339,7 +1339,7 @@ void JSObjectRef::SetProperty(::JSObjectRef __this, ::JSContextRef ctx, ::JSStri
     ::JSObjectSetProperty(ctx, *&__this, propertyName, value, ::kJSPropertyAttributeNone, exception);
 }
 
-// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :198
+// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :198
 void JSObjectRef::SetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString* propertyName, ::JSValueRef value, uDelegate* onException)
 {
     if (::g::Uno::String::op_Equality(propertyName, NULL))
@@ -1354,7 +1354,7 @@ void JSObjectRef::SetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString
             JSObjectRef::SetProperty(__this, ctx, strRef, value, &exception);
 
             if (::g::Fuse::Scripting::JavaScriptCore::JSValueRef::op_Inequality(exception, NULL))
-                uPtr(onException)->InvokeVoid(uCRef(exception));
+                uPtr(onException)- InvokeVoid(uCRef(exception));
         }
         {
             ::g::Uno::IDisposable::Dispose(uInterface(uBox(::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/], strRef), ::TYPES[2/*Uno.IDisposable*/]));
@@ -1376,14 +1376,14 @@ void JSObjectRef::SetPropertyAtIndex(::JSObjectRef __this, ::JSContextRef ctx, i
     ::JSObjectSetPropertyAtIndex(ctx, *&__this, (unsigned)index, value, exception);
 }
 
-// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :229
+// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :229
 void JSObjectRef::SetPropertyAtIndex1(::JSObjectRef __this, ::JSContextRef ctx, int index, ::JSValueRef value, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
     JSObjectRef::SetPropertyAtIndex(__this, ctx, index, value, &exception);
 
     if (::g::Fuse::Scripting::JavaScriptCore::JSValueRef::op_Inequality(exception, NULL))
-        uPtr(onException)->InvokeVoid(uCRef(exception));
+        uPtr(onException)- InvokeVoid(uCRef(exception));
 }
 
 // public void SetPrototype(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef value) [instance] :266
@@ -1419,13 +1419,13 @@ static void JSPropertyNameArray__Dispose_ex(uObject* __this)
 
 static void JSPropertyNameArray_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(JSPropertyNameArray_type, interface0));
 }
 
 JSPropertyNameArray_type* JSPropertyNameArray_typeof()
 {
-    static uSStrong<JSPropertyNameArray_type*> type;
+    static uSStrong<JSPropertyNameArray_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1434,8 +1434,8 @@ JSPropertyNameArray_type* JSPropertyNameArray_typeof()
     options.ValueSize = sizeof(::JSPropertyNameArrayRef);
     options.TypeSize = sizeof(JSPropertyNameArray_type);
     type = (JSPropertyNameArray_type*)uStructType::New("Fuse.Scripting.JavaScriptCore.JSPropertyNameArray", options);
-    type->fp_build_ = JSPropertyNameArray_build;
-    type->interface0.fp_Dispose = JSPropertyNameArray__Dispose_ex;
+    type- fp_build_ = JSPropertyNameArray_build;
+    type- interface0.fp_Dispose = JSPropertyNameArray__Dispose_ex;
     return type;
 }
 
@@ -1489,13 +1489,13 @@ static void JSStringRef__Dispose_ex(uObject* __this)
 
 static void JSStringRef_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(JSStringRef_type, interface0));
 }
 
 JSStringRef_type* JSStringRef_typeof()
 {
-    static uSStrong<JSStringRef_type*> type;
+    static uSStrong<JSStringRef_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1504,9 +1504,9 @@ JSStringRef_type* JSStringRef_typeof()
     options.ValueSize = sizeof(::JSStringRef);
     options.TypeSize = sizeof(JSStringRef_type);
     type = (JSStringRef_type*)uStructType::New("Fuse.Scripting.JavaScriptCore.JSStringRef", options);
-    type->fp_build_ = JSStringRef_build;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))JSStringRef__ToString_fn;
-    type->interface0.fp_Dispose = JSStringRef__Dispose_ex;
+    type- fp_build_ = JSStringRef_build;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))JSStringRef__ToString_fn;
+    type- interface0.fp_Dispose = JSStringRef__Dispose_ex;
     return type;
 }
 
@@ -1527,7 +1527,7 @@ void JSStringRef__ToString_fn(::JSStringRef* __this, uType* __type, uString** __
 {
     size_t len = ::JSStringGetLength(*__this);
     uString* result = ::uString::New((int)len);
-    ::memcpy((void*)result->Ptr(), ::JSStringGetCharactersPtr(*__this), sizeof(uChar) * len);
+    ::memcpy((void*)result- Ptr(), ::JSStringGetCharactersPtr(*__this), sizeof(uChar) * len);
     return *__retval = result, void();
 }
 
@@ -1540,7 +1540,7 @@ void JSStringRef::Dispose(::JSStringRef __this)
 // public static Fuse.Scripting.JavaScriptCore.JSStringRef Create(string str) [static] :145
 ::JSStringRef JSStringRef::Create(uString* str)
 {
-    return ::JSStringCreateWithCharacters((const JSChar*)str->Ptr(), str->Length());
+    return ::JSStringCreateWithCharacters((const JSChar*)str- Ptr(), str- Length());
 }
 // }
 
@@ -1550,11 +1550,11 @@ void JSStringRef::Dispose(::JSStringRef __this)
 // internal extern enum JSType :126
 uEnumType* JSType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Fuse.Scripting.JavaScriptCore.JSType", ::g::Uno::Int_typeof(), 7);
-    type->SetLiterals(
+    type- SetLiterals(
         "Undefined", 0LL,
         "Null", 1LL,
         "Boolean", 2LL,
@@ -1576,29 +1576,29 @@ static void JSTypedArray_build(uType* type)
 
 uClassType* JSTypedArray_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Scripting.JavaScriptCore.JSTypedArray", options);
-    type->fp_build_ = JSTypedArray_build;
+    type- fp_build_ = JSTypedArray_build;
     return type;
 }
 
-// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :525
+// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :525
 void JSTypedArray__TryCopyArrayBufferBytes_fn(::JSContextRef* ctx, ::JSObjectRef* obj, uDelegate* onException, uArray** __retval)
 {
     *__retval = JSTypedArray::TryCopyArrayBufferBytes(*ctx, *obj, onException);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :498
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :498
 void JSTypedArray__TryMakeArrayBufferWithBytes_fn(::JSContextRef* ctx, uArray* bytes, uDelegate* onException, ::JSObjectRef* __retval)
 {
     *__retval = JSTypedArray::TryMakeArrayBufferWithBytes(*ctx, bytes, onException);
 }
 
-// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :525
+// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [static] :525
 uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef obj, uDelegate* onException)
 {
     #ifdef JAVASCRIPTCORE_ARRAYBUFFER_SUPPORT
@@ -1608,19 +1608,19 @@ uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef 
     	::JSValueRef exception = NULL;
     	size_t length = ::JSObjectGetArrayBufferByteLength(ctx, obj, &exception);
     	if (exception != NULL)
-    		onException->InvokeVoid(uCRef(exception));
+    		onException- InvokeVoid(uCRef(exception));
     	void* bytesPtr = ::JSObjectGetArrayBufferBytesPtr(ctx, obj, &exception);
     	if (exception != NULL)
-    		onException->InvokeVoid(uCRef(exception));
+    		onException- InvokeVoid(uCRef(exception));
     
-    	uArray* result = ::uArray::New(::g::Uno::Byte_typeof()->Array(), (int)length, bytesPtr);
+    	uArray* result = ::uArray::New(::g::Uno::Byte_typeof()- Array(), (int)length, bytesPtr);
     	return result;
     }
     #endif
     return NULL;
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :498
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [static] :498
 ::JSObjectRef JSTypedArray::TryMakeArrayBufferWithBytes(::JSContextRef ctx, uArray* bytes, uDelegate* onException)
 {
     // Check for sufficient base SDK version
@@ -1632,16 +1632,16 @@ uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef 
     	::uRetain(bytes);
     	::JSObjectRef result = ::JSObjectMakeArrayBufferWithBytesNoCopy(
     		ctx,
-    		bytes->Ptr(),
-    		bytes->Length(),
-    		(::JSTypedArrayBytesDeallocator)[] (void* bytes, void* deallocatorContext) -> void
+    		bytes- Ptr(),
+    		bytes- Length(),
+    		(::JSTypedArrayBytesDeallocator)[] (void* bytes, void* deallocatorContext) -  void
     		{
     			::uRelease((uArray*)deallocatorContext);
     		},
     		bytes, // deallocatorContext
     		&exception);
     	if (exception != NULL)
-    		onException->InvokeVoid(uCRef(exception));
+    		onException- InvokeVoid(uCRef(exception));
     	return result;
     }
     #endif
@@ -1659,16 +1659,16 @@ static void JSValueRef_build(uType* type)
     ::STRINGS[4] = uString::Const("(&this).IsObject(ctx)");
     ::STRINGS[5] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.4.2/JavaScriptCore/JavaScriptCore.uno");
     ::STRINGS[6] = uString::Const("str");
-    ::TYPES[3] = uObject_typeof()->Array();
+    ::TYPES[3] = uObject_typeof()- Array();
     ::TYPES[2] = ::g::Uno::IDisposable_typeof();
     ::TYPES[4] = ::g::Fuse::Scripting::JavaScriptCore::JSStringRef_typeof();
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
 }
 
 uStructType* JSValueRef_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1677,7 +1677,7 @@ uStructType* JSValueRef_typeof()
     options.ValueSize = sizeof(::JSValueRef);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Fuse.Scripting.JavaScriptCore.JSValueRef", options);
-    type->fp_build_ = JSValueRef_build;
+    type- fp_build_ = JSValueRef_build;
     return type;
 }
 
@@ -1693,7 +1693,7 @@ void JSValueRef__GetType1_fn(::JSValueRef* __this, ::JSContextRef* ctx, int* __r
     *__retval = JSValueRef::GetType1(*__this, *ctx);
 }
 
-// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :73
+// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :73
 void JSValueRef__IsInstanceOfConstructor_fn(::JSValueRef* __this, ::JSContextRef* ctx, ::JSObjectRef* constructor, uDelegate* onException, bool* __retval)
 {
     *__retval = JSValueRef::IsInstanceOfConstructor(*__this, *ctx, *constructor, onException);
@@ -1753,13 +1753,13 @@ void JSValueRef__ToBoolean_fn(::JSValueRef* __this, ::JSContextRef* ctx, bool* _
     *__retval = JSValueRef::ToBoolean(*__this, *ctx);
 }
 
-// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :116
+// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :116
 void JSValueRef__ToNumber_fn(::JSValueRef* __this, ::JSContextRef* ctx, uDelegate* onException, double* __retval)
 {
     *__retval = JSValueRef::ToNumber(*__this, *ctx, onException);
 }
 
-// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :57
+// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) :57
 void JSValueRef__ToString1_fn(::JSValueRef* __this, ::JSContextRef* ctx, uDelegate* onException, uString** __retval)
 {
     *__retval = JSValueRef::ToString1(*__this, *ctx, onException);
@@ -1780,7 +1780,7 @@ void JSValueRef__Unprotect_fn(::JSValueRef* __this, ::JSContextRef* ctx)
 // public Fuse.Scripting.JavaScriptCore.JSObjectRef GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :29
 ::JSObjectRef JSValueRef::GetJSObjectRef(::JSValueRef __this, ::JSContextRef ctx)
 {
-    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[4/*"(&this).IsO...*/], ::STRINGS[5/*"/usr/local/...*/], 31, uArray::Init<uObject*>(::TYPES[3/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
+    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[4/*"(&this).IsO...*/], ::STRINGS[5/*"/usr/local/...*/], 31, uArray::Init<uObject* (::TYPES[3/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
     return (::JSObjectRef)*&__this;
 }
 
@@ -1800,13 +1800,13 @@ int JSValueRef::GetType1(::JSValueRef __this, ::JSContextRef ctx)
     }
 }
 
-// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :73
+// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :73
 bool JSValueRef::IsInstanceOfConstructor(::JSValueRef __this, ::JSContextRef ctx, ::JSObjectRef constructor, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
     bool result = ::JSValueIsInstanceOfConstructor(ctx, *&__this, constructor, &exception);
     if (exception != NULL)
-    	onException->InvokeVoid(uCRef(exception));
+    	onException- InvokeVoid(uCRef(exception));
     return result;
 }
 
@@ -1828,17 +1828,17 @@ bool JSValueRef::ToBoolean(::JSValueRef __this, ::JSContextRef ctx)
     return ::JSValueToBoolean(ctx, *&__this);
 }
 
-// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :116
+// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :116
 double JSValueRef::ToNumber(::JSValueRef __this, ::JSContextRef ctx, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
     double result = ::JSValueToNumber(ctx, *&__this, &exception);
     if (exception != NULL)
-    	onException->InvokeVoid(uCRef(exception));
+    	onException- InvokeVoid(uCRef(exception));
     return result;
 }
 
-// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :57
+// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef  onException) [instance] :57
 uString* JSValueRef::ToString1(::JSValueRef __this, ::JSContextRef ctx, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -1848,7 +1848,7 @@ uString* JSValueRef::ToString1(::JSValueRef __this, ::JSContextRef ctx, uDelegat
     {
         {
             if (JSValueRef::op_Inequality(exception, NULL))
-                uPtr(onException)->InvokeVoid(uCRef(exception));
+                uPtr(onException)- InvokeVoid(uCRef(exception));
 
             uString* __uno_retval = ::g::Fuse::Scripting::JavaScriptCore::JSStringRef::ToString(strRef, ::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/]);
             ::g::Uno::IDisposable::Dispose(uInterface(uBox(::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/], strRef), ::TYPES[2/*Uno.IDisposable*/]));
@@ -1950,27 +1950,27 @@ static void Object__Finalize_fn(Object* __this)
 {
     ::JSObjectRef ind2;
 
-    if (!uPtr(__this->_context)->_disposed)
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this->_value, ind2)), uPtr(__this->_context)->_context);
+    if (!uPtr(__this- _context)- _disposed)
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Unprotect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind2 = __this- _value, ind2)), uPtr(__this- _context)- _context);
 }
 
 static void Object_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Object.CallMethod.name");
     ::TYPES[5] = ::g::Fuse::Scripting::JavaScriptCore::Function_typeof();
-    ::TYPES[6] = ::g::Uno::String_typeof()->Array();
+    ::TYPES[6] = ::g::Uno::String_typeof()- Array();
     ::TYPES[4] = ::g::Fuse::Scripting::JavaScriptCore::JSStringRef_typeof();
     ::TYPES[2] = ::g::Uno::IDisposable_typeof();
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Fuse::IObject_typeof(), offsetof(::g::Fuse::Scripting::Object_type, interface0));
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Fuse::Scripting::JavaScriptCore::Context_typeof(), offsetof(Object, _context), 0,
         ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), offsetof(Object, _value), 0);
 }
 
 ::g::Fuse::Scripting::Object_type* Object_typeof()
 {
-    static uSStrong< ::g::Fuse::Scripting::Object_type*> type;
+    static uSStrong< ::g::Fuse::Scripting::Object_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1980,26 +1980,26 @@ static void Object_build(uType* type)
     options.ObjectSize = sizeof(Object);
     options.TypeSize = sizeof(::g::Fuse::Scripting::Object_type);
     type = (::g::Fuse::Scripting::Object_type*)uClassType::New("Fuse.Scripting.JavaScriptCore.Object", options);
-    type->fp_build_ = Object_build;
-    type->fp_Finalize = (void(*)(uObject*))Object__Finalize_fn;
-    type->fp_CallMethod = (void(*)(::g::Fuse::Scripting::Object*, uString*, uArray*, uObject**))Object__CallMethod_fn;
-    type->fp_ContainsKey = (void(*)(::g::Fuse::Scripting::Object*, uString*, bool*))Object__ContainsKey_fn;
-    type->fp_Equals2 = (void(*)(::g::Fuse::Scripting::Object*, ::g::Fuse::Scripting::Object*, bool*))Object__Equals2_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Object__GetHashCode_fn;
-    type->fp_InstanceOf = (void(*)(::g::Fuse::Scripting::Object*, ::g::Fuse::Scripting::Function*, bool*))Object__InstanceOf_fn;
-    type->fp_get_Item = (void(*)(::g::Fuse::Scripting::Object*, uString*, uObject**))Object__get_Item_fn;
-    type->fp_set_Item = (void(*)(::g::Fuse::Scripting::Object*, uString*, uObject*))Object__set_Item_fn;
-    type->fp_get_Keys = (void(*)(::g::Fuse::Scripting::Object*, uArray**))Object__get_Keys_fn;
-    type->interface0.fp_ContainsKey = (void(*)(uObject*, uString*, bool*))Object__ContainsKey_fn;
-    type->interface0.fp_get_Item = (void(*)(uObject*, uString*, uObject**))Object__get_Item_fn;
-    type->interface0.fp_get_Keys = (void(*)(uObject*, uArray**))Object__get_Keys_fn;
+    type- fp_build_ = Object_build;
+    type- fp_Finalize = (void(*)(uObject*))Object__Finalize_fn;
+    type- fp_CallMethod = (void(*)(::g::Fuse::Scripting::Object*, uString*, uArray*, uObject**))Object__CallMethod_fn;
+    type- fp_ContainsKey = (void(*)(::g::Fuse::Scripting::Object*, uString*, bool*))Object__ContainsKey_fn;
+    type- fp_Equals2 = (void(*)(::g::Fuse::Scripting::Object*, ::g::Fuse::Scripting::Object*, bool*))Object__Equals2_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Object__GetHashCode_fn;
+    type- fp_InstanceOf = (void(*)(::g::Fuse::Scripting::Object*, ::g::Fuse::Scripting::Function*, bool*))Object__InstanceOf_fn;
+    type- fp_get_Item = (void(*)(::g::Fuse::Scripting::Object*, uString*, uObject**))Object__get_Item_fn;
+    type- fp_set_Item = (void(*)(::g::Fuse::Scripting::Object*, uString*, uObject*))Object__set_Item_fn;
+    type- fp_get_Keys = (void(*)(::g::Fuse::Scripting::Object*, uArray**))Object__get_Keys_fn;
+    type- interface0.fp_ContainsKey = (void(*)(uObject*, uString*, bool*))Object__ContainsKey_fn;
+    type- interface0.fp_get_Item = (void(*)(uObject*, uString*, uObject**))Object__get_Item_fn;
+    type- interface0.fp_get_Keys = (void(*)(uObject*, uArray**))Object__get_Keys_fn;
     return type;
 }
 
 // internal Object(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef value) :13
 void Object__ctor_1_fn(Object* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef* value)
 {
-    __this->ctor_1(context, *value);
+    __this- ctor_1(context, *value);
 }
 
 // public override sealed object CallMethod(string name, object[] args) :71
@@ -2010,57 +2010,57 @@ void Object__CallMethod_fn(Object* __this, uString* name, uArray* args, uObject*
     if (::g::Uno::String::op_Equality(name, NULL))
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[7/*"Object.Call...*/]));
 
-    ::JSObjectRef f = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::GetJSObjectRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind7 = __this->_value, ind7), uPtr(__this->_context)->_context, name, uPtr(__this->_context)->_onError), uPtr(__this->_context)->_context);
-    return *__retval = uPtr(__this->_context)->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsFunction(f, uPtr(__this->_context)->_context, __this->_value, uPtr(__this->_context)->Unwrap2(args), uPtr(__this->_context)->_onError)), void();
+    ::JSObjectRef f = ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::GetJSObjectRef(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind7 = __this- _value, ind7), uPtr(__this- _context)- _context, name, uPtr(__this- _context)- _onError), uPtr(__this- _context)- _context);
+    return *__retval = uPtr(__this- _context)- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CallAsFunction(f, uPtr(__this- _context)- _context, __this- _value, uPtr(__this- _context)- Unwrap2(args), uPtr(__this- _context)- _onError)), void();
 }
 
 // public override sealed bool ContainsKey(string key) :86
 void Object__ContainsKey_fn(Object* __this, uString* key, bool* __retval)
 {
     ::JSObjectRef ind8;
-    return *__retval = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::HasProperty1((ind8 = __this->_value, ind8), uPtr(__this->_context)->_context, key), void();
+    return *__retval = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::HasProperty1((ind8 = __this- _value, ind8), uPtr(__this- _context)- _context, key), void();
 }
 
 // public override sealed bool Equals(Fuse.Scripting.Object o) :91
 void Object__Equals2_fn(Object* __this, ::g::Fuse::Scripting::Object* o, bool* __retval)
 {
     ::JSObjectRef ind9;
-    return *__retval = uIs(o, __this->__type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind9 = __this->_value, ind9), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Object*>(o, __this->__type))->_value)), void();
+    return *__retval = uIs(o, __this- __type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind9 = __this- _value, ind9), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Object* (o, __this- __type))- _value)), void();
 }
 
 // public override sealed int GetHashCode() :96
 void Object__GetHashCode_fn(Object* __this, int* __retval)
 {
     ::JSObjectRef ind10;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind10 = __this->_value, ind10), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind10 = __this- _value, ind10), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()- ObjectSize))), void();
 }
 
 // public override sealed bool InstanceOf(Fuse.Scripting.Function type) :62
 void Object__InstanceOf_fn(Object* __this, ::g::Fuse::Scripting::Function* type, bool* __retval)
 {
     ::JSObjectRef ind6;
-    return *__retval = uIs(type, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]) && ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::IsInstanceOfConstructor(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind6 = __this->_value, ind6)), uPtr(__this->_context)->_context, uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Function*>(type, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]))->_value, uPtr(__this->_context)->_onError), void();
+    return *__retval = uIs(type, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]) && ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::IsInstanceOfConstructor(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind6 = __this- _value, ind6)), uPtr(__this- _context)- _context, uPtr(uCast< ::g::Fuse::Scripting::JavaScriptCore::Function* (type, ::TYPES[5/*Fuse.Scripting.JavaScriptCore.Function*/]))- _value, uPtr(__this- _context)- _onError), void();
 }
 
 // public override sealed object get_Item(string key) :28
 void Object__get_Item_fn(Object* __this, uString* key, uObject** __retval)
 {
     ::JSObjectRef ind3;
-    return *__retval = uPtr(__this->_context)->Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind3 = __this->_value, ind3), uPtr(__this->_context)->_context, key, uPtr(__this->_context)->_onError)), void();
+    return *__retval = uPtr(__this- _context)- Wrap1(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetProperty1((ind3 = __this- _value, ind3), uPtr(__this- _context)- _context, key, uPtr(__this- _context)- _onError)), void();
 }
 
 // public override sealed void set_Item(string key, object value) :35
 void Object__set_Item_fn(Object* __this, uString* key, uObject* value)
 {
     ::JSObjectRef ind4;
-    ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetProperty1((ind4 = __this->_value, ind4), uPtr(__this->_context)->_context, key, uPtr(__this->_context)->Unwrap1(value), uPtr(__this->_context)->_onError);
+    ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::SetProperty1((ind4 = __this- _value, ind4), uPtr(__this- _context)- _context, key, uPtr(__this- _context)- Unwrap1(value), uPtr(__this- _context)- _onError);
 }
 
 // public override sealed string[] get_Keys() :47
 void Object__get_Keys_fn(Object* __this, uArray** __retval)
 {
     ::JSObjectRef ind5;
-    ::JSPropertyNameArrayRef arr = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CopyPropertyNames((ind5 = __this->_value, ind5), uPtr(__this->_context)->_context);
+    ::JSPropertyNameArrayRef arr = ::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::CopyPropertyNames((ind5 = __this- _value, ind5), uPtr(__this- _context)- _context);
 
     try
     {
@@ -2069,7 +2069,7 @@ void Object__get_Keys_fn(Object* __this, uArray** __retval)
             uArray* result = uArray::New(::TYPES[6/*string[]*/], count);
 
             for (int i = 0; i < count; ++i)
-                uPtr(result)->Strong<uString*>(i) = ::g::Fuse::Scripting::JavaScriptCore::JSStringRef::ToString(::g::Fuse::Scripting::JavaScriptCore::JSPropertyNameArray::Item(arr, i), ::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/]);
+                uPtr(result)- Strong<uString* (i) = ::g::Fuse::Scripting::JavaScriptCore::JSStringRef::ToString(::g::Fuse::Scripting::JavaScriptCore::JSPropertyNameArray::Item(arr, i), ::TYPES[4/*Fuse.Scripting.JavaScriptCore.JSStringRef*/]);
 
             uArray* __uno_retval = result;
             ::g::Uno::IDisposable::Dispose(uInterface(uBox(::g::Fuse::Scripting::JavaScriptCore::JSPropertyNameArray_typeof(), arr), ::TYPES[2/*Uno.IDisposable*/]));
@@ -2102,14 +2102,14 @@ void Object::ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JS
     ctor_();
     _context = context;
     _value = value;
-    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)->_context);
+    ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::Protect(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef::GetJSValueRef((ind1 = _value, ind1)), uPtr(_context)- _context);
 }
 
 // internal Object New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef value) [static] :13
 Object* Object::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef value)
 {
     Object* obj11 = (Object*)uNew(Object_typeof());
-    obj11->ctor_1(context, value);
+    obj11- ctor_1(context, value);
     return obj11;
 }
 // }
@@ -2120,13 +2120,13 @@ Object* Object::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::J
 // public delegate Fuse.Scripting.JavaScriptCore.JSValueRef JSClassRef.RawCallback(Fuse.Scripting.JavaScriptCore.JSValueRef[] args, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :430
 uDelegateType* JSClassRef__RawCallback_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Fuse.Scripting.JavaScriptCore.JSClassRef.RawCallback", 2, 0);
-    type->SetSignature(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(),
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->Array(),
-        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()->ByRef());
+    type- SetSignature(::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof(),
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- Array(),
+        ::g::Fuse::Scripting::JavaScriptCore::JSValueRef_typeof()- ByRef());
     return type;
 }
 

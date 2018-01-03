@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Animations{struct Animator;}}}
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
@@ -31,16 +31,16 @@ void Animator__set_MixOp_fn(Animator* __this, int* value);
 
 struct Animator : ::g::Uno::UX::PropertyObject
 {
-    uStrong<uObject*> Mixer;
+    uStrong<uObject*  Mixer;
     int _mixOp;
     double _Delay;
 
     void ctor_1();
-    int AnimatorVariant() { int __retval; return (((Animator_type*)__type)->fp_get_AnimatorVariant)(this, &__retval), __retval; }
-    ::g::Fuse::Animations::AnimatorState* CreateState(::g::Fuse::Animations::CreateStateParams* p) { ::g::Fuse::Animations::AnimatorState* __retval; return (((Animator_type*)__type)->fp_CreateState)(this, p, &__retval), __retval; }
+    int AnimatorVariant() { int __retval; return (((Animator_type*)__type)- fp_get_AnimatorVariant)(this, &__retval), __retval; }
+    ::g::Fuse::Animations::AnimatorState* CreateState(::g::Fuse::Animations::CreateStateParams* p) { ::g::Fuse::Animations::AnimatorState* __retval; return (((Animator_type*)__type)- fp_CreateState)(this, p, &__retval), __retval; }
     double Delay();
     void Delay(double value);
-    double GetDurationWithDelay(int dir) { double __retval; return (((Animator_type*)__type)->fp_GetDurationWithDelay)(this, &dir, &__retval), __retval; }
+    double GetDurationWithDelay(int dir) { double __retval; return (((Animator_type*)__type)- fp_GetDurationWithDelay)(this, &dir, &__retval), __retval; }
     int MixOp();
     void MixOp(int value);
     static double GetDurationWithDelay(Animator* __this, int dir) { double __retval; return Animator__GetDurationWithDelay_fn(__this, &dir, &__retval), __retval; }

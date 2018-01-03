@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct ScriptClass;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMember;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -24,10 +24,10 @@ void ScriptClass__get_Type_fn(ScriptClass* __this, uType** __retval);
 
 struct ScriptClass : uObject
 {
-    uStrong<uType*> _unoType;
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _unoTypeToScriptClass_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _unoTypeToScriptClass() { return _unoTypeToScriptClass_; }
-    uStrong<uArray*> _members;
+    uStrong<uType*  _unoType;
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _unoTypeToScriptClass_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _unoTypeToScriptClass() { return _unoTypeToScriptClass_; }
+    uStrong<uArray*  _members;
 
     void ctor_(uType* unoType, uArray* members);
     uArray* Members();

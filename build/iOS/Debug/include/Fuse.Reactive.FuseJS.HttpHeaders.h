@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct HttpHeaders;}}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 
@@ -21,7 +21,7 @@ void HttpHeaders__ParseHeader_fn(HttpHeaders* __this, uString* headerLine);
 
 struct HttpHeaders : uObject
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> _headers;
+    uStrong< ::g::Uno::Collections::Dictionary*  _headers;
 
     void ctor_(uString* headers);
     uString* GetValue(uString* key);

@@ -2,11 +2,11 @@
 public partial class SplashPage: Fuse.Controls.Page
 {
     readonly Fuse.Navigation.Router router;
-    internal global::Fuse.Reactive.EventBinding temp_eb3;
+    internal global::Fuse.Reactive.EventBinding temp_eb2;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
         "router",
-        "temp_eb3"
+        "temp_eb2"
     };
     static SplashPage()
     {
@@ -23,36 +23,58 @@ public partial class SplashPage: Fuse.Controls.Page
         __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
         var temp = new global::Fuse.Reactive.Data("goToHomePage");
         var temp1 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp2 = new global::Fuse.Controls.Grid();
-        var temp3 = new global::Fuse.Controls.StackPanel();
-        var temp4 = new global::hikr.Text();
+        var temp2 = new global::Fuse.Controls.DockPanel();
+        var temp3 = new global::Fuse.Controls.Video();
+        var temp4 = new global::Fuse.Effects.Blur();
         var temp5 = new global::hikr.Text();
-        var temp6 = new global::hikr.Button();
-        temp_eb3 = new global::Fuse.Reactive.EventBinding(temp);
+        var temp6 = new global::Fuse.Controls.Grid();
+        var temp7 = new global::Fuse.Controls.StackPanel();
+        var temp8 = new global::hikr.Text();
+        var temp9 = new global::hikr.Text();
+        var temp10 = new global::hikr.Button();
+        temp_eb2 = new global::Fuse.Reactive.EventBinding(temp);
         temp1.LineNumber = 4;
         temp1.FileName = "Pages/SplashPage.ux";
         temp1.File = new global::Uno.UX.BundleFileSource(import("../../../../../Pages/SplashPage.js"));
-        temp2.RowCount = 2;
+        temp2.ClipToBounds = true;
         temp2.Children.Add(temp3);
+        temp2.Children.Add(temp5);
         temp2.Children.Add(temp6);
-        temp3.Alignment = Fuse.Elements.Alignment.VerticalCenter;
+        temp3.IsLooping = true;
+        temp3.AutoPlay = true;
+        temp3.StretchMode = Fuse.Elements.StretchMode.UniformToFill;
+        temp3.Opacity = 0.5f;
+        temp3.Layer = Fuse.Layer.Background;
+        temp3.File = new global::Uno.UX.BundleFileSource(import("../../../../../Assets/nature.mp4"));
         temp3.Children.Add(temp4);
-        temp3.Children.Add(temp5);
-        temp4.Value = "Hikr";
-        temp4.FontSize = 70f;
-        temp4.Alignment = Fuse.Elements.Alignment.HorizontalCenter;
-        temp5.Value = "Get Out There!";
-        temp5.Alignment = Fuse.Elements.Alignment.HorizontalCenter;
+        temp4.Radius = 4.75f;
+        temp5.Value = "original video by Graham Uhelski";
+        temp5.FontSize = 10f;
+        temp5.TextAlignment = Fuse.Controls.TextAlignment.Center;
+        temp5.Margin = float4(10f, 10f, 10f, 10f);
         temp5.Opacity = 0.5f;
-        temp6.Alignment = Fuse.Elements.Alignment.VerticalCenter;
-        temp6.Margin = float4(50f, 0f, 50f, 0f);
-        temp6.Text = "Get Started";
-        temp6.FontSize = 18f;
-        global::Fuse.Gestures.Clicked.AddHandler(temp6, temp_eb3.OnEvent);
-        temp6.Bindings.Add(temp_eb3);
+        global::Fuse.Controls.DockPanel.SetDock(temp5, Fuse.Layouts.Dock.Bottom);
+        temp6.RowCount = 2;
+        temp6.Children.Add(temp7);
+        temp6.Children.Add(temp10);
+        temp7.Alignment = Fuse.Elements.Alignment.VerticalCenter;
+        temp7.Children.Add(temp8);
+        temp7.Children.Add(temp9);
+        temp8.Value = "Hikr";
+        temp8.FontSize = 70f;
+        temp8.Alignment = Fuse.Elements.Alignment.HorizontalCenter;
+        temp9.Value = "Get Out There!";
+        temp9.Alignment = Fuse.Elements.Alignment.HorizontalCenter;
+        temp9.Opacity = 0.5f;
+        temp10.Alignment = Fuse.Elements.Alignment.VerticalCenter;
+        temp10.Margin = float4(50f, 0f, 50f, 0f);
+        temp10.Text = "Get Started";
+        temp10.FontSize = 18f;
+        global::Fuse.Gestures.Clicked.AddHandler(temp10, temp_eb2.OnEvent);
+        temp10.Bindings.Add(temp_eb2);
         __g_nametable.This = this;
         __g_nametable.Objects.Add(router);
-        __g_nametable.Objects.Add(temp_eb3);
+        __g_nametable.Objects.Add(temp_eb2);
         this.Children.Add(temp1);
         this.Children.Add(temp2);
     }

@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IPageResourceBinding.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IPageResourceBinding.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigatedArgs;}}}
 namespace g{namespace Fuse{namespace Navigation{struct PageResourceBinding;}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class PageResourceBinding<T> :160
+// public sealed class PageResourceBinding<T  :160
 // {
 struct PageResourceBinding_type : ::g::Fuse::Node_type
 {
@@ -44,12 +44,12 @@ void PageResourceBinding__UpdateSource_fn(PageResourceBinding* __this);
 
 struct PageResourceBinding : ::g::Fuse::Behavior
 {
-    uTField _default() { return __type->Field(this, 15); }
+    uTField _default() { return __type- Field(this, 15); }
     bool _hasDefault;
-    uStrong<uObject*> _nav;
-    uStrong< ::g::Fuse::Visual*> _currentPage;
-    uStrong<uString*> _Key;
-    uStrong< ::g::Uno::UX::Property1*> _Target;
+    uStrong<uObject*  _nav;
+    uStrong< ::g::Fuse::Visual*  _currentPage;
+    uStrong<uString*  _Key;
+    uStrong< ::g::Uno::UX::Property1*  _Target;
 
     bool Acceptor(uObject* obj);
     void GotoPage(::g::Fuse::Visual* page);

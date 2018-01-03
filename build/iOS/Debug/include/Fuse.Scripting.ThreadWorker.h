@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IMirror.h>
-#include <Fuse.Scripting.IThreadWorker.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
-#include <Uno.Threading.IDispatcher.h>
+#include <Fuse.Scripting.IMirror.h 
+#include <Fuse.Scripting.IThreadWorker.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
+#include <Uno.Threading.IDispatcher.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Builtins;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ClassInstance;}}}
@@ -79,19 +79,19 @@ void ThreadWorker__WrapScriptClass_fn(ThreadWorker* __this, uObject* obj, uObjec
 struct ThreadWorker : uObject
 {
     int _reflectionDepth;
-    uStrong< ::g::Uno::Collections::Dictionary*> _registeredClasses;
-    uStrong< ::g::Fuse::Scripting::Function*> _setSuperclass;
-    uStrong< ::g::Fuse::PropertyHandle*> _classInstanceProperty;
-    static uSStrong< ::g::Fuse::Scripting::Context*> _context_;
-    static uSStrong< ::g::Fuse::Scripting::Context*>& _context() { return ThreadWorker_typeof()->Init(), _context_; }
-    static uSStrong< ::g::Fuse::Reactive::FuseJS::Builtins*> _fuseJS_;
-    static uSStrong< ::g::Fuse::Reactive::FuseJS::Builtins*>& _fuseJS() { return ThreadWorker_typeof()->Init(), _fuseJS_; }
-    uStrong< ::g::Uno::Threading::Thread*> _thread;
-    uStrong< ::g::Uno::Threading::ManualResetEvent*> _ready;
-    uStrong< ::g::Uno::Threading::ManualResetEvent*> _idle;
-    uStrong< ::g::Uno::Threading::ManualResetEvent*> _terminate;
-    uStrong< ::g::Uno::Threading::ConcurrentQueue*> _queue;
-    uStrong< ::g::Uno::Threading::ConcurrentQueue*> _exceptionQueue;
+    uStrong< ::g::Uno::Collections::Dictionary*  _registeredClasses;
+    uStrong< ::g::Fuse::Scripting::Function*  _setSuperclass;
+    uStrong< ::g::Fuse::PropertyHandle*  _classInstanceProperty;
+    static uSStrong< ::g::Fuse::Scripting::Context*  _context_;
+    static uSStrong< ::g::Fuse::Scripting::Context* & _context() { return ThreadWorker_typeof()- Init(), _context_; }
+    static uSStrong< ::g::Fuse::Reactive::FuseJS::Builtins*  _fuseJS_;
+    static uSStrong< ::g::Fuse::Reactive::FuseJS::Builtins* & _fuseJS() { return ThreadWorker_typeof()- Init(), _fuseJS_; }
+    uStrong< ::g::Uno::Threading::Thread*  _thread;
+    uStrong< ::g::Uno::Threading::ManualResetEvent*  _ready;
+    uStrong< ::g::Uno::Threading::ManualResetEvent*  _idle;
+    uStrong< ::g::Uno::Threading::ManualResetEvent*  _terminate;
+    uStrong< ::g::Uno::Threading::ConcurrentQueue*  _queue;
+    uStrong< ::g::Uno::Threading::ConcurrentQueue*  _exceptionQueue;
     bool _subscribedForClosing;
 
     void ctor_();

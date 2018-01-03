@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
+#include <Uno.UX.Selector.h 
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct InstantiatorFunction;}}}
 namespace g{namespace Fuse{namespace Reactive{struct InstantiatorFunction__InstantiatorSubscription;}}}
@@ -28,14 +28,14 @@ void InstantiatorFunction__InstantiatorSubscription__PushValue_fn(InstantiatorFu
 
 struct InstantiatorFunction__InstantiatorSubscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::InstantiatorFunction*> _expr;
+    uStrong< ::g::Fuse::Reactive::InstantiatorFunction*  _expr;
     ::g::Uno::UX::Selector _item;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _context;
-    uStrong<uObject*> _node;
-    uStrong< ::g::Fuse::Reactive::Instantiator*> _instantiator;
-    uStrong< ::g::Fuse::Node*> _instance;
-    uStrong<uObject*> _nodeSub;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _context;
+    uStrong<uObject*  _node;
+    uStrong< ::g::Fuse::Reactive::Instantiator*  _instantiator;
+    uStrong< ::g::Fuse::Node*  _instance;
+    uStrong<uObject*  _nodeSub;
 
     void ctor_1(::g::Fuse::Reactive::InstantiatorFunction* expr, ::g::Uno::UX::Selector item, uObject* listener, uObject* context, uObject* node);
     void OnNewNode(uObject* obj);

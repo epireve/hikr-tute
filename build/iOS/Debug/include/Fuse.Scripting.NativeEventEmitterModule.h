@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeEvent;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeEventEmitterModule;}}}
@@ -33,14 +33,14 @@ void NativeEventEmitterModule__ResetListenersJS_fn(NativeEventEmitterModule* __t
 
 struct NativeEventEmitterModule : ::g::Fuse::Scripting::NativeModule
 {
-    uStrong<uArray*> _eventNames;
-    uStrong< ::g::Uno::Collections::List*> _listeningCallbacks;
-    uStrong< ::g::Fuse::Scripting::Object*> _this;
+    uStrong<uArray*  _eventNames;
+    uStrong< ::g::Uno::Collections::List*  _listeningCallbacks;
+    uStrong< ::g::Fuse::Scripting::Object*  _this;
     bool _initialized;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
     bool _queueEventsBeforeInit;
-    uStrong<uObject*> _mutex;
-    uStrong< ::g::Uno::Collections::Queue*> _queuedEvents;
+    uStrong<uObject*  _mutex;
+    uStrong< ::g::Uno::Collections::Queue*  _queuedEvents;
 
     void ctor_2(bool queueEventsBeforeInit, uArray* eventNames);
     void Dispatch(uDelegate* action, bool alwaysQueueEventBeforeInit);

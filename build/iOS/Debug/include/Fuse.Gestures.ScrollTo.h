@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
-#include <Uno.Float2.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
+#include <Uno.Float2.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollView;}}}
 namespace g{namespace Fuse{namespace Gestures{struct ScrollTo;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -27,7 +27,7 @@ struct ScrollTo : ::g::Fuse::Triggers::Actions::TriggerAction
     ::g::Uno::Float2 _relativePosition;
     bool _hasRelativePosition;
     int _how;
-    uStrong< ::g::Fuse::Controls::ScrollView*> _Target;
+    uStrong< ::g::Fuse::Controls::ScrollView*  _Target;
 
     int How();
     void How(int value);

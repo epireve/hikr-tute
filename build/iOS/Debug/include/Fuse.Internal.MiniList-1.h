@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Object.h>
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct MiniList;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal struct MiniList<T> :25
+// internal struct MiniList<T  :25
 // {
 struct MiniList_type : uStructType
 {
@@ -36,7 +36,7 @@ void MiniList__RemoveAt_fn(MiniList* __this, uType* __type, int* index);
 
 struct MiniList
 {
-    uStrong<uObject*> _list;
+    uStrong<uObject*  _list;
     int _mode;
 
     void Add(uType* __type, uObject* value);

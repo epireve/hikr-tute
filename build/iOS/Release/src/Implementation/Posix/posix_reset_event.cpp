@@ -1,16 +1,16 @@
-#include <Implementation/Posix/posix_reset_event.h>
-#include <errno.h>
-#include <sys/time.h>
-#include <stdint.h>
+#include <Implementation/Posix/posix_reset_event.h 
+#include <errno.h 
+#include <sys/time.h 
+#include <stdint.h 
 
 uPosixResetEvent* uPosixCreateResetEvent(bool initialState, bool autoReset)
 {
     uPosixResetEvent* resetEvent = new uPosixResetEvent();
 
-    pthread_mutex_init(&resetEvent->mutex, NULL);
-    pthread_cond_init(&resetEvent->cond, NULL);
-    resetEvent->flag = initialState;
-    resetEvent->autoReset = autoReset;
+    pthread_mutex_init(&resetEvent- mutex, NULL);
+    pthread_cond_init(&resetEvent- cond, NULL);
+    resetEvent- flag = initialState;
+    resetEvent- autoReset = autoReset;
 
     return resetEvent;
 }
@@ -18,26 +18,26 @@ uPosixResetEvent* uPosixCreateResetEvent(bool initialState, bool autoReset)
 // Need to prefix with ResetEvent_ because of include hell
 bool uPosixSetResetEvent(uPosixResetEvent* resetEvent)
 {
-    pthread_mutex_lock(&resetEvent->mutex);
-    resetEvent->flag = true;
-    pthread_mutex_unlock(&resetEvent->mutex);
-    pthread_cond_signal(&resetEvent->cond);
+    pthread_mutex_lock(&resetEvent- mutex);
+    resetEvent- flag = true;
+    pthread_mutex_unlock(&resetEvent- mutex);
+    pthread_cond_signal(&resetEvent- cond);
 
     return true;
 }
 
 bool uPosixResetResetEvent(uPosixResetEvent* resetEvent)
 {
-    pthread_mutex_lock(&resetEvent->mutex);
-    resetEvent->flag = false;
-    pthread_mutex_unlock(&resetEvent->mutex);
+    pthread_mutex_lock(&resetEvent- mutex);
+    resetEvent- flag = false;
+    pthread_mutex_unlock(&resetEvent- mutex);
 
     return true;
 }
 
 bool uPosixWaitOneResetEvent(uPosixResetEvent* resetEvent, int timeoutMillis)
 {
-    pthread_mutex_lock(&resetEvent->mutex);
+    pthread_mutex_lock(&resetEvent- mutex);
 
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -49,13 +49,13 @@ bool uPosixWaitOneResetEvent(uPosixResetEvent* resetEvent, int timeoutMillis)
     timeout.tv_nsec = (long)(timeoutNanoseconds % 1000000000ull);
 
     auto result = true;
-    while (!resetEvent->flag)
+    while (!resetEvent- flag)
     {
         if (timeoutMillis < 0)
-            pthread_cond_wait(&resetEvent->cond, &resetEvent->mutex);
+            pthread_cond_wait(&resetEvent- cond, &resetEvent- mutex);
         else
         {
-            if (pthread_cond_timedwait(&resetEvent->cond, &resetEvent->mutex, &timeout) == ETIMEDOUT)
+            if (pthread_cond_timedwait(&resetEvent- cond, &resetEvent- mutex, &timeout) == ETIMEDOUT)
             {
                 result = false;
                 break;
@@ -63,17 +63,17 @@ bool uPosixWaitOneResetEvent(uPosixResetEvent* resetEvent, int timeoutMillis)
         }
     }
 
-    if (resetEvent->autoReset)
-        resetEvent->flag = false;
+    if (resetEvent- autoReset)
+        resetEvent- flag = false;
 
-    pthread_mutex_unlock(&resetEvent->mutex);
+    pthread_mutex_unlock(&resetEvent- mutex);
 
     return result;
 }
 
 void uPosixDisposeResetEvent(uPosixResetEvent* resetEvent)
 {
-    pthread_mutex_destroy(&resetEvent->mutex);
-    pthread_cond_destroy(&resetEvent->cond);
+    pthread_mutex_destroy(&resetEvent- mutex);
+    pthread_cond_destroy(&resetEvent- cond);
     delete resetEvent;
 }

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct BringToFront;}}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -21,7 +21,7 @@ void BringToFront__set_Target_fn(BringToFront* __this, ::g::Fuse::Visual* value)
 
 struct BringToFront : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     ::g::Fuse::Visual* Target();
     void Target(::g::Fuse::Visual* value);

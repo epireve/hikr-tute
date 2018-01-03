@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeFunction__NativeFunctionClosure;}}}
 
@@ -19,8 +19,8 @@ void NativeFunction__NativeFunctionClosure__New1_fn(uDelegate* callback, ::g::Fu
 
 struct NativeFunction__NativeFunctionClosure : uObject
 {
-    uStrong<uDelegate*> _callback;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
+    uStrong<uDelegate*  _callback;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
 
     void ctor_(uDelegate* callback, ::g::Fuse::Scripting::Context* context);
     uObject* Callback(uArray* args);

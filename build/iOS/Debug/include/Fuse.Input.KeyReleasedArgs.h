@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.KeyEventArgs.h>
-#include <Fuse.Scripting.IScriptEvent.h>
+#include <Fuse.Input.KeyEventArgs.h 
+#include <Fuse.Scripting.IScriptEvent.h 
 namespace g{namespace Fuse{namespace Input{struct KeyReleasedArgs;}}}
 namespace g{namespace Fuse{struct Visual;}}
 

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.DiagnosticSubject.h>
+#include <Fuse.Scripting.DiagnosticSubject.h 
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleInstance;}}}
@@ -27,14 +27,14 @@ void ModuleInstance__SetDataContext_fn(ModuleInstance* __this);
 
 struct ModuleInstance : ::g::Fuse::Scripting::DiagnosticSubject
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    uStrong< ::g::Fuse::Reactive::JavaScript*> _js;
-    uStrong< ::g::Uno::Collections::Dictionary*> _deps;
-    uStrong<uObject*> _dc;
-    uStrong< ::g::Fuse::Scripting::ModuleResult*> _moduleResult;
-    static uSStrong<uObject*> _resetHookMutex_;
-    static uSStrong<uObject*>& _resetHookMutex() { return _resetHookMutex_; }
-    uStrong< ::g::Fuse::Scripting::DiagnosticSubject*> _diagnostic1;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    uStrong< ::g::Fuse::Reactive::JavaScript*  _js;
+    uStrong< ::g::Uno::Collections::Dictionary*  _deps;
+    uStrong<uObject*  _dc;
+    uStrong< ::g::Fuse::Scripting::ModuleResult*  _moduleResult;
+    static uSStrong<uObject*  _resetHookMutex_;
+    static uSStrong<uObject* & _resetHookMutex() { return _resetHookMutex_; }
+    uStrong< ::g::Fuse::Scripting::DiagnosticSubject*  _diagnostic1;
 
     void ctor_1(::g::Fuse::Scripting::ThreadWorker* worker, ::g::Fuse::Reactive::JavaScript* js);
     void Dispose();

@@ -2,17 +2,17 @@
 
 //#if !(#{Fuse.Controls.Native.iOS.GraphicsView:IsStripped} && #{Fuse.Controls.Native.iOS.FocusHelpers:IsStripped} && #{Fuse.Controls.Native.iOS.InputDispatch:IsStripped} && #{Fuse.Controls.Native.iOS.KeyboardView:IsStripped} && #{Fuse.Controls.Native.iOS.ScrollView:IsStripped} && #{Fuse.Controls.Native.iOS.SingleLineTextEdit:IsStripped} && #{Fuse.Controls.Native.iOS.MultiLineTextEdit:IsStripped} && #{Fuse.Controls.Native.iOS.UIControlEvent:IsStripped})
 
-#include <Uno/Uno.h>
-#include <UIKit/UIKit.h>
-#include <GLKit/GLKit.h>
-#include <OpenGLES/EAGL.h>
+#include <Uno/Uno.h 
+#include <UIKit/UIKit.h 
+#include <GLKit/GLKit.h 
+#include <OpenGLES/EAGL.h 
 
 @interface ShapeView : UIControl
 -(UIControl*)childrenView;
 -(UIControl*)shapeView;
 @end
 
-@interface KeyboardView : UIControl<UIKeyInput>
+@interface KeyboardView : UIControl<UIKeyInput 
 
 @property(nonatomic) bool isFocusable;
 @property(nonatomic) UIReturnKeyType returnKeyType;
@@ -33,7 +33,7 @@
 
 @end
 
-@interface TextFieldDelegate : NSObject<UITextFieldDelegate>
+@interface TextFieldDelegate : NSObject<UITextFieldDelegate 
 
 @property (copy) bool (^onActionCallback)(id);
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
@@ -45,7 +45,7 @@
 
 @end
 
-@interface TextViewDelegate : NSObject<UITextViewDelegate>
+@interface TextViewDelegate : NSObject<UITextViewDelegate 
 
 @property (copy) void (^textChangedCallback)(id);
 @property (copy) void (^didBeginEditingCallback)();
@@ -60,7 +60,7 @@
 
 @end
 
-@interface ScrollViewDelegate : NSObject<UIScrollViewDelegate>
+@interface ScrollViewDelegate : NSObject<UIScrollViewDelegate 
 
 @property (copy) void (^didScrollCallback)(id);
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;

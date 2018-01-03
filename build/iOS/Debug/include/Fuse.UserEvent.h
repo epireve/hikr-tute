@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct UserEvent;}}
@@ -32,7 +32,7 @@ void UserEvent__ScanTree_fn(::g::Fuse::Node* at, ::g::Uno::UX::Selector* name, :
 
 struct UserEvent : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Fuse::UserEventDispatch*> Dispatch;
+    uStrong< ::g::Fuse::UserEventDispatch*  Dispatch;
 
     void Raise(::g::Uno::Collections::Dictionary* args);
     static void raise(::g::Fuse::Scripting::Context* c, UserEvent* n, uArray* args);

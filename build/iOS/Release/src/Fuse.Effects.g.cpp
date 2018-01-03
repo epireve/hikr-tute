@@ -109,6 +109,12 @@ BasicEffect_type* BasicEffect_typeof()
     return type;
 }
 
+// protected BasicEffect(Fuse.Effects.EffectType effectType) :9
+void BasicEffect__ctor_3_fn(BasicEffect* __this, int* effectType)
+{
+    __this->ctor_3(*effectType);
+}
+
 // internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) :22
 void BasicEffect__ConservativelySnapToCoveringIntegers_fn(::g::Uno::Rect* r, ::g::Uno::Recti* __retval)
 {
@@ -126,6 +132,12 @@ void BasicEffect__Render_fn(BasicEffect* __this, ::g::Fuse::DrawContext* dc)
 {
     ::g::Uno::Rect rect = __this->GetLocalElementRect();
     __this->OnRender(dc, rect);
+}
+
+// protected BasicEffect(Fuse.Effects.EffectType effectType) [instance] :9
+void BasicEffect::ctor_3(int effectType)
+{
+    ctor_2(effectType);
 }
 
 // protected Uno.Rect GetLocalElementRect() [instance] :34
@@ -268,6 +280,7 @@ DropShadow__Blitter* DropShadow__Blitter::Instance()
 // {
 static void Blur_build(uType* type)
 {
+    ::TYPES[1] = ::g::Uno::Float2_typeof()->Array();
     ::TYPES[0] = ::g::Fuse::IRenderViewport_typeof();
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Effects::BasicEffect_type, interface0),
@@ -297,6 +310,7 @@ static void Blur_build(uType* type)
     options.TypeSize = sizeof(::g::Fuse::Effects::BasicEffect_type);
     type = (::g::Fuse::Effects::BasicEffect_type*)uClassType::New("Fuse.Effects.Blur", options);
     type->fp_build_ = Blur_build;
+    type->fp_ctor_ = (void*)Blur__New2_fn;
     type->fp_get_Active = (void(*)(::g::Fuse::Effects::Effect*, bool*))Blur__get_Active_fn;
     type->fp_ModifyRenderBounds = (void(*)(::g::Fuse::Effects::Effect*, ::g::Fuse::VisualBounds*, ::g::Fuse::VisualBounds**))Blur__ModifyRenderBounds_fn;
     type->fp_OnRender = (void(*)(::g::Fuse::Effects::BasicEffect*, ::g::Fuse::DrawContext*, ::g::Uno::Rect*))Blur__OnRender_fn;
@@ -318,16 +332,34 @@ static void Blur_build(uType* type)
     return type;
 }
 
+// public Blur() :15
+void Blur__ctor_4_fn(Blur* __this)
+{
+    __this->ctor_4();
+}
+
 // public override sealed bool get_Active() :38
 void Blur__get_Active_fn(Blur* __this, bool* __retval)
 {
     return *__retval = __this->Radius() > 0.0f, void();
 }
 
+// private generated void init_DrawCalls() :13
+void Blur__init_DrawCalls_fn(Blur* __this)
+{
+    __this->init_DrawCalls();
+}
+
 // public override sealed Fuse.VisualBounds ModifyRenderBounds(Fuse.VisualBounds inBounds) :40
 void Blur__ModifyRenderBounds_fn(Blur* __this, ::g::Fuse::VisualBounds* inBounds, ::g::Fuse::VisualBounds** __retval)
 {
     return *__retval = uPtr(inBounds)->InflateXY(__this->Padding()), void();
+}
+
+// public Blur New() :15
+void Blur__New2_fn(Blur** __retval)
+{
+    *__retval = Blur::New2();
 }
 
 // protected override sealed void OnRender(Fuse.DrawContext dc, Uno.Rect elementRect) :48
@@ -381,6 +413,23 @@ void Blur__get_Sigma_fn(Blur* __this, float* __retval)
     *__retval = __this->Sigma();
 }
 
+// public Blur() [instance] :15
+void Blur::ctor_4()
+{
+    ctor_3(1);
+    Radius(3.0f);
+    init_DrawCalls();
+}
+
+// private generated void init_DrawCalls() [instance] :13
+void Blur::init_DrawCalls()
+{
+    OnRender_VertexData_7a2fdace_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New2(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))), 0);
+    OnRender_LocalTransform_7a2fdace_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
+    OnRender_LocalTransform_7a2fdace_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
+    _draw_7a2fdace = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Blur115443aa());
+}
+
 // internal float get_Padding() [instance] :46
 float Blur::Padding()
 {
@@ -408,6 +457,14 @@ void Blur::Radius(float value)
 float Blur::Sigma()
 {
     return ::g::Uno::Math::Max1(Radius(), 1e-05f);
+}
+
+// public Blur New() [static] :15
+Blur* Blur::New2()
+{
+    Blur* obj1 = (Blur*)uNew(Blur_typeof());
+    obj1->ctor_4();
+    return obj1;
 }
 // }
 
@@ -556,6 +613,7 @@ static void DropShadow_build(uType* type)
     options.TypeSize = sizeof(::g::Fuse::Effects::BasicEffect_type);
     type = (::g::Fuse::Effects::BasicEffect_type*)uClassType::New("Fuse.Effects.DropShadow", options);
     type->fp_build_ = DropShadow_build;
+    type->fp_ctor_ = (void*)DropShadow__New2_fn;
     type->fp_get_Active = (void(*)(::g::Fuse::Effects::Effect*, bool*))DropShadow__get_Active_fn;
     type->fp_ModifyRenderBounds = (void(*)(::g::Fuse::Effects::Effect*, ::g::Fuse::VisualBounds*, ::g::Fuse::VisualBounds**))DropShadow__ModifyRenderBounds_fn;
     type->fp_OnRender = (void(*)(::g::Fuse::Effects::BasicEffect*, ::g::Fuse::DrawContext*, ::g::Uno::Rect*))DropShadow__OnRender_fn;
@@ -575,6 +633,12 @@ static void DropShadow_build(uType* type)
     type->interface4.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Node__Add_fn;
     type->interface4.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__Remove_fn;
     return type;
+}
+
+// public DropShadow() :164
+void DropShadow__ctor_4_fn(DropShadow* __this)
+{
+    __this->ctor_4();
 }
 
 // public override sealed bool get_Active() :142
@@ -624,6 +688,12 @@ void DropShadow__ModifyRenderBounds_fn(DropShadow* __this, ::g::Fuse::VisualBoun
 {
     ::g::Fuse::VisualBounds* r = uPtr(uPtr(inBounds)->InflateXY(__this->Padding()))->Translate(::g::Uno::Float3__New4(__this->Offset(), 0.0f));
     return *__retval = inBounds->Merge(r, NULL), void();
+}
+
+// public DropShadow New() :164
+void DropShadow__New2_fn(DropShadow** __retval)
+{
+    *__retval = DropShadow::New2();
 }
 
 // private float2 get_Offset() :77
@@ -688,6 +758,16 @@ void DropShadow__get_Spread_fn(DropShadow* __this, float* __retval)
 void DropShadow__set_Spread_fn(DropShadow* __this, float* value)
 {
     __this->Spread(*value);
+}
+
+// public DropShadow() [instance] :164
+void DropShadow::ctor_4()
+{
+    ctor_3(0);
+    Size(5.0f);
+    Color(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.35f));
+    Angle(90.0f);
+    Distance(3.0f);
 }
 
 // public float get_Angle() [instance] :39
@@ -816,6 +896,14 @@ void DropShadow::Spread(float value)
         if (wasActive || Active())
             OnRenderingChanged();
     }
+}
+
+// public DropShadow New() [static] :164
+DropShadow* DropShadow::New2()
+{
+    DropShadow* obj1 = (DropShadow*)uNew(DropShadow_typeof());
+    obj1->ctor_4();
+    return obj1;
 }
 // }
 
@@ -992,6 +1080,12 @@ Effect_type* Effect_typeof()
     return type;
 }
 
+// protected Effect(Fuse.Effects.EffectType effectType) :20
+void Effect__ctor_2_fn(Effect* __this, int* effectType)
+{
+    __this->ctor_2(*effectType);
+}
+
 // public virtual bool get_Active() :65
 void Effect__get_Active_fn(Effect* __this, bool* __retval)
 {
@@ -1077,6 +1171,13 @@ void Effect__remove_RenderingChanged_fn(Effect* __this, uDelegate* value)
 void Effect__get_Type_fn(Effect* __this, int* __retval)
 {
     *__retval = __this->Type();
+}
+
+// protected Effect(Fuse.Effects.EffectType effectType) [instance] :20
+void Effect::ctor_2(int effectType)
+{
+    ctor_1();
+    _effectType = effectType;
 }
 
 // public generated Fuse.Elements.Element get_Element() [instance] :45

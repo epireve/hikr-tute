@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IEventRecord.h>
-#include <Fuse.Scripting.IEventSerializer.h>
-#include <Uno.Object.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.Reactive.IEventRecord.h 
+#include <Fuse.Scripting.IEventSerializer.h 
+#include <Uno.Object.h 
+#include <Uno.UX.Selector.h 
 namespace g{namespace Fuse{namespace Reactive{struct EventRecord;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
-namespace g{namespace Uno{namespace Collections{template<class TKey, class TValue>struct KeyValuePair;}}}
+namespace g{namespace Uno{namespace Collections{template<class TKey, class TValue struct KeyValuePair;}}}
 
 namespace g{
 namespace Fuse{
@@ -39,10 +39,10 @@ void EventRecord__get_Sender_fn(EventRecord* __this, ::g::Uno::UX::Selector* __r
 
 struct EventRecord : uObject
 {
-    uStrong< ::g::Fuse::Node*> _node;
-    uStrong<uObject*> _data;
+    uStrong< ::g::Fuse::Node*  _node;
+    uStrong<uObject*  _data;
     ::g::Uno::UX::Selector _sender;
-    uStrong< ::g::Uno::Collections::Dictionary*> _args;
+    uStrong< ::g::Uno::Collections::Dictionary*  _args;
 
     void ctor_(uObject* args, uObject* sender);
     void AddObject(uString* key, uObject* value);

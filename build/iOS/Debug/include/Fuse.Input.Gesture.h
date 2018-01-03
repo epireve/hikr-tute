@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Uno.Object.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerMovedArgs;}}}
@@ -46,11 +46,11 @@ void Gesture__VectorSignificance_fn(::g::Uno::Float2* vector, ::g::Uno::Float2* 
 
 struct Gesture : uObject
 {
-    uStrong<uObject*> Handler;
+    uStrong<uObject*  Handler;
     int Type;
-    uStrong< ::g::Fuse::Visual*> Target;
+    uStrong< ::g::Fuse::Visual*  Target;
     int _captureType;
-    uStrong< ::g::Uno::Collections::List*> _down;
+    uStrong< ::g::Uno::Collections::List*  _down;
 
     void ctor_(uObject* handler, int type, ::g::Fuse::Visual* target);
     void Cancel();

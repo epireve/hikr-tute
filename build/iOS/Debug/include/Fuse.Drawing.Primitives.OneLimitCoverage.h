@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.Primitives.LimitCoverage.h>
+#include <Fuse.Drawing.Primitives.LimitCoverage.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct OneLimitCoverage;}}}}
 
 namespace g{

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.ValueObserver.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.ValueObserver.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__ObservableLink;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__WindowItem;}}}
 
@@ -23,8 +23,8 @@ void Instantiator__ObservableLink__PushData_fn(Instantiator__ObservableLink* __t
 
 struct Instantiator__ObservableLink : ::g::Fuse::Reactive::ValueObserver
 {
-    uStrong< ::g::Fuse::Reactive::Instantiator__WindowItem*> _target;
-    uStrong<uObject*> _currentData;
+    uStrong< ::g::Fuse::Reactive::Instantiator__WindowItem*  _target;
+    uStrong<uObject*  _currentData;
 
     void ctor_1(uObject* obs, ::g::Fuse::Reactive::Instantiator__WindowItem* target);
     uObject* Data();

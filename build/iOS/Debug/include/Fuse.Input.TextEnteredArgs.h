@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Fuse.VisualEventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Fuse.VisualEventArgs.h 
 namespace g{namespace Fuse{namespace Input{struct TextEnteredArgs;}}}
 
 namespace g{
@@ -19,7 +19,7 @@ void TextEnteredArgs__set_Text_fn(TextEnteredArgs* __this, uString* value);
 
 struct TextEnteredArgs : ::g::Fuse::VisualEventArgs
 {
-    uStrong<uString*> _Text;
+    uStrong<uString*  _Text;
 
     uString* Text();
     void Text(uString* value);

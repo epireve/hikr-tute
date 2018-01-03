@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -14,7 +14,7 @@ uInterfaceType* Node__IDataListener_typeof();
 struct Node__IDataListener
 {
     void(*fp_OnDataChanged)(uObject*);
-    static void OnDataChanged(const uInterface& __this) { __this.VTable<Node__IDataListener>()->fp_OnDataChanged(__this); }
+    static void OnDataChanged(const uInterface& __this) { __this.VTable<Node__IDataListener ()- fp_OnDataChanged(__this); }
 };
 // }
 

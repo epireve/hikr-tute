@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimatorState.h>
+#include <Fuse.Animations.TrackAnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Nothing;}}}
 namespace g{namespace Fuse{namespace Animations{struct NothingAnimatorState;}}}

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
 
 namespace g{
@@ -22,9 +22,9 @@ void VarArgFunction__Argument__set_Value_fn(VarArgFunction__Argument* __this, uO
 
 struct VarArgFunction__Argument : uObject
 {
-    uStrong<uObject*> Subscription;
+    uStrong<uObject*  Subscription;
     bool _HasValue;
-    uStrong<uObject*> _Value;
+    uStrong<uObject*  _Value;
 
     void ctor_();
     void Dispose();

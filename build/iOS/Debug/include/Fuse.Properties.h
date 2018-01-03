@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Properties;}}
 namespace g{namespace Fuse{struct PropertyHandle;}}
 
@@ -28,11 +28,11 @@ void Properties__TryGet_fn(Properties* __this, ::g::Fuse::PropertyHandle* handle
 
 struct Properties : uObject
 {
-    uStrong<Properties*> _next;
-    uStrong< ::g::Fuse::PropertyHandle*> _handle;
-    uStrong<uObject*> _value;
-    static uSStrong<uObject*> NoValue_;
-    static uSStrong<uObject*>& NoValue() { return NoValue_; }
+    uStrong<Properties*  _next;
+    uStrong< ::g::Fuse::PropertyHandle*  _handle;
+    uStrong<uObject*  _value;
+    static uSStrong<uObject*  NoValue_;
+    static uSStrong<uObject* & NoValue() { return NoValue_; }
 
     void ctor_();
     void AddToList(::g::Fuse::PropertyHandle* handle, uObject* val);

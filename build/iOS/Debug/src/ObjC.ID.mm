@@ -1,10 +1,10 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Compiler/ExportTargetInterop/Foreign/ObjC/ObjC.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <ObjC.ID.h>
-#include <Uno.Bool.h>
-#include <Uno.Int.h>
-#include <Uno.IntPtr.h>
+#include <ObjC.ID.h 
+#include <Uno.Bool.h 
+#include <Uno.Int.h 
+#include <Uno.IntPtr.h 
 static uType* TYPES[1];
 
 namespace g{
@@ -19,7 +19,7 @@ static void ID_build(uType* type)
 
 uStructType* ID_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -27,16 +27,16 @@ uStructType* ID_typeof()
     options.ValueSize = sizeof(::id);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("ObjC.ID", options);
-    type->fp_build_ = ID_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))ID__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))ID__GetHashCode_fn;
+    type- fp_build_ = ID_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))ID__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))ID__GetHashCode_fn;
     return type;
 }
 
 // public override sealed bool Equals(object o) :15
 void ID__Equals_fn(::id* __this, uType* __type, uObject* o, bool* __retval)
 {
-    return *__retval = uIs(o, __type) && ID::op_Equality(*__this, uUnbox< ::id>(__type, o)), void();
+    return *__retval = uIs(o, __type) && ID::op_Equality(*__this, uUnbox< ::id (__type, o)), void();
 }
 
 // public override sealed int GetHashCode() :20

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Storage{struct ApplicationDir__ReadClosure;}}}
 
 namespace g{
@@ -18,7 +18,7 @@ void ApplicationDir__ReadClosure__New1_fn(uString* filename, ApplicationDir__Rea
 
 struct ApplicationDir__ReadClosure : uObject
 {
-    uStrong<uString*> _filename;
+    uStrong<uString*  _filename;
 
     void ctor_(uString* filename);
     uString* Invoke();

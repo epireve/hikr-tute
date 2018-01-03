@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.KeyPressedArgs.h>
-#include <Fuse.Input.KeyPressedHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Input.KeyPressedArgs.h 
+#include <Fuse.Input.KeyPressedHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Input{struct KeyPressed;}}}
 
 namespace g{

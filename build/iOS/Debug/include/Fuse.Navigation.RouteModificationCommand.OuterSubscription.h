@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IEventHandler.h>
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IEventHandler.h 
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand__InnerSubscription;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand__OuterSubscription;}}}
@@ -31,10 +31,10 @@ void RouteModificationCommand__OuterSubscription__OnNewData_fn(RouteModification
 
 struct RouteModificationCommand__OuterSubscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Navigation::RouteModificationCommand*> _expr;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _context;
-    uStrong< ::g::Fuse::Navigation::RouteModificationCommand__InnerSubscription*> _innerSub;
+    uStrong< ::g::Fuse::Navigation::RouteModificationCommand*  _expr;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _context;
+    uStrong< ::g::Fuse::Navigation::RouteModificationCommand__InnerSubscription*  _innerSub;
 
     void ctor_1(::g::Fuse::Navigation::RouteModificationCommand* expr, uObject* context, uObject* listener);
     void DisposeInner(bool fromInner);

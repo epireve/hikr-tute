@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct Pointer__PELHolder;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -18,7 +18,7 @@ void Pointer__PELHolder__New1_fn(Pointer__PELHolder** __retval);
 
 struct Pointer__PELHolder : uObject
 {
-    uStrong< ::g::Fuse::Visual*> Visual;
+    uStrong< ::g::Fuse::Visual*  Visual;
     int Status;
 
     void ctor_();

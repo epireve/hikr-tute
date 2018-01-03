@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList__Enumerator;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// public struct ObjectList<T>.Enumerator :386
+// public struct ObjectList<T .Enumerator :386
 // {
 struct ObjectList__Enumerator_type : uStructType
 {
@@ -32,7 +32,7 @@ void ObjectList__Enumerator__Unlock_fn(ObjectList__Enumerator* __this, uType* __
 
 struct ObjectList__Enumerator
 {
-    uStrong< ::g::Fuse::Internal::ObjectList*> _source;
+    uStrong< ::g::Fuse::Internal::ObjectList*  _source;
     bool _first;
     int _at;
     int8_t _locked;

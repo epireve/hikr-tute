@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.iOS.View.h>
-#include <Fuse.Controls.Native.IShapeView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.iOS.View.h 
+#include <Fuse.Controls.Native.IShapeView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Shape;}}}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct GradientStop;}}}
@@ -46,11 +46,11 @@ void Shape__get_ShapeSize_fn(Shape* __this, ::g::Uno::Float2* __retval);
 
 struct Shape : ::g::Fuse::Controls::Native::iOS::View
 {
-    uStrong<uArray*> _fills;
-    uStrong<uArray*> _strokes;
+    uStrong<uArray*  _fills;
+    uStrong<uArray*  _strokes;
 
     void ctor_4();
-    ::g::ObjC::Object* CreatePath() { ::g::ObjC::Object* __retval; return (((Shape_type*)__type)->fp_CreatePath)(this, &__retval), __retval; }
+    ::g::ObjC::Object* CreatePath() { ::g::ObjC::Object* __retval; return (((Shape_type*)__type)- fp_CreatePath)(this, &__retval), __retval; }
     void OnShapeChanged();
     void SetBrush(::g::Fuse::Drawing::Brush* brush, int layer, ::g::ObjC::Object* path, bool isLine, float strokeWidth);
     void SetLinearGradient(::g::Fuse::Drawing::LinearGradient* gradient, int layer, ::g::ObjC::Object* path, bool isLine, float strokeWidth);

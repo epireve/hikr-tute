@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct FocusPrediction__PredictFilter;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -20,8 +20,8 @@ void FocusPrediction__PredictFilter__New1_fn(::g::Fuse::Visual* origin, uDelegat
 
 struct FocusPrediction__PredictFilter : uObject
 {
-    uStrong< ::g::Fuse::Visual*> _origin;
-    uStrong<uDelegate*> _filter;
+    uStrong< ::g::Fuse::Visual*  _origin;
+    uStrong<uDelegate*  _filter;
 
     void ctor_(::g::Fuse::Visual* origin, uDelegate* filter);
     bool Filter(::g::Fuse::Node* node);

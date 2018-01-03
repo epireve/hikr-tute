@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.TemplateSourceImpl.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.TemplateSourceImpl.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct NodeGroupBase;}}
 namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
@@ -39,13 +39,13 @@ void NodeGroupBase__set_UseContent_fn(NodeGroupBase* __this, bool* value);
 
 struct NodeGroupBase : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Uno::Collections::RootableList*> _nodes;
+    uStrong< ::g::Uno::Collections::RootableList*  _nodes;
     ::g::Fuse::TemplateSourceImpl _templates;
     bool _useTemplates;
     bool _useContent;
-    uStrong< ::g::Uno::Collections::RootableList*> _resources;
+    uStrong< ::g::Uno::Collections::RootableList*  _resources;
     bool _contentAdded;
-    uStrong<uArray*> _addedNodes;
+    uStrong<uArray*  _addedNodes;
 
     void ctor_3(int flags);
     void AddContent();

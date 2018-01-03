@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Fuse.Scripting.Array.h>
-#include <JavaScriptCore/JavaScript.h>
-#include <JavaScriptCore/JSObjectRef.h>
+#include <Fuse.IArray.h 
+#include <Fuse.Scripting.Array.h 
+#include <JavaScriptCore/JavaScript.h 
+#include <JavaScriptCore/JSObjectRef.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Array;}}}}
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context;}}}}
 
@@ -27,7 +27,7 @@ void Array__New1_fn(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JS
 
 struct Array : ::g::Fuse::Scripting::Array
 {
-    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*  _context;
     ::JSObjectRef _value;
 
     void ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef array);

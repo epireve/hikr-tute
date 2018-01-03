@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
-#include <Uno.Rect.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
+#include <Uno.Rect.h 
 namespace g{namespace Fuse{namespace Controls{struct Path__Positioning;}}}
 
 namespace g{

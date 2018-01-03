@@ -1,6 +1,6 @@
 #include "uObjC.String.h"
 
-#include <Foundation/NSString.h>
+#include <Foundation/NSString.h 
 
 namespace uObjC
 {
@@ -24,7 +24,7 @@ namespace uObjC
 		
 		NSUInteger usedBytes = 0;
 		if ([string
-			getBytes: result->_ptr
+			getBytes: result- _ptr
 			maxLength: bytes
 			usedLength: &usedBytes
 			encoding: NativeUTF16Encoding
@@ -34,8 +34,8 @@ namespace uObjC
 		{
 			if (usedBytes != bytes)
 			{
-				result->_length = (int)(usedBytes / sizeof(uChar));
-				result->_ptr[result->_length] = 0;
+				result- _length = (int)(usedBytes / sizeof(uChar));
+				result- _ptr[result- _length] = 0;
 			}
 			return result;
 		}
@@ -51,8 +51,8 @@ namespace uObjC
 		}
 	
 		return [[NSString alloc]
-				initWithBytes: string->Ptr()
-				length: string->Length() * sizeof(uChar)
+				initWithBytes: string- Ptr()
+				length: string- Length() * sizeof(uChar)
 				encoding: NativeUTF16Encoding];
 	}
 }

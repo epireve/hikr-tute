@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4x4.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float4x4.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct VideoDrawElement;}}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -27,9 +27,9 @@ void VideoDrawElement__New1_fn(VideoDrawElement** __retval);
 
 struct VideoDrawElement : uObject
 {
-    static uSStrong<VideoDrawElement*> Impl_;
-    static uSStrong<VideoDrawElement*>& Impl() { return Impl_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_VertexData_46004d37_6_2_1;
+    static uSStrong<VideoDrawElement*  Impl_;
+    static uSStrong<VideoDrawElement* & Impl() { return Impl_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_VertexData_46004d37_6_2_1;
     ::g::Uno::Float4x4 Draw_LocalTransform_46004d37_3_9_2;
     ::g::Uno::Float4x4 Draw_LocalTransform_46004d37_3_9_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_46004d37;

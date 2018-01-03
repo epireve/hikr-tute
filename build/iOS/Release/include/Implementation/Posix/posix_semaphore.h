@@ -1,7 +1,7 @@
 #ifndef POSIX_SEMAPHORE_H
 #define POSIX_SEMAPHORE_H
 
-#include <pthread.h>
+#include <pthread.h 
 
 struct uPosixSemaphore
 {

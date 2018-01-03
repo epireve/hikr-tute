@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Converter-1.h>
-#include <Uno.Float3.h>
+#include <Fuse.Animations.Converter-1.h 
+#include <Uno.Float3.h 
 namespace g{namespace Fuse{namespace Animations{struct ConverterFloat3;}}}
 namespace g{namespace Uno{struct Float4;}}
 
@@ -21,8 +21,8 @@ void ConverterFloat3__Out_fn(ConverterFloat3* __this, ::g::Uno::Float4* value, :
 
 struct ConverterFloat3 : ::g::Fuse::Animations::Converter
 {
-    static uSStrong<ConverterFloat3*> Singleton_;
-    static uSStrong<ConverterFloat3*>& Singleton() { return Singleton_; }
+    static uSStrong<ConverterFloat3*  Singleton_;
+    static uSStrong<ConverterFloat3* & Singleton() { return Singleton_; }
 
     void ctor_1();
     static ConverterFloat3* New1();

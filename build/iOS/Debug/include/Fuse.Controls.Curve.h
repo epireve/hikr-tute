@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Shape.h>
-#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Shape.h 
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct Curve;}}}
 namespace g{namespace Fuse{namespace Controls{struct CurvePoint;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LineSegment;}}}
@@ -63,7 +63,7 @@ void Curve__WrapPointsIndex_fn(Curve* __this, int* a, int* __retval);
 
 struct Curve : ::g::Fuse::Controls::Shape
 {
-    uStrong< ::g::Uno::Collections::List*> _points;
+    uStrong< ::g::Uno::Collections::List*  _points;
     float _tension;
     float _bias;
     float _continuity;
@@ -71,7 +71,7 @@ struct Curve : ::g::Fuse::Controls::Shape
     int _close;
     int _extrude;
     float _extrudeTo;
-    uStrong< ::g::Fuse::Drawing::LineSegments*> _segments;
+    uStrong< ::g::Fuse::Drawing::LineSegments*  _segments;
 
     int Close();
     void Close(int value);

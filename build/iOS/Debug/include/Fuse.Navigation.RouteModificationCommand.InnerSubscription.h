@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.VarArgFunction.Subscription.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.VarArgFunction.Subscription.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand__InnerSubscription;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand__OuterSubscription;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
@@ -24,7 +24,7 @@ void RouteModificationCommand__InnerSubscription__OnNewArguments_fn(RouteModific
 
 struct RouteModificationCommand__InnerSubscription : ::g::Fuse::Reactive::VarArgFunction__Subscription
 {
-    uStrong< ::g::Fuse::Navigation::RouteModificationCommand__OuterSubscription*> _outSub;
+    uStrong< ::g::Fuse::Navigation::RouteModificationCommand__OuterSubscription*  _outSub;
     bool _triggered;
 
     void ctor_2(::g::Fuse::Navigation::RouteModificationCommand__OuterSubscription* outSub);

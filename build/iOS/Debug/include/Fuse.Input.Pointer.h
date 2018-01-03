@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Input{struct Capture;}}}
 namespace g{namespace Fuse{namespace Input{struct Pointer;}}}
 namespace g{namespace Fuse{namespace Input{struct Pointer__CaptureLockImpl;}}}
@@ -72,30 +72,30 @@ void Pointer__get_WheelMoved_fn(::g::Fuse::VisualEvent** __retval);
 
 struct Pointer : uObject
 {
-    static uSStrong< ::g::Fuse::Input::PointerPressed*> _pressed_;
-    static uSStrong< ::g::Fuse::Input::PointerPressed*>& _pressed() { return Pointer_typeof()->Init(), _pressed_; }
-    static uSStrong< ::g::Fuse::Input::PointerMoved*> _moved_;
-    static uSStrong< ::g::Fuse::Input::PointerMoved*>& _moved() { return Pointer_typeof()->Init(), _moved_; }
-    static uSStrong< ::g::Fuse::Input::PointerReleased*> _released_;
-    static uSStrong< ::g::Fuse::Input::PointerReleased*>& _released() { return Pointer_typeof()->Init(), _released_; }
-    static uSStrong< ::g::Fuse::Input::PointerEntered*> _entered_;
-    static uSStrong< ::g::Fuse::Input::PointerEntered*>& _entered() { return Pointer_typeof()->Init(), _entered_; }
-    static uSStrong< ::g::Fuse::Input::PointerLeft*> _left_;
-    static uSStrong< ::g::Fuse::Input::PointerLeft*>& _left() { return Pointer_typeof()->Init(), _left_; }
-    static uSStrong< ::g::Fuse::Input::PointerWheelMoved*> _wheelMoved_;
-    static uSStrong< ::g::Fuse::Input::PointerWheelMoved*>& _wheelMoved() { return Pointer_typeof()->Init(), _wheelMoved_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _pointersDown_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _pointersDown() { return Pointer_typeof()->Init(), _pointersDown_; }
-    static uSStrong< ::g::Uno::Collections::List*> _captures_;
-    static uSStrong< ::g::Uno::Collections::List*>& _captures() { return Pointer_typeof()->Init(), _captures_; }
-    static uSStrong<Pointer__CaptureLockImpl*> _captureLockImpl_;
-    static uSStrong<Pointer__CaptureLockImpl*>& _captureLockImpl() { return Pointer_typeof()->Init(), _captureLockImpl_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _lastHitVisuals_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _lastHitVisuals() { return Pointer_typeof()->Init(), _lastHitVisuals_; }
+    static uSStrong< ::g::Fuse::Input::PointerPressed*  _pressed_;
+    static uSStrong< ::g::Fuse::Input::PointerPressed* & _pressed() { return Pointer_typeof()- Init(), _pressed_; }
+    static uSStrong< ::g::Fuse::Input::PointerMoved*  _moved_;
+    static uSStrong< ::g::Fuse::Input::PointerMoved* & _moved() { return Pointer_typeof()- Init(), _moved_; }
+    static uSStrong< ::g::Fuse::Input::PointerReleased*  _released_;
+    static uSStrong< ::g::Fuse::Input::PointerReleased* & _released() { return Pointer_typeof()- Init(), _released_; }
+    static uSStrong< ::g::Fuse::Input::PointerEntered*  _entered_;
+    static uSStrong< ::g::Fuse::Input::PointerEntered* & _entered() { return Pointer_typeof()- Init(), _entered_; }
+    static uSStrong< ::g::Fuse::Input::PointerLeft*  _left_;
+    static uSStrong< ::g::Fuse::Input::PointerLeft* & _left() { return Pointer_typeof()- Init(), _left_; }
+    static uSStrong< ::g::Fuse::Input::PointerWheelMoved*  _wheelMoved_;
+    static uSStrong< ::g::Fuse::Input::PointerWheelMoved* & _wheelMoved() { return Pointer_typeof()- Init(), _wheelMoved_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _pointersDown_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _pointersDown() { return Pointer_typeof()- Init(), _pointersDown_; }
+    static uSStrong< ::g::Uno::Collections::List*  _captures_;
+    static uSStrong< ::g::Uno::Collections::List* & _captures() { return Pointer_typeof()- Init(), _captures_; }
+    static uSStrong<Pointer__CaptureLockImpl*  _captureLockImpl_;
+    static uSStrong<Pointer__CaptureLockImpl* & _captureLockImpl() { return Pointer_typeof()- Init(), _captureLockImpl_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _lastHitVisuals_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _lastHitVisuals() { return Pointer_typeof()- Init(), _lastHitVisuals_; }
     static ::g::Uno::Float2 _Coord_;
-    static ::g::Uno::Float2& _Coord() { return Pointer_typeof()->Init(), _Coord_; }
-    static uSStrong<uObject*> _EventResponder_;
-    static uSStrong<uObject*>& _EventResponder() { return Pointer_typeof()->Init(), _EventResponder_; }
+    static ::g::Uno::Float2& _Coord() { return Pointer_typeof()- Init(), _Coord_; }
+    static uSStrong<uObject*  _EventResponder_;
+    static uSStrong<uObject* & _EventResponder() { return Pointer_typeof()- Init(), _EventResponder_; }
 
     static void AddHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate* moved, uDelegate* released, uDelegate* entered, uDelegate* left, uDelegate* wheelMoved);
     static Pointer__CaptureLockImpl* CaptureLock();

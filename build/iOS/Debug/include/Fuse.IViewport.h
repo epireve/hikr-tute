@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ICommonViewport.h>
-#include <Uno.Object.h>
+#include <Fuse.ICommonViewport.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float2;}}
@@ -25,14 +25,14 @@ struct IViewport
 
 }} // ::g::Fuse
 
-#include <Fuse.Ray.h>
-#include <Uno.Float2.h>
+#include <Fuse.Ray.h 
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
 
-inline ::g::Fuse::Ray IViewport::PointToWorldRay(const uInterface& __this, ::g::Uno::Float2 pointPos) { ::g::Fuse::Ray __retval; return __this.VTable<IViewport>()->fp_PointToWorldRay(__this, &pointPos, &__retval), __retval; }
-inline ::g::Fuse::Ray IViewport::WorldToLocalRay(const uInterface& __this, uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where) { ::g::Fuse::Ray __retval; return __this.VTable<IViewport>()->fp_WorldToLocalRay(__this, world, &worldRay, where, &__retval), __retval; }
+inline ::g::Fuse::Ray IViewport::PointToWorldRay(const uInterface& __this, ::g::Uno::Float2 pointPos) { ::g::Fuse::Ray __retval; return __this.VTable<IViewport ()- fp_PointToWorldRay(__this, &pointPos, &__retval), __retval; }
+inline ::g::Fuse::Ray IViewport::WorldToLocalRay(const uInterface& __this, uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where) { ::g::Fuse::Ray __retval; return __this.VTable<IViewport ()- fp_WorldToLocalRay(__this, world, &worldRay, where, &__retval), __retval; }
 // }
 
 }} // ::g::Fuse

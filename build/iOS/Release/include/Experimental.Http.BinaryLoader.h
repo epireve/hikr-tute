@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Experimental{namespace Http{struct BinaryLoader;}}}
 namespace g{namespace Experimental{namespace Http{struct HttpResponseHeader;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -26,11 +26,11 @@ void BinaryLoader__OnLoaded_fn(BinaryLoader* __this, ::g::Uno::Net::Http::HttpMe
 
 struct BinaryLoader : uObject
 {
-    uStrong<uDelegate*> Callback;
-    uStrong<uDelegate*> ErrorCallback;
-    uStrong<uString*> Uri;
-    uStrong<uString*> Method;
-    uStrong< ::g::Experimental::Http::HttpResponseHeader*> _header;
+    uStrong<uDelegate*  Callback;
+    uStrong<uDelegate*  ErrorCallback;
+    uStrong<uString*  Uri;
+    uStrong<uString*  Method;
+    uStrong< ::g::Experimental::Http::HttpResponseHeader*  _header;
 
     void ctor_();
     ::g::Uno::Collections::Dictionary* ExtractHeaders(uString* headers);

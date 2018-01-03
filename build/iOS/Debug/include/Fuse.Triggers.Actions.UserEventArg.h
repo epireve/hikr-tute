@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct UserEventArg;}}}}
 
 namespace g{
@@ -20,8 +20,8 @@ void UserEventArg__set_Value_fn(UserEventArg* __this, uObject* value);
 
 struct UserEventArg : ::g::Uno::UX::PropertyObject
 {
-    uStrong<uString*> _Name;
-    uStrong<uObject*> _Value;
+    uStrong<uString*  _Name;
+    uStrong<uObject*  _Value;
 
     uString* Name();
     void Name(uString* value);

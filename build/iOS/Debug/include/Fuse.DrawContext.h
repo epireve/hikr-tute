@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Int4.h>
-#include <Uno.Object.h>
+#include <Uno.Int4.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct RenderTargetEntry;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -59,20 +59,20 @@ void DrawContext__get_ViewportPixelsPerPoint_fn(DrawContext* __this, float* __re
 
 struct DrawContext : uObject
 {
-    uStrong<uObject*> _viewport;
-    uStrong< ::g::Uno::Collections::List*> _viewports;
+    uStrong<uObject*  _viewport;
+    uStrong< ::g::Uno::Collections::List*  _viewports;
     void* _handle;
-    uStrong< ::g::Uno::Graphics::RenderTarget*> _rootbuffer;
-    uStrong< ::g::Uno::Graphics::RenderTarget*> _renderTarget;
-    uStrong< ::g::Uno::Collections::List*> _renderTargets;
+    uStrong< ::g::Uno::Graphics::RenderTarget*  _rootbuffer;
+    uStrong< ::g::Uno::Graphics::RenderTarget*  _renderTarget;
+    uStrong< ::g::Uno::Collections::List*  _renderTargets;
     uint32_t _glFramebuffer;
     ::g::Uno::Int4 _glScissor;
-    uStrong< ::g::Uno::Collections::List*> _glScissors;
+    uStrong< ::g::Uno::Collections::List*  _glScissors;
     ::g::Uno::Int4 _glViewport;
-    uStrong< ::g::Uno::Collections::List*> _cullFaces;
+    uStrong< ::g::Uno::Collections::List*  _cullFaces;
     int _cullFace;
     bool _IsCaching;
-    uStrong<uDelegate*> RenderTargetChange1;
+    uStrong<uDelegate*  RenderTargetChange1;
 
     void ctor_(uObject* viewport);
     void CaptureRootbuffer();

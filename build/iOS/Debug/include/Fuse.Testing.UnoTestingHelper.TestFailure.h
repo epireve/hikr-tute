@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Testing{struct UnoTestingHelper__TestFailure;}}}
 
 namespace g{
@@ -18,7 +18,7 @@ void UnoTestingHelper__TestFailure__New1_fn(uString* message, UnoTestingHelper__
 
 struct UnoTestingHelper__TestFailure : uObject
 {
-    uStrong<uString*> _message;
+    uStrong<uString*  _message;
 
     void ctor_(uString* message);
     void Fail();

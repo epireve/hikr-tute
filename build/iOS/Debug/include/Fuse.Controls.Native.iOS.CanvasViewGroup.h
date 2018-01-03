@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Fuse.Drawing.INativeSurfaceOwner.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Fuse.Drawing.INativeSurfaceOwner.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct CanvasViewGroup;}}}}}
 namespace g{namespace Fuse{namespace Drawing{struct NativeSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
@@ -34,9 +34,9 @@ void CanvasViewGroup__SetDrawCallback_fn(::g::ObjC::Object* handle, uDelegate* o
 
 struct CanvasViewGroup : ::g::Fuse::Controls::Native::ViewHandle
 {
-    uStrong<uObject*> _surfaceDrawable;
+    uStrong<uObject*  _surfaceDrawable;
     float _pixelsPerPoint;
-    uStrong< ::g::Fuse::Drawing::NativeSurface*> _nativeSurface;
+    uStrong< ::g::Fuse::Drawing::NativeSurface*  _nativeSurface;
 
     void ctor_2(uObject* surfaceDrawable, float pixelsPerPoint);
     void OnDraw(void* cgContextRef);

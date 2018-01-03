@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Computer-1.h>
-#include <Uno.Double.h>
+#include <Fuse.Computer-1.h 
+#include <Uno.Double.h 
 namespace g{namespace Fuse{struct NumberComputer;}}
 
 namespace g{

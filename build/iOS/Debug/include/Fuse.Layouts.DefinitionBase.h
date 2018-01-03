@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Layouts{struct DefinitionBase;}}}
 
 namespace g{
@@ -33,7 +33,7 @@ struct DefinitionBase : ::g::Uno::UX::PropertyObject
     float _extent;
     float ActualExtent;
     bool HasActualExtent;
-    uStrong<uDelegate*> Changed1;
+    uStrong<uDelegate*  Changed1;
 
     void ctor_1();
     float ActualOffset();

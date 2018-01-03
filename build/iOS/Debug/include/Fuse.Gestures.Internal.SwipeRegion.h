@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Float4.h>
-#include <Uno.UX.IPropertyListener.h>
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.Float2.h 
+#include <Uno.Float4.h 
+#include <Uno.UX.IPropertyListener.h 
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion;}}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
@@ -68,20 +68,20 @@ struct SwipeRegion : ::g::Uno::UX::PropertyObject
     bool _isActive;
     ::g::Uno::Float2 Direction;
     float Range;
-    uStrong<uObject*> PointBody1D;
+    uStrong<uObject*  PointBody1D;
     int Area;
     ::g::Uno::Float4 AreaVector;
     float AreaVectorDistance;
     int Priority;
     double Length;
-    uStrong< ::g::Fuse::Elements::Element*> LengthElement;
+    uStrong< ::g::Fuse::Elements::Element*  LengthElement;
     float ActivationThreshold;
     float DeactivationThreshold;
     bool IsInterruptible;
     double TimeMultiplier;
     bool RevertActive;
     bool AutoTrigger;
-    uStrong<uDelegate*> Swiped1;
+    uStrong<uDelegate*  Swiped1;
 
     void ctor_1();
     float ActivateStrength(::g::Uno::Float2 diff);

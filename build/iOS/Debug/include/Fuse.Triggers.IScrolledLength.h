@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Uno{struct Float2;}}
 
@@ -22,13 +22,13 @@ struct IScrolledLength
 
 }}} // ::g::Fuse::Triggers
 
-#include <Uno.Float2.h>
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
 namespace Triggers{
 
-inline ::g::Uno::Float2 IScrolledLength::GetPoints(const uInterface& __this, float value, ::g::Fuse::Controls::ScrollViewBase* scrollable) { ::g::Uno::Float2 __retval; return __this.VTable<IScrolledLength>()->fp_GetPoints(__this, &value, scrollable, &__retval), __retval; }
+inline ::g::Uno::Float2 IScrolledLength::GetPoints(const uInterface& __this, float value, ::g::Fuse::Controls::ScrollViewBase* scrollable) { ::g::Uno::Float2 __retval; return __this.VTable<IScrolledLength ()- fp_GetPoints(__this, &value, scrollable, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Triggers

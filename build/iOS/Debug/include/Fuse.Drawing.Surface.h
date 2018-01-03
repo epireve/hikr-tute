@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Float4x4.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float2.h 
+#include <Uno.Float4x4.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LineSegment;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Stroke;}}}
@@ -50,31 +50,31 @@ void Surface__SetElementSize_fn(Surface* __this, ::g::Uno::Float2* size);
 
 struct Surface : uObject
 {
-    uStrong<uObject*> Owner;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_VertexData_7678ae3a_7_2_1;
+    uStrong<uObject*  Owner;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_VertexData_7678ae3a_7_2_1;
     ::g::Uno::Float4x4 Draw_LocalTransform_7678ae3a_4_9_2;
     ::g::Uno::Float4x4 Draw_LocalTransform_7678ae3a_4_9_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_7678ae3a;
     ::g::Uno::Float2 _ElementSize;
 
     void ctor_();
-    void Begin(::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, float pixelsPerPoint) { (((Surface_type*)__type)->fp_Begin)(this, dc, fb, &pixelsPerPoint); }
-    ::g::Fuse::Drawing::SurfacePath* CreatePath(uObject* segments, int fillRule) { ::g::Fuse::Drawing::SurfacePath* __retval; return (((Surface_type*)__type)->fp_CreatePath)(this, segments, &fillRule, &__retval), __retval; }
-    void Dispose() { (((Surface_type*)__type)->fp_Dispose)(this); }
-    void DisposePath(::g::Fuse::Drawing::SurfacePath* path) { (((Surface_type*)__type)->fp_DisposePath)(this, path); }
+    void Begin(::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, float pixelsPerPoint) { (((Surface_type*)__type)- fp_Begin)(this, dc, fb, &pixelsPerPoint); }
+    ::g::Fuse::Drawing::SurfacePath* CreatePath(uObject* segments, int fillRule) { ::g::Fuse::Drawing::SurfacePath* __retval; return (((Surface_type*)__type)- fp_CreatePath)(this, segments, &fillRule, &__retval), __retval; }
+    void Dispose() { (((Surface_type*)__type)- fp_Dispose)(this); }
+    void DisposePath(::g::Fuse::Drawing::SurfacePath* path) { (((Surface_type*)__type)- fp_DisposePath)(this, path); }
     void Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm, uObject* drawable);
     void DrawLocal(uObject* drawable);
     ::g::Uno::Float2 ElementSize();
     void ElementSize(::g::Uno::Float2 value);
-    void End() { (((Surface_type*)__type)->fp_End)(this); }
-    void FillPath(::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Brush* fill) { (((Surface_type*)__type)->fp_FillPath)(this, path, fill); }
+    void End() { (((Surface_type*)__type)- fp_End)(this); }
+    void FillPath(::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Brush* fill) { (((Surface_type*)__type)- fp_FillPath)(this, path, fill); }
     void init_DrawCalls();
-    void PopTransform() { (((Surface_type*)__type)->fp_PopTransform)(this); }
-    void Prepare(::g::Fuse::Drawing::Brush* brush) { (((Surface_type*)__type)->fp_Prepare)(this, brush); }
-    void PushTransform(::g::Uno::Float4x4 transform) { (((Surface_type*)__type)->fp_PushTransform)(this, &transform); }
+    void PopTransform() { (((Surface_type*)__type)- fp_PopTransform)(this); }
+    void Prepare(::g::Fuse::Drawing::Brush* brush) { (((Surface_type*)__type)- fp_Prepare)(this, brush); }
+    void PushTransform(::g::Uno::Float4x4 transform) { (((Surface_type*)__type)- fp_PushTransform)(this, &transform); }
     void SetElementSize(::g::Uno::Float2 size);
-    void StrokePath(::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Stroke* stroke) { (((Surface_type*)__type)->fp_StrokePath)(this, path, stroke); }
-    void Unprepare(::g::Fuse::Drawing::Brush* brush) { (((Surface_type*)__type)->fp_Unprepare)(this, brush); }
+    void StrokePath(::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Stroke* stroke) { (((Surface_type*)__type)- fp_StrokePath)(this, path, stroke); }
+    void Unprepare(::g::Fuse::Drawing::Brush* brush) { (((Surface_type*)__type)- fp_Unprepare)(this, brush); }
 };
 // }
 

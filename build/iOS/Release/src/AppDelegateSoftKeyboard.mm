@@ -1,10 +1,10 @@
-#include <Uno/Uno.h>
+#include <Uno/Uno.h 
 
-#include <Fuse.Platform.SystemUI.h>
-#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
-#include <ObjC.Object.h>
+#include <Fuse.Platform.SystemUI.h 
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h 
+#include <ObjC.Object.h 
 
-#include <AppDelegateSoftKeyboard.h>
+#include <AppDelegateSoftKeyboard.h 
 
 @implementation uAppDelegate (SoftKeyboard)
 

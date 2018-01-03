@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 
@@ -27,9 +27,9 @@ void Function__GetHashCode_fn(Function* __this, int* __retval);
 struct Function : uObject
 {
     void ctor_();
-    uObject* Call(uArray* args) { uObject* __retval; return (((Function_type*)__type)->fp_Call)(this, args, &__retval), __retval; }
-    ::g::Fuse::Scripting::Object* Construct(uArray* args) { ::g::Fuse::Scripting::Object* __retval; return (((Function_type*)__type)->fp_Construct)(this, args, &__retval), __retval; }
-    bool Equals2(Function* f) { bool __retval; return (((Function_type*)__type)->fp_Equals2)(this, f, &__retval), __retval; }
+    uObject* Call(uArray* args) { uObject* __retval; return (((Function_type*)__type)- fp_Call)(this, args, &__retval), __retval; }
+    ::g::Fuse::Scripting::Object* Construct(uArray* args) { ::g::Fuse::Scripting::Object* __retval; return (((Function_type*)__type)- fp_Construct)(this, args, &__retval), __retval; }
+    bool Equals2(Function* f) { bool __retval; return (((Function_type*)__type)- fp_Equals2)(this, f, &__retval), __retval; }
 };
 // }
 

@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IPreviewStateSaver.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IPreviewStateSaver.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Input{struct KeyEventArgs;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Route;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
@@ -95,15 +95,15 @@ struct Router : ::g::Fuse::Node
 {
     bool _isMasterRouter;
     int _backButtonAction;
-    uStrong< ::g::Uno::Collections::Dictionary*> Bookmarks;
-    uStrong< ::g::Fuse::Navigation::RouterPageRoute*> _prepareCurrent;
-    uStrong< ::g::Fuse::Navigation::RouterPageRoute*> _prepareNext;
+    uStrong< ::g::Uno::Collections::Dictionary*  Bookmarks;
+    uStrong< ::g::Fuse::Navigation::RouterPageRoute*  _prepareCurrent;
+    uStrong< ::g::Fuse::Navigation::RouterPageRoute*  _prepareNext;
     int _prepareOperation;
-    uStrong<uString*> _prepareOperationStyle;
+    uStrong<uString*  _prepareOperationStyle;
     double _prepareProgress;
-    uStrong<uObject*> _prepareOutlet;
-    uStrong< ::g::Fuse::Navigation::RouterPage*> _rootPage;
-    uStrong<uDelegate*> HistoryChanged1;
+    uStrong<uObject*  _prepareOutlet;
+    uStrong< ::g::Fuse::Navigation::RouterPage*  _rootPage;
+    uStrong<uDelegate*  HistoryChanged1;
 
     void ctor_2();
     int BackButtonAction();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct ObserverMap;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal abstract class ObserverMap<T> :23
+// internal abstract class ObserverMap<T  :23
 // {
 struct ObserverMap_type : uType
 {
@@ -45,12 +45,12 @@ void ObserverMap__UVUnmap_fn(ObserverMap* __this, uObject* mv, uObject** __retva
 
 struct ObserverMap : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _list;
-    uStrong<uObject*> _observable;
-    uStrong<uObject*> _source;
-    uStrong<uObject*> _slave;
-    uStrong<uObject*> _subscription;
-    uStrong<uObject*> _disposable;
+    uStrong< ::g::Uno::Collections::List*  _list;
+    uStrong<uObject*  _observable;
+    uStrong<uObject*  _source;
+    uStrong<uObject*  _slave;
+    uStrong<uObject*  _subscription;
+    uStrong<uObject*  _disposable;
 
     void ctor_();
     void Add(uObject* value);
@@ -60,10 +60,10 @@ struct ObserverMap : uObject
     void Detach();
     uObject* Item(int index);
     void Item(int index, uObject* value);
-    uObject* Map(uObject* v) { uObject* __retval; return (((ObserverMap_type*)__type)->fp_Map)(this, v, &__retval), __retval; }
-    void OnUpdated() { (((ObserverMap_type*)__type)->fp_OnUpdated)(this); }
+    uObject* Map(uObject* v) { uObject* __retval; return (((ObserverMap_type*)__type)- fp_Map)(this, v, &__retval), __retval; }
+    void OnUpdated() { (((ObserverMap_type*)__type)- fp_OnUpdated)(this); }
     void RemoveAt(int index);
-    uObject* Unmap(uObject* mv) { uObject* __retval; return (((ObserverMap_type*)__type)->fp_Unmap)(this, mv, &__retval), __retval; }
+    uObject* Unmap(uObject* mv) { uObject* __retval; return (((ObserverMap_type*)__type)- fp_Unmap)(this, mv, &__retval), __retval; }
     void UpdateBacking();
     uObject* UVUnmap(uObject* mv);
     static void OnUpdated(ObserverMap* __this) { ObserverMap__OnUpdated_fn(__this); }

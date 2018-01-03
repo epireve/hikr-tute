@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceErrorArgs;}}}
 namespace g{namespace Uno{struct Exception;}}
@@ -27,9 +27,9 @@ void ImageSourceErrorArgs__Post_fn(ImageSourceErrorArgs* __this);
 
 struct ImageSourceErrorArgs : ::g::Uno::EventArgs
 {
-    uStrong<uString*> Reason;
-    uStrong< ::g::Uno::Exception*> ExceptionCause;
-    uStrong< ::g::Fuse::Resources::ImageSource*> _imageSource;
+    uStrong<uString*  Reason;
+    uStrong< ::g::Uno::Exception*  ExceptionCause;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _imageSource;
 
     void ctor_1(::g::Fuse::Resources::ImageSource* imageSource);
     void Post();

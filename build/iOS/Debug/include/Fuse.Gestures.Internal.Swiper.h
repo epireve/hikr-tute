@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.IGesture.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Input.IGesture.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct Swiper;}}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion;}}}}
@@ -56,20 +56,20 @@ void Swiper__SetActivation_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::Swi
 struct Swiper : uObject
 {
     int _attachCount;
-    uStrong< ::g::Fuse::Elements::Element*> _element;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _swiperProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _swiperProperty() { return _swiperProperty_; }
-    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> _pointerRegion;
-    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> _excludeRegion;
-    uStrong< ::g::Uno::Collections::List*> _pointerRegions;
-    uStrong< ::g::Uno::Collections::List*> _regions;
-    uStrong< ::g::Fuse::Input::Gesture*> _gesture;
+    uStrong< ::g::Fuse::Elements::Element*  _element;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _swiperProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _swiperProperty() { return _swiperProperty_; }
+    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*  _pointerRegion;
+    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*  _excludeRegion;
+    uStrong< ::g::Uno::Collections::List*  _pointerRegions;
+    uStrong< ::g::Uno::Collections::List*  _regions;
+    uStrong< ::g::Fuse::Input::Gesture*  _gesture;
     bool _hasUpdated;
     double _startProgress;
     double _prevTime;
     ::g::Uno::Float2 _startCoord;
     float _velocityThreshold;
-    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*> _velocity;
+    uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*  _velocity;
     float _significance;
     bool _allowNewRegion;
 

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.INativeViewRoot.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.INativeViewRoot.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{struct App__RootViewHost;}}
 

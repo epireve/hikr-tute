@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct GraphicsView;}}}
 namespace g{namespace Fuse{namespace Controls{struct GraphicsView__Template;}}}
 
@@ -19,8 +19,8 @@ void GraphicsView__Template__New2_fn(::g::Fuse::Controls::GraphicsView* parent, 
 
 struct GraphicsView__Template : ::g::Uno::UX::Template
 {
-    uWeak< ::g::Fuse::Controls::GraphicsView*> __parent1;
-    uWeak< ::g::Fuse::Controls::GraphicsView*> __parentInstance1;
+    uWeak< ::g::Fuse::Controls::GraphicsView*  __parent1;
+    uWeak< ::g::Fuse::Controls::GraphicsView*  __parentInstance1;
 
     void ctor_1(::g::Fuse::Controls::GraphicsView* parent, ::g::Fuse::Controls::GraphicsView* parentInstance);
     static GraphicsView__Template* New2(::g::Fuse::Controls::GraphicsView* parent, ::g::Fuse::Controls::GraphicsView* parentInstance);

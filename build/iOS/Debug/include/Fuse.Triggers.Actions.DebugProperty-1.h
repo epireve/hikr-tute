@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.ITaggedDebugProperty.h>
-#include <Uno.Object.h>
+#include <Fuse.Triggers.Actions.ITaggedDebugProperty.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct DebugProperty;}}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
 
@@ -12,7 +12,7 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// public sealed class DebugProperty<T> :12
+// public sealed class DebugProperty<T  :12
 // {
 struct DebugProperty_type : uType
 {
@@ -29,8 +29,8 @@ void DebugProperty__set_Value_fn(DebugProperty* __this, ::g::Uno::UX::Property1*
 
 struct DebugProperty : uObject
 {
-    uStrong<uString*> _Tag;
-    uStrong< ::g::Uno::UX::Property1*> _Value;
+    uStrong<uString*  _Tag;
+    uStrong< ::g::Uno::UX::Property1*  _Value;
 
     uString* GetStringValue();
     uString* GetTag();

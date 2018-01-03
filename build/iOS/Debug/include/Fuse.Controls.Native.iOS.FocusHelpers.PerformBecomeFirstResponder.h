@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct FocusHelpers__PerformBecomeFirstResponder;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 
@@ -21,7 +21,7 @@ void FocusHelpers__PerformBecomeFirstResponder__New1_fn(::g::ObjC::Object* targe
 
 struct FocusHelpers__PerformBecomeFirstResponder : uObject
 {
-    uStrong< ::g::ObjC::Object*> _target;
+    uStrong< ::g::ObjC::Object*  _target;
 
     void ctor_(::g::ObjC::Object* target);
     void BecomeFirstResponder();

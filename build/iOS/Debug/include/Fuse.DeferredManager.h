@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct DeferredManager;}}
 namespace g{namespace Uno{namespace Collections{struct PriorityQueue;}}}
 namespace g{namespace Uno{struct Float2;}}
@@ -19,8 +19,8 @@ void DeferredManager__OnUpdate_fn();
 
 struct DeferredManager : uObject
 {
-    static uSStrong< ::g::Uno::Collections::PriorityQueue*> _pending_;
-    static uSStrong< ::g::Uno::Collections::PriorityQueue*>& _pending() { return _pending_; }
+    static uSStrong< ::g::Uno::Collections::PriorityQueue*  _pending_;
+    static uSStrong< ::g::Uno::Collections::PriorityQueue* & _pending() { return _pending_; }
     static int _startFrame_;
     static int& _startFrame() { return _startFrame_; }
     static bool _update_;

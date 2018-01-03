@@ -26,10 +26,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class ButtonBase :26
+// public sealed class ButtonBase :26
 // {
 ::g::Fuse::Controls::Panel_type* ButtonBase_typeof();
-void ButtonBase__ctor_7_fn(ButtonBase* __this);
 void ButtonBase__get_LabelView_fn(ButtonBase* __this, uObject** __retval);
 void ButtonBase__PushPropertiesToNativeView_fn(ButtonBase* __this);
 void ButtonBase__SetText_fn(ButtonBase* __this, uString* value, uObject* origin);
@@ -40,7 +39,6 @@ struct ButtonBase : ::g::Fuse::Controls::Panel
 {
     uStrong<uString*> _text;
 
-    void ctor_7();
     uObject* LabelView();
     void SetText(uString* value, uObject* origin);
     uString* Text();

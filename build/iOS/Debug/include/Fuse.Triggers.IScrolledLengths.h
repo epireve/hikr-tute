@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Triggers{struct IScrolledLengths;}}}
 
 namespace g{
@@ -15,14 +15,14 @@ uClassType* IScrolledLengths_typeof();
 
 struct IScrolledLengths : uObject
 {
-    static uSStrong<uObject*> Points_;
-    static uSStrong<uObject*>& Points() { return Points_; }
-    static uSStrong<uObject*> Pixels_;
-    static uSStrong<uObject*>& Pixels() { return Pixels_; }
-    static uSStrong<uObject*> ContentSize_;
-    static uSStrong<uObject*>& ContentSize() { return ContentSize_; }
-    static uSStrong<uObject*> ScrollViewSize_;
-    static uSStrong<uObject*>& ScrollViewSize() { return ScrollViewSize_; }
+    static uSStrong<uObject*  Points_;
+    static uSStrong<uObject* & Points() { return Points_; }
+    static uSStrong<uObject*  Pixels_;
+    static uSStrong<uObject* & Pixels() { return Pixels_; }
+    static uSStrong<uObject*  ContentSize_;
+    static uSStrong<uObject* & ContentSize() { return ContentSize_; }
+    static uSStrong<uObject*  ScrollViewSize_;
+    static uSStrong<uObject* & ScrollViewSize() { return ScrollViewSize_; }
 };
 // }
 

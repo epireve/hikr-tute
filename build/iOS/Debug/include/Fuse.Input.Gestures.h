@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
 namespace g{namespace Fuse{namespace Input{struct Gestures;}}}
 namespace g{namespace Fuse{namespace Input{struct Gestures__ActiveGesture;}}}
@@ -31,14 +31,14 @@ void Gestures__UpdateSignificance_fn();
 
 struct Gestures : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _gestures_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _gestures() { return _gestures_; }
-    static uSStrong< ::g::Uno::Collections::List*> _activeGestures_;
-    static uSStrong< ::g::Uno::Collections::List*>& _activeGestures() { return _activeGestures_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _gestures_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _gestures() { return _gestures_; }
+    static uSStrong< ::g::Uno::Collections::List*  _activeGestures_;
+    static uSStrong< ::g::Uno::Collections::List* & _activeGestures() { return _activeGestures_; }
     static bool _changePosted_;
     static bool& _changePosted() { return _changePosted_; }
-    static uSStrong< ::g::Fuse::Input::PointerEventArgs*> _pumpArgs_;
-    static uSStrong< ::g::Fuse::Input::PointerEventArgs*>& _pumpArgs() { return _pumpArgs_; }
+    static uSStrong< ::g::Fuse::Input::PointerEventArgs*  _pumpArgs_;
+    static uSStrong< ::g::Fuse::Input::PointerEventArgs* & _pumpArgs() { return _pumpArgs_; }
 
     static ::g::Fuse::Input::Gesture* Add(uObject* handler, ::g::Fuse::Visual* target, int type);
     static void AddActive(::g::Fuse::Input::Gesture* g);

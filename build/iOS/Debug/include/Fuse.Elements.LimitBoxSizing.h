@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.BoxSizing.h>
+#include <Fuse.Elements.BoxSizing.h 
 namespace g{namespace Fuse{namespace Elements{struct BoxPlacement;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct LimitBoxSizing;}}}
@@ -25,8 +25,8 @@ void LimitBoxSizing__New1_fn(LimitBoxSizing** __retval);
 
 struct LimitBoxSizing : ::g::Fuse::Elements::BoxSizing
 {
-    static uSStrong<LimitBoxSizing*> Singleton_;
-    static uSStrong<LimitBoxSizing*>& Singleton() { return Singleton_; }
+    static uSStrong<LimitBoxSizing*  Singleton_;
+    static uSStrong<LimitBoxSizing* & Singleton() { return Singleton_; }
 
     void ctor_1();
     ::g::Uno::Float2 Limit(::g::Fuse::Elements::Element* element, ::g::Uno::Float2 std);

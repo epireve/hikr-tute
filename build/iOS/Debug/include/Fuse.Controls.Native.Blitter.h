@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct Blitter;}}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
@@ -25,11 +25,11 @@ void Blitter__New1_fn(Blitter** __retval);
 
 struct Blitter : uObject
 {
-    static uSStrong<Blitter*> Singleton_;
-    static uSStrong<Blitter*>& Singleton() { return Singleton_; }
+    static uSStrong<Blitter*  Singleton_;
+    static uSStrong<Blitter* & Singleton() { return Singleton_; }
     bool _ios;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Blit_v_f88335dd_3_4_1;
-    uStrong<uArray*> Blit_verts_f88335dd_3_3_5;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Blit_v_f88335dd_3_4_1;
+    uStrong<uArray*  Blit_verts_f88335dd_3_3_5;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_f88335dd;
 
     void ctor_();

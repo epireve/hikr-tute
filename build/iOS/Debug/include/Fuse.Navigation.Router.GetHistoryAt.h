@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct Router__GetHistoryAt;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPage;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPageRoute;}}}
@@ -22,7 +22,7 @@ void Router__GetHistoryAt__New1_fn(Router__GetHistoryAt** __retval);
 struct Router__GetHistoryAt : uObject
 {
     int At;
-    uStrong< ::g::Fuse::Navigation::RouterPageRoute*> Result;
+    uStrong< ::g::Fuse::Navigation::RouterPageRoute*  Result;
 
     void ctor_();
     bool HistoryAction(::g::Uno::Collections::List* stack);

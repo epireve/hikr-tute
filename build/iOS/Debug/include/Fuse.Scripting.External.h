@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct External;}}}
 
 namespace g{
@@ -19,7 +19,7 @@ void External__New1_fn(uObject* o, External** __retval);
 
 struct External : uObject
 {
-    uStrong<uObject*> Object;
+    uStrong<uObject*  Object;
 
     void ctor_(uObject* o);
     static External* New1(uObject* o);

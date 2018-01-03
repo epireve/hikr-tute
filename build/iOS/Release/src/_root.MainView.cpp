@@ -4,8 +4,10 @@
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
 #include <_root.MainView.Template1.h>
+#include <_root.MainView.Template2.h>
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Animations.IResizeMode.h>
+#include <Fuse.AppBase.h>
 #include <Fuse.Controls.ClientPanel.h>
 #include <Fuse.Controls.Navigator.h>
 #include <Fuse.Drawing.BrushConverter.h>
@@ -48,6 +50,7 @@
 #include <Polyfills.Window.WindowModule.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IList-1.h>
+#include <Uno.Float.h>
 #include <Uno.Float4.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
@@ -59,7 +62,7 @@ namespace g{
 
 // public partial sealed class MainView :2
 // {
-// static MainView() :47
+// static MainView() :68
 static void MainView__cctor_1_fn(uType* __type)
 {
     ::g::Uno::UX::Selector_typeof()->Init();
@@ -215,19 +218,19 @@ static void MainView_build(uType* type)
     return type;
 }
 
-// public MainView() :158
+// public MainView() :179
 void MainView__ctor_4_fn(MainView* __this)
 {
     __this->ctor_4();
 }
 
-// private void InitializeUX() :162
+// private void InitializeUX() :183
 void MainView__InitializeUX_fn(MainView* __this)
 {
     __this->InitializeUX();
 }
 
-// public MainView New() :158
+// public MainView New() :179
 void MainView__New2_fn(MainView** __retval)
 {
     *__retval = MainView::New2();
@@ -235,14 +238,14 @@ void MainView__New2_fn(MainView** __retval)
 
 ::g::Uno::UX::Selector MainView::__selector0_;
 
-// public MainView() [instance] :158
+// public MainView() [instance] :179
 void MainView::ctor_4()
 {
     ctor_3();
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :162
+// private void InitializeUX() [instance] :183
 void MainView::InitializeUX()
 {
     ::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule* temp = ::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule::New2();
@@ -265,18 +268,21 @@ void MainView::InitializeUX()
     router = ::g::Fuse::Navigation::Router::New2();
     ::g::Fuse::Controls::ClientPanel* temp17 = ::g::Fuse::Controls::ClientPanel::New5();
     ::g::Fuse::Controls::Navigator* temp18 = ::g::Fuse::Controls::Navigator::New4();
-    MainView__Template* home = MainView__Template::New2(this, this);
-    MainView__Template1* editHike = MainView__Template1::New2(this, this);
+    MainView__Template* splash = MainView__Template::New2(this, this);
+    MainView__Template1* home = MainView__Template1::New2(this, this);
+    MainView__Template2* editHike = MainView__Template2::New2(this, this);
+    Background(::g::Uno::Float4__New2(0.007843138f, 0.1372549f, 0.1568628f, 1.0f));
     uPtr(router)->Name(MainView::__selector0_);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp17->Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), temp18);
-    temp18->DefaultPath(uString::Const("home"));
+    temp18->DefaultPath(uString::Const("splash"));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp18->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), splash);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp18->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), home);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp18->Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL)), editHike);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), router);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL)), temp17);
 }
 
-// public MainView New() [static] :158
+// public MainView New() [static] :179
 MainView* MainView::New2()
 {
     MainView* obj1 = (MainView*)uNew(MainView_typeof());

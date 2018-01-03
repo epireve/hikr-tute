@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 
@@ -21,12 +21,12 @@ struct INameListener
 
 }} // ::g::Fuse
 
-#include <Uno.UX.Selector.h>
+#include <Uno.UX.Selector.h 
 
 namespace g{
 namespace Fuse{
 
-inline void INameListener::OnNameChanged(const uInterface& __this, ::g::Fuse::Node* obj, ::g::Uno::UX::Selector name) { __this.VTable<INameListener>()->fp_OnNameChanged(__this, obj, &name); }
+inline void INameListener::OnNameChanged(const uInterface& __this, ::g::Fuse::Node* obj, ::g::Uno::UX::Selector name) { __this.VTable<INameListener ()- fp_OnNameChanged(__this, obj, &name); }
 // }
 
 }} // ::g::Fuse

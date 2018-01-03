@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct BoxPlacement;}}}
 namespace g{namespace Fuse{namespace Elements{struct BoxSizing;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
@@ -47,8 +47,8 @@ struct BoxSizing : uObject
     int EffectiveHorizontalAlignment(::g::Fuse::Elements::Element* element);
     int EffectiveVerticalAlignment(::g::Fuse::Elements::Element* element);
     ::g::Fuse::LayoutParams GetConstraints(::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams lp, int flags);
-    int IsContentRelativeSize(::g::Fuse::Elements::Element* element) { int __retval; return (((BoxSizing_type*)__type)->fp_IsContentRelativeSize)(this, element, &__retval), __retval; }
-    void RequestLayout(::g::Fuse::Elements::Element* element) { (((BoxSizing_type*)__type)->fp_RequestLayout)(this, element); }
+    int IsContentRelativeSize(::g::Fuse::Elements::Element* element) { int __retval; return (((BoxSizing_type*)__type)- fp_IsContentRelativeSize)(this, element, &__retval), __retval; }
+    void RequestLayout(::g::Fuse::Elements::Element* element) { (((BoxSizing_type*)__type)- fp_RequestLayout)(this, element); }
     float SimpleToAnchor(int align);
     float UnitSize(::g::Fuse::Elements::Element* element, ::g::Uno::UX::Size value, float relative, bool hasRelative, bool* known);
     static int IsContentRelativeSize(BoxSizing* __this, ::g::Fuse::Elements::Element* element) { int __retval; return BoxSizing__IsContentRelativeSize_fn(__this, element, &__retval), __retval; }
@@ -57,18 +57,18 @@ struct BoxSizing : uObject
 
 }}} // ::g::Fuse::Elements
 
-#include <Fuse.Elements.BoxPlacement.h>
-#include <Fuse.LayoutParams.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.Size.h>
+#include <Fuse.Elements.BoxPlacement.h 
+#include <Fuse.LayoutParams.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.Size.h 
 
 namespace g{
 namespace Fuse{
 namespace Elements{
 
-inline ::g::Uno::Float2 BoxSizing::CalcArrangePaddingSize(::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((BoxSizing_type*)__type)->fp_CalcArrangePaddingSize)(this, element, &lp, &__retval), __retval; }
-inline ::g::Fuse::Elements::BoxPlacement BoxSizing::CalcBoxPlacement(::g::Fuse::Elements::Element* element, ::g::Uno::Float2 position, ::g::Fuse::LayoutParams lp) { ::g::Fuse::Elements::BoxPlacement __retval; return (((BoxSizing_type*)__type)->fp_CalcBoxPlacement)(this, element, &position, &lp, &__retval), __retval; }
-inline ::g::Uno::Float2 BoxSizing::CalcMarginSize(::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((BoxSizing_type*)__type)->fp_CalcMarginSize)(this, element, &lp, &__retval), __retval; }
+inline ::g::Uno::Float2 BoxSizing::CalcArrangePaddingSize(::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((BoxSizing_type*)__type)- fp_CalcArrangePaddingSize)(this, element, &lp, &__retval), __retval; }
+inline ::g::Fuse::Elements::BoxPlacement BoxSizing::CalcBoxPlacement(::g::Fuse::Elements::Element* element, ::g::Uno::Float2 position, ::g::Fuse::LayoutParams lp) { ::g::Fuse::Elements::BoxPlacement __retval; return (((BoxSizing_type*)__type)- fp_CalcBoxPlacement)(this, element, &position, &lp, &__retval), __retval; }
+inline ::g::Uno::Float2 BoxSizing::CalcMarginSize(::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((BoxSizing_type*)__type)- fp_CalcMarginSize)(this, element, &lp, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Elements

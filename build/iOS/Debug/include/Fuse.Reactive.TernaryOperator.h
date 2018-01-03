@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct TernaryOperator;}}}
 
 namespace g{
@@ -32,16 +32,16 @@ void TernaryOperator__set_Third_fn(TernaryOperator* __this, ::g::Fuse::Reactive:
 
 struct TernaryOperator : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _First;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Second;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Third;
+    uStrong< ::g::Fuse::Reactive::Expression*  _First;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Second;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Third;
 
-    uObject* Compute(uObject* first, uObject* second, uObject* third) { uObject* __retval; return (((TernaryOperator_type*)__type)->fp_Compute)(this, first, second, third, &__retval), __retval; }
+    uObject* Compute(uObject* first, uObject* second, uObject* third) { uObject* __retval; return (((TernaryOperator_type*)__type)- fp_Compute)(this, first, second, third, &__retval), __retval; }
     ::g::Fuse::Reactive::Expression* First();
     void First(::g::Fuse::Reactive::Expression* value);
     bool IsFirstOptional();
     bool IsSecondOptional();
-    bool IsThirdOptional() { bool __retval; return (((TernaryOperator_type*)__type)->fp_get_IsThirdOptional)(this, &__retval), __retval; }
+    bool IsThirdOptional() { bool __retval; return (((TernaryOperator_type*)__type)- fp_get_IsThirdOptional)(this, &__retval), __retval; }
     ::g::Fuse::Reactive::Expression* Second();
     void Second(::g::Fuse::Reactive::Expression* value);
     ::g::Fuse::Reactive::Expression* Third();

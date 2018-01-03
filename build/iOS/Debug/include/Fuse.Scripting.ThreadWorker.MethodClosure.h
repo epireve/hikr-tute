@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMethod;}}}
@@ -23,10 +23,10 @@ void ThreadWorker__MethodClosure__New1_fn(::g::Fuse::Scripting::Function* cl, ::
 
 struct ThreadWorker__MethodClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::ScriptMethod*> _m;
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    static uSStrong<uArray*> _emptyArgs_;
-    static uSStrong<uArray*>& _emptyArgs() { return _emptyArgs_; }
+    uStrong< ::g::Fuse::Scripting::ScriptMethod*  _m;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    static uSStrong<uArray*  _emptyArgs_;
+    static uSStrong<uArray* & _emptyArgs() { return _emptyArgs_; }
 
     void ctor_(::g::Fuse::Scripting::Function* cl, ::g::Fuse::Scripting::ScriptMethod* m, ::g::Fuse::Scripting::ThreadWorker* worker);
     uObject* Callback(uArray* args);

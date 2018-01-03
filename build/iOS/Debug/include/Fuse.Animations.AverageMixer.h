@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixer.h>
-#include <Fuse.Animations.MixerBase.h>
+#include <Fuse.Animations.IMixer.h 
+#include <Fuse.Animations.MixerBase.h 
 namespace g{namespace Fuse{namespace Animations{struct AverageMixer;}}}
 namespace g{namespace Fuse{namespace Animations{struct MasterBase;}}}
 namespace g{namespace Fuse{namespace Animations{struct MasterProperty;}}}

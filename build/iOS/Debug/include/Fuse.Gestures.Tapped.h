@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Gestures.ClickerTrigger.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Gestures.ClickerTrigger.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Gestures{struct Tapped;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 
@@ -32,7 +32,7 @@ void Tapped__OnUnrooted_fn(Tapped* __this);
 
 struct Tapped : ::g::Fuse::Gestures::ClickerTrigger
 {
-    uStrong<uDelegate*> Handler1;
+    uStrong<uDelegate*  Handler1;
 
     void ctor_6();
     void add_Handler(uDelegate* value);

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct ObserverMap;}}}
 namespace g{namespace Fuse{namespace Reactive{struct UnmappedView;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal sealed class UnmappedView<T> :8
+// internal sealed class UnmappedView<T  :8
 // {
 struct UnmappedView_type : uType
 {
@@ -26,7 +26,7 @@ void UnmappedView__New1_fn(uType* __type, ::g::Fuse::Reactive::ObserverMap* sour
 
 struct UnmappedView : uObject
 {
-    uStrong< ::g::Fuse::Reactive::ObserverMap*> _source;
+    uStrong< ::g::Fuse::Reactive::ObserverMap*  _source;
 
     void ctor_(::g::Fuse::Reactive::ObserverMap* source);
     uObject* Item(int index);

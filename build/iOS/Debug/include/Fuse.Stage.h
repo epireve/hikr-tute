@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Stage;}}
 namespace g{namespace Fuse{struct UpdateAction;}}
 namespace g{namespace Fuse{struct UpdateListener;}}
@@ -24,10 +24,10 @@ void Stage__New1_fn(int* _updateStage, Stage** __retval);
 struct Stage : uObject
 {
     int UpdateStage;
-    uStrong< ::g::Uno::Collections::List*> Listeners;
-    uStrong< ::g::Uno::Collections::List*> Onces;
-    uStrong< ::g::Uno::Collections::List*> OncesPending;
-    uStrong<uArray*> PhaseDeferredActions;
+    uStrong< ::g::Uno::Collections::List*  Listeners;
+    uStrong< ::g::Uno::Collections::List*  Onces;
+    uStrong< ::g::Uno::Collections::List*  OncesPending;
+    uStrong<uArray*  PhaseDeferredActions;
     bool HasListenersRemoved;
 
     void ctor_(int _updateStage);

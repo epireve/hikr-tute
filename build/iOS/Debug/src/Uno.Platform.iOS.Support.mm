@@ -1,18 +1,18 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Platform/iOS/Support.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <CoreGraphics/CoreGraphics.h>
-#include <Foundation/Foundation.h>
-#include <ObjC.Object.h>
-#include <UIKit/UIKit.h>
-#include <Uno.Float.h>
-#include <Uno.Platform.iOS.Application.h>
-#include <Uno.Platform.iOS.Support.h>
-#include <Uno.Platform.iOS.uCGPoint.h>
-#include <Uno.Platform.iOS.uCGRect.h>
-#include <Uno.Platform.iOS.uCGSize.h>
-#include <Uno.Float2.h>
-#include <Uno.Rect.h>
+#include <CoreGraphics/CoreGraphics.h 
+#include <Foundation/Foundation.h 
+#include <ObjC.Object.h 
+#include <UIKit/UIKit.h 
+#include <Uno.Float.h 
+#include <Uno.Platform.iOS.Application.h 
+#include <Uno.Platform.iOS.Support.h 
+#include <Uno.Platform.iOS.uCGPoint.h 
+#include <Uno.Platform.iOS.uCGRect.h 
+#include <Uno.Platform.iOS.uCGSize.h 
+#include <Uno.Float2.h 
+#include <Uno.Rect.h 
 
 namespace g{
 namespace Uno{
@@ -27,13 +27,13 @@ static void Support_build(uType* type)
 
 uClassType* Support_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Platform.iOS.Support", options);
-    type->fp_build_ = Support_build;
+    type- fp_build_ = Support_build;
     return type;
 }
 

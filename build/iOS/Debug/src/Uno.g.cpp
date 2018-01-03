@@ -1,95 +1,95 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <cmath>
-#include <uBase/String.h>
-#include <uBase/Traits.h>
-#include <uBase/Unicode.h>
-#include <Uno.Action.h>
-#include <Uno.Action-1.h>
-#include <Uno.Action-2.h>
-#include <Uno.Action-3.h>
-#include <Uno.Action-4.h>
-#include <Uno.AggregateException.h>
-#include <Uno.Application.h>
-#include <Uno.ArgumentException.h>
-#include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRangeException.h>
-#include <Uno.Array.h>
-#include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
-#include <Uno.Char.h>
-#include <Uno.Collections.List-1.Enumerator.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Color.h>
-#include <Uno.Comparison-1.h>
-#include <Uno.DateTime.h>
-#include <Uno.DateTimeKind.h>
-#include <Uno.Delegate.h>
-#include <Uno.Double.h>
-#include <Uno.Enum.h>
-#include <Uno.EventArgs.h>
-#include <Uno.EventHandler.h>
-#include <Uno.EventHandler-1.h>
-#include <Uno.Exception.h>
-#include <Uno.Float.h>
-#include <Uno.Float2.h>
-#include <Uno.Float2x2.h>
-#include <Uno.Float3.h>
-#include <Uno.Float3x3.h>
-#include <Uno.Float4.h>
-#include <Uno.Float4x4.h>
-#include <Uno.FormatException.h>
-#include <Uno.Func-1.h>
-#include <Uno.Func-2.h>
-#include <Uno.Func-3.h>
-#include <Uno.Func-4.h>
-#include <Uno.GC.h>
-#include <Uno.Generic.h>
-#include <Uno.IDisposable.h>
-#include <Uno.IndexOutOfRangeException.h>
-#include <Uno.Int.h>
-#include <Uno.Int2.h>
-#include <Uno.Int3.h>
-#include <Uno.Int4.h>
-#include <Uno.IntPtr.h>
-#include <Uno.InvalidCastException.h>
-#include <Uno.InvalidOperationException.h>
-#include <Uno.ITuple.h>
-#include <Uno.Long.h>
-#include <Uno.Math.h>
-#include <Uno.Matrix.h>
-#include <Uno.NotSupportedException.h>
-#include <Uno.NullReferenceException.h>
-#include <Uno.Object.h>
-#include <Uno.ObjectDisposedException.h>
-#include <Uno.OverflowException.h>
-#include <Uno.Platform.Window.h>
-#include <Uno.Predicate-1.h>
-#include <Uno.Quaternion.h>
-#include <Uno.Rect.h>
-#include <Uno.Recti.h>
-#include <Uno.Runtime.Implementation.BufferImpl.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringToken.h>
-#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.h>
-#include <Uno.SByte.h>
-#include <Uno.Short.h>
-#include <Uno.String.h>
-#include <Uno.Text.StringBuilder.h>
-#include <Uno.Time.DateTimeZone.h>
-#include <Uno.Time.Duration.h>
-#include <Uno.Time.Instant.h>
-#include <Uno.Time.ZonedDateTime.h>
-#include <Uno.Tuple.h>
-#include <Uno.Tuple-2.h>
-#include <Uno.Type.h>
-#include <Uno.UInt.h>
-#include <Uno.ULong.h>
-#include <Uno.UShort.h>
-#include <Uno.Vector.h>
-#include <Uno.WeakReference-1.h>
-#include <Uno/Support.h>
+#include <cmath 
+#include <uBase/String.h 
+#include <uBase/Traits.h 
+#include <uBase/Unicode.h 
+#include <Uno.Action.h 
+#include <Uno.Action-1.h 
+#include <Uno.Action-2.h 
+#include <Uno.Action-3.h 
+#include <Uno.Action-4.h 
+#include <Uno.AggregateException.h 
+#include <Uno.Application.h 
+#include <Uno.ArgumentException.h 
+#include <Uno.ArgumentNullException.h 
+#include <Uno.ArgumentOutOfRangeException.h 
+#include <Uno.Array.h 
+#include <Uno.Bool.h 
+#include <Uno.Buffer.h 
+#include <Uno.Byte.h 
+#include <Uno.Char.h 
+#include <Uno.Collections.List-1.Enumerator.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Color.h 
+#include <Uno.Comparison-1.h 
+#include <Uno.DateTime.h 
+#include <Uno.DateTimeKind.h 
+#include <Uno.Delegate.h 
+#include <Uno.Double.h 
+#include <Uno.Enum.h 
+#include <Uno.EventArgs.h 
+#include <Uno.EventHandler.h 
+#include <Uno.EventHandler-1.h 
+#include <Uno.Exception.h 
+#include <Uno.Float.h 
+#include <Uno.Float2.h 
+#include <Uno.Float2x2.h 
+#include <Uno.Float3.h 
+#include <Uno.Float3x3.h 
+#include <Uno.Float4.h 
+#include <Uno.Float4x4.h 
+#include <Uno.FormatException.h 
+#include <Uno.Func-1.h 
+#include <Uno.Func-2.h 
+#include <Uno.Func-3.h 
+#include <Uno.Func-4.h 
+#include <Uno.GC.h 
+#include <Uno.Generic.h 
+#include <Uno.IDisposable.h 
+#include <Uno.IndexOutOfRangeException.h 
+#include <Uno.Int.h 
+#include <Uno.Int2.h 
+#include <Uno.Int3.h 
+#include <Uno.Int4.h 
+#include <Uno.IntPtr.h 
+#include <Uno.InvalidCastException.h 
+#include <Uno.InvalidOperationException.h 
+#include <Uno.ITuple.h 
+#include <Uno.Long.h 
+#include <Uno.Math.h 
+#include <Uno.Matrix.h 
+#include <Uno.NotSupportedException.h 
+#include <Uno.NullReferenceException.h 
+#include <Uno.Object.h 
+#include <Uno.ObjectDisposedException.h 
+#include <Uno.OverflowException.h 
+#include <Uno.Platform.Window.h 
+#include <Uno.Predicate-1.h 
+#include <Uno.Quaternion.h 
+#include <Uno.Rect.h 
+#include <Uno.Recti.h 
+#include <Uno.Runtime.Implementation.BufferImpl.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringToken.h 
+#include <Uno.Runtime.Implementation.Internal.FormatStringTokenizer.h 
+#include <Uno.SByte.h 
+#include <Uno.Short.h 
+#include <Uno.String.h 
+#include <Uno.Text.StringBuilder.h 
+#include <Uno.Time.DateTimeZone.h 
+#include <Uno.Time.Duration.h 
+#include <Uno.Time.Instant.h 
+#include <Uno.Time.ZonedDateTime.h 
+#include <Uno.Tuple.h 
+#include <Uno.Tuple-2.h 
+#include <Uno.Type.h 
+#include <Uno.UInt.h 
+#include <Uno.ULong.h 
+#include <Uno.UShort.h 
+#include <Uno.Vector.h 
+#include <Uno.WeakReference-1.h 
+#include <Uno/Support.h 
 static uString* STRINGS[42];
 static uType* TYPES[12];
 
@@ -102,77 +102,77 @@ namespace Uno{
 // public delegate void Action() :6
 uDelegateType* Action_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Action", 0, 0);
-    type->SetSignature(uVoid_typeof());
+    type- SetSignature(uVoid_typeof());
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Action.uno
 // -----------------------------------------------------------------
 
-// public delegate void Action<T>(T arg) :9
+// public delegate void Action<T (T arg) :9
 uDelegateType* Action1_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Action`1", 1, 1);
-    type->SetSignature(uVoid_typeof(),
-        type->T(0));
+    type- SetSignature(uVoid_typeof(),
+        type- T(0));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Action.uno
 // -----------------------------------------------------------------
 
-// public delegate void Action<T1, T2>(T1 arg1, T2 arg2) :12
+// public delegate void Action<T1, T2 (T1 arg1, T2 arg2) :12
 uDelegateType* Action2_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Action`2", 2, 2);
-    type->SetSignature(uVoid_typeof(),
-        type->T(0),
-        type->T(1));
+    type- SetSignature(uVoid_typeof(),
+        type- T(0),
+        type- T(1));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Action.uno
 // -----------------------------------------------------------------
 
-// public delegate void Action<T1, T2, T3>(T1 arg1, T2 arg2, T3 arg3) :15
+// public delegate void Action<T1, T2, T3 (T1 arg1, T2 arg2, T3 arg3) :15
 uDelegateType* Action3_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Action`3", 3, 3);
-    type->SetSignature(uVoid_typeof(),
-        type->T(0),
-        type->T(1),
-        type->T(2));
+    type- SetSignature(uVoid_typeof(),
+        type- T(0),
+        type- T(1),
+        type- T(2));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Action.uno
 // -----------------------------------------------------------------
 
-// public delegate void Action<T1, T2, T3, T4>(T1 arg1, T2 arg2, T3 arg3, T4 arg4) :18
+// public delegate void Action<T1, T2, T3, T4 (T1 arg1, T2 arg2, T3 arg3, T4 arg4) :18
 uDelegateType* Action4_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Action`4", 4, 4);
-    type->SetSignature(uVoid_typeof(),
-        type->T(0),
-        type->T(1),
-        type->T(2),
-        type->T(3));
+    type- SetSignature(uVoid_typeof(),
+        type- T(0),
+        type- T(1),
+        type- T(2),
+        type- T(3));
     return type;
 }
 
@@ -184,19 +184,19 @@ uDelegateType* Action4_typeof()
 static void AggregateException_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("One or more errors occurred.");
-    ::STRINGS[1] = uString::Const("---> (Inner Exception #{0}) ");
+    ::STRINGS[1] = uString::Const("---  (Inner Exception #{0}) ");
     ::STRINGS[2] = uString::Const("<---\n"
         "");
     ::STRINGS[3] = uString::Const("\n"
         "");
-    ::TYPES[0] = uObject_typeof()->Array();
-    type->SetFields(4,
-        ::g::Uno::Exception_typeof()->Array(), offsetof(AggregateException, _innerExceptions), 0);
+    ::TYPES[0] = uObject_typeof()- Array();
+    type- SetFields(4,
+        ::g::Uno::Exception_typeof()- Array(), offsetof(AggregateException, _innerExceptions), 0);
 }
 
 ::g::Uno::Exception_type* AggregateException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -205,21 +205,21 @@ static void AggregateException_build(uType* type)
     options.ObjectSize = sizeof(AggregateException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.AggregateException", options);
-    type->fp_build_ = AggregateException_build;
-    type->fp_ToString = (void(*)(uObject*, uString**))AggregateException__ToString_fn;
+    type- fp_build_ = AggregateException_build;
+    type- fp_ToString = (void(*)(uObject*, uString**))AggregateException__ToString_fn;
     return type;
 }
 
 // public AggregateException(string message, Uno.Exception[] innerExceptions) :35
 void AggregateException__ctor_5_fn(AggregateException* __this, uString* message, uArray* innerExceptions)
 {
-    __this->ctor_5(message, innerExceptions);
+    __this- ctor_5(message, innerExceptions);
 }
 
 // public AggregateException(Uno.Exception[] innerExceptions) :25
 void AggregateException__ctor_6_fn(AggregateException* __this, uArray* innerExceptions)
 {
-    __this->ctor_6(innerExceptions);
+    __this- ctor_6(innerExceptions);
 }
 
 // public AggregateException New(Uno.Exception[] innerExceptions) :25
@@ -234,17 +234,17 @@ void AggregateException__ToString_fn(AggregateException* __this, uString** __ret
     uString* ret5;
     ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
 
-    for (int i = 0; i < uPtr(__this->_innerExceptions)->Length(); ++i)
+    for (int i = 0; i < uPtr(__this- _innerExceptions)- Length(); ++i)
     {
-        uPtr(sb)->Append2(::g::Uno::String::Format(::STRINGS[1/*"---> (Inner...*/], uArray::Init<uObject*>(::TYPES[0/*object[]*/], 1, uBox<int>(::TYPES[4/*int*/], i))));
-        sb->Append2(uPtr(uPtr(__this->_innerExceptions)->Strong< ::g::Uno::Exception*>(i))->ToString());
-        sb->Append2(::STRINGS[2/*"<---\n"*/]);
+        uPtr(sb)- Append2(::g::Uno::String::Format(::STRINGS[1/*"---  (Inner...*/], uArray::Init<uObject* (::TYPES[0/*object[]*/], 1, uBox<int (::TYPES[4/*int*/], i))));
+        sb- Append2(uPtr(uPtr(__this- _innerExceptions)- Strong< ::g::Uno::Exception* (i))- ToString());
+        sb- Append2(::STRINGS[2/*"<---\n"*/]);
 
-        if (i != (uPtr(__this->_innerExceptions)->Length() - 1))
-            uPtr(sb)->Append2(::STRINGS[3/*"\n"*/]);
+        if (i != (uPtr(__this- _innerExceptions)- Length() - 1))
+            uPtr(sb)- Append2(::STRINGS[3/*"\n"*/]);
     }
 
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2((::g::Uno::Exception__ToString_fn(__this, &ret5), ret5), ::STRINGS[3/*"\n"*/]), sb->ToString()), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2((::g::Uno::Exception__ToString_fn(__this, &ret5), ret5), ::STRINGS[3/*"\n"*/]), sb- ToString()), void();
 }
 
 // public AggregateException(string message, Uno.Exception[] innerExceptions) [instance] :35
@@ -264,7 +264,7 @@ void AggregateException::ctor_6(uArray* innerExceptions)
 AggregateException* AggregateException::New7(uArray* innerExceptions)
 {
     AggregateException* obj2 = (AggregateException*)uNew(AggregateException_typeof());
-    obj2->ctor_6(innerExceptions);
+    obj2- ctor_6(innerExceptions);
     return obj2;
 }
 // }
@@ -276,15 +276,15 @@ AggregateException* AggregateException::New7(uArray* innerExceptions)
 // {
 static void Application_build(uType* type)
 {
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Uno::Platform::CoreApp_typeof());
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Platform::Window_typeof(), offsetof(Application, _Window), 0);
 }
 
 uType* Application_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -294,14 +294,14 @@ uType* Application_typeof()
     options.ObjectSize = sizeof(Application);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Application", options);
-    type->fp_build_ = Application_build;
+    type- fp_build_ = Application_build;
     return type;
 }
 
 // protected Application() :32
 void Application__ctor_1_fn(Application* __this)
 {
-    __this->ctor_1();
+    __this- ctor_1();
 }
 
 // public static new Uno.Application get_Current() :16
@@ -313,13 +313,13 @@ void Application__get_Current1_fn(Application** __retval)
 // public generated Uno.Platform.Window get_Window() :22
 void Application__get_Window_fn(Application* __this, ::g::Uno::Platform::Window** __retval)
 {
-    *__retval = __this->Window();
+    *__retval = __this- Window();
 }
 
 // private generated void set_Window(Uno.Platform.Window value) :23
 void Application__set_Window_fn(Application* __this, ::g::Uno::Platform::Window* value)
 {
-    __this->Window(value);
+    __this- Window(value);
 }
 
 // protected Application() [instance] :32
@@ -344,7 +344,7 @@ void Application::Window(::g::Uno::Platform::Window* value)
 // public static new Uno.Application get_Current() [static] :16
 Application* Application::Current1()
 {
-    return uAs<Application*>(::g::Uno::Platform::CoreApp::Current(), Application_typeof());
+    return uAs<Application* (::g::Uno::Platform::CoreApp::Current(), Application_typeof());
 }
 // }
 
@@ -356,12 +356,12 @@ Application* Application::Current1()
 static void ArgumentException_build(uType* type)
 {
     ::STRINGS[4] = uString::Const(": ");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* ArgumentException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -370,20 +370,20 @@ static void ArgumentException_build(uType* type)
     options.ObjectSize = sizeof(ArgumentException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.ArgumentException", options);
-    type->fp_build_ = ArgumentException_build;
+    type- fp_build_ = ArgumentException_build;
     return type;
 }
 
 // public ArgumentException(string message) :8
 void ArgumentException__ctor_3_fn(ArgumentException* __this, uString* message)
 {
-    __this->ctor_3(message);
+    __this- ctor_3(message);
 }
 
 // public ArgumentException(string message, string paramName) :13
 void ArgumentException__ctor_4_fn(ArgumentException* __this, uString* message, uString* paramName)
 {
-    __this->ctor_4(message, paramName);
+    __this- ctor_4(message, paramName);
 }
 
 // public ArgumentException New(string message) :8
@@ -414,7 +414,7 @@ void ArgumentException::ctor_4(uString* message, uString* paramName)
 ArgumentException* ArgumentException::New4(uString* message)
 {
     ArgumentException* obj1 = (ArgumentException*)uNew(ArgumentException_typeof());
-    obj1->ctor_3(message);
+    obj1- ctor_3(message);
     return obj1;
 }
 
@@ -422,7 +422,7 @@ ArgumentException* ArgumentException::New4(uString* message)
 ArgumentException* ArgumentException::New5(uString* message, uString* paramName)
 {
     ArgumentException* obj2 = (ArgumentException*)uNew(ArgumentException_typeof());
-    obj2->ctor_4(message, paramName);
+    obj2- ctor_4(message, paramName);
     return obj2;
 }
 // }
@@ -435,12 +435,12 @@ ArgumentException* ArgumentException::New5(uString* message, uString* paramName)
 static void ArgumentNullException_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("value was null");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* ArgumentNullException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -449,14 +449,14 @@ static void ArgumentNullException_build(uType* type)
     options.ObjectSize = sizeof(ArgumentNullException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.ArgumentNullException", options);
-    type->fp_build_ = ArgumentNullException_build;
+    type- fp_build_ = ArgumentNullException_build;
     return type;
 }
 
 // public ArgumentNullException(string paramName) :8
 void ArgumentNullException__ctor_5_fn(ArgumentNullException* __this, uString* paramName)
 {
-    __this->ctor_5(paramName);
+    __this- ctor_5(paramName);
 }
 
 // public ArgumentNullException New(string paramName) :8
@@ -475,7 +475,7 @@ void ArgumentNullException::ctor_5(uString* paramName)
 ArgumentNullException* ArgumentNullException::New6(uString* paramName)
 {
     ArgumentNullException* obj1 = (ArgumentNullException*)uNew(ArgumentNullException_typeof());
-    obj1->ctor_5(paramName);
+    obj1- ctor_5(paramName);
     return obj1;
 }
 // }
@@ -488,12 +488,12 @@ ArgumentNullException* ArgumentNullException::New6(uString* paramName)
 static void ArgumentOutOfRangeException_build(uType* type)
 {
     ::STRINGS[6] = uString::Const("value out of range");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* ArgumentOutOfRangeException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -502,20 +502,20 @@ static void ArgumentOutOfRangeException_build(uType* type)
     options.ObjectSize = sizeof(ArgumentOutOfRangeException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.ArgumentOutOfRangeException", options);
-    type->fp_build_ = ArgumentOutOfRangeException_build;
+    type- fp_build_ = ArgumentOutOfRangeException_build;
     return type;
 }
 
 // public ArgumentOutOfRangeException(string paramName) :13
 void ArgumentOutOfRangeException__ctor_5_fn(ArgumentOutOfRangeException* __this, uString* paramName)
 {
-    __this->ctor_5(paramName);
+    __this- ctor_5(paramName);
 }
 
 // public ArgumentOutOfRangeException(string message, string paramName) :8
 void ArgumentOutOfRangeException__ctor_6_fn(ArgumentOutOfRangeException* __this, uString* message, uString* paramName)
 {
-    __this->ctor_6(message, paramName);
+    __this- ctor_6(message, paramName);
 }
 
 // public ArgumentOutOfRangeException New(string paramName) :13
@@ -546,7 +546,7 @@ void ArgumentOutOfRangeException::ctor_6(uString* message, uString* paramName)
 ArgumentOutOfRangeException* ArgumentOutOfRangeException::New6(uString* paramName)
 {
     ArgumentOutOfRangeException* obj2 = (ArgumentOutOfRangeException*)uNew(ArgumentOutOfRangeException_typeof());
-    obj2->ctor_5(paramName);
+    obj2- ctor_5(paramName);
     return obj2;
 }
 
@@ -554,7 +554,7 @@ ArgumentOutOfRangeException* ArgumentOutOfRangeException::New6(uString* paramNam
 ArgumentOutOfRangeException* ArgumentOutOfRangeException::New7(uString* message, uString* paramName)
 {
     ArgumentOutOfRangeException* obj1 = (ArgumentOutOfRangeException*)uNew(ArgumentOutOfRangeException_typeof());
-    obj1->ctor_6(message, paramName);
+    obj1- ctor_6(message, paramName);
     return obj1;
 }
 // }
@@ -579,22 +579,22 @@ static void Array_build(uType* type)
     ::STRINGS[17] = uString::Const("index");
     ::STRINGS[18] = uString::Const("Index and length do not specify a valid range in elements.");
     ::STRINGS[19] = uString::Const("Comparer is null.");
-    type->MethodTypes[1]->SetPrecalc(
-        type->MakeMethod(0/*Copy<T>*/, type->MethodTypes[1]->U(0), NULL));
-    type->MethodTypes[2]->SetPrecalc(
-        type->MakeMethod(6/*Swap<T>*/, type->MethodTypes[2]->U(0), NULL));
-    type->MethodTypes[3]->SetPrecalc(
-        type->MakeMethod(6/*Swap<T>*/, type->MethodTypes[3]->U(0), NULL));
-    type->MethodTypes[4]->SetPrecalc(
-        type->MakeMethod(2/*QuickSort<T>*/, type->MethodTypes[4]->U(0), NULL),
-        type->MakeMethod(3/*ShellSort<T>*/, type->MethodTypes[4]->U(0), NULL));
-    type->MethodTypes[5]->SetPrecalc(
-        type->MakeMethod(4/*Sort<T>*/, type->MethodTypes[5]->U(0), NULL));
+    type- MethodTypes[1]- SetPrecalc(
+        type- MakeMethod(0/*Copy<T */, type- MethodTypes[1]- U(0), NULL));
+    type- MethodTypes[2]- SetPrecalc(
+        type- MakeMethod(6/*Swap<T */, type- MethodTypes[2]- U(0), NULL));
+    type- MethodTypes[3]- SetPrecalc(
+        type- MakeMethod(6/*Swap<T */, type- MethodTypes[3]- U(0), NULL));
+    type- MethodTypes[4]- SetPrecalc(
+        type- MakeMethod(2/*QuickSort<T */, type- MethodTypes[4]- U(0), NULL),
+        type- MakeMethod(3/*ShellSort<T */, type- MethodTypes[4]- U(0), NULL));
+    type- MethodTypes[5]- SetPrecalc(
+        type- MakeMethod(4/*Sort<T */, type- MethodTypes[5]- U(0), NULL));
 }
 
 uType* Array_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -602,60 +602,60 @@ uType* Array_typeof()
     options.ObjectSize = sizeof(Array);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Array", options);
-    type->MethodTypes[0] = type->NewMethodType(1, 0,0);
-    type->MethodTypes[1] = type->NewMethodType(1, 1,0);
-    type->MethodTypes[2] = type->NewMethodType(1, 1,0);
-    type->MethodTypes[3] = type->NewMethodType(1, 1,0);
-    type->MethodTypes[4] = type->NewMethodType(1, 2,0);
-    type->MethodTypes[5] = type->NewMethodType(1, 1,0);
-    type->MethodTypes[6] = type->NewMethodType(1, 0,0);
-    type->fp_build_ = Array_build;
+    type- MethodTypes[0] = type- NewMethodType(1, 0,0);
+    type- MethodTypes[1] = type- NewMethodType(1, 1,0);
+    type- MethodTypes[2] = type- NewMethodType(1, 1,0);
+    type- MethodTypes[3] = type- NewMethodType(1, 1,0);
+    type- MethodTypes[4] = type- NewMethodType(1, 2,0);
+    type- MethodTypes[5] = type- NewMethodType(1, 1,0);
+    type- MethodTypes[6] = type- NewMethodType(1, 0,0);
+    type- fp_build_ = Array_build;
     return type;
 }
 
-// public static void Copy<T>(T[] sourceArray, int sourceIndex, T[] destinationArray, int destinationIndex, int length) :18
+// public static void Copy<T (T[] sourceArray, int sourceIndex, T[] destinationArray, int destinationIndex, int length) :18
 void Array__Copy_fn(uType* __type, uArray* sourceArray, int* sourceIndex, uArray* destinationArray, int* destinationIndex, int* length)
 {
     Array::Copy(__type, sourceArray, *sourceIndex, destinationArray, *destinationIndex, *length);
 }
 
-// public static void Copy<T>(T[] sourceArray, T[] destinationArray, int length) :12
+// public static void Copy<T (T[] sourceArray, T[] destinationArray, int length) :12
 void Array__Copy1_fn(uType* __type, uArray* sourceArray, uArray* destinationArray, int* length)
 {
     Array::Copy1(__type, sourceArray, destinationArray, *length);
 }
 
-// private static void QuickSort<T>(T[] data, Uno.Comparison<T> comparison, int left, int right) :110
+// private static void QuickSort<T (T[] data, Uno.Comparison<T  comparison, int left, int right) :110
 void Array__QuickSort_fn(uType* __type, uArray* data, uDelegate* comparison, int* left, int* right)
 {
     Array::QuickSort(__type, data, comparison, *left, *right);
 }
 
-// private static void ShellSort<T>(T[] data, Uno.Comparison<T> comparison, int left, int right) :80
+// private static void ShellSort<T (T[] data, Uno.Comparison<T  comparison, int left, int right) :80
 void Array__ShellSort_fn(uType* __type, uArray* data, uDelegate* comparison, int* left, int* right)
 {
     Array::ShellSort(__type, data, comparison, *left, *right);
 }
 
-// public static void Sort<T>(T[] elements, int index, int length, Uno.Comparison<T> comparison) :54
+// public static void Sort<T (T[] elements, int index, int length, Uno.Comparison<T  comparison) :54
 void Array__Sort_fn(uType* __type, uArray* elements, int* index, int* length, uDelegate* comparison)
 {
     Array::Sort(__type, elements, *index, *length, comparison);
 }
 
-// public static void Sort<T>(T[] elements, Uno.Comparison<T> comparison) :47
+// public static void Sort<T (T[] elements, Uno.Comparison<T  comparison) :47
 void Array__Sort1_fn(uType* __type, uArray* elements, uDelegate* comparison)
 {
     Array::Sort1(__type, elements, comparison);
 }
 
-// private static void Swap<T>(T[] data, int a, int b) :136
+// private static void Swap<T (T[] data, int a, int b) :136
 void Array__Swap_fn(uType* __type, uArray* data, int* a, int* b)
 {
     Array::Swap(__type, data, *a, *b);
 }
 
-// public static void Copy<T>(T[] sourceArray, int sourceIndex, T[] destinationArray, int destinationIndex, int length) [static] :18
+// public static void Copy<T (T[] sourceArray, int sourceIndex, T[] destinationArray, int destinationIndex, int length) [static] :18
 void Array::Copy(uType* __type, uArray* sourceArray, int sourceIndex, uArray* destinationArray, int destinationIndex, int length)
 {
     if (sourceArray == NULL)
@@ -673,95 +673,95 @@ void Array::Copy(uType* __type, uArray* sourceArray, int sourceIndex, uArray* de
     if (length < 0)
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New7(::STRINGS[9/*"Non-negativ...*/], ::STRINGS[12/*"length"*/]));
 
-    if (uPtr(sourceArray)->Length() < (sourceIndex + length))
-        U_THROW(::g::Uno::ArgumentException::New4(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[13/*"Destination...*/], uBox<int>(::TYPES[4/*int*/], uPtr(sourceArray)->Length())), ::STRINGS[14/*", "*/]), uBox<int>(::TYPES[4/*int*/], destinationIndex)), ::STRINGS[14/*", "*/]), uBox<int>(::TYPES[4/*int*/], length))));
+    if (uPtr(sourceArray)- Length() < (sourceIndex + length))
+        U_THROW(::g::Uno::ArgumentException::New4(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[13/*"Destination...*/], uBox<int (::TYPES[4/*int*/], uPtr(sourceArray)- Length())), ::STRINGS[14/*", "*/]), uBox<int (::TYPES[4/*int*/], destinationIndex)), ::STRINGS[14/*", "*/]), uBox<int (::TYPES[4/*int*/], length))));
 
-    if (uPtr(destinationArray)->Length() < (destinationIndex + length))
+    if (uPtr(destinationArray)- Length() < (destinationIndex + length))
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[15/*"Source arra...*/]));
 
     for (int i = 0; i < length; i++)
-        uPtr(destinationArray)->TItem(destinationIndex + i) = uPtr(sourceArray)->TItem(sourceIndex + i);
+        uPtr(destinationArray)- TItem(destinationIndex + i) = uPtr(sourceArray)- TItem(sourceIndex + i);
 }
 
-// public static void Copy<T>(T[] sourceArray, T[] destinationArray, int length) [static] :12
+// public static void Copy<T (T[] sourceArray, T[] destinationArray, int length) [static] :12
 void Array::Copy1(uType* __type, uArray* sourceArray, uArray* destinationArray, int length)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Array.Copy<T>*/),
+        __type- Precalced(0/*Uno.Array.Copy<T */),
     };
     Array::Copy(__types[0], sourceArray, 0, destinationArray, 0, length);
 }
 
-// private static void QuickSort<T>(T[] data, Uno.Comparison<T> comparison, int left, int right) [static] :110
+// private static void QuickSort<T (T[] data, Uno.Comparison<T  comparison, int left, int right) [static] :110
 void Array::QuickSort(uType* __type, uArray* data, uDelegate* comparison, int left, int right)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Array.Swap<T>*/),
+        __type- Precalced(0/*Uno.Array.Swap<T */),
     };
-    uT pivotValue(__type->U(0), U_ALLOCA(__type->U(0)->ValueSize));
+    uT pivotValue(__type- U(0), U_ALLOCA(__type- U(0)- ValueSize));
     int ret2;
 
     if (left < right)
     {
         int rightIndex = right - 1;
         int pivotIndex = left;
-        pivotValue = uPtr(data)->TItem(pivotIndex);
+        pivotValue = uPtr(data)- TItem(pivotIndex);
         Array::Swap(__types[0], data, pivotIndex, rightIndex);
 
         for (int i = left; i < rightIndex; i++)
-            if ((uPtr(comparison)->Invoke(&ret2, 2, (void*)uPtr(data)->TItem(i), (void*)pivotValue), ret2) < 0)
+            if ((uPtr(comparison)- Invoke(&ret2, 2, (void*)uPtr(data)- TItem(i), (void*)pivotValue), ret2) < 0)
             {
                 Array::Swap(__types[0], data, i, pivotIndex);
                 pivotIndex++;
             }
 
         Array::Swap(__types[0], data, pivotIndex, rightIndex);
-        Array::QuickSort(__type->Base->MakeMethod(2/*QuickSort<T>*/, __type->U(0), NULL), data, comparison, left, pivotIndex);
-        Array::QuickSort(__type->Base->MakeMethod(2/*QuickSort<T>*/, __type->U(0), NULL), data, comparison, pivotIndex + 1, right);
+        Array::QuickSort(__type- Base- MakeMethod(2/*QuickSort<T */, __type- U(0), NULL), data, comparison, left, pivotIndex);
+        Array::QuickSort(__type- Base- MakeMethod(2/*QuickSort<T */, __type- U(0), NULL), data, comparison, pivotIndex + 1, right);
     }
 }
 
-// private static void ShellSort<T>(T[] data, Uno.Comparison<T> comparison, int left, int right) [static] :80
+// private static void ShellSort<T (T[] data, Uno.Comparison<T  comparison, int left, int right) [static] :80
 void Array::ShellSort(uType* __type, uArray* data, uDelegate* comparison, int left, int right)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Array.Swap<T>*/),
+        __type- Precalced(0/*Uno.Array.Swap<T */),
     };
-    uT temp(__type->U(0), U_ALLOCA(__type->U(0)->ValueSize));
+    uT temp(__type- U(0), U_ALLOCA(__type- U(0)- ValueSize));
     int ret3;
     float s = 2.8f;
     int size = right - left;
     int increment = size / 2;
 
-    while (increment > 0)
+    while (increment   0)
     {
         for (int i = left + increment; i < size; i++)
         {
             int j = i;
-            temp = uPtr(data)->TItem(i);
+            temp = uPtr(data)- TItem(i);
 
-            while ((j >= increment) && ((uPtr(comparison)->Invoke(&ret3, 2, (void*)temp, (void*)data->TItem(j - increment)), ret3) < 0))
+            while ((j  = increment) && ((uPtr(comparison)- Invoke(&ret3, 2, (void*)temp, (void*)data- TItem(j - increment)), ret3) < 0))
             {
                 Array::Swap(__types[0], data, j, j - increment);
                 j = j - increment;
             }
 
-            data->TItem(j) = temp;
+            data- TItem(j) = temp;
         }
 
-        if (((float)increment < 2.8f) && (increment > 1))
+        if (((float)increment < 2.8f) && (increment   1))
             increment = 1;
         else
             increment = (int)((float)increment / 2.8f);
     }
 }
 
-// public static void Sort<T>(T[] elements, int index, int length, Uno.Comparison<T> comparison) [static] :54
+// public static void Sort<T (T[] elements, int index, int length, Uno.Comparison<T  comparison) [static] :54
 void Array::Sort(uType* __type, uArray* elements, int index, int length, uDelegate* comparison)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Array.QuickSort<T>*/),
-        __type->Precalced(1/*Uno.Array.ShellSort<T>*/),
+        __type- Precalced(0/*Uno.Array.QuickSort<T */),
+        __type- Precalced(1/*Uno.Array.ShellSort<T */),
     };
 
     if (length == 0)
@@ -776,36 +776,36 @@ void Array::Sort(uType* __type, uArray* elements, int index, int length, uDelega
     if (length < 0)
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New7(::STRINGS[9/*"Non-negativ...*/], ::STRINGS[12/*"length"*/]));
 
-    if (uPtr(elements)->Length() < (index + length))
+    if (uPtr(elements)- Length() < (index + length))
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[18/*"Index and l...*/]));
 
     if (::g::Uno::Delegate::op_Equality(comparison, NULL))
         U_THROW(::g::Uno::InvalidOperationException::New5(::STRINGS[19/*"Comparer is...*/]));
 
-    if (length > 280)
+    if (length   280)
         Array::QuickSort(__types[0], elements, comparison, index, index + length);
-    else if (length > 0)
+    else if (length   0)
         Array::ShellSort(__types[1], elements, comparison, index, index + length);
 }
 
-// public static void Sort<T>(T[] elements, Uno.Comparison<T> comparison) [static] :47
+// public static void Sort<T (T[] elements, Uno.Comparison<T  comparison) [static] :47
 void Array::Sort1(uType* __type, uArray* elements, uDelegate* comparison)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Array.Sort<T>*/),
+        __type- Precalced(0/*Uno.Array.Sort<T */),
     };
 
     if (elements != NULL)
-        Array::Sort(__types[0], elements, 0, uPtr(elements)->Length(), comparison);
+        Array::Sort(__types[0], elements, 0, uPtr(elements)- Length(), comparison);
 }
 
-// private static void Swap<T>(T[] data, int a, int b) [static] :136
+// private static void Swap<T (T[] data, int a, int b) [static] :136
 void Array::Swap(uType* __type, uArray* data, int a, int b)
 {
-    uT temp(__type->U(0), U_ALLOCA(__type->U(0)->ValueSize));
-    temp = uPtr(data)->TItem(a);
-    data->TItem(a) = data->TItem(b);
-    data->TItem(b) = temp;
+    uT temp(__type- U(0), U_ALLOCA(__type- U(0)- ValueSize));
+    temp = uPtr(data)- TItem(a);
+    data- TItem(a) = data- TItem(b);
+    data- TItem(b) = temp;
 }
 // }
 
@@ -821,7 +821,7 @@ static void Bool_build(uType* type)
 
 uStructType* Bool_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -829,10 +829,10 @@ uStructType* Bool_typeof()
     options.ValueSize = sizeof(bool);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Bool", options);
-    type->fp_build_ = Bool_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Bool__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Bool__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Bool__ToString_fn;
+    type- fp_build_ = Bool_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Bool__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Bool__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Bool__ToString_fn;
     return type;
 }
 
@@ -840,7 +840,7 @@ uStructType* Bool_typeof()
 void Bool__Equals_fn(bool* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :21
@@ -864,8 +864,8 @@ void Bool__ToString_fn(bool* __this, uType* __type, uString** __retval)
 static void Buffer_build(uType* type)
 {
     ::STRINGS[20] = uString::Const("Buffer is read only");
-    ::TYPES[2] = ::g::Uno::Byte_typeof()->Array();
-    type->SetFields(0,
+    ::TYPES[2] = ::g::Uno::Byte_typeof()- Array();
+    type- SetFields(0,
         ::g::Uno::Int_typeof(), offsetof(Buffer, _offset), 0,
         ::g::Uno::Int_typeof(), offsetof(Buffer, _sizeInBytes), 0,
         ::g::Uno::Bool_typeof(), offsetof(Buffer, _isReadOnly), 0,
@@ -874,7 +874,7 @@ static void Buffer_build(uType* type)
 
 uType* Buffer_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -882,50 +882,50 @@ uType* Buffer_typeof()
     options.ObjectSize = sizeof(Buffer);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Buffer", options);
-    type->fp_build_ = Buffer_build;
+    type- fp_build_ = Buffer_build;
     return type;
 }
 
 // public Buffer(byte[] data) :39
 void Buffer__ctor__fn(Buffer* __this, uArray* data)
 {
-    __this->ctor_(data);
+    __this- ctor_(data);
 }
 
 // internal Buffer(byte[] data, int offset, int sizeInBytes, bool isReadOnly) :26
 void Buffer__ctor_2_fn(Buffer* __this, uArray* data, int* offset, int* sizeInBytes, bool* isReadOnly)
 {
-    __this->ctor_2(data, *offset, *sizeInBytes, *isReadOnly);
+    __this- ctor_2(data, *offset, *sizeInBytes, *isReadOnly);
 }
 
 // public Buffer(int sizeInBytes) :44
 void Buffer__ctor_3_fn(Buffer* __this, int* sizeInBytes)
 {
-    __this->ctor_3(*sizeInBytes);
+    __this- ctor_3(*sizeInBytes);
 }
 
 // public byte GetByte(int offset) :128
 void Buffer__GetByte_fn(Buffer* __this, int* offset, uint8_t* __retval)
 {
-    *__retval = __this->GetByte(*offset);
+    *__retval = __this- GetByte(*offset);
 }
 
 // internal byte[] get_GetHandle() :61
 void Buffer__get_GetHandle_fn(Buffer* __this, uArray** __retval)
 {
-    *__retval = __this->GetHandle();
+    *__retval = __this- GetHandle();
 }
 
 // public byte get_Item(int offset) :87
 void Buffer__get_Item_fn(Buffer* __this, int* offset, uint8_t* __retval)
 {
-    *__retval = __this->Item(*offset);
+    *__retval = __this- Item(*offset);
 }
 
 // public void set_Item(int offset, byte value) :88
 void Buffer__set_Item_fn(Buffer* __this, int* offset, uint8_t* value)
 {
-    __this->Item(*offset, *value);
+    __this- Item(*offset, *value);
 }
 
 // public Buffer New(byte[] data) :39
@@ -949,55 +949,55 @@ void Buffer__New4_fn(int* sizeInBytes, Buffer** __retval)
 // public void Set(int offset, byte value) :134
 void Buffer__Set_fn(Buffer* __this, int* offset, uint8_t* value)
 {
-    __this->Set(*offset, *value);
+    __this- Set(*offset, *value);
 }
 
 // public void Set(int offset, float value, [bool littleEndian]) :328
 void Buffer__Set4_fn(Buffer* __this, int* offset, float* value, bool* littleEndian)
 {
-    __this->Set4(*offset, *value, *littleEndian);
+    __this- Set4(*offset, *value, *littleEndian);
 }
 
 // public void Set(int offset, float2 value, [bool littleEndian]) :339
 void Buffer__Set5_fn(Buffer* __this, int* offset, ::g::Uno::Float2* value, bool* littleEndian)
 {
-    __this->Set5(*offset, *value, *littleEndian);
+    __this- Set5(*offset, *value, *littleEndian);
 }
 
 // public void Set(int offset, float3 value, [bool littleEndian]) :351
 void Buffer__Set6_fn(Buffer* __this, int* offset, ::g::Uno::Float3* value, bool* littleEndian)
 {
-    __this->Set6(*offset, *value, *littleEndian);
+    __this- Set6(*offset, *value, *littleEndian);
 }
 
 // public void Set(int offset, float4 value, [bool littleEndian]) :364
 void Buffer__Set8_fn(Buffer* __this, int* offset, ::g::Uno::Float4* value, bool* littleEndian)
 {
-    __this->Set8(*offset, *value, *littleEndian);
+    __this- Set8(*offset, *value, *littleEndian);
 }
 
 // public void Set(int offset, ushort value, [bool littleEndian]) :208
 void Buffer__Set23_fn(Buffer* __this, int* offset, uint16_t* value, bool* littleEndian)
 {
-    __this->Set23(*offset, *value, *littleEndian);
+    __this- Set23(*offset, *value, *littleEndian);
 }
 
 // internal byte[] get_SetHandle() :66
 void Buffer__get_SetHandle_fn(Buffer* __this, uArray** __retval)
 {
-    *__retval = __this->SetHandle();
+    *__retval = __this- SetHandle();
 }
 
 // public int get_SizeInBytes() :56
 void Buffer__get_SizeInBytes_fn(Buffer* __this, int* __retval)
 {
-    *__retval = __this->SizeInBytes();
+    *__retval = __this- SizeInBytes();
 }
 
 // public Buffer(byte[] data) [instance] :39
 void Buffer::ctor_(uArray* data)
 {
-    ctor_2(data, 0, uPtr(data)->Length(), true);
+    ctor_2(data, 0, uPtr(data)- Length(), true);
 }
 
 // internal Buffer(byte[] data, int offset, int sizeInBytes, bool isReadOnly) [instance] :26
@@ -1018,7 +1018,7 @@ void Buffer::ctor_3(int sizeInBytes)
 // public byte GetByte(int offset) [instance] :128
 uint8_t Buffer::GetByte(int offset)
 {
-    return uPtr(GetHandle())->Item<uint8_t>(_offset + offset);
+    return uPtr(GetHandle())- Item<uint8_t (_offset + offset);
 }
 
 // internal byte[] get_GetHandle() [instance] :61
@@ -1042,7 +1042,7 @@ void Buffer::Item(int offset, uint8_t value)
 // public void Set(int offset, byte value) [instance] :134
 void Buffer::Set(int offset, uint8_t value)
 {
-    uPtr(SetHandle())->Item<uint8_t>(_offset + offset) = value;
+    uPtr(SetHandle())- Item<uint8_t (_offset + offset) = value;
 }
 
 // public void Set(int offset, float value, [bool littleEndian]) [instance] :328
@@ -1100,7 +1100,7 @@ int Buffer::SizeInBytes()
 Buffer* Buffer::New1(uArray* data)
 {
     Buffer* obj3 = (Buffer*)uNew(Buffer_typeof());
-    obj3->ctor_(data);
+    obj3- ctor_(data);
     return obj3;
 }
 
@@ -1108,7 +1108,7 @@ Buffer* Buffer::New1(uArray* data)
 Buffer* Buffer::New3(uArray* data, int offset, int sizeInBytes, bool isReadOnly)
 {
     Buffer* obj1 = (Buffer*)uNew(Buffer_typeof());
-    obj1->ctor_2(data, offset, sizeInBytes, isReadOnly);
+    obj1- ctor_2(data, offset, sizeInBytes, isReadOnly);
     return obj1;
 }
 
@@ -1116,7 +1116,7 @@ Buffer* Buffer::New3(uArray* data, int offset, int sizeInBytes, bool isReadOnly)
 Buffer* Buffer::New4(int sizeInBytes)
 {
     Buffer* obj4 = (Buffer*)uNew(Buffer_typeof());
-    obj4->ctor_3(sizeInBytes);
+    obj4- ctor_3(sizeInBytes);
     return obj4;
 }
 // }
@@ -1133,7 +1133,7 @@ static void Byte_build(uType* type)
 
 uStructType* Byte_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1141,10 +1141,10 @@ uStructType* Byte_typeof()
     options.ValueSize = sizeof(uint8_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Byte", options);
-    type->fp_build_ = Byte_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Byte__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Byte__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Byte__ToString_fn;
+    type- fp_build_ = Byte_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Byte__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Byte__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Byte__ToString_fn;
     return type;
 }
 
@@ -1152,7 +1152,7 @@ uStructType* Byte_typeof()
 void Byte__Equals_fn(uint8_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint8_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint8_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :25
@@ -1181,7 +1181,7 @@ static void Char_build(uType* type)
 
 uStructType* Char_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1189,10 +1189,10 @@ uStructType* Char_typeof()
     options.ValueSize = sizeof(uChar);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Char", options);
-    type->fp_build_ = Char_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Char__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Char__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Char__ToString_fn;
+    type- fp_build_ = Char_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Char__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Char__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Char__ToString_fn;
     return type;
 }
 
@@ -1200,7 +1200,7 @@ uStructType* Char_typeof()
 void Char__Equals_fn(uChar* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uChar>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uChar (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :25
@@ -1237,7 +1237,7 @@ void Char__ToLower_fn(uChar* c, uChar* __retval)
 void Char__ToString_fn(uChar* __this, uType* __type, uString** __retval)
 {
     uString* result = uString::New(1);
-    result->_ptr[0] = *__this;
+    result- _ptr[0] = *__this;
     return *__retval = result, void();
 }
 
@@ -1250,13 +1250,13 @@ void Char__ToUpper_fn(uChar* c, uChar* __retval)
 // public static bool IsDigit(char c) [static] :111
 bool Char::IsDigit(uChar c)
 {
-    return (c >= '0') && (c <= '9');
+    return (c  = '0') && (c <= '9');
 }
 
 // public static bool IsUpper(char c) [static] :123
 bool Char::IsUpper(uChar c)
 {
-    return ((c >= 'A') && (c <= 'Z')) || ((c >= 1024) && (c <= 1071));
+    return ((c  = 'A') && (c <= 'Z')) || ((c  = 1024) && (c <= 1071));
 }
 
 // public static bool IsWhiteSpace(char c) [static] :95
@@ -1324,22 +1324,22 @@ static void Color_build(uType* type)
 {
     ::STRINGS[21] = uString::Const("hex");
     ::STRINGS[22] = uString::Const("ch");
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Float3x3_typeof(), (uintptr_t)&Color::ToYCbCrMat_, uFieldFlagsStatic,
         ::g::Uno::Float3x3_typeof(), (uintptr_t)&Color::ToYCbCrMatInv_, uFieldFlagsStatic);
 }
 
 uClassType* Color_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 2;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Color", options);
-    type->fp_build_ = Color_build;
-    type->fp_cctor_ = Color__cctor__fn;
+    type- fp_build_ = Color_build;
+    type- fp_cctor_ = Color__cctor__fn;
     return type;
 }
 
@@ -1391,7 +1391,7 @@ void Color__ParseHexValue_fn(uChar* ch, int* __retval)
 // public static float4 FromHex(string hex) [static] :230
 ::g::Uno::Float4 Color::FromHex(uString* hex)
 {
-    if ((uPtr(hex)->Length() > 0) && (uPtr(hex)->Item(0) == '#'))
+    if ((uPtr(hex)- Length()   0) && (uPtr(hex)- Item(0) == '#'))
         hex = ::g::Uno::String::Substring(uPtr(hex), 1);
 
     return Color::FromInt4(Color::ParseHexString(hex));
@@ -1406,7 +1406,7 @@ void Color__ParseHexValue_fn(uChar* ch, int* __retval)
 // public static float4 FromRgba(uint rgba) [static] :74
 ::g::Uno::Float4 Color::FromRgba(uint32_t rgba)
 {
-    return ::g::Uno::Float4__New2((float)((rgba >> 24) & 255U) / 255.0f, (float)((rgba >> 16) & 255U) / 255.0f, (float)((rgba >> 8) & 255U) / 255.0f, (float)((rgba >> 0) & 255U) / 255.0f);
+    return ::g::Uno::Float4__New2((float)((rgba    24) & 255U) / 255.0f, (float)((rgba    16) & 255U) / 255.0f, (float)((rgba    8) & 255U) / 255.0f, (float)((rgba    0) & 255U) / 255.0f);
 }
 
 // private static int ParseHexByte(char ch1, char ch2) [static] :178
@@ -1427,14 +1427,14 @@ int Color::ParseHexNibble(uChar ch)
 // private static int4 ParseHexString(string hex) [static] :185
 ::g::Uno::Int4 Color::ParseHexString(uString* hex)
 {
-    if (uPtr(hex)->Length() == 3)
-        return ::g::Uno::Int4__New2(Color::ParseHexNibble(uPtr(hex)->Item(0)), Color::ParseHexNibble(uPtr(hex)->Item(1)), Color::ParseHexNibble(uPtr(hex)->Item(2)), 255);
-    else if (uPtr(hex)->Length() == 4)
-        return ::g::Uno::Int4__New2(Color::ParseHexNibble(uPtr(hex)->Item(0)), Color::ParseHexNibble(uPtr(hex)->Item(1)), Color::ParseHexNibble(uPtr(hex)->Item(2)), Color::ParseHexNibble(uPtr(hex)->Item(3)));
-    else if (uPtr(hex)->Length() == 6)
-        return ::g::Uno::Int4__New2(Color::ParseHexByte(uPtr(hex)->Item(0), uPtr(hex)->Item(1)), Color::ParseHexByte(uPtr(hex)->Item(2), uPtr(hex)->Item(3)), Color::ParseHexByte(uPtr(hex)->Item(4), uPtr(hex)->Item(5)), 255);
-    else if (uPtr(hex)->Length() == 8)
-        return ::g::Uno::Int4__New2(Color::ParseHexByte(uPtr(hex)->Item(0), uPtr(hex)->Item(1)), Color::ParseHexByte(uPtr(hex)->Item(2), uPtr(hex)->Item(3)), Color::ParseHexByte(uPtr(hex)->Item(4), uPtr(hex)->Item(5)), Color::ParseHexByte(uPtr(hex)->Item(6), uPtr(hex)->Item(7)));
+    if (uPtr(hex)- Length() == 3)
+        return ::g::Uno::Int4__New2(Color::ParseHexNibble(uPtr(hex)- Item(0)), Color::ParseHexNibble(uPtr(hex)- Item(1)), Color::ParseHexNibble(uPtr(hex)- Item(2)), 255);
+    else if (uPtr(hex)- Length() == 4)
+        return ::g::Uno::Int4__New2(Color::ParseHexNibble(uPtr(hex)- Item(0)), Color::ParseHexNibble(uPtr(hex)- Item(1)), Color::ParseHexNibble(uPtr(hex)- Item(2)), Color::ParseHexNibble(uPtr(hex)- Item(3)));
+    else if (uPtr(hex)- Length() == 6)
+        return ::g::Uno::Int4__New2(Color::ParseHexByte(uPtr(hex)- Item(0), uPtr(hex)- Item(1)), Color::ParseHexByte(uPtr(hex)- Item(2), uPtr(hex)- Item(3)), Color::ParseHexByte(uPtr(hex)- Item(4), uPtr(hex)- Item(5)), 255);
+    else if (uPtr(hex)- Length() == 8)
+        return ::g::Uno::Int4__New2(Color::ParseHexByte(uPtr(hex)- Item(0), uPtr(hex)- Item(1)), Color::ParseHexByte(uPtr(hex)- Item(2), uPtr(hex)- Item(3)), Color::ParseHexByte(uPtr(hex)- Item(4), uPtr(hex)- Item(5)), Color::ParseHexByte(uPtr(hex)- Item(6), uPtr(hex)- Item(7)));
     else
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[21/*"hex"*/]));
 }
@@ -1442,11 +1442,11 @@ int Color::ParseHexNibble(uChar ch)
 // private static int ParseHexValue(char ch) [static] :160
 int Color::ParseHexValue(uChar ch)
 {
-    if ((ch >= '0') && (ch <= '9'))
+    if ((ch  = '0') && (ch <= '9'))
         return (int)ch - 48;
-    else if ((ch >= 'a') && (ch <= 'f'))
+    else if ((ch  = 'a') && (ch <= 'f'))
         return 10 + ((int)ch - 97);
-    else if ((ch >= 'A') && (ch <= 'F'))
+    else if ((ch  = 'A') && (ch <= 'F'))
         return 10 + ((int)ch - 65);
 
     U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[22/*"ch"*/]));
@@ -1456,16 +1456,16 @@ int Color::ParseHexValue(uChar ch)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Comparison.uno
 // ---------------------------------------------------------------------
 
-// public delegate int Comparison<T>(T a, T b) :6
+// public delegate int Comparison<T (T a, T b) :6
 uDelegateType* Comparison_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Comparison`1", 2, 1);
-    type->SetSignature(::g::Uno::Int_typeof(),
-        type->T(0),
-        type->T(0));
+    type- SetSignature(::g::Uno::Int_typeof(),
+        type- T(0),
+        type- T(0));
     return type;
 }
 
@@ -1477,7 +1477,7 @@ uDelegateType* Comparison_typeof()
 // static generated DateTime() :13
 static void DateTime__cctor__fn(uType* __type)
 {
-    ::g::Uno::Time::Instant_typeof()->Init();
+    ::g::Uno::Time::Instant_typeof()- Init();
     DateTime::UnixEpoch_ = ::g::Uno::Time::Instant__FromUtc(1970, 1, 1, 0, 0);
     DateTime::DotNetTimeBase_ = ::g::Uno::Time::Instant__FromUtc(1, 1, 1, 0, 0);
     DateTime::DotNetTimeOffset_ = ::g::Uno::Time::Instant__op_Subtraction1(DateTime::UnixEpoch_, DateTime::DotNetTimeBase_);
@@ -1485,7 +1485,7 @@ static void DateTime__cctor__fn(uType* __type)
 
 static void DateTime_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::DateTimeKind_typeof(), offsetof(DateTime, _kind), 0,
         ::g::Uno::Time::ZonedDateTime_typeof(), offsetof(DateTime, _time), 0,
         ::g::Uno::Time::Instant_typeof(), (uintptr_t)&DateTime::UnixEpoch_, uFieldFlagsStatic,
@@ -1495,7 +1495,7 @@ static void DateTime_build(uType* type)
 
 uStructType* DateTime_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1504,36 +1504,36 @@ uStructType* DateTime_typeof()
     options.ValueSize = sizeof(DateTime);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.DateTime", options);
-    type->fp_build_ = DateTime_build;
-    type->fp_cctor_ = DateTime__cctor__fn;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))DateTime__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))DateTime__GetHashCode_fn;
+    type- fp_build_ = DateTime_build;
+    type- fp_cctor_ = DateTime__cctor__fn;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))DateTime__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))DateTime__GetHashCode_fn;
     return type;
 }
 
 // public DateTime(long ticks, Uno.DateTimeKind kind) :22
 void DateTime__ctor__fn(DateTime* __this, int64_t* ticks, int* kind)
 {
-    __this->ctor_(*ticks, *kind);
+    __this- ctor_(*ticks, *kind);
 }
 
 // public override sealed bool Equals(object obj) :73
 void DateTime__Equals_fn(DateTime* __this, uType* __type, uObject* obj, bool* __retval)
 {
-    return *__retval = uIs(obj, __type) && DateTime__op_Equality(*__this, uUnbox<DateTime>(__type, obj)), void();
+    return *__retval = uIs(obj, __type) && DateTime__op_Equality(*__this, uUnbox<DateTime (__type, obj)), void();
 }
 
 // public override sealed int GetHashCode() :78
 void DateTime__GetHashCode_fn(DateTime* __this, uType* __type, int* __retval)
 {
-    int64_t t = __this->Ticks();
-    return *__retval = (int)(t >> 32) ^ (int)t, void();
+    int64_t t = __this- Ticks();
+    return *__retval = (int)(t    32) ^ (int)t, void();
 }
 
 // private Uno.Time.ZonedDateTime InternalTimeOrDefault() :39
 void DateTime__InternalTimeOrDefault_fn(DateTime* __this, ::g::Uno::Time::ZonedDateTime** __retval)
 {
-    *__retval = __this->InternalTimeOrDefault();
+    *__retval = __this- InternalTimeOrDefault();
 }
 
 // public DateTime New(long ticks, Uno.DateTimeKind kind) :22
@@ -1551,7 +1551,7 @@ void DateTime__op_Equality_fn(DateTime* x, DateTime* y, bool* __retval)
 // public long get_Ticks() :64
 void DateTime__get_Ticks_fn(DateTime* __this, int64_t* __retval)
 {
-    *__retval = __this->Ticks();
+    *__retval = __this- Ticks();
 }
 
 ::g::Uno::Time::Instant DateTime::UnixEpoch_;
@@ -1576,7 +1576,7 @@ void DateTime::ctor_(int64_t ticks, int kind)
 // public long get_Ticks() [instance] :64
 int64_t DateTime::Ticks()
 {
-    return ::g::Uno::Time::Instant__op_Addition(uPtr(InternalTimeOrDefault())->Instant(), DateTime::DotNetTimeOffset_).Ticks();
+    return ::g::Uno::Time::Instant__op_Addition(uPtr(InternalTimeOrDefault())- Instant(), DateTime::DotNetTimeOffset_).Ticks();
 }
 
 // public DateTime New(long ticks, Uno.DateTimeKind kind) [static] :22
@@ -1600,11 +1600,11 @@ bool DateTime__op_Equality(DateTime x, DateTime y)
 // public enum DateTimeKind :7
 uEnumType* DateTimeKind_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("Uno.DateTimeKind", ::g::Uno::Int_typeof(), 1);
-    type->SetLiterals(
+    type- SetLiterals(
         "Utc", 1LL);
     return type;
 }
@@ -1620,16 +1620,16 @@ static void Delegate_build(uType* type)
 
 uType* Delegate_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.ObjectSize = sizeof(Delegate);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Delegate", options);
-    type->fp_build_ = Delegate_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))Delegate__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Delegate__GetHashCode_fn;
+    type- fp_build_ = Delegate_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))Delegate__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Delegate__GetHashCode_fn;
     return type;
 }
 
@@ -1642,7 +1642,7 @@ void Delegate__Combine_fn(uDelegate* source, uDelegate* value, uDelegate** __ret
 // public override sealed bool Equals(object other) :174
 void Delegate__Equals_fn(uDelegate* __this, uObject* other, bool* __retval)
 {
-    return *__retval = uIs(other, Delegate_typeof()) && Delegate::EqualsImpl(__this, uAs<uDelegate*>(other, Delegate_typeof())), void();
+    return *__retval = uIs(other, Delegate_typeof()) && Delegate::EqualsImpl(__this, uAs<uDelegate* (other, Delegate_typeof())), void();
 }
 
 // private static bool EqualsImpl(Uno.Delegate left, Uno.Delegate right) :144
@@ -1682,16 +1682,16 @@ uDelegate* Delegate::Combine(uDelegate* source, uDelegate* value)
         return source;
     if (!source)
         return value;
-    if (source->__type != value->__type)
+    if (source- __type != value- __type)
         U_THROW_ICE();
     
     uDelegate copy;
     uDelegate *prev = &copy;
     
-    for (uDelegate* d = value; d != NULL; d = d->_prev)
-        prev = prev->_prev = d->Copy();
+    for (uDelegate* d = value; d != NULL; d = d- _prev)
+        prev = prev- _prev = d- Copy();
     
-    prev->_prev = source;
+    prev- _prev = source;
     return copy._prev;
 }
 
@@ -1700,10 +1700,10 @@ bool Delegate::EqualsImpl(uDelegate* left, uDelegate* right)
 {
     return left == right || (
             left != NULL && right != NULL &&
-            left->__type == right->__type &&
-            left->_func == right->_func &&
-            left->_this == right->_this &&
-            ::g::Uno::Object::Equals1(left->_prev, right->_prev)
+            left- __type == right- __type &&
+            left- _func == right- _func &&
+            left- _this == right- _this &&
+            ::g::Uno::Object::Equals1(left- _prev, right- _prev)
         );
 }
 
@@ -1724,19 +1724,19 @@ uDelegate* Delegate::Remove(uDelegate* source, uDelegate* value)
 {
     if (source == NULL || value == NULL)
         return source;
-    if (value->__type != source->__type)
+    if (value- __type != source- __type)
         U_THROW_ICE();
     
-    for (uDelegate *first = source; first != NULL; first = first->_prev)
+    for (uDelegate *first = source; first != NULL; first = first- _prev)
     {
         bool match = true;
         uDelegate *last = first;
     
-        for (uDelegate *d = value; d != NULL; d = d->_prev, last = last->_prev)
+        for (uDelegate *d = value; d != NULL; d = d- _prev, last = last- _prev)
         {
             if (last == NULL ||
-                d->_func != last->_func ||
-                d->_this != last->_this)
+                d- _func != last- _func ||
+                d- _this != last- _this)
             {
                 match = false;
                 break;
@@ -1748,10 +1748,10 @@ uDelegate* Delegate::Remove(uDelegate* source, uDelegate* value)
             uDelegate temp;
             uDelegate *prev = &temp;
     
-            for (uDelegate *e = source; e != first; e = e->_prev)
-                prev = prev->_prev = e->Copy();
+            for (uDelegate *e = source; e != first; e = e- _prev)
+                prev = prev- _prev = e- Copy();
     
-            prev->_prev = last;
+            prev- _prev = last;
             return temp._prev;
         }
     }
@@ -1772,7 +1772,7 @@ static void Double_build(uType* type)
 
 uStructType* Double_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1780,10 +1780,10 @@ uStructType* Double_typeof()
     options.ValueSize = sizeof(double);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Double", options);
-    type->fp_build_ = Double_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Double__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Double__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Double__ToString_fn;
+    type- fp_build_ = Double_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Double__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Double__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Double__ToString_fn;
     return type;
 }
 
@@ -1791,7 +1791,7 @@ uStructType* Double_typeof()
 void Double__Equals_fn(double* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :30
@@ -1822,7 +1822,7 @@ bool Double::TryParse(uString* str, double* res)
         return false;
     }
     
-    uBase::String s = uBase::Unicode::Utf16To8(str->_ptr, str->_length);
+    uBase::String s = uBase::Unicode::Utf16To8(str- _ptr, str- _length);
     return s.TryToDouble(res);
 }
 // }
@@ -1840,13 +1840,13 @@ static void Enum_build(uType* type)
 
 uClassType* Enum_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Enum", options);
-    type->fp_build_ = Enum_build;
+    type- fp_build_ = Enum_build;
     return type;
 }
 
@@ -1892,13 +1892,13 @@ static void EventArgs__cctor__fn(uType* __type)
 
 static void EventArgs_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         type, (uintptr_t)&EventArgs::Empty_, uFieldFlagsStatic);
 }
 
 uType* EventArgs_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1906,16 +1906,16 @@ uType* EventArgs_typeof()
     options.ObjectSize = sizeof(EventArgs);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.EventArgs", options);
-    type->fp_build_ = EventArgs_build;
-    type->fp_ctor_ = (void*)EventArgs__New1_fn;
-    type->fp_cctor_ = EventArgs__cctor__fn;
+    type- fp_build_ = EventArgs_build;
+    type- fp_ctor_ = (void*)EventArgs__New1_fn;
+    type- fp_cctor_ = EventArgs__cctor__fn;
     return type;
 }
 
 // public generated EventArgs() :6
 void EventArgs__ctor__fn(EventArgs* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public generated EventArgs New() :6
@@ -1924,7 +1924,7 @@ void EventArgs__New1_fn(EventArgs** __retval)
     *__retval = EventArgs::New1();
 }
 
-uSStrong<EventArgs*> EventArgs::Empty_;
+uSStrong<EventArgs*  EventArgs::Empty_;
 
 // public generated EventArgs() [instance] :6
 void EventArgs::ctor_()
@@ -1935,7 +1935,7 @@ void EventArgs::ctor_()
 EventArgs* EventArgs::New1()
 {
     EventArgs* obj1 = (EventArgs*)uNew(EventArgs_typeof());
-    obj1->ctor_();
+    obj1- ctor_();
     return obj1;
 }
 // }
@@ -1946,11 +1946,11 @@ EventArgs* EventArgs::New1()
 // public delegate void EventHandler(object sender, Uno.EventArgs args) :6
 uDelegateType* EventHandler_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.EventHandler", 2, 0);
-    type->SetSignature(uVoid_typeof(),
+    type- SetSignature(uVoid_typeof(),
         uObject_typeof(),
         ::g::Uno::EventArgs_typeof());
     return type;
@@ -1959,16 +1959,16 @@ uDelegateType* EventHandler_typeof()
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/EventHandler.uno
 // -----------------------------------------------------------------------
 
-// public delegate void EventHandler<TEventArgs>(object sender, TEventArgs args) :9
+// public delegate void EventHandler<TEventArgs (object sender, TEventArgs args) :9
 uDelegateType* EventHandler1_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.EventHandler`1", 2, 1);
-    type->SetSignature(uVoid_typeof(),
+    type- SetSignature(uVoid_typeof(),
         uObject_typeof(),
-        type->T(0));
+        type- T(0));
     return type;
 }
 
@@ -1981,21 +1981,21 @@ static void Exception_build(uType* type)
 {
     ::STRINGS[25] = uString::Const("");
     ::STRINGS[4] = uString::Const(": ");
-    ::STRINGS[26] = uString::Const(" ---> ");
+    ::STRINGS[26] = uString::Const(" ---  ");
     ::STRINGS[27] = uString::Const("\n"
         "    --- End of inner exception stack trace ---");
     ::STRINGS[3] = uString::Const("\n"
         "");
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::String_typeof(), offsetof(Exception, _message), 0,
         type, offsetof(Exception, _inner), 0,
         ::g::Uno::String_typeof(), offsetof(Exception, _trace), 0,
-        ::g::Uno::IntPtr_typeof()->Array(), offsetof(Exception, NativeStackTrace), 0);
+        ::g::Uno::IntPtr_typeof()- Array(), offsetof(Exception, NativeStackTrace), 0);
 }
 
 Exception_type* Exception_typeof()
 {
-    static uSStrong<Exception_type*> type;
+    static uSStrong<Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2003,41 +2003,41 @@ Exception_type* Exception_typeof()
     options.ObjectSize = sizeof(Exception);
     options.TypeSize = sizeof(Exception_type);
     type = (Exception_type*)uClassType::New("Uno.Exception", options);
-    type->fp_build_ = Exception_build;
-    type->fp_ctor_ = (void*)Exception__New1_fn;
-    type->fp_get_Message = Exception__get_Message_fn;
-    type->fp_ToString = (void(*)(uObject*, uString**))Exception__ToString_fn;
+    type- fp_build_ = Exception_build;
+    type- fp_ctor_ = (void*)Exception__New1_fn;
+    type- fp_get_Message = Exception__get_Message_fn;
+    type- fp_ToString = (void(*)(uObject*, uString**))Exception__ToString_fn;
     return type;
 }
 
 // public Exception() :28
 void Exception__ctor__fn(Exception* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public Exception(string message) :33
 void Exception__ctor_1_fn(Exception* __this, uString* message)
 {
-    __this->ctor_1(message);
+    __this- ctor_1(message);
 }
 
 // public Exception(string message, Uno.Exception inner) :38
 void Exception__ctor_2_fn(Exception* __this, uString* message, Exception* inner)
 {
-    __this->ctor_2(message, inner);
+    __this- ctor_2(message, inner);
 }
 
 // public Uno.Exception get_InnerException() :17
 void Exception__get_InnerException_fn(Exception* __this, Exception** __retval)
 {
-    *__retval = __this->InnerException();
+    *__retval = __this- InnerException();
 }
 
 // public virtual string get_Message() :11
 void Exception__get_Message_fn(Exception* __this, uString** __retval)
 {
-    return *__retval = __this->_message, void();
+    return *__retval = __this- _message, void();
 }
 
 // public Exception New() :28
@@ -2055,15 +2055,15 @@ void Exception__New2_fn(uString* message, Exception** __retval)
 // public override string ToString() :50
 void Exception__ToString_fn(Exception* __this, uString** __retval)
 {
-    uString* temp = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition(::g::Uno::Object::GetType(__this), ::STRINGS[4/*": "*/]), __this->Message());
+    uString* temp = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition(::g::Uno::Object::GetType(__this), ::STRINGS[4/*": "*/]), __this- Message());
 
-    if (__this->_inner != NULL)
-        temp = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(temp, ::STRINGS[26/*" ---> "*/]), uPtr(__this->_inner)->ToString()), ::STRINGS[27/*"\n    --- E...*/]);
+    if (__this- _inner != NULL)
+        temp = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(temp, ::STRINGS[26/*" ---  "*/]), uPtr(__this- _inner)- ToString()), ::STRINGS[27/*"\n    --- E...*/]);
 
-    if (::g::Uno::String::IsNullOrEmpty(__this->_trace))
+    if (::g::Uno::String::IsNullOrEmpty(__this- _trace))
         return *__retval = temp, void();
 
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(temp, ::STRINGS[3/*"\n"*/]), __this->_trace), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(temp, ::STRINGS[3/*"\n"*/]), __this- _trace), void();
 }
 
 // public Exception() [instance] :28
@@ -2097,7 +2097,7 @@ Exception* Exception::InnerException()
 Exception* Exception::New1()
 {
     Exception* obj2 = (Exception*)uNew(Exception_typeof());
-    obj2->ctor_();
+    obj2- ctor_();
     return obj2;
 }
 
@@ -2105,7 +2105,7 @@ Exception* Exception::New1()
 Exception* Exception::New2(uString* message)
 {
     Exception* obj3 = (Exception*)uNew(Exception_typeof());
-    obj3->ctor_1(message);
+    obj3- ctor_1(message);
     return obj3;
 }
 // }
@@ -2122,7 +2122,7 @@ static void Float_build(uType* type)
 
 uStructType* Float_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2130,10 +2130,10 @@ uStructType* Float_typeof()
     options.ValueSize = sizeof(float);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float", options);
-    type->fp_build_ = Float_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float__ToString_fn;
+    type- fp_build_ = Float_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float__ToString_fn;
     return type;
 }
 
@@ -2141,7 +2141,7 @@ uStructType* Float_typeof()
 void Float__Equals_fn(float* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :33
@@ -2220,7 +2220,7 @@ bool Float::TryParse(uString* str, float* res)
         return false;
     }
     
-    uBase::String s = uBase::Unicode::Utf16To8(str->_ptr, str->_length);
+    uBase::String s = uBase::Unicode::Utf16To8(str- _ptr, str- _length);
     return s.TryToFloat(res);
 }
 // }
@@ -2235,14 +2235,14 @@ static void Float2_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float2, X), 0,
         ::TYPES[3/*float*/], offsetof(Float2, Y), 0);
 }
 
 uStructType* Float2_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2251,49 +2251,49 @@ uStructType* Float2_typeof()
     options.ValueSize = sizeof(Float2);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float2", options);
-    type->fp_build_ = Float2_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float2__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float2__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float2__ToString_fn;
+    type- fp_build_ = Float2_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float2__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float2__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float2__ToString_fn;
     return type;
 }
 
 // public Float2(float xy) :28
 void Float2__ctor__fn(Float2* __this, float* xy)
 {
-    __this->ctor_(*xy);
+    __this- ctor_(*xy);
 }
 
 // public Float2(float x, float y) :29
 void Float2__ctor_1_fn(Float2* __this, float* x, float* y)
 {
-    __this->ctor_1(*x, *y);
+    __this- ctor_1(*x, *y);
 }
 
 // public override sealed bool Equals(object o) :59
 void Float2__Equals_fn(Float2* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret3;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret3), ret3), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret3), ret3), void();
 }
 
 // public override sealed int GetHashCode() :60
 void Float2__GetHashCode_fn(Float2* __this, uType* __type, int* __retval)
 {
     int ret4;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret4), ret4), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret4), ret4), void();
 }
 
 // public float get_Item(int index) :14
 void Float2__get_Item_fn(Float2* __this, int* index, float* __retval)
 {
-    *__retval = __this->Item(*index);
+    *__retval = __this- Item(*index);
 }
 
 // public void set_Item(int index, float value) :20
 void Float2__set_Item_fn(Float2* __this, int* index, float* value)
 {
-    __this->Item(*index, *value);
+    __this- Item(*index, *value);
 }
 
 // public Float2 New(float xy) :28
@@ -2395,7 +2395,7 @@ void Float2__op_UnaryNegation_fn(Float2* a, Float2* __retval)
 // public override sealed string ToString() :61
 void Float2__ToString_fn(Float2* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Y, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Y, ::TYPES[3/*float*/])), void();
 }
 
 // public Float2(float xy) [instance] :28
@@ -2544,7 +2544,7 @@ static void Float2x2_build(uType* type)
     ::STRINGS[28] = uString::Const(",");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float2x2, M11), 0,
         ::TYPES[3/*float*/], offsetof(Float2x2, M12), 0,
         ::TYPES[3/*float*/], offsetof(Float2x2, M21), 0,
@@ -2553,7 +2553,7 @@ static void Float2x2_build(uType* type)
 
 uStructType* Float2x2_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2562,31 +2562,31 @@ uStructType* Float2x2_typeof()
     options.ValueSize = sizeof(Float2x2);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float2x2", options);
-    type->fp_build_ = Float2x2_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float2x2__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float2x2__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float2x2__ToString_fn;
+    type- fp_build_ = Float2x2_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float2x2__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float2x2__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float2x2__ToString_fn;
     return type;
 }
 
 // public Float2x2(float m11, float m12, float m21, float m22) :35
 void Float2x2__ctor__fn(Float2x2* __this, float* m11, float* m12, float* m21, float* m22)
 {
-    __this->ctor_(*m11, *m12, *m21, *m22);
+    __this- ctor_(*m11, *m12, *m21, *m22);
 }
 
 // public override sealed bool Equals(object o) :99
 void Float2x2__Equals_fn(Float2x2* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret3;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret3), ret3), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret3), ret3), void();
 }
 
 // public override sealed int GetHashCode() :100
 void Float2x2__GetHashCode_fn(Float2x2* __this, uType* __type, int* __retval)
 {
     int ret4;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret4), ret4), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret4), ret4), void();
 }
 
 // public Float2x2 New(float m11, float m12, float m21, float m22) :35
@@ -2598,7 +2598,7 @@ void Float2x2__New1_fn(float* m11, float* m12, float* m21, float* m22, Float2x2*
 // public override sealed string ToString() :101
 void Float2x2__ToString_fn(Float2x2* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M12, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M22, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M12, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M22, ::TYPES[3/*float*/])), void();
 }
 
 // public Float2x2(float m11, float m12, float m21, float m22) [instance] :35
@@ -2629,7 +2629,7 @@ static void Float3_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float3, X), 0,
         ::TYPES[3/*float*/], offsetof(Float3, Y), 0,
         ::TYPES[3/*float*/], offsetof(Float3, Z), 0);
@@ -2637,7 +2637,7 @@ static void Float3_build(uType* type)
 
 uStructType* Float3_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2646,43 +2646,43 @@ uStructType* Float3_typeof()
     options.ValueSize = sizeof(Float3);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float3", options);
-    type->fp_build_ = Float3_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float3__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float3__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float3__ToString_fn;
+    type- fp_build_ = Float3_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float3__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float3__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float3__ToString_fn;
     return type;
 }
 
 // public Float3(float xyz) :30
 void Float3__ctor__fn(Float3* __this, float* xyz)
 {
-    __this->ctor_(*xyz);
+    __this- ctor_(*xyz);
 }
 
 // public Float3(float x, float y, float z) :31
 void Float3__ctor_1_fn(Float3* __this, float* x, float* y, float* z)
 {
-    __this->ctor_1(*x, *y, *z);
+    __this- ctor_1(*x, *y, *z);
 }
 
 // public Float3(float2 xy, float z) :32
 void Float3__ctor_3_fn(Float3* __this, ::g::Uno::Float2* xy, float* z)
 {
-    __this->ctor_3(*xy, *z);
+    __this- ctor_3(*xy, *z);
 }
 
 // public override sealed bool Equals(object o) :57
 void Float3__Equals_fn(Float3* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret5;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret5), ret5), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret5), ret5), void();
 }
 
 // public override sealed int GetHashCode() :58
 void Float3__GetHashCode_fn(Float3* __this, uType* __type, int* __retval)
 {
     int ret6;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret6), ret6), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret6), ret6), void();
 }
 
 // public Float3 New(float xyz) :30
@@ -2754,7 +2754,7 @@ void Float3__op_UnaryNegation_fn(Float3* a, Float3* __retval)
 // public override sealed string ToString() :59
 void Float3__ToString_fn(Float3* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Y, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Z, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Y, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Z, ::TYPES[3/*float*/])), void();
 }
 
 // public Float3(float xyz) [instance] :30
@@ -2862,7 +2862,7 @@ static void Float3x3_build(uType* type)
     ::STRINGS[28] = uString::Const(",");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float3x3, M11), 0,
         ::TYPES[3/*float*/], offsetof(Float3x3, M12), 0,
         ::TYPES[3/*float*/], offsetof(Float3x3, M13), 0,
@@ -2876,7 +2876,7 @@ static void Float3x3_build(uType* type)
 
 uStructType* Float3x3_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2885,31 +2885,31 @@ uStructType* Float3x3_typeof()
     options.ValueSize = sizeof(Float3x3);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float3x3", options);
-    type->fp_build_ = Float3x3_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float3x3__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float3x3__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float3x3__ToString_fn;
+    type- fp_build_ = Float3x3_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float3x3__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float3x3__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float3x3__ToString_fn;
     return type;
 }
 
 // public Float3x3(float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33) :38
 void Float3x3__ctor__fn(Float3x3* __this, float* m11, float* m12, float* m13, float* m21, float* m22, float* m23, float* m31, float* m32, float* m33)
 {
-    __this->ctor_(*m11, *m12, *m13, *m21, *m22, *m23, *m31, *m32, *m33);
+    __this- ctor_(*m11, *m12, *m13, *m21, *m22, *m23, *m31, *m32, *m33);
 }
 
 // public override sealed bool Equals(object o) :125
 void Float3x3__Equals_fn(Float3x3* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret3;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret3), ret3), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret3), ret3), void();
 }
 
 // public override sealed int GetHashCode() :126
 void Float3x3__GetHashCode_fn(Float3x3* __this, uType* __type, int* __retval)
 {
     int ret4;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret4), ret4), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret4), ret4), void();
 }
 
 // public Float3x3 New(float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33) :38
@@ -2921,7 +2921,7 @@ void Float3x3__New1_fn(float* m11, float* m12, float* m13, float* m21, float* m2
 // public override sealed string ToString() :128
 void Float3x3__ToString_fn(Float3x3* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M12, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this->M13, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M22, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this->M23, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M31, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M32, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this->M33, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M12, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this- M13, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M22, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this- M23, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M31, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M32, ::TYPES[3/*float*/])), ::g::Uno::Float::ToString(__this- M33, ::TYPES[3/*float*/])), void();
 }
 
 // public Float3x3(float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33) [instance] :38
@@ -2957,7 +2957,7 @@ static void Float4_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float4, X), 0,
         ::TYPES[3/*float*/], offsetof(Float4, Y), 0,
         ::TYPES[3/*float*/], offsetof(Float4, Z), 0,
@@ -2966,7 +2966,7 @@ static void Float4_build(uType* type)
 
 uStructType* Float4_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -2975,61 +2975,61 @@ uStructType* Float4_typeof()
     options.ValueSize = sizeof(Float4);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float4", options);
-    type->fp_build_ = Float4_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float4__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float4__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float4__ToString_fn;
+    type- fp_build_ = Float4_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float4__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float4__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float4__ToString_fn;
     return type;
 }
 
 // public Float4(float xyzw) :37
 void Float4__ctor__fn(Float4* __this, float* xyzw)
 {
-    __this->ctor_(*xyzw);
+    __this- ctor_(*xyzw);
 }
 
 // public Float4(float x, float y, float z, float w) :38
 void Float4__ctor_1_fn(Float4* __this, float* x, float* y, float* z, float* w)
 {
-    __this->ctor_1(*x, *y, *z, *w);
+    __this- ctor_1(*x, *y, *z, *w);
 }
 
 // public Float4(float x, float3 yzw) :44
 void Float4__ctor_4_fn(Float4* __this, float* x, ::g::Uno::Float3* yzw)
 {
-    __this->ctor_4(*x, *yzw);
+    __this- ctor_4(*x, *yzw);
 }
 
 // public Float4(float2 xy, float z, float w) :39
 void Float4__ctor_5_fn(Float4* __this, ::g::Uno::Float2* xy, float* z, float* w)
 {
-    __this->ctor_5(*xy, *z, *w);
+    __this- ctor_5(*xy, *z, *w);
 }
 
 // public Float4(float2 xy, float2 zw) :42
 void Float4__ctor_6_fn(Float4* __this, ::g::Uno::Float2* xy, ::g::Uno::Float2* zw)
 {
-    __this->ctor_6(*xy, *zw);
+    __this- ctor_6(*xy, *zw);
 }
 
 // public Float4(float3 xyz, float w) :43
 void Float4__ctor_7_fn(Float4* __this, ::g::Uno::Float3* xyz, float* w)
 {
-    __this->ctor_7(*xyz, *w);
+    __this- ctor_7(*xyz, *w);
 }
 
 // public override sealed bool Equals(object o) :71
 void Float4__Equals_fn(Float4* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret9;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret9), ret9), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret9), ret9), void();
 }
 
 // public override sealed int GetHashCode() :72
 void Float4__GetHashCode_fn(Float4* __this, uType* __type, int* __retval)
 {
     int ret10;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret10), ret10), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret10), ret10), void();
 }
 
 // public static float4 get_Identity() :11
@@ -3041,13 +3041,13 @@ void Float4__get_Identity_fn(Float4* __retval)
 // public float get_Item(int index) :19
 void Float4__get_Item_fn(Float4* __this, int* index, float* __retval)
 {
-    *__retval = __this->Item(*index);
+    *__retval = __this- Item(*index);
 }
 
 // public void set_Item(int index, float value) :27
 void Float4__set_Item_fn(Float4* __this, int* index, float* value)
 {
-    __this->Item(*index, *value);
+    __this- Item(*index, *value);
 }
 
 // public Float4 New(float xyzw) :37
@@ -3143,7 +3143,7 @@ void Float4__op_Subtraction2_fn(Float4* a, Float4* b, Float4* __retval)
 // public override sealed string ToString() :73
 void Float4__ToString_fn(Float4* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Y, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Z, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->W, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- X, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Y, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Z, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- W, ::TYPES[3/*float*/])), void();
 }
 
 // public Float4(float xyzw) [instance] :37
@@ -3346,7 +3346,7 @@ static void Float4x4_build(uType* type)
     ::STRINGS[28] = uString::Const(",");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Float4x4, M11), 0,
         ::TYPES[3/*float*/], offsetof(Float4x4, M12), 0,
         ::TYPES[3/*float*/], offsetof(Float4x4, M13), 0,
@@ -3367,7 +3367,7 @@ static void Float4x4_build(uType* type)
 
 uStructType* Float4x4_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -3376,31 +3376,31 @@ uStructType* Float4x4_typeof()
     options.ValueSize = sizeof(Float4x4);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Float4x4", options);
-    type->fp_build_ = Float4x4_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float4x4__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float4x4__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Float4x4__ToString_fn;
+    type- fp_build_ = Float4x4_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Float4x4__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Float4x4__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Float4x4__ToString_fn;
     return type;
 }
 
 // public Float4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) :42
 void Float4x4__ctor__fn(Float4x4* __this, float* m11, float* m12, float* m13, float* m14, float* m21, float* m22, float* m23, float* m24, float* m31, float* m32, float* m33, float* m34, float* m41, float* m42, float* m43, float* m44)
 {
-    __this->ctor_(*m11, *m12, *m13, *m14, *m21, *m22, *m23, *m24, *m31, *m32, *m33, *m34, *m41, *m42, *m43, *m44);
+    __this- ctor_(*m11, *m12, *m13, *m14, *m21, *m22, *m23, *m24, *m31, *m32, *m33, *m34, *m41, *m42, *m43, *m44);
 }
 
 // public override sealed bool Equals(object o) :168
 void Float4x4__Equals_fn(Float4x4* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret4;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret4), ret4), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret4), ret4), void();
 }
 
 // public override sealed int GetHashCode() :169
 void Float4x4__GetHashCode_fn(Float4x4* __this, uType* __type, int* __retval)
 {
     int ret5;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret5), ret5), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret5), ret5), void();
 }
 
 // public static float4x4 get_Identity() :12
@@ -3412,13 +3412,13 @@ void Float4x4__get_Identity_fn(Float4x4* __retval)
 // public float4 get_Item(int index) :24
 void Float4x4__get_Item_fn(Float4x4* __this, int* index, ::g::Uno::Float4* __retval)
 {
-    *__retval = __this->Item(*index);
+    *__retval = __this- Item(*index);
 }
 
 // public void set_Item(int index, float4 value) :32
 void Float4x4__set_Item_fn(Float4x4* __this, int* index, ::g::Uno::Float4* value)
 {
-    __this->Item(*index, *value);
+    __this- Item(*index, *value);
 }
 
 // public Float4x4 New(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) :42
@@ -3430,7 +3430,7 @@ void Float4x4__New1_fn(float* m11, float* m12, float* m13, float* m14, float* m2
 // public override sealed string ToString() :171
 void Float4x4__ToString_fn(Float4x4* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M12, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M13, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M14, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M22, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M23, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M24, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M31, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M32, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M33, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M34, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M41, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M42, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M43, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this->M44, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- M11, ::TYPES[3/*float*/]), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M12, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M13, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M14, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M21, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M22, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M23, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M24, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M31, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M32, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M33, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M34, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M41, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M42, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M43, ::TYPES[3/*float*/])), ::STRINGS[28/*","*/]), ::g::Uno::Float::ToString(__this- M44, ::TYPES[3/*float*/])), void();
 }
 
 // public Float4x4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) [instance] :42
@@ -3526,12 +3526,12 @@ Float4x4 Float4x4__Identity()
 // {
 static void FormatException_build(uType* type)
 {
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* FormatException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -3540,14 +3540,14 @@ static void FormatException_build(uType* type)
     options.ObjectSize = sizeof(FormatException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.FormatException", options);
-    type->fp_build_ = FormatException_build;
+    type- fp_build_ = FormatException_build;
     return type;
 }
 
 // public FormatException(string message) :8
 void FormatException__ctor_3_fn(FormatException* __this, uString* message)
 {
-    __this->ctor_3(message);
+    __this- ctor_3(message);
 }
 
 // public FormatException New(string message) :8
@@ -3566,7 +3566,7 @@ void FormatException::ctor_3(uString* message)
 FormatException* FormatException::New4(uString* message)
 {
     FormatException* obj1 = (FormatException*)uNew(FormatException_typeof());
-    obj1->ctor_3(message);
+    obj1- ctor_3(message);
     return obj1;
 }
 // }
@@ -3574,62 +3574,62 @@ FormatException* FormatException::New4(uString* message)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Func.uno
 // ---------------------------------------------------------------
 
-// public delegate TResult Func<TResult>() :6
+// public delegate TResult Func<TResult () :6
 uDelegateType* Func_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Func`1", 0, 1);
-    type->SetSignature(type->T(0));
+    type- SetSignature(type- T(0));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Func.uno
 // ---------------------------------------------------------------
 
-// public delegate TResult Func<T, TResult>(T arg) :9
+// public delegate TResult Func<T, TResult (T arg) :9
 uDelegateType* Func1_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Func`2", 1, 2);
-    type->SetSignature(type->T(1),
-        type->T(0));
+    type- SetSignature(type- T(1),
+        type- T(0));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Func.uno
 // ---------------------------------------------------------------
 
-// public delegate TResult Func<T1, T2, TResult>(T1 arg1, T2 arg2) :12
+// public delegate TResult Func<T1, T2, TResult (T1 arg1, T2 arg2) :12
 uDelegateType* Func2_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Func`3", 2, 3);
-    type->SetSignature(type->T(2),
-        type->T(0),
-        type->T(1));
+    type- SetSignature(type- T(2),
+        type- T(0),
+        type- T(1));
     return type;
 }
 
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Func.uno
 // ---------------------------------------------------------------
 
-// public delegate TResult Func<T1, T2, T3, TResult>(T1 arg1, T2 arg2, T3 arg3) :15
+// public delegate TResult Func<T1, T2, T3, TResult (T1 arg1, T2 arg2, T3 arg3) :15
 uDelegateType* Func3_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Func`4", 3, 4);
-    type->SetSignature(type->T(3),
-        type->T(0),
-        type->T(1),
-        type->T(2));
+    type- SetSignature(type- T(3),
+        type- T(0),
+        type- T(1),
+        type- T(2));
     return type;
 }
 
@@ -3644,13 +3644,13 @@ static void GC_build(uType* type)
 
 uClassType* GC_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.GC", options);
-    type->fp_build_ = GC_build;
+    type- fp_build_ = GC_build;
     return type;
 }
 
@@ -3677,28 +3677,28 @@ static void Generic_build(uType* type)
 
 uClassType* Generic_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.MethodTypeCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Generic", options);
-    type->MethodTypes[0] = type->NewMethodType(1, 0,0);
-    type->fp_build_ = Generic_build;
+    type- MethodTypes[0] = type- NewMethodType(1, 0,0);
+    type- fp_build_ = Generic_build;
     return type;
 }
 
-// public static bool Equals<T>(T left, T right) :9
+// public static bool Equals<T (T left, T right) :9
 void Generic__Equals_fn(uType* __type, void* left, void* right, bool* __retval)
 {
-    uType* type = __type->U(0);
+    uType* type = __type- U(0);
     return *__retval = U_IS_OBJECT(type)
             ? (uObject*)left == (uObject*)right || (
                     (uObject*)left &&
                     (uObject*)right &&
-                    ((uObject*)left)->Equals((uObject*)right))
-            : memcmp(left, right, type->ValueSize) == 0, void();
+                    ((uObject*)left)- Equals((uObject*)right))
+            : memcmp(left, right, type- ValueSize) == 0, void();
 }
 // }
 
@@ -3709,7 +3709,7 @@ void Generic__Equals_fn(uType* __type, void* left, void* right, bool* __retval)
 // {
 uInterfaceType* IDisposable_typeof()
 {
-    static uSStrong<uInterfaceType*> type;
+    static uSStrong<uInterfaceType*  type;
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Uno.IDisposable", 0, 0);
@@ -3725,12 +3725,12 @@ uInterfaceType* IDisposable_typeof()
 static void IndexOutOfRangeException_build(uType* type)
 {
     ::STRINGS[29] = uString::Const("Index out of range");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* IndexOutOfRangeException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -3739,15 +3739,15 @@ static void IndexOutOfRangeException_build(uType* type)
     options.ObjectSize = sizeof(IndexOutOfRangeException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.IndexOutOfRangeException", options);
-    type->fp_build_ = IndexOutOfRangeException_build;
-    type->fp_ctor_ = (void*)IndexOutOfRangeException__New4_fn;
+    type- fp_build_ = IndexOutOfRangeException_build;
+    type- fp_ctor_ = (void*)IndexOutOfRangeException__New4_fn;
     return type;
 }
 
 // public IndexOutOfRangeException() :8
 void IndexOutOfRangeException__ctor_3_fn(IndexOutOfRangeException* __this)
 {
-    __this->ctor_3();
+    __this- ctor_3();
 }
 
 // public IndexOutOfRangeException New() :8
@@ -3766,7 +3766,7 @@ void IndexOutOfRangeException::ctor_3()
 IndexOutOfRangeException* IndexOutOfRangeException::New4()
 {
     IndexOutOfRangeException* obj1 = (IndexOutOfRangeException*)uNew(IndexOutOfRangeException_typeof());
-    obj1->ctor_3();
+    obj1- ctor_3();
     return obj1;
 }
 // }
@@ -3783,7 +3783,7 @@ static void Int_build(uType* type)
 
 uStructType* Int_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -3791,10 +3791,10 @@ uStructType* Int_typeof()
     options.ValueSize = sizeof(int);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Int", options);
-    type->fp_build_ = Int_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Int__ToString_fn;
+    type- fp_build_ = Int_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Int__ToString_fn;
     return type;
 }
 
@@ -3802,7 +3802,7 @@ uStructType* Int_typeof()
 void Int__Equals_fn(int* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :27
@@ -3834,7 +3834,7 @@ int Int::Parse(uString* str)
             throw uBase::ArgumentException("String");
         }
     
-        uBase::String s = uBase::Unicode::Utf16To8(str->_ptr, str->_length);
+        uBase::String s = uBase::Unicode::Utf16To8(str- _ptr, str- _length);
         return s.ToInt();
     }
     catch (const uBase::FormatException& e)
@@ -3862,14 +3862,14 @@ static void Int2_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[4] = ::g::Uno::Int_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[4/*int*/], offsetof(Int2, X), 0,
         ::TYPES[4/*int*/], offsetof(Int2, Y), 0);
 }
 
 uStructType* Int2_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -3878,37 +3878,37 @@ uStructType* Int2_typeof()
     options.ValueSize = sizeof(Int2);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Int2", options);
-    type->fp_build_ = Int2_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int2__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int2__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Int2__ToString_fn;
+    type- fp_build_ = Int2_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int2__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int2__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Int2__ToString_fn;
     return type;
 }
 
 // public Int2(int xy) :28
 void Int2__ctor__fn(Int2* __this, int* xy)
 {
-    __this->ctor_(*xy);
+    __this- ctor_(*xy);
 }
 
 // public Int2(int x, int y) :29
 void Int2__ctor_1_fn(Int2* __this, int* x, int* y)
 {
-    __this->ctor_1(*x, *y);
+    __this- ctor_1(*x, *y);
 }
 
 // public override sealed bool Equals(object o) :52
 void Int2__Equals_fn(Int2* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret3;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret3), ret3), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret3), ret3), void();
 }
 
 // public override sealed int GetHashCode() :53
 void Int2__GetHashCode_fn(Int2* __this, uType* __type, int* __retval)
 {
     int ret4;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret4), ret4), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret4), ret4), void();
 }
 
 // public Int2 New(int xy) :28
@@ -3950,7 +3950,7 @@ void Int2__op_Subtraction1_fn(Int2* a, Int2* b, Int2* __retval)
 // public override sealed string ToString() :54
 void Int2__ToString_fn(Int2* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this->X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Y, ::TYPES[4/*int*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this- X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Y, ::TYPES[4/*int*/])), void();
 }
 
 // public Int2(int xy) [instance] :28
@@ -4017,7 +4017,7 @@ static void Int3_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[4] = ::g::Uno::Int_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[4/*int*/], offsetof(Int3, X), 0,
         ::TYPES[4/*int*/], offsetof(Int3, Y), 0,
         ::TYPES[4/*int*/], offsetof(Int3, Z), 0);
@@ -4025,7 +4025,7 @@ static void Int3_build(uType* type)
 
 uStructType* Int3_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4034,10 +4034,10 @@ uStructType* Int3_typeof()
     options.ValueSize = sizeof(Int3);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Int3", options);
-    type->fp_build_ = Int3_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int3__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int3__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Int3__ToString_fn;
+    type- fp_build_ = Int3_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int3__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int3__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Int3__ToString_fn;
     return type;
 }
 
@@ -4045,20 +4045,20 @@ uStructType* Int3_typeof()
 void Int3__Equals_fn(Int3* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret5;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret5), ret5), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret5), ret5), void();
 }
 
 // public override sealed int GetHashCode() :51
 void Int3__GetHashCode_fn(Int3* __this, uType* __type, int* __retval)
 {
     int ret6;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret6), ret6), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret6), ret6), void();
 }
 
 // public override sealed string ToString() :48
 void Int3__ToString_fn(Int3* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this->X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Y, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Z, ::TYPES[4/*int*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this- X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Y, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Z, ::TYPES[4/*int*/])), void();
 }
 // }
 
@@ -4072,7 +4072,7 @@ static void Int4_build(uType* type)
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[1] = uObject_typeof();
     ::TYPES[4] = ::g::Uno::Int_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[4/*int*/], offsetof(Int4, X), 0,
         ::TYPES[4/*int*/], offsetof(Int4, Y), 0,
         ::TYPES[4/*int*/], offsetof(Int4, Z), 0,
@@ -4081,7 +4081,7 @@ static void Int4_build(uType* type)
 
 uStructType* Int4_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4090,49 +4090,49 @@ uStructType* Int4_typeof()
     options.ValueSize = sizeof(Int4);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Int4", options);
-    type->fp_build_ = Int4_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int4__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int4__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Int4__ToString_fn;
+    type- fp_build_ = Int4_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Int4__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Int4__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Int4__ToString_fn;
     return type;
 }
 
 // public Int4(int x, int y, int z, int w) :32
 void Int4__ctor_1_fn(Int4* __this, int* x, int* y, int* z, int* w)
 {
-    __this->ctor_1(*x, *y, *z, *w);
+    __this- ctor_1(*x, *y, *z, *w);
 }
 
 // public Int4(int2 xy, int2 zw) :36
 void Int4__ctor_6_fn(Int4* __this, ::g::Uno::Int2* xy, ::g::Uno::Int2* zw)
 {
-    __this->ctor_6(*xy, *zw);
+    __this- ctor_6(*xy, *zw);
 }
 
 // public override sealed bool Equals(object o) :60
 void Int4__Equals_fn(Int4* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret9;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret9), ret9), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret9), ret9), void();
 }
 
 // public override sealed int GetHashCode() :61
 void Int4__GetHashCode_fn(Int4* __this, uType* __type, int* __retval)
 {
     int ret10;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret10), ret10), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret10), ret10), void();
 }
 
 // public int get_Item(int index) :14
 void Int4__get_Item_fn(Int4* __this, int* index, int* __retval)
 {
-    *__retval = __this->Item(*index);
+    *__retval = __this- Item(*index);
 }
 
 // public void set_Item(int index, int value) :22
 void Int4__set_Item_fn(Int4* __this, int* index, int* value)
 {
-    __this->Item(*index, *value);
+    __this- Item(*index, *value);
 }
 
 // public Int4 New(int x, int y, int z, int w) :32
@@ -4150,7 +4150,7 @@ void Int4__New7_fn(::g::Uno::Int2* xy, ::g::Uno::Int2* zw, Int4* __retval)
 // public override sealed string ToString() :62
 void Int4__ToString_fn(Int4* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this->X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Y, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Z, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->W, ::TYPES[4/*int*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this- X, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Y, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Z, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- W, ::TYPES[4/*int*/])), void();
 }
 
 // public Int4(int x, int y, int z, int w) [instance] :32
@@ -4230,7 +4230,7 @@ static void IntPtr_build(uType* type)
 
 uStructType* IntPtr_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4238,10 +4238,10 @@ uStructType* IntPtr_typeof()
     options.ValueSize = sizeof(void*);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.IntPtr", options);
-    type->fp_build_ = IntPtr_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))IntPtr__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))IntPtr__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))IntPtr__ToString_fn;
+    type- fp_build_ = IntPtr_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))IntPtr__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))IntPtr__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))IntPtr__ToString_fn;
     return type;
 }
 
@@ -4249,7 +4249,7 @@ uStructType* IntPtr_typeof()
 void IntPtr__Equals_fn(void** __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :70
@@ -4300,12 +4300,12 @@ bool IntPtr::op_Inequality(void* left, void* right)
 static void InvalidCastException_build(uType* type)
 {
     ::STRINGS[30] = uString::Const("Invalid cast");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* InvalidCastException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4314,21 +4314,21 @@ static void InvalidCastException_build(uType* type)
     options.ObjectSize = sizeof(InvalidCastException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.InvalidCastException", options);
-    type->fp_build_ = InvalidCastException_build;
-    type->fp_ctor_ = (void*)InvalidCastException__New4_fn;
+    type- fp_build_ = InvalidCastException_build;
+    type- fp_ctor_ = (void*)InvalidCastException__New4_fn;
     return type;
 }
 
 // public InvalidCastException() :13
 void InvalidCastException__ctor_3_fn(InvalidCastException* __this)
 {
-    __this->ctor_3();
+    __this- ctor_3();
 }
 
 // public InvalidCastException(string message) :8
 void InvalidCastException__ctor_4_fn(InvalidCastException* __this, uString* message)
 {
-    __this->ctor_4(message);
+    __this- ctor_4(message);
 }
 
 // public InvalidCastException New() :13
@@ -4359,7 +4359,7 @@ void InvalidCastException::ctor_4(uString* message)
 InvalidCastException* InvalidCastException::New4()
 {
     InvalidCastException* obj2 = (InvalidCastException*)uNew(InvalidCastException_typeof());
-    obj2->ctor_3();
+    obj2- ctor_3();
     return obj2;
 }
 
@@ -4367,7 +4367,7 @@ InvalidCastException* InvalidCastException::New4()
 InvalidCastException* InvalidCastException::New5(uString* message)
 {
     InvalidCastException* obj1 = (InvalidCastException*)uNew(InvalidCastException_typeof());
-    obj1->ctor_4(message);
+    obj1- ctor_4(message);
     return obj1;
 }
 // }
@@ -4380,12 +4380,12 @@ InvalidCastException* InvalidCastException::New5(uString* message)
 static void InvalidOperationException_build(uType* type)
 {
     ::STRINGS[31] = uString::Const("Invalid operation");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* InvalidOperationException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4394,21 +4394,21 @@ static void InvalidOperationException_build(uType* type)
     options.ObjectSize = sizeof(InvalidOperationException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.InvalidOperationException", options);
-    type->fp_build_ = InvalidOperationException_build;
-    type->fp_ctor_ = (void*)InvalidOperationException__New4_fn;
+    type- fp_build_ = InvalidOperationException_build;
+    type- fp_ctor_ = (void*)InvalidOperationException__New4_fn;
     return type;
 }
 
 // public InvalidOperationException() :8
 void InvalidOperationException__ctor_3_fn(InvalidOperationException* __this)
 {
-    __this->ctor_3();
+    __this- ctor_3();
 }
 
 // public InvalidOperationException(string message) :13
 void InvalidOperationException__ctor_4_fn(InvalidOperationException* __this, uString* message)
 {
-    __this->ctor_4(message);
+    __this- ctor_4(message);
 }
 
 // public InvalidOperationException New() :8
@@ -4439,7 +4439,7 @@ void InvalidOperationException::ctor_4(uString* message)
 InvalidOperationException* InvalidOperationException::New4()
 {
     InvalidOperationException* obj1 = (InvalidOperationException*)uNew(InvalidOperationException_typeof());
-    obj1->ctor_3();
+    obj1- ctor_3();
     return obj1;
 }
 
@@ -4447,7 +4447,7 @@ InvalidOperationException* InvalidOperationException::New4()
 InvalidOperationException* InvalidOperationException::New5(uString* message)
 {
     InvalidOperationException* obj2 = (InvalidOperationException*)uNew(InvalidOperationException_typeof());
-    obj2->ctor_4(message);
+    obj2- ctor_4(message);
     return obj2;
 }
 // }
@@ -4459,7 +4459,7 @@ InvalidOperationException* InvalidOperationException::New5(uString* message)
 // {
 uInterfaceType* ITuple_typeof()
 {
-    static uSStrong<uInterfaceType*> type;
+    static uSStrong<uInterfaceType*  type;
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Uno.ITuple", 0, 0);
@@ -4479,7 +4479,7 @@ static void Long_build(uType* type)
 
 uStructType* Long_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -4487,10 +4487,10 @@ uStructType* Long_typeof()
     options.ValueSize = sizeof(int64_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Long", options);
-    type->fp_build_ = Long_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Long__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Long__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Long__ToString_fn;
+    type- fp_build_ = Long_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Long__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Long__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Long__ToString_fn;
     return type;
 }
 
@@ -4498,7 +4498,7 @@ uStructType* Long_typeof()
 void Long__Equals_fn(int64_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int64_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int64_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :27
@@ -4526,13 +4526,13 @@ static void Math_build(uType* type)
 
 uClassType* Math_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Math", options);
-    type->fp_build_ = Math_build;
+    type- fp_build_ = Math_build;
     return type;
 }
 
@@ -4917,13 +4917,13 @@ void Math__Tan1_fn(float* radians, float* __retval)
 // public static double Abs(double x) [static] :241
 double Math::Abs(double x)
 {
-    return (x >= 0.0) ? x : -x;
+    return (x  = 0.0) ? x : -x;
 }
 
 // public static float Abs(float x) [static] :242
 float Math::Abs1(float x)
 {
-    return (x >= 0.0f) ? x : -x;
+    return (x  = 0.0f) ? x : -x;
 }
 
 // public static float2 Abs(float2 a) [static] :243
@@ -4935,7 +4935,7 @@ float Math::Abs1(float x)
 // public static int Abs(int x) [static] :246
 int Math::Abs5(int x)
 {
-    return (x >= 0) ? x : -x;
+    return (x  = 0) ? x : -x;
 }
 
 // public static float Acos(float radians) [static] :111
@@ -5109,13 +5109,13 @@ float Math::Log22(float x)
 // public static double Max(double a, double b) [static] :312
 double Math::Max(double a, double b)
 {
-    return (a > b) ? a : b;
+    return (a   b) ? a : b;
 }
 
 // public static float Max(float a, float b) [static] :313
 float Math::Max1(float a, float b)
 {
-    return (a > b) ? a : b;
+    return (a   b) ? a : b;
 }
 
 // public static float2 Max(float2 a, float b) [static] :314
@@ -5151,7 +5151,7 @@ float Math::Max1(float a, float b)
 // public static int Max(int a, int b) [static] :320
 int Math::Max8(int a, int b)
 {
-    return (a > b) ? a : b;
+    return (a   b) ? a : b;
 }
 
 // public static double Min(double a, double b) [static] :328
@@ -5256,7 +5256,7 @@ double Math::Round1(double d, int decimals)
 // public static float Sign(float x) [static] :252
 float Math::Sign1(float x)
 {
-    return (x < 0.0f) ? -1.0f : (x > 0.0f) ? 1.0f : 0.0f;
+    return (x < 0.0f) ? -1.0f : (x   0.0f) ? 1.0f : 0.0f;
 }
 
 // public static double Sin(double radians) [static] :32
@@ -5307,13 +5307,13 @@ static void Matrix_build(uType* type)
 
 uClassType* Matrix_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Matrix", options);
-    type->fp_build_ = Matrix_build;
+    type- fp_build_ = Matrix_build;
     return type;
 }
 
@@ -5610,7 +5610,7 @@ bool Matrix::TryInvert2(::g::Uno::Float4x4 value, ::g::Uno::Float4x4* result)
     (*result).M42 = (d24 * detInv);
     (*result).M43 = (-d34 * detInv);
     (*result).M44 = (d44 * detInv);
-    return ::g::Uno::Math::Abs1(det) > 1e-05f;
+    return ::g::Uno::Math::Abs1(det)   1e-05f;
 }
 // }
 
@@ -5622,12 +5622,12 @@ bool Matrix::TryInvert2(::g::Uno::Float4x4 value, ::g::Uno::Float4x4* result)
 static void NotSupportedException_build(uType* type)
 {
     ::STRINGS[32] = uString::Const("Method not supported");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* NotSupportedException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -5636,21 +5636,21 @@ static void NotSupportedException_build(uType* type)
     options.ObjectSize = sizeof(NotSupportedException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.NotSupportedException", options);
-    type->fp_build_ = NotSupportedException_build;
-    type->fp_ctor_ = (void*)NotSupportedException__New4_fn;
+    type- fp_build_ = NotSupportedException_build;
+    type- fp_ctor_ = (void*)NotSupportedException__New4_fn;
     return type;
 }
 
 // public NotSupportedException() :8
 void NotSupportedException__ctor_3_fn(NotSupportedException* __this)
 {
-    __this->ctor_3();
+    __this- ctor_3();
 }
 
 // public NotSupportedException(string message) :13
 void NotSupportedException__ctor_4_fn(NotSupportedException* __this, uString* message)
 {
-    __this->ctor_4(message);
+    __this- ctor_4(message);
 }
 
 // public NotSupportedException New() :8
@@ -5681,7 +5681,7 @@ void NotSupportedException::ctor_4(uString* message)
 NotSupportedException* NotSupportedException::New4()
 {
     NotSupportedException* obj1 = (NotSupportedException*)uNew(NotSupportedException_typeof());
-    obj1->ctor_3();
+    obj1- ctor_3();
     return obj1;
 }
 
@@ -5689,7 +5689,7 @@ NotSupportedException* NotSupportedException::New4()
 NotSupportedException* NotSupportedException::New5(uString* message)
 {
     NotSupportedException* obj2 = (NotSupportedException*)uNew(NotSupportedException_typeof());
-    obj2->ctor_4(message);
+    obj2- ctor_4(message);
     return obj2;
 }
 // }
@@ -5702,12 +5702,12 @@ NotSupportedException* NotSupportedException::New5(uString* message)
 static void NullReferenceException_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Object reference was null");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* NullReferenceException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -5716,15 +5716,15 @@ static void NullReferenceException_build(uType* type)
     options.ObjectSize = sizeof(NullReferenceException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.NullReferenceException", options);
-    type->fp_build_ = NullReferenceException_build;
-    type->fp_ctor_ = (void*)NullReferenceException__New4_fn;
+    type- fp_build_ = NullReferenceException_build;
+    type- fp_ctor_ = (void*)NullReferenceException__New4_fn;
     return type;
 }
 
 // public NullReferenceException() :8
 void NullReferenceException__ctor_3_fn(NullReferenceException* __this)
 {
-    __this->ctor_3();
+    __this- ctor_3();
 }
 
 // public NullReferenceException New() :8
@@ -5743,7 +5743,7 @@ void NullReferenceException::ctor_3()
 NullReferenceException* NullReferenceException::New4()
 {
     NullReferenceException* obj1 = (NullReferenceException*)uNew(NullReferenceException_typeof());
-    obj1->ctor_3();
+    obj1- ctor_3();
     return obj1;
 }
 // }
@@ -5756,18 +5756,18 @@ NullReferenceException* NullReferenceException::New4()
 // public virtual bool Equals(object o) :52
 void Object__Equals_fn(uObject* __this, uObject* o, bool* __retval)
 {
-    switch (__this->__type->Type)
+    switch (__this- __type- Type)
     {
     case uTypeTypeEnum:
     case uTypeTypeStruct:
         return *__retval = __this == o || (
                 o != NULL && (
-                    o->__type == __this->__type || (
-                        o->__type->Type == uTypeTypeEnum &&
-                        o->__type->Base == __this->__type
+                    o- __type == __this- __type || (
+                        o- __type- Type == uTypeTypeEnum &&
+                        o- __type- Base == __this- __type
                     )
                 ) &&
-                memcmp((const uint8_t*)__this + sizeof(uObject), (const uint8_t*)o + sizeof(uObject), __this->__type->ValueSize) == 0
+                memcmp((const uint8_t*)__this + sizeof(uObject), (const uint8_t*)o + sizeof(uObject), __this- __type- ValueSize) == 0
             ), void();
     default:
         return *__retval = __this == o, void();
@@ -5783,11 +5783,11 @@ void Object__Equals1_fn(uObject* left, uObject* right, bool* __retval)
 // public virtual int GetHashCode() :32
 void Object__GetHashCode_fn(uObject* __this, int* __retval)
 {
-    switch (__this->__type->Type)
+    switch (__this- __type- Type)
     {
     case uTypeTypeEnum:
     case uTypeTypeStruct:
-        return *__retval = (int)uBase::Default::Hash((const uint8_t*)__this + sizeof(uObject), (int)__this->__type->ValueSize), void();
+        return *__retval = (int)uBase::Default::Hash((const uint8_t*)__this + sizeof(uObject), (int)__this- __type- ValueSize), void();
     default:
         return *__retval = (int)uBase::Default::Hash(__this), void();
     }
@@ -5814,15 +5814,15 @@ void Object__ReferenceEquals_fn(uObject* left, uObject* right, bool* __retval)
 // public virtual string ToString() :80
 void Object__ToString_fn(uObject* __this, uString** __retval)
 {
-    return *__retval = __this->__type->Type == uTypeTypeEnum
-        ? uEnum::GetString(__this->__type, (uint8_t*)__this + sizeof(uObject))
-        : uString::Const(__this->__type->FullName), void();
+    return *__retval = __this- __type- Type == uTypeTypeEnum
+        ? uEnum::GetString(__this- __type, (uint8_t*)__this + sizeof(uObject))
+        : uString::Const(__this- __type- FullName), void();
 }
 
 // public Uno.Type GetType() [instance] :19
 uType* Object::GetType(uObject* __this)
 {
-    return __this->__type;
+    return __this- __type;
 }
 
 // public static bool Equals(object left, object right) [static] :94
@@ -5859,12 +5859,12 @@ bool Object::ReferenceEquals(uObject* left, uObject* right)
 static void ObjectDisposedException_build(uType* type)
 {
     ::STRINGS[34] = uString::Const("Attempt to access disposed object: ");
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* ObjectDisposedException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -5873,14 +5873,14 @@ static void ObjectDisposedException_build(uType* type)
     options.ObjectSize = sizeof(ObjectDisposedException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.ObjectDisposedException", options);
-    type->fp_build_ = ObjectDisposedException_build;
+    type- fp_build_ = ObjectDisposedException_build;
     return type;
 }
 
 // public ObjectDisposedException(string objectName) :8
 void ObjectDisposedException__ctor_3_fn(ObjectDisposedException* __this, uString* objectName)
 {
-    __this->ctor_3(objectName);
+    __this- ctor_3(objectName);
 }
 
 // public ObjectDisposedException New(string objectName) :8
@@ -5899,7 +5899,7 @@ void ObjectDisposedException::ctor_3(uString* objectName)
 ObjectDisposedException* ObjectDisposedException::New4(uString* objectName)
 {
     ObjectDisposedException* obj1 = (ObjectDisposedException*)uNew(ObjectDisposedException_typeof());
-    obj1->ctor_3(objectName);
+    obj1- ctor_3(objectName);
     return obj1;
 }
 // }
@@ -5911,12 +5911,12 @@ ObjectDisposedException* ObjectDisposedException::New4(uString* objectName)
 // {
 static void OverflowException_build(uType* type)
 {
-    type->SetFields(4);
+    type- SetFields(4);
 }
 
 ::g::Uno::Exception_type* OverflowException_typeof()
 {
-    static uSStrong< ::g::Uno::Exception_type*> type;
+    static uSStrong< ::g::Uno::Exception_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -5925,14 +5925,14 @@ static void OverflowException_build(uType* type)
     options.ObjectSize = sizeof(OverflowException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.OverflowException", options);
-    type->fp_build_ = OverflowException_build;
+    type- fp_build_ = OverflowException_build;
     return type;
 }
 
 // public OverflowException(string message) :8
 void OverflowException__ctor_3_fn(OverflowException* __this, uString* message)
 {
-    __this->ctor_3(message);
+    __this- ctor_3(message);
 }
 
 // public OverflowException New(string message) :8
@@ -5951,7 +5951,7 @@ void OverflowException::ctor_3(uString* message)
 OverflowException* OverflowException::New4(uString* message)
 {
     OverflowException* obj1 = (OverflowException*)uNew(OverflowException_typeof());
-    obj1->ctor_3(message);
+    obj1- ctor_3(message);
     return obj1;
 }
 // }
@@ -5959,15 +5959,15 @@ OverflowException* OverflowException::New4(uString* message)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Predicate.uno
 // --------------------------------------------------------------------
 
-// public delegate bool Predicate<T>(T arg) :6
+// public delegate bool Predicate<T (T arg) :6
 uDelegateType* Predicate_typeof()
 {
-    static uSStrong<uDelegateType*> type;
+    static uSStrong<uDelegateType*  type;
     if (type != NULL) return type;
 
     type = uDelegateType::New("Uno.Predicate`1", 1, 1);
-    type->SetSignature(::g::Uno::Bool_typeof(),
-        type->T(0));
+    type- SetSignature(::g::Uno::Bool_typeof(),
+        type- T(0));
     return type;
 }
 
@@ -5982,13 +5982,13 @@ static void Quaternion_build(uType* type)
 
 uClassType* Quaternion_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Quaternion", options);
-    type->fp_build_ = Quaternion_build;
+    type- fp_build_ = Quaternion_build;
     return type;
 }
 
@@ -6043,7 +6043,7 @@ static void Rect_build(uType* type)
 {
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[3] = ::g::Uno::Float_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[3/*float*/], offsetof(Rect, Left), 0,
         ::TYPES[3/*float*/], offsetof(Rect, Top), 0,
         ::TYPES[3/*float*/], offsetof(Rect, Right), 0,
@@ -6052,7 +6052,7 @@ static void Rect_build(uType* type)
 
 uStructType* Rect_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -6061,21 +6061,21 @@ uStructType* Rect_typeof()
     options.ValueSize = sizeof(Rect);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Rect", options);
-    type->fp_build_ = Rect_build;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Rect__ToString_fn;
+    type- fp_build_ = Rect_build;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Rect__ToString_fn;
     return type;
 }
 
 // public Rect(float left, float top, float right, float bottom) :10
 void Rect__ctor__fn(Rect* __this, float* left, float* top, float* right, float* bottom)
 {
-    __this->ctor_(*left, *top, *right, *bottom);
+    __this- ctor_(*left, *top, *right, *bottom);
 }
 
 // public Rect(float2 pos, float2 size) :18
 void Rect__ctor_1_fn(Rect* __this, ::g::Uno::Float2* pos, ::g::Uno::Float2* size)
 {
-    __this->ctor_1(*pos, *size);
+    __this- ctor_1(*pos, *size);
 }
 
 // public static Uno.Rect ContainingPoints(float2 point0, float2 point1) :226
@@ -6093,13 +6093,13 @@ void Rect__ContainingPoints1_fn(::g::Uno::Float2* point0, ::g::Uno::Float2* poin
 // public float get_Height() :97
 void Rect__get_Height_fn(Rect* __this, float* __retval)
 {
-    *__retval = __this->Height();
+    *__retval = __this- Height();
 }
 
 // public void set_Height(float value) :98
 void Rect__set_Height_fn(Rect* __this, float* value)
 {
-    __this->Height(*value);
+    __this- Height(*value);
 }
 
 // public static Uno.Rect Inflate(Uno.Rect r, float size) :201
@@ -6123,43 +6123,43 @@ void Rect__Intersect_fn(Rect* a, Rect* b, Rect* __retval)
 // public bool Intersects(Uno.Rect r) :126
 void Rect__Intersects_fn(Rect* __this, Rect* r, bool* __retval)
 {
-    *__retval = __this->Intersects(*r);
+    *__retval = __this- Intersects(*r);
 }
 
 // public float2 get_LeftBottom() :69
 void Rect__get_LeftBottom_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->LeftBottom();
+    *__retval = __this- LeftBottom();
 }
 
 // public float2 get_LeftTop() :59
 void Rect__get_LeftTop_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->LeftTop();
+    *__retval = __this- LeftTop();
 }
 
 // public float2 get_Maximum() :48
 void Rect__get_Maximum_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->Maximum();
+    *__retval = __this- Maximum();
 }
 
 // public void set_Maximum(float2 value) :49
 void Rect__set_Maximum_fn(Rect* __this, ::g::Uno::Float2* value)
 {
-    __this->Maximum(*value);
+    __this- Maximum(*value);
 }
 
 // public float2 get_Minimum() :42
 void Rect__get_Minimum_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->Minimum();
+    *__retval = __this- Minimum();
 }
 
 // public void set_Minimum(float2 value) :43
 void Rect__set_Minimum_fn(Rect* __this, ::g::Uno::Float2* value)
 {
-    __this->Minimum(*value);
+    __this- Minimum(*value);
 }
 
 // public Rect New(float left, float top, float right, float bottom) :10
@@ -6183,25 +6183,25 @@ void Rect__op_Implicit_fn(::g::Uno::Recti* r, Rect* __retval)
 // public float2 get_Position() :79
 void Rect__get_Position_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->Position();
+    *__retval = __this- Position();
 }
 
 // public void set_Position(float2 value) :80
 void Rect__set_Position_fn(Rect* __this, ::g::Uno::Float2* value)
 {
-    __this->Position(*value);
+    __this- Position(*value);
 }
 
 // public float2 get_RightBottom() :74
 void Rect__get_RightBottom_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->RightBottom();
+    *__retval = __this- RightBottom();
 }
 
 // public float2 get_RightTop() :64
 void Rect__get_RightTop_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->RightTop();
+    *__retval = __this- RightTop();
 }
 
 // public static Uno.Rect Scale(Uno.Rect r, float scale) :187
@@ -6219,19 +6219,19 @@ void Rect__Scale1_fn(Rect* r, ::g::Uno::Float2* scale, Rect* __retval)
 // public float2 get_Size() :103
 void Rect__get_Size_fn(Rect* __this, ::g::Uno::Float2* __retval)
 {
-    *__retval = __this->Size();
+    *__retval = __this- Size();
 }
 
 // public void set_Size(float2 value) :104
 void Rect__set_Size_fn(Rect* __this, ::g::Uno::Float2* value)
 {
-    __this->Size(*value);
+    __this- Size(*value);
 }
 
 // public override sealed string ToString() :131
 void Rect__ToString_fn(Rect* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this->Left, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Top, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Right, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this->Bottom, ::TYPES[3/*float*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Float::ToString(__this- Left, ::TYPES[3/*float*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Top, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Right, ::TYPES[3/*float*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Float::ToString(__this- Bottom, ::TYPES[3/*float*/])), void();
 }
 
 // public static Uno.Rect Transform(Uno.Rect r, float4x4 matrix) :160
@@ -6249,13 +6249,13 @@ void Rect__Translate_fn(Rect* r, ::g::Uno::Float2* offset, Rect* __retval)
 // public float get_Width() :91
 void Rect__get_Width_fn(Rect* __this, float* __retval)
 {
-    *__retval = __this->Width();
+    *__retval = __this- Width();
 }
 
 // public void set_Width(float value) :92
 void Rect__set_Width_fn(Rect* __this, float* value)
 {
-    __this->Width(*value);
+    __this- Width(*value);
 }
 
 // public Rect(float left, float top, float right, float bottom) [instance] :10
@@ -6291,7 +6291,7 @@ void Rect::Height(float value)
 // public bool Intersects(Uno.Rect r) [instance] :126
 bool Rect::Intersects(Rect r)
 {
-    return !((((r.Left > Right) || (r.Right < Left)) || (r.Top > Bottom)) || (r.Bottom < Top));
+    return !((((r.Left   Right) || (r.Right < Left)) || (r.Top   Bottom)) || (r.Bottom < Top));
 }
 
 // public float2 get_LeftBottom() [instance] :69
@@ -6494,7 +6494,7 @@ static void Recti_build(uType* type)
 {
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[4] = ::g::Uno::Int_typeof();
-    type->SetFields(0,
+    type- SetFields(0,
         ::TYPES[4/*int*/], offsetof(Recti, Left), 0,
         ::TYPES[4/*int*/], offsetof(Recti, Top), 0,
         ::TYPES[4/*int*/], offsetof(Recti, Right), 0,
@@ -6503,7 +6503,7 @@ static void Recti_build(uType* type)
 
 uStructType* Recti_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -6512,27 +6512,27 @@ uStructType* Recti_typeof()
     options.ValueSize = sizeof(Recti);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Recti", options);
-    type->fp_build_ = Recti_build;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Recti__ToString_fn;
+    type- fp_build_ = Recti_build;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Recti__ToString_fn;
     return type;
 }
 
 // public Recti(int left, int top, int right, int bottom) :273
 void Recti__ctor__fn(Recti* __this, int* left, int* top, int* right, int* bottom)
 {
-    __this->ctor_(*left, *top, *right, *bottom);
+    __this- ctor_(*left, *top, *right, *bottom);
 }
 
 // public Recti(int2 pos, int2 size) :281
 void Recti__ctor_1_fn(Recti* __this, ::g::Uno::Int2* pos, ::g::Uno::Int2* size)
 {
-    __this->ctor_1(*pos, *size);
+    __this- ctor_1(*pos, *size);
 }
 
 // public int get_Area() :348
 void Recti__get_Area_fn(Recti* __this, int* __retval)
 {
-    *__retval = __this->Area();
+    *__retval = __this- Area();
 }
 
 // public static bool Equals(Uno.Recti rect1, Uno.Recti rect2) :289
@@ -6562,25 +6562,25 @@ void Recti__Intersect_fn(Recti* a, Recti* b, Recti* __retval)
 // public int2 get_Maximum() :305
 void Recti__get_Maximum_fn(Recti* __this, ::g::Uno::Int2* __retval)
 {
-    *__retval = __this->Maximum();
+    *__retval = __this- Maximum();
 }
 
 // public void set_Maximum(int2 value) :306
 void Recti__set_Maximum_fn(Recti* __this, ::g::Uno::Int2* value)
 {
-    __this->Maximum(*value);
+    __this- Maximum(*value);
 }
 
 // public int2 get_Minimum() :299
 void Recti__get_Minimum_fn(Recti* __this, ::g::Uno::Int2* __retval)
 {
-    *__retval = __this->Minimum();
+    *__retval = __this- Minimum();
 }
 
 // public void set_Minimum(int2 value) :300
 void Recti__set_Minimum_fn(Recti* __this, ::g::Uno::Int2* value)
 {
-    __this->Minimum(*value);
+    __this- Minimum(*value);
 }
 
 // public Recti New(int left, int top, int right, int bottom) :273
@@ -6598,19 +6598,19 @@ void Recti__New2_fn(::g::Uno::Int2* pos, ::g::Uno::Int2* size, Recti* __retval)
 // public int2 get_Size() :342
 void Recti__get_Size_fn(Recti* __this, ::g::Uno::Int2* __retval)
 {
-    *__retval = __this->Size();
+    *__retval = __this- Size();
 }
 
 // public void set_Size(int2 value) :343
 void Recti__set_Size_fn(Recti* __this, ::g::Uno::Int2* value)
 {
-    __this->Size(*value);
+    __this- Size(*value);
 }
 
 // public override sealed string ToString() :366
 void Recti__ToString_fn(Recti* __this, uType* __type, uString** __retval)
 {
-    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this->Left, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Top, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Right, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this->Bottom, ::TYPES[4/*int*/])), void();
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Int::ToString(__this- Left, ::TYPES[4/*int*/]), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Top, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Right, ::TYPES[4/*int*/])), ::STRINGS[14/*", "*/]), ::g::Uno::Int::ToString(__this- Bottom, ::TYPES[4/*int*/])), void();
 }
 
 // public Recti(int left, int top, int right, int bottom) [instance] :273
@@ -6729,7 +6729,7 @@ static void SByte_build(uType* type)
 
 uStructType* SByte_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -6737,10 +6737,10 @@ uStructType* SByte_typeof()
     options.ValueSize = sizeof(int8_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.SByte", options);
-    type->fp_build_ = SByte_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))SByte__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))SByte__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))SByte__ToString_fn;
+    type- fp_build_ = SByte_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))SByte__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))SByte__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))SByte__ToString_fn;
     return type;
 }
 
@@ -6748,7 +6748,7 @@ uStructType* SByte_typeof()
 void SByte__Equals_fn(int8_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int8_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int8_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :25
@@ -6777,7 +6777,7 @@ static void Short_build(uType* type)
 
 uStructType* Short_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -6785,10 +6785,10 @@ uStructType* Short_typeof()
     options.ValueSize = sizeof(int16_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.Short", options);
-    type->fp_build_ = Short_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Short__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Short__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))Short__ToString_fn;
+    type- fp_build_ = Short_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))Short__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))Short__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))Short__ToString_fn;
     return type;
 }
 
@@ -6796,7 +6796,7 @@ uStructType* Short_typeof()
 void Short__Equals_fn(int16_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int16_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<int16_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :24
@@ -6832,17 +6832,17 @@ static void String_build(uType* type)
     ::STRINGS[37] = uString::Const("str");
     ::STRINGS[38] = uString::Const("pos");
     ::STRINGS[39] = uString::Const("oldValue");
-    ::TYPES[5] = ::g::Uno::Char_typeof()->Array();
-    ::TYPES[6] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL);
-    ::TYPES[7] = type->Array();
-    ::TYPES[8] = ::TYPES[5/*char[]*/]->Array();
-    type->SetFields(0,
+    ::TYPES[5] = ::g::Uno::Char_typeof()- Array();
+    ::TYPES[6] = ::g::Uno::Collections::List__Enumerator_typeof()- MakeType(::g::Uno::Runtime::Implementation::Internal::FormatStringToken_typeof(), NULL);
+    ::TYPES[7] = type- Array();
+    ::TYPES[8] = ::TYPES[5/*char[]*/]- Array();
+    type- SetFields(0,
         type, (uintptr_t)&String::Empty_, uFieldFlagsStatic);
 }
 
 uType* String_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -6850,11 +6850,11 @@ uType* String_typeof()
     options.ObjectSize = sizeof(String);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.String", options);
-    type->fp_build_ = String_build;
-    type->fp_cctor_ = String__cctor__fn;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))String__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))String__GetHashCode_fn;
-    type->fp_ToString = (void(*)(uObject*, uString**))String__ToString_fn;
+    type- fp_build_ = String_build;
+    type- fp_cctor_ = String__cctor__fn;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))String__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))String__GetHashCode_fn;
+    type- fp_ToString = (void(*)(uObject*, uString**))String__ToString_fn;
     return type;
 }
 
@@ -6891,10 +6891,10 @@ void String__EndsWith_fn(uString* __this, uString* value, bool* __retval)
 // public override sealed bool Equals(object other) :136
 void String__Equals_fn(uString* __this, uObject* other, bool* __retval)
 {
-    if (other != NULL && __this->__type == other->__type)
+    if (other != NULL && __this- __type == other- __type)
     {
         uString* str = (uString*)other;
-        return *__retval = __this->_length == str->_length && !memcmp(__this->_ptr, str->_ptr, sizeof(uChar) * __this->_length), void();
+        return *__retval = __this- _length == str- _length && !memcmp(__this- _ptr, str- _ptr, sizeof(uChar) * __this- _length), void();
     }
     
     return *__retval = false, void();
@@ -6921,7 +6921,7 @@ void String__Format_fn(uString* str, uArray* objs, uString** __retval)
 // public override sealed int GetHashCode() :30
 void String__GetHashCode_fn(uString* __this, int* __retval)
 {
-    return *__retval = (int)uBase::Default::Hash((const uint8_t*)__this->_ptr, sizeof(uChar) * __this->_length), void();
+    return *__retval = (int)uBase::Default::Hash((const uint8_t*)__this- _ptr, sizeof(uChar) * __this- _length), void();
 }
 
 // public int IndexOf(char c, [int startIndex]) :274
@@ -7116,12 +7116,12 @@ void String__Trim1_fn(uString* __this, uArray* trimChars, uString** __retval)
     *__retval = String::Trim1(__this, trimChars);
 }
 
-uSStrong<uString*> String::Empty_;
+uSStrong<uString*  String::Empty_;
 
 // public bool Contains(string str) [instance] :672
 bool String::Contains(uString* __this, uString* str)
 {
-    return String::IndexOf1(__this, str, 0) >= 0;
+    return String::IndexOf1(__this, str, 0)  = 0;
 }
 
 // public bool EndsWith(string value) [instance] :320
@@ -7130,13 +7130,13 @@ bool String::EndsWith(uString* __this, uString* value)
     if (String::op_Equality(value, NULL))
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[35/*"value"*/]));
 
-    if (__this->Length() < uPtr(value)->Length())
+    if (__this- Length() < uPtr(value)- Length())
         return false;
 
-    int index = __this->Length() - uPtr(value)->Length();
+    int index = __this- Length() - uPtr(value)- Length();
 
-    for (int i = 0; i < value->Length(); i++)
-        if (__this->Item(index++) != uPtr(value)->Item(i))
+    for (int i = 0; i < value- Length(); i++)
+        if (__this- Item(index++) != uPtr(value)- Item(i))
             return false;
 
     return true;
@@ -7151,11 +7151,11 @@ bool String::Equals2(uString* __this, uString* other)
 // public int IndexOf(char c, [int startIndex]) [instance] :274
 int String::IndexOf(uString* __this, uChar c, int startIndex)
 {
-    if (startIndex > __this->Length())
+    if (startIndex   __this- Length())
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[36/*"startIndex"*/]));
 
-    for (int i = startIndex; i < __this->Length(); i++)
-        if (__this->Item(i) == c)
+    for (int i = startIndex; i < __this- Length(); i++)
+        if (__this- Item(i) == c)
             return i;
 
     return -1;
@@ -7170,12 +7170,12 @@ int String::IndexOf1(uString* __this, uString* str, int startIndex)
     if (String::op_Equality(str, String::Empty_))
         return 0;
 
-    if (startIndex > __this->Length())
+    if (startIndex   __this- Length())
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[36/*"startIndex"*/]));
 
-    for (int hay = startIndex; hay < __this->Length(); hay++)
+    for (int hay = startIndex; hay < __this- Length(); hay++)
     {
-        if (uPtr(str)->Length() > (__this->Length() - hay))
+        if (uPtr(str)- Length()   (__this- Length() - hay))
             return -1;
 
         if (String::MatchesAt(__this, str, hay))
@@ -7188,8 +7188,8 @@ int String::IndexOf1(uString* __this, uString* str, int startIndex)
 // private int IndexOfFirstNotInSet(char[] charSet) [instance] :558
 int String::IndexOfFirstNotInSet(uString* __this, uArray* charSet)
 {
-    for (int i = 0; i < __this->Length(); i++)
-        if (!String::InSet(__this, __this->Item(i), charSet))
+    for (int i = 0; i < __this- Length(); i++)
+        if (!String::InSet(__this, __this- Item(i), charSet))
             return i;
 
     return -1;
@@ -7198,8 +7198,8 @@ int String::IndexOfFirstNotInSet(uString* __this, uArray* charSet)
 // private int IndexOfFirstNotWhiteSpace() [instance] :580
 int String::IndexOfFirstNotWhiteSpace(uString* __this)
 {
-    for (int i = 0; i < __this->Length(); i++)
-        if (!::g::Uno::Char::IsWhiteSpace(__this->Item(i)))
+    for (int i = 0; i < __this- Length(); i++)
+        if (!::g::Uno::Char::IsWhiteSpace(__this- Item(i)))
             return i;
 
     return -1;
@@ -7208,8 +7208,8 @@ int String::IndexOfFirstNotWhiteSpace(uString* __this)
 // private int IndexOfLastNotInSet(char[] charSet) [instance] :566
 int String::IndexOfLastNotInSet(uString* __this, uArray* charSet)
 {
-    for (int i = __this->Length() - 1; i >= 0; i--)
-        if (!String::InSet(__this, __this->Item(i), charSet))
+    for (int i = __this- Length() - 1; i  = 0; i--)
+        if (!String::InSet(__this, __this- Item(i), charSet))
             return i;
 
     return -1;
@@ -7218,8 +7218,8 @@ int String::IndexOfLastNotInSet(uString* __this, uArray* charSet)
 // private int IndexOfLastNotWhiteSpace() [instance] :588
 int String::IndexOfLastNotWhiteSpace(uString* __this)
 {
-    for (int i = __this->Length() - 1; i >= 0; i--)
-        if (!::g::Uno::Char::IsWhiteSpace(__this->Item(i)))
+    for (int i = __this- Length() - 1; i  = 0; i--)
+        if (!::g::Uno::Char::IsWhiteSpace(__this- Item(i)))
             return i;
 
     return -1;
@@ -7231,25 +7231,25 @@ uString* String::Insert(uString* __this, int pos, uString* str)
     if (String::op_Equality(str, NULL))
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[37/*"str"*/]));
 
-    if ((pos < 0) || (pos > __this->Length()))
+    if ((pos < 0) || (pos   __this- Length()))
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[38/*"pos"*/]));
 
-    if (uPtr(str)->Length() == 0)
+    if (uPtr(str)- Length() == 0)
         return __this;
 
-    if (__this->Length() == 0)
+    if (__this- Length() == 0)
         return str;
 
-    uArray* s = uArray::New(::TYPES[5/*char[]*/], __this->Length() + uPtr(str)->Length());
+    uArray* s = uArray::New(::TYPES[5/*char[]*/], __this- Length() + uPtr(str)- Length());
 
     for (int i = 0; i < pos; i++)
-        uPtr(s)->Item<uChar>(i) = __this->Item(i);
+        uPtr(s)- Item<uChar (i) = __this- Item(i);
 
-    for (int i1 = 0; i1 < str->Length(); i1++)
-        uPtr(s)->Item<uChar>(i1 + pos) = uPtr(str)->Item(i1);
+    for (int i1 = 0; i1 < str- Length(); i1++)
+        uPtr(s)- Item<uChar (i1 + pos) = uPtr(str)- Item(i1);
 
-    for (int i2 = pos; i2 < __this->Length(); i2++)
-        uPtr(s)->Item<uChar>(i2 + uPtr(str)->Length()) = __this->Item(i2);
+    for (int i2 = pos; i2 < __this- Length(); i2++)
+        uPtr(s)- Item<uChar (i2 + uPtr(str)- Length()) = __this- Item(i2);
 
     return uString::CharArray(s);
 }
@@ -7257,8 +7257,8 @@ uString* String::Insert(uString* __this, int pos, uString* str)
 // private bool InSet(char c, char[] charSet) [instance] :574
 bool String::InSet(uString* __this, uChar c, uArray* charSet)
 {
-    for (int i = 0; i < uPtr(charSet)->Length(); i++)
-        if (uPtr(charSet)->Item<uChar>(i) == c)
+    for (int i = 0; i < uPtr(charSet)- Length(); i++)
+        if (uPtr(charSet)- Item<uChar (i) == c)
             return true;
 
     return false;
@@ -7267,20 +7267,20 @@ bool String::InSet(uString* __this, uChar c, uArray* charSet)
 // public int LastIndexOf(char c) [instance] :286
 int String::LastIndexOf(uString* __this, uChar c)
 {
-    return String::LastIndexOf1(__this, c, __this->Length() - 1);
+    return String::LastIndexOf1(__this, c, __this- Length() - 1);
 }
 
 // public int LastIndexOf(char c, [int startIndex]) [instance] :291
 int String::LastIndexOf1(uString* __this, uChar c, int startIndex)
 {
-    if ((startIndex >= __this->Length()) && (__this->Length() > 0))
+    if ((startIndex  = __this- Length()) && (__this- Length()   0))
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[36/*"startIndex"*/]));
 
-    if (__this->Length() == 0)
+    if (__this- Length() == 0)
         return -1;
 
-    for (int i = startIndex; i >= 0; i--)
-        if (__this->Item(i) == c)
+    for (int i = startIndex; i  = 0; i--)
+        if (__this- Item(i) == c)
             return i;
 
     return -1;
@@ -7289,8 +7289,8 @@ int String::LastIndexOf1(uString* __this, uChar c, int startIndex)
 // private bool MatchesAt(string str, int pos) [instance] :640
 bool String::MatchesAt(uString* __this, uString* str, int pos)
 {
-    for (int i = 0; i < uPtr(str)->Length(); i++)
-        if (((pos + i) == __this->Length()) || (__this->Item(pos + i) != uPtr(str)->Item(i)))
+    for (int i = 0; i < uPtr(str)- Length(); i++)
+        if (((pos + i) == __this- Length()) || (__this- Item(pos + i) != uPtr(str)- Item(i)))
             return false;
 
     return true;
@@ -7299,14 +7299,14 @@ bool String::MatchesAt(uString* __this, uString* str, int pos)
 // public string Replace(char oldChar, char newChar) [instance] :52
 uString* String::Replace(uString* __this, uChar oldChar, uChar newChar)
 {
-    uArray* s = uArray::New(::TYPES[5/*char[]*/], __this->Length());
+    uArray* s = uArray::New(::TYPES[5/*char[]*/], __this- Length());
 
-    for (int i = 0; i < __this->Length(); i++)
+    for (int i = 0; i < __this- Length(); i++)
     {
-        uPtr(s)->Item<uChar>(i) = __this->Item(i);
+        uPtr(s)- Item<uChar (i) = __this- Item(i);
 
-        if (s->Item<uChar>(i) == oldChar)
-            uPtr(s)->Item<uChar>(i) = newChar;
+        if (s- Item<uChar (i) == oldChar)
+            uPtr(s)- Item<uChar (i) = newChar;
     }
 
     return uString::CharArray(s);
@@ -7331,29 +7331,29 @@ uString* String::Replace1(uString* __this, uString* oldValue, uString* newValue)
 
     while (index != -1)
     {
-        uPtr(sb)->Append1(String::SubCharArray(__this, pos, index - pos));
-        sb->Append2(newValue);
-        pos = index + uPtr(oldValue)->Length();
+        uPtr(sb)- Append1(String::SubCharArray(__this, pos, index - pos));
+        sb- Append2(newValue);
+        pos = index + uPtr(oldValue)- Length();
         index = String::IndexOf1(__this, oldValue, pos);
     }
 
-    sb->Append1(String::SubCharArray(__this, pos, __this->Length() - pos));
-    return sb->ToString();
+    sb- Append1(String::SubCharArray(__this, pos, __this- Length() - pos));
+    return sb- ToString();
 }
 
 // public string[] Split(char[] splitChars) [instance] :350
 uArray* String::Split(uString* __this, uArray* splitChars)
 {
-    if ((splitChars == NULL) || (uPtr(splitChars)->Length() == 0))
-        splitChars = uArray::Init<int>(::TYPES[5/*char[]*/], 4, ' ', 9, 10, 13);
+    if ((splitChars == NULL) || (uPtr(splitChars)- Length() == 0))
+        splitChars = uArray::Init<int (::TYPES[5/*char[]*/], 4, ' ', 9, 10, 13);
 
     int splitCount = 0;
     int charCount = 0;
 
-    for (int i = 0; i < __this->Length(); i++)
+    for (int i = 0; i < __this- Length(); i++)
 
-        for (int k = 0; k < uPtr(splitChars)->Length(); k++)
-            if (__this->Item(i) == uPtr(splitChars)->Item<uChar>(k))
+        for (int k = 0; k < uPtr(splitChars)- Length(); k++)
+            if (__this- Item(i) == uPtr(splitChars)- Item<uChar (k))
                 splitCount++;
 
     uArray* r = uArray::New(::TYPES[7/*string[]*/], splitCount + 1);
@@ -7361,17 +7361,17 @@ uArray* String::Split(uString* __this, uArray* splitChars)
     splitCount = 0;
     int start = 0;
 
-    for (int i1 = 0; i1 < __this->Length(); i1++)
+    for (int i1 = 0; i1 < __this- Length(); i1++)
     {
         bool found = false;
 
-        for (int k1 = 0; k1 < uPtr(splitChars)->Length(); k1++)
-            if (__this->Item(i1) == uPtr(splitChars)->Item<uChar>(k1))
+        for (int k1 = 0; k1 < uPtr(splitChars)- Length(); k1++)
+            if (__this- Item(i1) == uPtr(splitChars)- Item<uChar (k1))
             {
-                uPtr(ch)->Strong<uArray*>(splitCount) = uArray::New(::TYPES[5/*char[]*/], charCount);
+                uPtr(ch)- Strong<uArray* (splitCount) = uArray::New(::TYPES[5/*char[]*/], charCount);
 
                 for (int n = 0; n < charCount; n++)
-                    uPtr(uPtr(ch)->Strong<uArray*>(splitCount))->Item<uChar>(n) = __this->Item(start + n);
+                    uPtr(uPtr(ch)- Strong<uArray* (splitCount))- Item<uChar (n) = __this- Item(start + n);
 
                 start = i1 + 1;
                 splitCount++;
@@ -7384,13 +7384,13 @@ uArray* String::Split(uString* __this, uArray* splitChars)
             charCount++;
     }
 
-    ch->Strong<uArray*>(splitCount) = uArray::New(::TYPES[5/*char[]*/], charCount);
+    ch- Strong<uArray* (splitCount) = uArray::New(::TYPES[5/*char[]*/], charCount);
 
     for (int n1 = 0; n1 < charCount; n1++)
-        uPtr(uPtr(ch)->Strong<uArray*>(splitCount))->Item<uChar>(n1) = __this->Item(start + n1);
+        uPtr(uPtr(ch)- Strong<uArray* (splitCount))- Item<uChar (n1) = __this- Item(start + n1);
 
-    for (int i2 = 0; i2 < ch->Length(); i2++)
-        uPtr(r)->Strong<uString*>(i2) = uString::CharArray(uPtr(ch)->Strong<uArray*>(i2));
+    for (int i2 = 0; i2 < ch- Length(); i2++)
+        uPtr(r)- Strong<uString* (i2) = uString::CharArray(uPtr(ch)- Strong<uArray* (i2));
 
     return r;
 }
@@ -7401,11 +7401,11 @@ bool String::StartsWith(uString* __this, uString* value)
     if (String::op_Equality(value, NULL))
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[35/*"value"*/]));
 
-    if (__this->Length() < uPtr(value)->Length())
+    if (__this- Length() < uPtr(value)- Length())
         return false;
 
-    for (int i = 0; i < uPtr(value)->Length(); i++)
-        if (__this->Item(i) != uPtr(value)->Item(i))
+    for (int i = 0; i < uPtr(value)- Length(); i++)
+        if (__this- Item(i) != uPtr(value)- Item(i))
             return false;
 
     return true;
@@ -7417,7 +7417,7 @@ uArray* String::SubCharArray(uString* __this, int start, int len)
     uArray* chars = uArray::New(::TYPES[5/*char[]*/], len);
 
     for (int i = 0; i < len; i++)
-        uPtr(chars)->Item<uChar>(i) = __this->Item(start + i);
+        uPtr(chars)- Item<uChar (i) = __this- Item(start + i);
 
     return chars;
 }
@@ -7425,19 +7425,19 @@ uArray* String::SubCharArray(uString* __this, int start, int len)
 // public string Substring(int start) [instance] :269
 uString* String::Substring(uString* __this, int start)
 {
-    return String::Substring1(__this, start, __this->Length() - start);
+    return String::Substring1(__this, start, __this- Length() - start);
 }
 
 // public string Substring(int start, int len) [instance] :249
 uString* String::Substring1(uString* __this, int start, int len)
 {
-    if ((start == __this->Length()) && (len == 0))
+    if ((start == __this- Length()) && (len == 0))
         return String::Empty_;
 
     uArray* s = uArray::New(::TYPES[5/*char[]*/], len);
 
     for (int i = 0; i < len; i++)
-        uPtr(s)->Item<uChar>(i) = __this->Item(start + i);
+        uPtr(s)- Item<uChar (i) = __this- Item(start + i);
 
     return uString::CharArray(s);
 }
@@ -7445,7 +7445,7 @@ uString* String::Substring1(uString* __this, int start, int len)
 // public char[] ToCharArray() [instance] :345
 uArray* String::ToCharArray(uString* __this)
 {
-    return String::ToCharArray1(__this, 0, __this->Length());
+    return String::ToCharArray1(__this, 0, __this- Length());
 }
 
 // public char[] ToCharArray(int start, int length) [instance] :335
@@ -7454,7 +7454,7 @@ uArray* String::ToCharArray1(uString* __this, int start, int length)
     uArray* result = uArray::New(::TYPES[5/*char[]*/], length);
 
     for (int i = 0; i < length; i++)
-        uPtr(result)->Item<uChar>(i) = __this->Item(start + i);
+        uPtr(result)- Item<uChar (i) = __this- Item(start + i);
 
     return result;
 }
@@ -7462,10 +7462,10 @@ uArray* String::ToCharArray1(uString* __this, int start, int length)
 // public string ToLower() [instance] :102
 uString* String::ToLower(uString* __this)
 {
-    uArray* chars = uArray::New(::TYPES[5/*char[]*/], __this->Length());
+    uArray* chars = uArray::New(::TYPES[5/*char[]*/], __this- Length());
 
-    for (int i = 0; i < __this->Length(); i++)
-        uPtr(chars)->Item<uChar>(i) = ::g::Uno::Char::ToLower(__this->Item(i));
+    for (int i = 0; i < __this- Length(); i++)
+        uPtr(chars)- Item<uChar (i) = ::g::Uno::Char::ToLower(__this- Item(i));
 
     return uString::CharArray(chars);
 }
@@ -7473,10 +7473,10 @@ uString* String::ToLower(uString* __this)
 // public string ToUpper() [instance] :119
 uString* String::ToUpper(uString* __this)
 {
-    uArray* chars = uArray::New(::TYPES[5/*char[]*/], __this->Length());
+    uArray* chars = uArray::New(::TYPES[5/*char[]*/], __this- Length());
 
-    for (int i = 0; i < __this->Length(); i++)
-        uPtr(chars)->Item<uChar>(i) = ::g::Uno::Char::ToUpper(__this->Item(i));
+    for (int i = 0; i < __this- Length(); i++)
+        uPtr(chars)- Item<uChar (i) = ::g::Uno::Char::ToUpper(__this- Item(i));
 
     return uString::CharArray(chars);
 }
@@ -7516,19 +7516,19 @@ uString* String::Trim1(uString* __this, uArray* trimChars)
 // public static int Compare(string a, string b) [static] :648
 int String::Compare(uString* a, uString* b)
 {
-    for (int i = 0; i < ::g::Uno::Math::Min8(uPtr(a)->Length(), uPtr(b)->Length()); i++)
+    for (int i = 0; i < ::g::Uno::Math::Min8(uPtr(a)- Length(), uPtr(b)- Length()); i++)
     {
-        if (uPtr(a)->Item(i) < uPtr(b)->Item(i))
+        if (uPtr(a)- Item(i) < uPtr(b)- Item(i))
             return -1;
 
-        if (uPtr(b)->Item(i) < uPtr(a)->Item(i))
+        if (uPtr(b)- Item(i) < uPtr(a)- Item(i))
             return 1;
     }
 
-    if (uPtr(a)->Length() < uPtr(b)->Length())
+    if (uPtr(a)- Length() < uPtr(b)- Length())
         return -1;
 
-    if (uPtr(b)->Length() < uPtr(a)->Length())
+    if (uPtr(b)- Length() < uPtr(a)- Length())
         return 1;
 
     return 0;
@@ -7537,7 +7537,7 @@ int String::Compare(uString* a, uString* b)
 // public static string Concat(object a, object b) [static] :229
 uString* String::Concat(uObject* a, uObject* b)
 {
-    return String::Concat1((a == NULL) ? uCast<uString*>(NULL, String_typeof()) : (uString*)::g::Uno::Object::ToString(uPtr(a)), (b == NULL) ? uCast<uString*>(NULL, String_typeof()) : (uString*)::g::Uno::Object::ToString(uPtr(b)));
+    return String::Concat1((a == NULL) ? uCast<uString* (NULL, String_typeof()) : (uString*)::g::Uno::Object::ToString(uPtr(a)), (b == NULL) ? uCast<uString* (NULL, String_typeof()) : (uString*)::g::Uno::Object::ToString(uPtr(b)));
 }
 
 // public static string Concat(string a, string b) [static] :186
@@ -7552,13 +7552,13 @@ uString* String::Concat1(uString* a, uString* b)
     if (::g::Uno::Object::ReferenceEquals(b, NULL))
         return a;
 
-    uArray* s = uArray::New(::TYPES[5/*char[]*/], uPtr(a)->Length() + uPtr(b)->Length());
+    uArray* s = uArray::New(::TYPES[5/*char[]*/], uPtr(a)- Length() + uPtr(b)- Length());
 
-    for (int i = 0; i < a->Length(); i++)
-        uPtr(s)->Item<uChar>(i) = uPtr(a)->Item(i);
+    for (int i = 0; i < a- Length(); i++)
+        uPtr(s)- Item<uChar (i) = uPtr(a)- Item(i);
 
-    for (int i1 = 0; i1 < b->Length(); i1++)
-        uPtr(s)->Item<uChar>(uPtr(a)->Length() + i1) = uPtr(b)->Item(i1);
+    for (int i1 = 0; i1 < b- Length(); i1++)
+        uPtr(s)- Item<uChar (uPtr(a)- Length() + i1) = uPtr(b)- Item(i1);
 
     return uString::CharArray(s);
 }
@@ -7572,11 +7572,11 @@ bool String::Equals3(uString* left, uString* right)
     if (::g::Uno::Object::ReferenceEquals(left, NULL) || ::g::Uno::Object::ReferenceEquals(right, NULL))
         return false;
 
-    if (uPtr(left)->Length() != uPtr(right)->Length())
+    if (uPtr(left)- Length() != uPtr(right)- Length())
         return false;
 
-    for (int i = 0; i < uPtr(left)->Length(); i++)
-        if (uPtr(left)->Item(i) != uPtr(right)->Item(i))
+    for (int i = 0; i < uPtr(left)- Length(); i++)
+        if (uPtr(left)- Item(i) != uPtr(right)- Item(i))
             return false;
 
     return true;
@@ -7585,34 +7585,34 @@ bool String::Equals3(uString* left, uString* right)
 // public static string Format(string str, object[] objs) [static] :661
 uString* String::Format(uString* str, uArray* objs)
 {
-    ::g::Uno::Collections::List__Enumerator<uStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken*> > ret3;
+    ::g::Uno::Collections::List__Enumerator<uStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken*    ret3;
     ::g::Uno::Text::StringBuilder* builder = ::g::Uno::Text::StringBuilder::New1();
     ::g::Uno::Collections::List* tokens = ::g::Uno::Runtime::Implementation::Internal::FormatStringTokenizer::TokenizeFormatString(str);
-    ::g::Uno::Collections::List__Enumerator<uStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken*> > enum1 = (::g::Uno::Collections::List__GetEnumerator_fn(uPtr(tokens), &ret3), ret3);
+    ::g::Uno::Collections::List__Enumerator<uStrong< ::g::Uno::Runtime::Implementation::Internal::FormatStringToken*    enum1 = (::g::Uno::Collections::List__GetEnumerator_fn(uPtr(tokens), &ret3), ret3);
 
     try
     {
         {
-            while (enum1.MoveNext(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken>.Enumerator*/]))
+            while (enum1.MoveNext(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken .Enumerator*/]))
             {
-                ::g::Uno::Runtime::Implementation::Internal::FormatStringToken* token = enum1.Current(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken>.Enumerator*/]);
-                uPtr(builder)->Append2(uPtr(token)->ToString1(objs));
+                ::g::Uno::Runtime::Implementation::Internal::FormatStringToken* token = enum1.Current(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken .Enumerator*/]);
+                uPtr(builder)- Append2(uPtr(token)- ToString1(objs));
             }
         }
         {
-            enum1.Dispose(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken>.Enumerator*/]);
+            enum1.Dispose(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken .Enumerator*/]);
         }
     }
 
     catch (const uThrowable& __t)
     {
         {
-            enum1.Dispose(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken>.Enumerator*/]);
+            enum1.Dispose(::TYPES[6/*Uno.Collections.List<Uno.Runtime.Implementation.Internal.FormatStringToken .Enumerator*/]);
         }
                 throw __t;
     }
 
-    return builder->ToString();
+    return builder- ToString();
 }
 
 // public static bool IsNullOrEmpty(string s) [static] :420
@@ -7626,12 +7626,12 @@ uString* String::Join(uString* separator, uArray* value)
 {
     uString* result = ::STRINGS[25/*""*/];
 
-    for (int i = 0; i < uPtr(value)->Length(); i++)
+    for (int i = 0; i < uPtr(value)- Length(); i++)
     {
-        if (i > 0)
+        if (i   0)
             result = String::op_Addition2(result, separator);
 
-        result = String::op_Addition2(result, uPtr(value)->Strong<uString*>(i));
+        result = String::op_Addition2(result, uPtr(value)- Strong<uString* (i));
     }
 
     return result;
@@ -7676,29 +7676,29 @@ bool String::op_Inequality(uString* left, uString* right)
 static void Tuple_build(uType* type)
 {
     ::TYPES[9] = ::g::Uno::Tuple2_typeof();
-    type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[9/*Uno.Tuple`2*/]->MakeType(type->MethodTypes[0]->U(0), type->MethodTypes[0]->U(1), NULL));
+    type- MethodTypes[0]- SetPrecalc(
+        ::TYPES[9/*Uno.Tuple`2*/]- MakeType(type- MethodTypes[0]- U(0), type- MethodTypes[0]- U(1), NULL));
 }
 
 uClassType* Tuple_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.MethodTypeCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Tuple", options);
-    type->MethodTypes[0] = type->NewMethodType(2, 1,0);
-    type->fp_build_ = Tuple_build;
+    type- MethodTypes[0] = type- NewMethodType(2, 1,0);
+    type- fp_build_ = Tuple_build;
     return type;
 }
 
-// public static Uno.Tuple<T1, T2> Create<T1, T2>(T1 item1, T2 item2) :15
+// public static Uno.Tuple<T1, T2  Create<T1, T2 (T1 item1, T2 item2) :15
 void Tuple__Create1_fn(uType* __type, void* item1, void* item2, ::g::Uno::Tuple2** __retval)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Tuple<T1, T2>*/),
+        __type- Precalced(0/*Uno.Tuple<T1, T2 */),
     };
     ::g::Uno::Tuple2* ret2;
     return *__retval = (::g::Uno::Tuple2__New1_fn(__types[0], item1, item2, &ret2), ret2), void();
@@ -7708,7 +7708,7 @@ void Tuple__Create1_fn(uType* __type, void* item1, void* item2, ::g::Uno::Tuple2
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/Tuple.uno
 // ----------------------------------------------------------------
 
-// public sealed class Tuple<T1, T2> :63
+// public sealed class Tuple<T1, T2  :63
 // {
 static void Tuple2_build(uType* type)
 {
@@ -7716,16 +7716,16 @@ static void Tuple2_build(uType* type)
     ::STRINGS[41] = uString::Const(")");
     ::STRINGS[14] = uString::Const(", ");
     ::TYPES[10] = ::g::Uno::ITuple_typeof();
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::TYPES[10/*Uno.ITuple*/], offsetof(Tuple2_type, interface0));
-    type->SetFields(0,
-        type->T(0), (uintptr_t)0, uFieldFlagsConstrained,
-        type->T(1), (uintptr_t)0, uFieldFlagsConstrained);
+    type- SetFields(0,
+        type- T(0), (uintptr_t)0, uFieldFlagsConstrained,
+        type- T(1), (uintptr_t)0, uFieldFlagsConstrained);
 }
 
 Tuple2_type* Tuple2_typeof()
 {
-    static uSStrong<Tuple2_type*> type;
+    static uSStrong<Tuple2_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -7735,11 +7735,11 @@ Tuple2_type* Tuple2_typeof()
     options.ObjectSize = sizeof(Tuple2);
     options.TypeSize = sizeof(Tuple2_type);
     type = (Tuple2_type*)uClassType::New("Uno.Tuple`2", options);
-    type->fp_build_ = Tuple2_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))Tuple2__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Tuple2__GetHashCode_fn;
-    type->fp_ToString = (void(*)(uObject*, uString**))Tuple2__ToString_fn;
-    type->interface0.fp_AppendItems = (void(*)(uObject*, ::g::Uno::Text::StringBuilder*))Tuple2__UnoITupleAppendItems_fn;
+    type- fp_build_ = Tuple2_build;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))Tuple2__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Tuple2__GetHashCode_fn;
+    type- fp_ToString = (void(*)(uObject*, uString**))Tuple2__ToString_fn;
+    type- interface0.fp_AppendItems = (void(*)(uObject*, ::g::Uno::Text::StringBuilder*))Tuple2__UnoITupleAppendItems_fn;
     return type;
 }
 
@@ -7753,44 +7753,44 @@ void Tuple2__ctor__fn(Tuple2* __this, void* item1, void* item2)
 // public override sealed bool Equals(object other) :74
 void Tuple2__Equals_fn(Tuple2* __this, uObject* other, bool* __retval)
 {
-    uT ret2(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
-    uT ret3(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
-    uT ret4(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
-    uT ret5(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
-    Tuple2* tother = uAs<Tuple2*>(other, __this->__type);
-    return *__retval = (tother != NULL) ? ::g::Uno::Object::Equals(uBoxPtr(__this->__type->T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret2), ret2)), U_ALLOCA(__this->__type->T(0)->ObjectSize)), uBoxPtr(__this->__type->T(0), (Tuple2__get_Item1_fn(uPtr(tother), &ret3), ret3))) && ::g::Uno::Object::Equals(uBoxPtr(__this->__type->T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret4), ret4)), U_ALLOCA(__this->__type->T(1)->ObjectSize)), uBoxPtr(__this->__type->T(1), (Tuple2__get_Item2_fn(uPtr(tother), &ret5), ret5))) : false, void();
+    uT ret2(__this- __type- T(0), U_ALLOCA(__this- __type- T(0)- ValueSize));
+    uT ret3(__this- __type- T(0), U_ALLOCA(__this- __type- T(0)- ValueSize));
+    uT ret4(__this- __type- T(1), U_ALLOCA(__this- __type- T(1)- ValueSize));
+    uT ret5(__this- __type- T(1), U_ALLOCA(__this- __type- T(1)- ValueSize));
+    Tuple2* tother = uAs<Tuple2* (other, __this- __type);
+    return *__retval = (tother != NULL) ? ::g::Uno::Object::Equals(uBoxPtr(__this- __type- T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret2), ret2)), U_ALLOCA(__this- __type- T(0)- ObjectSize)), uBoxPtr(__this- __type- T(0), (Tuple2__get_Item1_fn(uPtr(tother), &ret3), ret3))) && ::g::Uno::Object::Equals(uBoxPtr(__this- __type- T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret4), ret4)), U_ALLOCA(__this- __type- T(1)- ObjectSize)), uBoxPtr(__this- __type- T(1), (Tuple2__get_Item2_fn(uPtr(tother), &ret5), ret5))) : false, void();
 }
 
 // public override sealed int GetHashCode() :82
 void Tuple2__GetHashCode_fn(Tuple2* __this, int* __retval)
 {
-    uT ret6(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
-    uT ret7(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
-    return *__retval = ::g::Uno::Object::GetHashCode(uBoxPtr(__this->__type->T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret6), ret6)), U_ALLOCA(__this->__type->T(0)->ObjectSize))) ^ ::g::Uno::Object::GetHashCode(uBoxPtr(__this->__type->T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret7), ret7)), U_ALLOCA(__this->__type->T(1)->ObjectSize))), void();
+    uT ret6(__this- __type- T(0), U_ALLOCA(__this- __type- T(0)- ValueSize));
+    uT ret7(__this- __type- T(1), U_ALLOCA(__this- __type- T(1)- ValueSize));
+    return *__retval = ::g::Uno::Object::GetHashCode(uBoxPtr(__this- __type- T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret6), ret6)), U_ALLOCA(__this- __type- T(0)- ObjectSize))) ^ ::g::Uno::Object::GetHashCode(uBoxPtr(__this- __type- T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret7), ret7)), U_ALLOCA(__this- __type- T(1)- ObjectSize))), void();
 }
 
 // public generated T1 get_Item1() :65
 void Tuple2__get_Item1_fn(Tuple2* __this, uTRef __retval)
 {
-    return __retval.Store(__this->_Item1()), void();
+    return __retval.Store(__this- _Item1()), void();
 }
 
 // private generated void set_Item1(T1 value) :65
 void Tuple2__set_Item1_fn(Tuple2* __this, void* value)
 {
-    __this->_Item1() = value;
+    __this- _Item1() = value;
 }
 
 // public generated T2 get_Item2() :66
 void Tuple2__get_Item2_fn(Tuple2* __this, uTRef __retval)
 {
-    return __retval.Store(__this->_Item2()), void();
+    return __retval.Store(__this- _Item2()), void();
 }
 
 // private generated void set_Item2(T2 value) :66
 void Tuple2__set_Item2_fn(Tuple2* __this, void* value)
 {
-    __this->_Item2() = value;
+    __this- _Item2() = value;
 }
 
 // public Tuple New(T1 item1, T2 item2) :68
@@ -7805,20 +7805,20 @@ void Tuple2__New1_fn(uType* __type, void* item1, void* item2, Tuple2** __retval)
 void Tuple2__ToString_fn(Tuple2* __this, uString** __retval)
 {
     ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
-    sb->Append2(::STRINGS[40/*"("*/]);
+    sb- Append2(::STRINGS[40/*"("*/]);
     ::g::Uno::ITuple::AppendItems(uInterface((uObject*)__this, ::TYPES[10/*Uno.ITuple*/]), sb);
-    sb->Append2(::STRINGS[41/*")"*/]);
-    return *__retval = sb->ToString(), void();
+    sb- Append2(::STRINGS[41/*")"*/]);
+    return *__retval = sb- ToString(), void();
 }
 
 // private void Uno.ITuple.AppendItems(Uno.Text.StringBuilder sb) :96
 void Tuple2__UnoITupleAppendItems_fn(Tuple2* __this, ::g::Uno::Text::StringBuilder* sb)
 {
-    uT ret8(__this->__type->T(0), U_ALLOCA(__this->__type->T(0)->ValueSize));
-    uT ret9(__this->__type->T(1), U_ALLOCA(__this->__type->T(1)->ValueSize));
-    uPtr(sb)->Append2(::g::Uno::Object::ToString(uBoxPtr(__this->__type->T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret8), ret8)), U_ALLOCA(__this->__type->T(0)->ObjectSize))));
-    sb->Append2(::STRINGS[14/*", "*/]);
-    sb->Append2(::g::Uno::Object::ToString(uBoxPtr(__this->__type->T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret9), ret9)), U_ALLOCA(__this->__type->T(1)->ObjectSize))));
+    uT ret8(__this- __type- T(0), U_ALLOCA(__this- __type- T(0)- ValueSize));
+    uT ret9(__this- __type- T(1), U_ALLOCA(__this- __type- T(1)- ValueSize));
+    uPtr(sb)- Append2(::g::Uno::Object::ToString(uBoxPtr(__this- __type- T(0), uPtr((Tuple2__get_Item1_fn(__this, &ret8), ret8)), U_ALLOCA(__this- __type- T(0)- ObjectSize))));
+    sb- Append2(::STRINGS[14/*", "*/]);
+    sb- Append2(::g::Uno::Object::ToString(uBoxPtr(__this- __type- T(1), uPtr((Tuple2__get_Item2_fn(__this, &ret9), ret9)), U_ALLOCA(__this- __type- T(1)- ObjectSize))));
 }
 // }
 
@@ -7835,14 +7835,14 @@ static void Type__cctor__fn(uType* __type)
 
 static void Type_build(uType* type)
 {
-    ::TYPES[11] = type->Array();
-    type->SetFields(0,
+    ::TYPES[11] = type- Array();
+    type- SetFields(0,
         ::TYPES[11/*Uno.Type[]*/], (uintptr_t)&Type::EmptyTypes_, uFieldFlagsStatic);
 }
 
 uType* Type_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -7850,11 +7850,11 @@ uType* Type_typeof()
     options.ObjectSize = sizeof(Type);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.Type", options);
-    type->fp_build_ = Type_build;
-    type->fp_cctor_ = Type__cctor__fn;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))Type__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))Type__GetHashCode_fn;
-    type->fp_ToString = (void(*)(uObject*, uString**))Type__ToString_fn;
+    type- fp_build_ = Type_build;
+    type- fp_cctor_ = Type__cctor__fn;
+    type- fp_Equals = (void(*)(uObject*, uObject*, bool*))Type__Equals_fn;
+    type- fp_GetHashCode = (void(*)(uObject*, int*))Type__GetHashCode_fn;
+    type- fp_ToString = (void(*)(uObject*, uString**))Type__ToString_fn;
     return type;
 }
 
@@ -7938,27 +7938,27 @@ void Type__ToString_fn(uType* __this, uString** __retval)
     return *__retval = Type::FullName(__this), void();
 }
 
-uSStrong<uArray*> Type::EmptyTypes_;
+uSStrong<uArray*  Type::EmptyTypes_;
 
 // public Uno.Type get_BaseType() [instance] :60
 uType* Type::BaseType(uType* __this)
 {
-    return __this->Base;
+    return __this- Base;
 }
 
 // public string get_FullName() [instance] :82
 uString* Type::FullName(uType* __this)
 {
-    return uString::Utf8(__this->FullName);
+    return uString::Utf8(__this- FullName);
 }
 
 // public Uno.Type[] GetInterfaces() [instance] :243
 uArray* Type::GetInterfaces(uType* __this)
 {
-    uArray* array = uArray::New(::TYPES[11/*Uno.Type[]*/], __this->InterfaceCount);
+    uArray* array = uArray::New(::TYPES[11/*Uno.Type[]*/], __this- InterfaceCount);
 
-    for (int i = 0; i < array->Length(); i++)
-        uPtr(array)->Strong<uType*>(i) = __this->Interfaces[i].Type;
+    for (int i = 0; i < array- Length(); i++)
+        uPtr(array)- Strong<uType* (i) = __this- Interfaces[i].Type;
 
     return array;
 }
@@ -7966,25 +7966,25 @@ uArray* Type::GetInterfaces(uType* __this)
 // public bool get_IsClass() [instance] :137
 bool Type::IsClass(uType* __this)
 {
-    return __this->Type != uTypeTypeInterface && U_IS_OBJECT(__this);
+    return __this- Type != uTypeTypeInterface && U_IS_OBJECT(__this);
 }
 
 // public bool get_IsEnum() [instance] :148
 bool Type::IsEnum(uType* __this)
 {
-    return __this->Type == uTypeTypeEnum;
+    return __this- Type == uTypeTypeEnum;
 }
 
 // public bool get_IsInterface() [instance] :192
 bool Type::IsInterface(uType* __this)
 {
-    return __this->Type == uTypeTypeInterface;
+    return __this- Type == uTypeTypeInterface;
 }
 
 // public bool IsSubclassOf(Uno.Type c) [instance] :279
 bool Type::IsSubclassOf(uType* __this, uType* c)
 {
-    return __this->Is(c);
+    return __this- Is(c);
 }
 
 // public bool get_IsValueType() [instance] :203
@@ -8018,7 +8018,7 @@ static void UInt_build(uType* type)
 
 uStructType* UInt_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -8026,10 +8026,10 @@ uStructType* UInt_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.UInt", options);
-    type->fp_build_ = UInt_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))UInt__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))UInt__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))UInt__ToString_fn;
+    type- fp_build_ = UInt_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))UInt__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))UInt__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))UInt__ToString_fn;
     return type;
 }
 
@@ -8037,7 +8037,7 @@ uStructType* UInt_typeof()
 void UInt__Equals_fn(uint32_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint32_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint32_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :23
@@ -8066,7 +8066,7 @@ static void ULong_build(uType* type)
 
 uStructType* ULong_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -8074,10 +8074,10 @@ uStructType* ULong_typeof()
     options.ValueSize = sizeof(uint64_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.ULong", options);
-    type->fp_build_ = ULong_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))ULong__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))ULong__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))ULong__ToString_fn;
+    type- fp_build_ = ULong_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))ULong__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))ULong__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))ULong__ToString_fn;
     return type;
 }
 
@@ -8085,7 +8085,7 @@ uStructType* ULong_typeof()
 void ULong__Equals_fn(uint64_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint64_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint64_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :26
@@ -8114,7 +8114,7 @@ static void UShort_build(uType* type)
 
 uStructType* UShort_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -8122,10 +8122,10 @@ uStructType* UShort_typeof()
     options.ValueSize = sizeof(uint16_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("Uno.UShort", options);
-    type->fp_build_ = UShort_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))UShort__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))UShort__GetHashCode_fn;
-    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))UShort__ToString_fn;
+    type- fp_build_ = UShort_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))UShort__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))UShort__GetHashCode_fn;
+    type- fp_ToString_struct = (void(*)(void*, uType*, uString**))UShort__ToString_fn;
     return type;
 }
 
@@ -8133,7 +8133,7 @@ uStructType* UShort_typeof()
 void UShort__Equals_fn(uint16_t* __this, uType* __type, uObject* o, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint16_t>(__type, *__this, U_ALLOCA(__type->ObjectSize)), o, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox<uint16_t (__type, *__this, U_ALLOCA(__type- ObjectSize)), o, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :23
@@ -8161,13 +8161,13 @@ static void Vector_build(uType* type)
 
 uClassType* Vector_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Vector", options);
-    type->fp_build_ = Vector_build;
+    type- fp_build_ = Vector_build;
     return type;
 }
 
@@ -8357,17 +8357,17 @@ float Vector::LengthSquared2(::g::Uno::Float4 v)
 // /usr/local/share/uno/Packages/UnoCore/1.4.3/Source/Uno/WeakReference.uno
 // ------------------------------------------------------------------------
 
-// public sealed class WeakReference<T> :6
+// public sealed class WeakReference<T  :6
 // {
 static void WeakReference_build(uType* type)
 {
-    type->SetFields(0,
-        type->T(0), offsetof(WeakReference, _target), uFieldFlagsWeak);
+    type- SetFields(0,
+        type- T(0), offsetof(WeakReference, _target), uFieldFlagsWeak);
 }
 
 uType* WeakReference_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -8376,14 +8376,14 @@ uType* WeakReference_typeof()
     options.ObjectSize = sizeof(WeakReference);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Uno.WeakReference`1", options);
-    type->fp_build_ = WeakReference_build;
+    type- fp_build_ = WeakReference_build;
     return type;
 }
 
 // public WeakReference(T target) :12
 void WeakReference__ctor__fn(WeakReference* __this, uObject* target)
 {
-    __this->ctor_(target);
+    __this- ctor_(target);
 }
 
 // public WeakReference New(T target) :12
@@ -8395,7 +8395,7 @@ void WeakReference__New1_fn(uType* __type, uObject* target, WeakReference** __re
 // public bool TryGetTarget(T& target) :22
 void WeakReference__TryGetTarget_fn(WeakReference* __this, uObject** target, bool* __retval)
 {
-    *__retval = __this->TryGetTarget(target);
+    *__retval = __this- TryGetTarget(target);
 }
 
 // public WeakReference(T target) [instance] :12
@@ -8416,7 +8416,7 @@ bool WeakReference::TryGetTarget(uObject** target)
 WeakReference* WeakReference::New1(uType* __type, uObject* target)
 {
     WeakReference* obj1 = (WeakReference*)uNew(__type);
-    obj1->ctor_(target);
+    obj1- ctor_(target);
     return obj1;
 }
 // }

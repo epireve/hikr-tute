@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IFrame.h>
-#include <Uno.Object.h>
+#include <Fuse.IFrame.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct SystemUIFrame;}}
 namespace g{namespace Uno{struct Float2;}}
 

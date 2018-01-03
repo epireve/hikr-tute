@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct DiagnosticSubject;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -22,11 +22,11 @@ void Observable__Subscription__SetExclusiveOperation__Perform_fn(Observable__Sub
 
 struct Observable__Subscription__SetExclusiveOperation : uObject
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> Worker;
-    uStrong< ::g::Fuse::Scripting::Object*> Object;
-    uStrong<uObject*> NewValue;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  Worker;
+    uStrong< ::g::Fuse::Scripting::Object*  Object;
+    uStrong<uObject*  NewValue;
     int Origin;
-    uStrong< ::g::Fuse::Scripting::DiagnosticSubject*> DiagnosticSubject;
+    uStrong< ::g::Fuse::Scripting::DiagnosticSubject*  DiagnosticSubject;
 
     void ctor_(::g::Fuse::Scripting::ThreadWorker* worker, ::g::Fuse::Scripting::Object* obj, uObject* newValue, int origin, ::g::Fuse::Scripting::DiagnosticSubject* diagnosticSubject);
     void Perform(::g::Fuse::Scripting::Context* context);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSource.h 
 namespace g{namespace Fuse{namespace Resources{struct MultiDensityImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ProxyImageSource;}}}
 namespace g{namespace Uno{namespace Collections{struct ObservableList;}}}
@@ -39,12 +39,12 @@ void MultiDensityImageSource__SwapActive_fn(MultiDensityImageSource* __this, ::g
 
 struct MultiDensityImageSource : ::g::Fuse::Resources::ImageSource
 {
-    uStrong< ::g::Uno::Collections::ObservableList*> _sources;
-    uStrong< ::g::Fuse::Resources::ProxyImageSource*> _proxy;
+    uStrong< ::g::Uno::Collections::ObservableList*  _sources;
+    uStrong< ::g::Fuse::Resources::ProxyImageSource*  _proxy;
     float _matchDensity;
     bool _hasMatchDensity;
-    uStrong< ::g::Fuse::Resources::ImageSource*> _active;
-    uStrong<uDelegate*> ActiveChanged1;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _active;
+    uStrong<uDelegate*  ActiveChanged1;
 
     void ctor_2();
     ::g::Fuse::Resources::ImageSource* Active();

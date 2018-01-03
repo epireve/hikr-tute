@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigationPageProperty;}}}
 namespace g{namespace Fuse{struct PropertyHandle;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -23,12 +23,12 @@ void NavigationPageProperty__RemovePageWatcher_fn(::g::Fuse::Visual* where, uObj
 
 struct NavigationPageProperty : uObject
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _pageProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _pageProperty() { return _pageProperty_; }
-    static uSStrong< ::g::Uno::Collections::List*> RootedBindings_;
-    static uSStrong< ::g::Uno::Collections::List*>& RootedBindings() { return RootedBindings_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _watchers_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _watchers() { return _watchers_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _pageProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _pageProperty() { return _pageProperty_; }
+    static uSStrong< ::g::Uno::Collections::List*  RootedBindings_;
+    static uSStrong< ::g::Uno::Collections::List* & RootedBindings() { return RootedBindings_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _watchers_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _watchers() { return _watchers_; }
 
     static void AddPageWatcher(::g::Fuse::Visual* where, uObject* callback);
     static ::g::Fuse::Visual* GetNavigationPage(::g::Fuse::Visual* n);

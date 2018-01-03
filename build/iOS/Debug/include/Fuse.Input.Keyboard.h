@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Input{struct Keyboard;}}}
 namespace g{namespace Fuse{namespace Input{struct KeyPressed;}}}
 namespace g{namespace Fuse{namespace Input{struct KeyPressedArgs;}}}
@@ -28,14 +28,14 @@ void Keyboard__RaiseKeyReleased_fn(int* key, bool* isMetaKeyPressed, bool* isCon
 
 struct Keyboard : uObject
 {
-    static uSStrong< ::g::Fuse::Input::KeyPressed*> _keyPressed_;
-    static uSStrong< ::g::Fuse::Input::KeyPressed*>& _keyPressed() { return _keyPressed_; }
-    static uSStrong< ::g::Fuse::Input::KeyReleased*> _keyReleased_;
-    static uSStrong< ::g::Fuse::Input::KeyReleased*>& _keyReleased() { return _keyReleased_; }
-    static uSStrong< ::g::Uno::Collections::List*> _keysDown_;
-    static uSStrong< ::g::Uno::Collections::List*>& _keysDown() { return _keysDown_; }
-    static uSStrong< ::g::Fuse::PropertyHandle*> _keyboardHandle_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _keyboardHandle() { return _keyboardHandle_; }
+    static uSStrong< ::g::Fuse::Input::KeyPressed*  _keyPressed_;
+    static uSStrong< ::g::Fuse::Input::KeyPressed* & _keyPressed() { return _keyPressed_; }
+    static uSStrong< ::g::Fuse::Input::KeyReleased*  _keyReleased_;
+    static uSStrong< ::g::Fuse::Input::KeyReleased* & _keyReleased() { return _keyReleased_; }
+    static uSStrong< ::g::Uno::Collections::List*  _keysDown_;
+    static uSStrong< ::g::Uno::Collections::List* & _keysDown() { return _keysDown_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _keyboardHandle_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _keyboardHandle() { return _keyboardHandle_; }
 
     static bool RaiseKeyPressed(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed);
     static bool RaiseKeyReleased(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed);

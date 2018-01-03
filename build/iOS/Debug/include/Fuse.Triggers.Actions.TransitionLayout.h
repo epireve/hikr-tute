@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TransitionLayout;}}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -24,9 +24,9 @@ void TransitionLayout__Transition_fn(TransitionLayout* __this);
 
 struct TransitionLayout : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Elements::Element*> _perform;
-    uStrong< ::g::Fuse::Elements::Element*> _From;
-    uStrong< ::g::Fuse::Elements::Element*> _Target;
+    uStrong< ::g::Fuse::Elements::Element*  _perform;
+    uStrong< ::g::Fuse::Elements::Element*  _From;
+    uStrong< ::g::Fuse::Elements::Element*  _Target;
 
     ::g::Fuse::Elements::Element* From();
     void From(::g::Fuse::Elements::Element* value);

@@ -1,27 +1,27 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/InputDispatch.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.AppBase.h>
-#include <Fuse.Controls.Native.iOS.InputDispatch.h>
-#include <Fuse.Controls.Native.NativeRootViewport.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Fuse.Input.Pointer.h>
-#include <Fuse.Input.PointerEventData.h>
-#include <Fuse.Node.h>
-#include <Fuse.Time.h>
-#include <Fuse.Visual.h>
-#include <iOS/UIViewInputDispatch.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Double.h>
-#include <Uno.Exception.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <Uno.Platform.PointerType.h>
-#include <uObjC.Foreign.h>
-#include <Fuse.Controls.Native.iOS.InputDispatch.RootInfo.h>
-#include <Uno.Float2.h>
+#include <Fuse.AppBase.h 
+#include <Fuse.Controls.Native.iOS.InputDispatch.h 
+#include <Fuse.Controls.Native.NativeRootViewport.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Fuse.Input.Pointer.h 
+#include <Fuse.Input.PointerEventData.h 
+#include <Fuse.Node.h 
+#include <Fuse.Time.h 
+#include <Fuse.Visual.h 
+#include <iOS/UIViewInputDispatch.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Double.h 
+#include <Uno.Exception.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <Uno.Platform.PointerType.h 
+#include <uObjC.Foreign.h 
+#include <Fuse.Controls.Native.iOS.InputDispatch.RootInfo.h 
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
@@ -34,20 +34,20 @@ namespace iOS{
 // static generated InputDispatch() :12
 static void InputDispatch__cctor__fn(uType* __type)
 {
-    InputDispatch::_activePointers_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::g::Uno::Collections::List_typeof()->MakeType(::g::ObjC::Object_typeof(), NULL)));
+    InputDispatch::_activePointers_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::g::Uno::Collections::List_typeof()- MakeType(::g::ObjC::Object_typeof(), NULL)));
 }
 
 static void InputDispatch_build(uType* type)
 {
-    type->SetDependencies(
+    type- SetDependencies(
         ::g::Fuse::AppBase_typeof());
-    type->SetFields(0,
-        ::g::Uno::Collections::List_typeof()->MakeType(::g::ObjC::Object_typeof(), NULL), (uintptr_t)&InputDispatch::_activePointers_, uFieldFlagsStatic);
+    type- SetFields(0,
+        ::g::Uno::Collections::List_typeof()- MakeType(::g::ObjC::Object_typeof(), NULL), (uintptr_t)&InputDispatch::_activePointers_, uFieldFlagsStatic);
 }
 
 uClassType* InputDispatch_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -55,8 +55,8 @@ uClassType* InputDispatch_typeof()
     options.DependencyCount = 1;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Controls.Native.iOS.InputDispatch", options);
-    type->fp_build_ = InputDispatch_build;
-    type->fp_cctor_ = InputDispatch__cctor__fn;
+    type- fp_build_ = InputDispatch_build;
+    type- fp_cctor_ = InputDispatch__cctor__fn;
     return type;
 }
 
@@ -192,30 +192,30 @@ void InputDispatch__RemoveInputHandler_fn(::g::Fuse::Controls::Native::ViewHandl
     InputDispatch::RemoveInputHandler(viewHandle);
 }
 
-uSStrong< ::g::Uno::Collections::List*> InputDispatch::_activePointers_;
+uSStrong< ::g::Uno::Collections::List*  InputDispatch::_activePointers_;
 
 // public static void AddInputHandler(Fuse.Visual owner, Fuse.Controls.Native.ViewHandle viewHandle) [static] :53
 void InputDispatch::AddInputHandler(::g::Fuse::Visual* owner, ::g::Fuse::Controls::Native::ViewHandle* viewHandle)
 {
     @autoreleasepool
     {
-        [] (id<UnoObject> owner, id<UnoObject> viewHandle) -> void
+        [] (id<UnoObject  owner, id<UnoObject  viewHandle) -  void
         {
-            UIView* view = (UIView*)[&]() -> ::id { ::uForeignPool __foreignPool; return ::g::ObjC::Object::GetHandle(uCast<::g::Fuse::Controls::Native::ViewHandle*>((viewHandle).unoObject, ::g::Fuse::Controls::Native::ViewHandle_typeof())->HitTestHandle()); }();
-            addInputHandler(view, ^void(int type, id<UnoObject> visual, id touches) {
+            UIView* view = (UIView*)[&]() -  ::id { ::uForeignPool __foreignPool; return ::g::ObjC::Object::GetHandle(uCast<::g::Fuse::Controls::Native::ViewHandle* ((viewHandle).unoObject, ::g::Fuse::Controls::Native::ViewHandle_typeof())- HitTestHandle()); }();
+            addInputHandler(view, ^void(int type, id<UnoObject  visual, id touches) {
             	switch(type)
             	{
             		case EVENTTYPE_PRESSED:
-            			[&]() -> void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesBegan(uCast<::g::Fuse::Visual*>((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
+            			[&]() -  void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesBegan(uCast<::g::Fuse::Visual* ((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
             			break;
             		case EVENTTYPE_MOVED:
-            			[&]() -> void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesMoved(uCast<::g::Fuse::Visual*>((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
+            			[&]() -  void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesMoved(uCast<::g::Fuse::Visual* ((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
             			break;
             		case EVENTTYPE_RELEASED:
-            			[&]() -> void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesEnded(uCast<::g::Fuse::Visual*>((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
+            			[&]() -  void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesEnded(uCast<::g::Fuse::Visual* ((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
             			break;
             		case EVENTTYPE_CANCELLED:
-            			[&]() -> void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesCancelled(uCast<::g::Fuse::Visual*>((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
+            			[&]() -  void { ::uForeignPool __foreignPool; InputDispatch::OnTouchesCancelled(uCast<::g::Fuse::Visual* ((visual).unoObject, ::g::Fuse::Visual_typeof()), ::g::ObjC::Object::Create(touches)); }();
             			break;
             		default:
             			break;
@@ -232,7 +232,7 @@ bool InputDispatch::CompareUITouch(::g::ObjC::Object* a, ::g::ObjC::Object* b)
 {
     @autoreleasepool
     {
-        return [] (::id a, ::id b) -> bool
+        return [] (::id a, ::id b) -  bool
         {
             return (UITouch*)a == (UITouch*)b;
         } (::g::ObjC::Object::GetHandle(a), ::g::ObjC::Object::GetHandle(b));
@@ -246,10 +246,10 @@ void InputDispatch::DeactivateTouch(::g::ObjC::Object* uiTouch)
 {
     ::g::ObjC::Object* ret8;
 
-    for (int i = 0; i < uPtr(InputDispatch::_activePointers_)->Count(); i++)
-        if (InputDispatch::CompareUITouch((::g::Uno::Collections::List__get_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int>(i), &ret8), ret8), uiTouch))
+    for (int i = 0; i < uPtr(InputDispatch::_activePointers_)- Count(); i++)
+        if (InputDispatch::CompareUITouch((::g::Uno::Collections::List__get_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int (i), &ret8), ret8), uiTouch))
         {
-            ::g::Uno::Collections::List__set_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int>(i), NULL);
+            ::g::Uno::Collections::List__set_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int (i), NULL);
             return;
         }
 }
@@ -257,7 +257,7 @@ void InputDispatch::DeactivateTouch(::g::ObjC::Object* uiTouch)
 // private static Fuse.Visual FindRoot(Fuse.Visual visual) [static] :207
 ::g::Fuse::Visual* InputDispatch::FindRoot(::g::Fuse::Visual* visual)
 {
-    return (uPtr(visual)->Parent() != NULL) ? (::g::Fuse::Visual*)InputDispatch::FindRoot(uPtr(visual)->Parent()) : visual;
+    return (uPtr(visual)- Parent() != NULL) ? (::g::Fuse::Visual*)InputDispatch::FindRoot(uPtr(visual)- Parent()) : visual;
 }
 
 // private static int GetPointIndex(ObjC.Object uiTouch) [static] :108
@@ -266,9 +266,9 @@ int InputDispatch::GetPointIndex(::g::ObjC::Object* uiTouch)
     ::g::ObjC::Object* ret9;
     int firstUnused = -1;
 
-    for (int i = 0; i < uPtr(InputDispatch::_activePointers_)->Count(); ++i)
+    for (int i = 0; i < uPtr(InputDispatch::_activePointers_)- Count(); ++i)
     {
-        ::g::ObjC::Object* pointer = (::g::Uno::Collections::List__get_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int>(i), &ret9), ret9);
+        ::g::ObjC::Object* pointer = (::g::Uno::Collections::List__get_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int (i), &ret9), ret9);
 
         if (InputDispatch::CompareUITouch(pointer, NULL) && (firstUnused < 0))
             firstUnused = i;
@@ -279,10 +279,10 @@ int InputDispatch::GetPointIndex(::g::ObjC::Object* uiTouch)
     if (firstUnused < 0)
     {
         ::g::Uno::Collections::List__Add_fn(uPtr(InputDispatch::_activePointers_), uiTouch);
-        firstUnused = uPtr(InputDispatch::_activePointers_)->Count() - 1;
+        firstUnused = uPtr(InputDispatch::_activePointers_)- Count() - 1;
     }
 
-    ::g::Uno::Collections::List__set_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int>(firstUnused), uiTouch);
+    ::g::Uno::Collections::List__set_Item_fn(uPtr(InputDispatch::_activePointers_), uCRef<int (firstUnused), uiTouch);
     return firstUnused;
 }
 
@@ -291,10 +291,10 @@ InputDispatch__RootInfo InputDispatch::GetRootInfo(::g::Fuse::Visual* origin)
 {
     ::g::Fuse::Visual* rootVisual = InputDispatch::FindRoot(origin);
     ::g::ObjC::Object* rootView = NULL;
-    ::g::Fuse::Controls::Native::NativeRootViewport* rootViewport = uAs< ::g::Fuse::Controls::Native::NativeRootViewport*>(rootVisual, ::g::Fuse::Controls::Native::NativeRootViewport_typeof());
+    ::g::Fuse::Controls::Native::NativeRootViewport* rootViewport = uAs< ::g::Fuse::Controls::Native::NativeRootViewport* (rootVisual, ::g::Fuse::Controls::Native::NativeRootViewport_typeof());
 
     if (rootViewport != NULL)
-        rootView = uPtr(uPtr(rootViewport)->RootView())->NativeHandle;
+        rootView = uPtr(uPtr(rootViewport)- RootView())- NativeHandle;
 
     return InputDispatch__RootInfo__New1(rootVisual, rootView);
 }
@@ -304,7 +304,7 @@ double InputDispatch::GetTimestamp(::g::ObjC::Object* uiTouch)
 {
     @autoreleasepool
     {
-        return [] (::id uiTouch) -> double
+        return [] (::id uiTouch) -  double
         {
             ::UITouch* touch = (::UITouch*)uiTouch;
             return [touch timestamp];
@@ -328,7 +328,7 @@ void InputDispatch::GetWindowPoint1(::g::ObjC::Object* uiTouch, ::g::ObjC::Objec
 {
     @autoreleasepool
     {
-        [] (::id uiTouch, ::id rootView, float* x, float* y) -> void
+        [] (::id uiTouch, ::id rootView, float* x, float* y) -  void
         {
             ::UITouch* touch = (::UITouch*)uiTouch;
             UIView* relativeView = (UIView*)rootView;
@@ -347,10 +347,10 @@ void InputDispatch::GetWindowPoint1(::g::ObjC::Object* uiTouch, ::g::ObjC::Objec
 uArray* InputDispatch::MakePointerEventData(::g::ObjC::Object* touches, ::g::ObjC::Object* rootView)
 {
     int count = InputDispatch::NSArrayCount(touches);
-    uArray* data = uArray::New(::g::Fuse::Input::PointerEventData_typeof()->Array(), count);
+    uArray* data = uArray::New(::g::Fuse::Input::PointerEventData_typeof()- Array(), count);
 
     for (int i = 0; i < count; i++)
-        uPtr(data)->Strong< ::g::Fuse::Input::PointerEventData*>(i) = InputDispatch::NewPointerEventData(InputDispatch::NSArrayObjectAtIndex(touches, i), rootView);
+        uPtr(data)- Strong< ::g::Fuse::Input::PointerEventData* (i) = InputDispatch::NewPointerEventData(InputDispatch::NSArrayObjectAtIndex(touches, i), rootView);
 
     return data;
 }
@@ -361,11 +361,11 @@ uArray* InputDispatch::MakePointerEventData(::g::ObjC::Object* touches, ::g::Obj
     ::g::Fuse::Input::PointerEventData* collection7;
     int pointIndex = InputDispatch::GetPointIndex(uiTouch);
     collection7 = ::g::Fuse::Input::PointerEventData::New1();
-    uPtr(collection7)->PointIndex = pointIndex;
-    uPtr(collection7)->WindowPoint = InputDispatch::GetWindowPoint(uiTouch, rootView);
-    uPtr(collection7)->Timestamp = (InputDispatch::GetTimestamp(uiTouch) - ::g::Fuse::Time::FrameTimeBase());
-    uPtr(collection7)->PointerType = 2;
-    uPtr(collection7)->IsPrimary = (pointIndex == 0);
+    uPtr(collection7)- PointIndex = pointIndex;
+    uPtr(collection7)- WindowPoint = InputDispatch::GetWindowPoint(uiTouch, rootView);
+    uPtr(collection7)- Timestamp = (InputDispatch::GetTimestamp(uiTouch) - ::g::Fuse::Time::FrameTimeBase());
+    uPtr(collection7)- PointerType = 2;
+    uPtr(collection7)- IsPrimary = (pointIndex == 0);
     return collection7;
 }
 
@@ -374,7 +374,7 @@ int InputDispatch::NSArrayCount(::g::ObjC::Object* nsArray)
 {
     @autoreleasepool
     {
-        return [] (::id nsArray) -> int
+        return [] (::id nsArray) -  int
         {
             return (int)((NSArray*)nsArray).count;
         } (::g::ObjC::Object::GetHandle(nsArray));
@@ -388,7 +388,7 @@ int InputDispatch::NSArrayCount(::g::ObjC::Object* nsArray)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::id nsArray, int index) -> ::id
+        return ::g::ObjC::Object::Create([] (::id nsArray, int index) -  ::id
         {
             return [((NSArray*)nsArray) objectAtIndex:index];
         } (::g::ObjC::Object::GetHandle(nsArray), index));
@@ -405,9 +405,9 @@ void InputDispatch::OnTouchesBegan(::g::Fuse::Visual* origin, ::g::ObjC::Object*
     int length3;
     InputDispatch__RootInfo rootInfo = InputDispatch::GetRootInfo(origin);
 
-    for (array1 = InputDispatch::MakePointerEventData(touches, rootInfo.RootView), index2 = 0, length3 = uPtr(array1)->Length(); index2 < length3; ++index2)
+    for (array1 = InputDispatch::MakePointerEventData(touches, rootInfo.RootView), index2 = 0, length3 = uPtr(array1)- Length(); index2 < length3; ++index2)
     {
-        ::g::Fuse::Input::PointerEventData* data = uPtr(array1)->Strong< ::g::Fuse::Input::PointerEventData*>(index2);
+        ::g::Fuse::Input::PointerEventData* data = uPtr(array1)- Strong< ::g::Fuse::Input::PointerEventData* (index2);
         InputDispatch::RaisePressed(rootInfo.RootVisual, data);
     }
 }
@@ -448,9 +448,9 @@ void InputDispatch::OnTouchesMoved(::g::Fuse::Visual* origin, ::g::ObjC::Object*
     int length6;
     InputDispatch__RootInfo rootInfo = InputDispatch::GetRootInfo(origin);
 
-    for (array4 = InputDispatch::MakePointerEventData(touches, rootInfo.RootView), index5 = 0, length6 = uPtr(array4)->Length(); index5 < length6; ++index5)
+    for (array4 = InputDispatch::MakePointerEventData(touches, rootInfo.RootView), index5 = 0, length6 = uPtr(array4)- Length(); index5 < length6; ++index5)
     {
-        ::g::Fuse::Input::PointerEventData* data = uPtr(array4)->Strong< ::g::Fuse::Input::PointerEventData*>(index5);
+        ::g::Fuse::Input::PointerEventData* data = uPtr(array4)- Strong< ::g::Fuse::Input::PointerEventData* (index5);
         InputDispatch::RaiseMoved(rootInfo.RootVisual, data);
     }
 }
@@ -461,7 +461,7 @@ void InputDispatch::RaiseCancelled(::g::Fuse::Visual* visual, ::g::Fuse::Input::
     try
     {
         {
-            ::g::Fuse::Input::Pointer::LoseCapture(uPtr(data)->PointIndex);
+            ::g::Fuse::Input::Pointer::LoseCapture(uPtr(data)- PointIndex);
         }
     }
 
@@ -528,9 +528,9 @@ void InputDispatch::RemoveInputHandler(::g::Fuse::Controls::Native::ViewHandle* 
 {
     @autoreleasepool
     {
-        [] (id<UnoObject> viewHandle) -> void
+        [] (id<UnoObject  viewHandle) -  void
         {
-            UIView* view = (UIView*)[&]() -> ::id { ::uForeignPool __foreignPool; return ::g::ObjC::Object::GetHandle(uCast<::g::Fuse::Controls::Native::ViewHandle*>((viewHandle).unoObject, ::g::Fuse::Controls::Native::ViewHandle_typeof())->HitTestHandle()); }();
+            UIView* view = (UIView*)[&]() -  ::id { ::uForeignPool __foreignPool; return ::g::ObjC::Object::GetHandle(uCast<::g::Fuse::Controls::Native::ViewHandle* ((viewHandle).unoObject, ::g::Fuse::Controls::Native::ViewHandle_typeof())- HitTestHandle()); }();
             removeInputHandler(view);
         } ([::StrongUnoObject strongUnoObjectWithUnoObject: viewHandle]);
         

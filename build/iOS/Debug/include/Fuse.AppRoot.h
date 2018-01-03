@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{struct AppRoot;}}
 namespace g{namespace ObjC{struct Object;}}
@@ -26,12 +26,12 @@ void AppRoot__SetRootView_fn(::g::Fuse::Controls::Native::ViewHandle* root);
 
 struct AppRoot : uObject
 {
-    static uSStrong< ::g::ObjC::Object*> _appRootView_;
-    static uSStrong< ::g::ObjC::Object*>& _appRootView() { return AppRoot_typeof()->Init(), _appRootView_; }
+    static uSStrong< ::g::ObjC::Object*  _appRootView_;
+    static uSStrong< ::g::ObjC::Object* & _appRootView() { return AppRoot_typeof()- Init(), _appRootView_; }
     static ::g::Uno::Float4 _clearColor_;
-    static ::g::Uno::Float4& _clearColor() { return AppRoot_typeof()->Init(), _clearColor_; }
-    static uSStrong< ::g::Fuse::Controls::Native::ViewHandle*> _root_;
-    static uSStrong< ::g::Fuse::Controls::Native::ViewHandle*>& _root() { return AppRoot_typeof()->Init(), _root_; }
+    static ::g::Uno::Float4& _clearColor() { return AppRoot_typeof()- Init(), _clearColor_; }
+    static uSStrong< ::g::Fuse::Controls::Native::ViewHandle*  _root_;
+    static uSStrong< ::g::Fuse::Controls::Native::ViewHandle* & _root() { return AppRoot_typeof()- Init(), _root_; }
 
     static void ClearRoot(::g::Fuse::Controls::Native::ViewHandle* root);
     static ::g::ObjC::Object* CreateAppRootView(::g::ObjC::Object* handle);

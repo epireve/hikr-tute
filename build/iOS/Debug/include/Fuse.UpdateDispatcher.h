@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Threading.IDispatcher.h>
+#include <Uno.Object.h 
+#include <Uno.Threading.IDispatcher.h 
 namespace g{namespace Fuse{struct UpdateDispatcher;}}
 
 namespace g{

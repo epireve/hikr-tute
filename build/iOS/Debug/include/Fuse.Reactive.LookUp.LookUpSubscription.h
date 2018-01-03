@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.IPropertyObserver.h>
-#include <Fuse.Reactive.ValueForwarder.IValueListener.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.IPropertyObserver.h 
+#include <Fuse.Reactive.ValueForwarder.IValueListener.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct LookUp;}}}
 namespace g{namespace Fuse{namespace Reactive{struct LookUp__LookUpSubscription;}}}
 
@@ -52,18 +52,18 @@ void LookUp__LookUpSubscription__SetDiagnostic_fn(LookUp__LookUpSubscription* __
 
 struct LookUp__LookUpSubscription : uObject
 {
-    uStrong<uObject*> _listener;
-    uStrong< ::g::Fuse::Reactive::LookUp*> _lu;
-    uStrong<uObject*> _colSub;
-    uStrong<uObject*> _indexSub;
+    uStrong<uObject*  _listener;
+    uStrong< ::g::Fuse::Reactive::LookUp*  _lu;
+    uStrong<uObject*  _colSub;
+    uStrong<uObject*  _indexSub;
     bool _hasCollection;
-    uStrong<uObject*> _collection;
+    uStrong<uObject*  _collection;
     bool _hasIndex;
-    uStrong<uObject*> _index;
-    uStrong<uObject*> _indexForwarder;
-    uStrong<uObject*> _diag;
-    uStrong<uObject*> _colObsObjSub;
-    uStrong<uObject*> _colObservableSub;
+    uStrong<uObject*  _index;
+    uStrong<uObject*  _indexForwarder;
+    uStrong<uObject*  _diag;
+    uStrong<uObject*  _colObsObjSub;
+    uStrong<uObject*  _colObservableSub;
 
     void ctor_(::g::Fuse::Reactive::LookUp* lu, uObject* context, uObject* listener);
     void ClearDiagnostic();

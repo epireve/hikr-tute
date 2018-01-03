@@ -2,28 +2,28 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.ISourceReceiver.h>
-#include <Fuse.Controls.IWebView.h>
-#include <Fuse.Controls.Panel.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.IProgress.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.ISourceReceiver.h 
+#include <Fuse.Controls.IWebView.h 
+#include <Fuse.Controls.Panel.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Triggers.IProgress.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -105,16 +105,16 @@ void WebView__set_ZoomEnabled_fn(WebView* __this, bool* value);
 
 struct WebView : ::g::Fuse::Controls::Panel
 {
-    uStrong<uObject*> _fallbackClient;
-    uStrong<uObject*> _webViewClient;
+    uStrong<uObject*  _fallbackClient;
+    uStrong<uObject*  _webViewClient;
     static ::g::Uno::UX::Selector _urlName_;
-    static ::g::Uno::UX::Selector& _urlName() { return WebView_typeof()->Init(), _urlName_; }
-    uStrong<uDelegate*> BeginLoading1;
-    uStrong<uDelegate*> HistoryChanged1;
-    uStrong<uDelegate*> PageLoaded1;
-    uStrong<uDelegate*> ProgressChanged1;
-    uStrong<uDelegate*> URISchemeHandler1;
-    uStrong<uDelegate*> UrlChanged1;
+    static ::g::Uno::UX::Selector& _urlName() { return WebView_typeof()- Init(), _urlName_; }
+    uStrong<uDelegate*  BeginLoading1;
+    uStrong<uDelegate*  HistoryChanged1;
+    uStrong<uDelegate*  PageLoaded1;
+    uStrong<uDelegate*  ProgressChanged1;
+    uStrong<uDelegate*  URISchemeHandler1;
+    uStrong<uDelegate*  UrlChanged1;
 
     void applyFallbackCalls(uObject* client);
     uString* BaseUrl();

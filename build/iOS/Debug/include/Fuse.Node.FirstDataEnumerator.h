@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.IDataEnumerator.h>
-#include <Uno.Object.h>
+#include <Fuse.Node.IDataEnumerator.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Node__FirstDataEnumerator;}}
 
 namespace g{
@@ -25,7 +25,7 @@ void Node__FirstDataEnumerator__NextData_fn(Node__FirstDataEnumerator* __this, u
 
 struct Node__FirstDataEnumerator : uObject
 {
-    uStrong<uObject*> _Data;
+    uStrong<uObject*  _Data;
 
     void ctor_();
     uObject* Data();

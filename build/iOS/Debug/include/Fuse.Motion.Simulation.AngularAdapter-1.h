@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ScalarBlender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct AngularAdapter;}}}}
 
@@ -14,7 +14,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class AngularAdapter<T> :8
+// internal sealed class AngularAdapter<T  :8
 // {
 struct AngularAdapter_type : uType
 {
@@ -40,27 +40,27 @@ void AngularAdapter__Wrap_fn(AngularAdapter* __this);
 
 struct AngularAdapter : uObject
 {
-    uStrong<uObject*> _impl;
-    uStrong< ::g::Fuse::Internal::ScalarBlender*> _blender;
+    uStrong<uObject*  _impl;
+    uStrong< ::g::Fuse::Internal::ScalarBlender*  _blender;
 
     void ctor_(uObject* impl);
-    template<class T>
+    template<class T 
     T Destination() { T __retval; return AngularAdapter__get_Destination_fn(this, &__retval), __retval; }
-    template<class T>
-    void Destination(T value) { AngularAdapter__set_Destination_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Destination(T value) { AngularAdapter__set_Destination_fn(this, uConstrain(__type- T(0), value)); }
     bool IsStatic();
-    template<class T>
+    template<class T 
     T Position() { T __retval; return AngularAdapter__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { AngularAdapter__set_Position_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T value) { AngularAdapter__Reset_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Position(T value) { AngularAdapter__set_Position_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T value) { AngularAdapter__Reset_fn(this, uConstrain(__type- T(0), value)); }
     void Start();
     void Update(double elapsed);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return AngularAdapter__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { AngularAdapter__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { AngularAdapter__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     void Wrap();
     static AngularAdapter* New1(uType* __type, uObject* impl);
 };

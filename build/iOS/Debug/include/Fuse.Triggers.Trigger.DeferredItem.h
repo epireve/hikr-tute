@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction;}}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger__DeferredItem;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -20,8 +20,8 @@ void Trigger__DeferredItem__Perform_fn(Trigger__DeferredItem* __this);
 
 struct Trigger__DeferredItem : uObject
 {
-    uStrong< ::g::Fuse::Triggers::Actions::TriggerAction*> Action;
-    uStrong< ::g::Fuse::Node*> Node;
+    uStrong< ::g::Fuse::Triggers::Actions::TriggerAction*  Action;
+    uStrong< ::g::Fuse::Node*  Node;
 
     void ctor_();
     void Perform();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct BasicBoundedRegion2D;}}}}
 namespace g{namespace Fuse{namespace Motion{struct DestinationMotion;}}}
 namespace g{namespace Fuse{namespace Motion{struct MotionConfig;}}}
@@ -30,9 +30,9 @@ void MotionConfig__set_Unit_fn(MotionConfig* __this, int* value);
 
 struct MotionConfig : uObject
 {
-    uStrong< ::g::Fuse::Motion::Simulation::BasicBoundedRegion2D*> _impl;
-    uStrong< ::g::Fuse::Motion::DestinationMotion*> _goto;
-    uStrong< ::g::Fuse::Motion::DestinationMotion*> _snap;
+    uStrong< ::g::Fuse::Motion::Simulation::BasicBoundedRegion2D*  _impl;
+    uStrong< ::g::Fuse::Motion::DestinationMotion*  _goto;
+    uStrong< ::g::Fuse::Motion::DestinationMotion*  _snap;
     int _overflow;
     ::g::Uno::Float2 _overflowExtent;
 

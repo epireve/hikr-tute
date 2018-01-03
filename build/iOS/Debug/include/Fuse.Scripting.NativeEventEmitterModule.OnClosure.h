@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeEventEmitterModule__OnClosure;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -20,8 +20,8 @@ void NativeEventEmitterModule__OnClosure__On_fn(NativeEventEmitterModule__OnClos
 
 struct NativeEventEmitterModule__OnClosure : uObject
 {
-    uStrong<uObject*> _eventName;
-    uStrong<uDelegate*> _listener;
+    uStrong<uObject*  _eventName;
+    uStrong<uDelegate*  _listener;
 
     void ctor_(uObject* eventName, uDelegate* listener);
     void On(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::Object* o);

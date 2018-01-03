@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.FileSource.h>
+#include <Uno.UX.FileSource.h 
 namespace g{namespace Fuse{namespace Resources{struct FileResource;}}}
 namespace g{namespace Uno{namespace IO{struct Stream;}}}
 
@@ -17,7 +17,7 @@ void FileResource__OpenRead_fn(FileResource* __this, ::g::Uno::IO::Stream** __re
 
 struct FileResource : ::g::Uno::UX::FileSource
 {
-    uStrong< ::g::Uno::UX::FileSource*> _file;
+    uStrong< ::g::Uno::UX::FileSource*  _file;
 };
 // }
 

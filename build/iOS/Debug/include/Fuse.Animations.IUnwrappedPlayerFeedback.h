@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IUnwrappedPlayerFeedback_typeof();
 struct IUnwrappedPlayerFeedback
 {
     void(*fp_OnProgressUpdated)(uObject*, uObject*, double*, double*, int*);
-    static void OnProgressUpdated(const uInterface& __this, uObject* s, double prev, double next, int flags) { __this.VTable<IUnwrappedPlayerFeedback>()->fp_OnProgressUpdated(__this, s, &prev, &next, &flags); }
+    static void OnProgressUpdated(const uInterface& __this, uObject* s, double prev, double next, int flags) { __this.VTable<IUnwrappedPlayerFeedback ()- fp_OnProgressUpdated(__this, s, &prev, &next, &flags); }
 };
 // }
 

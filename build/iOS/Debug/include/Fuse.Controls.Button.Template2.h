@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.Template.h>
+#include <Uno.UX.Template.h 
 namespace g{namespace Fuse{namespace Controls{struct Button;}}}
 namespace g{namespace Fuse{namespace Controls{struct Button__Template2;}}}
 
@@ -19,8 +19,8 @@ void Button__Template2__New2_fn(::g::Fuse::Controls::Button* parent, ::g::Fuse::
 
 struct Button__Template2 : ::g::Uno::UX::Template
 {
-    uWeak< ::g::Fuse::Controls::Button*> __parent1;
-    uWeak< ::g::Fuse::Controls::Button*> __parentInstance1;
+    uWeak< ::g::Fuse::Controls::Button*  __parent1;
+    uWeak< ::g::Fuse::Controls::Button*  __parentInstance1;
 
     void ctor_1(::g::Fuse::Controls::Button* parent, ::g::Fuse::Controls::Button* parentInstance);
     static Button__Template2* New2(::g::Fuse::Controls::Button* parent, ::g::Fuse::Controls::Button* parentInstance);

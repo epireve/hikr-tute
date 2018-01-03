@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Layouts.Layout.h>
+#include <Fuse.Layouts.Layout.h 
 namespace g{namespace Fuse{namespace Layouts{struct DefaultLayout;}}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Visual;}}

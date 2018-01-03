@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Storage{struct ApplicationDir__WriteClosure;}}}
 
 namespace g{
@@ -18,8 +18,8 @@ void ApplicationDir__WriteClosure__New1_fn(uString* filename, uString* value, Ap
 
 struct ApplicationDir__WriteClosure : uObject
 {
-    uStrong<uString*> _filename;
-    uStrong<uString*> _value;
+    uStrong<uString*  _filename;
+    uStrong<uString*  _value;
 
     void ctor_(uString* filename, uString* value);
     bool Invoke();

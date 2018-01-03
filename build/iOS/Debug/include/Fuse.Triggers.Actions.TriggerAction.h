@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction;}}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -45,7 +45,7 @@ struct TriggerAction : ::g::Uno::UX::PropertyObject
     float _delay;
     bool _hasDelay;
     bool _isActive;
-    uStrong< ::g::Fuse::Node*> _TargetNode;
+    uStrong< ::g::Fuse::Node*  _TargetNode;
 
     void ctor_1();
     float AtProgress();
@@ -55,8 +55,8 @@ struct TriggerAction : ::g::Uno::UX::PropertyObject
     bool IsActive();
     void IsActive(bool value);
     bool IsProgressTriggered();
-    void OnUnrooted() { (((TriggerAction_type*)__type)->fp_OnUnrooted)(this); }
-    void Perform(::g::Fuse::Node* target) { (((TriggerAction_type*)__type)->fp_Perform)(this, target); }
+    void OnUnrooted() { (((TriggerAction_type*)__type)- fp_OnUnrooted)(this); }
+    void Perform(::g::Fuse::Node* target) { (((TriggerAction_type*)__type)- fp_Perform)(this, target); }
     void PerformFromNode(::g::Fuse::Node* target);
     float ProgressWhen(float totalDuration);
     ::g::Fuse::Node* TargetNode();

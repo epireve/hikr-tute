@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct Snapshot;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Snapshot__Subscription;}}}
 
@@ -28,9 +28,9 @@ void Snapshot__Subscription__New1_fn(::g::Fuse::Reactive::Snapshot* snap, uObjec
 
 struct Snapshot__Subscription : uObject
 {
-    uStrong< ::g::Fuse::Reactive::Snapshot*> _snap;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _sub;
+    uStrong< ::g::Fuse::Reactive::Snapshot*  _snap;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _sub;
 
     void ctor_(::g::Fuse::Reactive::Snapshot* snap, uObject* context, uObject* listener);
     void Dispose();

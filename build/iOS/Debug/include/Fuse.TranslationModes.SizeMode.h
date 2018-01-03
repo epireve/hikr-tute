@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ITransformMode.h>
-#include <Fuse.ITranslationMode.h>
-#include <Uno.Object.h>
+#include <Fuse.ITransformMode.h 
+#include <Fuse.ITranslationMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Translation;}}
 namespace g{namespace Fuse{struct TranslationModes__SizeMode;}}
 namespace g{namespace Uno{struct Float3;}}
@@ -40,12 +40,12 @@ struct TranslationModes__SizeMode : uObject
 
 }} // ::g::Fuse
 
-#include <Uno.Float3.h>
+#include <Uno.Float3.h 
 
 namespace g{
 namespace Fuse{
 
-inline ::g::Uno::Float3 TranslationModes__SizeMode::GetAbsVector(::g::Fuse::Translation* t) { ::g::Uno::Float3 __retval; return (((TranslationModes__SizeMode_type*)__type)->fp_GetAbsVector)(this, t, &__retval), __retval; }
+inline ::g::Uno::Float3 TranslationModes__SizeMode::GetAbsVector(::g::Fuse::Translation* t) { ::g::Uno::Float3 __retval; return (((TranslationModes__SizeMode_type*)__type)- fp_GetAbsVector)(this, t, &__retval), __retval; }
 inline ::g::Uno::Float3 TranslationModes__SizeMode::GetAbsVector(TranslationModes__SizeMode* __this, ::g::Fuse::Translation* t) { ::g::Uno::Float3 __retval; return TranslationModes__SizeMode__GetAbsVector_fn(__this, t, &__retval), __retval; }
 // }
 

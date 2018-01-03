@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.String.h>
-#include <Uno.UX.Property-1.h>
+#include <Uno.String.h 
+#include <Uno.UX.Property-1.h 
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct Visual__ParameterProperty;}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -24,7 +24,7 @@ void Visual__ParameterProperty__get_SupportsOriginSetter_fn(Visual__ParameterPro
 
 struct Visual__ParameterProperty : ::g::Uno::UX::Property1
 {
-    uStrong< ::g::Fuse::Visual*> _visual;
+    uStrong< ::g::Fuse::Visual*  _visual;
     static ::g::Uno::UX::Selector _name1_;
     static ::g::Uno::UX::Selector& _name1() { return _name1_; }
 

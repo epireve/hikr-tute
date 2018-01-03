@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.IShapeView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.Native.IShapeView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Uno{struct Float4;}}
 
 namespace g{
@@ -25,14 +25,14 @@ struct IRectangleView
 
 }}}} // ::g::Fuse::Controls::Native
 
-#include <Uno.Float4.h>
+#include <Uno.Float4.h 
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 namespace Native{
 
-inline void IRectangleView::CornerRadius(const uInterface& __this, ::g::Uno::Float4 value) { __this.VTable<IRectangleView>()->fp_set_CornerRadius(__this, &value); }
+inline void IRectangleView::CornerRadius(const uInterface& __this, ::g::Uno::Float4 value) { __this.VTable<IRectangleView ()- fp_set_CornerRadius(__this, &value); }
 // }
 
 }}}} // ::g::Fuse::Controls::Native

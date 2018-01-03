@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Converter-1.h>
-#include <Uno.UX.Size2.h>
+#include <Fuse.Animations.Converter-1.h 
+#include <Uno.UX.Size2.h 
 namespace g{namespace Fuse{namespace Animations{struct ConverterSize2;}}}
 namespace g{namespace Uno{struct Float4;}}
 
@@ -21,8 +21,8 @@ void ConverterSize2__Out_fn(ConverterSize2* __this, ::g::Uno::Float4* value, ::g
 
 struct ConverterSize2 : ::g::Fuse::Animations::Converter
 {
-    static uSStrong<ConverterSize2*> Singleton_;
-    static uSStrong<ConverterSize2*>& Singleton() { return Singleton_; }
+    static uSStrong<ConverterSize2*  Singleton_;
+    static uSStrong<ConverterSize2* & Singleton() { return Singleton_; }
 
     void ctor_1();
     static ConverterSize2* New1();

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.OpenAnimator.h>
+#include <Fuse.Animations.OpenAnimator.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Cycle;}}}
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Cycle<T> :51
+// public sealed class Cycle<T  :51
 // {
 ::g::Fuse::Animations::Animator_type* Cycle_typeof();
 void Cycle__get_Base_fn(Cycle* __this, uTRef __retval);
@@ -50,17 +50,17 @@ struct Cycle : ::g::Fuse::Animations::OpenAnimator
     int _waveform;
     float _progressOffset;
     bool _hasProgressOffset;
-    uStrong< ::g::Fuse::Animations::Easing*> _easing;
-    uTField _Base() { return __type->Field(this, 13); }
+    uStrong< ::g::Fuse::Animations::Easing*  _easing;
+    uTField _Base() { return __type- Field(this, 13); }
     float _High;
     float _Low;
-    uTField _Offset() { return __type->Field(this, 16); }
-    uStrong< ::g::Uno::UX::Property1*> _Target;
+    uTField _Offset() { return __type- Field(this, 16); }
+    uStrong< ::g::Uno::UX::Property1*  _Target;
 
-    template<class T>
+    template<class T 
     T Base() { T __retval; return Cycle__get_Base_fn(this, &__retval), __retval; }
-    template<class T>
-    void Base(T value) { Cycle__set_Base_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Base(T value) { Cycle__set_Base_fn(this, uConstrain(__type- T(0), value)); }
     ::g::Fuse::Animations::Easing* Easing();
     void Easing(::g::Fuse::Animations::Easing* value);
     double Frequency();
@@ -73,10 +73,10 @@ struct Cycle : ::g::Fuse::Animations::OpenAnimator
     bool IsZeroCrossing();
     float Low();
     void Low(float value);
-    template<class T>
+    template<class T 
     T Offset() { T __retval; return Cycle__get_Offset_fn(this, &__retval), __retval; }
-    template<class T>
-    void Offset(T value) { Cycle__set_Offset_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Offset(T value) { Cycle__set_Offset_fn(this, uConstrain(__type- T(0), value)); }
     float ProgressOffset();
     void ProgressOffset(float value);
     double RestProgress();

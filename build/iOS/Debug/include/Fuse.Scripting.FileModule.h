@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.ScriptModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.ScriptModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct FileModule;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
 

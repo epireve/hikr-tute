@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterModify;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPageRoute;}}}
@@ -39,10 +39,10 @@ void RouterModify__set_Router_fn(RouterModify* __this, ::g::Fuse::Navigation::Ro
 
 struct RouterModify : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Navigation::RouterRequest*> _request;
-    uStrong<uObject*> _path;
-    uStrong< ::g::Fuse::Reactive::NodeExpressionBinding*> _pathSub;
-    uStrong< ::g::Fuse::Navigation::Router*> _Router;
+    uStrong< ::g::Fuse::Navigation::RouterRequest*  _request;
+    uStrong<uObject*  _path;
+    uStrong< ::g::Fuse::Reactive::NodeExpressionBinding*  _pathSub;
+    uStrong< ::g::Fuse::Navigation::Router*  _Router;
 
     void ctor_3(int flags);
     void DisposePathSub();

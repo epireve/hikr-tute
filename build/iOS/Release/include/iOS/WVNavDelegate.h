@@ -1,8 +1,8 @@
-#import <WebKit/WebKit.h>
+#import <WebKit/WebKit.h 
 typedef void (^Action)(void);
 typedef void (^StringAction)(NSString*);
 typedef bool (^BoolFunc)(void);
-@interface WVNavDelegate : NSObject<WKNavigationDelegate>
+@interface WVNavDelegate : NSObject<WKNavigationDelegate 
 @property(copy) Action onURLChanged;
 @property(copy) Action onPageLoaded;
 @property(copy) Action onBeginLoading;

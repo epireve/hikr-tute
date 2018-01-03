@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Control.h>
-#include <Fuse.Elements.ITreeRenderer.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Control.h 
+#include <Fuse.Elements.ITreeRenderer.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{namespace Controls{struct SingleViewHost;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
@@ -79,10 +79,10 @@ void SingleViewHost__UpdateHostViewTransform_fn(SingleViewHost* __this);
 struct SingleViewHost : ::g::Fuse::Controls::Control
 {
     int _renderState;
-    uStrong<uObject*> _changingState;
-    uStrong< ::g::Fuse::Controls::Native::ViewHandle*> _viewHandle;
-    uStrong<uObject*> _renderer;
-    uStrong<uObject*> _proxyHost;
+    uStrong<uObject*  _changingState;
+    uStrong< ::g::Fuse::Controls::Native::ViewHandle*  _viewHandle;
+    uStrong<uObject*  _renderer;
+    uStrong<uObject*  _proxyHost;
     bool _offscreen;
     bool _updateTransform;
     bool _draw;

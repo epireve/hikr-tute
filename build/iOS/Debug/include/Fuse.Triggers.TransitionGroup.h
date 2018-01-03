@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct Navigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct NavigatorSwitchedArgs;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Transition;}}}
@@ -33,12 +33,12 @@ void TransitionGroup__Unroot_fn(TransitionGroup* __this, ::g::Fuse::Triggers::Tr
 
 struct TransitionGroup : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _groupMap_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _groupMap() { return _groupMap_; }
-    uStrong< ::g::Fuse::Controls::Navigator*> _navigator;
-    uStrong< ::g::Fuse::Visual*> _parent;
-    uStrong< ::g::Uno::Collections::List*> _states;
-    uStrong< ::g::Fuse::Triggers::Transition*> _selected;
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _groupMap_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _groupMap() { return _groupMap_; }
+    uStrong< ::g::Fuse::Controls::Navigator*  _navigator;
+    uStrong< ::g::Fuse::Visual*  _parent;
+    uStrong< ::g::Uno::Collections::List*  _states;
+    uStrong< ::g::Fuse::Triggers::Transition*  _selected;
 
     void ctor_(::g::Fuse::Controls::Navigator* navigator, ::g::Fuse::Visual* parent);
     void Add(::g::Fuse::Triggers::Transition* t);

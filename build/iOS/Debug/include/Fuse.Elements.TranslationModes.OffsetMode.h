@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ITransformMode.h>
-#include <Fuse.ITranslationMode.h>
-#include <Uno.Object.h>
+#include <Fuse.ITransformMode.h 
+#include <Fuse.ITranslationMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct TranslationModes__OffsetMode;}}}
 namespace g{namespace Fuse{struct Translation;}}
@@ -46,14 +46,14 @@ struct TranslationModes__OffsetMode : uObject
 
 }}} // ::g::Fuse::Elements
 
-#include <Uno.Float3.h>
+#include <Uno.Float3.h 
 
 namespace g{
 namespace Fuse{
 namespace Elements{
 
-inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetDstOffset(::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return (((TranslationModes__OffsetMode_type*)__type)->fp_GetDstOffset)(this, e, &__retval), __retval; }
-inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetSrcOffset(::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return (((TranslationModes__OffsetMode_type*)__type)->fp_GetSrcOffset)(this, e, &__retval), __retval; }
+inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetDstOffset(::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return (((TranslationModes__OffsetMode_type*)__type)- fp_GetDstOffset)(this, e, &__retval), __retval; }
+inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetSrcOffset(::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return (((TranslationModes__OffsetMode_type*)__type)- fp_GetSrcOffset)(this, e, &__retval), __retval; }
 inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetDstOffset(TranslationModes__OffsetMode* __this, ::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return TranslationModes__OffsetMode__GetDstOffset_fn(__this, e, &__retval), __retval; }
 inline ::g::Uno::Float3 TranslationModes__OffsetMode::GetSrcOffset(TranslationModes__OffsetMode* __this, ::g::Fuse::Elements::Element* e) { ::g::Uno::Float3 __retval; return TranslationModes__OffsetMode__GetSrcOffset_fn(__this, e, &__retval), __retval; }
 // }

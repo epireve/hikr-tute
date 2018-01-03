@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.VideoImpl.IVideoPlayer.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.VideoImpl.IVideoPlayer.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{namespace iOS{struct VideoPlayer;}}}}}
 namespace g{namespace Uno{namespace Graphics{struct VideoTexture;}}}
 namespace g{namespace Uno{struct Exception;}}
@@ -49,11 +49,11 @@ void VideoPlayer__set_Volume_fn(VideoPlayer* __this, float* value);
 
 struct VideoPlayer : uObject
 {
-    uStrong< ::g::Uno::Graphics::VideoTexture*> _currentTexture;
+    uStrong< ::g::Uno::Graphics::VideoTexture*  _currentTexture;
     uint32_t _currentTextureHandle;
     void* _handle;
-    uStrong<uDelegate*> ErrorOccurred1;
-    uStrong<uDelegate*> FrameAvailable1;
+    uStrong<uDelegate*  ErrorOccurred1;
+    uStrong<uDelegate*  FrameAvailable1;
 
     void ctor_(uString* uri, uDelegate* onLoaded, uDelegate* onLoadError);
     void Dispose();

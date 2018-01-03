@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct PreviewStateData__Entry;}}
 
 namespace g{
@@ -14,7 +14,7 @@ uType* PreviewStateData__Entry_typeof();
 
 struct PreviewStateData__Entry : uObject
 {
-    uStrong<uObject*> Data;
+    uStrong<uObject*  Data;
     bool Consumed;
 };
 // }

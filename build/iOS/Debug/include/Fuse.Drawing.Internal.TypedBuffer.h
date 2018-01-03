@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct TypedBuffer;}}}}
 namespace g{namespace Uno{namespace Graphics{struct IndexBuffer;}}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
@@ -27,12 +27,12 @@ void TypedBuffer__InitDeviceVertex_fn(TypedBuffer* __this, int* bu);
 
 struct TypedBuffer : uObject
 {
-    uStrong< ::g::Uno::Buffer*> back;
+    uStrong< ::g::Uno::Buffer*  back;
     int typeSize;
     int capacity;
     int size;
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> deviceIndex;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> deviceVertex;
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  deviceIndex;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  deviceVertex;
 
     void ctor_1(int typeSize1, int initSize);
     void CheckGrow();

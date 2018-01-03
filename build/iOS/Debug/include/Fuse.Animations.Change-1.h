@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimator.h>
+#include <Fuse.Animations.TrackAnimator.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct Change;}}}
 namespace g{namespace Fuse{namespace Animations{struct Converter;}}}
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Change<T> :35
+// public sealed class Change<T  :35
 // {
 ::g::Fuse::Animations::Animator_type* Change_typeof();
 void Change__ctor_3_fn(Change* __this, ::g::Uno::UX::Property1* target);
@@ -27,17 +27,17 @@ void Change__set_Value_fn(Change* __this, void* value);
 
 struct Change : ::g::Fuse::Animations::TrackAnimator
 {
-    uStrong< ::g::Fuse::Animations::Converter*> ContinuousConverter;
-    uStrong< ::g::Uno::UX::Property1*> _Target;
+    uStrong< ::g::Fuse::Animations::Converter*  ContinuousConverter;
+    uStrong< ::g::Uno::UX::Property1*  _Target;
 
     void ctor_3(::g::Uno::UX::Property1* target);
     bool IsContinuous();
     ::g::Uno::UX::Property1* Target();
     void Target(::g::Uno::UX::Property1* value);
-    template<class T>
+    template<class T 
     T Value() { T __retval; return Change__get_Value_fn(this, &__retval), __retval; }
-    template<class T>
-    void Value(T value) { Change__set_Value_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Value(T value) { Change__set_Value_fn(this, uConstrain(__type- T(0), value)); }
     static Change* New2(uType* __type, ::g::Uno::UX::Property1* target);
 };
 // }

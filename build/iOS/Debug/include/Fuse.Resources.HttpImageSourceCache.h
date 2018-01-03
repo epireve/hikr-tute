@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Resources{struct HttpImageSourceCache;}}}
 namespace g{namespace Fuse{namespace Resources{struct HttpImageSourceImpl;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -19,8 +19,8 @@ void HttpImageSourceCache__GetUrl_fn(uString* url, ::g::Fuse::Resources::HttpIma
 
 struct HttpImageSourceCache : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _cache_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _cache() { return _cache_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _cache_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _cache() { return _cache_; }
 
     static ::g::Fuse::Resources::HttpImageSourceImpl* GetUrl(uString* url);
 };

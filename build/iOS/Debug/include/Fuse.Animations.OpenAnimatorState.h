@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.AnimatorState.h>
+#include <Fuse.Animations.AnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct OpenAnimator;}}}
 namespace g{namespace Fuse{namespace Animations{struct OpenAnimatorState;}}}
@@ -26,11 +26,11 @@ void OpenAnimatorState__SeekTime_fn(OpenAnimatorState* __this, double* nominal, 
 
 struct OpenAnimatorState : ::g::Fuse::Animations::AnimatorState
 {
-    uStrong< ::g::Fuse::Animations::OpenAnimator*> Animator;
+    uStrong< ::g::Fuse::Animations::OpenAnimator*  Animator;
     bool _seekDone;
 
     void ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual);
-    bool Seek(bool on, float interval, float strength, int dir) { bool __retval; return (((OpenAnimatorState_type*)__type)->fp_Seek)(this, &on, &interval, &strength, &dir, &__retval), __retval; }
+    bool Seek(bool on, float interval, float strength, int dir) { bool __retval; return (((OpenAnimatorState_type*)__type)- fp_Seek)(this, &on, &interval, &strength, &dir, &__retval), __retval; }
 };
 // }
 

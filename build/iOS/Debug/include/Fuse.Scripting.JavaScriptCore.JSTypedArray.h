@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <JavaScriptCore/JSContextRef.h>
-#include <JavaScriptCore/JSObjectRef.h>
-#include <Uno.h>
+#include <JavaScriptCore/JSContextRef.h 
+#include <JavaScriptCore/JSObjectRef.h 
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct JSTypedArray;}}}}
 
 namespace g{

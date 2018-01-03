@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.AppBase.h>
-#include <Fuse.IProperties.h>
+#include <Fuse.AppBase.h 
+#include <Fuse.IProperties.h 
 namespace g{namespace Fuse{namespace Controls{struct GraphicsView;}}}
 namespace g{namespace Fuse{namespace Controls{struct TreeRendererPanel;}}}
 namespace g{namespace Fuse{struct App;}}
@@ -31,9 +31,9 @@ void App__get_RootVisual_fn(App* __this, ::g::Fuse::Visual** __retval);
 
 struct App : ::g::Fuse::AppBase
 {
-    uStrong< ::g::Fuse::Controls::TreeRendererPanel*> _renderPanel;
-    uStrong< ::g::Fuse::Controls::GraphicsView*> _graphicsView;
-    uStrong< ::g::ObjC::Object*> _currentFocus;
+    uStrong< ::g::Fuse::Controls::TreeRendererPanel*  _renderPanel;
+    uStrong< ::g::Fuse::Controls::GraphicsView*  _graphicsView;
+    uStrong< ::g::ObjC::Object*  _currentFocus;
     int _prevStatusBarOrientation;
 
     void ctor_3();

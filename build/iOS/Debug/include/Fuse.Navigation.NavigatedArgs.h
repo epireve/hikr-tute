@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigatedArgs;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -27,7 +27,7 @@ void NavigatedArgs__set_NewVisual_fn(NavigatedArgs* __this, ::g::Fuse::Visual* v
 
 struct NavigatedArgs : ::g::Uno::EventArgs
 {
-    uStrong< ::g::Fuse::Visual*> _NewVisual;
+    uStrong< ::g::Fuse::Visual*  _NewVisual;
 
     void ctor_1(::g::Fuse::Visual* newVisual);
     ::g::Fuse::Visual* NewVisual();

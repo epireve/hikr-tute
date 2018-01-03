@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Observable.Operation.h>
+#include <Fuse.Scripting.Observable.Operation.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__InsertAt;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
@@ -22,7 +22,7 @@ void Observable__InsertAt__Unsubscribe_fn(Observable__InsertAt* __this);
 struct Observable__InsertAt : ::g::Fuse::Scripting::Observable__Operation
 {
     int _index;
-    uStrong<uObject*> _value;
+    uStrong<uObject*  _value;
 
     void ctor_1(::g::Fuse::Scripting::Observable* obs, int index, uObject* value);
     static Observable__InsertAt* New1(::g::Fuse::Scripting::Observable* obs, int index, uObject* value);

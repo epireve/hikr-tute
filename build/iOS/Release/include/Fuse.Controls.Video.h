@@ -44,6 +44,7 @@ struct Video_type : ::g::Fuse::Controls::Panel_type
 };
 
 Video_type* Video_typeof();
+void Video__ctor_7_fn(Video* __this);
 void Video__get_AutoPlay_fn(Video* __this, bool* __retval);
 void Video__set_AutoPlay_fn(Video* __this, bool* value);
 void Video__get_ContentAlignment_fn(Video* __this, int* __retval);
@@ -54,6 +55,7 @@ void Video__set_File_fn(Video* __this, ::g::Uno::UX::FileSource* value);
 void Video__getDuration_fn(::g::Fuse::Scripting::Context* c, Video* v, uArray* args, uObject** __retval);
 void Video__get_IsLooping_fn(Video* __this, bool* __retval);
 void Video__set_IsLooping_fn(Video* __this, bool* value);
+void Video__New4_fn(Video** __retval);
 void Video__OnDurationChanged_fn(Video* __this);
 void Video__OnParamChanged_fn(Video* __this);
 void Video__OnProgressChanged_fn(Video* __this, uObject* sender, ::g::Uno::EventArgs* args);
@@ -124,6 +126,7 @@ struct Video : ::g::Fuse::Controls::Panel
     uStrong<uDelegate*> RenderParamChanged1;
     uStrong<uDelegate*> SourceChanged1;
 
+    void ctor_7();
     bool AutoPlay();
     void AutoPlay(bool value);
     int ContentAlignment();
@@ -171,6 +174,7 @@ struct Video : ::g::Fuse::Controls::Panel
     float Volume();
     void Volume(float value);
     static uObject* getDuration(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
+    static Video* New4();
     static void pause(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
     static void resume(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);
     static void stop(::g::Fuse::Scripting::Context* c, Video* v, uArray* args);

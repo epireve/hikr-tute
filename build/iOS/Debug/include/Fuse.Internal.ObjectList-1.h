@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.ObjectList-1.Node.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Object.h>
+#include <Fuse.Internal.ObjectList-1.Node.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList__Enumerator;}}}
 
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal sealed class ObjectList<T> :13
+// internal sealed class ObjectList<T  :13
 // {
 struct ObjectList_type : uType
 {
@@ -51,7 +51,7 @@ void ObjectList__Unlock_fn(ObjectList* __this);
 
 struct ObjectList : uObject
 {
-    uStrong<uArray*> _nodes;
+    uStrong<uArray*  _nodes;
     int _capacity;
     int _size;
     bool _ordered;

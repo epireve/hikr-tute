@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.PageControl.AddedPage.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.ObserverMap-1.h>
+#include <Fuse.Controls.PageControl.AddedPage.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.ObserverMap-1.h 
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl__PagesMap;}}}
 
@@ -23,7 +23,7 @@ void PageControl__PagesMap__Unmap_fn(PageControl__PagesMap* __this, ::g::Fuse::C
 
 struct PageControl__PagesMap : ::g::Fuse::Reactive::ObserverMap
 {
-    uStrong< ::g::Fuse::Controls::PageControl*> PageControl;
+    uStrong< ::g::Fuse::Controls::PageControl*  PageControl;
 
     void Attach1(::g::Fuse::Controls::PageControl* pageControl, uObject* obs);
     void Detach1();

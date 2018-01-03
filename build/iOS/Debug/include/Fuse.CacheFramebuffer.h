@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct CacheFramebuffer;}}
 namespace g{namespace Uno{namespace Graphics{struct Framebuffer;}}}
 
@@ -35,7 +35,7 @@ void CacheFramebuffer__set_Width_fn(CacheFramebuffer* __this, int* value);
 struct CacheFramebuffer : uObject
 {
     bool _isPinned;
-    uStrong< ::g::Uno::Graphics::Framebuffer*> _fb;
+    uStrong< ::g::Uno::Graphics::Framebuffer*  _fb;
     bool _isContentValid;
     int _lastFrameUsed;
     int _Flags;

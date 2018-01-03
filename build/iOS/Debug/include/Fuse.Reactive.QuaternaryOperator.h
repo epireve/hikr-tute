@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct QuaternaryOperator;}}}
 
 namespace g{
@@ -34,12 +34,12 @@ void QuaternaryOperator__set_Third_fn(QuaternaryOperator* __this, ::g::Fuse::Rea
 
 struct QuaternaryOperator : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _First;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Fourth;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Second;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Third;
+    uStrong< ::g::Fuse::Reactive::Expression*  _First;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Fourth;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Second;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Third;
 
-    uObject* Compute(uObject* first, uObject* second, uObject* third, uObject* fourth) { uObject* __retval; return (((QuaternaryOperator_type*)__type)->fp_Compute)(this, first, second, third, fourth, &__retval), __retval; }
+    uObject* Compute(uObject* first, uObject* second, uObject* third, uObject* fourth) { uObject* __retval; return (((QuaternaryOperator_type*)__type)- fp_Compute)(this, first, second, third, fourth, &__retval), __retval; }
     ::g::Fuse::Reactive::Expression* First();
     void First(::g::Fuse::Reactive::Expression* value);
     ::g::Fuse::Reactive::Expression* Fourth();

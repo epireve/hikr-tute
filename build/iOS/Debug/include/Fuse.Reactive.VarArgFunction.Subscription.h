@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Subscription;}}}
@@ -32,14 +32,14 @@ void VarArgFunction__Subscription__PushData_fn(VarArgFunction__Subscription* __t
 
 struct VarArgFunction__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::VarArgFunction*> _func;
-    uStrong<uArray*> _arguments;
-    uStrong<uObject*> _context;
+    uStrong< ::g::Fuse::Reactive::VarArgFunction*  _func;
+    uStrong<uArray*  _arguments;
+    uStrong<uObject*  _context;
 
     void ctor_1(::g::Fuse::Reactive::VarArgFunction* func, uObject* context);
     void Init();
-    void OnNewArguments(uArray* args) { (((VarArgFunction__Subscription_type*)__type)->fp_OnNewArguments)(this, args); }
-    void OnNewPartialArguments(uArray* args) { (((VarArgFunction__Subscription_type*)__type)->fp_OnNewPartialArguments)(this, args); }
+    void OnNewArguments(uArray* args) { (((VarArgFunction__Subscription_type*)__type)- fp_OnNewArguments)(this, args); }
+    void OnNewPartialArguments(uArray* args) { (((VarArgFunction__Subscription_type*)__type)- fp_OnNewPartialArguments)(this, args); }
     void PushData();
     static void OnNewArguments(VarArgFunction__Subscription* __this, uArray* args) { VarArgFunction__Subscription__OnNewArguments_fn(__this, args); }
     static void OnNewPartialArguments(VarArgFunction__Subscription* __this, uArray* args) { VarArgFunction__Subscription__OnNewPartialArguments_fn(__this, args); }

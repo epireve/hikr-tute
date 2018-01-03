@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Internal{struct FontFaceDescriptor;}}}
 namespace g{namespace Fuse{namespace Internal{struct iOSSystemFont;}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -40,12 +40,12 @@ void iOSSystemFont__GetStyleName_fn(::g::ObjC::Object* descriptor, uString** __r
 
 struct iOSSystemFont : uObject
 {
-    static uSStrong< ::g::Uno::Collections::HashSet*> _families_;
-    static uSStrong< ::g::Uno::Collections::HashSet*>& _families() { return _families_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _fontPaths_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _fontPaths() { return _fontPaths_; }
-    static uSStrong<uArray*> _weightNames_;
-    static uSStrong<uArray*>& _weightNames() { return _weightNames_; }
+    static uSStrong< ::g::Uno::Collections::HashSet*  _families_;
+    static uSStrong< ::g::Uno::Collections::HashSet* & _families() { return _families_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _fontPaths_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _fontPaths() { return _fontPaths_; }
+    static uSStrong<uArray*  _weightNames_;
+    static uSStrong<uArray* & _weightNames() { return _weightNames_; }
 
     static void AddFamily(uString* name);
     static void AddFontPath(uString* name, uString* path);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct PreviewStateData;}}
 namespace g{namespace Fuse{struct PreviewStateData__Entry;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -17,7 +17,7 @@ void PreviewStateData__Consume_fn(PreviewStateData* __this, uString* key, uObjec
 
 struct PreviewStateData : uObject
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> _data;
+    uStrong< ::g::Uno::Collections::Dictionary*  _data;
 
     uObject* Consume(uString* key);
 };

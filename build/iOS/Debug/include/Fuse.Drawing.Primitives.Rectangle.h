@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Graphics.VertexAttributeInfo.h>
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Graphics.VertexAttributeInfo.h 
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct FloatBuffer;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct Coverage;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct Falloff;}}}}
@@ -39,15 +39,15 @@ void Rectangle__sub_fn(Rectangle* __this, uArray* a, uArray* b, uArray** __retva
 
 struct Rectangle : uObject
 {
-    static uSStrong<Rectangle*> Singleton_;
-    static uSStrong<Rectangle*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*> _strokeCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*> _fillCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::Falloff*> _shadowFalloff;
+    static uSStrong<Rectangle*  Singleton_;
+    static uSStrong<Rectangle* & Singleton() { return Singleton_; }
+    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*  _strokeCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*  _fillCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::Falloff*  _shadowFalloff;
     ::g::Uno::Graphics::VertexAttributeInfo _vertexInfo;
     ::g::Uno::Graphics::VertexAttributeInfo _edgeInfo;
-    uStrong< ::g::Fuse::Drawing::Internal::FloatBuffer*> _bufferDistance;
-    uStrong<uArray*> _uniforms;
+    uStrong< ::g::Fuse::Drawing::Internal::FloatBuffer*  _bufferDistance;
+    uStrong<uArray*  _uniforms;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_e1942474;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_e194259b;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_e1942cb4;

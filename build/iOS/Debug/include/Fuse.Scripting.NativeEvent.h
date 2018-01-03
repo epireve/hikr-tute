@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Function.h>
-#include <Fuse.Scripting.NativeProperty-2.h>
+#include <Fuse.Scripting.Function.h 
+#include <Fuse.Scripting.NativeProperty-2.h 
 namespace g{namespace Fuse{namespace Scripting{struct NativeEvent;}}}
 namespace g{namespace Uno{namespace Collections{struct Queue;}}}
 
@@ -23,9 +23,9 @@ void NativeEvent__SetProperty1_fn(NativeEvent* __this, ::g::Fuse::Scripting::Fun
 
 struct NativeEvent : ::g::Fuse::Scripting::NativeProperty
 {
-    uStrong< ::g::Uno::Collections::Queue*> _eventArgsQueue;
+    uStrong< ::g::Uno::Collections::Queue*  _eventArgsQueue;
     bool _queueEventsBeforeEvaluation;
-    uStrong< ::g::Fuse::Scripting::Function*> _jsFunction;
+    uStrong< ::g::Fuse::Scripting::Function*  _jsFunction;
 
     void ctor_4(uString* name, bool queueEventsBeforeHandlerIsSet);
     void DispatchQueue();

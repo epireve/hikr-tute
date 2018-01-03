@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Storage{struct StorageModule;}}}
 namespace g{namespace Uno{namespace Threading{struct Future1;}}}
@@ -26,8 +26,8 @@ void StorageModule__WriteAsync_fn(uArray* args, ::g::Uno::Threading::Future1** _
 
 struct StorageModule : ::g::Fuse::Scripting::NativeModule
 {
-    static uSStrong<StorageModule*> _instance_;
-    static uSStrong<StorageModule*>& _instance() { return _instance_; }
+    static uSStrong<StorageModule*  _instance_;
+    static uSStrong<StorageModule* & _instance() { return _instance_; }
 
     void ctor_2();
     static uObject* Delete(::g::Fuse::Scripting::Context* c, uArray* args);

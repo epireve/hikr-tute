@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ImageContainer;}}}
 namespace g{namespace Fuse{namespace Internal{struct SizingContainer;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
@@ -19,10 +19,14 @@ namespace Internal{
 // internal sealed class ImageContainer :18
 // {
 uType* ImageContainer_typeof();
+void ImageContainer__ctor__fn(ImageContainer* __this, uObject* owner);
 void ImageContainer__CheckPinning_fn(ImageContainer* __this);
 void ImageContainer__CreateMultiDensitySource_fn(ImageContainer* __this);
 void ImageContainer__get_Density_fn(ImageContainer* __this, float* __retval);
 void ImageContainer__set_Density_fn(ImageContainer* __this, float* value);
+void ImageContainer__get_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource** __retval);
+void ImageContainer__set_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* value);
+void ImageContainer__get_Files_fn(ImageContainer* __this, uObject** __retval);
 void ImageContainer__GetTexture_fn(ImageContainer* __this, ::g::Uno::Graphics::Texture2D** __retval);
 void ImageContainer__get_IsRooted_fn(ImageContainer* __this, bool* __retval);
 void ImageContainer__set_IsRooted_fn(ImageContainer* __this, bool* value);
@@ -30,6 +34,7 @@ void ImageContainer__get_IsVisible_fn(ImageContainer* __this, bool* __retval);
 void ImageContainer__set_IsVisible_fn(ImageContainer* __this, bool* value);
 void ImageContainer__get_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy** __retval);
 void ImageContainer__set_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy* value);
+void ImageContainer__New1_fn(uObject* owner, ImageContainer** __retval);
 void ImageContainer__OnFilesChanged_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* ignoreFile);
 void ImageContainer__OnParamChanged_fn(ImageContainer* __this);
 void ImageContainer__OnRooted_fn(ImageContainer* __this);
@@ -55,25 +60,29 @@ void ImageContainer__UpdateSourceListen_fn(ImageContainer* __this, bool* forceOf
 
 struct ImageContainer : uObject
 {
-    uWeak<uObject*> _owner;
-    uStrong< ::g::Fuse::Internal::SizingContainer*> Sizing;
+    uWeak<uObject*  _owner;
+    uStrong< ::g::Fuse::Internal::SizingContainer*  Sizing;
     float _density;
-    uStrong< ::g::Fuse::Resources::MemoryPolicy*> _memoryPolicy;
-    uStrong< ::g::Uno::Collections::RootableList*> _files;
+    uStrong< ::g::Fuse::Resources::MemoryPolicy*  _memoryPolicy;
+    uStrong< ::g::Uno::Collections::RootableList*  _files;
     bool _sourcePinned;
-    uStrong< ::g::Fuse::Resources::ImageSource*> _source;
+    uStrong< ::g::Fuse::Resources::ImageSource*  _source;
     bool _isSourceListen;
     bool _isRooted;
     int _resampleMode;
     bool _isVisible;
-    uStrong<uDelegate*> ParamChanged1;
-    uStrong<uDelegate*> SourceChanged1;
-    uStrong<uDelegate*> SourceError1;
+    uStrong<uDelegate*  ParamChanged1;
+    uStrong<uDelegate*  SourceChanged1;
+    uStrong<uDelegate*  SourceError1;
 
+    void ctor_(uObject* owner);
     void CheckPinning();
     void CreateMultiDensitySource();
     float Density();
     void Density(float value);
+    ::g::Uno::UX::FileSource* File();
+    void File(::g::Uno::UX::FileSource* value);
+    uObject* Files();
     ::g::Uno::Graphics::Texture2D* GetTexture();
     bool IsRooted();
     void IsRooted(bool value);
@@ -103,6 +112,7 @@ struct ImageContainer : uObject
     int StretchMode();
     void StretchMode(int value);
     void UpdateSourceListen(bool forceOff);
+    static ImageContainer* New1(uObject* owner);
 };
 // }
 

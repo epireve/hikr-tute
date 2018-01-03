@@ -1,13 +1,13 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Bool.h>
-#include <Uno.Char.h>
-#include <Uno.Data.Json.JsonWriter.h>
-#include <Uno.Int.h>
-#include <Uno.Object.h>
-#include <Uno.String.h>
-#include <Uno.Text.StringBuilder.h>
+#include <Uno.Bool.h 
+#include <Uno.Char.h 
+#include <Uno.Data.Json.JsonWriter.h 
+#include <Uno.Int.h 
+#include <Uno.Object.h 
+#include <Uno.String.h 
+#include <Uno.Text.StringBuilder.h 
 static uString* STRINGS[9];
 static uType* TYPES[1];
 
@@ -32,18 +32,18 @@ static void JsonWriter_build(uType* type)
     ::STRINGS[6] = uString::Const("\\t");
     ::STRINGS[7] = uString::Const("\\u{0:x4}");
     ::STRINGS[8] = uString::Const("\"");
-    ::TYPES[0] = uObject_typeof()->Array();
+    ::TYPES[0] = uObject_typeof()- Array();
 }
 
 uClassType* JsonWriter_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Data.Json.JsonWriter", options);
-    type->fp_build_ = JsonWriter_build;
+    type- fp_build_ = JsonWriter_build;
     return type;
 }
 
@@ -62,53 +62,53 @@ void JsonWriter__QuoteString_fn(uString* str, uString** __retval)
 // private static void EscapeString(string str, Uno.Text.StringBuilder sb) [static] :308
 void JsonWriter::EscapeString1(uString* str, ::g::Uno::Text::StringBuilder* sb)
 {
-    for (int i = 0; i < uPtr(str)->Length(); ++i)
+    for (int i = 0; i < uPtr(str)- Length(); ++i)
     {
-        uChar ch = uPtr(str)->Item(i);
+        uChar ch = uPtr(str)- Item(i);
 
         switch (ch)
         {
             case '"':
             {
-                uPtr(sb)->Append2(::STRINGS[0/*"\\\""*/]);
+                uPtr(sb)- Append2(::STRINGS[0/*"\\\""*/]);
                 break;
             }
             case '\\':
             {
-                uPtr(sb)->Append2(::STRINGS[1/*"\\\\"*/]);
+                uPtr(sb)- Append2(::STRINGS[1/*"\\\\"*/]);
                 break;
             }
             case 8:
             {
-                uPtr(sb)->Append2(::STRINGS[2/*"\\b"*/]);
+                uPtr(sb)- Append2(::STRINGS[2/*"\\b"*/]);
                 break;
             }
             case 12:
             {
-                uPtr(sb)->Append2(::STRINGS[3/*"\\f"*/]);
+                uPtr(sb)- Append2(::STRINGS[3/*"\\f"*/]);
                 break;
             }
             case 10:
             {
-                uPtr(sb)->Append2(::STRINGS[4/*"\\n"*/]);
+                uPtr(sb)- Append2(::STRINGS[4/*"\\n"*/]);
                 break;
             }
             case 13:
             {
-                uPtr(sb)->Append2(::STRINGS[5/*"\\r"*/]);
+                uPtr(sb)- Append2(::STRINGS[5/*"\\r"*/]);
                 break;
             }
             case 9:
             {
-                uPtr(sb)->Append2(::STRINGS[6/*"\\t"*/]);
+                uPtr(sb)- Append2(::STRINGS[6/*"\\t"*/]);
                 break;
             }
             default:
             {
                 if ((int)ch <= 31)
-                    uPtr(sb)->Append2(::g::Uno::String::Format(::STRINGS[7/*"\\u{0:x4}"*/], uArray::Init<uObject*>(::TYPES[0/*object[]*/], 1, uBox<int>(::g::Uno::Int_typeof(), (int)ch))));
+                    uPtr(sb)- Append2(::g::Uno::String::Format(::STRINGS[7/*"\\u{0:x4}"*/], uArray::Init<uObject* (::TYPES[0/*object[]*/], 1, uBox<int (::g::Uno::Int_typeof(), (int)ch))));
                 else
-                    uPtr(sb)->Append(ch);
+                    uPtr(sb)- Append(ch);
 
                 break;
             }
@@ -120,10 +120,10 @@ void JsonWriter::EscapeString1(uString* str, ::g::Uno::Text::StringBuilder* sb)
 uString* JsonWriter::QuoteString(uString* str)
 {
     ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
-    sb->Append2(::STRINGS[8/*"\""*/]);
+    sb- Append2(::STRINGS[8/*"\""*/]);
     JsonWriter::EscapeString1(str, sb);
-    sb->Append2(::STRINGS[8/*"\""*/]);
-    return sb->ToString();
+    sb- Append2(::STRINGS[8/*"\""*/]);
+    return sb- ToString();
 }
 // }
 

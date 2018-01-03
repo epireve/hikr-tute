@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct UnaryOperator;}}}
 
 namespace g{
@@ -21,7 +21,7 @@ void UnaryOperator__Subscribe_fn(UnaryOperator* __this, uObject* context, uObjec
 
 struct UnaryOperator : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _Operand;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Operand;
 
     uObject* Compute(uObject* operand);
     void OnNewOperand(uObject* listener, uObject* operand);

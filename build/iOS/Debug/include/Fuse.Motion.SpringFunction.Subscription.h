@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Uno.Float4.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Uno.Float4.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct ElasticForce;}}}}
 namespace g{namespace Fuse{namespace Motion{struct SpringFunction;}}}
 namespace g{namespace Fuse{namespace Motion{struct SpringFunction__Subscription;}}}
@@ -33,12 +33,12 @@ void SpringFunction__Subscription__StopSimulation_fn(SpringFunction__Subscriptio
 
 struct SpringFunction__Subscription : uObject
 {
-    uStrong< ::g::Fuse::Motion::SpringFunction*> _sf;
+    uStrong< ::g::Fuse::Motion::SpringFunction*  _sf;
     bool _isSimulating;
     bool _hasStartValue;
-    uStrong< ::g::Fuse::Motion::Simulation::ElasticForce*> _sim;
-    uStrong<uObject*> _valueSub;
-    uStrong<uObject*> _listener;
+    uStrong< ::g::Fuse::Motion::Simulation::ElasticForce*  _sim;
+    uStrong<uObject*  _valueSub;
+    uStrong<uObject*  _listener;
 
     void ctor_(::g::Fuse::Motion::SpringFunction* sf, uObject* context, uObject* listener);
     void Dispose();

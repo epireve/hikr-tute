@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.VarArgFunction.Subscription.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.VarArgFunction.Subscription.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct SimpleVarArgFunction;}}}
 namespace g{namespace Fuse{namespace Reactive{struct SimpleVarArgFunction__SimpleSubscription;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
@@ -24,8 +24,8 @@ void SimpleVarArgFunction__SimpleSubscription__OnNewPartialArguments_fn(SimpleVa
 
 struct SimpleVarArgFunction__SimpleSubscription : ::g::Fuse::Reactive::VarArgFunction__Subscription
 {
-    uStrong<uObject*> _listener;
-    uStrong< ::g::Fuse::Reactive::SimpleVarArgFunction*> _func1;
+    uStrong<uObject*  _listener;
+    uStrong< ::g::Fuse::Reactive::SimpleVarArgFunction*  _func1;
 
     void ctor_2(::g::Fuse::Reactive::SimpleVarArgFunction* func, uObject* context, uObject* listener);
     static SimpleVarArgFunction__SimpleSubscription* New1(::g::Fuse::Reactive::SimpleVarArgFunction* func, uObject* context, uObject* listener);

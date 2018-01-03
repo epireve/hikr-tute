@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno/_config.h>
+#include <Uno/_config.h 
 struct uArray;
 struct uArrayType;
 struct uByRefType;
@@ -21,9 +21,9 @@ struct uTRef;
 struct uT;
 struct uWeakObject;
 struct uThreadData;
-template<class T> struct uStrong;
-template<class T> struct uSWeak;
-template<class T> struct uWeak;
+template<class T  struct uStrong;
+template<class T  struct uSWeak;
+template<class T  struct uWeak;
 
 /**
     \addtogroup Memory
@@ -139,7 +139,7 @@ struct uObjectRefs
     size_t* Strong;
 };
 
-template<class T>
+template<class T 
 struct uStrongRef
 {
     T* _address;
@@ -159,13 +159,13 @@ struct uStrongRef
     operator uTRef&() {
         return (uTRef&)_address;
     }
-    template<class U>
+    template<class U 
     explicit operator U() {
         return (U)_address;
     }
 };
 
-template<class T>
+template<class T 
 struct uWeakRef
 {
     uWeakObject** _address;
@@ -185,13 +185,13 @@ struct uWeakRef
     operator uTRef&() {
         return (uTRef&)&_value;
     }
-    template<class U>
+    template<class U 
     explicit operator U() {
         return (U)&_value;
     }
 };
 
-template<class T>
+template<class T 
 struct uSStrong
 {
     T _object;
@@ -202,14 +202,14 @@ struct uSStrong
         : _object(object) {
         uRetain((uObject*)object);
     }
-    uSStrong<T>& operator =(T object) {
+    uSStrong<T & operator =(T object) {
         uStoreStrong((uObject**)&_object, (uObject*)object);
         return *this;
     }
-    uSStrong<T>& operator =(const uSStrong<T>& copy) {
+    uSStrong<T & operator =(const uSStrong<T & copy) {
         return *this = copy._object;
     }
-    uSStrong<T>& operator =(const uSWeak<T>& copy) {
+    uSStrong<T & operator =(const uSWeak<T & copy) {
         return *this = (T)uLoadWeak(copy._object);
     }
     bool operator ==(T object) const {
@@ -221,22 +221,22 @@ struct uSStrong
     bool operator !() const {
         return !_object;
     }
-    uStrongRef<T> operator &() {
+    uStrongRef<T  operator &() {
         return &_object;
     }
     operator T() {
         return _object;
     }
-    T operator ->() {
+    T operator - () {
         return _object;
     }
-    template<class U>
+    template<class U 
     explicit operator U() {
         return (U)_object;
     }
 };
 
-template<class T>
+template<class T 
 struct uSWeak
 {
     uWeakObject* _object;
@@ -247,72 +247,72 @@ struct uSWeak
         : _object(NULL) {
         uStoreWeak(&_object, (uObject*)object);
     }
-    uSWeak<T>& operator =(T object) {
+    uSWeak<T & operator =(T object) {
         uStoreWeak(&_object, (uObject*)object);
         return *this;
     }
-    uSWeak<T>& operator =(const uSStrong<T>& copy) {
+    uSWeak<T & operator =(const uSStrong<T & copy) {
         return *this = copy._object;
     }
-    uSWeak<T>& operator =(const uSWeak<T>& copy) {
+    uSWeak<T & operator =(const uSWeak<T & copy) {
         _object = copy._object;
         return *this;
     }
     bool operator ==(T object) const {
-        return (T)uLoadWeak(const_cast<uWeakObject*>(_object)) == object;
+        return (T)uLoadWeak(const_cast<uWeakObject* (_object)) == object;
     }
     bool operator !=(T object) const {
-        return (T)uLoadWeak(const_cast<uWeakObject*>(_object)) != object;
+        return (T)uLoadWeak(const_cast<uWeakObject* (_object)) != object;
     }
     bool operator !() const {
-        return !uLoadWeak(const_cast<uWeakObject*>(_object));
+        return !uLoadWeak(const_cast<uWeakObject* (_object));
     }
-    uWeakRef<T> operator &() {
+    uWeakRef<T  operator &() {
         return &_object;
     }
     operator T() {
         return (T)uLoadWeak(_object);
     }
-    T operator ->() {
+    T operator - () {
         return (T)uLoadWeak(_object);
     }
-    template<class U>
+    template<class U 
     explicit operator U() {
         return (U)uLoadWeak(_object);
     }
 };
 
-template<class T>
-struct uStrong : uSStrong<T>
+template<class T 
+struct uStrong : uSStrong<T 
 {
-    using uSStrong<T>::_object;
-    using uSStrong<T>::operator =;
+    using uSStrong<T ::_object;
+    using uSStrong<T ::operator =;
 
     uStrong() {
         _object = NULL;
     }
     uStrong(T object)
-        : uSStrong<T>(object) {
+        : uSStrong<T (object) {
     }
     uStrong(const uStrong& copy)
-        : uSStrong<T>(copy._object) {
+        : uSStrong<T (copy._object) {
     }
     ~uStrong() {
         uRelease((uObject*)_object);
     }
 };
 
-template<class T>
-struct uWeak : uSWeak<T>
+template<class T 
+struct uWeak : uSWeak<T 
 {
-    using uSWeak<T>::_object;
-    using uSWeak<T>::operator =;
+    using uSWeak<T ::_object;
+    using uSWeak<T ::operator =;
 
     uWeak() {
         _object = NULL;
     }
     uWeak(T object)
-        : uSWeak<T>(object) {
+        : uSWeak<T (object) {
     }
     ~uWeak() {
         uStoreWeak(&_object, NULL);

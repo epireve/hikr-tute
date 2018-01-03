@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct DiagnosticsImplModule;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 
@@ -22,8 +22,8 @@ void DiagnosticsImplModule__Report_fn(DiagnosticsImplModule* __this, ::g::Fuse::
 
 struct DiagnosticsImplModule : ::g::Fuse::Scripting::NativeModule
 {
-    static uSStrong<DiagnosticsImplModule*> _instance_;
-    static uSStrong<DiagnosticsImplModule*>& _instance() { return _instance_; }
+    static uSStrong<DiagnosticsImplModule*  _instance_;
+    static uSStrong<DiagnosticsImplModule* & _instance() { return _instance_; }
 
     void ctor_2();
     uObject* Report(::g::Fuse::Scripting::Context* context, uArray* args);

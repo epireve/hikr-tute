@@ -1,9 +1,9 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.FileSystem/1.4.2/UnifiedPaths.iOS.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.FileSystem.UnifiedPaths.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.FileSystem.UnifiedPaths.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -17,13 +17,13 @@ static void UnifiedPaths_build(uType* type)
 
 uClassType* UnifiedPaths_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.FileSystem.UnifiedPaths", options);
-    type->fp_build_ = UnifiedPaths_build;
+    type- fp_build_ = UnifiedPaths_build;
     return type;
 }
 
@@ -44,7 +44,7 @@ uString* UnifiedPaths::GetCacheDirectory()
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] () -> ::NSString*
+        return ::uObjC::UnoString([] () -  ::NSString*
         {
             return NSTemporaryDirectory();
         } ());
@@ -58,7 +58,7 @@ uString* UnifiedPaths::GetDataDirectory()
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] () -> ::NSString*
+        return ::uObjC::UnoString([] () -  ::NSString*
         {
             return NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
         } ());

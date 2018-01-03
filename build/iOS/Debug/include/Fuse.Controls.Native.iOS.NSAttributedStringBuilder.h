@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4.h>
-#include <Uno.Object.h>
+#include <Uno.Float4.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct NSAttributedStringBuilder;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 
@@ -37,8 +37,8 @@ struct NSAttributedStringBuilder : uObject
 {
     ::g::Uno::Float4 _color;
     float _lineSpacing;
-    uStrong<uString*> _value;
-    uStrong< ::g::ObjC::Object*> _font;
+    uStrong<uString*  _value;
+    uStrong< ::g::ObjC::Object*  _font;
     int _alignment;
     int _textWrapping;
 

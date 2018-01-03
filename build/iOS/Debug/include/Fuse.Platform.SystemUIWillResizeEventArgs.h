@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.EventArgs.h>
-#include <Uno.Rect.h>
+#include <Uno.EventArgs.h 
+#include <Uno.Rect.h 
 namespace g{namespace Fuse{namespace Platform{struct SystemUIWillResizeEventArgs;}}}
 
 namespace g{

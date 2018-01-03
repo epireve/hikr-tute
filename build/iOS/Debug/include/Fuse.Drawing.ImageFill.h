@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.DynamicBrush.h>
-#include <Fuse.Drawing.ImageFill.DrawParams.h>
-#include <Fuse.ILoading.h>
-#include <Fuse.Internal.IImageContainerOwner.h>
-#include <Fuse.Resources.IMemoryResource.h>
-#include <Uno.Float4.h>
+#include <Fuse.Drawing.DynamicBrush.h 
+#include <Fuse.Drawing.ImageFill.DrawParams.h 
+#include <Fuse.ILoading.h 
+#include <Fuse.Internal.IImageContainerOwner.h 
+#include <Fuse.Resources.IMemoryResource.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}
 namespace g{namespace Fuse{namespace Internal{struct ImageContainer;}}}
 namespace g{namespace Fuse{namespace Internal{struct SizingContainer;}}}
@@ -63,8 +63,8 @@ struct ImageFill : ::g::Fuse::Drawing::DynamicBrush
     static ::g::Uno::UX::Selector& _colorName() { return _colorName_; }
     ::g::Uno::Float4 _color;
     ImageFill__DrawParams _drawParams;
-    uStrong< ::g::Uno::Graphics::Framebuffer*> _tempTexture;
-    uStrong< ::g::Fuse::Internal::ImageContainer*> _container;
+    uStrong< ::g::Uno::Graphics::Framebuffer*  _tempTexture;
+    uStrong< ::g::Fuse::Internal::ImageContainer*  _container;
     static ::g::Uno::UX::Selector _wrapModeName_;
     static ::g::Uno::UX::Selector& _wrapModeName() { return _wrapModeName_; }
     int _wrapMode;

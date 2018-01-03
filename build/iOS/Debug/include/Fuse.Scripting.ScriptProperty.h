@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.ScriptMember.h>
+#include <Fuse.Scripting.ScriptMember.h 
 namespace g{namespace Fuse{namespace Scripting{struct ScriptProperty;}}}
 namespace g{namespace Uno{namespace UX{struct Property;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -23,10 +23,10 @@ void ScriptProperty__ctor_1_fn(ScriptProperty* __this, uString* name, uString* m
 
 struct ScriptProperty : ::g::Fuse::Scripting::ScriptMember
 {
-    uStrong<uString*> Modifier;
+    uStrong<uString*  Modifier;
 
     void ctor_1(uString* name, uString* modifier);
-    ::g::Uno::UX::Property* GetProperty(::g::Uno::UX::PropertyObject* owner) { ::g::Uno::UX::Property* __retval; return (((ScriptProperty_type*)__type)->fp_GetProperty)(this, owner, &__retval), __retval; }
+    ::g::Uno::UX::Property* GetProperty(::g::Uno::UX::PropertyObject* owner) { ::g::Uno::UX::Property* __retval; return (((ScriptProperty_type*)__type)- fp_GetProperty)(this, owner, &__retval), __retval; }
 };
 // }
 

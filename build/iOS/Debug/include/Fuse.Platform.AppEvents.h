@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Platform{struct AppEvents;}}}
 
 namespace g{
@@ -18,8 +18,8 @@ void AppEvents__OnLowMemoryWarning_fn(uObject* s, uObject* a);
 
 struct AppEvents : uObject
 {
-    static uSStrong<uDelegate*> LowMemoryWarning1_;
-    static uSStrong<uDelegate*>& LowMemoryWarning1() { return AppEvents_typeof()->Init(), LowMemoryWarning1_; }
+    static uSStrong<uDelegate*  LowMemoryWarning1_;
+    static uSStrong<uDelegate* & LowMemoryWarning1() { return AppEvents_typeof()- Init(), LowMemoryWarning1_; }
 
     static void OnLowMemoryWarning(uObject* s, uObject* a);
     static void add_LowMemoryWarning(uDelegate* value);

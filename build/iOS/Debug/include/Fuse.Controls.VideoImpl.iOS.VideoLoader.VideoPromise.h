@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.VideoImpl.IVideoPlayer.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Threading.Promise-1.h>
+#include <Fuse.Controls.VideoImpl.IVideoPlayer.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Threading.Promise-1.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{namespace iOS{struct VideoLoader__VideoPromise;}}}}}
 
 namespace g{
@@ -27,7 +27,7 @@ void VideoLoader__VideoPromise__ScheduleDispose_fn(VideoLoader__VideoPromise* __
 
 struct VideoLoader__VideoPromise : ::g::Uno::Threading::Promise
 {
-    uStrong<uObject*> _player;
+    uStrong<uObject*  _player;
     bool _readyToDispose;
     bool _isCancelled;
 

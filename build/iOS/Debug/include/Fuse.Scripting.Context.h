@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
@@ -44,20 +44,20 @@ void Context__Wrap_fn(Context* __this, uObject* obj, uObject** __retval);
 
 struct Context : uObject
 {
-    uStrong< ::g::Uno::Threading::ConcurrentDictionary*> _moduleResults;
-    uStrong<uObject*> _worker;
-    uStrong< ::g::Fuse::Scripting::Function*> _identity;
-    uStrong< ::g::Fuse::Scripting::Function*> _parseJson;
-    uStrong< ::g::Fuse::Scripting::Function*> _newObject;
-    uStrong< ::g::Fuse::Scripting::Function*> _newArray;
+    uStrong< ::g::Uno::Threading::ConcurrentDictionary*  _moduleResults;
+    uStrong<uObject*  _worker;
+    uStrong< ::g::Fuse::Scripting::Function*  _identity;
+    uStrong< ::g::Fuse::Scripting::Function*  _parseJson;
+    uStrong< ::g::Fuse::Scripting::Function*  _newObject;
+    uStrong< ::g::Fuse::Scripting::Function*  _newArray;
 
     void ctor_(uObject* worker);
     ::g::Fuse::Scripting::Function* CallbackToFunction(uDelegate* c);
     void DeleteGlobalModuleResult(::g::Fuse::Scripting::ModuleResult* mr);
     uObject* Dispatcher();
-    void Dispose() { (((Context_type*)__type)->fp_Dispose)(this); }
-    uObject* Evaluate(uString* fileName, uString* code) { uObject* __retval; return (((Context_type*)__type)->fp_Evaluate)(this, fileName, code, &__retval), __retval; }
-    ::g::Fuse::Scripting::Object* GlobalObject() { ::g::Fuse::Scripting::Object* __retval; return (((Context_type*)__type)->fp_get_GlobalObject)(this, &__retval), __retval; }
+    void Dispose() { (((Context_type*)__type)- fp_Dispose)(this); }
+    uObject* Evaluate(uString* fileName, uString* code) { uObject* __retval; return (((Context_type*)__type)- fp_Evaluate)(this, fileName, code, &__retval), __retval; }
+    ::g::Fuse::Scripting::Object* GlobalObject() { ::g::Fuse::Scripting::Object* __retval; return (((Context_type*)__type)- fp_get_GlobalObject)(this, &__retval), __retval; }
     void Invoke(uDelegate* action);
     ::g::Fuse::Scripting::Array* NewArray(uArray* values);
     ::g::Fuse::Scripting::Object* NewObject();

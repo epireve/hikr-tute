@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebuffer;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebufferPoolEntry;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedListNode;}}}
@@ -30,9 +30,9 @@ void ElementAtlasFramebuffer__Unpin_fn(ElementAtlasFramebuffer* __this);
 
 struct ElementAtlasFramebuffer : uObject
 {
-    uStrong< ::g::Uno::Collections::LinkedListNode*> _fb;
+    uStrong< ::g::Uno::Collections::LinkedListNode*  _fb;
     bool _Pinned;
-    uStrong<uDelegate*> FramebufferCollected1;
+    uStrong<uDelegate*  FramebufferCollected1;
 
     void ctor_();
     void Collect();

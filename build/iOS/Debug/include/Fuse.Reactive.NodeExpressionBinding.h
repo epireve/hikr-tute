@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IContext.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.IContext.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct NodeExpressionBinding;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -31,10 +31,10 @@ void NodeExpressionBinding__SubscribeResource_fn(NodeExpressionBinding* __this, 
 
 struct NodeExpressionBinding : uObject
 {
-    uStrong<uObject*> _expr;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _sub;
-    uStrong< ::g::Fuse::Node*> _node;
+    uStrong<uObject*  _expr;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _sub;
+    uStrong< ::g::Fuse::Node*  _node;
 
     void ctor_(uObject* expr, ::g::Fuse::Node* node, uObject* listener);
     void CompleteInit();

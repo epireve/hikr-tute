@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct QuaternaryOperator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct QuaternaryOperator__Subscription;}}}
 
@@ -25,20 +25,20 @@ void QuaternaryOperator__Subscription__OnNewOperands_fn(QuaternaryOperator__Subs
 
 struct QuaternaryOperator__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::QuaternaryOperator*> _qo;
-    uStrong<uObject*> _first;
-    uStrong<uObject*> _second;
-    uStrong<uObject*> _third;
-    uStrong<uObject*> _fourth;
+    uStrong< ::g::Fuse::Reactive::QuaternaryOperator*  _qo;
+    uStrong<uObject*  _first;
+    uStrong<uObject*  _second;
+    uStrong<uObject*  _third;
+    uStrong<uObject*  _fourth;
     bool _hasFirst;
     bool _hasSecond;
     bool _hasThird;
     bool _hasFourth;
-    uStrong<uObject*> _firstSub;
-    uStrong<uObject*> _secondSub;
-    uStrong<uObject*> _thirdSub;
-    uStrong<uObject*> _fourthSub;
-    uStrong<uObject*> _listener;
+    uStrong<uObject*  _firstSub;
+    uStrong<uObject*  _secondSub;
+    uStrong<uObject*  _thirdSub;
+    uStrong<uObject*  _fourthSub;
+    uStrong<uObject*  _listener;
 
     void ctor_1(::g::Fuse::Reactive::QuaternaryOperator* qo, uObject* listener);
     void Init(uObject* context);

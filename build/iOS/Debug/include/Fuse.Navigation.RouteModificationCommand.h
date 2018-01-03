@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IExpression.h>
-#include <Fuse.Reactive.VarArgFunction.h>
+#include <Fuse.Reactive.IExpression.h 
+#include <Fuse.Reactive.VarArgFunction.h 
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterRequest;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
@@ -24,7 +24,7 @@ void RouteModificationCommand__Subscribe_fn(RouteModificationCommand* __this, uO
 
 struct RouteModificationCommand : ::g::Fuse::Reactive::VarArgFunction
 {
-    bool ProcessArguments(::g::Fuse::Navigation::RouterRequest* request, uArray* args) { bool __retval; return (((RouteModificationCommand_type*)__type)->fp_ProcessArguments)(this, request, args, &__retval), __retval; }
+    bool ProcessArguments(::g::Fuse::Navigation::RouterRequest* request, uArray* args) { bool __retval; return (((RouteModificationCommand_type*)__type)- fp_ProcessArguments)(this, request, args, &__retval), __retval; }
 };
 // }
 

@@ -1,10 +1,10 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.iOS/1.4.2/iOSApp.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Device.h>
-#include <UIKit/UIKit.h>
-#include <Uno.Int.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.Device.h 
+#include <UIKit/UIKit.h 
+#include <Uno.Int.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -17,13 +17,13 @@ static void Device_build(uType* type)
 
 uClassType* Device_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Device", options);
-    type->fp_build_ = Device_build;
+    type- fp_build_ = Device_build;
     return type;
 }
 

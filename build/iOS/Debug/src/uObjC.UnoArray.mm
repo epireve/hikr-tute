@@ -1,6 +1,6 @@
-#include <Uno/Uno.h>
-#include <uObjC.Foreign.h>
-#include <uObjC.UnoArray.h>
+#include <Uno/Uno.h 
+#include <uObjC.Foreign.h 
+#include <uObjC.UnoArray.h 
 
 @implementation StrongUnoArray
 {
@@ -82,7 +82,7 @@
 - (NSUInteger)count
 {
 	uForeignPool autoReleasePool;
-	return (NSUInteger)_unoArray->Length();
+	return (NSUInteger)_unoArray- Length();
 }
 
 - (void)dealloc

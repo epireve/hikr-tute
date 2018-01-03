@@ -1,7 +1,7 @@
 // This file was generated based on '.uno/ux13/MainView.g.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.EditHikePage.h>
+#include <_root.HomePage.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template1.h>
 #include <Fuse.Navigation.Router.h>
@@ -20,12 +20,12 @@ namespace g{
 static void MainView__Template1__cctor__fn(uType* __type)
 {
     ::g::Uno::UX::Selector_typeof()->Init();
-    MainView__Template1::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"editHike"*/]);
+    MainView__Template1::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"home"*/]);
 }
 
 static void MainView__Template1_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("editHike");
+    ::STRINGS[0] = uString::Const("home");
     type->SetFields(2,
         ::g::MainView_typeof(), offsetof(MainView__Template1, __parent1), uFieldFlagsWeak,
         ::g::MainView_typeof(), offsetof(MainView__Template1, __parentInstance1), uFieldFlagsWeak,
@@ -58,7 +58,7 @@ void MainView__Template1__ctor_1_fn(MainView__Template1* __this, ::g::MainView* 
 // public override sealed object New() :38
 void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retval)
 {
-    ::g::EditHikePage* __self1 = ::g::EditHikePage::New5(uPtr(__this->__parent1)->router);
+    ::g::HomePage* __self1 = ::g::HomePage::New6(uPtr(__this->__parent1)->router);
     __self1->Name(MainView__Template1::__selector0_);
     return *__retval = __self1, void();
 }
@@ -74,7 +74,7 @@ void MainView__Template1__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 // public Template1(MainView parent, MainView parentInstance) [instance] :30
 void MainView__Template1::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
-    ctor_(::STRINGS[0/*"editHike"*/], false);
+    ctor_(::STRINGS[0/*"home"*/], false);
     __parent1 = parent;
     __parentInstance1 = parentInstance;
 }

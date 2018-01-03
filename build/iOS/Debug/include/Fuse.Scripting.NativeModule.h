@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.Module.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.Module.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeMember;}}}
@@ -33,8 +33,8 @@ void NativeModule__remove_Reset_fn(NativeModule* __this, uDelegate* value);
 
 struct NativeModule : ::g::Fuse::Scripting::Module
 {
-    uStrong< ::g::Uno::Collections::List*> _members;
-    uStrong<uDelegate*> Reset1;
+    uStrong< ::g::Uno::Collections::List*  _members;
+    uStrong<uDelegate*  Reset1;
 
     void ctor_1();
     void AddMember(::g::Fuse::Scripting::NativeMember* member);

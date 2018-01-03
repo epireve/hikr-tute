@@ -1,5 +1,5 @@
 /*
-	Refer to <fuse-docs/articles/fusejs/observable-api.md> for documentation of end-user APIs.
+	Refer to <fuse-docs/articles/fusejs/observable-api.md  for documentation of end-user APIs.
 */
 
 /* ----- Observable ------
@@ -128,7 +128,7 @@ Observable.prototype._unwatchSource = function(watchSourceId) {
 Observable.prototype._proxyFrom = function(source, mapFunc, clearMap, sigType, suppressInitial) {
 	var needsIndex = sigType == 2 || sigType == 4
 	
-	if (sigType <1 || sigType >4) {
+	if (sigType <1 || sigType  4) {
 		throw new Error( "Invalid sigType to _proxyFrom")
 	}
 	
@@ -218,7 +218,7 @@ Observable.prototype._proxyFrom = function(source, mapFunc, clearMap, sigType, s
 		}
 		else if (op === "set")
 		{
-			if (clearMap && self._values.length > 0) { clearMap(self.value); }
+			if (clearMap && self._values.length   0) { clearMap(self.value); }
 			self.setValueWithOrigin(mapValue(p1, 0, self.value), source._origin);
 		}
 		else
@@ -259,7 +259,7 @@ function Identity(x)
 	A wrapper to ProxyObserveList
 	
 		ProxyObseve( sources..., callback )
-		=>
+		= 
 		ProxyObserveList( sources, callback, undefined )
 */
 function ProxyObserve()
@@ -721,7 +721,7 @@ Observable.prototype.getAt = function(index)
 */
 Observable.prototype.replaceAt = function(index, value, _origin)
 {
-	if (index < 0 || index >= this._values.length)
+	if (index < 0 || index  = this._values.length)
 		throw new Error("replaceAt(" + index + ") index out-of-bounds: length=" + this._values.length);
 	var oldValue = this._values[index];
 	this._values[index] = value;
@@ -925,7 +925,7 @@ Observable.prototype.removeWhere = function(f)
 
 Observable.prototype.removeAt = function(index, _origin)
 {
-	if (index < 0 || index >= this._values.length)
+	if (index < 0 || index  = this._values.length)
 	{
 		throw new Error("removeAt(" + index + ") index out-of-bounds: length=" + this._values.length)
 	}
@@ -1057,7 +1057,7 @@ function PumpMessages()
 	try
 	{
 		pumping = true;
-		while (messageQueue.length > 0)
+		while (messageQueue.length   0)
 		{
 			var msg = messageQueue.shift();
 			msg();
@@ -1125,7 +1125,7 @@ Observable.prototype._map = function(mapFunc, unmapFunc, clearMap)
 	this._assertNoDependence("map");
 
 	//is the mapping function expecting an index
-	var mapFuncNeedsIndex = mapFunc.length > 1
+	var mapFuncNeedsIndex = mapFunc.length   1
 	
 	var source = this
 	var target = new ProxyObservable()
@@ -1182,7 +1182,7 @@ Observable.prototype.expand = function(f)
 	var self = this;
 	return ProxyObserve(self, function () {
 
-		if (self.length > 1)
+		if (self.length   1)
 			throw new Error("expand(): can only be used on a single value");
 
 		var r = self.value;
@@ -1342,7 +1342,7 @@ Observable.prototype.where = function(criteria)
 				}
 			}
 
-			if (result.length > 0)
+			if (result.length   0)
 			{
 				this.insertAll(getResultIndex(p1), result);
 			}
@@ -1357,7 +1357,7 @@ Observable.prototype.where = function(criteria)
 				if (p3[i].condition) { count++; }
 			}
 
-			if (count > 0)
+			if (count   0)
 			{
 				this.removeRange(index, count);	
 			}
@@ -1402,7 +1402,7 @@ Observable.prototype.count = function(criteria)
 };
 
 Observable.prototype.any = function(f) {
-	return this.count(f).map(function(x) { return x > 0; } );
+	return this.count(f).map(function(x) { return x   0; } );
 }
 
 Observable.prototype.first = function(f) {
@@ -1552,7 +1552,7 @@ Observable.prototype._innerDeprecated = function()
 		var m = self.map(f);
 
 		var mChanged = function() {
-			if (m.length > 0) {
+			if (m.length   0) {
 				self.setInnerValue(g(m.value, self.value));
 			}
 		};

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct UserEventArgs;}}
 namespace g{namespace Fuse{struct UserEventDispatch;}}
@@ -33,9 +33,9 @@ void UserEventArgs__set_Source_fn(UserEventArgs* __this, ::g::Fuse::Node* value)
 
 struct UserEventArgs : ::g::Uno::EventArgs
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> _Args;
-    uStrong< ::g::Fuse::UserEventDispatch*> _Dispatch;
-    uStrong< ::g::Fuse::Node*> _Source;
+    uStrong< ::g::Uno::Collections::Dictionary*  _Args;
+    uStrong< ::g::Fuse::UserEventDispatch*  _Dispatch;
+    uStrong< ::g::Fuse::Node*  _Source;
 
     void ctor_1(::g::Fuse::UserEventDispatch* dispatch, ::g::Fuse::Node* source, ::g::Uno::Collections::Dictionary* args);
     ::g::Uno::Collections::Dictionary* Args();

@@ -1,27 +1,27 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.4.2/Internal/iOSSystemFont.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <CoreText/CoreText.h>
-#include <Fuse.Internal.FontFaceDescriptor.h>
-#include <Fuse.Internal.iOSSystemFont.h>
-#include <Fuse.Resources.SystemFileSource.h>
-#include <Fuse.SystemFont.Style.h>
-#include <Fuse.SystemFont.Weight.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Char.h>
-#include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.HashSet-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.List-1.h>
-#include <Uno.Exception.h>
-#include <Uno.Int.h>
-#include <Uno.IO.File.h>
-#include <Uno.Math.h>
-#include <Uno.Predicate-1.h>
-#include <Uno.String.h>
-#include <Uno.UX.FileSource.h>
-#include <uObjC.Foreign.h>
+#include <CoreText/CoreText.h 
+#include <Fuse.Internal.FontFaceDescriptor.h 
+#include <Fuse.Internal.iOSSystemFont.h 
+#include <Fuse.Resources.SystemFileSource.h 
+#include <Fuse.SystemFont.Style.h 
+#include <Fuse.SystemFont.Weight.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Char.h 
+#include <Uno.Collections.Dictionary-2.h 
+#include <Uno.Collections.HashSet-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.List-1.h 
+#include <Uno.Exception.h 
+#include <Uno.Int.h 
+#include <Uno.IO.File.h 
+#include <Uno.Math.h 
+#include <Uno.Predicate-1.h 
+#include <Uno.String.h 
+#include <Uno.UX.FileSource.h 
+#include <uObjC.Foreign.h 
 static uString* STRINGS[12];
 static uType* TYPES[5];
 
@@ -34,7 +34,7 @@ namespace Internal{
 // static generated iOSSystemFont() :11
 static void iOSSystemFont__cctor__fn(uType* __type)
 {
-    iOSSystemFont::_weightNames_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[0/*"UltraLight"*/], ::STRINGS[1/*"Thin"*/], ::STRINGS[2/*"Light"*/], ::STRINGS[3/*"Regular"*/], ::STRINGS[4/*"Medium"*/], ::STRINGS[5/*"SemiBold"*/], ::STRINGS[6/*"Bold"*/], ::STRINGS[7/*"Heavy"*/], ::STRINGS[8/*"Black"*/]);
+    iOSSystemFont::_weightNames_ = uArray::Init<uString* (::TYPES[0/*string[]*/], 9, ::STRINGS[0/*"UltraLight"*/], ::STRINGS[1/*"Thin"*/], ::STRINGS[2/*"Light"*/], ::STRINGS[3/*"Regular"*/], ::STRINGS[4/*"Medium"*/], ::STRINGS[5/*"SemiBold"*/], ::STRINGS[6/*"Bold"*/], ::STRINGS[7/*"Heavy"*/], ::STRINGS[8/*"Black"*/]);
 }
 
 static void iOSSystemFont_build(uType* type)
@@ -51,28 +51,28 @@ static void iOSSystemFont_build(uType* type)
     ::STRINGS[9] = uString::Const("Roman");
     ::STRINGS[10] = uString::Const("iOSSystemFont: No matching style in ");
     ::STRINGS[11] = uString::Const("");
-    ::TYPES[0] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[1] = ::g::Uno::Collections::HashSet_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[2] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    type->SetFields(0,
-        ::TYPES[1/*Uno.Collections.HashSet<string>*/], (uintptr_t)&iOSSystemFont::_families_, uFieldFlagsStatic,
-        ::TYPES[2/*Uno.Collections.Dictionary<string, string>*/], (uintptr_t)&iOSSystemFont::_fontPaths_, uFieldFlagsStatic,
+    ::TYPES[0] = ::g::Uno::String_typeof()- Array();
+    ::TYPES[1] = ::g::Uno::Collections::HashSet_typeof()- MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[2] = ::g::Uno::Collections::Dictionary_typeof()- MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[3] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL);
+    ::TYPES[4] = ::g::Uno::Collections::List_typeof()- MakeType(::g::Uno::String_typeof(), NULL);
+    type- SetFields(0,
+        ::TYPES[1/*Uno.Collections.HashSet<string */], (uintptr_t)&iOSSystemFont::_families_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.Dictionary<string, string */], (uintptr_t)&iOSSystemFont::_fontPaths_, uFieldFlagsStatic,
         ::TYPES[0/*string[]*/], (uintptr_t)&iOSSystemFont::_weightNames_, uFieldFlagsStatic);
 }
 
 uClassType* iOSSystemFont_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.FieldCount = 3;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Internal.iOSSystemFont", options);
-    type->fp_build_ = iOSSystemFont_build;
-    type->fp_cctor_ = iOSSystemFont__cctor__fn;
+    type- fp_build_ = iOSSystemFont_build;
+    type- fp_cctor_ = iOSSystemFont__cctor__fn;
     return type;
 }
 
@@ -94,7 +94,7 @@ void iOSSystemFont__AddFontPaths_fn()
     iOSSystemFont::AddFontPaths();
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() :20
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  get_Default() :20
 void iOSSystemFont__get_Default_fn(::g::Uno::Collections::List** __retval)
 {
     *__retval = iOSSystemFont::Default();
@@ -112,13 +112,13 @@ void iOSSystemFont__EnsureFontPathsAdded_fn()
     iOSSystemFont::EnsureFontPathsAdded();
 }
 
-// private static Uno.Collections.Dictionary<string, string> get_FontPaths() :201
+// private static Uno.Collections.Dictionary<string, string  get_FontPaths() :201
 void iOSSystemFont__get_FontPaths_fn(::g::Uno::Collections::Dictionary** __retval)
 {
     *__retval = iOSSystemFont::FontPaths();
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, Fuse.SystemFont.Style style, Fuse.SystemFont.Weight weight) :51
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  Get(string family, Fuse.SystemFont.Style style, Fuse.SystemFont.Weight weight) :51
 void iOSSystemFont__Get_fn(uString* family, int* style, int* weight, ::g::Uno::Collections::List** __retval)
 {
     *__retval = iOSSystemFont::Get(family, *style, *weight);
@@ -148,7 +148,7 @@ void iOSSystemFont__GetDescriptors_fn(uString* fileName, uArray** __retval)
     *__retval = iOSSystemFont::GetDescriptors(fileName);
 }
 
-// private static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetDescriptorsFromFontNames(string[] fontNames) :67
+// private static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  GetDescriptorsFromFontNames(string[] fontNames) :67
 void iOSSystemFont__GetDescriptorsFromFontNames_fn(uArray* fontNames, ::g::Uno::Collections::List** __retval)
 {
     *__retval = iOSSystemFont::GetDescriptorsFromFontNames(fontNames);
@@ -166,7 +166,7 @@ void iOSSystemFont__GetFontNamesFromUIFontDescriptors_fn(uArray* descriptors, uA
     *__retval = iOSSystemFont::GetFontNamesFromUIFontDescriptors(descriptors);
 }
 
-// private static Uno.Collections.IEnumerable<string> GetFontNameStyles(string fontName) :82
+// private static Uno.Collections.IEnumerable<string  GetFontNameStyles(string fontName) :82
 void iOSSystemFont__GetFontNameStyles_fn(uString* fontName, uObject** __retval)
 {
     *__retval = iOSSystemFont::GetFontNameStyles(fontName);
@@ -178,7 +178,7 @@ void iOSSystemFont__GetMatchingFontDescriptor_fn(uString* family, bool* isItalic
     *__retval = iOSSystemFont::GetMatchingFontDescriptor(family, *isItalic, weight);
 }
 
-// public static ObjC.Object GetMatchingUIFontDescriptor(string fileName, int index, Uno.Predicate<string> stylePredicate) :316
+// public static ObjC.Object GetMatchingUIFontDescriptor(string fileName, int index, Uno.Predicate<string  stylePredicate) :316
 void iOSSystemFont__GetMatchingUIFontDescriptor_fn(uString* fileName, int* index, uDelegate* stylePredicate, ::g::ObjC::Object** __retval)
 {
     *__retval = iOSSystemFont::GetMatchingUIFontDescriptor(fileName, *index, stylePredicate);
@@ -196,9 +196,9 @@ void iOSSystemFont__GetStyleName_fn(::g::ObjC::Object* descriptor, uString** __r
     *__retval = iOSSystemFont::GetStyleName(descriptor);
 }
 
-uSStrong< ::g::Uno::Collections::HashSet*> iOSSystemFont::_families_;
-uSStrong< ::g::Uno::Collections::Dictionary*> iOSSystemFont::_fontPaths_;
-uSStrong<uArray*> iOSSystemFont::_weightNames_;
+uSStrong< ::g::Uno::Collections::HashSet*  iOSSystemFont::_families_;
+uSStrong< ::g::Uno::Collections::Dictionary*  iOSSystemFont::_fontPaths_;
+uSStrong<uArray*  iOSSystemFont::_weightNames_;
 
 // private static void AddFamily(string name) [static] :307
 void iOSSystemFont::AddFamily(uString* name)
@@ -243,12 +243,12 @@ void iOSSystemFont::AddFontPaths()
         		NSDictionary* plist = [NSDictionary dictionaryWithContentsOfFile:[prefix stringByAppendingPathComponent:file]];
         		[plist[@"Names"] enumerateKeysAndObjectsUsingBlock: ^ (id key, id obj, BOOL* stop)
         		{
-        			[&]() -> void { ::uForeignPool __foreignPool; iOSSystemFont::AddFontPath(::uObjC::UnoString(key), ::uObjC::UnoString(obj)); }();
+        			[&]() -  void { ::uForeignPool __foreignPool; iOSSystemFont::AddFontPath(::uObjC::UnoString(key), ::uObjC::UnoString(obj)); }();
         			added = true;
         		}];
         		for (NSString* key in plist[@"TraitMappings"])
         		{
-        			[&]() -> void { ::uForeignPool __foreignPool; iOSSystemFont::AddFamily(::uObjC::UnoString(key)); }();
+        			[&]() -  void { ::uForeignPool __foreignPool; iOSSystemFont::AddFamily(::uObjC::UnoString(key)); }();
         		}
         	}
         
@@ -294,9 +294,9 @@ void iOSSystemFont::AddFontPaths()
         			{
         				NSString* name = [descriptor objectForKey:UIFontDescriptorNameAttribute];
         				NSString* path = [url path];
-        				[&]() -> void { ::uForeignPool __foreignPool; iOSSystemFont::AddFontPath(::uObjC::UnoString(name), ::uObjC::UnoString(path)); }();
+        				[&]() -  void { ::uForeignPool __foreignPool; iOSSystemFont::AddFontPath(::uObjC::UnoString(name), ::uObjC::UnoString(path)); }();
         				NSString* family = [descriptor objectForKey:UIFontDescriptorFamilyAttribute];
-        				[&]() -> void { ::uForeignPool __foreignPool; iOSSystemFont::AddFamily(::uObjC::UnoString(family)); }();
+        				[&]() -  void { ::uForeignPool __foreignPool; iOSSystemFont::AddFamily(::uObjC::UnoString(family)); }();
         			}
         		}
         	}
@@ -310,17 +310,17 @@ void iOSSystemFont::EnsureFontPathsAdded()
 {
     if (iOSSystemFont::_fontPaths_ == NULL)
     {
-        iOSSystemFont::_families_ = ((::g::Uno::Collections::HashSet*)::g::Uno::Collections::HashSet::New1(::TYPES[1/*Uno.Collections.HashSet<string>*/]));
-        iOSSystemFont::_fontPaths_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[2/*Uno.Collections.Dictionary<string, string>*/]));
+        iOSSystemFont::_families_ = ((::g::Uno::Collections::HashSet*)::g::Uno::Collections::HashSet::New1(::TYPES[1/*Uno.Collections.HashSet<string */]));
+        iOSSystemFont::_fontPaths_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[2/*Uno.Collections.Dictionary<string, string */]));
         iOSSystemFont::AddFontPaths();
     }
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, Fuse.SystemFont.Style style, Fuse.SystemFont.Weight weight) [static] :51
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  Get(string family, Fuse.SystemFont.Style style, Fuse.SystemFont.Weight weight) [static] :51
 ::g::Uno::Collections::List* iOSSystemFont::Get(uString* family, int style, int weight)
 {
-    int weightIndex = ::g::Uno::Math::Clamp8(weight, 0, uPtr(iOSSystemFont::_weightNames_)->Length() - 1);
-    ::g::ObjC::Object* descriptor = iOSSystemFont::GetMatchingFontDescriptor(family, style == 1, uPtr(iOSSystemFont::_weightNames_)->Strong<uString*>(weightIndex));
+    int weightIndex = ::g::Uno::Math::Clamp8(weight, 0, uPtr(iOSSystemFont::_weightNames_)- Length() - 1);
+    ::g::ObjC::Object* descriptor = iOSSystemFont::GetMatchingFontDescriptor(family, style == 1, uPtr(iOSSystemFont::_weightNames_)- Strong<uString* (weightIndex));
 
     if (descriptor == NULL)
         return iOSSystemFont::Default();
@@ -337,7 +337,7 @@ uString* iOSSystemFont::GetDefaultFontFamily()
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] () -> ::NSString*
+        return ::uObjC::UnoString([] () -  ::NSString*
         {
             return [UIFont systemFontOfSize: 12].familyName;
         } ());
@@ -351,7 +351,7 @@ uString* iOSSystemFont::GetDefaultFontFamily()
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             // We can't use UIFontDescriptor
             // preferredFontDescriptorWithTextStyle: here because
@@ -372,7 +372,7 @@ uString* iOSSystemFont::GetDescriptorFontName(::g::ObjC::Object* descriptor)
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] (::id descriptor) -> ::NSString*
+        return ::uObjC::UnoString([] (::id descriptor) -  ::NSString*
         {
             return ((UIFontDescriptor*)descriptor).fontAttributes[UIFontDescriptorNameAttribute];
         } (::g::ObjC::Object::GetHandle(descriptor)));
@@ -386,18 +386,18 @@ uArray* iOSSystemFont::GetDescriptors(uString* fileName)
 {
     @autoreleasepool
     {
-        return uCast<uArray*>(([] (::NSString* fileName) -> id<UnoArray>
+        return uCast<uArray* (([] (::NSString* fileName) -  id<UnoArray 
         {
             NSURL* url = [NSURL fileURLWithPath:fileName];
             CFArrayRef arr = CTFontManagerCreateFontDescriptorsFromURL((__bridge CFURLRef)url);
             NSArray* descriptors = (__bridge NSArray*)arr;
             
-            id<UnoArray> result = [&]() -> id<UnoArray> { ::uForeignPool __foreignPool; return [::StrongUnoArray strongUnoArrayWithUnoArray: uArray::New(::g::ObjC::Object_typeof()->Array(), (int)[descriptors count]) getAt: ^ id (::uArray* arr, int i) { return (::id)::g::ObjC::Object::GetHandle(arr->Strong< ::g::ObjC::Object*>(i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr->Strong< ::g::ObjC::Object*>(i) = ::g::ObjC::Object::Create((::id)obj); }]; }();
+            id<UnoArray  result = [&]() -  id<UnoArray  { ::uForeignPool __foreignPool; return [::StrongUnoArray strongUnoArrayWithUnoArray: uArray::New(::g::ObjC::Object_typeof()- Array(), (int)[descriptors count]) getAt: ^ id (::uArray* arr, int i) { return (::id)::g::ObjC::Object::GetHandle(arr- Strong< ::g::ObjC::Object* (i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr- Strong< ::g::ObjC::Object* (i) = ::g::ObjC::Object::Create((::id)obj); }]; }();
             {
             	int i = 0;
             	for (UIFontDescriptor* descriptor in descriptors)
             	{
-            		uCast<uArray*>((result).unoArray, ::g::ObjC::Object_typeof()->Array())->Strong< ::g::ObjC::Object*>(i) = ::g::ObjC::Object::Create(descriptor);
+            		uCast<uArray* ((result).unoArray, ::g::ObjC::Object_typeof()- Array())- Strong< ::g::ObjC::Object* (i) = ::g::ObjC::Object::Create(descriptor);
             		++i;
             	}
             }
@@ -405,24 +405,24 @@ uArray* iOSSystemFont::GetDescriptors(uString* fileName)
             CFRelease(arr);
             
             return result;
-        } (::uObjC::NativeString(fileName))).unoArray, ::g::ObjC::Object_typeof()->Array());
+        } (::uObjC::NativeString(fileName))).unoArray, ::g::ObjC::Object_typeof()- Array());
         
     }
     
 }
 
-// private static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetDescriptorsFromFontNames(string[] fontNames) [static] :67
+// private static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  GetDescriptorsFromFontNames(string[] fontNames) [static] :67
 ::g::Uno::Collections::List* iOSSystemFont::GetDescriptorsFromFontNames(uArray* fontNames)
 {
     uArray* array1;
     int index2;
     int length3;
     bool ret10;
-    ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Internal.FontFaceDescriptor>*/]);
+    ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Internal.FontFaceDescriptor */]);
 
-    for (array1 = fontNames, index2 = 0, length3 = uPtr(array1)->Length(); index2 < length3; ++index2)
+    for (array1 = fontNames, index2 = 0, length3 = uPtr(array1)- Length(); index2 < length3; ++index2)
     {
-        uString* fontName = uPtr(array1)->Strong<uString*>(index2);
+        uString* fontName = uPtr(array1)- Strong<uString* (index2);
         uString* path = NULL;
 
         if ((::g::Uno::String::op_Inequality(fontName, NULL) && (::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(iOSSystemFont::FontPaths()), fontName, (void**)(&path), &ret10), ret10)) && ::g::Uno::IO::File::Exists(path))
@@ -437,7 +437,7 @@ uArray* iOSSystemFont::GetFallbackUIFontDescriptors(::g::ObjC::Object* rawDescri
 {
     @autoreleasepool
     {
-        return uCast<uArray*>(([] (::id rawDescriptor) -> id<UnoArray>
+        return uCast<uArray* (([] (::id rawDescriptor) -  id<UnoArray 
         {
             UIFontDescriptor* descriptor = (UIFontDescriptor*)rawDescriptor;
             
@@ -450,21 +450,21 @@ uArray* iOSSystemFont::GetFallbackUIFontDescriptors(::g::ObjC::Object* rawDescri
             	: nullptr;
             
             int count = cascadeList ? (int)CFArrayGetCount(cascadeList) : 0;
-            id<UnoArray> result = [&]() -> id<UnoArray> { ::uForeignPool __foreignPool; return [::StrongUnoArray strongUnoArrayWithUnoArray: uArray::New(::g::ObjC::Object_typeof()->Array(), count + 1) getAt: ^ id (::uArray* arr, int i) { return (::id)::g::ObjC::Object::GetHandle(arr->Strong< ::g::ObjC::Object*>(i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr->Strong< ::g::ObjC::Object*>(i) = ::g::ObjC::Object::Create((::id)obj); }]; }();
+            id<UnoArray  result = [&]() -  id<UnoArray  { ::uForeignPool __foreignPool; return [::StrongUnoArray strongUnoArrayWithUnoArray: uArray::New(::g::ObjC::Object_typeof()- Array(), count + 1) getAt: ^ id (::uArray* arr, int i) { return (::id)::g::ObjC::Object::GetHandle(arr- Strong< ::g::ObjC::Object* (i)); } setAt: ^ (::uArray* arr, int i, id obj) { arr- Strong< ::g::ObjC::Object* (i) = ::g::ObjC::Object::Create((::id)obj); }]; }();
             // Includes the argument descriptor for convenience
-            uCast<uArray*>((result).unoArray, ::g::ObjC::Object_typeof()->Array())->Strong< ::g::ObjC::Object*>(0) = ::g::ObjC::Object::Create(descriptor);
+            uCast<uArray* ((result).unoArray, ::g::ObjC::Object_typeof()- Array())- Strong< ::g::ObjC::Object* (0) = ::g::ObjC::Object::Create(descriptor);
             for (int i = 0; i < count; ++i)
             {
             	CTFontDescriptorRef cascadeDescriptor
             		= (CTFontDescriptorRef)CFArrayGetValueAtIndex(cascadeList, (CFIndex)i);
             	UIFontDescriptor* uiCascadeDescriptor = (__bridge UIFontDescriptor*)cascadeDescriptor;
-            	uCast<uArray*>((result).unoArray, ::g::ObjC::Object_typeof()->Array())->Strong< ::g::ObjC::Object*>(i + 1) = ::g::ObjC::Object::Create(uiCascadeDescriptor);
+            	uCast<uArray* ((result).unoArray, ::g::ObjC::Object_typeof()- Array())- Strong< ::g::ObjC::Object* (i + 1) = ::g::ObjC::Object::Create(uiCascadeDescriptor);
             }
             
             CFRelease(cascadeList);
             CFRelease(font);
             return result;
-        } (::g::ObjC::Object::GetHandle(rawDescriptor))).unoArray, ::g::ObjC::Object_typeof()->Array());
+        } (::g::ObjC::Object::GetHandle(rawDescriptor))).unoArray, ::g::ObjC::Object_typeof()- Array());
         
     }
     
@@ -473,18 +473,18 @@ uArray* iOSSystemFont::GetFallbackUIFontDescriptors(::g::ObjC::Object* rawDescri
 // private static string[] GetFontNamesFromUIFontDescriptors(ObjC.Object[] descriptors) [static] :117
 uArray* iOSSystemFont::GetFontNamesFromUIFontDescriptors(uArray* descriptors)
 {
-    uArray* result = uArray::New(::TYPES[0/*string[]*/], uPtr(descriptors)->Length());
+    uArray* result = uArray::New(::TYPES[0/*string[]*/], uPtr(descriptors)- Length());
 
-    for (int i = 0; i < descriptors->Length(); ++i)
-        uPtr(result)->Strong<uString*>(i) = iOSSystemFont::GetDescriptorFontName(uPtr(descriptors)->Strong< ::g::ObjC::Object*>(i));
+    for (int i = 0; i < descriptors- Length(); ++i)
+        uPtr(result)- Strong<uString* (i) = iOSSystemFont::GetDescriptorFontName(uPtr(descriptors)- Strong< ::g::ObjC::Object* (i));
 
     return result;
 }
 
-// private static Uno.Collections.IEnumerable<string> GetFontNameStyles(string fontName) [static] :82
+// private static Uno.Collections.IEnumerable<string  GetFontNameStyles(string fontName) [static] :82
 uObject* iOSSystemFont::GetFontNameStyles(uString* fontName)
 {
-    ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<string>*/]);
+    ::g::Uno::Collections::List* result = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<string */]);
     int dash = ::g::Uno::String::LastIndexOf(uPtr(fontName), '-');
 
     if (dash < 0)
@@ -492,10 +492,10 @@ uObject* iOSSystemFont::GetFontNameStyles(uString* fontName)
 
     int start = dash + 1;
 
-    for (int i = start; i <= fontName->Length(); ++i)
-        if (((i == uPtr(fontName)->Length()) || ::g::Uno::Char::IsUpper(uPtr(fontName)->Item(i))) || ::g::Uno::Char::IsDigit(uPtr(fontName)->Item(i)))
+    for (int i = start; i <= fontName- Length(); ++i)
+        if (((i == uPtr(fontName)- Length()) || ::g::Uno::Char::IsUpper(uPtr(fontName)- Item(i))) || ::g::Uno::Char::IsDigit(uPtr(fontName)- Item(i)))
         {
-            if (i > (start + 1))
+            if (i   (start + 1))
             {
                 uString* substr = ::g::Uno::String::Substring1(uPtr(fontName), start, i - start);
 
@@ -514,7 +514,7 @@ uObject* iOSSystemFont::GetFontNameStyles(uString* fontName)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::NSString* family, bool isItalic, ::NSString* weight) -> ::id
+        return ::g::ObjC::Object::Create([] (::NSString* family, bool isItalic, ::NSString* weight) -  ::id
         {
             NSMutableDictionary* attributes = [@{ UIFontDescriptorFaceAttribute: weight } mutableCopy];
             if (family != nil)
@@ -534,20 +534,20 @@ uObject* iOSSystemFont::GetFontNameStyles(uString* fontName)
     
 }
 
-// public static ObjC.Object GetMatchingUIFontDescriptor(string fileName, int index, Uno.Predicate<string> stylePredicate) [static] :316
+// public static ObjC.Object GetMatchingUIFontDescriptor(string fileName, int index, Uno.Predicate<string  stylePredicate) [static] :316
 ::g::ObjC::Object* iOSSystemFont::GetMatchingUIFontDescriptor(uString* fileName, int index, uDelegate* stylePredicate)
 {
     bool ret11;
     uArray* descriptors = iOSSystemFont::GetDescriptors(fileName);
 
-    if (index >= 0)
-        return uPtr(descriptors)->Strong< ::g::ObjC::Object*>(index);
+    if (index  = 0)
+        return uPtr(descriptors)- Strong< ::g::ObjC::Object* (index);
 
-    for (int index5 = 0, length6 = uPtr(descriptors)->Length(); index5 < length6; ++index5)
+    for (int index5 = 0, length6 = uPtr(descriptors)- Length(); index5 < length6; ++index5)
     {
-        ::g::ObjC::Object* descriptor = uPtr(descriptors)->Strong< ::g::ObjC::Object*>(index5);
+        ::g::ObjC::Object* descriptor = uPtr(descriptors)- Strong< ::g::ObjC::Object* (index5);
 
-        if ((uPtr(stylePredicate)->Invoke(&ret11, 1, (uString*)iOSSystemFont::GetStyleName(descriptor)), ret11))
+        if ((uPtr(stylePredicate)- Invoke(&ret11, 1, (uString*)iOSSystemFont::GetStyleName(descriptor)), ret11))
             return descriptor;
     }
 
@@ -559,7 +559,7 @@ uString* iOSSystemFont::GetPostscriptName(::g::ObjC::Object* descriptor)
 {
     @autoreleasepool
     {
-        return ::uObjC::UnoString([] (::id descriptor) -> ::NSString*
+        return ::uObjC::UnoString([] (::id descriptor) -  ::NSString*
         {
             return [(UIFontDescriptor*)descriptor postscriptName];
         } (::g::ObjC::Object::GetHandle(descriptor)));
@@ -576,7 +576,7 @@ uString* iOSSystemFont::GetStyleName(::g::ObjC::Object* descriptor)
     return (i < 0) ? ::STRINGS[11/*""*/] : (uString*)::g::Uno::String::Substring(psname, i + 1);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :20
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor  get_Default() [static] :20
 ::g::Uno::Collections::List* iOSSystemFont::Default()
 {
     ::g::ObjC::Object* descriptor = iOSSystemFont::GetDefaultUIFontDescriptor();
@@ -591,7 +591,7 @@ uString* iOSSystemFont::DefaultFontName()
     return iOSSystemFont::GetDefaultFontFamily();
 }
 
-// private static Uno.Collections.Dictionary<string, string> get_FontPaths() [static] :201
+// private static Uno.Collections.Dictionary<string, string  get_FontPaths() [static] :201
 ::g::Uno::Collections::Dictionary* iOSSystemFont::FontPaths()
 {
     iOSSystemFont::EnsureFontPathsAdded();

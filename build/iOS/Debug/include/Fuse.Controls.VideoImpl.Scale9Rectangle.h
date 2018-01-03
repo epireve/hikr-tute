@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct Scale9Rectangle;}}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -28,12 +28,12 @@ void Scale9Rectangle__New1_fn(Scale9Rectangle** __retval);
 
 struct Scale9Rectangle : uObject
 {
-    static uSStrong<Scale9Rectangle*> Impl_;
-    static uSStrong<Scale9Rectangle*>& Impl() { return Impl_; }
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> Draw_xv_e60caa7b_1_3_2;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_xv_e60caa7b_1_3_3;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> Draw_yv_e60caa7b_1_4_6;
-    uStrong<uArray*> Draw_indices_e60caa7b_1_2_12;
+    static uSStrong<Scale9Rectangle*  Impl_;
+    static uSStrong<Scale9Rectangle* & Impl() { return Impl_; }
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  Draw_xv_e60caa7b_1_3_2;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_xv_e60caa7b_1_3_3;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  Draw_yv_e60caa7b_1_4_6;
+    uStrong<uArray*  Draw_indices_e60caa7b_1_2_12;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_e60caa7b;
 
     void ctor_();

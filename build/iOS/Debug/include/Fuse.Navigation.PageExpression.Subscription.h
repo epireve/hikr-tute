@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.IPageResourceBinding.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Navigation.IPageResourceBinding.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigatedArgs;}}}
 namespace g{namespace Fuse{namespace Navigation{struct PageExpression;}}}
 namespace g{namespace Fuse{namespace Navigation{struct PageExpression__Subscription;}}}
@@ -37,11 +37,11 @@ void PageExpression__Subscription__UpdateSource_fn(PageExpression__Subscription*
 
 struct PageExpression__Subscription : uObject
 {
-    uStrong< ::g::Fuse::Navigation::PageExpression*> _pe;
-    uStrong< ::g::Fuse::Node*> _node;
-    uStrong<uObject*> _nav;
-    uStrong< ::g::Fuse::Visual*> _currentPage;
-    uStrong<uObject*> _listener;
+    uStrong< ::g::Fuse::Navigation::PageExpression*  _pe;
+    uStrong< ::g::Fuse::Node*  _node;
+    uStrong<uObject*  _nav;
+    uStrong< ::g::Fuse::Visual*  _currentPage;
+    uStrong<uObject*  _listener;
 
     void ctor_(::g::Fuse::Navigation::PageExpression* pe, ::g::Fuse::Node* node, uObject* listener);
     bool Acceptor(uObject* obj);

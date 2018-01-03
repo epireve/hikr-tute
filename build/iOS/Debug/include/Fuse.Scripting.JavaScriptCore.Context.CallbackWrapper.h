@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context;}}}}
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context__CallbackWrapper;}}}}
 
@@ -20,8 +20,8 @@ void Context__CallbackWrapper__New1_fn(::g::Fuse::Scripting::JavaScriptCore::Con
 
 struct Context__CallbackWrapper : uObject
 {
-    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*> _context;
-    uStrong<uDelegate*> _callback;
+    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*  _context;
+    uStrong<uDelegate*  _callback;
 
     void ctor_(::g::Fuse::Scripting::JavaScriptCore::Context* context, uDelegate* callback);
     ::JSValueRef Call(uArray* args, ::JSValueRef* exception);

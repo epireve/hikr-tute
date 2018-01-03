@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Testing{struct UnoTestingHelper;}}}
 
@@ -21,8 +21,8 @@ void UnoTestingHelper__TestFailed_fn(::g::Fuse::Scripting::Context* c, uArray* a
 
 struct UnoTestingHelper : ::g::Fuse::Scripting::NativeModule
 {
-    static uSStrong<UnoTestingHelper*> _instance_;
-    static uSStrong<UnoTestingHelper*>& _instance() { return _instance_; }
+    static uSStrong<UnoTestingHelper*  _instance_;
+    static uSStrong<UnoTestingHelper* & _instance() { return _instance_; }
 
     void ctor_2();
     static UnoTestingHelper* New2();

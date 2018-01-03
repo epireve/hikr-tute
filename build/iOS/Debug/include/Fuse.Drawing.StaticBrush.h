@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.Brush.h>
+#include <Fuse.Drawing.Brush.h 
 namespace g{namespace Fuse{namespace Drawing{struct StaticBrush;}}}
 
 namespace g{

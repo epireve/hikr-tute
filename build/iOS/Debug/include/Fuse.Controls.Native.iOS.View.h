@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.IView.h>
-#include <Fuse.Controls.Native.ViewHandle.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.IView.h 
+#include <Fuse.Controls.Native.ViewHandle.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct View;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 
@@ -28,7 +28,7 @@ void View__get_Handle_fn(View* __this, ::g::ObjC::Object** __retval);
 
 struct View : ::g::Fuse::Controls::Native::ViewHandle
 {
-    uStrong< ::g::ObjC::Object*> _handle;
+    uStrong< ::g::ObjC::Object*  _handle;
 
     void ctor_2(::g::ObjC::Object* handle, int inputmode);
     void ctor_3(::g::ObjC::Object* handle, bool isLeafView, int inputmode);

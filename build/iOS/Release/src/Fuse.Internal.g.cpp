@@ -93,7 +93,7 @@
 #include <Uno.UX.Unit.h>
 #include <Uno.Vector.h>
 static uString* STRINGS[6];
-static uType* TYPES[28];
+static uType* TYPES[31];
 
 namespace g{
 namespace Fuse{
@@ -1849,15 +1849,19 @@ static void ImageContainer_build(uType* type)
     ::TYPES[23] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
     ::TYPES[24] = ::g::Uno::EventHandler_typeof();
     ::TYPES[25] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
+    ::TYPES[26] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[27] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[28] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
     type->SetDependencies(
         ::g::Fuse::Diagnostics_typeof(),
-        ::g::Uno::EventArgs_typeof());
+        ::g::Uno::EventArgs_typeof(),
+        ::g::Fuse::Resources::MemoryPolicy_typeof());
     type->SetFields(0,
         ::TYPES[17/*Fuse.Internal.IImageContainerOwner*/], offsetof(ImageContainer, _owner), uFieldFlagsWeak,
         ::g::Fuse::Internal::SizingContainer_typeof(), offsetof(ImageContainer, Sizing), 0,
         ::g::Uno::Float_typeof(), offsetof(ImageContainer, _density), 0,
         ::g::Fuse::Resources::MemoryPolicy_typeof(), offsetof(ImageContainer, _memoryPolicy), 0,
-        ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL), offsetof(ImageContainer, _files), 0,
+        ::TYPES[28/*Uno.Collections.RootableList<Uno.UX.FileSource>*/], offsetof(ImageContainer, _files), 0,
         ::g::Uno::Bool_typeof(), offsetof(ImageContainer, _sourcePinned), 0,
         ::g::Fuse::Resources::ImageSource_typeof(), offsetof(ImageContainer, _source), 0,
         ::g::Uno::Bool_typeof(), offsetof(ImageContainer, _isSourceListen), 0,
@@ -1876,12 +1880,18 @@ uType* ImageContainer_typeof()
 
     uTypeOptions options;
     options.FieldCount = 14;
-    options.DependencyCount = 2;
+    options.DependencyCount = 3;
     options.ObjectSize = sizeof(ImageContainer);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Internal.ImageContainer", options);
     type->fp_build_ = ImageContainer_build;
     return type;
+}
+
+// public ImageContainer([Fuse.Internal.IImageContainerOwner owner]) :23
+void ImageContainer__ctor__fn(ImageContainer* __this, uObject* owner)
+{
+    __this->ctor_(owner);
 }
 
 // private void CheckPinning() :265
@@ -1906,6 +1916,24 @@ void ImageContainer__get_Density_fn(ImageContainer* __this, float* __retval)
 void ImageContainer__set_Density_fn(ImageContainer* __this, float* value)
 {
     __this->Density(*value);
+}
+
+// public Uno.UX.FileSource get_File() :32
+void ImageContainer__get_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource** __retval)
+{
+    *__retval = __this->File();
+}
+
+// public void set_File(Uno.UX.FileSource value) :37
+void ImageContainer__set_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* value)
+{
+    __this->File(value);
+}
+
+// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() :112
+void ImageContainer__get_Files_fn(ImageContainer* __this, uObject** __retval)
+{
+    *__retval = __this->Files();
 }
 
 // public texture2D GetTexture() :356
@@ -1948,6 +1976,12 @@ void ImageContainer__get_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Reso
 void ImageContainer__set_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy* value)
 {
     __this->MemoryPolicy(value);
+}
+
+// public ImageContainer New([Fuse.Internal.IImageContainerOwner owner]) :23
+void ImageContainer__New1_fn(uObject* owner, ImageContainer** __retval)
+{
+    *__retval = ImageContainer::New1(owner);
 }
 
 // private void OnFilesChanged(Uno.UX.FileSource ignoreFile) :124
@@ -2082,6 +2116,17 @@ void ImageContainer__UpdateSourceListen_fn(ImageContainer* __this, bool* forceOf
     __this->UpdateSourceListen(*forceOff);
 }
 
+// public ImageContainer([Fuse.Internal.IImageContainerOwner owner]) [instance] :23
+void ImageContainer::ctor_(uObject* owner)
+{
+    Sizing = ::g::Fuse::Internal::SizingContainer::New1();
+    _density = 1.0f;
+    _memoryPolicy = ::g::Fuse::Resources::MemoryPolicy::PreloadRetain_;
+    _resampleMode = 1;
+    _isVisible = true;
+    _owner = owner;
+}
+
 // private void CheckPinning() [instance] :265
 void ImageContainer::CheckPinning()
 {
@@ -2153,6 +2198,44 @@ void ImageContainer::Density(float value)
         _density = value;
         OnParamChanged();
     }
+}
+
+// public Uno.UX.FileSource get_File() [instance] :32
+::g::Uno::UX::FileSource* ImageContainer::File()
+{
+    ::g::Uno::UX::FileSource* ret17;
+
+    if (_files == NULL)
+        return NULL;
+    else
+        return (::g::Uno::Collections::RootableList__get_Item_fn(uPtr(_files), uCRef<int>(0), &ret17), ret17);
+}
+
+// public void set_File(Uno.UX.FileSource value) [instance] :37
+void ImageContainer::File(::g::Uno::UX::FileSource* value)
+{
+    ::g::Uno::UX::FileSource* ret18;
+    uObject* files = Files();
+
+    if (((::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[26/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) == 0) || (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[26/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) > 1)) || ((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(files), ::TYPES[27/*Uno.Collections.IList<Uno.UX.FileSource>*/]), uCRef<int>(0), &ret18), ret18) != value))
+    {
+        ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(files), ::TYPES[26/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]));
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(files, ::TYPES[26/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]), value);
+    }
+}
+
+// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() [instance] :112
+uObject* ImageContainer::Files()
+{
+    if (_files == NULL)
+    {
+        _files = ((::g::Uno::Collections::RootableList*)::g::Uno::Collections::RootableList::New1(::TYPES[28/*Uno.Collections.RootableList<Uno.UX.FileSource>*/]));
+
+        if (IsRooted())
+            uPtr(_files)->Subscribe(uDelegate::New(::TYPES[18/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[18/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
+    }
+
+    return (uObject*)_files;
 }
 
 // public texture2D GetTexture() [instance] :356
@@ -2463,6 +2546,14 @@ void ImageContainer::UpdateSourceListen(bool forceOff)
         uPtr(_source)->remove_Changed(uDelegate::New(::TYPES[24/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
         uPtr(_source)->remove_Error(uDelegate::New(::TYPES[25/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
     }
+}
+
+// public ImageContainer New([Fuse.Internal.IImageContainerOwner owner]) [static] :23
+ImageContainer* ImageContainer::New1(uObject* owner)
+{
+    ImageContainer* obj13 = (ImageContainer*)uNew(ImageContainer_typeof());
+    obj13->ctor_(owner);
+    return obj13;
 }
 // }
 
@@ -3466,9 +3557,9 @@ void* RawPointer::op_Implicit(uType* __type, uObject* obj)
 // {
 static void RectPacker_build(uType* type)
 {
-    ::TYPES[26] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
+    ::TYPES[29] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[26/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(RectPacker, _skyline), 0,
+        ::TYPES[29/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(RectPacker, _skyline), 0,
         ::g::Uno::Int2_typeof(), offsetof(RectPacker, _Size), 0);
 }
 
@@ -3539,7 +3630,7 @@ void RectPacker::ctor_(::g::Uno::Int2 size)
 {
     ::g::Uno::Collections::LinkedListNode* ret2;
     Size(size);
-    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[26/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
+    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[29/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
     ::g::Uno::Collections::LinkedList__AddFirst_fn(uPtr(_skyline), uCRef(::g::Fuse::Internal::SkylineNode__New1(::g::Uno::Int2__New1(0), Size().X)), &ret2);
 }
 
@@ -4512,7 +4603,7 @@ double Statistics::ContinuousFilterAlpha(double elapsed, double period)
 // {
 static void SystemFont_build(uType* type)
 {
-    ::TYPES[27] = ::g::Uno::String_typeof();
+    ::TYPES[30] = ::g::Uno::String_typeof();
     type->SetDependencies(
         ::g::Fuse::Internal::iOSSystemFont_typeof());
 }
@@ -4545,7 +4636,7 @@ void SystemFont__Get_fn(uString* family, int* style, int* weight, ::g::Uno::Coll
 // public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) [static] :69
 ::g::Uno::Collections::List* SystemFont::Get(uString* family, int style, int weight)
 {
-    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[27/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
+    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[30/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
 }
 
 // public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :61

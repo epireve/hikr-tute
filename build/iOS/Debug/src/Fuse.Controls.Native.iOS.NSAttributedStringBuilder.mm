@@ -1,16 +1,16 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/NSAttributedStringBuilder.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Foundation/Foundation.h>
-#include <Fuse.Controls.Native.iOS.NSAttributedStringBuilder.h>
-#include <Fuse.Controls.TextAlignment.h>
-#include <Fuse.Controls.TextWrapping.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
+#include <Foundation/Foundation.h 
+#include <Fuse.Controls.Native.iOS.NSAttributedStringBuilder.h 
+#include <Fuse.Controls.TextAlignment.h 
+#include <Fuse.Controls.TextWrapping.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
 static uString* STRINGS[1];
 
 namespace g{
@@ -24,7 +24,7 @@ namespace iOS{
 static void NSAttributedStringBuilder_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("");
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::Uno::Float4_typeof(), offsetof(NSAttributedStringBuilder, _color), 0,
         ::g::Uno::Float_typeof(), offsetof(NSAttributedStringBuilder, _lineSpacing), 0,
         ::g::Uno::String_typeof(), offsetof(NSAttributedStringBuilder, _value), 0,
@@ -35,7 +35,7 @@ static void NSAttributedStringBuilder_build(uType* type)
 
 uType* NSAttributedStringBuilder_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -43,27 +43,27 @@ uType* NSAttributedStringBuilder_typeof()
     options.ObjectSize = sizeof(NSAttributedStringBuilder);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Controls.Native.iOS.NSAttributedStringBuilder", options);
-    type->fp_build_ = NSAttributedStringBuilder_build;
-    type->fp_ctor_ = (void*)NSAttributedStringBuilder__New1_fn;
+    type- fp_build_ = NSAttributedStringBuilder_build;
+    type- fp_ctor_ = (void*)NSAttributedStringBuilder__New1_fn;
     return type;
 }
 
 // public NSAttributedStringBuilder() :17
 void NSAttributedStringBuilder__ctor__fn(NSAttributedStringBuilder* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // public ObjC.Object BuildAttributedString() :73
 void NSAttributedStringBuilder__BuildAttributedString_fn(NSAttributedStringBuilder* __this, ::g::ObjC::Object** __retval)
 {
-    *__retval = __this->BuildAttributedString();
+    *__retval = __this- BuildAttributedString();
 }
 
 // public ObjC.Object BuildAttributes() :78
 void NSAttributedStringBuilder__BuildAttributes_fn(NSAttributedStringBuilder* __this, ::g::ObjC::Object** __retval)
 {
-    *__retval = __this->BuildAttributes();
+    *__retval = __this- BuildAttributes();
 }
 
 // private static ObjC.Object Create(string value, ObjC.Object attributes) :88
@@ -75,7 +75,7 @@ void NSAttributedStringBuilder__Create_fn(uString* value, ::g::ObjC::Object* att
 // private int GetTextAlignment(Fuse.Controls.TextAlignment alignment) :61
 void NSAttributedStringBuilder__GetTextAlignment_fn(NSAttributedStringBuilder* __this, int* alignment, int* __retval)
 {
-    *__retval = __this->GetTextAlignment(*alignment);
+    *__retval = __this- GetTextAlignment(*alignment);
 }
 
 // public NSAttributedStringBuilder New() :17
@@ -93,7 +93,7 @@ void NSAttributedStringBuilder__NewDictionary_fn(::g::ObjC::Object** __retval)
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetFont(ObjC.Object font) :43
 void NSAttributedStringBuilder__SetFont_fn(NSAttributedStringBuilder* __this, ::g::ObjC::Object* font, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetFont(font);
+    *__retval = __this- SetFont(font);
 }
 
 // private static void SetFont(ObjC.Object handle, ObjC.Object fontHandle) :115
@@ -111,7 +111,7 @@ void NSAttributedStringBuilder__SetForegroundColor_fn(::g::ObjC::Object* handle,
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetLineSpacing(float lineSpacing) :37
 void NSAttributedStringBuilder__SetLineSpacing_fn(NSAttributedStringBuilder* __this, float* lineSpacing, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetLineSpacing(*lineSpacing);
+    *__retval = __this- SetLineSpacing(*lineSpacing);
 }
 
 // private static void SetParagraphStyle(ObjC.Object handle, float lineSpacing, int textAlignment, bool wrapText) :102
@@ -123,25 +123,25 @@ void NSAttributedStringBuilder__SetParagraphStyle_fn(::g::ObjC::Object* handle, 
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetTextAlignment(Fuse.Controls.TextAlignment alignment) :49
 void NSAttributedStringBuilder__SetTextAlignment_fn(NSAttributedStringBuilder* __this, int* alignment, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetTextAlignment(*alignment);
+    *__retval = __this- SetTextAlignment(*alignment);
 }
 
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetTextColor(float4 color) :31
 void NSAttributedStringBuilder__SetTextColor_fn(NSAttributedStringBuilder* __this, ::g::Uno::Float4* color, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetTextColor(*color);
+    *__retval = __this- SetTextColor(*color);
 }
 
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetTextWrapping(Fuse.Controls.TextWrapping wrapping) :55
 void NSAttributedStringBuilder__SetTextWrapping_fn(NSAttributedStringBuilder* __this, int* wrapping, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetTextWrapping(*wrapping);
+    *__retval = __this- SetTextWrapping(*wrapping);
 }
 
 // public Fuse.Controls.Native.iOS.NSAttributedStringBuilder SetValue(string value) :25
 void NSAttributedStringBuilder__SetValue_fn(NSAttributedStringBuilder* __this, uString* value, NSAttributedStringBuilder** __retval)
 {
-    *__retval = __this->SetValue(value);
+    *__retval = __this- SetValue(value);
 }
 
 // public NSAttributedStringBuilder() [instance] :17
@@ -241,7 +241,7 @@ NSAttributedStringBuilder* NSAttributedStringBuilder::SetValue(uString* value)
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] (::NSString* value, ::id attributes) -> ::id
+        return ::g::ObjC::Object::Create([] (::NSString* value, ::id attributes) -  ::id
         {
             return [[NSAttributedString alloc] initWithString:value attributes:attributes];
         } (::uObjC::NativeString(value), ::g::ObjC::Object::GetHandle(attributes)));
@@ -254,7 +254,7 @@ NSAttributedStringBuilder* NSAttributedStringBuilder::SetValue(uString* value)
 NSAttributedStringBuilder* NSAttributedStringBuilder::New1()
 {
     NSAttributedStringBuilder* obj2 = (NSAttributedStringBuilder*)uNew(NSAttributedStringBuilder_typeof());
-    obj2->ctor_();
+    obj2- ctor_();
     return obj2;
 }
 
@@ -263,7 +263,7 @@ NSAttributedStringBuilder* NSAttributedStringBuilder::New1()
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             return [[NSMutableDictionary alloc] init];
         } ());
@@ -277,7 +277,7 @@ void NSAttributedStringBuilder::SetFont1(::g::ObjC::Object* handle, ::g::ObjC::O
 {
     @autoreleasepool
     {
-        [] (::id handle, ::id fontHandle) -> void
+        [] (::id handle, ::id fontHandle) -  void
         {
             auto dict = (NSMutableDictionary*)handle;
             auto font = (UIFont*)fontHandle;
@@ -294,7 +294,7 @@ void NSAttributedStringBuilder::SetForegroundColor(::g::ObjC::Object* handle, fl
 {
     @autoreleasepool
     {
-        [] (::id handle, float r, float g, float b, float a) -> void
+        [] (::id handle, float r, float g, float b, float a) -  void
         {
             auto dict = (NSMutableDictionary*)handle;
             auto color = [::UIColor colorWithRed:(CGFloat)r green:(CGFloat)g blue:(CGFloat)b alpha:(CGFloat)a];
@@ -310,7 +310,7 @@ void NSAttributedStringBuilder::SetParagraphStyle(::g::ObjC::Object* handle, flo
 {
     @autoreleasepool
     {
-        [] (::id handle, float lineSpacing, int textAlignment, bool wrapText) -> void
+        [] (::id handle, float lineSpacing, int textAlignment, bool wrapText) -  void
         {
             auto dict = (NSMutableDictionary*)handle;
             auto paragraphStyle = [[NSMutableParagraphStyle alloc] init];

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http__FuseJSHttpRequest;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
@@ -45,13 +45,13 @@ void Http__FuseJSHttpRequest__SetTimeout_fn(Http__FuseJSHttpRequest* __this, int
 
 struct Http__FuseJSHttpRequest : uObject
 {
-    uStrong< ::g::Uno::Net::Http::HttpMessageHandlerRequest*> _req;
-    uStrong<uString*> _cachedResponseHeaders;
-    uStrong<uObject*> _cachedResponseContent;
+    uStrong< ::g::Uno::Net::Http::HttpMessageHandlerRequest*  _req;
+    uStrong<uString*  _cachedResponseHeaders;
+    uStrong<uObject*  _cachedResponseContent;
     int _cachedResponseStatus;
     int _cachedResponseType;
     int _finalState;
-    uStrong< ::g::Fuse::Scripting::Object*> _Obj;
+    uStrong< ::g::Fuse::Scripting::Object*  _Obj;
 
     void ctor_(::g::Fuse::Scripting::Context* context, ::g::Uno::Net::Http::HttpMessageHandlerRequest* req);
     void Abort();

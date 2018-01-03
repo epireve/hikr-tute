@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct InputDispatch;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct InputDispatch__RootInfo;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
@@ -46,8 +46,8 @@ void InputDispatch__RemoveInputHandler_fn(::g::Fuse::Controls::Native::ViewHandl
 
 struct InputDispatch : uObject
 {
-    static uSStrong< ::g::Uno::Collections::List*> _activePointers_;
-    static uSStrong< ::g::Uno::Collections::List*>& _activePointers() { return _activePointers_; }
+    static uSStrong< ::g::Uno::Collections::List*  _activePointers_;
+    static uSStrong< ::g::Uno::Collections::List* & _activePointers() { return _activePointers_; }
 
     static void AddInputHandler(::g::Fuse::Visual* owner, ::g::Fuse::Controls::Native::ViewHandle* viewHandle);
     static bool CompareUITouch(::g::ObjC::Object* a, ::g::ObjC::Object* b);

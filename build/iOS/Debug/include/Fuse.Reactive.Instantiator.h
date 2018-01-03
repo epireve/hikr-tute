@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.IDeferred.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Node.ISubtreeDataProvider.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.IDeferred.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Node.ISubtreeDataProvider.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Instantiator__TemplateMatch;}}}
@@ -121,33 +121,33 @@ void Instantiator__remove_UpdatedWindowItems_fn(Instantiator* __this, uDelegate*
 
 struct Instantiator : ::g::Fuse::Behavior
 {
-    uStrong<uObject*> _templates;
-    uStrong< ::g::Uno::Collections::RootableList*> _rootTemplates;
+    uStrong<uObject*  _templates;
+    uStrong< ::g::Uno::Collections::RootableList*  _rootTemplates;
     int _defer;
     int _reuse;
     int _identity;
-    uStrong<uString*> _identityKey;
+    uStrong<uString*  _identityKey;
     float _deferredPriority;
-    uWeak<uObject*> _weakTemplateSource;
-    uStrong<uObject*> _templateSource;
+    uWeak<uObject*  _weakTemplateSource;
+    uStrong<uObject*  _templateSource;
     int _offset;
     int _limit;
     bool _hasLimit;
-    uStrong<uObject*> _items;
-    uStrong<uString*> _matchKey;
-    uStrong< ::g::Uno::Collections::Dictionary*> _dataMap;
-    uStrong<uObject*> _itemsSubscription;
+    uStrong<uObject*  _items;
+    uStrong<uString*  _matchKey;
+    uStrong< ::g::Uno::Collections::Dictionary*  _dataMap;
+    uStrong<uObject*  _itemsSubscription;
     bool _isListeningItems;
-    uStrong< ::g::Fuse::Triggers::BusyTask*> _busyTask;
-    uStrong<uDelegate*> _completedRemove;
+    uStrong< ::g::Fuse::Triggers::BusyTask*  _busyTask;
+    uStrong<uDelegate*  _completedRemove;
     bool _pendingNew;
-    uStrong< ::g::Uno::Collections::Dictionary*> _availableItemsById;
-    uStrong< ::g::Fuse::Internal::ObjectList*> _availableItems;
+    uStrong< ::g::Uno::Collections::Dictionary*  _availableItemsById;
+    uStrong< ::g::Fuse::Internal::ObjectList*  _availableItems;
     bool _pendingAvailableItems;
-    uStrong< ::g::Fuse::Internal::ObjectList*> _windowItems;
+    uStrong< ::g::Fuse::Internal::ObjectList*  _windowItems;
     bool _pendingUpdateWindowItems;
-    uStrong<uString*> _TemplateKey;
-    uStrong<uDelegate*> UpdatedWindowItems1;
+    uStrong<uString*  _TemplateKey;
+    uStrong<uDelegate*  UpdatedWindowItems1;
 
     void ctor_3();
     bool AddMatchingTemplates(Instantiator__WindowItem* item, Instantiator__TemplateMatch f);

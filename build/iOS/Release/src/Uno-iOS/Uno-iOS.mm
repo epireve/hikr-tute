@@ -1,16 +1,16 @@
-#include <Uno/Uno.h>
+#include <Uno/Uno.h 
 
-#include <libkern/OSByteOrder.h>
-#include <objc/runtime.h>
+#include <libkern/OSByteOrder.h 
+#include <objc/runtime.h 
 
-#include <Foundation/Foundation.h>
-#include <CoreGraphics/CoreGraphics.h>
-#include <UIKit/UIKit.h>
+#include <Foundation/Foundation.h 
+#include <CoreGraphics/CoreGraphics.h 
+#include <UIKit/UIKit.h 
 
-#include <Uno-iOS/AppDelegate.h>
-#include <Uno-iOS/Uno-iOS.h>
+#include <Uno-iOS/AppDelegate.h 
+#include <Uno-iOS/Uno-iOS.h 
 
-#include <uObjC.UnoObject.h>
+#include <uObjC.UnoObject.h 
 
 namespace {
 
@@ -19,7 +19,7 @@ namespace {
         return (uAppDelegate*) [UIApplication sharedApplication].delegate;
     }
 
-} // <anonymous> namespace
+} // <anonymous  namespace
 
 namespace uPlatform { namespace iOS {
 
@@ -38,7 +38,7 @@ namespace uPlatform { namespace iOS {
     {
         uObject *result = NULL;
 
-        id<UnoObject> value = (id<UnoObject>)
+        id<UnoObject  value = (id<UnoObject )
             objc_getAssociatedObject(nativeObject, &UnoObjectAssociationKey);
 
         if (value)
@@ -66,7 +66,7 @@ namespace uPlatform { namespace iOS {
 
         NSUInteger usedBytes = 0;
         if ([str
-                getBytes:result->_ptr
+                getBytes:result- _ptr
                 maxLength:bytes
                 usedLength:&usedBytes
                 encoding:NativeUTF16Encoding
@@ -75,8 +75,8 @@ namespace uPlatform { namespace iOS {
                 remainingRange:NULL])
         {
             if (usedBytes != bytes) {
-                result->_length = int(usedBytes / sizeof(uChar));
-                result->_ptr[result->_length] = 0;
+                result- _length = int(usedBytes / sizeof(uChar));
+                result- _ptr[result- _length] = 0;
             }
             return result;
         }

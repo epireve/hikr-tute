@@ -2,29 +2,29 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.IProxyHost.h>
-#include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.Elements.ITreeRenderer.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.ICommonViewport.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.IRenderViewport.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.IViewport.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float4.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.IProxyHost.h 
+#include <Fuse.Controls.LayoutControl.h 
+#include <Fuse.Elements.ITreeRenderer.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.ICommonViewport.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.IRenderViewport.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.IViewport.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float4.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{namespace Controls{struct GraphicsView;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
@@ -96,9 +96,9 @@ void GraphicsView__WorldToLocalRay_fn(GraphicsView* __this, uObject* world, ::g:
 
 struct GraphicsView : ::g::Fuse::Controls::LayoutControl
 {
-    uStrong< ::g::Fuse::FrustumViewport*> _frustumViewport;
-    uStrong< ::g::Fuse::OrthographicFrustum*> _frustum;
-    uStrong< ::g::Fuse::DrawContext*> _dc;
+    uStrong< ::g::Fuse::FrustumViewport*  _frustumViewport;
+    uStrong< ::g::Fuse::OrthographicFrustum*  _frustum;
+    uStrong< ::g::Fuse::DrawContext*  _dc;
     ::g::Uno::Float4 _color;
     bool _frameScheduled;
     bool _inBackground;

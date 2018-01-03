@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator__ControlPageData;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger;}}}
 
@@ -18,7 +18,7 @@ void EdgeNavigator__ControlPageData__New1_fn(EdgeNavigator__ControlPageData** __
 
 struct EdgeNavigator__ControlPageData : uObject
 {
-    uStrong< ::g::Fuse::Triggers::Trigger*> Enter;
+    uStrong< ::g::Fuse::Triggers::Trigger*  Enter;
 
     void ctor_();
     static EdgeNavigator__ControlPageData* New1();

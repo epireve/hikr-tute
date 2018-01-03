@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float2.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.Float2.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
@@ -76,7 +76,7 @@ void ViewHandle__UpdateViewRect_fn(ViewHandle* __this, ::g::Uno::Float4x4* trans
 
 struct ViewHandle : uObject
 {
-    uStrong< ::g::ObjC::Object*> NativeHandle;
+    uStrong< ::g::ObjC::Object*  NativeHandle;
     bool IsLeafView;
     bool NeedsInvalidation;
     bool NeedsRenderBounds;
@@ -89,13 +89,13 @@ struct ViewHandle : uObject
     void ctor_(::g::ObjC::Object* nativeHandle, int inputMode);
     void ctor_1(::g::ObjC::Object* nativeHandle, bool isLeafView, int inputMode, int invalidation);
     void BringToFront();
-    void Dispose() { (((ViewHandle_type*)__type)->fp_Dispose)(this); }
+    void Dispose() { (((ViewHandle_type*)__type)- fp_Dispose)(this); }
     uString* Format();
     ::g::ObjC::Object* GetHitTesthandle();
     bool HandlesInput();
     bool HitTestEnabled();
     void HitTestEnabled(bool value);
-    ::g::ObjC::Object* HitTestHandle() { ::g::ObjC::Object* __retval; return (((ViewHandle_type*)__type)->fp_get_HitTestHandle)(this, &__retval), __retval; }
+    ::g::ObjC::Object* HitTestHandle() { ::g::ObjC::Object* __retval; return (((ViewHandle_type*)__type)- fp_get_HitTestHandle)(this, &__retval), __retval; }
     void InitAnchorPoint();
     void InsertChild(ViewHandle* childHandle);
     void InsertChild1(ViewHandle* childHandle, int index);
@@ -103,8 +103,8 @@ struct ViewHandle : uObject
     bool IsEnabled();
     void IsEnabled(bool value);
     ::g::Uno::Float2 Measure(::g::Fuse::LayoutParams lp, float density);
-    void OnPositionChanged() { (((ViewHandle_type*)__type)->fp_OnPositionChanged)(this); }
-    void OnSizeChanged() { (((ViewHandle_type*)__type)->fp_OnSizeChanged)(this); }
+    void OnPositionChanged() { (((ViewHandle_type*)__type)- fp_OnPositionChanged)(this); }
+    void OnSizeChanged() { (((ViewHandle_type*)__type)- fp_OnSizeChanged)(this); }
     ::g::Uno::Float2 Position();
     void Position(::g::Uno::Float2 value);
     void RemoveChild(ViewHandle* childHandle);

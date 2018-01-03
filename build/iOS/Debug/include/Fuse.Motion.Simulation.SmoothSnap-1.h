@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct SmoothSnap;}}}}
 
@@ -14,7 +14,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class SmoothSnap<T> :5
+// internal sealed class SmoothSnap<T  :5
 // {
 struct SmoothSnap_type : uType
 {
@@ -48,27 +48,27 @@ void SmoothSnap__set_Velocity_fn(SmoothSnap* __this, void* value);
 
 struct SmoothSnap : uObject
 {
-    uStrong< ::g::Fuse::Internal::Blender*> _blender;
+    uStrong< ::g::Fuse::Internal::Blender*  _blender;
     float _scale;
     float _speedMin;
     float _speedDropoutDistance;
     float _speed;
-    uTField _Destination() { return __type->Field(this, 5); }
-    uTField _Position() { return __type->Field(this, 6); }
-    uTField _Velocity() { return __type->Field(this, 7); }
+    uTField _Destination() { return __type- Field(this, 5); }
+    uTField _Position() { return __type- Field(this, 6); }
+    uTField _Velocity() { return __type- Field(this, 7); }
 
     void ctor_(float scale);
-    template<class T>
+    template<class T 
     T Destination() { T __retval; return SmoothSnap__get_Destination_fn(this, &__retval), __retval; }
-    template<class T>
-    void Destination(T value) { SmoothSnap__set_Destination_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Destination(T value) { SmoothSnap__set_Destination_fn(this, uConstrain(__type- T(0), value)); }
     bool IsStatic();
-    template<class T>
+    template<class T 
     T Position() { T __retval; return SmoothSnap__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { SmoothSnap__set_Position_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T destination) { SmoothSnap__Reset_fn(this, uConstrain(__type->T(0), destination)); }
+    template<class T 
+    void Position(T value) { SmoothSnap__set_Position_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T destination) { SmoothSnap__Reset_fn(this, uConstrain(__type- T(0), destination)); }
     void SetDuration(float t);
     float Speed();
     void Speed(float value);
@@ -76,10 +76,10 @@ struct SmoothSnap : uObject
     void SpeedDropoutDistance(float value);
     void Start();
     void Update(double elapsed);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return SmoothSnap__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { SmoothSnap__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { SmoothSnap__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     static SmoothSnap* CreateNormalized(uType* __type);
     static SmoothSnap* CreatePoints(uType* __type);
     static SmoothSnap* CreateRadians(uType* __type);

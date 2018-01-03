@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Effects{struct Effect;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -29,6 +29,7 @@ struct Effect_type : ::g::Fuse::Node_type
 };
 
 Effect_type* Effect_typeof();
+void Effect__ctor_2_fn(Effect* __this, int* effectType);
 void Effect__get_Active_fn(Effect* __this, bool* __retval);
 void Effect__get_Element_fn(Effect* __this, ::g::Fuse::Elements::Element** __retval);
 void Effect__set_Element_fn(Effect* __this, ::g::Fuse::Elements::Element* value);
@@ -46,17 +47,18 @@ void Effect__get_Type_fn(Effect* __this, int* __retval);
 struct Effect : ::g::Fuse::Node
 {
     int _effectType;
-    uStrong< ::g::Fuse::Elements::Element*> _Element;
-    uStrong<uDelegate*> RenderBoundsChanged1;
-    uStrong<uDelegate*> RenderingChanged1;
+    uStrong< ::g::Fuse::Elements::Element*  _Element;
+    uStrong<uDelegate*  RenderBoundsChanged1;
+    uStrong<uDelegate*  RenderingChanged1;
 
-    bool Active() { bool __retval; return (((Effect_type*)__type)->fp_get_Active)(this, &__retval), __retval; }
+    void ctor_2(int effectType);
+    bool Active() { bool __retval; return (((Effect_type*)__type)- fp_get_Active)(this, &__retval), __retval; }
     ::g::Fuse::Elements::Element* Element();
     void Element(::g::Fuse::Elements::Element* value);
-    ::g::Fuse::VisualBounds* ModifyRenderBounds(::g::Fuse::VisualBounds* inBounds) { ::g::Fuse::VisualBounds* __retval; return (((Effect_type*)__type)->fp_ModifyRenderBounds)(this, inBounds, &__retval), __retval; }
+    ::g::Fuse::VisualBounds* ModifyRenderBounds(::g::Fuse::VisualBounds* inBounds) { ::g::Fuse::VisualBounds* __retval; return (((Effect_type*)__type)- fp_ModifyRenderBounds)(this, inBounds, &__retval), __retval; }
     void OnRenderBoundsChanged();
     void OnRenderingChanged();
-    void Render(::g::Fuse::DrawContext* dc) { (((Effect_type*)__type)->fp_Render)(this, dc); }
+    void Render(::g::Fuse::DrawContext* dc) { (((Effect_type*)__type)- fp_Render)(this, dc); }
     void add_RenderBoundsChanged(uDelegate* value);
     void remove_RenderBoundsChanged(uDelegate* value);
     void add_RenderingChanged(uDelegate* value);

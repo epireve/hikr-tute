@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.ObjectList-1.Enumerator.h>
-#include <Uno.Collections.IEnumerator.h>
-#include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Internal.ObjectList-1.Enumerator.h 
+#include <Uno.Collections.IEnumerator.h 
+#include <Uno.Collections.IEnumerator-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList__EnumeratorClass;}}}
 
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// public sealed class ObjectList<T>.EnumeratorClass :351
+// public sealed class ObjectList<T .EnumeratorClass :351
 // {
 struct ObjectList__EnumeratorClass_type : uType
 {

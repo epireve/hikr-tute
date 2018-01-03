@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct Snapshot;}}}
 
 namespace g{
@@ -19,7 +19,7 @@ void Snapshot__Subscribe_fn(Snapshot* __this, uObject* context, uObject* listene
 
 struct Snapshot : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _Source;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Source;
 
     ::g::Fuse::Reactive::Expression* Source();
     void Source(::g::Fuse::Reactive::Expression* value);

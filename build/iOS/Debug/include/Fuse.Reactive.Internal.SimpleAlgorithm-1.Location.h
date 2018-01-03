@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace Internal{struct SimpleAlgorithm__Location;}}}}
 
 namespace g{
@@ -10,7 +10,7 @@ namespace Fuse{
 namespace Reactive{
 namespace Internal{
 
-// private struct SimpleAlgorithm<T>.Location :121
+// private struct SimpleAlgorithm<T .Location :121
 // {
 uStructType* SimpleAlgorithm__Location_typeof();
 void SimpleAlgorithm__Location__ToString_fn(SimpleAlgorithm__Location* __this, uType* __type, uString** __retval);

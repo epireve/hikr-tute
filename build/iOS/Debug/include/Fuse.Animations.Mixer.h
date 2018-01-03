@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct Mixer;}}}
 
 namespace g{
@@ -17,10 +17,10 @@ void Mixer__get_DefaultDiscrete_fn(uObject** __retval);
 
 struct Mixer : uObject
 {
-    static uSStrong<uObject*> _default_;
-    static uSStrong<uObject*>& _default() { return _default_; }
-    static uSStrong<uObject*> _defaultDiscrete_;
-    static uSStrong<uObject*>& _defaultDiscrete() { return _defaultDiscrete_; }
+    static uSStrong<uObject*  _default_;
+    static uSStrong<uObject* & _default() { return _default_; }
+    static uSStrong<uObject*  _defaultDiscrete_;
+    static uSStrong<uObject* & _defaultDiscrete() { return _defaultDiscrete_; }
 
     static uObject* Default();
     static uObject* DefaultDiscrete();

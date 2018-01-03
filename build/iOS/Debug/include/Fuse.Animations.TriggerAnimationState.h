@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IPlayerFeedback.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IPlayerFeedback.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct Player;}}}
 namespace g{namespace Fuse{namespace Animations{struct TriggerAnimation;}}}
 namespace g{namespace Fuse{namespace Animations{struct TriggerAnimationState;}}}
@@ -48,14 +48,14 @@ void TriggerAnimationState__TrackProgress_fn(TriggerAnimationState* __this, ::g:
 
 struct TriggerAnimationState : uObject
 {
-    uStrong< ::g::Fuse::Visual*> _node;
-    uStrong< ::g::Fuse::Animations::Player*> _forePlayer;
-    uStrong< ::g::Fuse::Animations::Player*> _backPlayer;
-    uStrong< ::g::Fuse::Animations::Player*> _curPlayer;
+    uStrong< ::g::Fuse::Visual*  _node;
+    uStrong< ::g::Fuse::Animations::Player*  _forePlayer;
+    uStrong< ::g::Fuse::Animations::Player*  _backPlayer;
+    uStrong< ::g::Fuse::Animations::Player*  _curPlayer;
     int _curPlayerVariant;
-    uStrong<uObject*> Feedback;
+    uStrong<uObject*  Feedback;
     double _prevProgress;
-    uStrong< ::g::Fuse::Animations::TriggerAnimation*> _Animation;
+    uStrong< ::g::Fuse::Animations::TriggerAnimation*  _Animation;
 
     void ctor_(::g::Fuse::Animations::TriggerAnimation* animation, ::g::Fuse::Visual* node);
     ::g::Fuse::Animations::TriggerAnimation* Animation();

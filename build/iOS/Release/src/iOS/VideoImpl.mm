@@ -1,9 +1,9 @@
-#import <CoreVideo/CVOpenGLESTextureCache.h>
-#import <AVFoundation/AVFoundation.h>
-#import <iOS/VideoImpl.h>
-#import <OpenGLES/ES2/glext.h>
+#import <CoreVideo/CVOpenGLESTextureCache.h 
+#import <AVFoundation/AVFoundation.h 
+#import <iOS/VideoImpl.h 
+#import <OpenGLES/ES2/glext.h 
 
-#include <cstdlib>
+#include <cstdlib 
 
 @interface PresentationSizeObserver : NSObject
 @end
@@ -30,17 +30,17 @@ namespace FuseVideoImpl
 	- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 	{
 		FuseVideoImpl::VideoState *vs = (FuseVideoImpl::VideoState *)context;
-		auto size = [[vs->Player currentItem] presentationSize];
+		auto size = [[vs- Player currentItem] presentationSize];
 		auto screenScale = [[UIScreen mainScreen] scale];
 
-		vs->Width = (int)floor(size.width * screenScale + 0.5f);
-		vs->Height = (int)floor(size.height * screenScale + 0.5f);
+		vs- Width = (int)floor(size.width * screenScale + 0.5f);
+		vs- Height = (int)floor(size.height * screenScale + 0.5f);
 
-		if(vs->LoadedHandler != NULL)
+		if(vs- LoadedHandler != NULL)
 		{
-			vs->LoadedHandler->InvokeVoid();
-			uRelease(vs->LoadedHandler);
-			vs->LoadedHandler = NULL;
+			vs- LoadedHandler- InvokeVoid();
+			uRelease(vs- LoadedHandler);
+			vs- LoadedHandler = NULL;
 		}
 	}
 @end
@@ -51,16 +51,16 @@ namespace FuseVideoImpl
 	{
 		VideoState * vs = (VideoState*)videoState;
 
-		if (vs->ErrorHandler)
+		if (vs- ErrorHandler)
 		{
-			uRelease(vs->ErrorHandler);
-			vs->ErrorHandler = NULL;
+			uRelease(vs- ErrorHandler);
+			vs- ErrorHandler = NULL;
 		}
 
 		if (errorHandler)
 		{
 			uRetain(errorHandler);
-			vs->ErrorHandler = errorHandler;
+			vs- ErrorHandler = errorHandler;
 		}
 
 	}
@@ -68,13 +68,13 @@ namespace FuseVideoImpl
 	void cleanup(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		if (vs->TextureHandle)
+		if (vs- TextureHandle)
 		{
-			CFRelease(vs->TextureHandle);
-			vs->TextureHandle = NULL;
+			CFRelease(vs- TextureHandle);
+			vs- TextureHandle = NULL;
 		}
 		// Periodic texture cache flush every frame
-		CVOpenGLESTextureCacheFlush(vs->TextureCacheHandle, 0);
+		CVOpenGLESTextureCacheFlush(vs- TextureCacheHandle, 0);
 	}
 
 	void * allocateVideoState()
@@ -90,28 +90,28 @@ namespace FuseVideoImpl
 
 		VideoState * vs = (VideoState*)videoState;
 
-		if (vs->TextureCacheHandle)
-			CFRelease(vs->TextureCacheHandle);
+		if (vs- TextureCacheHandle)
+			CFRelease(vs- TextureCacheHandle);
 
-		if (vs->Player)
+		if (vs- Player)
 		{
-			if (vs->_presentationSizeObserver)
+			if (vs- _presentationSizeObserver)
 			{
-				[vs->Player removeObserver:vs->_presentationSizeObserver forKeyPath:@"currentItem.presentationSize"];
-				vs->_presentationSizeObserver = NULL;
+				[vs- Player removeObserver:vs- _presentationSizeObserver forKeyPath:@"currentItem.presentationSize"];
+				vs- _presentationSizeObserver = NULL;
 			}
-			[vs->Player pause];
-			vs->Player = NULL;
+			[vs- Player pause];
+			vs- Player = NULL;
 		}
 
-		vs->PlayerItem = NULL;
-		vs->PlayerItemVideoOutput = NULL;
-		vs->Asset = NULL;
+		vs- PlayerItem = NULL;
+		vs- PlayerItemVideoOutput = NULL;
+		vs- Asset = NULL;
 
-		if (vs->ErrorHandler)
+		if (vs- ErrorHandler)
 		{
-			uRelease(vs->ErrorHandler);
-			vs->ErrorHandler = NULL;
+			uRelease(vs- ErrorHandler);
+			vs- ErrorHandler = NULL;
 		}
 
 		free(videoState);
@@ -128,33 +128,33 @@ namespace FuseVideoImpl
 			uRetain(errorCallback);
 
 		#if COREVIDEO_USE_EAGLCONTEXT_CLASS_IN_API
-		CVReturn err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, [EAGLContext currentContext], NULL, &(vs->TextureCacheHandle));
+		CVReturn err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, [EAGLContext currentContext], NULL, &(vs- TextureCacheHandle));
 		#else
-		CVReturn err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, (__bridge void *)[EAGLContext currentContext], NULL, &(vs->TextureCacheHandle));
+		CVReturn err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, (__bridge void *)[EAGLContext currentContext], NULL, &(vs- TextureCacheHandle));
 		#endif
 
 		NSURL * url = [NSURL URLWithString:uri];
 
-		vs->Asset = [[AVURLAsset alloc] initWithURL:url options:nil];
-		[vs->Asset loadValuesAsynchronouslyForKeys:[NSArray arrayWithObject:@"tracks"] completionHandler:^{
+		vs- Asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+		[vs- Asset loadValuesAsynchronouslyForKeys:[NSArray arrayWithObject:@"tracks"] completionHandler:^{
 
 			dispatch_async(dispatch_get_main_queue(),^{
 
 				uAutoReleasePool pool;
 				NSError* error = nil;
-				AVKeyValueStatus status = [vs->Asset statusOfValueForKey:@"tracks" error:&error];
+				AVKeyValueStatus status = [vs- Asset statusOfValueForKey:@"tracks" error:&error];
 
 				if (status == AVKeyValueStatusLoaded)
 				{
 					NSDictionary* settings = [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithInt:kCVPixelFormatType_32BGRA],(id)kCVPixelBufferPixelFormatTypeKey,nil];
-					vs->PlayerItemVideoOutput = [[AVPlayerItemVideoOutput alloc] initWithPixelBufferAttributes:settings];
-					vs->PlayerItem = [[AVPlayerItem alloc] initWithAsset: vs->Asset];
-					[vs->PlayerItem addOutput:vs->PlayerItemVideoOutput];
-					vs->Player = [[AVPlayer alloc] initWithPlayerItem:vs->PlayerItem];
+					vs- PlayerItemVideoOutput = [[AVPlayerItemVideoOutput alloc] initWithPixelBufferAttributes:settings];
+					vs- PlayerItem = [[AVPlayerItem alloc] initWithAsset: vs- Asset];
+					[vs- PlayerItem addOutput:vs- PlayerItemVideoOutput];
+					vs- Player = [[AVPlayer alloc] initWithPlayerItem:vs- PlayerItem];
 
-					vs->LoadedHandler = loadedCallback;
-					vs->_presentationSizeObserver = [[PresentationSizeObserver alloc] init];
-					[vs->Player addObserver: vs->_presentationSizeObserver
+					vs- LoadedHandler = loadedCallback;
+					vs- _presentationSizeObserver = [[PresentationSizeObserver alloc] init];
+					[vs- Player addObserver: vs- _presentationSizeObserver
 					             forKeyPath: @"currentItem.presentationSize"
 					                options: (NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld)
 					                context: vs];
@@ -170,7 +170,7 @@ namespace FuseVideoImpl
 
 					if (errorCallback != NULL)
 					{
-						errorCallback->InvokeVoid();
+						errorCallback- InvokeVoid();
 						uRelease(errorCallback);
 					}
 					NSLog(@"Failed to load the tracks.");
@@ -182,67 +182,67 @@ namespace FuseVideoImpl
 	double getDuration(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		return CMTimeGetSeconds([vs->Asset duration]);
+		return CMTimeGetSeconds([vs- Asset duration]);
 	}
 	
 	double getPosition(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		return CMTimeGetSeconds([vs->PlayerItem currentTime]);
+		return CMTimeGetSeconds([vs- PlayerItem currentTime]);
 	}
 
 	void setPosition(void * videoState, double position)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		[vs->Player seekToTime: CMTimeMake(position * 1000, 1000)];
+		[vs- Player seekToTime: CMTimeMake(position * 1000, 1000)];
 	}
 
 	float getVolume(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		return [vs->Player volume];
+		return [vs- Player volume];
 	}
 
 	void setVolume(void * videoState, float volume)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		[vs->Player setVolume: volume];
+		[vs- Player setVolume: volume];
 	}
 
 	int getWidth(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		return vs->Width;
+		return vs- Width;
 	}
 
 	int getHeight(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		return vs->Height;
+		return vs- Height;
 	}
 
 	void play(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		[vs->Player play];
+		[vs- Player play];
 	}
 
 	void pause(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
-		[vs->Player pause];
+		[vs- Player pause];
 	}
 
 	int updateTexture(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
 
-		if(![vs->PlayerItemVideoOutput hasNewPixelBufferForItemTime: [vs->PlayerItem currentTime]])
-			return CVOpenGLESTextureGetName(vs->TextureHandle);
+		if(![vs- PlayerItemVideoOutput hasNewPixelBufferForItemTime: [vs- PlayerItem currentTime]])
+			return CVOpenGLESTextureGetName(vs- TextureHandle);
 
-		CVPixelBufferRef pixelBuffer = [vs->PlayerItemVideoOutput copyPixelBufferForItemTime: [vs->PlayerItem currentTime] itemTimeForDisplay:nil];
+		CVPixelBufferRef pixelBuffer = [vs- PlayerItemVideoOutput copyPixelBufferForItemTime: [vs- PlayerItem currentTime] itemTimeForDisplay:nil];
 		if(pixelBuffer == NULL)
-			return CVOpenGLESTextureGetName(vs->TextureHandle);
+			return CVOpenGLESTextureGetName(vs- TextureHandle);
 		
 		size_t width = CVPixelBufferGetWidth(pixelBuffer);
 		size_t height = CVPixelBufferGetHeight(pixelBuffer);
@@ -252,7 +252,7 @@ namespace FuseVideoImpl
 		glActiveTexture(GL_TEXTURE0);
 		CVReturn err = CVOpenGLESTextureCacheCreateTextureFromImage(
 			kCFAllocatorDefault,
-			vs->TextureCacheHandle,
+			vs- TextureCacheHandle,
 			pixelBuffer,
 			NULL,
 			GL_TEXTURE_2D,
@@ -262,30 +262,30 @@ namespace FuseVideoImpl
 			GL_BGRA_EXT,
 			GL_UNSIGNED_BYTE,
 			0,
-			&vs->TextureHandle);
+			&vs- TextureHandle);
 
 		if (err)
 		{
 			NSLog(@"Error at CVOpenGLESTextureCacheCreateTextureFromImage %d", err);
-			if (vs->ErrorHandler)
+			if (vs- ErrorHandler)
 			{
-				vs->ErrorHandler->InvokeVoid();
+				vs- ErrorHandler- InvokeVoid();
 			}
 		}
 		
-		glBindTexture(CVOpenGLESTextureGetTarget(vs->TextureHandle), CVOpenGLESTextureGetName(vs->TextureHandle));
+		glBindTexture(CVOpenGLESTextureGetTarget(vs- TextureHandle), CVOpenGLESTextureGetName(vs- TextureHandle));
 		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 		
 		CVBufferRelease(pixelBuffer);
-		return CVOpenGLESTextureGetName(vs->TextureHandle);
+		return CVOpenGLESTextureGetName(vs- TextureHandle);
 	}
 
 	int getRotation(void * videoState)
 	{
 		VideoState * vs = (VideoState*)videoState;
 		auto degrees = 0;
-		auto tracks = [vs->Asset tracks];
+		auto tracks = [vs- Asset tracks];
 		for (auto i = 0; i < tracks.count; i++)
 		{
 			auto track = tracks[i];

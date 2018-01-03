@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
 
 namespace g{
@@ -28,14 +28,14 @@ void MemoryPolicy__set_UnusedTimeout_fn(MemoryPolicy* __this, double* value);
 
 struct MemoryPolicy : uObject
 {
-    static uSStrong<MemoryPolicy*> PreloadRetain_;
-    static uSStrong<MemoryPolicy*>& PreloadRetain() { return PreloadRetain_; }
-    static uSStrong<MemoryPolicy*> UnloadUnused_;
-    static uSStrong<MemoryPolicy*>& UnloadUnused() { return UnloadUnused_; }
-    static uSStrong<MemoryPolicy*> QuickUnload_;
-    static uSStrong<MemoryPolicy*>& QuickUnload() { return QuickUnload_; }
-    static uSStrong<MemoryPolicy*> UnloadInBackgroundPolicy_;
-    static uSStrong<MemoryPolicy*>& UnloadInBackgroundPolicy() { return UnloadInBackgroundPolicy_; }
+    static uSStrong<MemoryPolicy*  PreloadRetain_;
+    static uSStrong<MemoryPolicy* & PreloadRetain() { return PreloadRetain_; }
+    static uSStrong<MemoryPolicy*  UnloadUnused_;
+    static uSStrong<MemoryPolicy* & UnloadUnused() { return UnloadUnused_; }
+    static uSStrong<MemoryPolicy*  QuickUnload_;
+    static uSStrong<MemoryPolicy* & QuickUnload() { return QuickUnload_; }
+    static uSStrong<MemoryPolicy*  UnloadInBackgroundPolicy_;
+    static uSStrong<MemoryPolicy* & UnloadInBackgroundPolicy() { return UnloadInBackgroundPolicy_; }
     bool _AllowPinnedFree;
     bool _BundlePreload;
     bool _UnloadInBackground;

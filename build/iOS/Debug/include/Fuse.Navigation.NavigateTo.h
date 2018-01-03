@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.NavigationTriggerAction.h>
+#include <Fuse.Navigation.NavigationTriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigateTo;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -26,7 +26,7 @@ struct NavigateTo : ::g::Fuse::Navigation::NavigationTriggerAction
 {
     bool _Bypass;
     bool _ClearForwardHistory;
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     bool Bypass();
     void Bypass(bool value);

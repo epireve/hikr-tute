@@ -1,5 +1,5 @@
-#include <algorithm>
-#include <CoreGraphics/CoreGraphics.h>
+#include <algorithm 
+#include <CoreGraphics/CoreGraphics.h 
 
 namespace CGLib
 {
@@ -21,7 +21,7 @@ struct Context
 	
 	bool RestoreState()
 	{
-		if (saveStateCount >0)
+		if (saveStateCount  0)
 		{
 			CGContextRestoreGState(Context);
 			saveStateCount--;
@@ -33,7 +33,7 @@ struct Context
 	bool ResetState()
 	{
 		bool okay = true;
-		while (saveStateCount > 0)
+		while (saveStateCount   0)
 		{
 			if (!RestoreState())
 				okay = false;

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Uno{struct Float2;}}
@@ -37,11 +37,11 @@ struct Brush : ::g::Uno::UX::PropertyObject
     int _pinCount;
 
     void ctor_1();
-    bool IsCompletelyTransparent() { bool __retval; return (((Brush_type*)__type)->fp_get_IsCompletelyTransparent)(this, &__retval), __retval; }
+    bool IsCompletelyTransparent() { bool __retval; return (((Brush_type*)__type)- fp_get_IsCompletelyTransparent)(this, &__retval), __retval; }
     bool IsPinned();
-    void OnPinned() { (((Brush_type*)__type)->fp_OnPinned)(this); }
+    void OnPinned() { (((Brush_type*)__type)- fp_OnPinned)(this); }
     void OnPrepare(::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize);
-    void OnUnpinned() { (((Brush_type*)__type)->fp_OnUnpinned)(this); }
+    void OnUnpinned() { (((Brush_type*)__type)- fp_OnUnpinned)(this); }
     void Pin();
     void Prepare(::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize);
     void Unpin();
@@ -53,13 +53,13 @@ struct Brush : ::g::Uno::UX::PropertyObject
 
 }}} // ::g::Fuse::Drawing
 
-#include <Uno.Float2.h>
+#include <Uno.Float2.h 
 
 namespace g{
 namespace Fuse{
 namespace Drawing{
 
-inline void Brush::OnPrepare(::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize) { (((Brush_type*)__type)->fp_OnPrepare)(this, dc, &canvasSize); }
+inline void Brush::OnPrepare(::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize) { (((Brush_type*)__type)- fp_OnPrepare)(this, dc, &canvasSize); }
 inline void Brush::OnPrepare(Brush* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize) { Brush__OnPrepare_fn(__this, dc, &canvasSize); }
 // }
 

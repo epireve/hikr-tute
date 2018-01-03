@@ -33,12 +33,11 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class TextBox :12
+// public partial class TextBox :12
 // {
 ::g::Fuse::Controls::TextInputControl_type* TextBox_typeof();
 void TextBox__ctor_8_fn(TextBox* __this);
 void TextBox__InitializeUX_fn(TextBox* __this);
-void TextBox__New4_fn(TextBox** __retval);
 
 struct TextBox : ::g::Fuse::Controls::TextInput
 {
@@ -55,7 +54,6 @@ struct TextBox : ::g::Fuse::Controls::TextInput
 
     void ctor_8();
     void InitializeUX();
-    static TextBox* New4();
 };
 // }
 

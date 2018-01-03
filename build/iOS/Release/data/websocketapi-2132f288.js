@@ -1,5 +1,5 @@
 /*enum BinaryType { "blob", "arraybuffer" };
-[Constructor(USVString url, optional (DOMString or sequence<DOMString>) protocols = []), Exposed=(Window,Worker)]
+[Constructor(USVString url, optional (DOMString or sequence<DOMString ) protocols = []), Exposed=(Window,Worker)]
 interface WebSocket : EventTarget {
   readonly attribute USVString url;
 
@@ -49,7 +49,7 @@ WebSocket = (function(window, WebSocketClient) {
 	var WebSocket = function WebSocket(url) {
 
 		var protocols = [];
-		if (arguments.length > 1) {
+		if (arguments.length   1) {
 			var p = arguments[1];
 			if (typeof p === 'string') {
 				protocols.push(p);

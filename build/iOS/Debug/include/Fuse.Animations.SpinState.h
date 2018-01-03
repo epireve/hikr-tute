@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.OpenAnimatorState.h>
+#include <Fuse.Animations.OpenAnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Spin;}}}
 namespace g{namespace Fuse{namespace Animations{struct SpinState;}}}
@@ -23,9 +23,9 @@ void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* str
 
 struct SpinState : ::g::Fuse::Animations::OpenAnimatorState
 {
-    uStrong< ::g::Fuse::Animations::Spin*> Animator1;
-    uStrong<uObject*> mixHandle;
-    uStrong< ::g::Fuse::Rotation*> transform;
+    uStrong< ::g::Fuse::Animations::Spin*  Animator1;
+    uStrong<uObject*  mixHandle;
+    uStrong< ::g::Fuse::Rotation*  transform;
     double degrees;
 
     void ctor_2(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animations::CreateStateParams* p);

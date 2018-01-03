@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.IDataEnumerator.h>
-#include <Uno.Object.h>
+#include <Fuse.Node.IDataEnumerator.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Node__DataFinder;}}
 
 namespace g{
@@ -24,12 +24,12 @@ void Node__DataFinder__NextData_fn(Node__DataFinder* __this, uObject* data, bool
 
 struct Node__DataFinder : uObject
 {
-    uStrong<uString*> _key;
+    uStrong<uString*  _key;
 
     void ctor_(uString* key);
     uString* Key();
     bool NextData(uObject* data);
-    void Resolve(uObject* provider, uObject* data) { (((Node__DataFinder_type*)__type)->fp_Resolve)(this, provider, data); }
+    void Resolve(uObject* provider, uObject* data) { (((Node__DataFinder_type*)__type)- fp_Resolve)(this, provider, data); }
 };
 // }
 

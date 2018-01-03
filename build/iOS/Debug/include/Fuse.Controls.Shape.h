@@ -2,25 +2,25 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.LayoutControl.h 
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct Shape;}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape__ResourceWatcher;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
@@ -118,22 +118,22 @@ void Shape__get_Watcher_fn(Shape* __this, ::g::Fuse::Drawing::DrawObjectWatcher*
 
 struct Shape : ::g::Fuse::Controls::LayoutControl
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _loadingResourcesHandle_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _loadingResourcesHandle() { return _loadingResourcesHandle_; }
-    uStrong< ::g::Fuse::Triggers::BusyTask*> _loadingResourceTask;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _loadingResourcesHandle_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _loadingResourcesHandle() { return _loadingResourcesHandle_; }
+    uStrong< ::g::Fuse::Triggers::BusyTask*  _loadingResourceTask;
     bool _surfacePathDirty;
-    uStrong< ::g::Fuse::Drawing::SurfacePath*> _surfacePath;
+    uStrong< ::g::Fuse::Drawing::SurfacePath*  _surfacePath;
     static ::g::Uno::UX::Selector ColorPropertyName_;
     static ::g::Uno::UX::Selector& ColorPropertyName() { return ColorPropertyName_; }
-    uStrong< ::g::Uno::Collections::RootableList*> _fills;
+    uStrong< ::g::Uno::Collections::RootableList*  _fills;
     static ::g::Uno::UX::Selector _widthName_;
     static ::g::Uno::UX::Selector& _widthName() { return _widthName_; }
     static ::g::Uno::UX::Selector _offsetName_;
     static ::g::Uno::UX::Selector& _offsetName() { return _offsetName_; }
-    uStrong< ::g::Uno::Collections::RootableList*> _strokes;
+    uStrong< ::g::Uno::Collections::RootableList*  _strokes;
     float _smoothness;
-    uStrong< ::g::Fuse::Drawing::Surface*> _surface1;
-    uStrong< ::g::Fuse::Drawing::DrawObjectWatcher*> _watcher;
+    uStrong< ::g::Fuse::Drawing::Surface*  _surface1;
+    uStrong< ::g::Fuse::Drawing::DrawObjectWatcher*  _watcher;
 
     void ctor_6();
     void AddLoadingResource(::g::Uno::UX::PropertyObject* res);
@@ -141,9 +141,9 @@ struct Shape : ::g::Fuse::Controls::LayoutControl
     void CheckStatus();
     ::g::Uno::Float4 Color();
     void Color(::g::Uno::Float4 value);
-    ::g::Fuse::Drawing::SurfacePath* CreateSurfacePath(::g::Fuse::Drawing::Surface* surface) { ::g::Fuse::Drawing::SurfacePath* __retval; return (((Shape_type*)__type)->fp_CreateSurfacePath)(this, surface, &__retval), __retval; }
-    void DrawFill(::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Brush* fill) { (((Shape_type*)__type)->fp_DrawFill)(this, dc, fill); }
-    void DrawStroke(::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke) { (((Shape_type*)__type)->fp_DrawStroke)(this, dc, stroke); }
+    ::g::Fuse::Drawing::SurfacePath* CreateSurfacePath(::g::Fuse::Drawing::Surface* surface) { ::g::Fuse::Drawing::SurfacePath* __retval; return (((Shape_type*)__type)- fp_CreateSurfacePath)(this, surface, &__retval), __retval; }
+    void DrawFill(::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Brush* fill) { (((Shape_type*)__type)- fp_DrawFill)(this, dc, fill); }
+    void DrawStroke(::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke) { (((Shape_type*)__type)- fp_DrawStroke)(this, dc, stroke); }
     ::g::Fuse::Drawing::Brush* Fill();
     void Fill(::g::Fuse::Drawing::Brush* value);
     uObject* Fills();
@@ -151,10 +151,10 @@ struct Shape : ::g::Fuse::Controls::LayoutControl
     bool HasFills();
     bool HasLoadingResources();
     bool HasStrokes();
-    void InvalidateSurfacePath() { (((Shape_type*)__type)->fp_InvalidateSurfacePath)(this); }
+    void InvalidateSurfacePath() { (((Shape_type*)__type)- fp_InvalidateSurfacePath)(this); }
     ::g::Uno::Collections::Dictionary* LoadingResources();
     uObject* NativeShape();
-    bool NeedSurface() { bool __retval; return (((Shape_type*)__type)->fp_get_NeedSurface)(this, &__retval), __retval; }
+    bool NeedSurface() { bool __retval; return (((Shape_type*)__type)- fp_get_NeedSurface)(this, &__retval), __retval; }
     void OnColorChanged(::g::Uno::Float4 value, uObject* origin);
     void OnFillAdded(::g::Fuse::Drawing::Brush* f);
     void OnFillRemoved(::g::Fuse::Drawing::Brush* f);
@@ -185,17 +185,17 @@ struct Shape : ::g::Fuse::Controls::LayoutControl
 
 }}} // ::g::Fuse::Controls
 
-#include <Fuse.LayoutParams.h>
-#include <Uno.Float2.h>
-#include <Uno.Float4.h>
-#include <Uno.Rect.h>
-#include <Uno.UX.Selector.h>
+#include <Fuse.LayoutParams.h 
+#include <Uno.Float2.h 
+#include <Uno.Float4.h 
+#include <Uno.Rect.h 
+#include <Uno.UX.Selector.h 
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-inline ::g::Uno::Rect Shape::CalcShapeExtents() { ::g::Uno::Rect __retval; return (((Shape_type*)__type)->fp_CalcShapeExtents)(this, &__retval), __retval; }
+inline ::g::Uno::Rect Shape::CalcShapeExtents() { ::g::Uno::Rect __retval; return (((Shape_type*)__type)- fp_CalcShapeExtents)(this, &__retval), __retval; }
 inline ::g::Uno::Rect Shape::CalcShapeExtents(Shape* __this) { ::g::Uno::Rect __retval; return Shape__CalcShapeExtents_fn(__this, &__retval), __retval; }
 // }
 

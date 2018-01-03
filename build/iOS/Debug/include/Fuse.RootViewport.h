@@ -2,21 +2,21 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.ICommonViewport.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.IViewport.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.IDisposable.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Binding.h 
+#include <Fuse.ICommonViewport.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.IViewport.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.IDisposable.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
 namespace g{namespace Fuse{struct PreviewState;}}
@@ -55,16 +55,16 @@ void RootViewport__WorldToLocalRay_fn(RootViewport* __this, uObject* world, ::g:
 
 struct RootViewport : ::g::Fuse::Visual
 {
-    uStrong<uObject*> _frame;
-    uStrong<uObject*> Frustum;
-    uStrong< ::g::Fuse::FrustumViewport*> _frustumViewport;
+    uStrong<uObject*  _frame;
+    uStrong<uObject*  Frustum;
+    uStrong< ::g::Fuse::FrustumViewport*  _frustumViewport;
     bool _sizeOverridden;
     float _pixelsPerPoint;
     float _pixelsPerOSPoint;
     float _overridePixelsPerPoint;
     ::g::Uno::Float2 _pixelSize;
-    uStrong< ::g::Fuse::PreviewState*> _previewState;
-    uStrong<uDelegate*> Resized1;
+    uStrong< ::g::Fuse::PreviewState*  _previewState;
+    uStrong<uDelegate*  Resized1;
 
     void ctor_3();
     void ctor_4(uObject* frame);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct NavigationControl__ControlPageData;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger;}}}
 
@@ -18,10 +18,10 @@ void NavigationControl__ControlPageData__New1_fn(NavigationControl__ControlPageD
 
 struct NavigationControl__ControlPageData : uObject
 {
-    uStrong< ::g::Fuse::Triggers::Trigger*> Enter;
-    uStrong< ::g::Fuse::Triggers::Trigger*> Exit;
-    uStrong< ::g::Fuse::Triggers::Trigger*> Inactive;
-    uStrong< ::g::Fuse::Triggers::Trigger*> Removing;
+    uStrong< ::g::Fuse::Triggers::Trigger*  Enter;
+    uStrong< ::g::Fuse::Triggers::Trigger*  Exit;
+    uStrong< ::g::Fuse::Triggers::Trigger*  Inactive;
+    uStrong< ::g::Fuse::Triggers::Trigger*  Removing;
     bool FromTemplate;
 
     void ctor_();

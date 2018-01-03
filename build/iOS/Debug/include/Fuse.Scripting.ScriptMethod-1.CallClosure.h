@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMethod1__CallClosure;}}}
 
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Scripting{
 
-// private sealed class ScriptMethod<T>.CallClosure :126
+// private sealed class ScriptMethod<T .CallClosure :126
 // {
 uType* ScriptMethod1__CallClosure_typeof();
 void ScriptMethod1__CallClosure__ctor__fn(ScriptMethod1__CallClosure* __this, uDelegate* method, ::g::Fuse::Scripting::Context* c, uObject* obj, uArray* args);
@@ -19,10 +19,10 @@ void ScriptMethod1__CallClosure__Run_fn(ScriptMethod1__CallClosure* __this);
 
 struct ScriptMethod1__CallClosure : uObject
 {
-    uStrong<uDelegate*> _method;
-    uStrong<uObject*> _obj;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
-    uStrong<uArray*> _args;
+    uStrong<uDelegate*  _method;
+    uStrong<uObject*  _obj;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
+    uStrong<uArray*  _args;
 
     void ctor_(uDelegate* method, ::g::Fuse::Scripting::Context* c, uObject* obj, uArray* args);
     void Run();

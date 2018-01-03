@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Experimental{namespace Http{struct HttpResponseHeader;}}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 
@@ -24,8 +24,8 @@ void HttpResponseHeader__set_StatusCode_fn(HttpResponseHeader* __this, int* valu
 
 struct HttpResponseHeader : uObject
 {
-    uStrong< ::g::Uno::Collections::Dictionary*> _Headers;
-    uStrong<uString*> _ReasonPhrase;
+    uStrong< ::g::Uno::Collections::Dictionary*  _Headers;
+    uStrong<uString*  _ReasonPhrase;
     int _StatusCode;
 
     void ctor_();

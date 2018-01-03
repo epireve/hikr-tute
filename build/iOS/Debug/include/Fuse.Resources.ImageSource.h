@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceChangedArgs;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceErrorArgs;}}}
@@ -51,8 +51,8 @@ void ImageSource__Unpin_fn(ImageSource* __this);
 struct ImageSource : ::g::Uno::UX::PropertyObject
 {
     int _pinCount;
-    uStrong<uDelegate*> Changed1;
-    uStrong<uDelegate*> Error1;
+    uStrong<uDelegate*  Changed1;
+    uStrong<uDelegate*  Error1;
 
     void ctor_1();
     void add_Changed(uDelegate* value);
@@ -61,20 +61,20 @@ struct ImageSource : ::g::Uno::UX::PropertyObject
     void remove_Error(uDelegate* value);
     void FireChanged(::g::Fuse::Resources::ImageSourceChangedArgs* args);
     void FireError(::g::Fuse::Resources::ImageSourceErrorArgs* args);
-    ::g::Uno::Graphics::Texture2D* GetTexture() { ::g::Uno::Graphics::Texture2D* __retval; return (((ImageSource_type*)__type)->fp_GetTexture)(this, &__retval), __retval; }
+    ::g::Uno::Graphics::Texture2D* GetTexture() { ::g::Uno::Graphics::Texture2D* __retval; return (((ImageSource_type*)__type)- fp_GetTexture)(this, &__retval), __retval; }
     bool IsPinned();
     void OnChanged();
     void OnError(uString* msg, ::g::Uno::Exception* e);
-    void OnPinChanged() { (((ImageSource_type*)__type)->fp_OnPinChanged)(this); }
-    int Orientation() { int __retval; return (((ImageSource_type*)__type)->fp_get_Orientation)(this, &__retval), __retval; }
+    void OnPinChanged() { (((ImageSource_type*)__type)- fp_OnPinChanged)(this); }
+    int Orientation() { int __retval; return (((ImageSource_type*)__type)- fp_get_Orientation)(this, &__retval), __retval; }
     void Pin();
     ::g::Uno::Int2 PixelSize();
     void ProxyChanged(uObject* s, ::g::Uno::EventArgs* a);
     void ProxyError(uObject* s, ::g::Fuse::Resources::ImageSourceErrorArgs* a);
-    void Reload() { (((ImageSource_type*)__type)->fp_Reload)(this); }
+    void Reload() { (((ImageSource_type*)__type)- fp_Reload)(this); }
     ::g::Uno::Float2 Size();
-    float SizeDensity() { float __retval; return (((ImageSource_type*)__type)->fp_get_SizeDensity)(this, &__retval), __retval; }
-    int State() { int __retval; return (((ImageSource_type*)__type)->fp_get_State)(this, &__retval), __retval; }
+    float SizeDensity() { float __retval; return (((ImageSource_type*)__type)- fp_get_SizeDensity)(this, &__retval), __retval; }
+    int State() { int __retval; return (((ImageSource_type*)__type)- fp_get_State)(this, &__retval), __retval; }
     void Unpin();
     static void OnPinChanged(ImageSource* __this) { ImageSource__OnPinChanged_fn(__this); }
     static void Reload(ImageSource* __this) { ImageSource__Reload_fn(__this); }
@@ -82,15 +82,15 @@ struct ImageSource : ::g::Uno::UX::PropertyObject
 
 }}} // ::g::Fuse::Resources
 
-#include <Uno.Float2.h>
-#include <Uno.Int2.h>
+#include <Uno.Float2.h 
+#include <Uno.Int2.h 
 
 namespace g{
 namespace Fuse{
 namespace Resources{
 
-inline ::g::Uno::Int2 ImageSource::PixelSize() { ::g::Uno::Int2 __retval; return (((ImageSource_type*)__type)->fp_get_PixelSize)(this, &__retval), __retval; }
-inline ::g::Uno::Float2 ImageSource::Size() { ::g::Uno::Float2 __retval; return (((ImageSource_type*)__type)->fp_get_Size)(this, &__retval), __retval; }
+inline ::g::Uno::Int2 ImageSource::PixelSize() { ::g::Uno::Int2 __retval; return (((ImageSource_type*)__type)- fp_get_PixelSize)(this, &__retval), __retval; }
+inline ::g::Uno::Float2 ImageSource::Size() { ::g::Uno::Float2 __retval; return (((ImageSource_type*)__type)- fp_get_Size)(this, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Resources

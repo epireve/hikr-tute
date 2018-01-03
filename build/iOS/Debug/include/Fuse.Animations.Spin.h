@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.OpenAnimator.h>
+#include <Fuse.Animations.OpenAnimator.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Spin;}}}
@@ -24,7 +24,7 @@ void Spin__set_Target_fn(Spin* __this, ::g::Fuse::Visual* value);
 struct Spin : ::g::Fuse::Animations::OpenAnimator
 {
     double _hertz;
-    uStrong< ::g::Fuse::Visual*> _Target;
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     double Frequency();
     void Frequency(double value);

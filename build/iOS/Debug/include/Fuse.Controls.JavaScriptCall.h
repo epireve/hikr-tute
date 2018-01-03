@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.BufferedWebViewCall.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.BufferedWebViewCall.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct JavaScriptCall;}}}
 
 namespace g{
@@ -24,8 +24,8 @@ void JavaScriptCall__New1_fn(uString* script, uDelegate* handler, JavaScriptCall
 
 struct JavaScriptCall : uObject
 {
-    uStrong<uDelegate*> Handler;
-    uStrong<uString*> Script;
+    uStrong<uDelegate*  Handler;
+    uStrong<uString*  Script;
 
     void ctor_(uString* script, uDelegate* handler);
     void Apply(uObject* wv);

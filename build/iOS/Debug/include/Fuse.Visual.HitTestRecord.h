@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct HitTestResult;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct Visual__HitTestRecord;}}
@@ -19,7 +19,7 @@ void Visual__HitTestRecord__New1_fn(Visual__HitTestRecord** __retval);
 
 struct Visual__HitTestRecord : uObject
 {
-    uStrong< ::g::Fuse::Visual*> Visual;
+    uStrong< ::g::Fuse::Visual*  Visual;
 
     void ctor_();
     void HitTestCallback(::g::Fuse::HitTestResult* result);

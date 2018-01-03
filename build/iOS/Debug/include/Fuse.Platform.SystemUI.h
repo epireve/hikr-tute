@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <CoreGraphics/CoreGraphics.h>
-#include <Uno.h>
+#include <CoreGraphics/CoreGraphics.h 
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Platform{struct SystemUI;}}}
 namespace g{namespace Fuse{namespace Platform{struct SystemUIWillResizeEventArgs;}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -56,12 +56,12 @@ struct SystemUI : uObject
     static ::g::Uno::Rect& _Frame() { return _Frame_; }
     static int _uStatusBarAnimation_;
     static int& _uStatusBarAnimation() { return _uStatusBarAnimation_; }
-    static uSStrong<uDelegate*> BottomFrameWillResize1_;
-    static uSStrong<uDelegate*>& BottomFrameWillResize1() { return BottomFrameWillResize1_; }
-    static uSStrong<uDelegate*> FrameChanged1_;
-    static uSStrong<uDelegate*>& FrameChanged1() { return FrameChanged1_; }
-    static uSStrong<uDelegate*> TopFrameWillResize1_;
-    static uSStrong<uDelegate*>& TopFrameWillResize1() { return TopFrameWillResize1_; }
+    static uSStrong<uDelegate*  BottomFrameWillResize1_;
+    static uSStrong<uDelegate* & BottomFrameWillResize1() { return BottomFrameWillResize1_; }
+    static uSStrong<uDelegate*  FrameChanged1_;
+    static uSStrong<uDelegate* & FrameChanged1() { return FrameChanged1_; }
+    static uSStrong<uDelegate*  TopFrameWillResize1_;
+    static uSStrong<uDelegate* & TopFrameWillResize1() { return TopFrameWillResize1_; }
 
     static void _statusBarWillChangeFrame(CGRect _endFrame, double animationDuration);
     static void EnableKeyboardResizeNotifications();

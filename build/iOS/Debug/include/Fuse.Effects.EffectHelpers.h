@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Effects{struct EffectHelpers;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Uno{namespace Graphics{struct Framebuffer;}}}
@@ -32,16 +32,16 @@ void EffectHelpers__ResampleGaussian5tap_fn(EffectHelpers* __this, ::g::Fuse::Dr
 
 struct EffectHelpers : uObject
 {
-    static uSStrong<EffectHelpers*> _instance_;
-    static uSStrong<EffectHelpers*>& _instance() { return _instance_; }
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> ResampleBilinear_VertexData_44444bad_2_5_2;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> ResampleBilinear_VertexData_44444bad_2_5_3;
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> ResampleGaussian5tap_VertexData_8e4c5d82_2_5_2;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> ResampleGaussian5tap_VertexData_8e4c5d82_2_5_3;
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> ResampleGaussian9tap_VertexData_6379debe_2_5_2;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> ResampleGaussian9tap_VertexData_6379debe_2_5_3;
-    uStrong< ::g::Uno::Graphics::IndexBuffer*> GaussianBlurSeparable_VertexData_2aabda0d_2_5_2;
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> GaussianBlurSeparable_VertexData_2aabda0d_2_5_3;
+    static uSStrong<EffectHelpers*  _instance_;
+    static uSStrong<EffectHelpers* & _instance() { return _instance_; }
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  ResampleBilinear_VertexData_44444bad_2_5_2;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  ResampleBilinear_VertexData_44444bad_2_5_3;
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  ResampleGaussian5tap_VertexData_8e4c5d82_2_5_2;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  ResampleGaussian5tap_VertexData_8e4c5d82_2_5_3;
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  ResampleGaussian9tap_VertexData_6379debe_2_5_2;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  ResampleGaussian9tap_VertexData_6379debe_2_5_3;
+    uStrong< ::g::Uno::Graphics::IndexBuffer*  GaussianBlurSeparable_VertexData_2aabda0d_2_5_2;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  GaussianBlurSeparable_VertexData_2aabda0d_2_5_3;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_44444bad;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_8e4c5d82;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_6379debe;

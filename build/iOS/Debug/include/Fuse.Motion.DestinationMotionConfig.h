@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct Easing;}}}
 namespace g{namespace Fuse{namespace Motion{struct DestinationMotionConfig;}}}
 
@@ -32,7 +32,7 @@ struct DestinationMotionConfig : uObject
 {
     int _type;
     bool _explicitType;
-    uStrong< ::g::Fuse::Animations::Easing*> _easing;
+    uStrong< ::g::Fuse::Animations::Easing*  _easing;
     float _duration;
     bool _hasDuration;
     float _durationExp;

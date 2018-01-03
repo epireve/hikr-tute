@@ -2,21 +2,21 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.ICommonViewport.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.IViewport.h>
-#include <Fuse.Node.h>
-#include <Fuse.RootViewport.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Binding.h 
+#include <Fuse.ICommonViewport.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.IViewport.h 
+#include <Fuse.Node.h 
+#include <Fuse.RootViewport.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct NativeRootViewport;}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 
@@ -34,7 +34,7 @@ void NativeRootViewport__get_RootView_fn(NativeRootViewport* __this, ::g::Fuse::
 
 struct NativeRootViewport : ::g::Fuse::RootViewport
 {
-    uStrong< ::g::Fuse::Controls::Native::ViewHandle*> _rootView;
+    uStrong< ::g::Fuse::Controls::Native::ViewHandle*  _rootView;
 
     void ctor_5(::g::Fuse::Controls::Native::ViewHandle* rootView);
     ::g::Fuse::Controls::Native::ViewHandle* RootView();

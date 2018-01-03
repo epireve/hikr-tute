@@ -1,7 +1,7 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Backends/CPlusPlus/Uno/Base64.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.h>
+#include <Uno.h 
 
 static const char* base64_chars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -10,8 +10,8 @@ static const char* base64_chars =
 
 uString* uBase64Encode(uArray* bytes)
 {
-    unsigned char* bytes_to_encode =(unsigned char*)bytes->Ptr();
-    unsigned int in_len = bytes->Length();
+    unsigned char* bytes_to_encode =(unsigned char*)bytes- Ptr();
+    unsigned int in_len = bytes- Length();
     unsigned char* encoded_buffer = new unsigned char[in_len*2 + 3];
 
     int i = 0;
@@ -25,9 +25,9 @@ uString* uBase64Encode(uArray* bytes)
         char_array_3[i++] = *(bytes_to_encode++);
         if (i == 3)
         {
-            char_array_4[0] = (char_array_3[0] & 0xfc) >> 2;
-            char_array_4[1] = ((char_array_3[0] & 0x03) << 4) + ((char_array_3[1] & 0xf0) >> 4);
-            char_array_4[2] = ((char_array_3[1] & 0x0f) << 2) + ((char_array_3[2] & 0xc0) >> 6);
+            char_array_4[0] = (char_array_3[0] & 0xfc)    2;
+            char_array_4[1] = ((char_array_3[0] & 0x03) << 4) + ((char_array_3[1] & 0xf0)    4);
+            char_array_4[2] = ((char_array_3[1] & 0x0f) << 2) + ((char_array_3[2] & 0xc0)    6);
             char_array_4[3] = char_array_3[2] & 0x3f;
 
             for (i = 0; i < 4 ; i++)
@@ -45,9 +45,9 @@ uString* uBase64Encode(uArray* bytes)
             char_array_3[j] = '\0';
         }
 
-        char_array_4[0] = (char_array_3[0] & 0xfc) >> 2;
-        char_array_4[1] = ((char_array_3[0] & 0x03) << 4) + ((char_array_3[1] & 0xf0) >> 4);
-        char_array_4[2] = ((char_array_3[1] & 0x0f) << 2) + ((char_array_3[2] & 0xc0) >> 6);
+        char_array_4[0] = (char_array_3[0] & 0xfc)    2;
+        char_array_4[1] = ((char_array_3[0] & 0x03) << 4) + ((char_array_3[1] & 0xf0)    4);
+        char_array_4[2] = ((char_array_3[1] & 0x0f) << 2) + ((char_array_3[2] & 0xc0)    6);
         char_array_4[3] = char_array_3[2] & 0x3f;
 
         for (j = 0; j < (i + 1); j++)

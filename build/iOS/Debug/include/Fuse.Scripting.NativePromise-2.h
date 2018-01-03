@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.NativeMember.h>
+#include <Fuse.Scripting.NativeMember.h 
 namespace g{namespace Fuse{namespace Scripting{struct NativePromise;}}}
 namespace g{namespace Uno{namespace Threading{struct Future1;}}}
 
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Scripting{
 
-// public sealed class NativePromise<T, TJSResult> :40
+// public sealed class NativePromise<T, TJSResult  :40
 // {
 ::g::Fuse::Scripting::NativeMember_type* NativePromise_typeof();
 void NativePromise__ctor_1_fn(NativePromise* __this, uString* name, uDelegate* futureFactory, uDelegate* resultConverter);
@@ -22,9 +22,9 @@ void NativePromise__New2_fn(uType* __type, uString* name, uDelegate* func, uDele
 
 struct NativePromise : ::g::Fuse::Scripting::NativeMember
 {
-    uStrong<uDelegate*> _futureFactory;
-    uStrong<uDelegate*> _resultConverter;
-    uStrong<uDelegate*> _func;
+    uStrong<uDelegate*  _futureFactory;
+    uStrong<uDelegate*  _resultConverter;
+    uStrong<uDelegate*  _func;
 
     void ctor_1(uString* name, uDelegate* futureFactory, uDelegate* resultConverter);
     void ctor_2(uString* name, uDelegate* func, uDelegate* resultConverter);

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.RouterPage.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Reactive.ObserverMap-1.h>
+#include <Fuse.Navigation.RouterPage.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Reactive.ObserverMap-1.h 
 namespace g{namespace Fuse{namespace Navigation{struct PagesMap;}}}
 
 namespace g{
@@ -25,7 +25,7 @@ void PagesMap__remove_Updated_fn(PagesMap* __this, uDelegate* value);
 
 struct PagesMap : ::g::Fuse::Reactive::ObserverMap
 {
-    uStrong<uDelegate*> Updated1;
+    uStrong<uDelegate*  Updated1;
 
     void ctor_1();
     void add_Updated(uDelegate* value);

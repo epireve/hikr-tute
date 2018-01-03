@@ -2,22 +2,22 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITransformRelative.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Transform.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITransformRelative.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Transform.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{struct RelativeTransform;}}
 namespace g{namespace Fuse{struct Visual;}}
 
 namespace g{
 namespace Fuse{
 
-// public abstract class RelativeTransform<TransformMode> :300
+// public abstract class RelativeTransform<TransformMode  :300
 // {
 struct RelativeTransform_type : ::g::Fuse::Transform_type
 {
@@ -42,10 +42,10 @@ void RelativeTransform__set_RelativeTo_fn(RelativeTransform* __this, uObject* va
 
 struct RelativeTransform : ::g::Fuse::Transform
 {
-    uStrong< ::g::Fuse::Visual*> _relativeNode;
-    uStrong<uObject*> _relativeTo;
-    uStrong< ::g::Fuse::Visual*> _waitRootingCompleted;
-    uStrong<uObject*> _subscription;
+    uStrong< ::g::Fuse::Visual*  _relativeNode;
+    uStrong<uObject*  _relativeTo;
+    uStrong< ::g::Fuse::Visual*  _waitRootingCompleted;
+    uStrong<uObject*  _subscription;
 
     void ctor_3(uObject* defaultTransform);
     void CheckSubscription(bool fromRooted);

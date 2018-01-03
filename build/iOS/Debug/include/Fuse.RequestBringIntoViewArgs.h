@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.EventArgs.h>
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{struct RequestBringIntoViewArgs;}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -19,7 +19,7 @@ void RequestBringIntoViewArgs__set_Visual_fn(RequestBringIntoViewArgs* __this, :
 
 struct RequestBringIntoViewArgs : ::g::Uno::EventArgs
 {
-    uStrong< ::g::Fuse::Visual*> _Visual;
+    uStrong< ::g::Fuse::Visual*  _Visual;
 
     void ctor_1(::g::Fuse::Visual* elm);
     ::g::Fuse::Visual* Visual();

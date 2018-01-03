@@ -2,28 +2,28 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.Panel.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Node.h>
-#include <Fuse.Node.ISubtreeDataProvider.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.Panel.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Node.h 
+#include <Fuse.Node.ISubtreeDataProvider.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct NavigationControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct NavigationControl__ControlPageData;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
@@ -116,15 +116,15 @@ void NavigationControl__UpdateProgress_fn(NavigationControl* __this, ::g::Fuse::
 
 struct NavigationControl : ::g::Fuse::Controls::Panel
 {
-    uStrong<uObject*> _pageHistory;
+    uStrong<uObject*  _pageHistory;
     int _curPageIndex;
     int _transition;
-    uStrong< ::g::Fuse::Navigation::VisualNavigation*> _navigation;
+    uStrong< ::g::Fuse::Navigation::VisualNavigation*  _navigation;
     bool _isRouterOutlet;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _propTransition_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _propTransition() { return NavigationControl_typeof()->Init(), _propTransition_; }
-    uStrong< ::g::Fuse::Visual*> _AncestorPage;
-    uStrong< ::g::Fuse::Navigation::RouterPage*> _AncestorRouterPage;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _propTransition_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _propTransition() { return NavigationControl_typeof()- Init(), _propTransition_; }
+    uStrong< ::g::Fuse::Visual*  _AncestorPage;
+    uStrong< ::g::Fuse::Navigation::RouterPage*  _AncestorRouterPage;
 
     void ctor_7();
     ::g::Fuse::Visual* Active();
@@ -137,7 +137,7 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     bool CanGoForward();
     void CleanupTriggers(::g::Fuse::Elements::Element* page, NavigationControl__ControlPageData* data);
     bool CompatibleParameter(uString* a, uString* b);
-    void CreateTriggers(::g::Fuse::Elements::Element* c, NavigationControl__ControlPageData* pd) { (((NavigationControl_type*)__type)->fp_CreateTriggers)(this, c, pd); }
+    void CreateTriggers(::g::Fuse::Elements::Element* c, NavigationControl__ControlPageData* pd) { (((NavigationControl_type*)__type)- fp_CreateTriggers)(this, c, pd); }
     void FullUpdatePages(int flags);
     void GoBack();
     void GoForward();
@@ -164,7 +164,7 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
     int Transition();
     void Transition(int value);
     void UpdateChild(::g::Fuse::Elements::Element* c);
-    void UpdateInteraction() { (((NavigationControl_type*)__type)->fp_UpdateInteraction)(this); }
+    void UpdateInteraction() { (((NavigationControl_type*)__type)- fp_UpdateInteraction)(this); }
     void UpdateProgress(::g::Fuse::Elements::Element* page, ::g::Fuse::Navigation::NavigationPageState state, NavigationControl__ControlPageData* pd);
     static void alterPath(::g::Fuse::Scripting::Context* c, NavigationControl* nav, uArray* args, uString* opName, int gotoMode);
     static NavigationControl__ControlPageData* GetControlPageData(::g::Fuse::Visual* elm, bool create);
@@ -177,13 +177,13 @@ struct NavigationControl : ::g::Fuse::Controls::Panel
 
 }}} // ::g::Fuse::Controls
 
-#include <Fuse.Navigation.NavigationPageState.h>
+#include <Fuse.Navigation.NavigationPageState.h 
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-inline void NavigationControl::UpdateProgress(::g::Fuse::Elements::Element* page, ::g::Fuse::Navigation::NavigationPageState state, NavigationControl__ControlPageData* pd) { (((NavigationControl_type*)__type)->fp_UpdateProgress)(this, page, &state, pd); }
+inline void NavigationControl::UpdateProgress(::g::Fuse::Elements::Element* page, ::g::Fuse::Navigation::NavigationPageState state, NavigationControl__ControlPageData* pd) { (((NavigationControl_type*)__type)- fp_UpdateProgress)(this, page, &state, pd); }
 inline void NavigationControl::UpdateProgress(NavigationControl* __this, ::g::Fuse::Elements::Element* page, ::g::Fuse::Navigation::NavigationPageState state, NavigationControl__ControlPageData* pd) { NavigationControl__UpdateProgress_fn(__this, page, &state, pd); }
 // }
 

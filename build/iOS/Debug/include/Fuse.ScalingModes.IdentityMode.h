@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IScalingMode.h>
-#include <Fuse.ITransformMode.h>
-#include <Uno.Object.h>
+#include <Fuse.IScalingMode.h 
+#include <Fuse.ITransformMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Scaling;}}
 namespace g{namespace Fuse{struct ScalingModes__IdentityMode;}}
 namespace g{namespace Uno{struct Float3;}}

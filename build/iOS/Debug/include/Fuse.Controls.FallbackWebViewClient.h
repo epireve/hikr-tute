@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.ISourceReceiver.h>
-#include <Fuse.Controls.IWebView.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Triggers.IProgress.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.ISourceReceiver.h 
+#include <Fuse.Controls.IWebView.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Triggers.IProgress.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct FallbackWebViewClient;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -64,18 +64,18 @@ void FallbackWebViewClient__set_ZoomEnabled_fn(FallbackWebViewClient* __this, bo
 
 struct FallbackWebViewClient : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _bufferedCalls;
-    uStrong<uString*> _BaseUrl;
-    uStrong< ::g::Uno::UX::FileSource*> _File;
+    uStrong< ::g::Uno::Collections::List*  _bufferedCalls;
+    uStrong<uString*  _BaseUrl;
+    uStrong< ::g::Uno::UX::FileSource*  _File;
     bool _ScrollEnabled;
-    uStrong<uString*> _Source;
-    uStrong<uString*> _Url;
+    uStrong<uString*  _Source;
+    uStrong<uString*  _Url;
     bool _ZoomEnabled;
-    uStrong<uDelegate*> BeginLoading1;
-    uStrong<uDelegate*> PageLoaded1;
-    uStrong<uDelegate*> ProgressChanged1;
-    uStrong<uDelegate*> URISchemeHandler1;
-    uStrong<uDelegate*> UrlChanged1;
+    uStrong<uDelegate*  BeginLoading1;
+    uStrong<uDelegate*  PageLoaded1;
+    uStrong<uDelegate*  ProgressChanged1;
+    uStrong<uDelegate*  URISchemeHandler1;
+    uStrong<uDelegate*  UrlChanged1;
 
     void ApplyBufferedCalls(uObject* wv);
     uString* BaseUrl();

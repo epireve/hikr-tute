@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Transform.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Transform.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Animations{struct FastMatrixTransform;}}}
 namespace g{namespace Fuse{struct FastMatrix;}}
 
@@ -29,7 +29,7 @@ void FastMatrixTransform__PrependTo_fn(FastMatrixTransform* __this, ::g::Fuse::F
 
 struct FastMatrixTransform : ::g::Fuse::Transform
 {
-    uStrong< ::g::Fuse::FastMatrix*> Matrix;
+    uStrong< ::g::Fuse::FastMatrix*  Matrix;
 
     void ctor_3();
     void Changed();

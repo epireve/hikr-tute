@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct FocusHelpers;}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct KeyboardView;}}}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -26,8 +26,8 @@ void FocusHelpers__ScheduleResignFirstResponder_fn(::g::ObjC::Object* target);
 
 struct FocusHelpers : uObject
 {
-    static uSStrong< ::g::Fuse::Controls::Native::iOS::KeyboardView*> _keyboardView_;
-    static uSStrong< ::g::Fuse::Controls::Native::iOS::KeyboardView*>& _keyboardView() { return FocusHelpers_typeof()->Init(), _keyboardView_; }
+    static uSStrong< ::g::Fuse::Controls::Native::iOS::KeyboardView*  _keyboardView_;
+    static uSStrong< ::g::Fuse::Controls::Native::iOS::KeyboardView* & _keyboardView() { return FocusHelpers_typeof()- Init(), _keyboardView_; }
 
     static void BecomeFirstResponder(::g::ObjC::Object* uiView);
     static ::g::ObjC::Object* GetCurrentFirstResponder();

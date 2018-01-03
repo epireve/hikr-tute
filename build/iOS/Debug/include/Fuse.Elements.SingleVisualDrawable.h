@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.IElementBatchDrawable.h>
-#include <Uno.Object.h>
+#include <Fuse.Elements.IElementBatchDrawable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct SingleVisualDrawable;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -28,7 +28,7 @@ void SingleVisualDrawable__New1_fn(::g::Fuse::Visual* elm, SingleVisualDrawable*
 
 struct SingleVisualDrawable : uObject
 {
-    uStrong< ::g::Fuse::Visual*> _elm;
+    uStrong< ::g::Fuse::Visual*  _elm;
 
     void ctor_(::g::Fuse::Visual* elm);
     void Draw(::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4 localToClipTransform, ::g::Uno::Rect scissorRectInClipSpace);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct SurfaceManager;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -23,8 +23,8 @@ void SurfaceManager__Release_fn(uObject* owner, ::g::Fuse::Drawing::Surface* c);
 
 struct SurfaceManager : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _owners_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _owners() { return _owners_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _owners_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _owners() { return _owners_; }
 
     static ::g::Fuse::Drawing::Surface* Create(uObject* owner);
     static ::g::Fuse::Drawing::Surface* Find(::g::Fuse::Node* source);

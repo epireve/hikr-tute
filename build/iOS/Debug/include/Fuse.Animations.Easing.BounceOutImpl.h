@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Easing.h>
+#include <Fuse.Animations.Easing.h 
 namespace g{namespace Fuse{namespace Animations{struct Easing__BounceOutImpl;}}}
 
 namespace g{

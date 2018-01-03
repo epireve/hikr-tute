@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct Computer;}}
 namespace g{namespace Fuse{struct Marshal;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
@@ -46,10 +46,10 @@ void Marshal__TryToZeroFloat4_fn(uObject* o, ::g::Uno::Float4* value, int* size,
 
 struct Marshal : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _computers_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _computers() { return Marshal_typeof()->Init(), _computers_; }
-    static uSStrong< ::g::Uno::Collections::List*> _converters_;
-    static uSStrong< ::g::Uno::Collections::List*>& _converters() { return Marshal_typeof()->Init(), _converters_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _computers_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _computers() { return Marshal_typeof()- Init(), _computers_; }
+    static uSStrong< ::g::Uno::Collections::List*  _converters_;
+    static uSStrong< ::g::Uno::Collections::List* & _converters() { return Marshal_typeof()- Init(), _converters_; }
 
     static void AddConverter(uObject* conv);
     static bool CanConvertClass(uType* t);
@@ -70,12 +70,12 @@ struct Marshal : uObject
     static int ToInt(uObject* o);
     static ::g::Uno::UX::Size ToSize(uObject* o);
     static ::g::Uno::UX::Size2 ToSize2(uObject* o);
-    template<class T>
+    template<class T 
     static T ToType(uType* __type, uObject* o) { T __retval; return Marshal__ToType_fn(__type, o, &__retval), __retval; }
     static uObject* ToVector(uObject* arr);
     static bool TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnosticSource);
-    template<class T>
-    static bool TryToType(uType* __type, uObject* o, T* res) { bool __retval; return Marshal__TryToType_fn(__type, o, uConstrain(__type->U(0), res), &__retval), __retval; }
+    template<class T 
+    static bool TryToType(uType* __type, uObject* o, T* res) { bool __retval; return Marshal__TryToType_fn(__type, o, uConstrain(__type- U(0), res), &__retval), __retval; }
     static bool TryToZeroFloat4(uObject* o, ::g::Uno::Float4* value, int* size);
 };
 // }

@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Node.ISiblingDataProvider.h>
-#include <Fuse.Reactive.IContext.h>
-#include <Fuse.Reactive.ValueForwarder.IValueListener.h>
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Node.ISiblingDataProvider.h 
+#include <Fuse.Reactive.IContext.h 
+#include <Fuse.Reactive.ValueForwarder.IValueListener.h 
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript;}}}
 namespace g{namespace Fuse{namespace Reactive{struct JavaScript__Dependency;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Module;}}}
@@ -70,17 +70,17 @@ void JavaScript__get_Worker_fn(::g::Fuse::Scripting::ThreadWorker** __retval);
 
 struct JavaScript : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Uno::Collections::List*> _dependencies;
-    uStrong< ::g::Fuse::Scripting::ModuleInstance*> _moduleInstance;
+    uStrong< ::g::Uno::Collections::List*  _dependencies;
+    uStrong< ::g::Fuse::Scripting::ModuleInstance*  _moduleInstance;
     static int _javaScriptCounter_;
     static int& _javaScriptCounter() { return _javaScriptCounter_; }
-    static uSStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker_;
-    static uSStrong< ::g::Fuse::Scripting::ThreadWorker*>& _worker() { return _worker_; }
-    uStrong< ::g::Uno::UX::NameTable*> _nameTable;
-    uStrong< ::g::Fuse::Scripting::RootableScriptModule*> _scriptModule;
-    uStrong<uObject*> _currentDc;
-    uStrong<uObject*> _sub;
-    uStrong<uObject*> _siblingData;
+    static uSStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker_;
+    static uSStrong< ::g::Fuse::Scripting::ThreadWorker* & _worker() { return _worker_; }
+    uStrong< ::g::Uno::UX::NameTable*  _nameTable;
+    uStrong< ::g::Fuse::Scripting::RootableScriptModule*  _scriptModule;
+    uStrong<uObject*  _currentDc;
+    uStrong<uObject*  _sub;
+    uStrong<uObject*  _siblingData;
 
     void ctor_3(::g::Uno::UX::NameTable* nameTable);
     uObject* Dependencies();

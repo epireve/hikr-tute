@@ -2,30 +2,30 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.NavigationControl.h>
-#include <Fuse.Drawing.ISurfaceDrawable.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.IRouterOutlet.h>
-#include <Fuse.Navigation.ISeekableNavigation.h>
-#include <Fuse.Node.h>
-#include <Fuse.Node.ISubtreeDataProvider.h>
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.NavigationControl.h 
+#include <Fuse.Drawing.ISurfaceDrawable.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Navigation.IRouterOutlet.h 
+#include <Fuse.Navigation.ISeekableNavigation.h 
+#include <Fuse.Node.h 
+#include <Fuse.Node.ISubtreeDataProvider.h 
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct NavigationControl__ControlPageData;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl__AddedPage;}}}
@@ -83,16 +83,16 @@ void PageControl__UpdateProgress_fn(PageControl* __this, ::g::Fuse::Elements::El
 
 struct PageControl : ::g::Fuse::Controls::NavigationControl
 {
-    uStrong<PageControl__PagesMap*> _pagesMap;
-    uStrong<uObject*> _pages;
-    uStrong< ::g::Uno::Collections::List*> _addedPages;
+    uStrong<PageControl__PagesMap*  _pagesMap;
+    uStrong<uObject*  _pages;
+    uStrong< ::g::Uno::Collections::List*  _addedPages;
     int _inactive;
-    uStrong< ::g::Fuse::Navigation::SwipeNavigate*> _swipe;
+    uStrong< ::g::Fuse::Navigation::SwipeNavigate*  _swipe;
     int _swipeAllow;
     int _interaction;
     int _orient;
     static ::g::Uno::UX::Selector ActiveIndexName_;
-    static ::g::Uno::UX::Selector& ActiveIndexName() { return PageControl_typeof()->Init(), ActiveIndexName_; }
+    static ::g::Uno::UX::Selector& ActiveIndexName() { return PageControl_typeof()- Init(), ActiveIndexName_; }
 
     bool CollapseInactive();
     bool DisableInactive();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct Data;}}}
 
 namespace g{
@@ -22,7 +22,7 @@ void Data__ToString_fn(Data* __this, uString** __retval);
 
 struct Data : ::g::Fuse::Reactive::Expression
 {
-    uStrong<uString*> _Key;
+    uStrong<uString*  _Key;
 
     void ctor_1(uString* key);
     uString* Key();

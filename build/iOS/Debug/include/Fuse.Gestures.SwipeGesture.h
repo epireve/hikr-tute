@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct Swiper;}}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion;}}}}
@@ -51,8 +51,8 @@ void SwipeGesture__UnoUXIPropertyListenerOnPropertyChanged_fn(SwipeGesture* __th
 
 struct SwipeGesture : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Fuse::Gestures::Internal::Swiper*> _swiper;
-    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> _region;
+    uStrong< ::g::Fuse::Gestures::Internal::Swiper*  _swiper;
+    uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*  _region;
     int _type;
     bool _hasDirection;
     int _direction;

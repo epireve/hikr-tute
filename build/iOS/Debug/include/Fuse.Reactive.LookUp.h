@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct LookUp;}}}
 
 namespace g{
@@ -21,8 +21,8 @@ void LookUp__Subscribe_fn(LookUp* __this, uObject* context, uObject* listener, u
 
 struct LookUp : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Fuse::Reactive::Expression*> _Collection;
-    uStrong< ::g::Fuse::Reactive::Expression*> _Index;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Collection;
+    uStrong< ::g::Fuse::Reactive::Expression*  _Index;
 
     ::g::Fuse::Reactive::Expression* Collection();
     void Collection(::g::Fuse::Reactive::Expression* value);

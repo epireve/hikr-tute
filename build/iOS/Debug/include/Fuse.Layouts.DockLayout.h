@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Layouts.Layout.h>
+#include <Fuse.Layouts.Layout.h 
 namespace g{namespace Fuse{namespace Layouts{struct DockLayout;}}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Node;}}
@@ -28,8 +28,8 @@ void DockLayout__SetDock_fn(::g::Fuse::Visual* elm, int* dock);
 
 struct DockLayout : ::g::Fuse::Layouts::Layout
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _dockProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _dockProperty() { return _dockProperty_; }
+    static uSStrong< ::g::Fuse::PropertyHandle*  _dockProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _dockProperty() { return _dockProperty_; }
 
     void ctor_2();
     ::g::Uno::Float2 MeasureSubtree(::g::Fuse::Visual* container, ::g::Fuse::Node* child, ::g::Fuse::LayoutParams lp);

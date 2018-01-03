@@ -2,14 +2,14 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.NodeGroupBase.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.NodeGroupBase.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Animations{struct Animator;}}}
 namespace g{namespace Fuse{namespace Controls{struct NavigatorSwipe;}}}
 namespace g{namespace Fuse{namespace Gestures{struct Swiped;}}}
@@ -41,13 +41,13 @@ struct NavigatorSwipe : ::g::Fuse::NodeGroupBase
 {
     int _direction;
     int _how;
-    uStrong< ::g::Fuse::Gestures::SwipeGesture*> _swipeGesture;
-    uStrong< ::g::Fuse::Gestures::SwipingAnimation*> _swipeAnim;
-    uStrong< ::g::Fuse::Gestures::Swiped*> _swipedCompleted;
-    uStrong< ::g::Fuse::Gestures::Swiped*> _swipedCancelled;
-    uStrong< ::g::Fuse::Navigation::RouterModify*> _modify;
-    uStrong< ::g::Fuse::Navigation::Router*> _router;
-    uStrong< ::g::Fuse::Animations::Animator*> _prepareAnim;
+    uStrong< ::g::Fuse::Gestures::SwipeGesture*  _swipeGesture;
+    uStrong< ::g::Fuse::Gestures::SwipingAnimation*  _swipeAnim;
+    uStrong< ::g::Fuse::Gestures::Swiped*  _swipedCompleted;
+    uStrong< ::g::Fuse::Gestures::Swiped*  _swipedCancelled;
+    uStrong< ::g::Fuse::Navigation::RouterModify*  _modify;
+    uStrong< ::g::Fuse::Navigation::Router*  _router;
+    uStrong< ::g::Fuse::Animations::Animator*  _prepareAnim;
 
     void ctor_4();
     int Direction();

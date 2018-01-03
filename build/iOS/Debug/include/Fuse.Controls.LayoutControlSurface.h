@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct LayoutControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct LayoutControlSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct DrawObjectWatcher;}}}
@@ -32,11 +32,11 @@ void LayoutControlSurface__New1_fn(LayoutControlSurface** __retval);
 struct LayoutControlSurface : uObject
 {
     bool WarnDraw;
-    uStrong< ::g::Fuse::Drawing::SurfacePath*> BackgroundPath;
+    uStrong< ::g::Fuse::Drawing::SurfacePath*  BackgroundPath;
     ::g::Uno::Float2 BackgroundPathSize;
-    uStrong< ::g::Fuse::Drawing::Surface*> Surface;
-    uStrong< ::g::Fuse::Drawing::DrawObjectWatcher*> Watcher;
-    uStrong< ::g::Fuse::Controls::LayoutControl*> LayoutControl;
+    uStrong< ::g::Fuse::Drawing::Surface*  Surface;
+    uStrong< ::g::Fuse::Drawing::DrawObjectWatcher*  Watcher;
+    uStrong< ::g::Fuse::Controls::LayoutControl*  LayoutControl;
 
     void ctor_();
     static LayoutControlSurface* New1();

@@ -2,6 +2,6 @@ function goToHomePage() {
    router.goto("home");
 }
 
-module.exports ={
+module.exports = {
    goToHomePage: goToHomePage
 };

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.Bool.h>
-#include <Uno.UX.ValueChangedArgs-1.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.Bool.h 
+#include <Uno.UX.ValueChangedArgs-1.h 
 namespace g{namespace Fuse{namespace Scripting{struct BoolChangedArgs;}}}
 
 namespace g{

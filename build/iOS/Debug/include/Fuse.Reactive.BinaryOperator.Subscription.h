@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator;}}}
 namespace g{namespace Fuse{namespace Reactive{struct BinaryOperator__Subscription;}}}
 
@@ -25,12 +25,12 @@ void BinaryOperator__Subscription__OnNewOperands_fn(BinaryOperator__Subscription
 
 struct BinaryOperator__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong< ::g::Fuse::Reactive::BinaryOperator*> _bo;
-    uStrong<uObject*> _left;
-    uStrong<uObject*> _right;
-    uStrong<uObject*> _leftSub;
-    uStrong<uObject*> _rightSub;
-    uStrong<uObject*> _listener;
+    uStrong< ::g::Fuse::Reactive::BinaryOperator*  _bo;
+    uStrong<uObject*  _left;
+    uStrong<uObject*  _right;
+    uStrong<uObject*  _leftSub;
+    uStrong<uObject*  _rightSub;
+    uStrong<uObject*  _listener;
     bool _hasLeft;
     bool _hasRight;
 

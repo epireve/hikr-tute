@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct HitTestResult;}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -25,7 +25,7 @@ struct HitTestResult : uObject
 {
     bool _HasHitDistance;
     float _HitDistance;
-    uStrong< ::g::Fuse::Visual*> _HitObject;
+    uStrong< ::g::Fuse::Visual*  _HitObject;
 
     void ctor_();
     bool HasHitDistance();

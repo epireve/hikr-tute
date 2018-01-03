@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSource.h 
 namespace g{namespace Fuse{namespace Resources{struct TextureImageSource;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{struct Float2;}}
@@ -26,7 +26,7 @@ void TextureImageSource__get_State_fn(TextureImageSource* __this, int* __retval)
 
 struct TextureImageSource : ::g::Fuse::Resources::ImageSource
 {
-    uStrong< ::g::Uno::Graphics::Texture2D*> _texture;
+    uStrong< ::g::Uno::Graphics::Texture2D*  _texture;
     float _density;
 
     float Density();

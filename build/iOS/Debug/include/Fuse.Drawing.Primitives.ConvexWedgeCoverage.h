@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.Primitives.WedgeCoverage.h>
+#include <Fuse.Drawing.Primitives.WedgeCoverage.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct ConvexWedgeCoverage;}}}}
 
 namespace g{

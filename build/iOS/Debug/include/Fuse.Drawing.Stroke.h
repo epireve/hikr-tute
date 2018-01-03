@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.IPropertyListener.h>
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.IPropertyListener.h 
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Stroke;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -61,7 +61,7 @@ struct Stroke : ::g::Uno::UX::PropertyObject
     static ::g::Uno::UX::Selector& _shadingName() { return _shadingName_; }
     static ::g::Uno::UX::Selector _brushName_;
     static ::g::Uno::UX::Selector& _brushName() { return _brushName_; }
-    uStrong< ::g::Fuse::Drawing::Brush*> _brush;
+    uStrong< ::g::Fuse::Drawing::Brush*  _brush;
     static ::g::Uno::UX::Selector _colorName_;
     static ::g::Uno::UX::Selector& _colorName() { return _colorName_; }
     static ::g::Uno::UX::Selector _widthName_;

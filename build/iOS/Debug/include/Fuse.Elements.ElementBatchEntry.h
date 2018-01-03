@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Recti.h>
+#include <Uno.Object.h 
+#include <Uno.Recti.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatch;}}}
@@ -27,9 +27,9 @@ void ElementBatchEntry__OnRemoved_fn(ElementBatchEntry* __this);
 
 struct ElementBatchEntry : uObject
 {
-    uStrong< ::g::Fuse::Elements::ElementAtlas*> _atlas;
-    uStrong< ::g::Fuse::Elements::ElementBatch*> _batch;
-    uStrong< ::g::Fuse::Elements::Element*> _elm;
+    uStrong< ::g::Fuse::Elements::ElementAtlas*  _atlas;
+    uStrong< ::g::Fuse::Elements::ElementBatch*  _batch;
+    uStrong< ::g::Fuse::Elements::Element*  _elm;
     ::g::Uno::Recti AtlasRect;
     float _opacity;
     bool IsValid;

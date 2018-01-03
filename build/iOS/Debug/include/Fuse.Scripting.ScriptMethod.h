@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.ScriptMember.h>
+#include <Fuse.Scripting.ScriptMember.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptMethod;}}}
 
@@ -25,7 +25,7 @@ struct ScriptMethod : ::g::Fuse::Scripting::ScriptMember
     int Thread;
 
     void ctor_1(uString* name, int thread);
-    uObject* Call(::g::Fuse::Scripting::Context* c, uObject* obj, uArray* args) { uObject* __retval; return (((ScriptMethod_type*)__type)->fp_Call)(this, c, obj, args, &__retval), __retval; }
+    uObject* Call(::g::Fuse::Scripting::Context* c, uObject* obj, uArray* args) { uObject* __retval; return (((ScriptMethod_type*)__type)- fp_Call)(this, c, obj, args, &__retval), __retval; }
 };
 // }
 

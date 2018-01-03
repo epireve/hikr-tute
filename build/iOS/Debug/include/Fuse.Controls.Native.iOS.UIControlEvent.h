@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct UIControlEvent;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 
@@ -30,8 +30,8 @@ void UIControlEvent__UnoIDisposableDispose_fn(UIControlEvent* __this);
 
 struct UIControlEvent : uObject
 {
-    uStrong< ::g::ObjC::Object*> _handle;
-    uStrong< ::g::ObjC::Object*> _uiControl;
+    uStrong< ::g::ObjC::Object*  _handle;
+    uStrong< ::g::ObjC::Object*  _uiControl;
     int _type;
 
     void ctor_(::g::ObjC::Object* uiControl, uDelegate* handler, int type);

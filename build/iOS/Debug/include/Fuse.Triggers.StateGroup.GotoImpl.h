@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Triggers{struct State;}}}
 namespace g{namespace Fuse{namespace Triggers{struct StateGroup;}}}
 namespace g{namespace Fuse{namespace Triggers{struct StateGroup__GotoImpl;}}}
@@ -20,8 +20,8 @@ void StateGroup__GotoImpl__New1_fn(StateGroup__GotoImpl** __retval);
 
 struct StateGroup__GotoImpl : uObject
 {
-    uStrong< ::g::Fuse::Triggers::State*> Next;
-    uStrong< ::g::Fuse::Triggers::StateGroup*> Group;
+    uStrong< ::g::Fuse::Triggers::State*  Next;
+    uStrong< ::g::Fuse::Triggers::StateGroup*  Group;
 
     void ctor_();
     void Go();

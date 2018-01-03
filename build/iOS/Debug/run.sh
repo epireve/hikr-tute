@@ -27,5 +27,5 @@ esac
 #pod install
 #"#(Base.Directory)/bin/ios-deploy" --noninteractive --debug --bundle "build/Build/Products/#(Pbxproj.Configuration)-iphoneos/#(Project.Name).app" "$#"
 ##else
-"/usr/local/share/uno/Packages/UnoCore/1.4.3/prebuilt/iOS/bin/ios-deploy" --noninteractive --debug --bundle "build/Release-iphoneos/hikr.app" "$@"
+"/usr/local/share/uno/Packages/UnoCore/1.4.3/prebuilt/iOS/bin/ios-deploy" --noninteractive --debug --bundle "build/Debug-iphoneos/hikr.app" "$@"
 ##endif

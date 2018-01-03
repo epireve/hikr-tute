@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.ConstantExpression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.ConstantExpression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct Constant;}}}
 
 namespace g{
@@ -22,7 +22,7 @@ void Constant__set_Value_fn(Constant* __this, uObject* value);
 
 struct Constant : ::g::Fuse::Reactive::ConstantExpression
 {
-    uStrong<uObject*> _Value;
+    uStrong<uObject*  _Value;
 
     void ctor_2(uObject* value);
     uObject* Value();

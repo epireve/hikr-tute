@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.DataFinder.h>
-#include <Fuse.Node.IDataEnumerator.h>
-#include <Fuse.Node.IDataListener.h>
+#include <Fuse.Node.DataFinder.h 
+#include <Fuse.Node.IDataEnumerator.h 
+#include <Fuse.Node.IDataListener.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -32,10 +32,10 @@ void Node__DataWatcher__Update_fn(Node__DataWatcher* __this);
 
 struct Node__DataWatcher : ::g::Fuse::Node__DataFinder
 {
-    uStrong< ::g::Fuse::Node*> _node;
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
-    uStrong< ::g::Fuse::Scripting::Function*> _updateCallback;
-    uStrong<uObject*> _data;
+    uStrong< ::g::Fuse::Node*  _node;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
+    uStrong< ::g::Fuse::Scripting::Function*  _updateCallback;
+    uStrong<uObject*  _data;
 
     void ctor_1(::g::Fuse::Node* node, ::g::Fuse::Scripting::Context* context, ::g::Fuse::Scripting::Function* updateCallback, uString* key);
     void Dispose();

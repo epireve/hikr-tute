@@ -44,11 +44,3 @@ sealed class hikr_FuseControlsTextInputControl_Value_Property: Uno.UX.Property<s
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
-sealed class hikr_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
-{
-    [Uno.WeakReference] readonly Fuse.Reactive.Each _obj;
-    public hikr_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override object Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Reactive.Each)obj).Items; }
-    public override void Set(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Reactive.Each)obj).Items = v; }
-}

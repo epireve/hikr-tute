@@ -2,12 +2,12 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IListener.h>
-#include <Fuse.Reactive.InnerListener.h>
-#include <Uno.Float2.h>
-#include <Uno.Float3.h>
-#include <Uno.Float4.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.IListener.h 
+#include <Fuse.Reactive.InnerListener.h 
+#include <Uno.Float2.h 
+#include <Uno.Float3.h 
+#include <Uno.Float4.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Animations{struct Attract;}}}
 namespace g{namespace Fuse{namespace Animations{struct Attract__Subscription;}}}
 namespace g{namespace Fuse{namespace Animations{struct DestinationBehavior;}}}
@@ -34,21 +34,21 @@ void Attract__Subscription__OnValueUpdate4_fn(Attract__Subscription* __this, ::g
 
 struct Attract__Subscription : ::g::Fuse::Reactive::InnerListener
 {
-    uStrong<uObject*> _target;
-    uStrong< ::g::Fuse::Animations::Attract*> _attract;
-    uStrong<uObject*> _sourceSub;
-    uStrong< ::g::Fuse::Animations::DestinationBehavior*> _simulation4;
-    uStrong< ::g::Fuse::Animations::DestinationBehavior*> _simulation3;
-    uStrong< ::g::Fuse::Animations::DestinationBehavior*> _simulation2;
-    uStrong< ::g::Fuse::Animations::DestinationBehavior*> _simulation1;
+    uStrong<uObject*  _target;
+    uStrong< ::g::Fuse::Animations::Attract*  _attract;
+    uStrong<uObject*  _sourceSub;
+    uStrong< ::g::Fuse::Animations::DestinationBehavior*  _simulation4;
+    uStrong< ::g::Fuse::Animations::DestinationBehavior*  _simulation3;
+    uStrong< ::g::Fuse::Animations::DestinationBehavior*  _simulation2;
+    uStrong< ::g::Fuse::Animations::DestinationBehavior*  _simulation1;
     int _simSize;
 
     void ctor_1(::g::Fuse::Animations::Attract* attract, uObject* context, uObject* target);
     void CleanSimulation();
     void Init(uObject* context);
     void NeedSim(int size);
-    template<class T>
-    void OnValueUpdate(uType* __type, T value) { Attract__Subscription__OnValueUpdate_fn(this, __type, uConstrain(__type->U(0), value)); }
+    template<class T 
+    void OnValueUpdate(uType* __type, T value) { Attract__Subscription__OnValueUpdate_fn(this, __type, uConstrain(__type- U(0), value)); }
     void OnValueUpdate1(float value);
     void OnValueUpdate2(::g::Uno::Float2 value);
     void OnValueUpdate3(::g::Uno::Float3 value);

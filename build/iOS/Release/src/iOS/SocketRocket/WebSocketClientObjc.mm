@@ -1,7 +1,7 @@
 #import "ios/SocketRocket/WebSocketClientObjc.h"
 #import "SRWebSocket.h"
 
-@interface WebSocketClientObjc () <SRWebSocketDelegate>
+@interface WebSocketClientObjc () <SRWebSocketDelegate 
 
 	@property NSURL *url;
 	@property (nonatomic, copy) void (^eventHandler)(NSString *, NSString *);

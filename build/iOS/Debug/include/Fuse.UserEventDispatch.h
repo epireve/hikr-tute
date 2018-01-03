@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.UX.Selector.h>
+#include <Uno.Object.h 
+#include <Uno.UX.Selector.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct UserEventArgs;}}
 namespace g{namespace Fuse{struct UserEventDispatch;}}
@@ -28,10 +28,10 @@ void UserEventDispatch__remove_Raised_fn(UserEventDispatch* __this, uDelegate* v
 
 struct UserEventDispatch : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _userEvents_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _userEvents() { return _userEvents_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _userEvents_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _userEvents() { return _userEvents_; }
     ::g::Uno::UX::Selector _Name;
-    uStrong<uDelegate*> Raised1;
+    uStrong<uDelegate*  Raised1;
 
     void ctor_();
     void DirectRaise(::g::Fuse::Node* source, ::g::Uno::Collections::Dictionary* args);

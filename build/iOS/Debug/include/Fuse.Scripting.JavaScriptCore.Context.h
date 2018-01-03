@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Context.h>
-#include <JavaScriptCore/JavaScript.h>
-#include <JavaScriptCore/JSContextRef.h>
-#include <JavaScriptCore/JSObjectRef.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.Context.h 
+#include <JavaScriptCore/JavaScript.h 
+#include <JavaScriptCore/JSContextRef.h 
+#include <JavaScriptCore/JSObjectRef.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 
@@ -37,8 +37,8 @@ struct Context : ::g::Fuse::Scripting::Context
 {
     bool _disposed;
     ::JSContextRef _context;
-    uStrong<uDelegate*> _onError;
-    uStrong< ::g::Fuse::Scripting::Object*> _global;
+    uStrong<uDelegate*  _onError;
+    uStrong< ::g::Fuse::Scripting::Object*  _global;
     ::JSObjectRef _functionType;
     ::JSObjectRef _arrayType;
     ::JSObjectRef _arrayBufferType;

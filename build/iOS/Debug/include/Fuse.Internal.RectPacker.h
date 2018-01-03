@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Internal.SkylineNode.h>
-#include <Uno.Int2.h>
-#include <Uno.Object.h>
+#include <Fuse.Internal.SkylineNode.h 
+#include <Uno.Int2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct RectPacker;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedList;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedListNode;}}}
@@ -28,7 +28,7 @@ void RectPacker__TryFit_fn(RectPacker* __this, ::g::Uno::Collections::LinkedList
 
 struct RectPacker : uObject
 {
-    uStrong< ::g::Uno::Collections::LinkedList*> _skyline;
+    uStrong< ::g::Uno::Collections::LinkedList*  _skyline;
     ::g::Uno::Int2 _Size;
 
     void ctor_(::g::Uno::Int2 size);

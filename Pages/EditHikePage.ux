@@ -1,4 +1,4 @@
-<hikr.Page ux:Class="EditHikePage">
+<hikr.Page ux:Class="EditHikePage" >
    <Router ux:Dependency="router"/>
    <JavaScript File="EditHikePage.js"/>
 
@@ -30,7 +30,7 @@
 
             <StackPanel>
                <TitleText>Rating (1-5):</TitleText>
-               <hikr.TextBox  Value="{rating}" InputHint="Integer"/>
+               <hikr.TextBox Value="{rating}" InputHint="Integer"/>
             </StackPanel>
 
             <StackPanel>
@@ -38,7 +38,6 @@
                <hikr.TextView Value="{comments}" TextWrapping="Wrap"/>
             </StackPanel>
 
-            <!-- <Button Text="Cancel" Clicked="{cancel}"/> -->
          </StackPanel>
       </ScrollView>
    </DockPanel>

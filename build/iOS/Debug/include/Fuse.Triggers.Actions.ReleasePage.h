@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Controls{struct Navigator;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct ReleasePage;}}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -23,8 +23,8 @@ void ReleasePage__Perform_fn(ReleasePage* __this, ::g::Fuse::Node* n);
 
 struct ReleasePage : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Visual*> _pendVisual;
-    uStrong< ::g::Fuse::Controls::Navigator*> _pendNavigator;
+    uStrong< ::g::Fuse::Visual*  _pendVisual;
+    uStrong< ::g::Fuse::Controls::Navigator*  _pendNavigator;
 
     void ctor_2();
     void DeferredRelease();

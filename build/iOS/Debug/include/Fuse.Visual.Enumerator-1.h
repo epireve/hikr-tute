@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Node.h>
-#include <Uno.Collections.IEnumerator.h>
-#include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Node.h 
+#include <Uno.Collections.IEnumerator.h 
+#include <Uno.Collections.IEnumerator-1.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct Visual__Enumerator;}}
 
 namespace g{
 namespace Fuse{
 
-// private sealed class Visual.Enumerator<T> :24
+// private sealed class Visual.Enumerator<T  :24
 // {
 struct Visual__Enumerator_type : uType
 {
@@ -32,8 +32,8 @@ void Visual__Enumerator__Reset_fn(Visual__Enumerator* __this);
 
 struct Visual__Enumerator : uObject
 {
-    uStrong< ::g::Fuse::Visual*> _parent;
-    uStrong< ::g::Fuse::Node*> _current;
+    uStrong< ::g::Fuse::Visual*  _parent;
+    uStrong< ::g::Fuse::Node*  _current;
     bool _reachedEnd;
 
     void ctor_(::g::Fuse::Visual* parent);

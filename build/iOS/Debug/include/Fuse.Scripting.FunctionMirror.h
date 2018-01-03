@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IEventHandler.h>
-#include <Fuse.Scripting.DiagnosticSubject.h>
-#include <Fuse.Scripting.IRaw.h>
+#include <Fuse.Reactive.IEventHandler.h 
+#include <Fuse.Scripting.DiagnosticSubject.h 
+#include <Fuse.Scripting.IRaw.h 
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct FunctionMirror;}}}
 
@@ -28,7 +28,7 @@ void FunctionMirror__get_ReflectedRaw_fn(FunctionMirror* __this, uObject** __ret
 
 struct FunctionMirror : ::g::Fuse::Scripting::DiagnosticSubject
 {
-    uStrong< ::g::Fuse::Scripting::Function*> _func;
+    uStrong< ::g::Fuse::Scripting::Function*  _func;
 
     void ctor_1(::g::Fuse::Scripting::Function* func);
     void Dispatch(uObject* e);

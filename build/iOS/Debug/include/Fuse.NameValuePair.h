@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IObject.h>
-#include <Uno.Object.h>
+#include <Fuse.IObject.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct NameValuePair;}}
 
 namespace g{
@@ -28,8 +28,8 @@ void NameValuePair__set_Value_fn(NameValuePair* __this, uObject* value);
 
 struct NameValuePair : uObject
 {
-    uStrong<uString*> _Name;
-    uStrong<uObject*> _Value;
+    uStrong<uString*  _Name;
+    uStrong<uObject*  _Value;
 
     uString* Name();
     void Name(uString* value);

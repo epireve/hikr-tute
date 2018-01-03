@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.VideoImpl.IVideoPlayer.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.VideoImpl.IVideoPlayer.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct EmptyVideo;}}}}
 namespace g{namespace Uno{namespace Graphics{struct VideoTexture;}}}
 namespace g{namespace Uno{struct Exception;}}

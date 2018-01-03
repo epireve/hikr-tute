@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ImageHandle;}}}}
 
 namespace g{
@@ -28,8 +28,8 @@ void ImageHandle__Pin_fn(ImageHandle* __this);
 
 struct ImageHandle : uObject
 {
-    uStrong<uObject*> _handle;
-    uStrong<uString*> _name;
+    uStrong<uObject*  _handle;
+    uStrong<uString*  _name;
     int _pinCount;
     bool _isDisposed;
 

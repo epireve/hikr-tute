@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float2.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewBase;}}}
 namespace g{namespace Fuse{namespace Controls{struct ScrollViewPager;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Each;}}}
@@ -55,8 +55,8 @@ struct ScrollViewPager : ::g::Fuse::Behavior
 {
     int _retain;
     float _endRange;
-    uStrong< ::g::Fuse::Reactive::Each*> _each;
-    uStrong< ::g::Fuse::Controls::ScrollViewBase*> _scrollable;
+    uStrong< ::g::Fuse::Reactive::Each*  _each;
+    uStrong< ::g::Fuse::Controls::ScrollViewBase*  _scrollable;
     bool _pendingPosition;
     bool _pendingSizing;
     int _lastActivityPosition;
@@ -64,8 +64,8 @@ struct ScrollViewPager : ::g::Fuse::Behavior
     bool _nearTrueEnd;
     bool _nearTrueStart;
     ::g::Uno::Float2 _prevActualSize;
-    uStrong<uDelegate*> ReachedEnd1;
-    uStrong<uDelegate*> ReachedStart1;
+    uStrong<uDelegate*  ReachedEnd1;
+    uStrong<uDelegate*  ReachedStart1;
 
     void Check();
     void CheckPosition();

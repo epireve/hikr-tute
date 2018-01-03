@@ -2,23 +2,23 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Elements.Element.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Elements.Element.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct Control;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -74,25 +74,25 @@ void Control__UnrootBackground_fn(Control* __this);
 
 struct Control : ::g::Fuse::Elements::Element
 {
-    uStrong< ::g::Fuse::Drawing::Brush*> _background;
+    uStrong< ::g::Fuse::Drawing::Brush*  _background;
     bool _backgroundRooted;
-    uStrong<uObject*> _nativeView;
-    uStrong< ::g::Fuse::Visual*> _GraphicsVisual;
+    uStrong<uObject*  _nativeView;
+    uStrong< ::g::Fuse::Visual*  _GraphicsVisual;
 
     void ctor_4();
     ::g::Fuse::Drawing::Brush* Background();
     void Background(::g::Fuse::Drawing::Brush* value);
-    void CompensateForScrollView(::g::Uno::Float4x4* t) { (((Control_type*)__type)->fp_CompensateForScrollView)(this, t); }
-    uObject* CreateNativeView() { uObject* __retval; return (((Control_type*)__type)->fp_CreateNativeView)(this, &__retval), __retval; }
+    void CompensateForScrollView(::g::Uno::Float4x4* t) { (((Control_type*)__type)- fp_CompensateForScrollView)(this, t); }
+    uObject* CreateNativeView() { uObject* __retval; return (((Control_type*)__type)- fp_CreateNativeView)(this, &__retval), __retval; }
     void DrawBackground(::g::Fuse::DrawContext* dc, float opacity);
-    void DrawVisual(::g::Fuse::DrawContext* dc) { (((Control_type*)__type)->fp_DrawVisual)(this, dc); }
+    void DrawVisual(::g::Fuse::DrawContext* dc) { (((Control_type*)__type)- fp_DrawVisual)(this, dc); }
     ::g::Fuse::Visual* GraphicsVisual();
     void GraphicsVisual(::g::Fuse::Visual* value);
     uObject* InstantiateNativeView();
     uObject* NativeView();
     void NativeView(uObject* value);
     void OnBackgroundChanged();
-    void PushPropertiesToNativeView() { (((Control_type*)__type)->fp_PushPropertiesToNativeView)(this); }
+    void PushPropertiesToNativeView() { (((Control_type*)__type)- fp_PushPropertiesToNativeView)(this); }
     void RootBackground();
     void SetBackground(::g::Fuse::Drawing::Brush* value);
     void UnrootBackground();

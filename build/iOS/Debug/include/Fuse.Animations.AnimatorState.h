@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -27,13 +27,13 @@ void AnimatorState__Disable_fn(AnimatorState* __this);
 struct AnimatorState : uObject
 {
     int Variant;
-    uStrong< ::g::Fuse::Visual*> Visual;
+    uStrong< ::g::Fuse::Visual*  Visual;
     double TotalDuration;
 
     void ctor_(::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual);
-    void Disable() { (((AnimatorState_type*)__type)->fp_Disable)(this); }
-    int SeekProgress(double progress, double interval, int dir, double strength) { int __retval; return (((AnimatorState_type*)__type)->fp_SeekProgress)(this, &progress, &interval, &dir, &strength, &__retval), __retval; }
-    int SeekTime(double nominal, double interval, int dir, double strength) { int __retval; return (((AnimatorState_type*)__type)->fp_SeekTime)(this, &nominal, &interval, &dir, &strength, &__retval), __retval; }
+    void Disable() { (((AnimatorState_type*)__type)- fp_Disable)(this); }
+    int SeekProgress(double progress, double interval, int dir, double strength) { int __retval; return (((AnimatorState_type*)__type)- fp_SeekProgress)(this, &progress, &interval, &dir, &strength, &__retval), __retval; }
+    int SeekTime(double nominal, double interval, int dir, double strength) { int __retval; return (((AnimatorState_type*)__type)- fp_SeekTime)(this, &nominal, &interval, &dir, &strength, &__retval), __retval; }
     static void Disable(AnimatorState* __this) { AnimatorState__Disable_fn(__this); }
 };
 // }

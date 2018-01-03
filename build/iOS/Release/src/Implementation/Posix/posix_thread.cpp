@@ -1,6 +1,6 @@
-#include <Uno/Uno.h>
-#include <assert.h>
-#include <Implementation/Posix/posix_thread.h>
+#include <Uno/Uno.h 
+#include <assert.h 
+#include <Implementation/Posix/posix_thread.h 
 
 //#if !#{Uno.Threading.Thread.Start():IsStripped} || !#{Uno.Threading.Thread.CurrentThread:IsStripped}
 
@@ -31,7 +31,7 @@ static void* ThreadStartup(void* arg)
     uAutoReleasePool pool;
 
     ::g::Uno::Threading::Thread* thread = (::g::Uno::Threading::Thread*)arg;
-    uDelegate* threadStart = thread->_threadStart;
+    uDelegate* threadStart = thread- _threadStart;
     assert(threadStart != NULL);
 
 #if IOS
@@ -41,7 +41,7 @@ static void* ThreadStartup(void* arg)
     currentThread = thread;
 #endif
 
-    threadStart->InvokeVoid();
+    threadStart- InvokeVoid();
 
 #if IOS
     pthread_setspecific(currentThread, NULL);

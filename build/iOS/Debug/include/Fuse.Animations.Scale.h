@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TransformAnimator-1.h>
-#include <Fuse.Scaling.h>
+#include <Fuse.Animations.TransformAnimator-1.h 
+#include <Fuse.Scaling.h 
 namespace g{namespace Fuse{namespace Animations{struct Scale;}}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float4;}}
@@ -25,7 +25,7 @@ void Scale__Update_fn(Scale* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Scaling*
 
 struct Scale : ::g::Fuse::Animations::TransformAnimator
 {
-    uStrong<uObject*> _relativeTo;
+    uStrong<uObject*  _relativeTo;
 
     void ctor_4();
     float Factor();

@@ -1,58 +1,58 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <OpenGL.GL.h>
-#include <OpenGL.GLBlendEquation.h>
-#include <OpenGL.GLBlendingFactor.h>
-#include <OpenGL.GLBufferHandle.h>
-#include <OpenGL.GLBufferTarget.h>
-#include <OpenGL.GLBufferUsage.h>
-#include <OpenGL.GLClearBufferMask.h>
-#include <OpenGL.GLCullFaceMode.h>
-#include <OpenGL.GLDataType.h>
-#include <OpenGL.GLDepthFunction.h>
-#include <OpenGL.GLEnableCap.h>
-#include <OpenGL.GLError.h>
-#include <OpenGL.GLFramebufferAttachment.h>
-#include <OpenGL.GLFramebufferHandle.h>
-#include <OpenGL.GLFramebufferStatus.h>
-#include <OpenGL.GLFramebufferTarget.h>
-#include <OpenGL.GLFrontFaceDirection.h>
-#include <OpenGL.GLIndexType.h>
-#include <OpenGL.GLInteger4Name.h>
-#include <OpenGL.GLIntegerName.h>
-#include <OpenGL.GLPixelFormat.h>
-#include <OpenGL.GLPixelStoreParameter.h>
-#include <OpenGL.GLPixelType.h>
-#include <OpenGL.GLPrimitiveType.h>
-#include <OpenGL.GLProgramHandle.h>
-#include <OpenGL.GLProgramParameter.h>
-#include <OpenGL.GLRenderbufferHandle.h>
-#include <OpenGL.GLRenderbufferStorage.h>
-#include <OpenGL.GLRenderbufferTarget.h>
-#include <OpenGL.GLShaderHandle.h>
-#include <OpenGL.GLShaderParameter.h>
-#include <OpenGL.GLShaderType.h>
-#include <OpenGL.GLStringName.h>
-#include <OpenGL.GLTextureHandle.h>
-#include <OpenGL.GLTextureParameterName.h>
-#include <OpenGL.GLTextureParameterValue.h>
-#include <OpenGL.GLTextureTarget.h>
-#include <OpenGL.GLTextureUnit.h>
-#include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Float.h>
-#include <Uno.Float2.h>
-#include <Uno.Float2x2.h>
-#include <Uno.Float3.h>
-#include <Uno.Float4.h>
-#include <Uno.Float4x4.h>
-#include <Uno.Int.h>
-#include <Uno.Int4.h>
-#include <Uno.IntPtr.h>
-#include <Uno.String.h>
-#include <Uno/Support.h>
-#include <XliPlatform/GL.h>
+#include <OpenGL.GL.h 
+#include <OpenGL.GLBlendEquation.h 
+#include <OpenGL.GLBlendingFactor.h 
+#include <OpenGL.GLBufferHandle.h 
+#include <OpenGL.GLBufferTarget.h 
+#include <OpenGL.GLBufferUsage.h 
+#include <OpenGL.GLClearBufferMask.h 
+#include <OpenGL.GLCullFaceMode.h 
+#include <OpenGL.GLDataType.h 
+#include <OpenGL.GLDepthFunction.h 
+#include <OpenGL.GLEnableCap.h 
+#include <OpenGL.GLError.h 
+#include <OpenGL.GLFramebufferAttachment.h 
+#include <OpenGL.GLFramebufferHandle.h 
+#include <OpenGL.GLFramebufferStatus.h 
+#include <OpenGL.GLFramebufferTarget.h 
+#include <OpenGL.GLFrontFaceDirection.h 
+#include <OpenGL.GLIndexType.h 
+#include <OpenGL.GLInteger4Name.h 
+#include <OpenGL.GLIntegerName.h 
+#include <OpenGL.GLPixelFormat.h 
+#include <OpenGL.GLPixelStoreParameter.h 
+#include <OpenGL.GLPixelType.h 
+#include <OpenGL.GLPrimitiveType.h 
+#include <OpenGL.GLProgramHandle.h 
+#include <OpenGL.GLProgramParameter.h 
+#include <OpenGL.GLRenderbufferHandle.h 
+#include <OpenGL.GLRenderbufferStorage.h 
+#include <OpenGL.GLRenderbufferTarget.h 
+#include <OpenGL.GLShaderHandle.h 
+#include <OpenGL.GLShaderParameter.h 
+#include <OpenGL.GLShaderType.h 
+#include <OpenGL.GLStringName.h 
+#include <OpenGL.GLTextureHandle.h 
+#include <OpenGL.GLTextureParameterName.h 
+#include <OpenGL.GLTextureParameterValue.h 
+#include <OpenGL.GLTextureTarget.h 
+#include <OpenGL.GLTextureUnit.h 
+#include <Uno.Bool.h 
+#include <Uno.Buffer.h 
+#include <Uno.Float.h 
+#include <Uno.Float2.h 
+#include <Uno.Float2x2.h 
+#include <Uno.Float3.h 
+#include <Uno.Float4.h 
+#include <Uno.Float4x4.h 
+#include <Uno.Int.h 
+#include <Uno.Int4.h 
+#include <Uno.IntPtr.h 
+#include <Uno.String.h 
+#include <Uno/Support.h 
+#include <XliPlatform/GL.h 
 static uType* TYPES[1];
 
 namespace g{
@@ -69,13 +69,13 @@ static void GL_build(uType* type)
 
 uClassType* GL_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("OpenGL.GL", options);
-    type->fp_build_ = GL_build;
+    type- fp_build_ = GL_build;
     return type;
 }
 
@@ -962,7 +962,7 @@ void GL::Uniform1(int location, float value)
 // public static void Uniform1(int location, float[] value) [static] :1766
 void GL::Uniform11(int location, uArray* value)
 {
-    glUniform1fv(location, value->Length(), (const GLfloat*)value->Ptr());
+    glUniform1fv(location, value- Length(), (const GLfloat*)value- Ptr());
 }
 
 // public static void Uniform1(int location, int value) [static] :1481
@@ -980,7 +980,7 @@ void GL::Uniform2(int location, ::g::Uno::Float2 value)
 // public static void Uniform2(int location, float2[] value) [static] :1785
 void GL::Uniform21(int location, uArray* value)
 {
-    glUniform2fv(location, value->Length(), (const GLfloat*)value->Ptr());
+    glUniform2fv(location, value- Length(), (const GLfloat*)value- Ptr());
 }
 
 // public static void Uniform3(int location, float3 value) [static] :1595
@@ -998,7 +998,7 @@ void GL::Uniform4(int location, ::g::Uno::Float4 value)
 // public static void Uniform4(int location, float4[] value) [static] :1823
 void GL::Uniform41(int location, uArray* value)
 {
-    glUniform4fv(location, value->Length(), (const GLfloat*)value->Ptr());
+    glUniform4fv(location, value- Length(), (const GLfloat*)value- Ptr());
 }
 
 // public static void UniformMatrix2(int location, bool transpose, float2x2 value) [static] :1633
@@ -1038,11 +1038,11 @@ void GL::Viewport(int x, int y, int width, int height)
 // public extern enum GLBlendEquation :216
 uEnumType* GLBlendEquation_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLBlendEquation", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
+    type- SetLiterals(
         "FuncAdd", 32774LL,
         "FuncSubtract", 32778LL,
         "FuncReverseSubtract", 32779LL);
@@ -1055,11 +1055,11 @@ uEnumType* GLBlendEquation_typeof()
 // public extern enum GLBlendingFactor :224
 uEnumType* GLBlendingFactor_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLBlendingFactor", ::g::Uno::Int_typeof(), 11);
-    type->SetLiterals(
+    type- SetLiterals(
         "Zero", 0LL,
         "One", 1LL,
         "SrcColor", 768LL,
@@ -1086,7 +1086,7 @@ static void GLBufferHandle_build(uType* type)
 
 uStructType* GLBufferHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1094,9 +1094,9 @@ uStructType* GLBufferHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLBufferHandle", options);
-    type->fp_build_ = GLBufferHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLBufferHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLBufferHandle__GetHashCode_fn;
+    type- fp_build_ = GLBufferHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLBufferHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLBufferHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1104,14 +1104,14 @@ uStructType* GLBufferHandle_typeof()
 void GLBufferHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLBufferHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 uint32_t GLBufferHandle::Zero_;
@@ -1123,11 +1123,11 @@ uint32_t GLBufferHandle::Zero_;
 // public extern enum GLBufferTarget :38
 uEnumType* GLBufferTarget_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLBufferTarget", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "ArrayBuffer", 34962LL,
         "ElementArrayBuffer", 34963LL);
     return type;
@@ -1139,11 +1139,11 @@ uEnumType* GLBufferTarget_typeof()
 // public extern enum GLBufferUsage :45
 uEnumType* GLBufferUsage_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLBufferUsage", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
+    type- SetLiterals(
         "StreamDraw", 35040LL,
         "StaticDraw", 35044LL,
         "DynamicDraw", 35048LL);
@@ -1156,11 +1156,11 @@ uEnumType* GLBufferUsage_typeof()
 // public extern enum GLClearBufferMask :281
 uEnumType* GLClearBufferMask_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLClearBufferMask", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
+    type- SetLiterals(
         "DepthBufferBit", 256LL,
         "StencilBufferBit", 1024LL,
         "ColorBufferBit", 16384LL);
@@ -1173,11 +1173,11 @@ uEnumType* GLClearBufferMask_typeof()
 // public extern enum GLCullFaceMode :126
 uEnumType* GLCullFaceMode_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLCullFaceMode", ::g::Uno::Int_typeof(), 4);
-    type->SetLiterals(
+    type- SetLiterals(
         "None", 0LL,
         "Front", 1028LL,
         "Back", 1029LL,
@@ -1191,11 +1191,11 @@ uEnumType* GLCullFaceMode_typeof()
 // public extern enum GLDataType :154
 uEnumType* GLDataType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLDataType", ::g::Uno::Int_typeof(), 7);
-    type->SetLiterals(
+    type- SetLiterals(
         "Byte", 5120LL,
         "UnsignedByte", 5121LL,
         "Short", 5122LL,
@@ -1212,11 +1212,11 @@ uEnumType* GLDataType_typeof()
 // public extern enum GLDepthFunction :113
 uEnumType* GLDepthFunction_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLDepthFunction", ::g::Uno::Int_typeof(), 8);
-    type->SetLiterals(
+    type- SetLiterals(
         "Never", 512LL,
         "Less", 513LL,
         "Equal", 514LL,
@@ -1234,11 +1234,11 @@ uEnumType* GLDepthFunction_typeof()
 // public extern enum GLEnableCap :104
 uEnumType* GLEnableCap_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLEnableCap", ::g::Uno::Int_typeof(), 4);
-    type->SetLiterals(
+    type- SetLiterals(
         "Blend", 3042LL,
         "DepthTest", 2929LL,
         "CullFace", 2884LL,
@@ -1252,11 +1252,11 @@ uEnumType* GLEnableCap_typeof()
 // public extern enum GLError :260
 uEnumType* GLError_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLError", ::g::Uno::Int_typeof(), 6);
-    type->SetLiterals(
+    type- SetLiterals(
         "NoError", 0LL,
         "InvalidEnum", 1280LL,
         "InvalidValue", 1281LL,
@@ -1272,11 +1272,11 @@ uEnumType* GLError_typeof()
 // public extern enum GLFramebufferAttachment :240
 uEnumType* GLFramebufferAttachment_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLFramebufferAttachment", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
+    type- SetLiterals(
         "ColorAttachment0", 36064LL,
         "DepthAttachment", 36096LL,
         "StencilAttachment", 36128LL);
@@ -1295,7 +1295,7 @@ static void GLFramebufferHandle_build(uType* type)
 
 uStructType* GLFramebufferHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1303,9 +1303,9 @@ uStructType* GLFramebufferHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLFramebufferHandle", options);
-    type->fp_build_ = GLFramebufferHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLFramebufferHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLFramebufferHandle__GetHashCode_fn;
+    type- fp_build_ = GLFramebufferHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLFramebufferHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLFramebufferHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1313,14 +1313,14 @@ uStructType* GLFramebufferHandle_typeof()
 void GLFramebufferHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLFramebufferHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 // public static operator !=(OpenGL.GLFramebufferHandle left, OpenGL.GLFramebufferHandle right) :20
@@ -1344,11 +1344,11 @@ bool GLFramebufferHandle::op_Inequality(uint32_t left, uint32_t right)
 // public extern enum GLFramebufferStatus :271
 uEnumType* GLFramebufferStatus_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLFramebufferStatus", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "FramebufferComplete", 36053LL,
         "FramebufferIncompleteAttachment", 36054LL,
         "FramebufferIncompleteMissingAttachment", 36055LL,
@@ -1363,11 +1363,11 @@ uEnumType* GLFramebufferStatus_typeof()
 // public extern enum GLFramebufferTarget :248
 uEnumType* GLFramebufferTarget_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLFramebufferTarget", ::g::Uno::Int_typeof(), 1);
-    type->SetLiterals(
+    type- SetLiterals(
         "Framebuffer", 36160LL);
     return type;
 }
@@ -1378,11 +1378,11 @@ uEnumType* GLFramebufferTarget_typeof()
 // public extern enum GLFrontFaceDirection :135
 uEnumType* GLFrontFaceDirection_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLFrontFaceDirection", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "Cw", 2304LL,
         "Ccw", 2305LL);
     return type;
@@ -1394,11 +1394,11 @@ uEnumType* GLFrontFaceDirection_typeof()
 // public extern enum GLIndexType :166
 uEnumType* GLIndexType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLIndexType", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "UnsignedByte", 5121LL,
         "UnsignedShort", 5123LL);
     return type;
@@ -1410,11 +1410,11 @@ uEnumType* GLIndexType_typeof()
 // public extern enum GLInteger4Name :13
 uEnumType* GLInteger4Name_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLInteger4Name", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "ScissorBox", 3088LL,
         "Viewport", 2978LL);
     return type;
@@ -1426,11 +1426,11 @@ uEnumType* GLInteger4Name_typeof()
 // public extern enum GLIntegerName :7
 uEnumType* GLIntegerName_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLIntegerName", ::g::Uno::Int_typeof(), 1);
-    type->SetLiterals(
+    type- SetLiterals(
         "MaxTextureSize", 3379LL);
     return type;
 }
@@ -1441,11 +1441,11 @@ uEnumType* GLIntegerName_typeof()
 // public extern enum GLPixelFormat :173
 uEnumType* GLPixelFormat_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLPixelFormat", ::g::Uno::Int_typeof(), 10);
-    type->SetLiterals(
+    type- SetLiterals(
         "DepthComponent", 6402LL,
         "Alpha", 6406LL,
         "Bgr", 32992LL,
@@ -1465,11 +1465,11 @@ uEnumType* GLPixelFormat_typeof()
 // public extern enum GLPixelStoreParameter :203
 uEnumType* GLPixelStoreParameter_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLPixelStoreParameter", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "UnpackAlignment", 3317LL,
         "PackAlignment", 3333LL);
     return type;
@@ -1481,11 +1481,11 @@ uEnumType* GLPixelStoreParameter_typeof()
 // public extern enum GLPixelType :188
 uEnumType* GLPixelType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLPixelType", ::g::Uno::Int_typeof(), 10);
-    type->SetLiterals(
+    type- SetLiterals(
         "Byte", 5120LL,
         "UnsignedByte", 5121LL,
         "Short", 5122LL,
@@ -1505,11 +1505,11 @@ uEnumType* GLPixelType_typeof()
 // public extern enum GLPrimitiveType :142
 uEnumType* GLPrimitiveType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLPrimitiveType", ::g::Uno::Int_typeof(), 7);
-    type->SetLiterals(
+    type- SetLiterals(
         "Points", 0LL,
         "Lines", 1LL,
         "LineLoop", 2LL,
@@ -1532,7 +1532,7 @@ static void GLProgramHandle_build(uType* type)
 
 uStructType* GLProgramHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1540,9 +1540,9 @@ uStructType* GLProgramHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLProgramHandle", options);
-    type->fp_build_ = GLProgramHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLProgramHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLProgramHandle__GetHashCode_fn;
+    type- fp_build_ = GLProgramHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLProgramHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLProgramHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1550,14 +1550,14 @@ uStructType* GLProgramHandle_typeof()
 void GLProgramHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLProgramHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 uint32_t GLProgramHandle::Zero_;
@@ -1569,11 +1569,11 @@ uint32_t GLProgramHandle::Zero_;
 // public extern enum GLProgramParameter :297
 uEnumType* GLProgramParameter_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLProgramParameter", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "DeleteStatus", 35712LL,
         "LinkStatus", 35714LL,
         "AttachedShaders", 35717LL,
@@ -1594,7 +1594,7 @@ static void GLRenderbufferHandle_build(uType* type)
 
 uStructType* GLRenderbufferHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1602,9 +1602,9 @@ uStructType* GLRenderbufferHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLRenderbufferHandle", options);
-    type->fp_build_ = GLRenderbufferHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLRenderbufferHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLRenderbufferHandle__GetHashCode_fn;
+    type- fp_build_ = GLRenderbufferHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLRenderbufferHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLRenderbufferHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1612,14 +1612,14 @@ uStructType* GLRenderbufferHandle_typeof()
 void GLRenderbufferHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLRenderbufferHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 // public static operator !=(OpenGL.GLRenderbufferHandle left, OpenGL.GLRenderbufferHandle right) :20
@@ -1643,11 +1643,11 @@ bool GLRenderbufferHandle::op_Inequality(uint32_t left, uint32_t right)
 // public extern enum GLRenderbufferStorage :210
 uEnumType* GLRenderbufferStorage_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLRenderbufferStorage", ::g::Uno::Int_typeof(), 1);
-    type->SetLiterals(
+    type- SetLiterals(
         "DepthComponent16", 33189LL);
     return type;
 }
@@ -1658,11 +1658,11 @@ uEnumType* GLRenderbufferStorage_typeof()
 // public extern enum GLRenderbufferTarget :254
 uEnumType* GLRenderbufferTarget_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLRenderbufferTarget", ::g::Uno::Int_typeof(), 1);
-    type->SetLiterals(
+    type- SetLiterals(
         "Renderbuffer", 36161LL);
     return type;
 }
@@ -1679,7 +1679,7 @@ static void GLShaderHandle_build(uType* type)
 
 uStructType* GLShaderHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1687,9 +1687,9 @@ uStructType* GLShaderHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLShaderHandle", options);
-    type->fp_build_ = GLShaderHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLShaderHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLShaderHandle__GetHashCode_fn;
+    type- fp_build_ = GLShaderHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLShaderHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLShaderHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1697,14 +1697,14 @@ uStructType* GLShaderHandle_typeof()
 void GLShaderHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLShaderHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 uint32_t GLShaderHandle::Zero_;
@@ -1716,11 +1716,11 @@ uint32_t GLShaderHandle::Zero_;
 // public extern enum GLShaderParameter :289
 uEnumType* GLShaderParameter_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLShaderParameter", ::g::Uno::Int_typeof(), 3);
-    type->SetLiterals(
+    type- SetLiterals(
         "ShaderType", 35663LL,
         "DeleteStatus", 35712LL,
         "CompileStatus", 35713LL);
@@ -1733,11 +1733,11 @@ uEnumType* GLShaderParameter_typeof()
 // public extern enum GLShaderType :20
 uEnumType* GLShaderType_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLShaderType", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
+    type- SetLiterals(
         "FragmentShader", 35632LL,
         "VertexShader", 35633LL);
     return type;
@@ -1749,11 +1749,11 @@ uEnumType* GLShaderType_typeof()
 // public extern enum GLStringName :307
 uEnumType* GLStringName_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLStringName", ::g::Uno::Int_typeof(), 5);
-    type->SetLiterals(
+    type- SetLiterals(
         "Vendor", 7936LL,
         "Renderer", 7937LL,
         "Version", 7938LL,
@@ -1774,7 +1774,7 @@ static void GLTextureHandle_build(uType* type)
 
 uStructType* GLTextureHandle_typeof()
 {
-    static uSStrong<uStructType*> type;
+    static uSStrong<uStructType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -1782,9 +1782,9 @@ uStructType* GLTextureHandle_typeof()
     options.ValueSize = sizeof(uint32_t);
     options.TypeSize = sizeof(uStructType);
     type = uStructType::New("OpenGL.GLTextureHandle", options);
-    type->fp_build_ = GLTextureHandle_build;
-    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLTextureHandle__Equals_fn;
-    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLTextureHandle__GetHashCode_fn;
+    type- fp_build_ = GLTextureHandle_build;
+    type- fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))GLTextureHandle__Equals_fn;
+    type- fp_GetHashCode_struct = (void(*)(void*, uType*, int*))GLTextureHandle__GetHashCode_fn;
     return type;
 }
 
@@ -1792,14 +1792,14 @@ uStructType* GLTextureHandle_typeof()
 void GLTextureHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval)
 {
     bool ret1;
-    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), obj, &ret1), ret1), void();
+    return *__retval = (::g::Uno::Object__Equals_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), obj, &ret1), ret1), void();
 }
 
 // public override sealed int GetHashCode() :36
 void GLTextureHandle__GetHashCode_fn(uint32_t* __this, uType* __type, int* __retval)
 {
     int ret2;
-    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type->ObjectSize)), &ret2), ret2), void();
+    return *__retval = (::g::Uno::Object__GetHashCode_fn(uBox(__type, *__this, U_ALLOCA(__type- ObjectSize)), &ret2), ret2), void();
 }
 
 // public static extern explicit operator int(OpenGL.GLTextureHandle handle) :25
@@ -1835,11 +1835,11 @@ bool GLTextureHandle::op_Inequality(uint32_t left, uint32_t right)
 // public extern enum GLTextureParameterName :80
 uEnumType* GLTextureParameterName_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLTextureParameterName", ::g::Uno::Int_typeof(), 4);
-    type->SetLiterals(
+    type- SetLiterals(
         "WrapS", 10242LL,
         "WrapT", 10243LL,
         "MagFilter", 10240LL,
@@ -1853,11 +1853,11 @@ uEnumType* GLTextureParameterName_typeof()
 // public extern enum GLTextureParameterValue :89
 uEnumType* GLTextureParameterValue_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLTextureParameterValue", ::g::Uno::Int_typeof(), 8);
-    type->SetLiterals(
+    type- SetLiterals(
         "Repeat", 10497LL,
         "ClampToEdge", 33071LL,
         "Nearest", 9728LL,
@@ -1875,11 +1875,11 @@ uEnumType* GLTextureParameterValue_typeof()
 // public extern enum GLTextureTarget :66
 uEnumType* GLTextureTarget_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLTextureTarget", ::g::Uno::Int_typeof(), 9);
-    type->SetLiterals(
+    type- SetLiterals(
         "Texture2D", 3553LL,
         "TextureCubeMap", 34067LL,
         "TextureCubeMapPositiveX", 34069LL,
@@ -1898,11 +1898,11 @@ uEnumType* GLTextureTarget_typeof()
 // public extern enum GLTextureUnit :53
 uEnumType* GLTextureUnit_typeof()
 {
-    static uSStrong<uEnumType*> type;
+    static uSStrong<uEnumType*  type;
     if (type != NULL) return type;
 
     type = uEnumType::New("OpenGL.GLTextureUnit", ::g::Uno::Int_typeof(), 8);
-    type->SetLiterals(
+    type- SetLiterals(
         "Texture0", 33984LL,
         "Texture1", 33985LL,
         "Texture2", 33986LL,

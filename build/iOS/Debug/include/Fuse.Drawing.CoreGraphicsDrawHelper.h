@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{struct CoreGraphicsDrawHelper;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
@@ -22,9 +22,9 @@ void CoreGraphicsDrawHelper__New1_fn(CoreGraphicsDrawHelper** __retval);
 
 struct CoreGraphicsDrawHelper : uObject
 {
-    static uSStrong<CoreGraphicsDrawHelper*> Singleton_;
-    static uSStrong<CoreGraphicsDrawHelper*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawImageFill_VertexData_2b8a7405_1_1_1;
+    static uSStrong<CoreGraphicsDrawHelper*  Singleton_;
+    static uSStrong<CoreGraphicsDrawHelper* & Singleton() { return Singleton_; }
+    uStrong< ::g::Uno::Graphics::VertexBuffer*  DrawImageFill_VertexData_2b8a7405_1_1_1;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_2b8a7405;
 
     void ctor_();

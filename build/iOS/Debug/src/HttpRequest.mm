@@ -1,10 +1,10 @@
-#include <Uno/Uno.h>
+#include <Uno/Uno.h 
 
-#include <Uno.Byte.h>
-#include <Uno.String.h>
-#include <Uno.Net.Http.HttpMessageHandlerRequest.h>
+#include <Uno.Byte.h 
+#include <Uno.String.h 
+#include <Uno.Net.Http.HttpMessageHandlerRequest.h 
 
-#include <Foundation/Foundation.h>
+#include <Foundation/Foundation.h 
 
 #include "HttpRequest.h"
 
@@ -20,7 +20,7 @@ namespace {
         if (str == NULL)
             return nil;
 
-        return [NSString stringWithCharacters:str->_ptr length:str->_length];
+        return [NSString stringWithCharacters:str- _ptr length:str- _length];
     }
 
     uString *NSString2uString(NSString *str)
@@ -31,12 +31,12 @@ namespace {
         NSUInteger length = str.length;
 
         uString *result = uString::New((int) length);
-        [str getCharacters:result->_ptr range:(NSRange){ 0, length }];
+        [str getCharacters:result- _ptr range:(NSRange){ 0, length }];
 
         return result;
     }
 
-} // <anonymous> namespace
+} // <anonymous  namespace
 
 
 static NSURLCache *sharedCache = nil;
@@ -75,30 +75,30 @@ void PurgeSharedCache()
 
 struct HttpRequest::Private
 {
-    Private(const HttpRequest *r) : this_(const_cast<HttpRequest *>(r)) {}
+    Private(const HttpRequest *r) : this_(const_cast<HttpRequest * (r)) {}
 
     NSMutableURLRequest *request() const
     {
-        if (![this_->requestTaskOrResponse_
+        if (![this_- requestTaskOrResponse_
                 isKindOfClass:[NSMutableURLRequest class]])
             return nil;
-        return (NSMutableURLRequest *) this_->requestTaskOrResponse_;
+        return (NSMutableURLRequest *) this_- requestTaskOrResponse_;
     }
 
     NSURLSessionDataTask *task() const
     {
-        if (![this_->requestTaskOrResponse_
+        if (![this_- requestTaskOrResponse_
                 isKindOfClass:[NSURLSessionDataTask class]])
             return nil;
-        return (NSURLSessionDataTask *) this_->requestTaskOrResponse_;
+        return (NSURLSessionDataTask *) this_- requestTaskOrResponse_;
     }
 
     NSHTTPURLResponse *response() const
     {
-        if (![this_->requestTaskOrResponse_
+        if (![this_- requestTaskOrResponse_
                 isKindOfClass:[NSHTTPURLResponse class]])
             return nil;
-        return (NSHTTPURLResponse *) this_->requestTaskOrResponse_;
+        return (NSHTTPURLResponse *) this_- requestTaskOrResponse_;
     }
 
     void Abort()
@@ -106,27 +106,27 @@ struct HttpRequest::Private
         [task() cancel];
 
         uAutoReleasePool pool;
-        this_->unoRequest_->OnAborted();
+        this_- unoRequest_- OnAborted();
     }
 
     void Completed(NSData *data, NSHTTPURLResponse *response, NSError *error)
     {
-        this_->requestTaskOrResponse_ = response;
+        this_- requestTaskOrResponse_ = response;
 
         uAutoReleasePool pool;
 
         if (data && data.length)
         {
-            switch (this_->unoRequest_->HttpResponseType())
+            switch (this_- unoRequest_- HttpResponseType())
             {
                 case 0:       // String
-                    this_->responseContent_ = uString::Utf8(
+                    this_- responseContent_ = uString::Utf8(
                         (const char *) data.bytes, (int) data.length);
                     break;
 
                 case 1:    // ByteArray
-                    this_->responseContent_ = uArray::New(
-                        ::g::Uno::Byte_typeof()->Array(), (int) data.length, data.bytes);
+                    this_- responseContent_ = uArray::New(
+                        ::g::Uno::Byte_typeof()- Array(), (int) data.length, data.bytes);
                     break;
 
                 default:
@@ -139,17 +139,17 @@ struct HttpRequest::Private
             if (error.code == NSURLErrorTimedOut
                     && [error.domain isEqualToString:NSURLErrorDomain])
             {
-                this_->unoRequest_->OnTimeout();
+                this_- unoRequest_- OnTimeout();
             }
             else
             {
                 uString *message = NSString2uString(error.localizedDescription);
-                this_->unoRequest_->OnError(message);
+                this_- unoRequest_- OnError(message);
             }
         }
         else
         {
-            this_->unoRequest_->OnDone();
+            this_- unoRequest_- OnDone();
         }
     }
 
@@ -273,16 +273,16 @@ uString *HttpRequest::GetResponseHeaders() const
         return NULL;
 
     uString *result = uString::New((int) (resultLength - 1));
-    __block uChar *ptr = result->_ptr;
-    uChar *ptrEnd = result->_ptr + result->_length;
+    __block uChar *ptr = result- _ptr;
+    uChar *ptrEnd = result- _ptr + result- _length;
 
     [headers enumerateKeysAndObjectsUsingBlock:
             ^(NSString *key, NSString *obj, BOOL *stop)
     {
-        assert(ptrEnd > ptr);
+        assert(ptrEnd   ptr);
 
         NSUInteger keyLength = key.length;
-        assert(ptrEnd - ptr > keyLength);
+        assert(ptrEnd - ptr   keyLength);
 
         [key getCharacters:ptr range:(NSRange){ 0, keyLength }];
         ptr += keyLength;
@@ -290,7 +290,7 @@ uString *HttpRequest::GetResponseHeaders() const
         *ptr++ = (uChar) ':';
 
         NSUInteger objLength = obj.length;
-        assert(ptrEnd - ptr >= objLength);
+        assert(ptrEnd - ptr  = objLength);
 
         [obj getCharacters:ptr range:(NSRange){ 0, objLength }];
         ptr += objLength;
@@ -307,14 +307,14 @@ uString *HttpRequest::GetResponseHeaders() const
 
 uString *HttpRequest::GetResponseContentString() const
 {
-    return uAs< uString *>(
+    return uAs< uString * (
         (uObject *&)responseContent_, ::g::Uno::String_typeof());
 }
 
 uArray *HttpRequest::GetResponseContentByteArray() const
 {
-    return uAs< uArray *>(
-        (uObject *&)responseContent_, ::g::Uno::Byte_typeof()->Array());
+    return uAs< uArray * (
+        (uObject *&)responseContent_, ::g::Uno::Byte_typeof()- Array());
 }
 
 }}}} // namespace Uno::Net::Http::Implementation::iOS

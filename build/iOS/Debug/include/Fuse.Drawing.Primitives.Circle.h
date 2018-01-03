@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Object.h 
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct Float2Buffer;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct UShortBuffer;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct Circle;}}}}
@@ -35,13 +35,13 @@ void Circle__Stroke_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::El
 
 struct Circle : uObject
 {
-    static uSStrong<Circle*> Singleton_;
-    static uSStrong<Circle*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Fuse::Drawing::Primitives::LimitCoverage*> _oneLimitCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*> _strokeCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*> _fillCoverage;
-    uStrong< ::g::Fuse::Drawing::Internal::Float2Buffer*> _bufferVertex;
-    uStrong< ::g::Fuse::Drawing::Internal::UShortBuffer*> _bufferIndex;
+    static uSStrong<Circle*  Singleton_;
+    static uSStrong<Circle* & Singleton() { return Singleton_; }
+    uStrong< ::g::Fuse::Drawing::Primitives::LimitCoverage*  _oneLimitCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*  _strokeCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*  _fillCoverage;
+    uStrong< ::g::Fuse::Drawing::Internal::Float2Buffer*  _bufferVertex;
+    uStrong< ::g::Fuse::Drawing::Internal::UShortBuffer*  _bufferIndex;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_11ecc447;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_11ecc46a;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_11ecc489;

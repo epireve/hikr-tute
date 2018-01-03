@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IParentObserver.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IParentObserver.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigationPageState;}}}
 namespace g{namespace Fuse{namespace Navigation{struct PageData;}}}
 namespace g{namespace Fuse{namespace Navigation{struct VisualNavigation;}}}
@@ -92,40 +92,40 @@ void VisualNavigation__UpdatePages_fn(VisualNavigation* __this);
 struct VisualNavigation : ::g::Fuse::Behavior
 {
     int _navState;
-    uStrong< ::g::Uno::Collections::List*> _pages;
+    uStrong< ::g::Uno::Collections::List*  _pages;
     static ::g::Uno::UX::Selector ActiveIndexName_;
-    static ::g::Uno::UX::Selector& ActiveIndexName() { return VisualNavigation_typeof()->Init(), ActiveIndexName_; }
-    uStrong<uDelegate*> ActivePageChanged1;
-    uStrong<uDelegate*> HistoryChanged1;
-    uStrong<uDelegate*> Navigated1;
-    uStrong<uDelegate*> PageCountChanged1;
-    uStrong<uDelegate*> PageProgressChanged1;
-    uStrong<uDelegate*> StateChanged1;
+    static ::g::Uno::UX::Selector& ActiveIndexName() { return VisualNavigation_typeof()- Init(), ActiveIndexName_; }
+    uStrong<uDelegate*  ActivePageChanged1;
+    uStrong<uDelegate*  HistoryChanged1;
+    uStrong<uDelegate*  Navigated1;
+    uStrong<uDelegate*  PageCountChanged1;
+    uStrong<uDelegate*  PageProgressChanged1;
+    uStrong<uDelegate*  StateChanged1;
 
     void ctor_3();
-    ::g::Fuse::Visual* Active() { ::g::Fuse::Visual* __retval; return (((VisualNavigation_type*)__type)->fp_get_Active)(this, &__retval), __retval; }
-    void Active(::g::Fuse::Visual* value) { (((VisualNavigation_type*)__type)->fp_set_Active)(this, value); }
+    ::g::Fuse::Visual* Active() { ::g::Fuse::Visual* __retval; return (((VisualNavigation_type*)__type)- fp_get_Active)(this, &__retval), __retval; }
+    void Active(::g::Fuse::Visual* value) { (((VisualNavigation_type*)__type)- fp_set_Active)(this, value); }
     ::g::Fuse::Visual* ActivePage();
     void add_ActivePageChanged(uDelegate* value);
     void remove_ActivePageChanged(uDelegate* value);
-    bool CanGoBack() { bool __retval; return (((VisualNavigation_type*)__type)->fp_get_CanGoBack)(this, &__retval), __retval; }
-    bool CanGoForward() { bool __retval; return (((VisualNavigation_type*)__type)->fp_get_CanGoForward)(this, &__retval), __retval; }
+    bool CanGoBack() { bool __retval; return (((VisualNavigation_type*)__type)- fp_get_CanGoBack)(this, &__retval), __retval; }
+    bool CanGoForward() { bool __retval; return (((VisualNavigation_type*)__type)- fp_get_CanGoForward)(this, &__retval), __retval; }
     ::g::Fuse::Visual* GetPage(int index);
     ::g::Fuse::Navigation::PageData* GetPageData(::g::Fuse::Visual* page);
     int GetPageIndex(::g::Fuse::Visual* child);
     ::g::Fuse::Navigation::NavigationPageState GetPageState(::g::Fuse::Visual* page);
-    void GoBack() { (((VisualNavigation_type*)__type)->fp_GoBack)(this); }
-    void GoForward() { (((VisualNavigation_type*)__type)->fp_GoForward)(this); }
-    void Goto(::g::Fuse::Visual* element, int mode) { (((VisualNavigation_type*)__type)->fp_Goto)(this, element, &mode); }
+    void GoBack() { (((VisualNavigation_type*)__type)- fp_GoBack)(this); }
+    void GoForward() { (((VisualNavigation_type*)__type)- fp_GoForward)(this); }
+    void Goto(::g::Fuse::Visual* element, int mode) { (((VisualNavigation_type*)__type)- fp_Goto)(this, element, &mode); }
     bool HasPages();
     void add_HistoryChanged(uDelegate* value);
     void remove_HistoryChanged(uDelegate* value);
     void add_Navigated(uDelegate* value);
     void remove_Navigated(uDelegate* value);
     void OnActiveChanged(::g::Fuse::Visual* newElement);
-    void OnChildAddedWhileRooted(::g::Fuse::Node* child) { (((VisualNavigation_type*)__type)->fp_OnChildAddedWhileRooted)(this, child); }
+    void OnChildAddedWhileRooted(::g::Fuse::Node* child) { (((VisualNavigation_type*)__type)- fp_OnChildAddedWhileRooted)(this, child); }
     void OnChildMovedWhileRooted(::g::Fuse::Node* child);
-    void OnChildRemovedWhileRooted(::g::Fuse::Node* child) { (((VisualNavigation_type*)__type)->fp_OnChildRemovedWhileRooted)(this, child); }
+    void OnChildRemovedWhileRooted(::g::Fuse::Node* child) { (((VisualNavigation_type*)__type)- fp_OnChildRemovedWhileRooted)(this, child); }
     void OnHistoryChanged();
     void OnNavigated(::g::Fuse::Visual* newElement);
     void OnPageCountChanged();
@@ -141,7 +141,7 @@ struct VisualNavigation : ::g::Fuse::Behavior
     int State();
     void add_StateChanged(uDelegate* value);
     void remove_StateChanged(uDelegate* value);
-    void Toggle(::g::Fuse::Visual* page) { (((VisualNavigation_type*)__type)->fp_Toggle)(this, page); }
+    void Toggle(::g::Fuse::Visual* page) { (((VisualNavigation_type*)__type)- fp_Toggle)(this, page); }
     void UpdatePages();
     static ::g::Fuse::Navigation::NavigationPageState GetPageState(VisualNavigation* __this, ::g::Fuse::Visual* page);
     static void GoBack(VisualNavigation* __this) { VisualNavigation__GoBack_fn(__this); }
@@ -156,13 +156,13 @@ struct VisualNavigation : ::g::Fuse::Behavior
 
 }}} // ::g::Fuse::Navigation
 
-#include <Fuse.Navigation.NavigationPageState.h>
+#include <Fuse.Navigation.NavigationPageState.h 
 
 namespace g{
 namespace Fuse{
 namespace Navigation{
 
-inline ::g::Fuse::Navigation::NavigationPageState VisualNavigation::GetPageState(::g::Fuse::Visual* page) { ::g::Fuse::Navigation::NavigationPageState __retval; return (((VisualNavigation_type*)__type)->fp_GetPageState)(this, page, &__retval), __retval; }
+inline ::g::Fuse::Navigation::NavigationPageState VisualNavigation::GetPageState(::g::Fuse::Visual* page) { ::g::Fuse::Navigation::NavigationPageState __retval; return (((VisualNavigation_type*)__type)- fp_GetPageState)(this, page, &__retval), __retval; }
 inline ::g::Fuse::Navigation::NavigationPageState VisualNavigation::GetPageState(VisualNavigation* __this, ::g::Fuse::Visual* page) { ::g::Fuse::Navigation::NavigationPageState __retval; return VisualNavigation__GetPageState_fn(__this, page, &__retval), __retval; }
 // }
 

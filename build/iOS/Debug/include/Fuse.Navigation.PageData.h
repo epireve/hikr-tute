@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct PageData;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPage;}}}
 namespace g{namespace Fuse{struct PropertyHandle;}}
@@ -35,13 +35,13 @@ struct PageData : uObject
     int Index;
     float Progress;
     float PreviousProgress;
-    uStrong<uObject*> ControlPageData;
-    static uSStrong< ::g::Fuse::PropertyHandle*> _propPageData_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _propPageData() { return _propPageData_; }
-    uStrong<uObject*> _Context;
-    uStrong< ::g::Fuse::Navigation::RouterPage*> _RouterPage;
-    uWeak< ::g::Fuse::Visual*> _Visual;
-    uStrong<uDelegate*> RouterPageChanged1;
+    uStrong<uObject*  ControlPageData;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _propPageData_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _propPageData() { return _propPageData_; }
+    uStrong<uObject*  _Context;
+    uStrong< ::g::Fuse::Navigation::RouterPage*  _RouterPage;
+    uWeak< ::g::Fuse::Visual*  _Visual;
+    uStrong<uDelegate*  RouterPageChanged1;
 
     void ctor_(::g::Fuse::Visual* visual);
     void AttachRouterPage(::g::Fuse::Navigation::RouterPage* rp);

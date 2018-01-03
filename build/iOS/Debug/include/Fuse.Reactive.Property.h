@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct ConstantExpression;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Property;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor;}}}
@@ -25,8 +25,8 @@ void Property__Subscribe_fn(Property* __this, uObject* context, uObject* listene
 
 struct Property : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Uno::UX::PropertyAccessor*> _Accessor;
-    uStrong< ::g::Fuse::Reactive::ConstantExpression*> _Object;
+    uStrong< ::g::Uno::UX::PropertyAccessor*  _Accessor;
+    uStrong< ::g::Fuse::Reactive::ConstantExpression*  _Object;
 
     void ctor_1(::g::Fuse::Reactive::ConstantExpression* obj, ::g::Uno::UX::PropertyAccessor* accessor);
     ::g::Uno::UX::PropertyAccessor* Accessor();

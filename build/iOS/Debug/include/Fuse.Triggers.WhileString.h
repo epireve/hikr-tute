@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.IPulseTrigger.h>
-#include <Fuse.Triggers.WhileValue-1.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.String.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.IPulseTrigger.h 
+#include <Fuse.Triggers.WhileValue-1.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.String.h 
 namespace g{namespace Fuse{namespace Triggers{struct WhileString;}}}
 
 namespace g{
@@ -38,7 +38,7 @@ void WhileString__set_Test_fn(WhileString* __this, int* value);
 struct WhileString : ::g::Fuse::Triggers::WhileValue
 {
     int _test;
-    uStrong<uString*> _compare;
+    uStrong<uString*  _compare;
     bool _caseSensitive;
     int _minLength;
     int _maxLength;

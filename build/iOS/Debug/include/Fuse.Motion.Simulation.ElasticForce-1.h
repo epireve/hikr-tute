@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
-#include <Uno.Object.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h 
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h 
+#include <Fuse.Motion.Simulation.Simulation.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Motion{namespace Simulation{struct ElasticForce;}}}}
 
@@ -14,7 +14,7 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// internal sealed class ElasticForce<T> :6
+// internal sealed class ElasticForce<T  :6
 // {
 struct ElasticForce_type : uType
 {
@@ -59,10 +59,10 @@ void ElasticForce__set_Velocity_fn(ElasticForce* __this, void* value);
 
 struct ElasticForce : uObject
 {
-    uStrong< ::g::Fuse::Internal::Blender*> _blender;
+    uStrong< ::g::Fuse::Internal::Blender*  _blender;
     float _scale;
-    uTField _velocity() { return __type->Field(this, 2); }
-    uTField _attractionDestination() { return __type->Field(this, 3); }
+    uTField _velocity() { return __type- Field(this, 2); }
+    uTField _attractionDestination() { return __type- Field(this, 3); }
     float _attractionForce;
     float _attractionCurve;
     float _damping;
@@ -73,10 +73,10 @@ struct ElasticForce : uObject
     double timeStep;
     double _remainTime;
     bool _IsLocked;
-    uTField _Position() { return __type->Field(this, 14); }
+    uTField _Position() { return __type- Field(this, 14); }
 
     void ctor_(float scale);
-    template<class T>
+    template<class T 
     T Attraction() { T __retval; return ElasticForce__get_Attraction_fn(this, &__retval), __retval; }
     float AttractionCurve();
     void AttractionCurve(float value);
@@ -84,10 +84,10 @@ struct ElasticForce : uObject
     void AttractionForce(float value);
     float Damping();
     void Damping(float value);
-    template<class T>
+    template<class T 
     T Destination() { T __retval; return ElasticForce__get_Destination_fn(this, &__retval), __retval; }
-    template<class T>
-    void Destination(T value) { ElasticForce__set_Destination_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Destination(T value) { ElasticForce__set_Destination_fn(this, uConstrain(__type- T(0), value)); }
     float Energy();
     float EnergyEps();
     void EnergyEps(float value);
@@ -98,18 +98,18 @@ struct ElasticForce : uObject
     void Iterate();
     float MaxSpeed();
     void MaxSpeed(float value);
-    template<class T>
+    template<class T 
     T Position() { T __retval; return ElasticForce__get_Position_fn(this, &__retval), __retval; }
-    template<class T>
-    void Position(T value) { ElasticForce__set_Position_fn(this, uConstrain(__type->T(0), value)); }
-    template<class T>
-    void Reset(T value) { ElasticForce__Reset_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Position(T value) { ElasticForce__set_Position_fn(this, uConstrain(__type- T(0), value)); }
+    template<class T 
+    void Reset(T value) { ElasticForce__Reset_fn(this, uConstrain(__type- T(0), value)); }
     void Start();
     void Update(double elapsed);
-    template<class T>
+    template<class T 
     T Velocity() { T __retval; return ElasticForce__get_Velocity_fn(this, &__retval), __retval; }
-    template<class T>
-    void Velocity(T value) { ElasticForce__set_Velocity_fn(this, uConstrain(__type->T(0), value)); }
+    template<class T 
+    void Velocity(T value) { ElasticForce__set_Velocity_fn(this, uConstrain(__type- T(0), value)); }
     static ElasticForce* CreateNormalized(uType* __type);
     static ElasticForce* CreatePoints(uType* __type);
     static ElasticForce* CreateRadians(uType* __type);

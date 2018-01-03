@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IParentObserver.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
-#include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.VisualNavigation.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IParentObserver.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.IBaseNavigation.h 
+#include <Fuse.Navigation.INavigation.h 
+#include <Fuse.Navigation.VisualNavigation.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct EdgeSwiper;}}}}
 namespace g{namespace Fuse{namespace Navigation{struct EdgeNavigation;}}}
 namespace g{namespace Fuse{namespace Navigation{struct NavigationPageState;}}}
@@ -48,11 +48,11 @@ void EdgeNavigation__Toggle_fn(EdgeNavigation* __this, ::g::Fuse::Visual* page);
 
 struct EdgeNavigation : ::g::Fuse::Navigation::VisualNavigation
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _edgeHandle_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _edgeHandle() { return _edgeHandle_; }
-    uStrong< ::g::Fuse::Visual*> _active;
-    uStrong< ::g::Uno::Collections::Dictionary*> _swipers;
-    uStrong< ::g::Uno::Collections::List*> _mains;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _edgeHandle_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _edgeHandle() { return _edgeHandle_; }
+    uStrong< ::g::Fuse::Visual*  _active;
+    uStrong< ::g::Uno::Collections::Dictionary*  _swipers;
+    uStrong< ::g::Uno::Collections::List*  _mains;
     double _maxProgress;
 
     void CheckChildren();

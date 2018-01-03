@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -20,7 +20,7 @@ struct CreateStateParams : uObject
 {
     int Variant;
     double TotalDuration;
-    uStrong< ::g::Fuse::Visual*> Attached;
+    uStrong< ::g::Fuse::Visual*  Attached;
 
     void ctor_();
     static CreateStateParams* New1();

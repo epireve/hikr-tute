@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <cfloat>
-#include <cstring>
-#include <stdint.h>
-#include <stdarg.h>
-#include <uBase/Config.h>
+#include <cfloat 
+#include <cstring 
+#include <stdint.h 
+#include <stdarg.h 
+#include <uBase/Config.h 
 
 // Debugging
 //#define DEBUG_ARC 0 // 0..4
@@ -53,7 +53,7 @@ U_NORETURN void uFatal(const char* src = NULL, const char* msg = NULL);
 
 // Asserts
 #ifdef DEBUG_UNSAFE
-template<class T>
+template<class T 
 T uAssertPtr(T ptr, const char* src, const char* msg) {
     if (!ptr) uFatal(src, msg);
     return ptr;
@@ -67,9 +67,9 @@ T uAssertPtr(T ptr, const char* src, const char* msg) {
 
 // Stack alloc
 #if MSVC
-#include <malloc.h>
+#include <malloc.h 
 #else
-#include <alloca.h>
+#include <alloca.h 
 #endif
 #define U_ALLOCA(SIZE) alloca(SIZE)
 
@@ -79,6 +79,6 @@ T uAssertPtr(T ptr, const char* src, const char* msg) {
 #endif
 
 // Disable free()
-#if DEBUG_ARC >= 4
+#if DEBUG_ARC  = 4
 #define free(X) void()
 #endif

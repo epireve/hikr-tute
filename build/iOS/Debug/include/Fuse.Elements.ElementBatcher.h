@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ISoftDisposable.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Fuse.Resources.ISoftDisposable.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatch;}}}
@@ -51,11 +51,11 @@ void ElementBatcher__UpdateDrawList_fn(ElementBatcher* __this);
 
 struct ElementBatcher : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _elements;
-    uStrong< ::g::Uno::Collections::List*> _atlasPool;
-    uStrong< ::g::Uno::Collections::List*> _batchPool;
-    uStrong< ::g::Uno::Collections::List*> _drawList;
-    uStrong< ::g::Uno::Collections::List*> _reinsertCheckList;
+    uStrong< ::g::Uno::Collections::List*  _elements;
+    uStrong< ::g::Uno::Collections::List*  _atlasPool;
+    uStrong< ::g::Uno::Collections::List*  _batchPool;
+    uStrong< ::g::Uno::Collections::List*  _drawList;
+    uStrong< ::g::Uno::Collections::List*  _reinsertCheckList;
     float MaxSpilledRatio;
     bool DrawListValid;
 

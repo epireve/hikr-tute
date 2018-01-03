@@ -1,12 +1,12 @@
 #pragma once
 #ifdef __OBJC__
-#include <UIKit/UIKit.h>
+#include <UIKit/UIKit.h 
 
 
 
 
 
-@interface uAppDelegate : UIViewController<UIApplicationDelegate>
+@interface uAppDelegate : UIViewController<UIApplicationDelegate 
 {
     uintptr_t primaryTouch;
 }

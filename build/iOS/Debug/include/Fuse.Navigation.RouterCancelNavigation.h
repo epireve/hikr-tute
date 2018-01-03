@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterCancelNavigation;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -22,7 +22,7 @@ void RouterCancelNavigation__set_Router_fn(RouterCancelNavigation* __this, ::g::
 
 struct RouterCancelNavigation : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Fuse::Navigation::Router*> _Router;
+    uStrong< ::g::Fuse::Navigation::Router*  _Router;
 
     void ctor_2();
     ::g::Fuse::Navigation::Router* Router();

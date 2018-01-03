@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerManager;}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct TimerManager__Timer;}}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -26,7 +26,7 @@ void TimerManager__Tick_fn(TimerManager* __this);
 
 struct TimerManager : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _timers;
+    uStrong< ::g::Uno::Collections::List*  _timers;
 
     void ctor_();
     int AddTimer(double ms, uDelegate* callback, bool repeat);

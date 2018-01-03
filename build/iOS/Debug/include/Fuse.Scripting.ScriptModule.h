@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.Module.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.Module.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
@@ -60,21 +60,21 @@ void ScriptModule__TryResolve_fn(ScriptModule* __this, uString* path, bool* isFi
 
 struct ScriptModule : ::g::Fuse::Scripting::Module
 {
-    static uSStrong<uString*> ModuleContainsAnErrorMessage_;
-    static uSStrong<uString*>& ModuleContainsAnErrorMessage() { return ModuleContainsAnErrorMessage_; }
-    uStrong< ::g::Uno::UX::FileSource*> _file;
-    uStrong< ::g::Uno::IO::Bundle*> _bundle;
-    uStrong<uString*> _code;
-    uStrong<uString*> _fileName;
+    static uSStrong<uString*  ModuleContainsAnErrorMessage_;
+    static uSStrong<uString* & ModuleContainsAnErrorMessage() { return ModuleContainsAnErrorMessage_; }
+    uStrong< ::g::Uno::UX::FileSource*  _file;
+    uStrong< ::g::Uno::IO::Bundle*  _bundle;
+    uStrong<uString*  _code;
+    uStrong<uString*  _fileName;
     int _lineNumberOffset;
-    uStrong<uString*> _Postamble;
-    uStrong<uString*> _Preamble;
+    uStrong<uString*  _Postamble;
+    uStrong<uString*  _Preamble;
 
     void ctor_1();
     bool Acceptor(uObject* obj);
     ::g::Uno::IO::Bundle* Bundle();
     void Bundle(::g::Uno::IO::Bundle* value);
-    void CallModuleFunc(::g::Fuse::Scripting::Function* moduleFunc, uArray* args) { (((ScriptModule_type*)__type)->fp_CallModuleFunc)(this, moduleFunc, args); }
+    void CallModuleFunc(::g::Fuse::Scripting::Function* moduleFunc, uArray* args) { (((ScriptModule_type*)__type)- fp_CallModuleFunc)(this, moduleFunc, args); }
     uString* Code();
     void Code(uString* value);
     uString* ComputePath(uString* moduleId, bool* isFile);
@@ -82,8 +82,8 @@ struct ScriptModule : ::g::Fuse::Scripting::Module
     void File(::g::Uno::UX::FileSource* value);
     uString* FileName();
     void FileName(uString* value);
-    uString* GenerateArgs(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result, ::g::Uno::Collections::List* args) { uString* __retval; return (((ScriptModule_type*)__type)->fp_GenerateArgs)(this, c, result, args, &__retval), __retval; }
-    ::g::Uno::Collections::Dictionary* GenerateRequireTable(::g::Fuse::Scripting::Context* c) { ::g::Uno::Collections::Dictionary* __retval; return (((ScriptModule_type*)__type)->fp_GenerateRequireTable)(this, c, &__retval), __retval; }
+    uString* GenerateArgs(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result, ::g::Uno::Collections::List* args) { uString* __retval; return (((ScriptModule_type*)__type)- fp_GenerateArgs)(this, c, result, args, &__retval), __retval; }
+    ::g::Uno::Collections::Dictionary* GenerateRequireTable(::g::Fuse::Scripting::Context* c) { ::g::Uno::Collections::Dictionary* __retval; return (((ScriptModule_type*)__type)- fp_GenerateRequireTable)(this, c, &__retval), __retval; }
     uString* GetEffectiveCode();
     int GetPreambleNewlines();
     uString* GetSourcePath();

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.IPointerEventResponder.h>
-#include <Uno.Object.h>
+#include <Fuse.Input.IPointerEventResponder.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Input{struct Pointer__DefaultPointerEventResponder;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerMovedArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerPressedArgs;}}}

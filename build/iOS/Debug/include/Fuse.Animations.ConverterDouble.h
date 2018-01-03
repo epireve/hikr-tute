@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Converter-1.h>
-#include <Uno.Double.h>
+#include <Fuse.Animations.Converter-1.h 
+#include <Uno.Double.h 
 namespace g{namespace Fuse{namespace Animations{struct ConverterDouble;}}}
 namespace g{namespace Uno{struct Float4;}}
 
@@ -21,8 +21,8 @@ void ConverterDouble__Out_fn(ConverterDouble* __this, ::g::Uno::Float4* value, d
 
 struct ConverterDouble : ::g::Fuse::Animations::Converter
 {
-    static uSStrong<ConverterDouble*> Singleton_;
-    static uSStrong<ConverterDouble*>& Singleton() { return Singleton_; }
+    static uSStrong<ConverterDouble*  Singleton_;
+    static uSStrong<ConverterDouble* & Singleton() { return Singleton_; }
 
     void ctor_1();
     static ConverterDouble* New1();

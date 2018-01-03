@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct Navigator__NavPage;}}}
 namespace g{namespace Fuse{namespace Controls{struct Navigator__PrepareResult;}}}
 
@@ -18,7 +18,7 @@ struct Navigator__PrepareResult
 {
     int Routing;
     bool UsedPrepared;
-    uStrong< ::g::Fuse::Controls::Navigator__NavPage*> Page;
+    uStrong< ::g::Fuse::Controls::Navigator__NavPage*  Page;
 };
 // }
 

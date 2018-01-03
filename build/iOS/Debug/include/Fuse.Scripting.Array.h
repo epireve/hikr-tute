@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
 
 namespace g{
@@ -29,10 +29,10 @@ void Array__GetHashCode_fn(Array* __this, int* __retval);
 struct Array : uObject
 {
     void ctor_();
-    bool Equals2(Array* a) { bool __retval; return (((Array_type*)__type)->fp_Equals2)(this, a, &__retval), __retval; }
-    uObject* Item(int index) { uObject* __retval; return (((Array_type*)__type)->fp_get_Item)(this, &index, &__retval), __retval; }
-    void Item(int index, uObject* value) { (((Array_type*)__type)->fp_set_Item)(this, &index, value); }
-    int Length() { int __retval; return (((Array_type*)__type)->fp_get_Length)(this, &__retval), __retval; }
+    bool Equals2(Array* a) { bool __retval; return (((Array_type*)__type)- fp_Equals2)(this, a, &__retval), __retval; }
+    uObject* Item(int index) { uObject* __retval; return (((Array_type*)__type)- fp_get_Item)(this, &index, &__retval), __retval; }
+    void Item(int index, uObject* value) { (((Array_type*)__type)- fp_set_Item)(this, &index, value); }
+    int Length() { int __retval; return (((Array_type*)__type)- fp_get_Length)(this, &__retval), __retval; }
 };
 // }
 

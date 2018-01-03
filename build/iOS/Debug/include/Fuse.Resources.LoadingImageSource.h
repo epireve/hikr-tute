@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.ImageSource.h>
-#include <Fuse.Resources.IMemoryResource.h>
-#include <Uno.Int2.h>
+#include <Fuse.Resources.ImageSource.h 
+#include <Fuse.Resources.IMemoryResource.h 
+#include <Uno.Int2.h 
 namespace g{namespace Fuse{namespace Resources{struct LoadingImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
@@ -46,8 +46,8 @@ void LoadingImageSource__get_State_fn(LoadingImageSource* __this, int* __retval)
 struct LoadingImageSource : ::g::Fuse::Resources::ImageSource
 {
     double _lastUsed;
-    uStrong< ::g::Fuse::Resources::MemoryPolicy*> _policy;
-    uStrong< ::g::Uno::Graphics::Texture2D*> _texture;
+    uStrong< ::g::Fuse::Resources::MemoryPolicy*  _policy;
+    uStrong< ::g::Uno::Graphics::Texture2D*  _texture;
     ::g::Uno::Int2 _textureSize;
     bool _loading;
     bool _failed;
@@ -55,7 +55,7 @@ struct LoadingImageSource : ::g::Fuse::Resources::ImageSource
     float _density;
 
     void ctor_2();
-    void AttemptLoad() { (((LoadingImageSource_type*)__type)->fp_AttemptLoad)(this); }
+    void AttemptLoad() { (((LoadingImageSource_type*)__type)- fp_AttemptLoad)(this); }
     void Cleanup(int reason);
     bool IsLoaded();
     void LoadTexture();

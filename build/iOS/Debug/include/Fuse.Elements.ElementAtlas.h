@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlasFramebuffer;}}}
@@ -41,11 +41,11 @@ void ElementAtlas__WindowRectToClipSpace_fn(::g::Uno::Rect* input, ::g::Uno::Int
 
 struct ElementAtlas : uObject
 {
-    uStrong< ::g::Fuse::Internal::RectPacker*> _rectPacker;
-    uStrong< ::g::Fuse::Elements::ElementAtlasFramebuffer*> _framebuffer;
+    uStrong< ::g::Fuse::Internal::RectPacker*  _rectPacker;
+    uStrong< ::g::Fuse::Elements::ElementAtlasFramebuffer*  _framebuffer;
     int _invalidElements;
     int _spilledPixels;
-    uStrong< ::g::Uno::Collections::List*> _elements;
+    uStrong< ::g::Uno::Collections::List*  _elements;
 
     void ctor_();
     bool AddElement(::g::Fuse::Elements::Element* elm);

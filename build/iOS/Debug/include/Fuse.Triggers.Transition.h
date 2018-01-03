@@ -2,17 +2,17 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.Internal.MiniList-1.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Trigger.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.Internal.MiniList-1.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Trigger.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Animations{struct Animator;}}}
 namespace g{namespace Fuse{namespace Navigation{struct NavigationArgs;}}}
 namespace g{namespace Fuse{namespace Triggers{struct Transition;}}}
@@ -53,10 +53,10 @@ struct Transition : ::g::Fuse::Triggers::Trigger
     int _direction;
     bool _autoRelease;
     int _mode;
-    uStrong<uString*> _style;
+    uStrong<uString*  _style;
     int _useTransition;
-    uStrong< ::g::Fuse::Triggers::TransitionGroup*> _group;
-    uStrong< ::g::Fuse::Animations::Animator*> _useAnimator;
+    uStrong< ::g::Fuse::Triggers::TransitionGroup*  _group;
+    uStrong< ::g::Fuse::Animations::Animator*  _useAnimator;
     bool IsSelected;
 
     void ctor_5();

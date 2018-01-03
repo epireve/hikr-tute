@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.ICircleView.h>
-#include <Fuse.Controls.Native.iOS.Shape.h>
-#include <Fuse.Controls.Native.IShapeView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.ICircleView.h 
+#include <Fuse.Controls.Native.iOS.Shape.h 
+#include <Fuse.Controls.Native.IShapeView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Circle;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ITransformMode.h>
-#include <Fuse.ITranslationMode.h>
-#include <Uno.Object.h>
+#include <Fuse.ITransformMode.h 
+#include <Fuse.ITranslationMode.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Triggers{struct WhileKeyboardVisible__RelativeToKeyboardMode;}}}
 namespace g{namespace Fuse{struct Translation;}}
 namespace g{namespace Uno{struct Float3;}}

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IMixerHandle-1.h>
-#include <Uno.Object.h>
+#include <Fuse.Animations.IMixerHandle-1.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct MasterBase;}}}
 namespace g{namespace Fuse{namespace Animations{struct MixerHandle;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class MixerHandle<T> :360
+// internal sealed class MixerHandle<T  :360
 // {
 struct MixerHandle_type : uType
 {
@@ -31,10 +31,10 @@ void MixerHandle__Unregister_fn(MixerHandle* __this);
 
 struct MixerHandle : uObject
 {
-    uTField Value() { return __type->Field(this, 0); }
+    uTField Value() { return __type- Field(this, 0); }
     float Strength;
     bool _hasValue;
-    uStrong< ::g::Fuse::Animations::MasterBase*> Master;
+    uStrong< ::g::Fuse::Animations::MasterBase*  Master;
     int _MixOp;
     int _Priority;
 
@@ -44,8 +44,8 @@ struct MixerHandle : uObject
     void MixOp(int value);
     int Priority();
     void Priority(int value);
-    template<class T>
-    void Set(T value, float strength) { MixerHandle__Set_fn(this, uConstrain(__type->T(0), value), &strength); }
+    template<class T 
+    void Set(T value, float strength) { MixerHandle__Set_fn(this, uConstrain(__type- T(0), value), &strength); }
     void Unregister();
     static MixerHandle* New1(uType* __type, ::g::Fuse::Animations::MasterBase* master, int mode, int priority);
 };

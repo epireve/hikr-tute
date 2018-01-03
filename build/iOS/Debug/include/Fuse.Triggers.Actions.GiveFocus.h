@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct GiveFocus;}}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -23,9 +23,9 @@ void GiveFocus__set_Target_fn(GiveFocus* __this, ::g::Fuse::Visual* value);
 
 struct GiveFocus : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction*> Singleton_;
-    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Fuse::Visual*> _Target;
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction*  Singleton_;
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction* & Singleton() { return Singleton_; }
+    uStrong< ::g::Fuse::Visual*  _Target;
 
     void ctor_2();
     ::g::Fuse::Visual* Target();

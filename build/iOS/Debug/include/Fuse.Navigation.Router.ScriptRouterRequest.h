@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.RouterRequest.h>
+#include <Fuse.Navigation.RouterRequest.h 
 namespace g{namespace Fuse{namespace Navigation{struct Router__ScriptRouterRequest;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -20,7 +20,7 @@ void Router__ScriptRouterRequest__ParseNode_fn(Router__ScriptRouterRequest* __th
 
 struct Router__ScriptRouterRequest : ::g::Fuse::Navigation::RouterRequest
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
 
     void ctor_1(::g::Fuse::Scripting::Context* context);
     static Router__ScriptRouterRequest* New2(::g::Fuse::Scripting::Context* context);

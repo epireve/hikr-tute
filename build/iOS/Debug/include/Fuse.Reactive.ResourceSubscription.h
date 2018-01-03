@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{struct ResourceSubscription;}}}
 namespace g{namespace Fuse{struct Node;}}
 
@@ -28,12 +28,12 @@ void ResourceSubscription__OnChanged_fn(ResourceSubscription* __this);
 
 struct ResourceSubscription : uObject
 {
-    uStrong< ::g::Fuse::Node*> _origin;
-    uStrong<uString*> _key;
-    uStrong<uType*> _type;
-    uStrong<uObject*> _listener;
-    uStrong<uObject*> _source;
-    uStrong<uObject*> _diag;
+    uStrong< ::g::Fuse::Node*  _origin;
+    uStrong<uString*  _key;
+    uStrong<uType*  _type;
+    uStrong<uObject*  _listener;
+    uStrong<uObject*  _source;
+    uStrong<uObject*  _diag;
 
     void ctor_(uObject* source, ::g::Fuse::Node* origin, uString* key, uObject* listener, uType* type);
     bool Accept(uObject* o);

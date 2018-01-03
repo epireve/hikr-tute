@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IObject.h>
-#include <Fuse.Scripting.Object.h>
-#include <JavaScriptCore/JavaScript.h>
-#include <JavaScriptCore/JSObjectRef.h>
+#include <Fuse.IObject.h 
+#include <Fuse.Scripting.Object.h 
+#include <JavaScriptCore/JavaScript.h 
+#include <JavaScriptCore/JSObjectRef.h 
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Context;}}}}
 namespace g{namespace Fuse{namespace Scripting{namespace JavaScriptCore{struct Object;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
@@ -31,7 +31,7 @@ void Object__New1_fn(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::J
 
 struct Object : ::g::Fuse::Scripting::Object
 {
-    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*> _context;
+    uStrong< ::g::Fuse::Scripting::JavaScriptCore::Context*  _context;
     ::JSObjectRef _value;
 
     void ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSObjectRef value);

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IUpdateListener.h>
-#include <Uno.Object.h>
+#include <Fuse.IUpdateListener.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Animations{struct AnimatorState;}}}
 namespace g{namespace Fuse{namespace Animations{struct Player;}}}
 namespace g{namespace Fuse{namespace Animations{struct PlayerPart;}}}
@@ -57,18 +57,18 @@ void Player__set_Visual_fn(Player* __this, ::g::Fuse::Visual* value);
 
 struct Player : uObject
 {
-    uStrong<uObject*> Feedback;
-    uStrong<uArray*> _states;
+    uStrong<uObject*  Feedback;
+    uStrong<uArray*  _states;
     bool _allStable;
     bool _isStarted;
     bool _isDone;
-    uStrong< ::g::Fuse::Animations::PlayerPart*> _progress;
+    uStrong< ::g::Fuse::Animations::PlayerPart*  _progress;
     int _seekDirection;
-    uStrong< ::g::Fuse::Animations::PlayerPart*> _strength;
-    uStrong< ::g::Fuse::Animations::TriggerAnimation*> _Animation;
+    uStrong< ::g::Fuse::Animations::PlayerPart*  _strength;
+    uStrong< ::g::Fuse::Animations::TriggerAnimation*  _Animation;
     int _Mode;
     int _Variant;
-    uStrong< ::g::Fuse::Visual*> _Visual;
+    uStrong< ::g::Fuse::Visual*  _Visual;
 
     void ctor_(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimation* animation, int variant, int mode);
     ::g::Fuse::Animations::TriggerAnimation* Animation();

@@ -2,26 +2,26 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IResize.h>
-#include <Fuse.Binding.h>
-#include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.IActualPlacement.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.ITemplateSource.h>
-#include <Fuse.Node.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
-#include <Fuse.Triggers.Actions.IHide.h>
-#include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.IValue-1.h>
-#include <Fuse.Visual.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Float4.h>
-#include <Uno.String.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Animations.IResize.h 
+#include <Fuse.Binding.h 
+#include <Fuse.Controls.LayoutControl.h 
+#include <Fuse.IActualPlacement.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.ITemplateSource.h 
+#include <Fuse.Node.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.ICollapse.h 
+#include <Fuse.Triggers.Actions.IHide.h 
+#include <Fuse.Triggers.Actions.IShow.h 
+#include <Fuse.Triggers.IValue-1.h 
+#include <Fuse.Visual.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.Float4.h 
+#include <Uno.String.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Controls{struct TextControl;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Font;}}
@@ -106,36 +106,36 @@ void TextControl__remove_ValueChanged_fn(TextControl* __this, uDelegate* value);
 struct TextControl : ::g::Fuse::Controls::LayoutControl
 {
     static ::g::Uno::UX::Selector ValuePropertyName_;
-    static ::g::Uno::UX::Selector& ValuePropertyName() { return TextControl_typeof()->Init(), ValuePropertyName_; }
+    static ::g::Uno::UX::Selector& ValuePropertyName() { return TextControl_typeof()- Init(), ValuePropertyName_; }
     static ::g::Uno::UX::Selector MaxLengthPropertyName_;
-    static ::g::Uno::UX::Selector& MaxLengthPropertyName() { return TextControl_typeof()->Init(), MaxLengthPropertyName_; }
+    static ::g::Uno::UX::Selector& MaxLengthPropertyName() { return TextControl_typeof()- Init(), MaxLengthPropertyName_; }
     static ::g::Uno::UX::Selector TextWrappingPropertyName_;
-    static ::g::Uno::UX::Selector& TextWrappingPropertyName() { return TextControl_typeof()->Init(), TextWrappingPropertyName_; }
+    static ::g::Uno::UX::Selector& TextWrappingPropertyName() { return TextControl_typeof()- Init(), TextWrappingPropertyName_; }
     static ::g::Uno::UX::Selector LineSpacingPropertyName_;
-    static ::g::Uno::UX::Selector& LineSpacingPropertyName() { return TextControl_typeof()->Init(), LineSpacingPropertyName_; }
+    static ::g::Uno::UX::Selector& LineSpacingPropertyName() { return TextControl_typeof()- Init(), LineSpacingPropertyName_; }
     static ::g::Uno::UX::Selector FontSizePropertyName_;
-    static ::g::Uno::UX::Selector& FontSizePropertyName() { return TextControl_typeof()->Init(), FontSizePropertyName_; }
+    static ::g::Uno::UX::Selector& FontSizePropertyName() { return TextControl_typeof()- Init(), FontSizePropertyName_; }
     static ::g::Uno::UX::Selector FontPropertyName_;
-    static ::g::Uno::UX::Selector& FontPropertyName() { return TextControl_typeof()->Init(), FontPropertyName_; }
+    static ::g::Uno::UX::Selector& FontPropertyName() { return TextControl_typeof()- Init(), FontPropertyName_; }
     static ::g::Uno::UX::Selector TextAlignmentPropertyName_;
-    static ::g::Uno::UX::Selector& TextAlignmentPropertyName() { return TextControl_typeof()->Init(), TextAlignmentPropertyName_; }
+    static ::g::Uno::UX::Selector& TextAlignmentPropertyName() { return TextControl_typeof()- Init(), TextAlignmentPropertyName_; }
     static ::g::Uno::UX::Selector ColorPropertyName_;
-    static ::g::Uno::UX::Selector& ColorPropertyName() { return TextControl_typeof()->Init(), ColorPropertyName_; }
+    static ::g::Uno::UX::Selector& ColorPropertyName() { return TextControl_typeof()- Init(), ColorPropertyName_; }
     static ::g::Uno::UX::Selector TextColorPropertyName_;
-    static ::g::Uno::UX::Selector& TextColorPropertyName() { return TextControl_typeof()->Init(), TextColorPropertyName_; }
+    static ::g::Uno::UX::Selector& TextColorPropertyName() { return TextControl_typeof()- Init(), TextColorPropertyName_; }
     static ::g::Uno::UX::Selector TextTruncationPropertyName_;
-    static ::g::Uno::UX::Selector& TextTruncationPropertyName() { return TextControl_typeof()->Init(), TextTruncationPropertyName_; }
+    static ::g::Uno::UX::Selector& TextTruncationPropertyName() { return TextControl_typeof()- Init(), TextTruncationPropertyName_; }
     static ::g::Uno::UX::Selector LoadAsyncPropertyName_;
-    static ::g::Uno::UX::Selector& LoadAsyncPropertyName() { return TextControl_typeof()->Init(), LoadAsyncPropertyName_; }
-    uStrong<uObject*> _textRenderer;
-    uStrong<uString*> _value;
+    static ::g::Uno::UX::Selector& LoadAsyncPropertyName() { return TextControl_typeof()- Init(), LoadAsyncPropertyName_; }
+    uStrong<uObject*  _textRenderer;
+    uStrong<uString*  _value;
     int _maxLength;
     float _fontSize;
-    uStrong< ::g::Fuse::Font*> _font;
+    uStrong< ::g::Fuse::Font*  _font;
     ::g::Uno::Float4 _color;
-    static uSStrong<uDelegate*> _TextRendererFactory_;
-    static uSStrong<uDelegate*>& _TextRendererFactory() { return TextControl_typeof()->Init(), _TextRendererFactory_; }
-    uStrong<uDelegate*> ValueChanged1;
+    static uSStrong<uDelegate*  _TextRendererFactory_;
+    static uSStrong<uDelegate* & _TextRendererFactory() { return TextControl_typeof()- Init(), _TextRendererFactory_; }
+    uStrong<uDelegate*  ValueChanged1;
 
     void ctor_6();
     ::g::Uno::Float4 Color();
@@ -147,7 +147,7 @@ struct TextControl : ::g::Fuse::Controls::LayoutControl
     void FontSize(float value);
     uObject* GetITextView();
     void InitializeUX();
-    void InvalidateRenderer() { (((TextControl_type*)__type)->fp_InvalidateRenderer)(this); }
+    void InvalidateRenderer() { (((TextControl_type*)__type)- fp_InvalidateRenderer)(this); }
     void InvalidateTextRenderer();
     float LineSpacing();
     void LineSpacing(float value);
@@ -161,8 +161,8 @@ struct TextControl : ::g::Fuse::Controls::LayoutControl
     void OnTextAlignmentChanged();
     void OnTextTruncationChanged();
     void OnTextWrappingChanged();
-    void OnValueChanged(uObject* origin) { (((TextControl_type*)__type)->fp_OnValueChanged)(this, origin); }
-    uString* RenderValue() { uString* __retval; return (((TextControl_type*)__type)->fp_get_RenderValue)(this, &__retval), __retval; }
+    void OnValueChanged(uObject* origin) { (((TextControl_type*)__type)- fp_OnValueChanged)(this, origin); }
+    uString* RenderValue() { uString* __retval; return (((TextControl_type*)__type)- fp_get_RenderValue)(this, &__retval), __retval; }
     void SetColor(::g::Uno::Float4 color, uObject* origin);
     void SetValue(uString* value, uObject* origin);
     void SetValueInternal(uString* newValue);
@@ -170,8 +170,8 @@ struct TextControl : ::g::Fuse::Controls::LayoutControl
     void TextAlignment(int value);
     ::g::Uno::Float4 TextColor();
     void TextColor(::g::Uno::Float4 value);
-    int TextTruncation() { int __retval; return (((TextControl_type*)__type)->fp_get_TextTruncation)(this, &__retval), __retval; }
-    void TextTruncation(int value) { (((TextControl_type*)__type)->fp_set_TextTruncation)(this, &value); }
+    int TextTruncation() { int __retval; return (((TextControl_type*)__type)- fp_get_TextTruncation)(this, &__retval), __retval; }
+    void TextTruncation(int value) { (((TextControl_type*)__type)- fp_set_TextTruncation)(this, &value); }
     int TextWrapping();
     void TextWrapping(int value);
     uString* Value();

@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Drawing.LineSegment.h>
-#include <Fuse.Drawing.Surface.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Drawing.LineSegment.h 
+#include <Fuse.Drawing.Surface.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct CoreGraphicsSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}
@@ -70,9 +70,9 @@ struct CoreGraphicsSurface : ::g::Fuse::Drawing::Surface
 {
     float _pixelsPerPoint;
     void* _context;
-    uStrong< ::g::Uno::Collections::List*> _temp;
-    uStrong< ::g::Uno::Collections::Dictionary*> _gradientBrushes;
-    uStrong< ::g::Uno::Collections::Dictionary*> _imageBrushes;
+    uStrong< ::g::Uno::Collections::List*  _temp;
+    uStrong< ::g::Uno::Collections::Dictionary*  _gradientBrushes;
+    uStrong< ::g::Uno::Collections::Dictionary*  _imageBrushes;
     static bool _strokeWarning_;
     static bool& _strokeWarning() { return _strokeWarning_; }
     static bool _transformWarn_;
@@ -82,9 +82,9 @@ struct CoreGraphicsSurface : ::g::Fuse::Drawing::Surface
     ::g::Uno::Float2 AddSegments(void* path, uObject* segments, ::g::Uno::Float2 prevPoint);
     void FillPathImpl(void* path, ::g::Fuse::Drawing::Brush* fill, int fillRule);
     ::g::Uno::Float2 PixelFromPoint(::g::Uno::Float2 point);
-    void PrepareImageFill(::g::Fuse::Drawing::ImageFill* img) { (((CoreGraphicsSurface_type*)__type)->fp_PrepareImageFill)(this, img); }
+    void PrepareImageFill(::g::Fuse::Drawing::ImageFill* img) { (((CoreGraphicsSurface_type*)__type)- fp_PrepareImageFill)(this, img); }
     void PrepareLinearGradient(::g::Fuse::Drawing::LinearGradient* lg);
-    void VerifyBegun() { (((CoreGraphicsSurface_type*)__type)->fp_VerifyBegun)(this); }
+    void VerifyBegun() { (((CoreGraphicsSurface_type*)__type)- fp_VerifyBegun)(this); }
     void VerifyCreated();
     static void CGFloatDeleteArray(void* a);
     static void* CGFloatNewArray(int size);

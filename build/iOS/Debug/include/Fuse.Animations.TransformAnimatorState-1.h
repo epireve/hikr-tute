@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimatorState.h>
+#include <Fuse.Animations.TrackAnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct TransformAnimator;}}}
 namespace g{namespace Fuse{namespace Animations{struct TransformAnimatorState;}}}
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class TransformAnimatorState<TransformType> :132
+// internal sealed class TransformAnimatorState<TransformType  :132
 // {
 ::g::Fuse::Animations::TrackAnimatorState_type* TransformAnimatorState_typeof();
 void TransformAnimatorState__ctor_2_fn(TransformAnimatorState* __this, ::g::Fuse::Animations::TransformAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p);
@@ -24,10 +24,10 @@ void TransformAnimatorState__SeekValue_fn(TransformAnimatorState* __this, ::g::U
 
 struct TransformAnimatorState : ::g::Fuse::Animations::TrackAnimatorState
 {
-    uStrong< ::g::Fuse::Animations::TransformAnimator*> Animator1;
-    uStrong<uObject*> mixHandle;
-    uStrong< ::g::Fuse::Transform*> transform;
-    uStrong<uDelegate*> _matAct;
+    uStrong< ::g::Fuse::Animations::TransformAnimator*  Animator1;
+    uStrong<uObject*  mixHandle;
+    uStrong< ::g::Fuse::Transform*  transform;
+    uStrong<uDelegate*  _matAct;
     float _lastStrength;
     bool _inSeek;
 

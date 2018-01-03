@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.ICommonViewport.h>
-#include <Fuse.IRenderViewport.h>
-#include <Fuse.IViewport.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.ICommonViewport.h 
+#include <Fuse.IRenderViewport.h 
+#include <Fuse.IViewport.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct FixedViewport;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
 namespace g{namespace Fuse{struct Ray;}}
@@ -40,8 +40,8 @@ struct FixedViewport : uObject
 {
     float _pixelsPerPoint;
     ::g::Uno::Float2 _pixelSize;
-    uStrong< ::g::Fuse::FrustumViewport*> _frustumViewport;
-    uStrong<uObject*> _frustum;
+    uStrong< ::g::Fuse::FrustumViewport*  _frustumViewport;
+    uStrong<uObject*  _frustum;
 
     void ctor_(::g::Uno::Int2 pixelSize, float pixelsPerPoint, uObject* frustum);
     ::g::Uno::Float2 PixelSize();

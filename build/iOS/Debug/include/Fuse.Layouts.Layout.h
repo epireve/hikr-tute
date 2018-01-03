@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Controls{struct LayoutControl;}}}
 namespace g{namespace Fuse{namespace Layouts{struct Layout;}}}
 namespace g{namespace Fuse{struct LayoutParams;}}
@@ -48,9 +48,9 @@ void Layout__Unrooted_fn(Layout* __this, ::g::Fuse::Controls::LayoutControl* ele
 
 struct Layout : ::g::Uno::UX::PropertyObject
 {
-    static uSStrong< ::g::Fuse::PropertyHandle*> _fillPaddingProperty_;
-    static uSStrong< ::g::Fuse::PropertyHandle*>& _fillPaddingProperty() { return _fillPaddingProperty_; }
-    uStrong< ::g::Fuse::Controls::LayoutControl*> Container;
+    static uSStrong< ::g::Fuse::PropertyHandle*  _fillPaddingProperty_;
+    static uSStrong< ::g::Fuse::PropertyHandle* & _fillPaddingProperty() { return _fillPaddingProperty_; }
+    uStrong< ::g::Fuse::Controls::LayoutControl*  Container;
 
     void ctor_1();
     bool AffectsLayout(::g::Fuse::Node* n);
@@ -58,9 +58,9 @@ struct Layout : ::g::Uno::UX::PropertyObject
     void ArrangePaddingBox(::g::Fuse::Visual* elementOwner, ::g::Uno::Float4 padding, ::g::Fuse::LayoutParams lp);
     ::g::Uno::Float2 GetContentSize(::g::Fuse::Visual* elementOwner, ::g::Fuse::LayoutParams lp);
     void InvalidateLayout();
-    int IsMarginBoxDependent(::g::Fuse::Visual* child) { int __retval; return (((Layout_type*)__type)->fp_IsMarginBoxDependent)(this, child, &__retval), __retval; }
-    void OnRooted() { (((Layout_type*)__type)->fp_OnRooted)(this); }
-    void OnUnrooted() { (((Layout_type*)__type)->fp_OnUnrooted)(this); }
+    int IsMarginBoxDependent(::g::Fuse::Visual* child) { int __retval; return (((Layout_type*)__type)- fp_IsMarginBoxDependent)(this, child, &__retval), __retval; }
+    void OnRooted() { (((Layout_type*)__type)- fp_OnRooted)(this); }
+    void OnUnrooted() { (((Layout_type*)__type)- fp_OnUnrooted)(this); }
     void Rooted(::g::Fuse::Controls::LayoutControl* element);
     float Snap(float p);
     ::g::Uno::Float2 Snap1(::g::Uno::Float2 p);
@@ -78,16 +78,16 @@ struct Layout : ::g::Uno::UX::PropertyObject
 
 }}} // ::g::Fuse::Layouts
 
-#include <Fuse.LayoutParams.h>
-#include <Uno.Float2.h>
-#include <Uno.Float4.h>
+#include <Fuse.LayoutParams.h 
+#include <Uno.Float2.h 
+#include <Uno.Float4.h 
 
 namespace g{
 namespace Fuse{
 namespace Layouts{
 
-inline void Layout::ArrangePaddingBox(::g::Fuse::Visual* elementOwner, ::g::Uno::Float4 padding, ::g::Fuse::LayoutParams lp) { (((Layout_type*)__type)->fp_ArrangePaddingBox)(this, elementOwner, &padding, &lp); }
-inline ::g::Uno::Float2 Layout::GetContentSize(::g::Fuse::Visual* elementOwner, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Layout_type*)__type)->fp_GetContentSize)(this, elementOwner, &lp, &__retval), __retval; }
+inline void Layout::ArrangePaddingBox(::g::Fuse::Visual* elementOwner, ::g::Uno::Float4 padding, ::g::Fuse::LayoutParams lp) { (((Layout_type*)__type)- fp_ArrangePaddingBox)(this, elementOwner, &padding, &lp); }
+inline ::g::Uno::Float2 Layout::GetContentSize(::g::Fuse::Visual* elementOwner, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Layout_type*)__type)- fp_GetContentSize)(this, elementOwner, &lp, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Layouts

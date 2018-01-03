@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct RouteModificationCommand__ArgumentArrayAdapter;}}}
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction__Argument;}}}
 
@@ -26,7 +26,7 @@ void RouteModificationCommand__ArgumentArrayAdapter__New1_fn(uArray* args, Route
 
 struct RouteModificationCommand__ArgumentArrayAdapter : uObject
 {
-    uStrong<uArray*> _args;
+    uStrong<uArray*  _args;
 
     void ctor_(uArray* args);
     uObject* Item(int index);

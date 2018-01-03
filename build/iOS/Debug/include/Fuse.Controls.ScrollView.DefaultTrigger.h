@@ -2,18 +2,18 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.IToggleable.h>
-#include <Fuse.Triggers.IPulseTrigger.h>
-#include <Fuse.Triggers.WhileTrue.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Fuse.Triggers.Actions.IToggleable.h 
+#include <Fuse.Triggers.IPulseTrigger.h 
+#include <Fuse.Triggers.WhileTrue.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Controls{struct ScrollView;}}}
 namespace g{namespace Fuse{namespace Controls{struct ScrollView__DefaultTrigger;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -32,10 +32,10 @@ void ScrollView__DefaultTrigger__New3_fn(::g::Fuse::Controls::ScrollView* parent
 
 struct ScrollView__DefaultTrigger : ::g::Fuse::Triggers::WhileTrue
 {
-    uStrong< ::g::Uno::UX::Property1*> this_Value_inst;
-    uWeak< ::g::Fuse::Controls::ScrollView*> __parent1;
+    uStrong< ::g::Uno::UX::Property1*  this_Value_inst;
+    uWeak< ::g::Fuse::Controls::ScrollView*  __parent1;
     static ::g::Uno::UX::Selector __selector0_;
-    static ::g::Uno::UX::Selector& __selector0() { return ScrollView__DefaultTrigger_typeof()->Init(), __selector0_; }
+    static ::g::Uno::UX::Selector& __selector0() { return ScrollView__DefaultTrigger_typeof()- Init(), __selector0_; }
 
     void ctor_9(::g::Fuse::Controls::ScrollView* parent);
     void InitializeUX();

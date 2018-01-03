@@ -1,12 +1,12 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/Button.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.iOS.Button.h>
-#include <Fuse.Controls.Native.iOS.View.h>
-#include <ObjC.Object.h>
-#include <UIKit/UIKit.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.Controls.Native.iOS.Button.h 
+#include <Fuse.Controls.Native.iOS.View.h 
+#include <ObjC.Object.h 
+#include <UIKit/UIKit.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -18,16 +18,16 @@ namespace iOS{
 // {
 static void Button_build(uType* type)
 {
-    type->SetInterfaces(
+    type- SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(Button_type, interface0),
         ::g::Fuse::Controls::Native::IView_typeof(), offsetof(Button_type, interface1),
         ::g::Fuse::Controls::Native::ILabelView_typeof(), offsetof(Button_type, interface2));
-    type->SetFields(10);
+    type- SetFields(10);
 }
 
 Button_type* Button_typeof()
 {
-    static uSStrong<Button_type*> type;
+    static uSStrong<Button_type*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -37,17 +37,17 @@ Button_type* Button_typeof()
     options.ObjectSize = sizeof(Button);
     options.TypeSize = sizeof(Button_type);
     type = (Button_type*)uClassType::New("Fuse.Controls.Native.iOS.Button", options);
-    type->fp_build_ = Button_build;
-    type->fp_ctor_ = (void*)Button__New3_fn;
-    type->interface2.fp_set_Text = (void(*)(uObject*, uString*))Button__FuseControlsNativeILabelViewset_Text_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Controls::Native::ViewHandle__Dispose_fn;
+    type- fp_build_ = Button_build;
+    type- fp_ctor_ = (void*)Button__New3_fn;
+    type- interface2.fp_set_Text = (void(*)(uObject*, uString*))Button__FuseControlsNativeILabelViewset_Text_fn;
+    type- interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Controls::Native::ViewHandle__Dispose_fn;
     return type;
 }
 
 // public Button() :14
 void Button__ctor_5_fn(Button* __this)
 {
-    __this->ctor_5();
+    __this- ctor_5();
 }
 
 // private static ObjC.Object Create() :22
@@ -59,7 +59,7 @@ void Button__Create_fn(::g::ObjC::Object** __retval)
 // private void Fuse.Controls.Native.ILabelView.set_Text(string value) :18
 void Button__FuseControlsNativeILabelViewset_Text_fn(Button* __this, uString* value)
 {
-    Button::SetText(__this->Handle(), value);
+    Button::SetText(__this- Handle(), value);
 }
 
 // public Button New() :14
@@ -85,7 +85,7 @@ void Button::ctor_5()
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             return [[::UIButton alloc] init];
         } ());
@@ -98,7 +98,7 @@ void Button::ctor_5()
 Button* Button::New3()
 {
     Button* obj1 = (Button*)uNew(Button_typeof());
-    obj1->ctor_5();
+    obj1- ctor_5();
     return obj1;
 }
 
@@ -107,7 +107,7 @@ void Button::SetText(::g::ObjC::Object* handle, uString* text)
 {
     @autoreleasepool
     {
-        [] (::id handle, ::NSString* text) -> void
+        [] (::id handle, ::NSString* text) -  void
         {
             ::UIButton* button = (::UIButton*)handle;
             [button setTitle:text forState:UIControlStateNormal];

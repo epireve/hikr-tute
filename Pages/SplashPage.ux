@@ -1,4 +1,4 @@
-<Page ux:Class="SplashPage">
+<Page ux:Class="SplashPage" >
    <Router ux:Dependency="router"/>
 
    <JavaScript File="SplashPage.js"/>
@@ -10,9 +10,9 @@
       <hikr.Text Dock="Bottom" Margin="10" Opacity=".5" TextAlignment="Center" FontSize="10">original video by Graham Uhelski</hikr.Text>
 
       <Grid RowCount="2">
-            <StackPanel Alignment=VerticalCenter>
-               <hikr.Text Alignment="HorizontalCenter" FontSize="70">Hikr</hikr.Text>
-               <hikr.Text Alignment="HorizontalCenter" Opacity=".5">Get Out There!</hikr.Text>
+            <StackPanel Alignment="VerticalCenter">
+               <hikr.Text Alignment="HorizontalCenter" FontSize="70"> Hikr</hikr.Text>
+               <hikr.Text Alignment="HorizontalCenter" Opacity=".5"> Get Out There!</hikr.Text>
             </StackPanel>
 
             <hikr.Button Text="Get Started" FontSize="18" Margin="50,0" Alignment="VerticalCenter" Clicked="{goToHomePage}"/>

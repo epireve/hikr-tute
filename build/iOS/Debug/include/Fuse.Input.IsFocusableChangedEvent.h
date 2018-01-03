@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.IsFocusableChangedArgs.h>
-#include <Fuse.Input.IsFocusableChangedHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Input.IsFocusableChangedArgs.h 
+#include <Fuse.Input.IsFocusableChangedHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Input{struct IsFocusableChangedEvent;}}}
 
 namespace g{

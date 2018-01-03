@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Fuse.Reactive.IObservableArray.h>
-#include <Uno.Object.h>
+#include <Fuse.IArray.h 
+#include <Fuse.Reactive.IObservableArray.h 
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{

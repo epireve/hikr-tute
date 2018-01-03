@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace FileSystem{struct FileStatus;}}}
 namespace g{namespace Uno{namespace Time{struct Instant;}}}
 namespace g{namespace Uno{namespace Time{struct ZonedDateTime;}}}
@@ -31,9 +31,9 @@ struct FileStatus : uObject
     bool _exists;
     int64_t _length;
     int _attributes;
-    uStrong< ::g::Uno::Time::ZonedDateTime*> _creationTimeUtc;
-    uStrong< ::g::Uno::Time::ZonedDateTime*> _lastAccessTimeUtc;
-    uStrong< ::g::Uno::Time::ZonedDateTime*> _lastWriteTimeUtc;
+    uStrong< ::g::Uno::Time::ZonedDateTime*  _creationTimeUtc;
+    uStrong< ::g::Uno::Time::ZonedDateTime*  _lastAccessTimeUtc;
+    uStrong< ::g::Uno::Time::ZonedDateTime*  _lastWriteTimeUtc;
 
     void ctor_();
     void ctor_1(int64_t length, int attributes, ::g::Uno::Time::ZonedDateTime* creationTimeUtc, ::g::Uno::Time::ZonedDateTime* lastAccessTimeUtc, ::g::Uno::Time::ZonedDateTime* lastWriteTimeUtc);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Gestures{struct DegreeSpan;}}}
 namespace g{namespace Fuse{namespace Gestures{struct SwipeGestureHelper;}}}
 namespace g{namespace Uno{struct Float2;}}
@@ -20,7 +20,7 @@ void SwipeGestureHelper__New1_fn(float* lengthThreshold, uArray* spans, SwipeGes
 
 struct SwipeGestureHelper : uObject
 {
-    uStrong<uArray*> _spans;
+    uStrong<uArray*  _spans;
     float _lengthThreshold;
 
     void ctor_(float lengthThreshold, uArray* spans);

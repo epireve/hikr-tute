@@ -2,15 +2,15 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Behavior.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Behavior.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Animations{struct RangeAdapter;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class RangeAdapter<T> :36
+// public sealed class RangeAdapter<T  :36
 // {
 struct RangeAdapter_type : ::g::Fuse::Node_type
 {
@@ -36,7 +36,7 @@ void RangeAdapter__UnoUXIPropertyListenerOnPropertyChanged_fn(RangeAdapter* __th
 
 struct RangeAdapter : ::g::Fuse::Behavior
 {
-    uStrong< ::g::Uno::UX::Property1*> _Source;
+    uStrong< ::g::Uno::UX::Property1*  _Source;
 
     ::g::Uno::UX::Property1* Source();
     void Source(::g::Uno::UX::Property1* value);

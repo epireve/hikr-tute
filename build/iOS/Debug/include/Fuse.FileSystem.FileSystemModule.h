@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IModuleProvider.h>
-#include <Fuse.Scripting.NativeModule.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Scripting.IModuleProvider.h 
+#include <Fuse.Scripting.NativeModule.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemInfo;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemModule;}}}
 namespace g{namespace Fuse{namespace FileSystem{struct FileSystemOperations;}}}
@@ -67,9 +67,9 @@ void FileSystemModule__WriteTextToFileSync_fn(FileSystemModule* __this, ::g::Fus
 
 struct FileSystemModule : ::g::Fuse::Scripting::NativeModule
 {
-    static uSStrong<FileSystemModule*> _instance_;
-    static uSStrong<FileSystemModule*>& _instance() { return _instance_; }
-    uStrong< ::g::Fuse::FileSystem::FileSystemOperations*> _operations;
+    static uSStrong<FileSystemModule*  _instance_;
+    static uSStrong<FileSystemModule* & _instance() { return _instance_; }
+    uStrong< ::g::Fuse::FileSystem::FileSystemOperations*  _operations;
 
     void ctor_2();
     ::g::Uno::Threading::Future1* AppendTextToFile(uArray* args);

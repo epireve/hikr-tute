@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.CacheTile.h>
-#include <Uno.Object.h>
-#include <Uno.Recti.h>
+#include <Fuse.Elements.CacheTile.h 
+#include <Uno.Object.h 
+#include <Uno.Recti.h 
 namespace g{namespace Fuse{namespace Elements{struct Cache;}}}
 namespace g{namespace Fuse{namespace Elements{struct CacheHelper;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
@@ -40,11 +40,11 @@ void Cache__Unpin_fn(Cache* __this);
 struct Cache : uObject
 {
     bool _isValid;
-    uWeak< ::g::Fuse::Elements::Element*> _element;
+    uWeak< ::g::Fuse::Elements::Element*  _element;
     ::g::Uno::Recti _cacheRect;
-    uStrong<uArray*> _cacheTiles;
-    static uSStrong< ::g::Fuse::Elements::CacheHelper*> cacheHelper_;
-    static uSStrong< ::g::Fuse::Elements::CacheHelper*>& cacheHelper() { return cacheHelper_; }
+    uStrong<uArray*  _cacheTiles;
+    static uSStrong< ::g::Fuse::Elements::CacheHelper*  cacheHelper_;
+    static uSStrong< ::g::Fuse::Elements::CacheHelper* & cacheHelper() { return cacheHelper_; }
 
     void ctor_(::g::Fuse::Elements::Element* elm);
     void Blit(::g::Fuse::DrawContext* dc, float opacity);

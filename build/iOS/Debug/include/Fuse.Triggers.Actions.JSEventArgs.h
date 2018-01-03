@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Scripting.IScriptEvent.h>
-#include <Uno.EventArgs.h>
+#include <Fuse.Scripting.IScriptEvent.h 
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct JSEventArgs;}}}}
 
 namespace g{
@@ -25,7 +25,7 @@ void JSEventArgs__New2_fn(uString* resultJson, JSEventArgs** __retval);
 
 struct JSEventArgs : ::g::Uno::EventArgs
 {
-    uStrong<uString*> ResultJson;
+    uStrong<uString*  ResultJson;
 
     void ctor_1(uString* resultJson);
     static JSEventArgs* New2(uString* resultJson);

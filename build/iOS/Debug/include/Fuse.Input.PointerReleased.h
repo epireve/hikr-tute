@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerReleasedHandler.h>
-#include <Fuse.VisualEvent-2.h>
+#include <Fuse.Input.PointerReleasedArgs.h 
+#include <Fuse.Input.PointerReleasedHandler.h 
+#include <Fuse.VisualEvent-2.h 
 namespace g{namespace Fuse{namespace Input{struct PointerReleased;}}}
 
 namespace g{

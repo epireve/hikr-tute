@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Visual__InteractionItem;}}
 
 namespace g{
@@ -14,8 +14,8 @@ uStructType* Visual__InteractionItem_typeof();
 
 struct Visual__InteractionItem
 {
-    uStrong<uObject*> Id;
-    uStrong<uDelegate*> Cancelled;
+    uStrong<uObject*  Id;
+    uStrong<uDelegate*  Cancelled;
 };
 // }
 

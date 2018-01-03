@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h 
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct DebugAction;}}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -21,8 +21,8 @@ void DebugAction__Perform_fn(DebugAction* __this, ::g::Fuse::Node* target);
 
 struct DebugAction : ::g::Fuse::Triggers::Actions::TriggerAction
 {
-    uStrong< ::g::Uno::Collections::List*> _props;
-    uStrong<uString*> _Message;
+    uStrong< ::g::Uno::Collections::List*  _props;
+    uStrong<uString*  _Message;
 
     uString* Message();
     void Message(uString* value);

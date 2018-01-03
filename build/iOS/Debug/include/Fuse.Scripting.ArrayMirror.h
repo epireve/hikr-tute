@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.IArray.h>
-#include <Fuse.Scripting.IRaw.h>
-#include <Fuse.Scripting.ListMirror.h>
+#include <Fuse.IArray.h 
+#include <Fuse.Scripting.IRaw.h 
+#include <Fuse.Scripting.ListMirror.h 
 namespace g{namespace Fuse{namespace Scripting{struct Array;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ArrayMirror;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -26,7 +26,7 @@ void ArrayMirror__Unsubscribe_fn(ArrayMirror* __this);
 
 struct ArrayMirror : ::g::Fuse::Scripting::ListMirror
 {
-    uStrong< ::g::Uno::Collections::List*> _items;
+    uStrong< ::g::Uno::Collections::List*  _items;
 
     void ctor_4(uObject* mirror, ::g::Fuse::Scripting::Array* arr);
     uArray* ItemsReadonly();

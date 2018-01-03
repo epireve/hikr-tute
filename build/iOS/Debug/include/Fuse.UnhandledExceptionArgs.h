@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.EventArgs.h>
+#include <Uno.EventArgs.h 
 namespace g{namespace Fuse{struct UnhandledExceptionArgs;}}
 namespace g{namespace Uno{struct Exception;}}
 
@@ -21,7 +21,7 @@ void UnhandledExceptionArgs__New2_fn(::g::Uno::Exception* e, UnhandledExceptionA
 
 struct UnhandledExceptionArgs : ::g::Uno::EventArgs
 {
-    uStrong< ::g::Uno::Exception*> _Exception;
+    uStrong< ::g::Uno::Exception*  _Exception;
     bool _IsHandled;
 
     void ctor_1(::g::Uno::Exception* e);

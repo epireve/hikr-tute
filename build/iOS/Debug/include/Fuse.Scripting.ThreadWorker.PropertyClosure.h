@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptProperty;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ThreadWorker;}}}
@@ -21,8 +21,8 @@ void ThreadWorker__PropertyClosure__New1_fn(::g::Fuse::Scripting::Function* cl, 
 
 struct ThreadWorker__PropertyClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> _worker;
-    uStrong< ::g::Fuse::Scripting::ScriptProperty*> _p;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  _worker;
+    uStrong< ::g::Fuse::Scripting::ScriptProperty*  _p;
 
     void ctor_(::g::Fuse::Scripting::Function* cl, ::g::Fuse::Scripting::ScriptProperty* p, ::g::Fuse::Scripting::ThreadWorker* worker);
     uObject* GetObservable(uArray* args);

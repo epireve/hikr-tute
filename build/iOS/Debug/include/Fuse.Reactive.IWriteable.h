@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.IDisposable.h 
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -16,7 +16,7 @@ uInterfaceType* IWriteable_typeof();
 struct IWriteable
 {
     void(*fp_TrySetExclusive)(uObject*, uObject*, bool*);
-    static bool TrySetExclusive(const uInterface& __this, uObject* value) { bool __retval; return __this.VTable<IWriteable>()->fp_TrySetExclusive(__this, value, &__retval), __retval; }
+    static bool TrySetExclusive(const uInterface& __this, uObject* value) { bool __retval; return __this.VTable<IWriteable ()- fp_TrySetExclusive(__this, value, &__retval), __retval; }
 };
 // }
 

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 
 namespace g{
 namespace Fuse{
@@ -15,8 +15,8 @@ struct ITransformMode
 {
     void(*fp_Subscribe)(uObject*, uObject*, uObject**);
     void(*fp_Unsubscribe)(uObject*, uObject*, uObject*);
-    static uObject* Subscribe(const uInterface& __this, uObject* transform) { uObject* __retval; return __this.VTable<ITransformMode>()->fp_Subscribe(__this, transform, &__retval), __retval; }
-    static void Unsubscribe(const uInterface& __this, uObject* transform, uObject* sub) { __this.VTable<ITransformMode>()->fp_Unsubscribe(__this, transform, sub); }
+    static uObject* Subscribe(const uInterface& __this, uObject* transform) { uObject* __retval; return __this.VTable<ITransformMode ()- fp_Subscribe(__this, transform, &__retval), __retval; }
+    static void Unsubscribe(const uInterface& __this, uObject* transform, uObject* sub) { __this.VTable<ITransformMode ()- fp_Unsubscribe(__this, transform, sub); }
 };
 // }
 

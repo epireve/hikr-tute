@@ -1,12 +1,12 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.4.2/iOS/KeyboardView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.iOS.FocusHelpers.h>
-#include <Fuse.Controls.Native.iOS.KeyboardView.h>
-#include <iOS/Helpers.h>
-#include <ObjC.Object.h>
-#include <Uno.Bool.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.Controls.Native.iOS.FocusHelpers.h 
+#include <Fuse.Controls.Native.iOS.KeyboardView.h 
+#include <iOS/Helpers.h 
+#include <ObjC.Object.h 
+#include <Uno.Bool.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -18,13 +18,13 @@ namespace iOS{
 // {
 static void KeyboardView_build(uType* type)
 {
-    type->SetFields(0,
+    type- SetFields(0,
         ::g::ObjC::Object_typeof(), offsetof(KeyboardView, _handle), 0);
 }
 
 uType* KeyboardView_typeof()
 {
-    static uSStrong<uType*> type;
+    static uSStrong<uType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
@@ -32,15 +32,15 @@ uType* KeyboardView_typeof()
     options.ObjectSize = sizeof(KeyboardView);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Controls.Native.iOS.KeyboardView", options);
-    type->fp_build_ = KeyboardView_build;
-    type->fp_ctor_ = (void*)KeyboardView__New1_fn;
+    type- fp_build_ = KeyboardView_build;
+    type- fp_ctor_ = (void*)KeyboardView__New1_fn;
     return type;
 }
 
 // public KeyboardView() :21
 void KeyboardView__ctor__fn(KeyboardView* __this)
 {
-    __this->ctor_();
+    __this- ctor_();
 }
 
 // private static void CopyKeyboardType(ObjC.Object handle, ObjC.Object source) :57
@@ -64,31 +64,31 @@ void KeyboardView__GetIsFocusable_fn(::g::ObjC::Object* handle, bool* __retval)
 // public ObjC.Object get_Handle() :10
 void KeyboardView__get_Handle_fn(KeyboardView* __this, ::g::ObjC::Object** __retval)
 {
-    *__retval = __this->Handle();
+    *__retval = __this- Handle();
 }
 
 // public void HideKeyboard() :73
 void KeyboardView__HideKeyboard_fn(KeyboardView* __this)
 {
-    __this->HideKeyboard();
+    __this- HideKeyboard();
 }
 
 // public void HoldFocus(ObjC.Object focusedObject) :33
 void KeyboardView__HoldFocus_fn(KeyboardView* __this, ::g::ObjC::Object* focusedObject)
 {
-    __this->HoldFocus(focusedObject);
+    __this- HoldFocus(focusedObject);
 }
 
 // private bool get_IsFocusable() :17
 void KeyboardView__get_IsFocusable_fn(KeyboardView* __this, bool* __retval)
 {
-    *__retval = __this->IsFocusable();
+    *__retval = __this- IsFocusable();
 }
 
 // private void set_IsFocusable(bool value) :18
 void KeyboardView__set_IsFocusable_fn(KeyboardView* __this, bool* value)
 {
-    __this->IsFocusable(*value);
+    __this- IsFocusable(*value);
 }
 
 // public KeyboardView New() :21
@@ -148,14 +148,14 @@ void KeyboardView::CopyKeyboardType(::g::ObjC::Object* handle, ::g::ObjC::Object
 {
     @autoreleasepool
     {
-        [] (::id handle, ::id source) -> void
+        [] (::id handle, ::id source) -  void
         {
             ::KeyboardView* kv = (::KeyboardView*)handle;
             
-            if (source != nil && [source isKindOfClass: [NSObject<UIKeyInput> class]])
+            if (source != nil && [source isKindOfClass: [NSObject<UIKeyInput  class]])
             {
-            	[kv setKeyboardType: [((NSObject<UIKeyInput>*)source) keyboardType]];
-            	[kv setReturnKeyType: [((NSObject<UIKeyInput>*)source) returnKeyType]];
+            	[kv setKeyboardType: [((NSObject<UIKeyInput *)source) keyboardType]];
+            	[kv setReturnKeyType: [((NSObject<UIKeyInput *)source) returnKeyType]];
             }
             else
             {
@@ -173,7 +173,7 @@ void KeyboardView::CopyKeyboardType(::g::ObjC::Object* handle, ::g::ObjC::Object
 {
     @autoreleasepool
     {
-        return ::g::ObjC::Object::Create([] () -> ::id
+        return ::g::ObjC::Object::Create([] () -  ::id
         {
             return [[::KeyboardView alloc] init];
         } ());
@@ -187,7 +187,7 @@ bool KeyboardView::GetIsFocusable(::g::ObjC::Object* handle)
 {
     @autoreleasepool
     {
-        return [] (::id handle) -> bool
+        return [] (::id handle) -  bool
         {
             return [handle isFocusable];
         } (::g::ObjC::Object::GetHandle(handle));
@@ -200,7 +200,7 @@ bool KeyboardView::GetIsFocusable(::g::ObjC::Object* handle)
 KeyboardView* KeyboardView::New1()
 {
     KeyboardView* obj1 = (KeyboardView*)uNew(KeyboardView_typeof());
-    obj1->ctor_();
+    obj1- ctor_();
     return obj1;
 }
 
@@ -209,7 +209,7 @@ void KeyboardView::SetIsFocusable(::g::ObjC::Object* handle, bool value)
 {
     @autoreleasepool
     {
-        [] (::id handle, bool value) -> void
+        [] (::id handle, bool value) -  void
         {
             return [handle setIsFocusable:value];
         } (::g::ObjC::Object::GetHandle(handle), value);

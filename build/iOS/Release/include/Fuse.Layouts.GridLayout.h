@@ -21,6 +21,7 @@ namespace Layouts{
 // public sealed class GridLayout :269
 // {
 ::g::Fuse::Layouts::Layout_type* GridLayout_typeof();
+void GridLayout__ctor_2_fn(GridLayout* __this);
 void GridLayout__AddListener_fn(GridLayout* __this, ::g::Fuse::Layouts::DefinitionBase* item, bool* __retval);
 void GridLayout__ArrangePaddingBox_fn(GridLayout* __this, ::g::Fuse::Visual* container, ::g::Uno::Float4* padding, ::g::Fuse::LayoutParams* lp);
 void GridLayout__CalcActualPositions_fn(GridLayout* __this, ::g::Fuse::Visual* container);
@@ -33,6 +34,8 @@ void GridLayout__set_CellSpacing_fn(GridLayout* __this, float* value);
 void GridLayout__Changed_fn(GridLayout* __this);
 void GridLayout__get_ChildOrder_fn(GridLayout* __this, int* __retval);
 void GridLayout__set_ChildOrder_fn(GridLayout* __this, int* value);
+void GridLayout__get_ColumnCount_fn(GridLayout* __this, int* __retval);
+void GridLayout__set_ColumnCount_fn(GridLayout* __this, int* value);
 void GridLayout__get_ColumnList_fn(GridLayout* __this, uObject** __retval);
 void GridLayout__get_ContentAlignment_fn(GridLayout* __this, int* __retval);
 void GridLayout__set_ContentAlignment_fn(GridLayout* __this, int* value);
@@ -54,9 +57,13 @@ void GridLayout__GetRowSpan_fn(::g::Fuse::Visual* elm, int* __retval);
 void GridLayout__GetTotalProportion_fn(GridLayout* __this, uType* __type, uObject* list, bool* expand, float* __retval);
 void GridLayout__IsMarginBoxDependent_fn(GridLayout* __this, ::g::Fuse::Visual* child, int* __retval);
 void GridLayout__Measure_fn(GridLayout* __this, ::g::Fuse::Visual* container, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
+void GridLayout__ModifyCount_fn(GridLayout* __this, uType* __type, uObject* list, int* count, ::g::Fuse::Layouts::DefinitionBase* primordial);
+void GridLayout__New2_fn(GridLayout** __retval);
 void GridLayout__OnRooted_fn(GridLayout* __this);
 void GridLayout__OnUnrooted_fn(GridLayout* __this);
 void GridLayout__RemoveListener_fn(GridLayout* __this, ::g::Fuse::Layouts::DefinitionBase* item, bool* __retval);
+void GridLayout__get_RowCount_fn(GridLayout* __this, int* __retval);
+void GridLayout__set_RowCount_fn(GridLayout* __this, int* value);
 void GridLayout__get_RowList_fn(GridLayout* __this, uObject** __retval);
 void GridLayout__TrimPad_fn(GridLayout* __this, uType* __type, uObject* list, int* count, ::g::Fuse::Layouts::DefinitionBase* primordial);
 void GridLayout__UserCount_fn(GridLayout* __this, uType* __type, uObject* list, int* __retval);
@@ -87,6 +94,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     uStrong< ::g::Uno::Collections::RootableList*> _rows;
     uStrong< ::g::Uno::Collections::RootableList*> _columns;
 
+    void ctor_2();
     bool AddListener(::g::Fuse::Layouts::DefinitionBase* item);
     void CalcActualPositions(::g::Fuse::Visual* container);
     void CalcAuto(::g::Fuse::Visual* container, float* availableWidth, float* availableHeight, bool secondPass, bool hasFirstHorzSize, bool hasFirstVertSize, bool expandWidth, bool expandHeight);
@@ -98,6 +106,8 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     void Changed();
     int ChildOrder();
     void ChildOrder(int value);
+    int ColumnCount();
+    void ColumnCount(int value);
     uObject* ColumnList();
     int ContentAlignment();
     void ContentAlignment(int value);
@@ -113,7 +123,10 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     ::g::Fuse::Layouts::Row* GetRowData(int row);
     float GetTotalProportion(uType* __type, uObject* list, bool expand);
     ::g::Uno::Float2 Measure(::g::Fuse::Visual* container, ::g::Fuse::LayoutParams lp);
+    void ModifyCount(uType* __type, uObject* list, int count, ::g::Fuse::Layouts::DefinitionBase* primordial);
     bool RemoveListener(::g::Fuse::Layouts::DefinitionBase* item);
+    int RowCount();
+    void RowCount(int value);
     uObject* RowList();
     void TrimPad(uType* __type, uObject* list, int count, ::g::Fuse::Layouts::DefinitionBase* primordial);
     int UserCount(uType* __type, uObject* list);
@@ -121,6 +134,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     static int GetColumnSpan(::g::Fuse::Visual* elm);
     static int GetRow(::g::Fuse::Visual* elm);
     static int GetRowSpan(::g::Fuse::Visual* elm);
+    static GridLayout* New2();
 };
 // }
 

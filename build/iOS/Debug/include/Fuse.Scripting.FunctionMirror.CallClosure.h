@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct FunctionMirror;}}}
 namespace g{namespace Fuse{namespace Scripting{struct FunctionMirror__CallClosure;}}}
@@ -20,8 +20,8 @@ void FunctionMirror__CallClosure__New1_fn(::g::Fuse::Scripting::FunctionMirror* 
 
 struct FunctionMirror__CallClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::FunctionMirror*> _f;
-    uStrong<uObject*> _e;
+    uStrong< ::g::Fuse::Scripting::FunctionMirror*  _f;
+    uStrong<uObject*  _e;
 
     void ctor_(::g::Fuse::Scripting::FunctionMirror* f, uObject* e);
     void Call(::g::Fuse::Scripting::Context* context);

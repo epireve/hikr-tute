@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct AppInitialized__Closure;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 
@@ -20,8 +20,8 @@ void AppInitialized__Closure__RunJS_fn(uDelegate* action);
 
 struct AppInitialized__Closure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
-    uStrong<uDelegate*> _action;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
+    uStrong<uDelegate*  _action;
 
     void ctor_(::g::Fuse::Scripting::Context* context, uDelegate* action);
     void Run();

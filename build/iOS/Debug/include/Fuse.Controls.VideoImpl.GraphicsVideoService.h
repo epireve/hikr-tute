@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.VideoImpl.IVideoService.h>
-#include <Uno.IDisposable.h>
-#include <Uno.Int2.h>
-#include <Uno.Object.h>
+#include <Fuse.Controls.VideoImpl.IVideoService.h 
+#include <Uno.IDisposable.h 
+#include <Uno.Int2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{namespace VideoImpl{struct GraphicsVideoService;}}}}
 namespace g{namespace Uno{namespace Graphics{struct VideoTexture;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -56,10 +56,10 @@ void GraphicsVideoService__UnoIDisposableDispose_fn(GraphicsVideoService* __this
 
 struct GraphicsVideoService : uObject
 {
-    uStrong<uObject*> _player;
-    uStrong<uObject*> _loading;
-    uStrong<uObject*> _empty;
-    uStrong<uObject*> _callbacks;
+    uStrong<uObject*  _player;
+    uStrong<uObject*  _loading;
+    uStrong<uObject*  _empty;
+    uStrong<uObject*  _callbacks;
     double _durationCache;
     ::g::Uno::Int2 _sizeCache;
     float _volume;

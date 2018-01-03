@@ -1,16 +1,16 @@
 // This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Video/1.4.2/iOS/VideoImpl.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.VideoImpl.iOS.VideoPlayerImpl.h>
-#include <iOS/VideoImpl.h>
-#include <OpenGL.GLTextureHandle.h>
-#include <Uno.Action.h>
-#include <Uno.Double.h>
-#include <Uno.Float.h>
-#include <Uno.Int.h>
-#include <Uno.IntPtr.h>
-#include <Uno.String.h>
-#include <uObjC.Foreign.h>
+#include <Fuse.Controls.VideoImpl.iOS.VideoPlayerImpl.h 
+#include <iOS/VideoImpl.h 
+#include <OpenGL.GLTextureHandle.h 
+#include <Uno.Action.h 
+#include <Uno.Double.h 
+#include <Uno.Float.h 
+#include <Uno.Int.h 
+#include <Uno.IntPtr.h 
+#include <Uno.String.h 
+#include <uObjC.Foreign.h 
 
 namespace g{
 namespace Fuse{
@@ -26,13 +26,13 @@ static void VideoPlayerImpl_build(uType* type)
 
 uClassType* VideoPlayerImpl_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uClassType*  type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Controls.VideoImpl.iOS.VideoPlayerImpl", options);
-    type->fp_build_ = VideoPlayerImpl_build;
+    type- fp_build_ = VideoPlayerImpl_build;
     return type;
 }
 

@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Float4.h>
-#include <Uno.UX.PropertyObject.h>
+#include <Uno.Float4.h 
+#include <Uno.UX.PropertyObject.h 
 namespace g{namespace Fuse{namespace Drawing{struct GradientStop;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 

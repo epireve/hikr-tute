@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.h>
+#include <Uno.h 
 namespace g{namespace Fuse{struct Stage;}}
 namespace g{namespace Fuse{struct UpdateListener;}}
 namespace g{namespace Fuse{struct UpdateManager;}}
@@ -41,20 +41,20 @@ void UpdateManager__Update1_fn(::g::Fuse::Stage* stage);
 
 struct UpdateManager : uObject
 {
-    static uSStrong< ::g::Uno::Collections::List*> _stages_;
-    static uSStrong< ::g::Uno::Collections::List*>& _stages() { return UpdateManager_typeof()->Init(), _stages_; }
-    static uSStrong< ::g::Uno::Collections::List*> _postActions_;
-    static uSStrong< ::g::Uno::Collections::List*>& _postActions() { return UpdateManager_typeof()->Init(), _postActions_; }
-    static uSStrong< ::g::Uno::Collections::List*> _postActionsSwap_;
-    static uSStrong< ::g::Uno::Collections::List*>& _postActionsSwap() { return UpdateManager_typeof()->Init(), _postActionsSwap_; }
-    static uSStrong<uObject*> Dispatcher_;
-    static uSStrong<uObject*>& Dispatcher() { return UpdateManager_typeof()->Init(), Dispatcher_; }
-    static uSStrong<uObject*> _postActionLock_;
-    static uSStrong<uObject*>& _postActionLock() { return UpdateManager_typeof()->Init(), _postActionLock_; }
-    static uSStrong< ::g::Fuse::Stage*> _currentStage_;
-    static uSStrong< ::g::Fuse::Stage*>& _currentStage() { return UpdateManager_typeof()->Init(), _currentStage_; }
+    static uSStrong< ::g::Uno::Collections::List*  _stages_;
+    static uSStrong< ::g::Uno::Collections::List* & _stages() { return UpdateManager_typeof()- Init(), _stages_; }
+    static uSStrong< ::g::Uno::Collections::List*  _postActions_;
+    static uSStrong< ::g::Uno::Collections::List* & _postActions() { return UpdateManager_typeof()- Init(), _postActions_; }
+    static uSStrong< ::g::Uno::Collections::List*  _postActionsSwap_;
+    static uSStrong< ::g::Uno::Collections::List* & _postActionsSwap() { return UpdateManager_typeof()- Init(), _postActionsSwap_; }
+    static uSStrong<uObject*  Dispatcher_;
+    static uSStrong<uObject* & Dispatcher() { return UpdateManager_typeof()- Init(), Dispatcher_; }
+    static uSStrong<uObject*  _postActionLock_;
+    static uSStrong<uObject* & _postActionLock() { return UpdateManager_typeof()- Init(), _postActionLock_; }
+    static uSStrong< ::g::Fuse::Stage*  _currentStage_;
+    static uSStrong< ::g::Fuse::Stage* & _currentStage() { return UpdateManager_typeof()- Init(), _currentStage_; }
     static int _frameIndex_;
-    static int& _frameIndex() { return UpdateManager_typeof()->Init(), _frameIndex_; }
+    static int& _frameIndex() { return UpdateManager_typeof()- Init(), _frameIndex_; }
 
     static void AddAction(uObject* pu, int stage);
     static void AddAction1(uDelegate* pu, int stage);

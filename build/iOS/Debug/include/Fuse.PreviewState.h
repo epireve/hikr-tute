@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct PreviewState;}}
 namespace g{namespace Fuse{struct PreviewStateData;}}
@@ -23,8 +23,8 @@ void PreviewState__RemoveSaver_fn(PreviewState* __this, uObject* saver);
 
 struct PreviewState : uObject
 {
-    uStrong< ::g::Fuse::PreviewStateData*> _current;
-    uStrong< ::g::Uno::Collections::List*> _savers;
+    uStrong< ::g::Fuse::PreviewStateData*  _current;
+    uStrong< ::g::Uno::Collections::List*  _savers;
 
     void ctor_();
     void AddSaver(uObject* saver);

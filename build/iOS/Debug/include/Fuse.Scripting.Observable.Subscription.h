@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.ISubscription.h>
-#include <Fuse.Scripting.DiagnosticSubject.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Reactive.ISubscription.h 
+#include <Fuse.Scripting.DiagnosticSubject.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Scripting{struct Observable;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription;}}}
 
@@ -37,8 +37,8 @@ struct Observable__Subscription : ::g::Fuse::Scripting::DiagnosticSubject
     static int _counter_;
     static int& _counter() { return _counter_; }
     int _origin;
-    uStrong< ::g::Fuse::Scripting::Observable*> _om;
-    uStrong<uObject*> _obs;
+    uStrong< ::g::Fuse::Scripting::Observable*  _om;
+    uStrong<uObject*  _obs;
     bool _Removed;
 
     void ctor_1(::g::Fuse::Scripting::Observable* om, uObject* obs);

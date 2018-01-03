@@ -1,7 +1,7 @@
 #ifndef POSIX_AUTORESETEVENT_H
 #define POSIX_AUTORESETEVENT_H
 
-#include <pthread.h>
+#include <pthread.h 
 
 struct uPosixResetEvent
 {

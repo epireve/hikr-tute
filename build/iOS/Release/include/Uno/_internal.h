@@ -1,8 +1,8 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Backends/CPlusPlus/Uno/_internal.h.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <uBase/Traits.h>
-#include <Uno/ObjectModel.h>
+#include <uBase/Traits.h 
+#include <Uno/ObjectModel.h 
 
 struct uAutoReleaseFrame
 {
@@ -122,17 +122,17 @@ struct uTypeKey
     {
     }
     uTypeKey(uType* def)
-        : Definition(def->Definition)
-        , Arguments((uType**)malloc(def->GenericCount * sizeof(uType*)))
+        : Definition(def- Definition)
+        , Arguments((uType**)malloc(def- GenericCount * sizeof(uType*)))
     {
-        U_ASSERT(def && def->Definition && def->GenericCount);
+        U_ASSERT(def && def- Definition && def- GenericCount);
     }
     uTypeKey(uType* def, uType** args)
-        : Definition(def->Definition)
-        , Arguments((uType**)malloc(def->GenericCount * sizeof(uType*)))
+        : Definition(def- Definition)
+        , Arguments((uType**)malloc(def- GenericCount * sizeof(uType*)))
     {
-        U_ASSERT(def && def->Definition && def->GenericCount && args);
-        memcpy(Arguments, args, def->GenericCount * sizeof(uType*));
+        U_ASSERT(def && def- Definition && def- GenericCount && args);
+        memcpy(Arguments, args, def- GenericCount * sizeof(uType*));
     }
     uTypeKey(const uTypeKey& copy)
         : Definition(copy.Definition)
@@ -142,8 +142,8 @@ struct uTypeKey
         else
         {
             U_ASSERT(copy.Arguments);
-            Arguments = (uType**)malloc(Definition->GenericCount * sizeof(uType*));
-            memcpy(Arguments, copy.Arguments, Definition->GenericCount * sizeof(uType*));
+            Arguments = (uType**)malloc(Definition- GenericCount * sizeof(uType*));
+            memcpy(Arguments, copy.Arguments, Definition- GenericCount * sizeof(uType*));
         }
     }
     ~uTypeKey()
@@ -162,8 +162,8 @@ struct uTypeKey
             Arguments = NULL;
         else
         {
-            Arguments = (uType**)malloc(Definition->GenericCount * sizeof(uType*));
-            memcpy(Arguments, copy.Arguments, Definition->GenericCount * sizeof(uType*));
+            Arguments = (uType**)malloc(Definition- GenericCount * sizeof(uType*));
+            memcpy(Arguments, copy.Arguments, Definition- GenericCount * sizeof(uType*));
         }
 
         return *this;
@@ -172,7 +172,7 @@ struct uTypeKey
 
 namespace uBase
 {
-    template<> struct Traits<uTypeKey>
+    template<  struct Traits<uTypeKey 
     {
         static bool Equals(const uTypeKey& a, const uTypeKey& b)
         {
@@ -180,7 +180,7 @@ namespace uBase
                 return false;
 
             if (a.Definition)
-                for (size_t i = 0; i < a.Definition->GenericCount; i++)
+                for (size_t i = 0; i < a.Definition- GenericCount; i++)
                     if (a.Arguments[i] != b.Arguments[i])
                         return false;
 
@@ -194,7 +194,7 @@ namespace uBase
 
             uint32_t hash = uBase::Default::Hash(t.Definition);
 
-            for (size_t i = 0; i < t.Definition->GenericCount; i++)
+            for (size_t i = 0; i < t.Definition- GenericCount; i++)
                 hash = ((hash << 5) + hash) ^ uBase::Default::Hash(t.Arguments[i]);
 
             return hash;

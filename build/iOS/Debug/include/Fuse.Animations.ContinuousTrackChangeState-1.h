@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimatorState.h>
+#include <Fuse.Animations.TrackAnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct Change;}}}
 namespace g{namespace Fuse{namespace Animations{struct ContinuousTrackChangeState;}}}
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class ContinuousTrackChangeState<T> :209
+// internal sealed class ContinuousTrackChangeState<T  :209
 // {
 ::g::Fuse::Animations::TrackAnimatorState_type* ContinuousTrackChangeState_typeof();
 void ContinuousTrackChangeState__ctor_2_fn(ContinuousTrackChangeState* __this, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p);
@@ -22,8 +22,8 @@ void ContinuousTrackChangeState__SeekValue_fn(ContinuousTrackChangeState* __this
 
 struct ContinuousTrackChangeState : ::g::Fuse::Animations::TrackAnimatorState
 {
-    uStrong<uObject*> mixHandle;
-    uStrong< ::g::Fuse::Animations::Change*> Animator1;
+    uStrong<uObject*  mixHandle;
+    uStrong< ::g::Fuse::Animations::Change*  Animator1;
 
     void ctor_2(::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p);
     static ContinuousTrackChangeState* New1(uType* __type, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p);

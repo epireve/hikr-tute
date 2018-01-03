@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.IPagePropertyListener.h>
-#include <Uno.Object.h>
+#include <Fuse.Navigation.IPagePropertyListener.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Navigation{struct NavigationPageProxy;}}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -32,13 +32,13 @@ void NavigationPageProxy__UnrootImpl_fn(NavigationPageProxy* __this);
 
 struct NavigationPageProxy : uObject
 {
-    uStrong<uDelegate*> _ready;
-    uStrong<uDelegate*> _unready;
-    uStrong< ::g::Fuse::Visual*> _source;
-    uStrong<uObject*> _navigation;
-    uStrong< ::g::Fuse::Visual*> _pageBind;
+    uStrong<uDelegate*  _ready;
+    uStrong<uDelegate*  _unready;
+    uStrong< ::g::Fuse::Visual*  _source;
+    uStrong<uObject*  _navigation;
+    uStrong< ::g::Fuse::Visual*  _pageBind;
     bool _waitRootingCompleted;
-    uStrong< ::g::Fuse::Visual*> _Page;
+    uStrong< ::g::Fuse::Visual*  _Page;
 
     void ctor_();
     void Dispose();

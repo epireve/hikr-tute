@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.AnimatorState.h>
+#include <Fuse.Animations.AnimatorState.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Easing;}}}
 namespace g{namespace Fuse{namespace Animations{struct TrackAnimator;}}}
@@ -34,15 +34,15 @@ void TrackAnimatorState__SeekValue_fn(TrackAnimatorState* __this, ::g::Uno::Floa
 
 struct TrackAnimatorState : ::g::Fuse::Animations::AnimatorState
 {
-    uStrong< ::g::Fuse::Animations::TrackAnimator*> Animator;
-    uStrong<uObject*> _continuousProvider;
-    uStrong<uObject*> _discreteProvider;
+    uStrong< ::g::Fuse::Animations::TrackAnimator*  Animator;
+    uStrong<uObject*  _continuousProvider;
+    uStrong<uObject*  _discreteProvider;
 
     void ctor_1(::g::Fuse::Animations::TrackAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual);
     double Duration();
     ::g::Fuse::Animations::Easing* Easing();
     bool IsBackward();
-    void SeekObjectValue(uObject* value, float strength) { (((TrackAnimatorState_type*)__type)->fp_SeekObjectValue)(this, value, &strength); }
+    void SeekObjectValue(uObject* value, float strength) { (((TrackAnimatorState_type*)__type)- fp_SeekObjectValue)(this, value, &strength); }
     void SeekValue(::g::Uno::Float4 value, float strength);
     static void SeekObjectValue(TrackAnimatorState* __this, uObject* value, float strength) { TrackAnimatorState__SeekObjectValue_fn(__this, value, &strength); }
     static void SeekValue(TrackAnimatorState* __this, ::g::Uno::Float4 value, float strength);
@@ -50,13 +50,13 @@ struct TrackAnimatorState : ::g::Fuse::Animations::AnimatorState
 
 }}} // ::g::Fuse::Animations
 
-#include <Uno.Float4.h>
+#include <Uno.Float4.h 
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-inline void TrackAnimatorState::SeekValue(::g::Uno::Float4 value, float strength) { (((TrackAnimatorState_type*)__type)->fp_SeekValue)(this, &value, &strength); }
+inline void TrackAnimatorState::SeekValue(::g::Uno::Float4 value, float strength) { (((TrackAnimatorState_type*)__type)- fp_SeekValue)(this, &value, &strength); }
 inline void TrackAnimatorState::SeekValue(TrackAnimatorState* __this, ::g::Uno::Float4 value, float strength) { TrackAnimatorState__SeekValue_fn(__this, &value, &strength); }
 // }
 

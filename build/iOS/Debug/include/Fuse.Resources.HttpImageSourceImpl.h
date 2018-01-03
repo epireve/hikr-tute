@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Resources.IMemoryResource.h>
-#include <Fuse.Resources.LoadingImageSource.h>
+#include <Fuse.Resources.IMemoryResource.h 
+#include <Fuse.Resources.LoadingImageSource.h 
 namespace g{namespace Experimental{namespace Http{struct HttpResponseHeader;}}}
 namespace g{namespace Fuse{namespace Resources{struct HttpImageSourceImpl;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
@@ -29,8 +29,8 @@ void HttpImageSourceImpl__get_Url_fn(HttpImageSourceImpl* __this, uString** __re
 
 struct HttpImageSourceImpl : ::g::Fuse::Resources::LoadingImageSource
 {
-    uStrong<uString*> _url;
-    uStrong<uString*> _contentType;
+    uStrong<uString*  _url;
+    uStrong<uString*  _contentType;
     int _orientation;
 
     void ctor_3(uString* url);

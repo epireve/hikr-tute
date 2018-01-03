@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription__ReplaceAllExclusiveOperation;}}}
@@ -21,9 +21,9 @@ void Observable__Subscription__ReplaceAllExclusiveOperation__Perform_fn(Observab
 
 struct Observable__Subscription__ReplaceAllExclusiveOperation : uObject
 {
-    uStrong< ::g::Fuse::Scripting::ThreadWorker*> Worker;
-    uStrong< ::g::Fuse::Scripting::Object*> Object;
-    uStrong<uArray*> NewValues;
+    uStrong< ::g::Fuse::Scripting::ThreadWorker*  Worker;
+    uStrong< ::g::Fuse::Scripting::Object*  Object;
+    uStrong<uArray*  NewValues;
     int Origin;
 
     void ctor_(::g::Fuse::Scripting::ThreadWorker* worker, ::g::Fuse::Scripting::Object* obj, uArray* newValues, int origin);

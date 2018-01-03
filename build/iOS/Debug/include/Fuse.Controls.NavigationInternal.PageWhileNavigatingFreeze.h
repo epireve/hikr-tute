@@ -2,16 +2,16 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
-#include <Fuse.Binding.h>
-#include <Fuse.INotifyUnrooted.h>
-#include <Fuse.IProperties.h>
-#include <Fuse.Navigation.WhileNavigating.h>
-#include <Fuse.Scripting.IScriptObject.h>
-#include <Uno.Collections.ICollection-1.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.IList-1.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h 
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h 
+#include <Fuse.Binding.h 
+#include <Fuse.INotifyUnrooted.h 
+#include <Fuse.IProperties.h 
+#include <Fuse.Navigation.WhileNavigating.h 
+#include <Fuse.Scripting.IScriptObject.h 
+#include <Uno.Collections.ICollection-1.h 
+#include <Uno.Collections.IEnumerable-1.h 
+#include <Uno.Collections.IList-1.h 
 namespace g{namespace Fuse{namespace Controls{namespace NavigationInternal{struct PageWhileNavigatingFreeze;}}}}
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -31,10 +31,10 @@ void PageWhileNavigatingFreeze__New3_fn(::g::Fuse::Controls::Page* page1, PageWh
 
 struct PageWhileNavigatingFreeze : ::g::Fuse::Navigation::WhileNavigating
 {
-    uStrong< ::g::Fuse::Controls::Page*> page;
-    uStrong< ::g::Uno::UX::Property1*> page_IsFrozen_inst;
+    uStrong< ::g::Fuse::Controls::Page*  page;
+    uStrong< ::g::Uno::UX::Property1*  page_IsFrozen_inst;
     static ::g::Uno::UX::Selector __selector0_;
-    static ::g::Uno::UX::Selector& __selector0() { return PageWhileNavigatingFreeze_typeof()->Init(), __selector0_; }
+    static ::g::Uno::UX::Selector& __selector0() { return PageWhileNavigatingFreeze_typeof()- Init(), __selector0_; }
 
     void ctor_7(::g::Fuse::Controls::Page* page1);
     void InitializeUX();

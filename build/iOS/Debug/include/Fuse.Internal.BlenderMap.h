@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Internal{struct BlenderMap;}}}
 namespace g{namespace Fuse{namespace Internal{struct ScalarBlender;}}}
@@ -20,10 +20,10 @@ void BlenderMap__GetScalar_fn(uType* __type, ::g::Fuse::Internal::ScalarBlender*
 
 struct BlenderMap : uObject
 {
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _blenders_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _blenders() { return _blenders_; }
-    static uSStrong< ::g::Uno::Collections::Dictionary*> _scalarBlenders_;
-    static uSStrong< ::g::Uno::Collections::Dictionary*>& _scalarBlenders() { return _scalarBlenders_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _blenders_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _blenders() { return _blenders_; }
+    static uSStrong< ::g::Uno::Collections::Dictionary*  _scalarBlenders_;
+    static uSStrong< ::g::Uno::Collections::Dictionary* & _scalarBlenders() { return _scalarBlenders_; }
 
     static ::g::Fuse::Internal::Blender* Get(uType* __type);
     static ::g::Fuse::Internal::ScalarBlender* GetScalar(uType* __type);

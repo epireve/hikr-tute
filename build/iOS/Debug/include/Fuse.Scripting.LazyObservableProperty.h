@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.IObserver.h>
-#include <Fuse.Scripting.ObservableProperty.h>
-#include <Uno.UX.IPropertyListener.h>
+#include <Fuse.Reactive.IObserver.h 
+#include <Fuse.Scripting.ObservableProperty.h 
+#include <Uno.UX.IPropertyListener.h 
 namespace g{namespace Fuse{namespace Scripting{struct LazyObservableProperty;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ThreadWorker;}}}

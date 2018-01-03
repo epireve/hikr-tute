@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Controls{struct PageControl__AddedPage;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterPage;}}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -19,10 +19,10 @@ void PageControl__AddedPage__New1_fn(PageControl__AddedPage** __retval);
 
 struct PageControl__AddedPage : uObject
 {
-    uStrong<uString*> Template;
-    uStrong< ::g::Fuse::Visual*> Visual;
-    uStrong<uObject*> Data;
-    uStrong< ::g::Fuse::Navigation::RouterPage*> Page;
+    uStrong<uString*  Template;
+    uStrong< ::g::Fuse::Visual*  Visual;
+    uStrong<uObject*  Data;
+    uStrong< ::g::Fuse::Navigation::RouterPage*  Page;
 
     void ctor_();
     static PageControl__AddedPage* New1();

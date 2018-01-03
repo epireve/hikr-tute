@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Object;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Observable__Subscription__ClearExclusiveOperation;}}}
@@ -20,7 +20,7 @@ void Observable__Subscription__ClearExclusiveOperation__Perform_fn(Observable__S
 
 struct Observable__Subscription__ClearExclusiveOperation : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Object*> Object;
+    uStrong< ::g::Fuse::Scripting::Object*  Object;
     int Origin;
 
     void ctor_(::g::Fuse::Scripting::Object* obj, int origin);

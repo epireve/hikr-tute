@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.TrackAnimatorState.h>
-#include <Uno.Float4.h>
+#include <Fuse.Animations.TrackAnimatorState.h 
+#include <Uno.Float4.h 
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Resize;}}}
 namespace g{namespace Fuse{namespace Animations{struct ResizeAnimatorState;}}}
@@ -25,11 +25,11 @@ void ResizeAnimatorState__Update_fn(ResizeAnimatorState* __this, ::g::Uno::Float
 
 struct ResizeAnimatorState : ::g::Fuse::Animations::TrackAnimatorState
 {
-    uStrong< ::g::Fuse::Animations::Resize*> _resize;
-    uStrong<uObject*> _target;
+    uStrong< ::g::Fuse::Animations::Resize*  _resize;
+    uStrong<uObject*  _target;
     bool _valid;
-    uStrong<uObject*> _relativeTo;
-    uStrong< ::g::Fuse::Visual*> _relativeNode;
+    uStrong<uObject*  _relativeTo;
+    uStrong< ::g::Fuse::Visual*  _relativeNode;
     ::g::Uno::Float4 _lastValue;
     float _lastStrength;
 

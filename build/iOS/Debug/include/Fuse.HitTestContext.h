@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Ray.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Ray.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{struct HitTestContext;}}
 namespace g{namespace Fuse{struct Visual;}}
 
@@ -30,7 +30,7 @@ struct HitTestContext : uObject
 {
     ::g::Uno::Float2 _localPoint;
     ::g::Fuse::Ray _worldRay;
-    uStrong<uDelegate*> _callback;
+    uStrong<uDelegate*  _callback;
     ::g::Uno::Float2 _WindowPoint;
 
     void ctor_(::g::Uno::Float2 windowPoint, uDelegate* callback);

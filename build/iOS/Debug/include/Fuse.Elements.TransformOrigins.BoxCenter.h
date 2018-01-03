@@ -2,9 +2,9 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.ITransformOrigin.h>
-#include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Fuse.Elements.ITransformOrigin.h 
+#include <Uno.Float2.h 
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct TransformOrigins__BoxCenter;}}}
 namespace g{namespace Uno{struct Float3;}}

@@ -2,10 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.iOS.View.h>
-#include <Fuse.Controls.Native.IScrollView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.iOS.View.h 
+#include <Fuse.Controls.Native.IScrollView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct ScrollView;}}}}}
 namespace g{namespace ObjC{struct Object;}}
 namespace g{namespace Uno{struct Float2;}}
@@ -39,8 +39,8 @@ void ScrollView__SetContentSize_fn(::g::ObjC::Object* handle, float* w, float* h
 
 struct ScrollView : ::g::Fuse::Controls::Native::iOS::View
 {
-    uStrong< ::g::ObjC::Object*> _delegateHandle;
-    uStrong<uObject*> _host;
+    uStrong< ::g::ObjC::Object*  _delegateHandle;
+    uStrong<uObject*  _host;
 
     void ctor_4(uObject* host);
     void AllowedScrollDirections(int value);

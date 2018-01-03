@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct ConcaveWedgeCoverage;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct ConvexWedgeCoverage;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct FillCoverage;}}}}
@@ -31,12 +31,12 @@ void Wedge__Stroke_fn(Wedge* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elem
 
 struct Wedge : uObject
 {
-    static uSStrong<Wedge*> Singleton_;
-    static uSStrong<Wedge*>& Singleton() { return Singleton_; }
-    uStrong< ::g::Fuse::Drawing::Primitives::ConvexWedgeCoverage*> _convexWedgeCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::ConcaveWedgeCoverage*> _concaveWedgeCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*> _strokeCoverage;
-    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*> _fillCoverage;
+    static uSStrong<Wedge*  Singleton_;
+    static uSStrong<Wedge* & Singleton() { return Singleton_; }
+    uStrong< ::g::Fuse::Drawing::Primitives::ConvexWedgeCoverage*  _convexWedgeCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::ConcaveWedgeCoverage*  _concaveWedgeCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::StrokeCoverage*  _strokeCoverage;
+    uStrong< ::g::Fuse::Drawing::Primitives::FillCoverage*  _fillCoverage;
 
     void ctor_();
     void Fill(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* node, float radius, ::g::Fuse::Drawing::Brush* brush, ::g::Uno::Float2 center, float startAngle, float endAngle, float smoothness);

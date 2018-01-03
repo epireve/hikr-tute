@@ -2,8 +2,8 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Expression.h>
-#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.Expression.h 
+#include <Fuse.Reactive.IExpression.h 
 namespace g{namespace Fuse{namespace Reactive{struct VarArgFunction;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 
@@ -19,7 +19,7 @@ void VarArgFunction__FormatString_fn(VarArgFunction* __this, uString* funcName, 
 
 struct VarArgFunction : ::g::Fuse::Reactive::Expression
 {
-    uStrong< ::g::Uno::Collections::List*> _args;
+    uStrong< ::g::Uno::Collections::List*  _args;
 
     uObject* Arguments();
     uString* FormatString(uString* funcName);

@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{struct Http__FunctionClosure;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 
@@ -21,8 +21,8 @@ void Http__FunctionClosure__New1_fn(::g::Fuse::Scripting::Context* context, uDel
 
 struct Http__FunctionClosure : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _context;
-    uStrong<uDelegate*> _callback;
+    uStrong< ::g::Fuse::Scripting::Context*  _context;
+    uStrong<uDelegate*  _callback;
 
     void ctor_(::g::Fuse::Scripting::Context* context, uDelegate* callback);
     uDelegate* Callback();

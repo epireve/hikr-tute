@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.iOS.INativeFocusListener.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.ITextEdit.h>
-#include <Fuse.Controls.Native.ITextView.h>
-#include <Fuse.Controls.Native.IView.h>
-#include <Uno.Float4.h>
-#include <Uno.IDisposable.h>
+#include <Fuse.Controls.Native.iOS.INativeFocusListener.h 
+#include <Fuse.Controls.Native.iOS.LeafView.h 
+#include <Fuse.Controls.Native.ITextEdit.h 
+#include <Fuse.Controls.Native.ITextView.h 
+#include <Fuse.Controls.Native.IView.h 
+#include <Uno.Float4.h 
+#include <Uno.IDisposable.h 
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct SingleLineTextEdit;}}}}}
 namespace g{namespace Fuse{namespace Internal{struct FontFaceDescriptor;}}}
 namespace g{namespace Fuse{struct Font;}}
@@ -77,12 +77,12 @@ void SingleLineTextEdit__SetValue_fn(::g::ObjC::Object* handle, uString* value);
 
 struct SingleLineTextEdit : ::g::Fuse::Controls::Native::iOS::LeafView
 {
-    uStrong<uObject*> _textEditHost;
-    uStrong<uObject*> _editingEvents;
-    uStrong< ::g::ObjC::Object*> _delegate;
-    uStrong< ::g::Fuse::Internal::FontFaceDescriptor*> _descriptor;
+    uStrong<uObject*  _textEditHost;
+    uStrong<uObject*  _editingEvents;
+    uStrong< ::g::ObjC::Object*  _delegate;
+    uStrong< ::g::Fuse::Internal::FontFaceDescriptor*  _descriptor;
     float _fontSize;
-    uStrong<uString*> _placeholderText;
+    uStrong<uString*  _placeholderText;
     ::g::Uno::Float4 _placeholderColor;
 
     void ctor_5(uObject* textEditHost);

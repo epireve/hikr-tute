@@ -1,18 +1,18 @@
 // This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.4.3/Backends/CPlusPlus/Uno/_mainMobile.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <uBase/Array.h>
-#include <uBase/Memory.h>
-#include <XliPlatform/GL.h>
-#include <XliPlatform/GLContext.h>
-#include <XliPlatform/Application.h>
-#include <Uno/Support.h>
-#include <Uno.Exception.h>
-#include <Uno.Platform.CoreApp.h>
-#include <Uno.String.h>
+#include <uBase/Array.h 
+#include <uBase/Memory.h 
+#include <XliPlatform/GL.h 
+#include <XliPlatform/GLContext.h 
+#include <XliPlatform/Application.h 
+#include <Uno/Support.h 
+#include <Uno.Exception.h 
+#include <Uno.Platform.CoreApp.h 
+#include <Uno.String.h 
 
 #ifdef DEBUG_DUMPS
-#include <stdio.h> // needed for sprintf
+#include <stdio.h  // needed for sprintf
 #endif
 
 namespace g{uClassType* FuseControls_bundle_typeof();}
@@ -44,16 +44,22 @@ namespace g{uClassType* FuseElements_bundle_typeof();}
 namespace g{uClassType* FuseNodes_bundle_typeof();}
 namespace g{uClassType* FuseScriptingJavaScript_bundle_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* EditHikePage_typeof();}
+namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* hikr_accessor_hikr_Button_FontSize_typeof();}
+namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* hikr_accessor_hikr_Button_Text_typeof();}
 namespace g{uClassType* hikr_bundle_typeof();}
-namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* hikr_FuseControlsButtonBase_Text_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* hikr_FuseControlsTextControl_FontSize_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* hikr_FuseControlsTextControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* hikr_FuseControlsTextInputControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* hikr_FuseReactiveEach_Items_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* HomePage__Template_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* HomePage__Template1_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* HomePage_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template1_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template2_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* SplashPage_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* TitleText_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
 namespace g{namespace OpenGL{uStructType* GLBufferHandle_typeof();}}
 namespace g{namespace OpenGL{uStructType* GLFramebufferHandle_typeof();}}
@@ -671,7 +677,6 @@ namespace g{namespace Fuse{namespace Controls{uType* PageControl__AddedPage_type
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* MobileTextEdit__AndroidTemplate_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Arc_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; ::g::Fuse::Controls::Control_type* BottomFrameBackground_typeof();}}}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* Button_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* ButtonBase_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Circle_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* ClientPanel_typeof();}}}
@@ -695,6 +700,7 @@ namespace g{namespace Fuse{namespace Controls{uClassType* Extensions_typeof();}}
 namespace g{namespace Fuse{namespace Controls{struct FallbackWebViewClient_type; FallbackWebViewClient_type* FallbackWebViewClient_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uType* FreezeDrawable_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct GraphicsView_type; GraphicsView_type* GraphicsView_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* Grid_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; ::g::Fuse::Controls::Control_type* Image_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{uType* ImageElementDraw_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* MobileTextEdit__iOSTemplate_typeof();}}}
@@ -731,15 +737,12 @@ namespace g{namespace Fuse{namespace Controls{struct Shape_type; Shape_type* Sha
 namespace g{namespace Fuse{namespace Controls{struct SingleViewHost_type; SingleViewHost_type* SingleViewHost_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type; ::g::Fuse::Controls::Panel_type* StackPanel_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Shape_type; ::g::Fuse::Controls::Shape_type* Star_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* GraphicsView__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* ScrollView__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template1_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template1_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* ScrollView__Template_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* GraphicsView__Template_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* GraphicsView__Template1_typeof();}}}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* ScrollView__Template1_typeof();}}}
-namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* Button__Template2_typeof();}}}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} namespace Fuse{namespace Controls{::g::Uno::UX::Template_type* TextControl__Template1_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type; ::g::Fuse::Controls::TextControl_type* Text_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type; ::g::Fuse::Controls::TextInputControl_type* TextBox_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type; TextControl_type* TextControl_typeof();}}}
@@ -747,6 +750,7 @@ namespace g{namespace Fuse{namespace Controls{struct TextEdit_type; TextEdit_typ
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type; ::g::Fuse::Controls::TextInputControl_type* TextInput_typeof();}}}
 namespace g{namespace Fuse{struct VisualEventArgs_type; namespace Controls{::g::Fuse::VisualEventArgs_type* TextInputActionArgs_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type; TextInputControl_type* TextInputControl_typeof();}}}
+namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type; ::g::Fuse::Controls::TextInputControl_type* TextView_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct ToggleControl_type; ToggleControl_type* ToggleControl_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct Control_type; ::g::Fuse::Controls::Control_type* TopFrameBackground_typeof();}}}
 namespace g{namespace Fuse{namespace Controls{struct TreeRenderer_type; TreeRenderer_type* TreeRenderer_typeof();}}}
@@ -761,12 +765,10 @@ namespace g{namespace Fuse{namespace Controls{namespace Native{uClassType* Image
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct NativeViewRenderer_type; NativeViewRenderer_type* NativeViewRenderer_typeof();}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{uClassType* ViewFactory_typeof();}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle_type; ViewHandle_type* ViewHandle_typeof();}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* Button_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* GraphicsViewBase_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* ScrollView_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* TextureView_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace Android{uType* TextView_typeof();}}}}}
-namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Button_type; Button_type* Button_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct CanvasViewGroup_type; CanvasViewGroup_type* CanvasViewGroup_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Circle_type; Circle_type* Circle_typeof();}}}}}
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Shape_type; ::g::Fuse::Controls::Native::iOS::Shape_type* Ellipse_typeof();}}}}}
@@ -1264,6 +1266,11 @@ namespace g{namespace FuseJS{uType* RaiseEvent_typeof();}}
 namespace g{namespace FuseJS{uType* Bundle__ReadBufferClosure_typeof();}}
 namespace g{namespace FuseJS{uType* Bundle__ReadClosure_typeof();}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* UserEvents_typeof();}}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} namespace hikr{::g::Fuse::Controls::Panel_type* Button_typeof();}}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} namespace hikr{::g::Fuse::Controls::Panel_type* Page_typeof();}}
+namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} namespace hikr{::g::Fuse::Controls::TextControl_type* Text_typeof();}}
+namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} namespace hikr{::g::Fuse::Controls::TextInputControl_type* TextBox_typeof();}}
+namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} namespace hikr{::g::Fuse::Controls::TextInputControl_type* TextView_typeof();}}
 void uInitRtti(uType*(*factories[])());
 
 void uInitRtti()
@@ -1299,16 +1306,22 @@ void uInitRtti()
         (uType*(*)())&::g::FuseNodes_bundle_typeof,
         (uType*(*)())&::g::FuseScriptingJavaScript_bundle_typeof,
         (uType*(*)())&::g::EditHikePage_typeof,
+        (uType*(*)())&::g::hikr_accessor_hikr_Button_FontSize_typeof,
+        (uType*(*)())&::g::hikr_accessor_hikr_Button_Text_typeof,
         (uType*(*)())&::g::hikr_bundle_typeof,
-        (uType*(*)())&::g::hikr_FuseControlsButtonBase_Text_Property_typeof,
+        (uType*(*)())&::g::hikr_FuseControlsTextControl_FontSize_Property_typeof,
         (uType*(*)())&::g::hikr_FuseControlsTextControl_Value_Property_typeof,
         (uType*(*)())&::g::hikr_FuseControlsTextInputControl_Value_Property_typeof,
         (uType*(*)())&::g::hikr_FuseReactiveEach_Items_Property_typeof,
         (uType*(*)())&::g::HomePage__Template_typeof,
+        (uType*(*)())&::g::HomePage__Template1_typeof,
         (uType*(*)())&::g::HomePage_typeof,
         (uType*(*)())&::g::MainView__Template_typeof,
         (uType*(*)())&::g::MainView__Template1_typeof,
+        (uType*(*)())&::g::MainView__Template2_typeof,
         (uType*(*)())&::g::MainView_typeof,
+        (uType*(*)())&::g::SplashPage_typeof,
+        (uType*(*)())&::g::TitleText_typeof,
         (uType*(*)())&::g::OpenGL::GL_typeof,
         (uType*(*)())&::g::OpenGL::GLBufferHandle_typeof,
         (uType*(*)())&::g::OpenGL::GLFramebufferHandle_typeof,
@@ -1926,7 +1939,6 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::MobileTextEdit__AndroidTemplate_typeof,
         (uType*(*)())&::g::Fuse::Controls::Arc_typeof,
         (uType*(*)())&::g::Fuse::Controls::BottomFrameBackground_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Button_typeof,
         (uType*(*)())&::g::Fuse::Controls::ButtonBase_typeof,
         (uType*(*)())&::g::Fuse::Controls::Circle_typeof,
         (uType*(*)())&::g::Fuse::Controls::ClientPanel_typeof,
@@ -1950,6 +1962,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::FallbackWebViewClient_typeof,
         (uType*(*)())&::g::Fuse::Controls::FreezeDrawable_typeof,
         (uType*(*)())&::g::Fuse::Controls::GraphicsView_typeof,
+        (uType*(*)())&::g::Fuse::Controls::Grid_typeof,
         (uType*(*)())&::g::Fuse::Controls::Image_typeof,
         (uType*(*)())&::g::Fuse::Controls::ImageElementDraw_typeof,
         (uType*(*)())&::g::Fuse::Controls::MobileTextEdit__iOSTemplate_typeof,
@@ -1986,15 +1999,12 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::SingleViewHost_typeof,
         (uType*(*)())&::g::Fuse::Controls::StackPanel_typeof,
         (uType*(*)())&::g::Fuse::Controls::Star_typeof,
-        (uType*(*)())&::g::Fuse::Controls::GraphicsView__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::ScrollView__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextControl__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Button__Template_typeof,
-        (uType*(*)())&::g::Fuse::Controls::TextControl__Template1_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Button__Template1_typeof,
+        (uType*(*)())&::g::Fuse::Controls::ScrollView__Template_typeof,
+        (uType*(*)())&::g::Fuse::Controls::GraphicsView__Template_typeof,
         (uType*(*)())&::g::Fuse::Controls::GraphicsView__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::ScrollView__Template1_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Button__Template2_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TextControl__Template1_typeof,
         (uType*(*)())&::g::Fuse::Controls::Text_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextBox_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextControl_typeof,
@@ -2002,6 +2012,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::TextInput_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextInputActionArgs_typeof,
         (uType*(*)())&::g::Fuse::Controls::TextInputControl_typeof,
+        (uType*(*)())&::g::Fuse::Controls::TextView_typeof,
         (uType*(*)())&::g::Fuse::Controls::ToggleControl_typeof,
         (uType*(*)())&::g::Fuse::Controls::TopFrameBackground_typeof,
         (uType*(*)())&::g::Fuse::Controls::TreeRenderer_typeof,
@@ -2016,12 +2027,10 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Controls::Native::NativeViewRenderer_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::ViewFactory_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::ViewHandle_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::Android::Button_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::GraphicsViewBase_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::ScrollView_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::TextureView_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::Android::TextView_typeof,
-        (uType*(*)())&::g::Fuse::Controls::Native::iOS::Button_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::iOS::CanvasViewGroup_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::iOS::Circle_typeof,
         (uType*(*)())&::g::Fuse::Controls::Native::iOS::Ellipse_typeof,
@@ -2519,13 +2528,18 @@ void uInitRtti()
         (uType*(*)())&::g::FuseJS::Bundle__ReadBufferClosure_typeof,
         (uType*(*)())&::g::FuseJS::Bundle__ReadClosure_typeof,
         (uType*(*)())&::g::FuseJS::UserEvents_typeof,
+        (uType*(*)())&::g::hikr::Button_typeof,
+        (uType*(*)())&::g::hikr::Page_typeof,
+        (uType*(*)())&::g::hikr::Text_typeof,
+        (uType*(*)())&::g::hikr::TextBox_typeof,
+        (uType*(*)())&::g::hikr::TextView_typeof,
         NULL
     };
 
     uInitRtti(factories);
 }
 
-#include <_root.MainView.h>
+#include <_root.MainView.h 
 
 void uStartApp()
 {

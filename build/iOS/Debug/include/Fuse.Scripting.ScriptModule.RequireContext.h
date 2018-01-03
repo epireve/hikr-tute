@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ModuleResult;}}}
 namespace g{namespace Fuse{namespace Scripting{struct ScriptModule;}}}
@@ -23,12 +23,12 @@ void ScriptModule__RequireContext__Require1_fn(ScriptModule__RequireContext* __t
 
 struct ScriptModule__RequireContext : uObject
 {
-    uStrong< ::g::Fuse::Scripting::Context*> _c;
-    uStrong< ::g::Fuse::Scripting::ModuleResult*> _dependant;
-    uStrong< ::g::Fuse::Scripting::ScriptModule*> _m;
-    uStrong< ::g::Uno::Collections::Dictionary*> _rt;
-    static uSStrong<uString*> _lastErrorPath_;
-    static uSStrong<uString*>& _lastErrorPath() { return _lastErrorPath_; }
+    uStrong< ::g::Fuse::Scripting::Context*  _c;
+    uStrong< ::g::Fuse::Scripting::ModuleResult*  _dependant;
+    uStrong< ::g::Fuse::Scripting::ScriptModule*  _m;
+    uStrong< ::g::Uno::Collections::Dictionary*  _rt;
+    static uSStrong<uString*  _lastErrorPath_;
+    static uSStrong<uString* & _lastErrorPath() { return _lastErrorPath_; }
 
     void ctor_(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ScriptModule* m, ::g::Fuse::Scripting::ModuleResult* dependant, ::g::Uno::Collections::Dictionary* rt);
     uObject* Require(uArray* args);

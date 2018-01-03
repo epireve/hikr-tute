@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct LayoutMasterBoxSizing__LayoutMasterData;}}}
 
@@ -23,9 +23,9 @@ void LayoutMasterBoxSizing__LayoutMasterData__ScheduleCheckLayout_fn(LayoutMaste
 
 struct LayoutMasterBoxSizing__LayoutMasterData : uObject
 {
-    uWeak< ::g::Fuse::Elements::Element*> Element;
+    uWeak< ::g::Fuse::Elements::Element*  Element;
     int Mode;
-    uStrong< ::g::Fuse::Elements::Element*> _master;
+    uStrong< ::g::Fuse::Elements::Element*  _master;
     bool _pendingCheckLayout;
 
     void ctor_();

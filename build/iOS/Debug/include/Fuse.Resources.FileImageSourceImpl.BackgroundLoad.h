@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.Object.h 
 namespace g{namespace Fuse{namespace Resources{struct FileImageSourceImpl__BackgroundLoad;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -24,12 +24,12 @@ void FileImageSourceImpl__BackgroundLoad__UIFailCallback_fn(FileImageSourceImpl_
 
 struct FileImageSourceImpl__BackgroundLoad : uObject
 {
-    uStrong< ::g::Uno::UX::FileSource*> _file;
-    uStrong<uDelegate*> _done;
-    uStrong<uDelegate*> _fail;
-    uStrong< ::g::Uno::Exception*> _exception;
+    uStrong< ::g::Uno::UX::FileSource*  _file;
+    uStrong<uDelegate*  _done;
+    uStrong<uDelegate*  _fail;
+    uStrong< ::g::Uno::Exception*  _exception;
     int _orientation;
-    uStrong< ::g::Uno::Graphics::Texture2D*> _tex;
+    uStrong< ::g::Uno::Graphics::Texture2D*  _tex;
 
     void ctor_(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail);
     void GWDoneCallback(::g::Uno::Graphics::Texture2D* tex);
